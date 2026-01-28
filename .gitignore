@@ -1,0 +1,16 @@
+# Intermediate files
+.tmp/
+
+# Environment variables
+.env
+
+# Google OAuth tokens
+token.json
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
