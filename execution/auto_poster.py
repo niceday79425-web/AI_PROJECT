@@ -1,58 +1,54 @@
+import google.generativeai as genai
 import os
 import datetime
 import time
 import json
-import requests
 import feedparser
 import yfinance as yf
 from dotenv import load_dotenv
 
+# 1. 환경 변수 로드
 load_dotenv()
 
-# 설정
+# 2. API 키 설정
+api_key = os.getenv("GEMINI_API_KEY")
+if api_key:
+    genai.configure(api_key=api_key)
+else:
+    print("[!] 경고: API 키가 없습니다.")
+
+# 3. 모델 설정
+# 현재 가장 안정적인 '1.5-flash'를 사용합니다.
+model = genai.GenerativeModel('gemini-1.5-flash')
+
+# 설정값
 TICKERS = ["VIST", "GEV", "AAPL", "JEPI"]
 RSS_URLS = [
     "https://feeds.finance.yahoo.com/rss/2.0/headline?s=VIST,GEV,AAPL,JEPI&region=US&lang=en-US",
     "https://www.investing.com/rss/news_25.rss"
 ]
 
-# [핵심] 시도할 모델 목록 (순서대로 다 해봄)
-MODELS_TO_TRY = [
-    "gemini-1.5-flash",
-    "gemini-1.5-flash-latest",
-    "gemini-1.5-pro",
-    "gemini-1.5-pro-latest",
-    "gemini-1.0-pro",
-    "gemini-pro"
-]
-
 def get_stock_info(ticker_symbol):
-    """티커 정보 수집 (에러 방지 강화)"""
+    """주가 정보 수집"""
     print(f"[*] {ticker_symbol} 데이터 수집 중...")
     try:
         ticker = yf.Ticker(ticker_symbol)
         history = ticker.history(period="1d")
         info = ticker.info
         
-        current_price = 0
-        if not history.empty:
-            current_price = history['Close'].iloc[-1]
-        elif 'currentPrice' in info:
-            current_price = info['currentPrice']
-        
-        div_yield = info.get('dividendYield', 0)
-        if div_yield is None:
-            div_yield = 0
+        current_price = history['Close'].iloc[-1] if not history.empty else info.get('currentPrice', 0)
+        div = info.get('dividendYield', 0)
+        if div is None:
+            div = 0
             
         return {
-            "symbol": ticker_symbol,
             "name": info.get('longName', ticker_symbol),
+            "symbol": ticker_symbol,
             "price": current_price,
-            "dividend_yield": div_yield * 100,
-            "sector": info.get('sector', 'N/A')
+            "dividend_yield": div * 100
         }
     except Exception as e:
-        print(f"[!] {ticker_symbol} 실패: {e}")
+        print(f"[!] {ticker_symbol} 정보 실패: {e}")
         return None
 
 def get_latest_news():
@@ -64,77 +60,59 @@ def get_latest_news():
             feed = feedparser.parse(url)
             for entry in feed.entries[:2]:
                 news_items.append(f"- {entry.title}")
+            time.sleep(1)
         except:
-            continue
+            pass
     return "\n".join(news_items)
 
-def generate_content_universal(stock_data, news_text):
-    """[만능키] 여러 모델을 순서대로 시도하여 성공하는 것을 찾음"""
-    api_key = os.getenv("GEMINI_API_KEY")
-    if not api_key:
-        print("[!] GEMINI_API_KEY가 설정되지 않았습니다.")
-        return None
-
+def generate_content(stock_data, news_text):
+    """Gemini를 사용해 글 작성"""
     prompt = f"""
-        당신은 전문 주식 투자자입니다. 한국 독자를 위한 블로그 포스팅을 작성하세요.
-        - 종목: {stock_data['name']} ({stock_data['symbol']})
-        - 가격: ${stock_data['price']:.2f}
-        - 배당률: {stock_data['dividend_yield']:.2f}%
-        - 관련 뉴스:
+        당신은 미국 주식 투자 전문가입니다. 한국 독자를 위한 블로그 포스팅을 작성하세요.
+        
+        [데이터]
+        종목: {stock_data['name']} ({stock_data['symbol']})
+        가격: ${stock_data['price']:.2f}
+        배당률: {stock_data['dividend_yield']:.2f}%
+        최신 뉴스:
         {news_text}
             
-        [출력 형식] 반드시 JSON 포맷으로만 응답하세요:
+        [출력 형식]
+        반드시 JSON 포맷으로만 응답하세요:
         {{
             "title": "이모지 포함 매력적인 제목",
             "content": "HTML 태그(h2, p, ul, li)로 된 상세한 본문",
-            "summary": "100자 내외의 요약"
+            "summary": "100자 요약"
         }}
     """
     
-    data = {"contents": [{"parts": [{"text": prompt}]}]}
-    headers = {'Content-Type': 'application/json'}
-
-    # 여기서 모델을 하나씩 돌려가며 시도
-    for model_name in MODELS_TO_TRY:
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}"
-        try:
-            print(f"[*] 모델 시도 중: {model_name} ...")
-            response = requests.post(url, headers=headers, json=data)
-            
-            if response.status_code == 200:
-                print(f"[SUCCESS] {model_name} 모델로 성공했습니다! 🎉")
-                result = response.json()
-                raw_text = result['candidates'][0]['content']['parts'][0]['text']
-                
-                # JSON 블록 추출 (마크다운 제거 등)
-                start_idx = raw_text.find('{')
-                end_idx = raw_text.rfind('}') + 1
-                if start_idx != -1 and end_idx != -1:
-                    json_text = raw_text[start_idx:end_idx].strip()
-                    return json.loads(json_text)
-            else:
-                print(f"[FAIL] {model_name} 실패 (코드: {response.status_code})")
-                time.sleep(1) # 잠시 대기
-        except Exception as e:
-            print(f"[ERROR] {model_name} 연결 오류: {e}")
-            
-    print("[!] 모든 모델 시도 실패. API 키나 할당량을 확인하세요.")
-    return None
+    try:
+        response = model.generate_content(prompt)
+        # JSON 블록 추출 및 정리
+        text = response.text.replace('```json', '').replace('```', '').strip()
+        # 가끔 앞뒤에 붙는 텍스트 방어
+        start_idx = text.find('{')
+        end_idx = text.rfind('}') + 1
+        if start_idx != -1 and end_idx != -1:
+            return json.loads(text[start_idx:end_idx])
+        return json.loads(text)
+    except Exception as e:
+        print(f"[!] Gemini 생성 실패: {e}")
+        return None
 
 def save_and_index(content, ticker):
-    """파일 저장 및 posts.json 업데이트"""
+    """파일 저장 및 목록 갱신"""
     if not content:
         return
-
+        
     today = datetime.datetime.now().strftime("%Y-%m-%d")
     filename = f"{today}-{ticker}.html"
     
     if not os.path.exists("blog"):
         os.makedirs("blog")
-        
     filepath = os.path.join("blog", filename)
     
-    # 프리미엄 HTML 템플릿 복구
+    # 프리미엄 HTML 템플릿 적용
     html_template = f"""
 <!DOCTYPE html>
 <html lang="ko">
@@ -161,7 +139,7 @@ def save_and_index(content, ticker):
     
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(html_template)
-        
+            
     # posts.json 업데이트
     posts_path = "posts.json"
     posts = []
@@ -179,27 +157,25 @@ def save_and_index(content, ticker):
         "summary": content['summary']
     }
     
-    # 중복 제거 및 최신 포스팅을 맨 위로
+    # 중복 제거 및 최신 글 위로
     posts = [new_post] + [p for p in posts if p['link'] != new_post['link']]
     
     with open(posts_path, "w", encoding="utf-8") as f:
         json.dump(posts[:20], f, ensure_ascii=False, indent=4)
-
-    print(f"[*] 포스팅 완료: {filename}")
+    print(f"[*] 저장 완료: {filename}")
 
 def main():
-    print("=== StockWise Universal Auto Poster ===")
-    news_text = get_latest_news()
+    print("=== StockWise Standard Auto Poster ===")
+    news = get_latest_news()
     for ticker in TICKERS:
-        stock_data = get_stock_info(ticker)
-        if stock_data:
-            content = generate_content_universal(stock_data, news_text)
+        data = get_stock_info(ticker)
+        if data:
+            content = generate_content(data, news)
             if content:
                 save_and_index(content, ticker)
-                # 429 에러 방지 및 모델 부하 분산
-                time.sleep(5)
             else:
                 print(f"[!] {ticker} 콘텐츠 생성 실패")
+            time.sleep(5) # API 할당량 초과 방지
 
 if __name__ == "__main__":
     main()
