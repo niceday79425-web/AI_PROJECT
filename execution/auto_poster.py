@@ -69,7 +69,7 @@ def generate_content(stock_data, news_text):
         print("[!] GEMINI_API_KEY가 없습니다. 기본 템플릿을 사용합니다.")
         return f"<h1>{stock_data['symbol']} 분석 리포트</h1><p>현재가: ${stock_data['price']:.2f}, 배당수익률: {stock_data['dividend_yield']:.2f}%</p>", "기본 분석 리포트"
 
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-1.5-flash-001')
 
     prompt = f"""
     당신은 20년 경력의 전문 미국 주식 투자 전략가입니다.
