@@ -1,15 +1,27 @@
 [
     {
+        "title": "A Prova de Volatilidade do Ethereum: Navegando no ETH-USD em Meio a Sinais de Mercado Mistos",
+        "date": "2026-01-29",
+        "link": "blog/2026-01-29-ETH-USD.html",
+        "summary": "O Ethereum (ETH) caiu 6.23% para $2819.38 hoje, demonstrando volatilidade significativa. Sinais mistos do mercado de ações (queda dos futuros do Dow, ascensão da Apple, resultados mistos de Big Tech) influenciam o apetite geral por risco dos investidores, incluindo para cripto. A força de longo prazo do ETH reside em seus fundamentos como plataforma de contratos inteligentes, seu ecossistema DeFi e NFT, atualizações contínuas de rede e potencial aprovação de ETF à vista. Os investidores devem estar cientes da volatilidade, dos fatores macroeconômicos e focar na inovação e adoção de longo prazo do Ethereum."
+    },
+    {
+        "title": "Queda Acentuada da Microsoft: Um Ponto Fora da Curva ou Uma Oportunidade de Compra?",
+        "date": "2026-01-29",
+        "link": "blog/2026-01-29-MSFT.html",
+        "summary": "A Microsoft (MSFT) registrou uma queda significativa de quase 10%, para $433.50, em meio a uma semana de resultados mistos no setor de tecnologia. Esta análise argumenta que, apesar do forte recuo, os pontos fortes fundamentais da Microsoft — domínio na nuvem (Azure), produtividade (Office 365), jogos e investimentos agressivos em IA — permanecem robustos. A queda é provavelmente atribuível à volatilidade mais ampla do mercado, realização de lucros ou uma mudança temporária de sentimento, em vez de problemas subjacentes nos negócios. Para investidores de longo prazo, essa desaceleração temporária pode apresentar uma oportunidade de compra atraente para uma líder de tecnologia resiliente e inovadora com substanciais catalisadores de crescimento futuro."
+    },
+    {
+        "title": "Meta Platforms (META) Dispara: Uma Análise Aprofundada do seu Desempenho Mais Recente",
+        "date": "2026-01-29",
+        "link": "blog/2026-01-29-META.html",
+        "summary": "A Meta Platforms (META) registou um impressionante aumento de 10.40% hoje, fechando a $738.31, impulsionado em grande parte pela forte confiança dos investidores no seu negócio principal de publicidade, ganhos de eficiência e esforços de monetização da IA. Esta subida significativa destaca-se num mercado mais amplo misto, sugerindo catalisadores positivos específicos da empresa e uma potencial reavaliação da ação. O desempenho futuro dependerá do crescimento sustentado da publicidade, da integração da IA e de gastos disciplinados."
+    },
+    {
         "title": "Google (GOOGL): Navegando na Fronteira da IA em Meio a um Frenesi de Gastos em Tecnologia",
         "date": "2026-01-29",
         "link": "blog/2026-01-29-GOOGL.html",
         "summary": "Alphabet (GOOGL) é uma gigante da tecnologia fortemente investida em Inteligência Artificial. Apesar de dados de preços atuais indisponíveis, sua posição estratégica em IA, especialmente em meio a um 'Frenesi de Gastos em IA' global por grandes empresas de tecnologia, é um vento favorável significativo. A forte fundação de IA do Google, do Gemini ao Google Cloud, a posiciona para participar e lucrar com a demanda acelerada por infraestrutura e serviços de IA. Sua extensa P&D e vasto ecossistema fornecem uma vantagem competitiva para o crescimento a longo prazo."
-    },
-    {
-        "title": "Microsoft (MSFT): Cavalgando a Onda da IA para Novas Alturas",
-        "date": "2026-01-29",
-        "link": "blog/2026-01-29-MSFT.html",
-        "summary": "A Microsoft (MSFT) está posicionada de forma única na vanguarda da revolução da inteligência artificial. Apesar da ausência de dados de preço específicos, notícias recentes da indústria sublinham um impulso global massivo para a implantação de infraestruturas de IA e um gasto sem precedentes em IA por gigantes da tecnologia. Com sua robusta plataforma de nuvem Azure, o inovador pacote Copilot e investimentos estratégicos na OpenAI, a Microsoft se destaca como uma beneficiária principal dessas tendências seculares. Investidores que buscam exposição às mudanças fundamentais impulsionadas pela IA devem considerar as fortes vantagens estratégicas da MSFT e seu potencial para crescimento sustentado a longo prazo."
     },
     {
         "title": "Apple (AAPL): Navegando na Onda da IA com a Força do Ecossistema",
