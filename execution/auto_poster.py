@@ -18,13 +18,13 @@ else:
     print("[!] 경고: API 키가 없습니다.")
 
 # 3. 모델 설정
-# 현재 가장 안정적인 '1.5-flash'를 사용합니다.
-model = genai.GenerativeModel('gemini-2.5-flash')
+# 현재 가장 안정적이고 속도가 빠른 '1.5-flash'를 사용합니다.
+model = genai.GenerativeModel('gemini-1.5-flash')
 
-# 설정값
-TICKERS = ["VIST", "GEV", "AAPL", "JEPI"]
+# 설정값 (종목 리스트)
+TICKERS = ["SCHD", "O", "AAPL", "JEPI"]
 RSS_URLS = [
-    "https://feeds.finance.yahoo.com/rss/2.0/headline?s=VIST,GEV,AAPL,JEPI&region=US&lang=en-US",
+    "https://feeds.finance.yahoo.com/rss/2.0/headline?s=SCHD,O,AAPL,JEPI&region=US&lang=en-US",
     "https://www.investing.com/rss/news_25.rss"
 ]
 
@@ -88,9 +88,8 @@ def generate_content(stock_data, news_text):
     
     try:
         response = model.generate_content(prompt)
-        # JSON 블록 추출 및 정리
         text = response.text.replace('```json', '').replace('```', '').strip()
-        # 가끔 앞뒤에 붙는 텍스트 방어
+        # JSON 블록 안전하게 추출
         start_idx = text.find('{')
         end_idx = text.rfind('}') + 1
         if start_idx != -1 and end_idx != -1:
@@ -101,10 +100,15 @@ def generate_content(stock_data, news_text):
         return None
 
 def save_and_index(content, ticker):
-    """파일 저장 및 목록 갱신"""
+    """파일 저장 및 목록 갱신 (안전장치 포함)"""
     if not content:
         return
         
+    # AI 응답 누락 대비 안전장치 (User 요청사항 반영)
+    title = content.get('title', f'{ticker} 주가 분석 및 전망')
+    summary = content.get('summary', '해당 종목의 최신 정보와 분석 내용을 확인해보세요.')
+    html_body = content.get('content', '<p>내용을 생성하는 중에 문제가 발생했습니다.</p>')
+
     today = datetime.datetime.now().strftime("%Y-%m-%d")
     filename = f"{today}-{ticker}.html"
     
@@ -112,24 +116,24 @@ def save_and_index(content, ticker):
         os.makedirs("blog")
     filepath = os.path.join("blog", filename)
     
-    # 프리미엄 HTML 템플릿 적용
+    # 프리미엄 HTML 템플릿 복구
     html_template = f"""
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{content['title']} | StockWise</title>
+    <title>{title} | StockWise</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="dark-mode">
     <div class="container blog-post">
         <header class="post-header">
             <span class="blog-date">{today}</span>
-            <h1>{content['title']}</h1>
+            <h1>{title}</h1>
         </header>
         <article class="post-content">
-            {content['content']}
+            {html_body}
         </article>
         <a href="../index.html" class="back-btn">← 메인으로</a>
     </div>
@@ -151,13 +155,13 @@ def save_and_index(content, ticker):
                 posts = []
                 
     new_post = {
-        "title": content['title'],
+        "title": title,
         "date": today,
         "link": f"blog/{filename}",
-        "summary": content['summary']
+        "summary": summary
     }
     
-    # 중복 제거 및 최신 글 위로
+    # 중복 제거 및 최신 글 상단 배치
     posts = [new_post] + [p for p in posts if p['link'] != new_post['link']]
     
     with open(posts_path, "w", encoding="utf-8") as f:
@@ -165,7 +169,7 @@ def save_and_index(content, ticker):
     print(f"[*] 저장 완료: {filename}")
 
 def main():
-    print("=== StockWise Standard Auto Poster ===")
+    print("=== StockWise Final Auto Poster ===")
     news = get_latest_news()
     for ticker in TICKERS:
         data = get_stock_info(ticker)
@@ -174,8 +178,8 @@ def main():
             if content:
                 save_and_index(content, ticker)
             else:
-                print(f"[!] {ticker} 콘텐츠 생성 실패")
-            time.sleep(5) # API 할당량 초과 방지
+                print(f"[!] {ticker} 글쓰기 실패 (다음 종목으로 이동)")
+            time.sleep(5) # 할당량 제한 방지
 
 if __name__ == "__main__":
     main()
