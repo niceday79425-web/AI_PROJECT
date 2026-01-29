@@ -19,7 +19,7 @@ else:
 
 # 3. 모델 설정
 # 현재 가장 안정적인 '1.5-flash'를 사용합니다.
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 # 설정값
 TICKERS = ["VIST", "GEV", "AAPL", "JEPI"]
