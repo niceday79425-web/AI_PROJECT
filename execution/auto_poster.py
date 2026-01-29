@@ -6,6 +6,7 @@ import json
 import feedparser
 import yfinance as yf
 import requests
+import urllib.parse
 from dotenv import load_dotenv
 
 # 1. 환경 변수 로드
@@ -103,7 +104,7 @@ def get_quickchart_url(ticker):
             }
         }
         
-        encoded_config = json.dumps(chart_config)
+        encoded_config = urllib.parse.quote(json.dumps(chart_config))
         return f"https://quickchart.io/chart?c={encoded_config}&width=600&height=300"
     except:
         return ""
@@ -164,7 +165,20 @@ def save_and_index_multi(contents, ticker, chart_url):
         data = contents[lang]
         title = data.get('title', f'{ticker} Analysis')
         summary = data.get('summary', '')
-        html_body = data.get('content', '').replace("[CHART-HERE]", f'<img src="{chart_url}" alt="{ticker} Chart" style="width:100%; border-radius:12px; margin: 20px 0;">')
+
+        # HTML content refinement
+        content = data.get('content', '')
+        chart_tag = f'<img src="{chart_url}" alt="{ticker} Chart" style="width:100%; border-radius:12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">'
+        
+        if "[CHART-HERE]" in content:
+            html_body = content.replace("[CHART-HERE]", chart_tag)
+        else:
+            # If placeholder is missing, insert chart after the first heading or at the top
+            if "</h2>" in content:
+                parts = content.split("</h2>", 1)
+                html_body = parts[0] + "</h2>" + chart_tag + parts[1]
+            else:
+                html_body = chart_tag + content
         
         # 폴더 생성
         if not os.path.exists(settings['dir']): os.makedirs(settings['dir'])
