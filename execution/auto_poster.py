@@ -5,7 +5,7 @@ import time
 import json
 import feedparser
 import yfinance as yf
-
+import requests
 from dotenv import load_dotenv
 
 # 1. 환경 변수 로드
@@ -19,231 +19,194 @@ if api_key:
 else:
     print("[!] 경고: API 키가 없습니다.")
 
-model = genai.GenerativeModel('gemini-2.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash') # Using stable flash model
 
-
-# 설정값 (종목 리스트)
-
-TICKERS = ["VIST", "GEV", "AAPL", "JEPI"]
+# 확장된 종목 리스트 (50+)
+TICKERS = [
+    "AAPL", "MSFT", "GOOGL", "AMZN", "META", "TSLA", "NVDA", "BRK-B", "JPM", "V", 
+    "JNJ", "WMT", "PG", "MA", "UNH", "HD", "DIS", "PYPL", "BAC", "VZ", 
+    "ADBE", "CMCSA", "NFLX", "KO", "PEP", "XOM", "CVX", "ABT", "T", "ABBV",
+    "COST", "PFE", "MRK", "NKE", "LLY", "AVGO", "ORCL", "ACN", "DHR", "TMO",
+    "MCD", "CSCO", "ABNB", "CRM", "AMD", "QCOM", "INTC", "TXN", "HON", "UPS",
+    "BTC-USD", "ETH-USD", "SCHD", "JEPI", "VIST", "GEV"
+]
 
 RSS_URLS = [
-    "https://feeds.finance.yahoo.com/rss/2.0/headline?s=VIST,GEV,AAPL,JEPI&region=US&lang=en-US",
+    "https://feeds.finance.yahoo.com/rss/2.0/headline?s=" + ",".join(TICKERS[:10]) + "&region=US&lang=en-US",
     "https://www.investing.com/rss/news_25.rss"
 ]
 
+def get_top_volatile_tickers(tickers, count=3):
+    """최근 5일간 변동성(절대 수익률)이 가장 큰 종목 선별"""
+    print("[*] 변동성 헌터 가동 중...")
+    volatility_data = []
+    
+    # 한번에 가져오기 (성능 최적화)
+    data = yf.download(tickers, period="5d", interval="1d", group_by='ticker', progress=False)
+    
+    for ticker in tickers:
+        try:
+            ticker_data = data[ticker] if len(tickers) > 1 else data
+            if len(ticker_data) < 2: continue
+            
+            # 마지막 종가와 전일 종가 비교
+            last_close = ticker_data['Close'].iloc[-1]
+            prev_close = ticker_data['Close'].iloc[-2]
+            
+            change = (last_close - prev_close) / prev_close
+            abs_change = abs(change)
+            
+            volatility_data.append({
+                "ticker": ticker,
+                "change": change * 100,
+                "abs_change": abs_change * 100,
+                "price": last_close
+            })
+        except:
+            continue
+    
+    # 변동성 순으로 정렬
+    top_volatile = sorted(volatility_data, key=lambda x: x['abs_change'], reverse=True)[:count]
+    return top_volatile
 
-def get_stock_info(ticker_symbol):
-
-    """주가 정보 수집"""
-    print(f"[*] {ticker_symbol} 데이터 수집 중...")
+def get_quickchart_url(ticker):
+    """QuickChart API를 사용하여 3개월 주가 차트 생생"""
+    # 실제 데이터 대신 트렌드를 보여주는 심플한 차트 (여기서는 더미 데이터 생성 로직 생략하고 기본 구조만 구현)
+    # 실제 구현시 yfinance에서 3개월치 데이터를 가져와서 labels, data를 채움
     try:
-        ticker = yf.Ticker(ticker_symbol)
-        history = ticker.history(period="1d")
-        info = ticker.info
+        hist = yf.Ticker(ticker).history(period="3mo")
+        prices = hist['Close'].tolist()
+        dates = [d.strftime('%m-%d') for d in hist.index]
+        
+        # 데이터가 너무 많으면 포인트 줄이기
+        step = max(1, len(prices) // 15)
+        prices = prices[::step]
+        dates = dates[::step]
 
-        current_price = history['Close'].iloc[-1] if not history.empty else info.get('currentPrice', 0)
-
-        div = info.get('dividendYield', 0)
-
-        if div is None: div = 0
-
-        return {
-
-            "name": info.get('longName', ticker_symbol),
-
-            "symbol": ticker_symbol,
-
-            "price": current_price,
-
-            "dividend_yield": div * 100
-
+        chart_config = {
+            "type": "line",
+            "data": {
+                "labels": dates,
+                "datasets": [{
+                    "label": f"{ticker} Price (3Mo)",
+                    "data": prices,
+                    "fill": False,
+                    "borderColor": "rgb(99, 102, 241)",
+                    "tension": 0.4
+                }]
+            },
+            "options": {
+                "plugins": {
+                    "legend": {"display": False},
+                    "title": {"display": True, "text": f"{ticker} 3-Month Trend", "font": {"size": 20}}
+                }
+            }
         }
-
-    except Exception as e:
-
-        print(f"[!] {ticker_symbol} 정보 실패: {e}")
-
-        return None
-
-
+        
+        encoded_config = json.dumps(chart_config)
+        return f"https://quickchart.io/chart?c={encoded_config}&width=600&height=300"
+    except:
+        return ""
 
 def get_latest_news():
-
     """뉴스 수집"""
-
-    print("[*] 최신 투자 뉴스 수집 중...")
-
     news_items = []
-
     for url in RSS_URLS:
-
         try:
-
             feed = feedparser.parse(url)
-
-            for entry in feed.entries[:2]:
-
+            for entry in feed.entries[:3]:
                 news_items.append(f"- {entry.title}")
-
-            time.sleep(1)
-
         except: pass
-
     return "\n".join(news_items)
 
-
-
-def generate_content(stock_data, news_text):
-
-    """Gemini를 사용해 글 작성"""
-
+def generate_multi_lang_content(stock_info, news_text):
+    """Gemini를 사용해 3개국어로 글 작성"""
+    ticker = stock_info['ticker']
+    price = stock_info['price']
+    change = stock_info['change']
     
-
     prompt = f"""
-
-    당신은 미국 주식 투자 전문가입니다. 블로그 글을 작성해주세요.
-
+    You are a professional US stock analyst. Write a blog post about {ticker}.
+    Current Price: ${price:.2f} ({change:+.2f}%)
+    Related News: {news_text}
     
-
-    [데이터]
-
-    종목: {stock_data['name']} ({stock_data['symbol']})
-
-    가격: ${stock_data['price']:.2f}
-
-    배당률: {stock_data['dividend_yield']:.2f}%
-
-    뉴스: {news_text}
-
-    
-
-    [출력 형식]
-
-    반드시 JSON 포맷으로 작성하세요:
-
+    Please generate content in 3 languages: Korean (ko), English (en), and Portuguese (pt).
+    Output MUST be a JSON with this structure:
     {{
-
-        "title": "이모지 포함 제목",
-
-        "content": "HTML 태그(h2, p, ul, li)로 작성된 본문",
-
-        "summary": "100자 요약"
-
+        "ko": {{ "title": "제목", "content": "HTML body", "summary": "요약" }},
+        "en": {{ "title": "Title", "content": "HTML body", "summary": "Summary" }},
+        "pt": {{ "title": "Título", "content": "HTML body", "summary": "Resumo" }}
     }}
-
+    The 'content' should use semantic HTML (h2, p, ul, li).
+    Include the chart placeholder [CHART-HERE] where the chart should be.
     """
-
     
-
     try:
-
         response = model.generate_content(prompt)
-
         text = response.text.replace('```json', '').replace('```', '').strip()
-
         return json.loads(text)
-
     except Exception as e:
-
         print(f"[!] Gemini 생성 실패: {e}")
-
         return None
 
-
-
-def save_and_index(content, ticker):
-
-    """파일 저장 및 목록 갱신 (안전장치 추가됨)"""
-
-    if not content: return
-
-    
-
-    # [핵심 수정] AI가 실수로 제목이나 요약을 빼먹어도 멈추지 않게 처리
-
-    title = content.get('title', f'{ticker} 주가 분석')
-
-    summary = content.get('summary', '요약 내용이 없습니다.') # 여기서 에러가 났었습니다!
-
-    html_body = content.get('content', '<p>내용 생성 실패</p>')
-
-
-
+def save_and_index_multi(contents, ticker, chart_url):
+    """3개국어 파일 저장 및 각각의 posts.json 갱신"""
     today = datetime.datetime.now().strftime("%Y-%m-%d")
-
-    filename = f"{today}-{ticker}.html"
-
+    langs = {
+        "ko": {"dir": "blog", "posts": "posts.json", "prefix": ""},
+        "en": {"dir": "en/blog", "posts": "en/posts.json", "prefix": "en/"},
+        "pt": {"dir": "pt/blog", "posts": "pt/posts.json", "prefix": "pt/"}
+    }
     
-
-    if not os.path.exists("blog"): os.makedirs("blog")
-
-    filepath = os.path.join("blog", filename)
-
-    
-
-    # HTML 저장
-
-    with open(filepath, "w", encoding="utf-8") as f:
-
-        f.write(html_body) 
-
+    for lang, settings in langs.items():
+        if lang not in contents: continue
         
-
-    # JSON 목록 갱신
-
-    posts_path = "posts.json"
-
-    posts = []
-
-    if os.path.exists(posts_path):
-
-        with open(posts_path, "r", encoding="utf-8") as f:
-
-            try: posts = json.load(f)
-
-            except: posts = []
-
+        data = contents[lang]
+        title = data.get('title', f'{ticker} Analysis')
+        summary = data.get('summary', '')
+        html_body = data.get('content', '').replace("[CHART-HERE]", f'<img src="{chart_url}" alt="{ticker} Chart" style="width:100%; border-radius:12px; margin: 20px 0;">')
+        
+        # 폴더 생성
+        if not os.path.exists(settings['dir']): os.makedirs(settings['dir'])
+        
+        filename = f"{today}-{ticker}.html"
+        filepath = os.path.join(settings['dir'], filename)
+        
+        # HTML 저장
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(html_body)
             
-
-    new_post = {"title": title, "date": today, "link": f"blog/{filename}", "summary": summary}
-
-    posts = [new_post] + [p for p in posts if p['link'] != new_post['link']]
-
-    
-
-    with open(posts_path, "w", encoding="utf-8") as f:
-
-        json.dump(posts[:20], f, ensure_ascii=False, indent=4)
-
-    print(f"[*] 저장 완료: {filename}")
-
-
+        # JSON 갱신
+        posts_path = settings['posts']
+        posts = []
+        if os.path.exists(posts_path):
+            with open(posts_path, "r", encoding="utf-8") as f:
+                try: posts = json.load(f)
+                except: posts = []
+        
+        # 링크 경로 설정 (root에서의 상대 경로)
+        link = f"blog/{filename}" # 각 언어 폴더 내부의 posts.json 입장에서는 blog/filename 임
+        
+        new_post = {"title": title, "date": today, "link": link, "summary": summary}
+        posts = [new_post] + [p for p in posts if p['link'] != new_post['link']]
+        
+        with open(posts_path, "w", encoding="utf-8") as f:
+            json.dump(posts[:20], f, ensure_ascii=False, indent=4)
+            
+    print(f"[*] {ticker} 3개국어 포스팅 완료")
 
 def main():
-
-    print("=== StockWise Final Auto Poster ===")
-
+    print("=== Volatility Hunter v2.0 ===")
+    top_stocks = get_top_volatile_tickers(TICKERS, 3)
     news = get_latest_news()
-
-    for ticker in TICKERS:
-
-        data = get_stock_info(ticker)
-
-        if data:
-
-            content = generate_content(data, news)
-
-            if content: 
-
-                save_and_index(content, ticker)
-
-            else:
-
-                print(f"[!] {ticker} 글쓰기 실패 (다음으로 넘어감)")
-
-            time.sleep(5) 
-
+    
+    for stock in top_stocks:
+        print(f"[*] Processing {stock['ticker']}...")
+        chart_url = get_quickchart_url(stock['ticker'])
+        contents = generate_multi_lang_content(stock, news)
+        if contents:
+            save_and_index_multi(contents, stock['ticker'], chart_url)
+        time.sleep(2)
 
 if __name__ == "__main__":
-
     main()

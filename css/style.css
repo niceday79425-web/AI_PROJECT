@@ -12,6 +12,8 @@
     --border-color: rgba(255, 255, 255, 0.1);
     --glass-bg: rgba(255, 255, 255, 0.03);
     --success: #10b981;
+    --neon-cyan: #22d3ee;
+    --neon-magenta: #f472b6;
 }
 
 * {
@@ -28,7 +30,9 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Outfit', sans-serif;
 }
 
@@ -53,8 +57,36 @@ header {
     font-weight: 700;
     background: var(--primary-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -0.5px;
+}
+
+.lang-selector {
+    display: flex;
+    gap: 1rem;
+}
+
+.lang-link {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.lang-link:hover {
+    color: var(--text-primary);
+    background: var(--glass-bg);
+}
+
+.lang-link.active {
+    color: var(--text-primary);
+    background: var(--glass-bg);
+    border-color: var(--accent-purple);
 }
 
 /* Main Layout */
@@ -86,6 +118,7 @@ header {
     font-size: 1.5rem;
     background: var(--secondary-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -215,7 +248,8 @@ header {
 
 .blog-card:hover {
     transform: translateY(-10px);
-    border-color: var(--accent-purple);
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.2);
 }
 
 .blog-date {
