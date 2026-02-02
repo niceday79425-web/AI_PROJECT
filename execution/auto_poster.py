@@ -159,6 +159,7 @@ def generate_multi_lang_content(stock_info, news_text):
     - Focus on investment insights, market trends, and actionable analysis
     """
     
+    
     try:
         response = model.generate_content(prompt)
         text = response.text.replace('```json', '').replace('```', '').strip()
