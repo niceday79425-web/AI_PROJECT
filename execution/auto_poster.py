@@ -9,20 +9,24 @@ import requests
 import urllib.parse
 from dotenv import load_dotenv
 
-# 1. 환경 변수 로드
+# Auto Poster - English-First Content Generation
+# Generates professional US stock market analysis in English (primary)
+# with Korean and Portuguese translations saved to /ko/ and /pt/
+
+# 1. Load environment variables
 load_dotenv()
 
-# 2. API 키 설정
+# 2. Configure API key
 api_key = os.getenv("GEMINI_API_KEY")
 
 if api_key:
     genai.configure(api_key=api_key)
 else:
-    print("[!] 경고: API 키가 없습니다.")
+    print("[!] Warning: API key not found.")
 
 model = genai.GenerativeModel('gemini-2.5-flash') # Using stable flash model
 
-# 확장된 종목 리스트 (50+)
+# Extended ticker list (50+ stocks)
 TICKERS = [
     "AAPL", "MSFT", "GOOGL", "AMZN", "META", "TSLA", "NVDA", "BRK-B", "JPM", "V", 
     "JNJ", "WMT", "PG", "MA", "UNH", "HD", "DIS", "PYPL", "BAC", "VZ", 
@@ -38,11 +42,11 @@ RSS_URLS = [
 ]
 
 def get_top_volatile_tickers(tickers, count=3):
-    """최근 5일간 변동성(절대 수익률)이 가장 큰 종목 선별"""
-    print("[*] 변동성 헌터 가동 중...")
+    """Select stocks with highest volatility (absolute returns) over the last 5 days"""
+    print("[*] Volatility Hunter activated...")
     volatility_data = []
     
-    # 한번에 가져오기 (성능 최적화)
+    # Fetch all data at once (performance optimization)
     data = yf.download(tickers, period="5d", interval="1d", group_by='ticker', progress=False)
     
     for ticker in tickers:
@@ -50,7 +54,7 @@ def get_top_volatile_tickers(tickers, count=3):
             ticker_data = data[ticker] if len(tickers) > 1 else data
             if len(ticker_data) < 2: continue
             
-            # 마지막 종가와 전일 종가 비교
+            # Compare last close with previous close
             last_close = ticker_data['Close'].iloc[-1]
             prev_close = ticker_data['Close'].iloc[-2]
             
@@ -66,20 +70,19 @@ def get_top_volatile_tickers(tickers, count=3):
         except:
             continue
     
-    # 변동성 순으로 정렬
+    # Sort by volatility
     top_volatile = sorted(volatility_data, key=lambda x: x['abs_change'], reverse=True)[:count]
     return top_volatile
 
 def get_quickchart_url(ticker):
-    """QuickChart API를 사용하여 3개월 주가 차트 생생"""
-    # 실제 데이터 대신 트렌드를 보여주는 심플한 차트 (여기서는 더미 데이터 생성 로직 생략하고 기본 구조만 구현)
-    # 실제 구현시 yfinance에서 3개월치 데이터를 가져와서 labels, data를 채움
+    """Generate 3-month stock price chart using QuickChart API"""
+    # Fetch actual 3-month data from yfinance
     try:
         hist = yf.Ticker(ticker).history(period="3mo")
         prices = hist['Close'].tolist()
         dates = [d.strftime('%m-%d') for d in hist.index]
         
-        # 데이터가 너무 많으면 포인트 줄이기
+        # Reduce data points if too many
         step = max(1, len(prices) // 15)
         prices = prices[::step]
         dates = dates[::step]
@@ -110,7 +113,7 @@ def get_quickchart_url(ticker):
         return ""
 
 def get_latest_news():
-    """뉴스 수집"""
+    """Collect latest market news"""
     news_items = []
     for url in RSS_URLS:
         try:
@@ -121,27 +124,39 @@ def get_latest_news():
     return "\n".join(news_items)
 
 def generate_multi_lang_content(stock_info, news_text):
-    """Gemini를 사용해 3개국어로 글 작성"""
+    """Generate English content first (primary), then Korean and Portuguese translations"""
     ticker = stock_info['ticker']
     price = stock_info['price']
     change = stock_info['change']
     
     prompt = f"""
-    You are a professional US stock analyst. Write a highly engaging blog post about {ticker}.
+    You are a professional US stock market analyst writing for a global audience.
+    Write a highly engaging, SEO-optimized blog post about {ticker}.
+    
     Current Price: ${price:.2f} ({change:+.2f}%)
-    Related News: {news_text}
+    Related Market News: {news_text}
     
-    Please generate content in 3 languages: English (en), Korean (ko), and Portuguese (pt).
-    English is the primary target language, so ensure the tone is professional and insightful.
+    IMPORTANT: English is the PRIMARY language. This is a US stock market blog targeting English-speaking investors.
+    Korean (ko) and Portuguese (pt) are TRANSLATIONS for international readers.
     
-    Output MUST be a JSON with this structure:
+    Generate content in 3 languages with this priority:
+    1. English (en) - Primary, professional, insightful, SEO-optimized
+    2. Korean (ko) - Translation of English content
+    3. Portuguese (pt) - Translation of English content
+    
+    Output MUST be valid JSON with this exact structure:
     {{
-        "en": {{ "title": "Title", "content": "HTML body", "summary": "Summary" }},
-        "ko": {{ "title": "제목", "content": "HTML body", "summary": "요약" }},
-        "pt": {{ "title": "Título", "content": "HTML body", "summary": "Resumo" }}
+        "en": {{ "title": "Engaging English Title", "content": "HTML body", "summary": "Brief summary" }},
+        "ko": {{ "title": "한국어 제목", "content": "HTML body", "summary": "요약" }},
+        "pt": {{ "title": "Título em Português", "content": "HTML body", "summary": "Resumo" }}
     }}
-    The 'content' should use semantic HTML (h2, p, ul, li).
-    Include the chart placeholder [CHART-HERE] where the chart should be.
+    
+    Requirements:
+    - Use semantic HTML (h2, p, ul, li, strong, em)
+    - Include [CHART-HERE] placeholder where the stock chart should appear
+    - Make English content professional and data-driven
+    - Ensure translations maintain the same tone and information
+    - Focus on investment insights, market trends, and actionable analysis
     """
     
     try:
@@ -149,12 +164,15 @@ def generate_multi_lang_content(stock_info, news_text):
         text = response.text.replace('```json', '').replace('```', '').strip()
         return json.loads(text)
     except Exception as e:
-        print(f"[!] Gemini 생성 실패: {e}")
+        print(f"[!] Gemini generation failed: {e}")
         return None
 
 def save_and_index_multi(contents, ticker, chart_url):
-    """3개국어 파일 저장 및 각각의 posts.json 갱신"""
+    """Generate English content first, then save translations to /ko/ and /pt/"""
     today = datetime.datetime.now().strftime("%Y-%m-%d")
+    
+    # English is the primary language (root directory)
+    # Korean and Portuguese are translations (in subdirectories)
     langs = {
         "en": {"dir": "blog", "posts": "posts.json", "prefix": ""},
         "ko": {"dir": "ko/blog", "posts": "ko/posts.json", "prefix": "ko/"},
@@ -194,17 +212,17 @@ def save_and_index_multi(contents, ticker, chart_url):
         else:
             html_body += ad_tag
         
-        # 폴더 생성
+        # Create directory if it doesn't exist
         if not os.path.exists(settings['dir']): os.makedirs(settings['dir'])
         
         filename = f"{today}-{ticker}.html"
         filepath = os.path.join(settings['dir'], filename)
         
-        # HTML 저장
+        # Save HTML file
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(html_body)
             
-        # JSON 갱신
+        # Update posts.json
         posts_path = settings['posts']
         posts = []
         if os.path.exists(posts_path):
@@ -212,7 +230,7 @@ def save_and_index_multi(contents, ticker, chart_url):
                 try: posts = json.load(f)
                 except: posts = []
         
-        # 링크 경로 설정 (root에서의 상대 경로)
+        # Set link path (relative to root)
         link = f"blog/{filename}" # 각 언어 폴더 내부의 posts.json 입장에서는 blog/filename 임
         
         new_post = {"title": title, "date": today, "link": link, "summary": summary}
@@ -221,7 +239,7 @@ def save_and_index_multi(contents, ticker, chart_url):
         with open(posts_path, "w", encoding="utf-8") as f:
             json.dump(posts[:20], f, ensure_ascii=False, indent=4)
             
-    print(f"[*] {ticker} 3개국어 포스팅 완료")
+    print(f"[✓] {ticker} - English content generated with Korean & Portuguese translations")
 
 def main():
     print("=== Volatility Hunter v2.0 ===")
