@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+        crossorigin="anonymous"></script>
+
     <script>
         // Language detection and redirect
         (function () {
@@ -39,7 +44,14 @@
             </nav>
         </header>
 
-        <div class="ad-slot"></div>
+        <!-- Google AdSense - Header Banner -->
+        <div class="ad-slot">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                data-ad-slot="XXXXXXXXXX" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 
         <div class="content-with-sidebar">
             <div class="main-content">
@@ -79,7 +91,14 @@
                     </a>
                 </div>
 
-                <div class="ad-slot"></div>
+                <!-- Google AdSense - In-Content -->
+                <div class="ad-slot">
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                        data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
 
                 <!-- Recent Blog Posts Mini Section -->
                 <section class="blog-section" style="margin-top: 0;">
@@ -94,16 +113,42 @@
                     </div>
                 </section>
             </div>
-            <aside class="ad-slot ad-sidebar"></aside>
+            <!-- Google AdSense - Sidebar -->
+            <aside class="ad-slot ad-sidebar">
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                    data-ad-slot="XXXXXXXXXX" data-ad-format="vertical" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </aside>
         </div>
 
         <footer>
             <div class="footer-content">
                 <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
-                <p class="legal-disclaimer">This content is for informational purposes only and does not constitute
-                    financial advice. Investment involves risk.</p>
+                <div class="legal-disclaimer">
+                    <h4 style="margin-bottom: 0.5rem; font-size: 0.9rem;">⚠️ Legal Disclaimer / 법적 고지</h4>
+                    <p style="font-size: 0.85rem; line-height: 1.6;">
+                        <strong>본 사이트의 모든 정보는 정보 제공 및 교육 목적이며, 투자 자문 또는 투자 권유가 아닙니다.</strong><br>
+                        배당금 및 배당률은 변동될 수 있으며 보장되지 않습니다.<br>
+                        과거의 성과가 미래의 수익을 보장하지 않습니다.<br>
+                        본 사이트의 정보를 이용한 투자 결과에 대해 책임을 지지 않습니다.<br><br>
+                        <em>All information on this site is for informational and educational purposes only and does not
+                            constitute investment advice or recommendations. Dividends and dividend yields may fluctuate
+                            and are not guaranteed. Past performance does not guarantee future returns. We are not
+                            responsible for investment decisions made based on information from this site.</em>
+                    </p>
+                </div>
             </div>
-            <div class="ad-slot"></div>
+            <!-- Google AdSense - Footer -->
+            <div class="ad-slot" style="margin-top: 2rem;">
+                <!-- TODO: Replace with actual AdSense code -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                    data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
         </footer>
     </div>
 

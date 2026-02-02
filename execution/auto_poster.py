@@ -188,30 +188,115 @@ def save_and_index_multi(contents, ticker, chart_url):
         summary = data.get('summary', '')
 
         # HTML content refinement
-        content = data.get('conte nt', '')
+        content = data.get('content', '')
         chart_tag = f'<img src="{chart_url}" alt="{ticker} Chart" style="width:100%; border-radius:12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">'
         
         if "[CHART-HERE]" in content:
-            html_body = content.replace("[CHART-HERE]", chart_tag)
+            article_body = content.replace("[CHART-HERE]", chart_tag)
         else:
             # If placeholder is missing, insert chart after the first heading or at the top
             if "</h2>" in content:
                 parts = content.split("</h2>", 1)
-                html_body = parts[0] + "</h2>" + chart_tag + parts[1]
+                article_body = parts[0] + "</h2>" + chart_tag + parts[1]
             else:
-                html_body = chart_tag + content
+                article_body = chart_tag + content
         
         # AdSense Insertion (Middle of the article)
-        ad_tag = '<div class="ad-in-article" style="min-height: 250px; background: #f9fafb; border: 1px dashed #ddd; margin: 25px 0; display: flex; align-items: center; justify-content: center; color: #999; font-size: 14px;">[ AdSense - In Article ]</div>'
-        if "</p>" in html_body:
-            p_tags = html_body.split("</p>")
+        ad_tag = '''
+        <div class="ad-in-article" style="margin: 30px 0; text-align: center;">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        '''
+        
+        if "</p>" in article_body:
+            p_tags = article_body.split("</p>")
             mid_point = len(p_tags) // 2
             if mid_point > 0:
-                html_body = "</p>".join(p_tags[:mid_point]) + "</p>" + ad_tag + "</p>".join(p_tags[mid_point:])
+                article_body = "</p>".join(p_tags[:mid_point]) + "</p>" + ad_tag + "</p>".join(p_tags[mid_point:])
             else:
-                html_body += ad_tag
+                article_body += ad_tag
         else:
-            html_body += ad_tag
+            article_body += ad_tag
+        
+        # Legal Disclaimer (Korean + English)
+        legal_disclaimer = '''
+        <div class="legal-disclaimer" style="margin-top: 3rem; padding: 1.5rem; background: #f9fafb; border-left: 4px solid #ef4444; border-radius: 8px;">
+            <h4 style="margin-bottom: 0.5rem; font-size: 0.9rem; color: #ef4444;">⚠️ Legal Disclaimer / 법적 고지</h4>
+            <p style="font-size: 0.85rem; line-height: 1.6; color: #666;">
+                <strong>본 사이트의 모든 정보는 정보 제공 및 교육 목적이며, 투자 자문 또는 투자 권유가 아닙니다.</strong><br>
+                배당금 및 배당률은 변동될 수 있으며 보장되지 않습니다.<br>
+                과거의 성과가 미래의 수익을 보장하지 않습니다.<br>
+                본 사이트의 정보를 이용한 투자 결과에 대해 책임을 지지 않습니다.<br><br>
+                <em>All information on this site is for informational and educational purposes only and does not constitute investment advice or recommendations. Dividends and dividend yields may fluctuate and are not guaranteed. Past performance does not guarantee future returns. We are not responsible for investment decisions made based on information from this site.</em>
+            </p>
+        </div>
+        '''
+        
+        # Complete HTML structure
+        html_full = f'''<!DOCTYPE html>
+<html lang="{lang}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} | StockWise.ai</title>
+    <meta name="description" content="{summary[:150]}">
+    <link rel="stylesheet" href="{'../css/style.css' if lang != 'en' else 'css/style.css'}">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">StockWise.ai</div>
+            <nav class="lang-selector">
+                <a href="/ko/blog.html" class="lang-link {'active' if lang == 'ko' else ''}">KO</a>
+                <a href="/blog.html" class="lang-link {'active' if lang == 'en' else ''}">EN</a>
+                <a href="/pt/blog.html" class="lang-link {'active' if lang == 'pt' else ''}">PT</a>
+            </nav>
+        </header>
+        
+        <article style="max-width: 800px; margin: 2rem auto; padding: 0 1rem;">
+            <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">{title}</h1>
+            <p style="color: #666; margin-bottom: 2rem;">📅 {today}</p>
+            
+            {article_body}
+            
+            {legal_disclaimer}
+        </article>
+        
+        <!-- Google AdSense - Footer -->
+        <div class="ad-slot" style="margin: 2rem auto; max-width: 800px;">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
+                <p style="font-size: 0.85rem;"><a href="/" style="color: #666;">← Back to Home</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+'''
         
         # Create directory if it doesn't exist
         if not os.path.exists(settings['dir']): os.makedirs(settings['dir'])
@@ -221,7 +306,7 @@ def save_and_index_multi(contents, ticker, chart_url):
         
         # Save HTML file
         with open(filepath, "w", encoding="utf-8") as f:
-            f.write(html_body)
+            f.write(html_full)
             
         # Update posts.json
         posts_path = settings['posts']
