@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockWise | Market Insights</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        (function () {
+            const userLang = navigator.language || navigator.userLanguage;
+            const hasRedirected = sessionStorage.getItem('redirected');
+            if (!hasRedirected) {
+                sessionStorage.setItem('redirected', 'true');
+                if (userLang.startsWith('ko')) {
+                    window.location.href = '/ko' + window.location.pathname;
+                } else if (userLang.startsWith('pt')) {
+                    window.location.href = '/pt' + window.location.pathname;
+                }
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">StockWise.ai</div>
+            <nav class="lang-selector">
+                <a href="/ko/blog.html" class="lang-link">KO</a>
+                <a href="/blog.html" class="lang-link active">EN</a>
+                <a href="/pt/blog.html" class="lang-link">PT</a>
+            </nav>
+        </header>
+        <div class="content-with-sidebar">
+            <div class="main-content">
+                <section class="blog-section" style="margin-top: 0;">
+                    <h2>Market Insights</h2>
+                    <div id="blogGrid" class="blog-grid"
+                        style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));">
+                        <!-- All posts listed here -->
+                    </div>
+                </section>
+            </div>
+            <aside class="ad-slot ad-sidebar"></aside>
+        </div>
+
+        <div class="ad-slot"></div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
+                <p class="legal-disclaimer">This content is for informational purposes only and does not constitute
+                    financial advice. Investment involves risk.</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        async function loadBlog() {
+            try {
+                const response = await fetch('posts.json');
+                const posts = await response.json();
+                const grid = document.getElementById('blogGrid');
+                grid.innerHTML = '';
+                posts.forEach(post => {
+                    const card = document.createElement('div');
+                    card.className = 'blog-card';
+                    card.onclick = () => window.location.href = post.link;
+                    card.innerHTML = `
+                        <span class="blog-date">${post.date}</span>
+                        <h3>${post.title}</h3>
+                        <p>${post.summary}</p>
+                    `;
+                    grid.appendChild(card);
+                });
+            } catch (e) { console.error(e); }
+        }
+        loadBlog();
+    </script>
+</body>
+
+</html>

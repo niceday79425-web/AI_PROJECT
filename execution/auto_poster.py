@@ -127,15 +127,17 @@ def generate_multi_lang_content(stock_info, news_text):
     change = stock_info['change']
     
     prompt = f"""
-    You are a professional US stock analyst. Write a blog post about {ticker}.
+    You are a professional US stock analyst. Write a highly engaging blog post about {ticker}.
     Current Price: ${price:.2f} ({change:+.2f}%)
     Related News: {news_text}
     
-    Please generate content in 3 languages: Korean (ko), English (en), and Portuguese (pt).
+    Please generate content in 3 languages: English (en), Korean (ko), and Portuguese (pt).
+    English is the primary target language, so ensure the tone is professional and insightful.
+    
     Output MUST be a JSON with this structure:
     {{
-        "ko": {{ "title": "제목", "content": "HTML body", "summary": "요약" }},
         "en": {{ "title": "Title", "content": "HTML body", "summary": "Summary" }},
+        "ko": {{ "title": "제목", "content": "HTML body", "summary": "요약" }},
         "pt": {{ "title": "Título", "content": "HTML body", "summary": "Resumo" }}
     }}
     The 'content' should use semantic HTML (h2, p, ul, li).
@@ -154,8 +156,8 @@ def save_and_index_multi(contents, ticker, chart_url):
     """3개국어 파일 저장 및 각각의 posts.json 갱신"""
     today = datetime.datetime.now().strftime("%Y-%m-%d")
     langs = {
-        "ko": {"dir": "blog", "posts": "posts.json", "prefix": ""},
-        "en": {"dir": "en/blog", "posts": "en/posts.json", "prefix": "en/"},
+        "en": {"dir": "blog", "posts": "posts.json", "prefix": ""},
+        "ko": {"dir": "ko/blog", "posts": "ko/posts.json", "prefix": "ko/"},
         "pt": {"dir": "pt/blog", "posts": "pt/posts.json", "prefix": "pt/"}
     }
     
@@ -167,7 +169,7 @@ def save_and_index_multi(contents, ticker, chart_url):
         summary = data.get('summary', '')
 
         # HTML content refinement
-        content = data.get('content', '')
+        content = data.get('conte nt', '')
         chart_tag = f'<img src="{chart_url}" alt="{ticker} Chart" style="width:100%; border-radius:12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">'
         
         if "[CHART-HERE]" in content:
@@ -179,6 +181,18 @@ def save_and_index_multi(contents, ticker, chart_url):
                 html_body = parts[0] + "</h2>" + chart_tag + parts[1]
             else:
                 html_body = chart_tag + content
+        
+        # AdSense Insertion (Middle of the article)
+        ad_tag = '<div class="ad-in-article" style="min-height: 250px; background: #f9fafb; border: 1px dashed #ddd; margin: 25px 0; display: flex; align-items: center; justify-content: center; color: #999; font-size: 14px;">[ AdSense - In Article ]</div>'
+        if "</p>" in html_body:
+            p_tags = html_body.split("</p>")
+            mid_point = len(p_tags) // 2
+            if mid_point > 0:
+                html_body = "</p>".join(p_tags[:mid_point]) + "</p>" + ad_tag + "</p>".join(p_tags[mid_point:])
+            else:
+                html_body += ad_tag
+        else:
+            html_body += ad_tag
         
         # 폴더 생성
         if not os.path.exists(settings['dir']): os.makedirs(settings['dir'])

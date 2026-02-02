@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockWise | 시장 분석</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script>sessionStorage.setItem('redirected', 'true');</script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">StockWise.ai</div>
+            <nav class="lang-selector">
+                <a href="/ko/blog.html" class="lang-link active">KO</a>
+                <a href="/blog.html" class="lang-link">EN</a>
+                <a href="/pt/blog.html" class="lang-link">PT</a>
+            </nav>
+        </header>
+        <div class="ad-slot"></div>
+        <section class="blog-section">
+            <h2>최신 시장 분석</h2>
+            <div id="blogGrid" class="blog-grid" style="grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));">
+            </div>
+        </section>
+        <div class="ad-slot"></div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
+                <p class="legal-disclaimer">본 콘텐츠는 정보 제공만을 목적으로 하며 금융 조언을 구성하지 않습니다. 투자에는 위험이 따릅니다.</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        async function loadBlog() {
+            try {
+                const response = await fetch('posts.json');
+                const posts = await response.json();
+                const grid = document.getElementById('blogGrid');
+                grid.innerHTML = '';
+                posts.forEach(post => {
+                    const card = document.createElement('div');
+                    card.className = 'blog-card';
+                    card.onclick = () => window.location.href = post.link;
+                    card.innerHTML = `
+                        <span class="blog-date">${post.date}</span>
+                        <h3>${post.title}</h3>
+                        <p>${post.summary}</p>
+                    `;
+                    grid.appendChild(card);
+                });
+            } catch (e) { console.error(e); }
+        }
+        loadBlog();
+    </script>
+</body>
+
+</html>

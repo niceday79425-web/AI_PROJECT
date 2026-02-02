@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockWise | 스노우볼 시뮬레이터</title>
+    <meta name="description" content="미국 주식 배당 재투자 및 복리 수익률을 계산하고 자산 성장 경로를 시뮬레이션 하세요.">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        sessionStorage.setItem('redirected', 'true');
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">StockWise.ai</div>
+            <nav class="lang-selector">
+                <a href="/ko/calculator.html" class="lang-link active">KO</a>
+                <a href="/calculator.html" class="lang-link">EN</a>
+                <a href="/pt/calculator.html" class="lang-link">PT</a>
+            </nav>
+        </header>
+
+        <div class="ad-slot"></div>
+
+        <main class="main-grid">
+            <section class="calculator-card">
+                <div class="card">
+                    <h2>스노우볼 시뮬레이터</h2>
+                    <div class="input-group">
+                        <label for="ticker">티커 (Ticker)</label>
+                        <input type="text" id="ticker" placeholder="예: SCHD, O, AAPL" value="SCHD">
+                    </div>
+                    <div class="input-group">
+                        <label for="initialPrincipal">초기 투자금 ($)</label>
+                        <input type="number" id="initialPrincipal" value="10000">
+                    </div>
+                    <div class="input-group">
+                        <label for="monthlyDeposit">월 적립액 ($)</label>
+                        <input type="number" id="monthlyDeposit" value="500">
+                    </div>
+                    <div class="input-group">
+                        <label for="dividendYield">연 배당률 (%)</label>
+                        <input type="number" id="dividendYield" step="0.1" value="3.5">
+                    </div>
+                    <div class="input-group">
+                        <label for="stockGrowth">연 주가 상승률 (%)</label>
+                        <input type="number" id="stockGrowth" step="0.1" value="5.0">
+                    </div>
+                    <div class="input-group">
+                        <label for="duration">투자 기간 (년)</label>
+                        <input type="number" id="duration" value="10">
+                    </div>
+                    <button id="calculateBtn" class="btn-calculate">계산하기</button>
+                </div>
+            </section>
+
+            <section class="results-container">
+                <div class="summary-stats">
+                    <div class="stat-box">
+                        <span class="label">최종 자산</span>
+                        <div id="finalAsset" class="value">$0</div>
+                    </div>
+                    <div class="stat-box">
+                        <span class="label">총 배당금</span>
+                        <div id="totalDividends" class="value">$0</div>
+                    </div>
+                    <div class="stat-box">
+                        <span class="label">수익률</span>
+                        <div id="totalROI" class="value highlight">0%</div>
+                    </div>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="growthChart"></canvas>
+                </div>
+            </section>
+        </main>
+
+        <div class="ad-slot"></div>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
+                <p class="legal-disclaimer">본 콘텐츠는 정보 제공만을 목적으로 하며 금융 조언을 구성하지 않습니다. 투자에는 위험이 따릅니다.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/calculator.js"></script>
+</body>
+
+</html>

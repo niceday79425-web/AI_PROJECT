@@ -4,14 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StockWise | Calculadora de Juros Compostos de Dividendos</title>
-    <meta name="description"
-        content="Calcule o reinvestimento de dividendos de ações dos EUA e retornos de juros compostos e mantenha-se atualizado com as últimas informações de investimento.">
+    <title>StockWise | Domine sua Renda Passiva</title>
+    <meta name="description" content="Construção de riqueza baseada em dados através de dividendos de ações dos EUA.">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script>
-        // No redirect needed here
         sessionStorage.setItem('redirected', 'true');
     </script>
 </head>
@@ -21,87 +18,96 @@
         <header>
             <div class="logo">StockWise.ai</div>
             <nav class="lang-selector">
-                <a href="/" class="lang-link">KO</a>
-                <a href="/en/" class="lang-link">EN</a>
+                <a href="/ko/" class="lang-link">KO</a>
+                <a href="/" class="lang-link">EN</a>
                 <a href="/pt/" class="lang-link active">PT</a>
             </nav>
         </header>
 
-        <main class="main-grid">
-            <!-- Left: Calculator Inputs -->
-            <section class="calculator-card">
-                <div class="card">
-                    <h2>Calculadora de Dividendos</h2>
-                    <div class="input-group">
-                        <label for="ticker">Ticker</label>
-                        <input type="text" id="ticker" placeholder="ex: SCHD, O, AAPL" value="SCHD">
-                    </div>
-                    <div class="input-group">
-                        <label for="initialPrincipal">Investimento Inicial ($)</label>
-                        <input type="number" id="initialPrincipal" placeholder="0" value="10000">
-                    </div>
-                    <div class="input-group">
-                        <label for="monthlyDeposit">Depósito Mensal ($)</label>
-                        <input type="number" id="monthlyDeposit" placeholder="0" value="500">
-                    </div>
-                    <div class="input-group">
-                        <label for="dividendYield">Rendimento de Dividendos Anual (%)</label>
-                        <input type="number" id="dividendYield" step="0.1" placeholder="0.0" value="3.5">
-                    </div>
-                    <div class="input-group">
-                        <label for="stockGrowth">Crescimento Anual da Ação (%)</label>
-                        <input type="number" id="stockGrowth" step="0.1" placeholder="0.0" value="5.0">
-                    </div>
-                    <div class="input-group">
-                        <label for="duration">Duração do Investimento (Anos)</label>
-                        <input type="number" id="duration" placeholder="0" value="10">
-                    </div>
-                    <button id="calculateBtn" class="btn-calculate">Calcular</button>
-                </div>
-            </section>
+        <div class="ad-slot"></div>
 
-            <!-- Right: Results & Chart -->
-            <section class="results-container">
-                <div class="summary-stats">
-                    <div class="stat-box">
-                        <span class="label">Patrimônio Final</span>
-                        <div id="finalAsset" class="value">$0</div>
-                    </div>
-                    <div class="stat-box">
-                        <span class="label">Total de Dividendos</span>
-                        <div id="totalDividends" class="value">$0</div>
-                    </div>
-                    <div class="stat-box">
-                        <span class="label">ROI</span>
-                        <div id="totalROI" class="value highlight">0%</div>
-                    </div>
-                </div>
+        <section class="hero">
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem; text-align: center;">Domine sua Renda Passiva.</h1>
+            <p style="font-size: 1.25rem; color: var(--text-secondary); text-align: center; margin-bottom: 3rem;">
+                Construção de riqueza baseada em dados para o investidor moderno.</p>
+        </section>
 
-                <div class="chart-wrapper">
-                    <canvas id="growthChart"></canvas>
-                </div>
-            </section>
-        </main>
+        <div class="nav-grid">
+            <a href="list.html" class="nav-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Scouter de Dividendos</h3>
+                <p>Ações de dividendos de alto nível por desempenho e estabilidade.</p>
+            </a>
+            <a href="calculator.html" class="nav-card">
+                <i class="fas fa-calculator"></i>
+                <h3>Simulador Snowball</h3>
+                <p>Calcule seu crescimento composto de longo prazo e rendimento de dividendos.</p>
+            </a>
+            <a href="calendar.html" class="nav-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Calendário de Pagamentos</h3>
+                <p>Nunca perca um pagamento de dividendos. Acompanhe seus próximos pagamentos.</p>
+            </a>
+            <a href="fortune.html" class="nav-card">
+                <i class="fas fa-heart"></i>
+                <h3>Match de Ações</h3>
+                <p>Verifique sua compatibilidade com suas ações favoritas! 💖</p>
+            </a>
+            <a href="blog.html" class="nav-card">
+                <i class="fas fa-newspaper"></i>
+                <h3>Insights de Mercado</h3>
+                <p>Últimas análises e notícias sobre o mercado de ações dos EUA.</p>
+            </a>
+        </div>
 
-        <!-- Blog Section -->
+        <div class="ad-slot"></div>
+
         <section class="blog-section">
-            <h2>Últimas Análises de Mercado</h2>
+            <h2 style="text-align: left; margin-bottom: 1.5rem;">Últimos Insights</h2>
             <div id="blogGrid" class="blog-grid">
-                <!-- posts.json data will be fetched from the local folder -->
                 <div class="blog-card">
                     <span class="blog-date">Carregando...</span>
                     <h3>Buscando dados recentes...</h3>
-                    <p>Por favor, aguarde um momento.</p>
+                    <p>Conectando aos dados do mercado...</p>
                 </div>
             </div>
         </section>
 
         <footer>
-            <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
+            <div class="footer-content">
+                <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
+                <p class="legal-disclaimer">Este conteúdo é apenas para fins informativos e não constitui aconselhamento
+                    financeiro. O investimento envolve risco.</p>
+            </div>
+            <div class="ad-slot"></div>
         </footer>
     </div>
 
-    <script src="../js/calculator.js"></script>
+    <script>
+        async function loadBlog() {
+            try {
+                const response = await fetch('posts.json');
+                const posts = await response.json();
+                const grid = document.getElementById('blogGrid');
+                grid.innerHTML = '';
+
+                posts.slice(0, 3).forEach(post => {
+                    const card = document.createElement('div');
+                    card.className = 'blog-card';
+                    card.onclick = () => window.location.href = post.link;
+                    card.innerHTML = `
+                        <span class="blog-date">${post.date}</span>
+                        <h3>${post.title}</h3>
+                        <p>${post.summary}</p>
+                    `;
+                    grid.appendChild(card);
+                });
+            } catch (e) {
+                console.error("Failed to load blog posts:", e);
+            }
+        }
+        loadBlog();
+    </script>
 </body>
 
 </html>

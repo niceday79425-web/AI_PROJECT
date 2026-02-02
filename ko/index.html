@@ -1,30 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StockWise | Master Your Passive Income</title>
-    <meta name="description"
-        content="Data-driven wealth building through US stock dividends. Calculate ROI, track dividends, and find your match.">
-    <link rel="stylesheet" href="css/style.css">
+    <title>StockWise | 배당 투자 포트폴리오 마스터</title>
+    <meta name="description" content="데이터 기반의 미국 주식 배당 투자 전략. 복리 계산, 배당 일정 추적, 그리고 당신에게 맞는 주식을 찾아보세요.">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script>
-        // Language detection and redirect
-        (function () {
-            const userLang = navigator.language || navigator.userLanguage;
-            const hasRedirected = sessionStorage.getItem('redirected');
-
-            if (!hasRedirected) {
-                sessionStorage.setItem('redirected', 'true');
-                if (userLang.startsWith('ko')) {
-                    window.location.href = '/ko' + window.location.pathname;
-                } else if (userLang.startsWith('pt')) {
-                    window.location.href = '/pt' + window.location.pathname;
-                }
-            }
-        })();
+        sessionStorage.setItem('redirected', 'true');
     </script>
 </head>
 
@@ -33,8 +19,8 @@
         <header>
             <div class="logo">StockWise.ai</div>
             <nav class="lang-selector">
-                <a href="/ko/" class="lang-link">KO</a>
-                <a href="/" class="lang-link active">EN</a>
+                <a href="/ko/" class="lang-link active">KO</a>
+                <a href="/" class="lang-link">EN</a>
                 <a href="/pt/" class="lang-link">PT</a>
             </nav>
         </header>
@@ -44,38 +30,37 @@
         <div class="content-with-sidebar">
             <div class="main-content">
                 <section class="hero">
-                    <h1 style="font-size: 3.5rem; margin-bottom: 1rem; text-align: center;">Master Your Passive Income.
-                    </h1>
+                    <h1 style="font-size: 3.5rem; margin-bottom: 1rem; text-align: center;">스마트한 배당 투자의 시작.</h1>
                     <p
                         style="font-size: 1.25rem; color: var(--text-secondary); text-align: center; margin-bottom: 3rem;">
-                        Data-driven wealth building for the modern investor.</p>
+                        현명한 투자자를 위한 데이터 기반 자산 증식 가이드.</p>
                 </section>
 
                 <div class="nav-grid">
                     <a href="list.html" class="nav-card">
                         <i class="fas fa-chart-line"></i>
-                        <h3>Dividend Scouter</h3>
-                        <p>Top-rated dividend stocks by performance and stability.</p>
+                        <h3>배당 스카우터</h3>
+                        <p>성과와 안정성을 바탕으로 한 최우량 배당주 리스트.</p>
                     </a>
                     <a href="calculator.html" class="nav-card">
                         <i class="fas fa-calculator"></i>
-                        <h3>Snowball Simulator</h3>
-                        <p>Calculate your long-term compound growth and dividend yield.</p>
+                        <h3>스노우볼 시뮬레이터</h3>
+                        <p>장기 복리 성장과 예상 배당 수익을 정밀하게 계산합니다.</p>
                     </a>
                     <a href="calendar.html" class="nav-card">
                         <i class="fas fa-calendar-alt"></i>
-                        <h3>Payday Calendar</h3>
-                        <p>Never miss a dividend payment. Track your upcoming payouts.</p>
+                        <h3>배당 캘린더</h3>
+                        <p>배당금 지급일을 놓치지 마세요. 예상 수령액을 확인하세요.</p>
                     </a>
                     <a href="fortune.html" class="nav-card">
                         <i class="fas fa-heart"></i>
-                        <h3>Stock Gung-hap</h3>
-                        <p>Check your compatibility with your favorite stocks! 💖</p>
+                        <h3>주식 궁합</h3>
+                        <p>관심 있는 주식과 당신의 투자 궁합을 재미로 확인해보세요! 💖</p>
                     </a>
                     <a href="blog.html" class="nav-card">
                         <i class="fas fa-newspaper"></i>
-                        <h3>Market Insights</h3>
-                        <p>Latest analysis and news on the US stock market.</p>
+                        <h3>마켓 인사이트</h3>
+                        <p>미국 주식 시장에 대한 최신 분석과 투자 전략.</p>
                     </a>
                 </div>
 
@@ -83,13 +68,13 @@
 
                 <!-- Recent Blog Posts Mini Section -->
                 <section class="blog-section" style="margin-top: 0;">
-                    <h2 style="text-align: left; margin-bottom: 1.5rem;">Latest Insights</h2>
+                    <h2 style="text-align: left; margin-bottom: 1.5rem;">최신 인사이트</h2>
                     <div id="blogGrid" class="blog-grid">
                         <!-- posts.json dynamic load -->
                         <div class="blog-card">
-                            <span class="blog-date">Loading...</span>
-                            <h3>Fetching latest data...</h3>
-                            <p>Connecting to market data...</p>
+                            <span class="blog-date">로딩 중...</span>
+                            <h3>데이터를 불러오는 중...</h3>
+                            <p>시장 분석 정보를 가져오고 있습니다.</p>
                         </div>
                     </div>
                 </section>
@@ -100,8 +85,7 @@
         <footer>
             <div class="footer-content">
                 <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
-                <p class="legal-disclaimer">This content is for informational purposes only and does not constitute
-                    financial advice. Investment involves risk.</p>
+                <p class="legal-disclaimer">본 콘텐츠는 정보 제공만을 목적으로 하며 금융 조언을 구성하지 않습니다. 모든 투자의 책임은 투자자 본인에게 있습니다.</p>
             </div>
             <div class="ad-slot"></div>
         </footer>

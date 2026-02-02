@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Wise | 주식 궁합</title>
+    <meta name="description" content="종목과 나의 궁합을 확인하세요! 초고속 궁합 매칭 알고리즘.">
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        sessionStorage.setItem('redirected', 'true');
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">StockWise.ai</div>
+            <nav class="lang-selector">
+                <a href="/ko/fortune.html" class="lang-link active">KO</a>
+                <a href="/fortune.html" class="lang-link">EN</a>
+                <a href="/pt/fortune.html" class="lang-link">PT</a>
+            </nav>
+        </header>
+
+        <div class="ad-slot"></div>
+
+        <main style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <section class="card fortune-card">
+                <h2>주식 궁합 확인하기 💖</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">이름과 티커를 입력하고 운명의 종목을 찾아보세요!</p>
+
+                <div class="input-group">
+                    <label for="userName">사용자 이름</label>
+                    <input type="text" id="userName" placeholder="이름을 입력하세요">
+                </div>
+                <div class="input-group">
+                    <label for="tickerName">주식 티커</label>
+                    <input type="text" id="tickerName" placeholder="예: AAPL, SCHD, TSLA">
+                </div>
+
+                <button onclick="checkCompatibility()" class="btn-calculate">궁합 확인하기</button>
+
+                <div id="result" class="result-display">
+                    <div id="matchText" style="font-size: 1.25rem; font-weight: 600;">계산 중...</div>
+                    <div id="score" class="score-value">0%</div>
+                    <p id="comment" style="color: var(--text-secondary);"></p>
+                </div>
+            </section>
+        </main>
+
+        <div class="ad-slot"></div>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
+                <p class="legal-disclaimer">본 콘텐츠는 정보 제공만을 목적으로 하며 금융 조언을 구성하지 않습니다. 투자에는 위험이 따릅니다.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function checkCompatibility() {
+            const name = document.getElementById('userName').value.trim();
+            const ticker = document.getElementById('tickerName').value.trim().toUpperCase();
+
+            if (!name || !ticker) {
+                alert("이름과 티커를 모두 입력해주세요!");
+                return;
+            }
+
+            const resultDiv = document.getElementById('result');
+            const scoreDisplay = document.getElementById('score');
+            const commentDisplay = document.getElementById('comment');
+            const matchText = document.getElementById('matchText');
+
+            let combined = name + ticker;
+            let hash = 0;
+            for (let i = 0; i < combined.length; i++) {
+                hash = ((hash << 5) - hash) + combined.charCodeAt(i);
+                hash |= 0;
+            }
+
+            let score = Math.abs(hash % 101);
+
+            resultDiv.style.display = 'block';
+            matchText.innerText = `${name} + ${ticker}`;
+            scoreDisplay.innerText = `${score}%`;
+
+            let comment = "";
+            if (score >= 90) comment = "찰떡궁합! 💖 이 종목은 당신의 소울메이트일지도 모릅니다.";
+            else if (score >= 70) comment = "환상적인 케미! 📈 포트폴리오에 든든한 동반자가 될 거예요.";
+            else if (score >= 50) comment = "나쁘지 않은 만남! 👍 장기적인 관점에서 지켜보세요.";
+            else if (score >= 30) comment = "조금은 서먹한 사이... 😅 신중하게 접근할 필요가 있어요.";
+            else comment = "우리는 그냥 친구 사이. 📉 다른 인연을 찾아보는 건 어떨까요?";
+
+            commentDisplay.innerText = comment;
+        }
+    </script>
+</body>
+
+</html>

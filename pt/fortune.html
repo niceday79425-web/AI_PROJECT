@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Wise | Stock Gung-hap</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script>sessionStorage.setItem('redirected', 'true');</script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">StockWise.ai</div>
+            <nav class="lang-selector">
+                <a href="/ko/fortune.html" class="lang-link">KO</a>
+                <a href="/fortune.html" class="lang-link">EN</a>
+                <a href="/pt/fortune.html" class="lang-link active">PT</a>
+            </nav>
+        </header>
+        <div class="ad-slot"></div>
+        <main style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <section class="card fortune-card">
+                <h2>Verifique sua Compatibilidade 💖</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">Digite seu nome e o ticker da ação para
+                    ver se vocês são o par perfeito!</p>
+                <div class="input-group"><label for="userName">Seu Nome</label><input type="text" id="userName"></div>
+                <div class="input-group"><label for="tickerName">Ticker da Ação</label><input type="text"
+                        id="tickerName"></div>
+                <button onclick="checkCompatibility()" class="btn-calculate">Revelar Nosso Destino</button>
+                <div id="result" class="result-display">
+                    <div id="matchText" style="font-size: 1.25rem; font-weight: 600;">Calculando...</div>
+                    <div id="score" class="score-value">0%</div>
+                    <p id="comment" style="color: var(--text-secondary);"></p>
+                </div>
+            </section>
+        </main>
+        <div class="ad-slot"></div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
+                <p class="legal-disclaimer">Este conteúdo é apenas para fins informativos e não constitui aconselhamento
+                    financeiro. O investimento envolve risco.</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function checkCompatibility() {
+            const name = document.getElementById('userName').value.trim();
+            const ticker = document.getElementById('tickerName').value.trim().toUpperCase();
+            if (!name || !ticker) { alert("Digite seu nome e um ticker!"); return; }
+            const resultDiv = document.getElementById('result');
+            const scoreDisplay = document.getElementById('score');
+            const commentDisplay = document.getElementById('comment');
+            const matchText = document.getElementById('matchText');
+            let combined = name + ticker;
+            let hash = 0;
+            for (let i = 0; i < combined.length; i++) { hash = ((hash << 5) - hash) + combined.charCodeAt(i); hash |= 0; }
+            let score = Math.abs(hash % 101);
+            resultDiv.style.display = 'block';
+            matchText.innerText = `${name} + ${ticker}`;
+            scoreDisplay.innerText = `${score}%`;
+            let comment = "";
+            if (score >= 90) comment = "Par Perfeito! 💖 Esta ação pode ser sua alma gêmea.";
+            else if (score >= 70) comment = "Ótima Química! 📈 Uma adição sólida ao seu portfólio.";
+            else if (score >= 50) comment = "Bom Potencial! 👍 Explore mais para crescimento de longo prazo.";
+            else if (score >= 30) comment = "É Complicado... 😅 Prossiga com cautela.";
+            else comment = "Melhor como Amigos. 📉 Talvez procure outras oportunidades.";
+            commentDisplay.innerText = comment;
+        }
+    </script>
+</body>
+
+</html>
