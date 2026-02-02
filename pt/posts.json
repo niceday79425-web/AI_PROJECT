@@ -1,20 +1,80 @@
 [
     {
-        "title": "Google (GOOGL): Impulsionando o Futuro com IA e Nuvem, Navegando em um Cenário Tecnológico Dinâmico",
-        "date": "2026-01-29",
-        "link": "blog/2026-01-29-GOOGL.html",
-        "summary": "A Alphabet (GOOGL) está estrategicamente posicionada para o crescimento futuro, impulsionada por sua liderança em Inteligência Artificial (IA) e pelo alcance crescente do Google Cloud. Apesar de um cenário tecnológico dinâmico e pressões competitivas, seus negócios principais de pesquisa e publicidade permanecem resilientes. Os investimentos profundos da GOOGL em IA, exemplificados pelo Gemini, estão se integrando em todo o seu ecossistema, enquanto o Google Cloud continua a ganhar força no mercado empresarial. Os investidores devem considerar a GOOGL como uma aposta de longo prazo na inovação e na transformação digital."
+        "title": "GOOGL Navega em um Mercado de \"Aversão ao Risco\": Um Gigante da Tecnologia Sob Escrutínio",
+        "date": "2026-02-01",
+        "link": "blog/2026-02-01-GOOGL.html",
+        "summary": "A Alphabet (GOOGL) enfrenta um escrutínio crescente à medida que o mercado se move para um sentimento de \"aversão ao risco\" antes de uma intensa semana de balanços e dados cruciais de empregos. Como um termômetro da economia digital, seu desempenho em publicidade, nuvem e IA será crucial em meio à incerteza econômica e à volatilidade do setor de tecnologia. Os investidores devem observar sinais de resiliência e execução estratégica para navegar em potenciais ventos contrários de curto prazo, reconhecendo suas forças de longo prazo."
     },
     {
-        "title": "Microsoft (MSFT): Navegando Quedas de Curto Prazo em Meio à Ambição de IA de Longo Prazo",
+        "title": "Apple (AAPL): A Postura de uma Referência em um Mercado de Tecnologia Tumultuado",
+        "date": "2026-02-01",
+        "link": "blog/2026-02-01-AAPL.html",
+        "summary": "À medida que o mercado mais amplo adota uma postura de aversão ao risco e uma semana intensa de resultados se aproxima para o setor de tecnologia, a Apple (AAPL) se encontra em um período de escrutínio elevado. Embora notícias diretas sobre a AAPL sejam escassas, a \"queda da Microsoft\" e os próximos relatórios de pares como Google e Amazon estabelecem um tom cauteloso. Apesar desses ventos contrários, os pontos fortes fundamentais da AAPL — seu ecossistema resiliente, forte lealdade à marca e balanço robusto — a posicionam como um potencial farol de estabilidade. Os investidores devem observar atentamente sua próxima teleconferência de resultados e os sinais econômicos mais amplos para avaliar sua trajetória."
+    },
+    {
+        "title": "Google (GOOGL): Navegando na Fronteira da IA com o Valor Acelerado da Waymo",
+        "date": "2026-01-31",
+        "link": "blog/2026-01-31-GOOGL.html",
+        "summary": "A Alphabet (GOOGL) está na vanguarda da revolução da IA com seus modelos e integrações avançados, apesar da feroz concorrência. Crucialmente, sua subsidiária de direção autônoma, Waymo, está ganhando tração e avaliação significativas, potencialmente desbloqueando um valor substancial para os acionistas. Apoiada por negócios principais robustos como Search e YouTube, a GOOGL apresenta uma forte oportunidade de investimento de longo prazo impulsionada pela inovação e avenidas de crescimento diversificadas."
+    },
+    {
+        "title": "Microsoft (MSFT): A Gigante Inabalável na Era da IA",
+        "date": "2026-01-31",
+        "link": "blog/2026-01-31-MSFT.html",
+        "summary": "A Microsoft (MSFT) lidera a indústria de tecnologia com forte atuação em nuvem (Azure), produtividade (Office 365) e IA (OpenAI e Copilot). Apesar da ausência de dados de preço atuais, a MSFT é um ator central na revolução da IA, bem posicionada para crescimento sustentado nos mercados corporativo e de consumo. Seus fundamentos robustos a tornam um investimento potencialmente atraente a longo prazo."
+    },
+    {
+        "title": "Apple (AAPL): Navegando na Era da \"IA Física\" e Além",
+        "date": "2026-01-31",
+        "link": "blog/2026-01-31-AAPL.html",
+        "summary": "A Apple (AAPL) continua sendo uma gigante da tecnologia, impulsionada por seu ecossistema robusto, forte lealdade à marca e um segmento de serviços em crescimento. Embora enfrente saturação de mercado e escrutínio regulatório, a empresa está se posicionando estrategicamente para o crescimento futuro através de uma integração mais profunda de IA em seus dispositivos, o nascente Vision Pro e a expansão para mercados emergentes. Seu balanço sólido e inovação consistente sustentam seu apelo de investimento de longo prazo."
+    },
+    {
+        "title": "Intel (INTC): O Caminho Rochoso de um Gigante Legado Rumo à Ressurgência",
+        "date": "2026-01-30",
+        "link": "blog/2026-01-30-INTC.html",
+        "summary": "Uma análise detalhada da posição atual da Intel no mercado, os desafios que enfrenta em um cenário de semicondutores competitivo e suas iniciativas estratégicas como IDM 2.0 e foco em IA. Exploramos se a recente queda apresenta uma oportunidade de compra ou destaca riscos contínuos para este gigante da tecnologia em evolução."
+    },
+    {
+        "title": "AMD: Navegando na Onda da IA em Meio à Volatilidade Diária",
+        "date": "2026-01-30",
+        "link": "blog/2026-01-30-AMD.html",
+        "summary": "As ações da AMD tiveram uma queda de 6,13% hoje, para US$ 236,73. Apesar dessa volatilidade de curto prazo, a empresa continua sendo um player chave na revolução da IA com seus aceleradores MI300X. Seu portfólio diversificado em data center, cliente, jogos e segmentos embarcados oferece resiliência, enquanto a IA representa o principal motor de crescimento. A queda pode ser uma flutuação de curto prazo, mas o posicionamento estratégico de longo prazo em IA torna a AMD uma proposta atraente para investidores pacientes."
+    },
+    {
+        "title": "Verizon (VZ) Dispara: Uma Análise Mais Profunda sobre a Recente Valorização da Gigante das Telecomunicações",
+        "date": "2026-01-30",
+        "link": "blog/2026-01-30-VZ.html",
+        "summary": "A Verizon (VZ) registrou um salto significativo de preço em um único dia, reacendendo o interesse dos investidores no setor de telecomunicações. Esta publicação investiga os potenciais impulsionadores por trás desse forte desempenho, avalia a posição competitiva da Verizon e explora suas perspectivas em meio à evolução das dinâmicas de mercado e seu apelo consistente aos investidores que buscam renda."
+    },
+    {
+        "title": "A Prova de Volatilidade do Ethereum: Navegando no ETH-USD em Meio a Sinais de Mercado Mistos",
+        "date": "2026-01-29",
+        "link": "blog/2026-01-29-ETH-USD.html",
+        "summary": "O Ethereum (ETH) caiu 6.23% para $2819.38 hoje, demonstrando volatilidade significativa. Sinais mistos do mercado de ações (queda dos futuros do Dow, ascensão da Apple, resultados mistos de Big Tech) influenciam o apetite geral por risco dos investidores, incluindo para cripto. A força de longo prazo do ETH reside em seus fundamentos como plataforma de contratos inteligentes, seu ecossistema DeFi e NFT, atualizações contínuas de rede e potencial aprovação de ETF à vista. Os investidores devem estar cientes da volatilidade, dos fatores macroeconômicos e focar na inovação e adoção de longo prazo do Ethereum."
+    },
+    {
+        "title": "Queda Acentuada da Microsoft: Um Ponto Fora da Curva ou Uma Oportunidade de Compra?",
         "date": "2026-01-29",
         "link": "blog/2026-01-29-MSFT.html",
-        "summary": "A Microsoft (MSFT) recentemente teve uma queda de 6% na negociação em Frankfurt após os resultados, potencialmente indicando decepção do mercado ou orientação cautelosa. No entanto, a empresa continua sendo um player líder em IA e computação em nuvem, com fortes perspectivas de crescimento para o Azure e integração de IA. Notícias irrelevantes, como tempestades de inverno ou ações corporativas de outras empresas, não afetam a análise central da MSFT. A recente queda pode oferecer uma oportunidade de compra para investidores de longo prazo que apostam na liderança estratégica da Microsoft em IA e nuvem."
+        "summary": "A Microsoft (MSFT) registrou uma queda significativa de quase 10%, para $433.50, em meio a uma semana de resultados mistos no setor de tecnologia. Esta análise argumenta que, apesar do forte recuo, os pontos fortes fundamentais da Microsoft — domínio na nuvem (Azure), produtividade (Office 365), jogos e investimentos agressivos em IA — permanecem robustos. A queda é provavelmente atribuível à volatilidade mais ampla do mercado, realização de lucros ou uma mudança temporária de sentimento, em vez de problemas subjacentes nos negócios. Para investidores de longo prazo, essa desaceleração temporária pode apresentar uma oportunidade de compra atraente para uma líder de tecnologia resiliente e inovadora com substanciais catalisadores de crescimento futuro."
     },
     {
-        "title": "Apple (AAPL): Navegando pelo Cenário Tecnológico com Inabalável Força do Ecossistema",
+        "title": "Meta Platforms (META) Dispara: Uma Análise Aprofundada do seu Desempenho Mais Recente",
+        "date": "2026-01-29",
+        "link": "blog/2026-01-29-META.html",
+        "summary": "A Meta Platforms (META) registou um impressionante aumento de 10.40% hoje, fechando a $738.31, impulsionado em grande parte pela forte confiança dos investidores no seu negócio principal de publicidade, ganhos de eficiência e esforços de monetização da IA. Esta subida significativa destaca-se num mercado mais amplo misto, sugerindo catalisadores positivos específicos da empresa e uma potencial reavaliação da ação. O desempenho futuro dependerá do crescimento sustentado da publicidade, da integração da IA e de gastos disciplinados."
+    },
+    {
+        "title": "Google (GOOGL): Navegando na Fronteira da IA em Meio a um Frenesi de Gastos em Tecnologia",
+        "date": "2026-01-29",
+        "link": "blog/2026-01-29-GOOGL.html",
+        "summary": "Alphabet (GOOGL) é uma gigante da tecnologia fortemente investida em Inteligência Artificial. Apesar de dados de preços atuais indisponíveis, sua posição estratégica em IA, especialmente em meio a um 'Frenesi de Gastos em IA' global por grandes empresas de tecnologia, é um vento favorável significativo. A forte fundação de IA do Google, do Gemini ao Google Cloud, a posiciona para participar e lucrar com a demanda acelerada por infraestrutura e serviços de IA. Sua extensa P&D e vasto ecossistema fornecem uma vantagem competitiva para o crescimento a longo prazo."
+    },
+    {
+        "title": "Apple (AAPL): Navegando na Onda da IA com a Força do Ecossistema",
         "date": "2026-01-29",
         "link": "blog/2026-01-29-AAPL.html",
-        "summary": "Apesar da ausência de dados de preço em tempo real, a Apple (AAPL) continua a ser um titã no mundo da tecnologia. Seu robusto ecossistema de hardware, software e serviços, juntamente com uma lealdade de marca inigualável e uma forte posição financeira, sustenta seu apelo de investimento a longo prazo. Com investimentos estratégicos em IA e o crescimento contínuo de seus serviços, a Apple está posicionada para relevância e inovação sustentadas."
+        "summary": "A Apple (AAPL) é uma líder tecnológica global com um ecossistema forte e resiliência financeira, impulsionada pelo crescimento dos serviços. Embora a indústria de tecnologia esteja focada em investimentos em IA, a estratégia da Apple tem sido historicamente em IA no dispositivo e com foco na privacidade. A questão é como a Apple se posicionará na IA generativa, com futuras atualizações de software e hardware sendo cruciais. A empresa enfrenta desafios como saturação de mercado e regulamentação, mas possui oportunidades em novos produtos (como o Vision Pro) e expansão de serviços. A tese de investimento de longo prazo permanece robusta, mas a estratégia de IA é um ponto de observação chave."
     }
 ]
