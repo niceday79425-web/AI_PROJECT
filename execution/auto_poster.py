@@ -179,7 +179,8 @@ def save_and_index_multi(contents, ticker, chart_url):
         "ko": {"dir": "ko/blog", "posts": "ko/posts.json", "prefix": "ko/"},
         "pt": {"dir": "pt/blog", "posts": "pt/posts.json", "prefix": "pt/"}
     }
-    
+     
+     
     for lang, settings in langs.items():
         if lang not in contents: continue
         
