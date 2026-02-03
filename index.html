@@ -100,8 +100,62 @@
                     </script>
                 </div>
 
+                <!-- Premium Dividend Insights Section -->
+                <section class="dividend-insights" style="margin-top: 3rem;">
+                    <h2 style="text-align: left; margin-bottom: 1rem;">🏆 Premium Dividend Insights</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                        Top-rated dividend stocks analyzed by performance, stability, and yield.
+                    </p>
+
+                    <!-- Controls -->
+                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                        <input type="text" id="searchBox" placeholder="Search by ticker or name..."
+                            style="flex: 1; min-width: 200px; padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
+                        <select id="gradeFilter"
+                            style="padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
+                            <option value="all">All Grades</option>
+                            <option value="S등급">S등급 (Premium)</option>
+                            <option value="A등급">A등급 (Excellent)</option>
+                            <option value="B등급">B등급 (Good)</option>
+                            <option value="C등급">C등급 (Fair)</option>
+                        </select>
+                        <select id="sortBy"
+                            style="padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
+                            <option value="yield">Sort by Yield</option>
+                            <option value="ticker">Sort by Ticker</option>
+                            <option value="grade">Sort by Grade</option>
+                        </select>
+                    </div>
+
+                    <!-- Dividend Table -->
+                    <div style="overflow-x: auto;">
+                        <table id="dividendTable"
+                            style="width: 100%; border-collapse: collapse; background: #1a1a1a; border-radius: 12px; overflow: hidden;">
+                            <thead style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                <tr>
+                                    <th style="padding: 1rem; text-align: left; font-weight: 600;">Ticker</th>
+                                    <th style="padding: 1rem; text-align: left; font-weight: 600;">Company</th>
+                                    <th style="padding: 1rem; text-align: right; font-weight: 600;">Yield</th>
+                                    <th style="padding: 1rem; text-align: center; font-weight: 600;">Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dividendTableBody">
+                                <tr>
+                                    <td colspan="4" style="padding: 2rem; text-align: center; color: #666;">
+                                        Loading dividend data...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p id="stockCount" style="margin-top: 1rem; color: #666; font-size: 0.9rem; text-align: right;">
+                        Showing 0 stocks
+                    </p>
+                </section>
+
                 <!-- Recent Blog Posts Mini Section -->
-                <section class="blog-section" style="margin-top: 0;">
+                <section class="blog-section" style="margin-top: 3rem;">
                     <h2 style="text-align: left; margin-bottom: 1.5rem;">Latest Insights</h2>
                     <div id="blogGrid" class="blog-grid">
                         <!-- posts.json dynamic load -->
@@ -177,6 +231,100 @@
             }
         }
         loadBlog();
+    </script>
+
+    <!-- Script to load Dividend Insights -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let dividendData = [];
+
+            // DOM Elements
+            const tableBody = document.getElementById('dividendTableBody');
+            const searchBox = document.getElementById('searchBox');
+            const gradeFilter = document.getElementById('gradeFilter');
+            const sortBy = document.getElementById('sortBy');
+            const stockCount = document.getElementById('stockCount');
+
+            // Grade Badge Component
+            const getGradeBadge = (grade) => {
+                const colors = {
+                    'S등급': 'background: linear-gradient(135deg, #FFD700 0%, #FDB931 100%); color: black; box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);',
+                    'A등급': 'background: #10B981; color: white;',
+                    'B등급': 'background: #3B82F6; color: white;',
+                    'C등급': 'background: #6B7280; color: white;'
+                };
+                const style = colors[grade] || 'background: #6B7280; color: white;';
+                const label = grade.replace('등급', ''); // Show 'S', 'A', 'B' only
+                return `<span style="padding: 4px 12px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; ${style}">${grade}</span>`;
+            };
+
+            // Render Table
+            const renderTable = (data) => {
+                tableBody.innerHTML = '';
+
+                if (data.length === 0) {
+                    tableBody.innerHTML = `<tr><td colspan="4" style="padding: 2rem; text-align: center; color: #666;">No stocks found matching your criteria.</td></tr>`;
+                    stockCount.textContent = `Showing 0 stocks`;
+                    return;
+                }
+
+                data.forEach(stock => {
+                    const row = document.createElement('tr');
+                    row.style.borderBottom = '1px solid #333';
+                    row.innerHTML = `
+                        <td style="padding: 1rem; font-weight: bold; color: #fff;">${stock.ticker}</td>
+                        <td style="padding: 1rem; color: #ccc;">${stock.name}</td>
+                        <td style="padding: 1rem; text-align: right; color: #4ADE80; font-weight: bold;">${stock.dividend_yield}%</td>
+                        <td style="padding: 1rem; text-align: center;">${getGradeBadge(stock.grade)}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+
+                stockCount.textContent = `Showing ${data.length} stocks`;
+            };
+
+            // Filter and Sort Logic
+            const filterAndSort = () => {
+                const searchTerm = searchBox.value.toLowerCase();
+                const gradeTerm = gradeFilter.value;
+                const sortType = sortBy.value;
+
+                let filtered = dividendData.filter(stock => {
+                    const matchesSearch = stock.ticker.toLowerCase().includes(searchTerm) ||
+                        stock.name.toLowerCase().includes(searchTerm);
+                    const matchesGrade = gradeTerm === 'all' || stock.grade === gradeTerm;
+                    return matchesSearch && matchesGrade;
+                });
+
+                filtered.sort((a, b) => {
+                    if (sortType === 'yield') return b.dividend_yield - a.dividend_yield;
+                    if (sortType === 'ticker') return a.ticker.localeCompare(b.ticker);
+                    if (sortType === 'grade') {
+                        const grades = { 'S등급': 4, 'A등급': 3, 'B등급': 2, 'C등급': 1 };
+                        return grades[b.grade] - grades[a.grade];
+                    }
+                });
+
+                renderTable(filtered);
+            };
+
+            // Initial Load
+            fetch('dividend_insights.json')
+                .then(response => response.json())
+                .then(data => {
+                    dividendData = data.stocks;
+                    filterAndSort(); // Initial render
+                })
+                .catch(err => {
+                    console.error('Error loading dividend data:', err);
+                    tableBody.innerHTML = `<tr><td colspan="4" style="padding: 2rem; text-align: center; color: #ef4444;">Failed to load data. Please try again later.</td></tr>`;
+                });
+
+            // Event Listeners
+            searchBox.addEventListener('input', filterAndSort);
+            gradeFilter.addEventListener('change', filterAndSort);
+            sortBy.addEventListener('change', filterAndSort);
+        });
     </script>
 </body>
 
