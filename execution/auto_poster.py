@@ -258,7 +258,7 @@ def save_and_index_multi(contents, ticker, chart_url):
 <body>
     <div class="container">
         <header>
-            <div class="logo">StockWise.ai</div>
+            <a href="{'/' if lang == 'en' else '/' + lang + '/'}" class="logo">StockWise.ai</a>
             <nav class="lang-selector">
                 <a href="/ko/blog.html" class="lang-link {'active' if lang == 'ko' else ''}">KO</a>
                 <a href="/blog.html" class="lang-link {'active' if lang == 'en' else ''}">EN</a>

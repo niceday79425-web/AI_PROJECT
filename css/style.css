@@ -60,6 +60,9 @@ header {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -0.5px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .lang-selector {
