@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StockWise | 배당 스카우터</title>
+    <title>StockWise | 우량 배당주 등급표</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -21,47 +21,165 @@
         <div class="ad-slot"></div>
         <main>
             <section class="card">
-                <h2>우량 배당주 등급표</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem;">수익성과 안정성을 고려한 최상위 배당주 리스트입니다.</p>
-                <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-                    <thead>
-                        <tr
-                            style="border-bottom: 1px solid var(--border-color); color: var(--text-secondary); text-align: left;">
-                            <th style="padding: 1rem;">티커</th>
-                            <th style="padding: 1rem;">종목명</th>
-                            <th style="padding: 1rem;">배당률</th>
-                            <th style="padding: 1rem;">등급</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="border-bottom: 1px solid var(--border-color);">
-                            <td style="padding: 1rem; font-weight: 600;">SCHD</td>
-                            <td style="padding: 1rem;">Schwab US Dividend Equity ETF</td>
-                            <td style="padding: 1rem; color: var(--success);">3.45%</td>
-                            <td style="padding: 1rem;"><span
-                                    style="background: var(--primary-gradient); padding: 4px 8px; border-radius: 4px; font-size: 0.75rem;">S-등급</span>
-                            </td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);">
-                            <td style="padding: 1rem; font-weight: 600;">O</td>
-                            <td style="padding: 1rem;">Realty Income Corp</td>
-                            <td style="padding: 1rem; color: var(--success);">5.21%</td>
-                            <td style="padding: 1rem;"><span
-                                    style="background: var(--secondary-gradient); padding: 4px 8px; border-radius: 4px; font-size: 0.75rem;">A-등급</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h2>🏆 프리미엄 배당주 인사이트</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                    독자적인 등급 시스템으로 분석한 50개 이상의 우량 배당주 목록입니다.
+                </p>
+
+                <!-- Controls -->
+                <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                    <input type="text" id="searchBox" placeholder="티커 또는 회사명 검색..."
+                        style="flex: 1; min-width: 200px; padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
+                    <select id="gradeFilter"
+                        style="padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
+                        <option value="all">모든 등급</option>
+                        <option value="S등급">S등급 (최우수)</option>
+                        <option value="A등급">A등급 (우수)</option>
+                        <option value="B등급">B등급 (양호)</option>
+                        <option value="C등급">C등급 (보통)</option>
+                    </select>
+                    <select id="sortBy"
+                        style="padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
+                        <option value="yield">배당률순 정렬</option>
+                        <option value="ticker">티커순 정렬</option>
+                        <option value="grade">등급순 정렬</option>
+                    </select>
+                </div>
+
+                <div style="overflow-x: auto;">
+                    <table id="dividendTable"
+                        style="width: 100%; border-collapse: collapse; margin-top: 1rem; background: #1a1a1a; border-radius: 12px; overflow: hidden;">
+                        <thead style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <tr style="color: white; text-align: left;">
+                                <th style="padding: 1rem;">티커</th>
+                                <th style="padding: 1rem;">종목명</th>
+                                <th style="padding: 1rem; text-align: right;">배당률</th>
+                                <th style="padding: 1rem; text-align: center;">등급</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dividendTableBody">
+                            <tr>
+                                <td colspan="4" style="padding: 2rem; text-align: center; color: #666;">
+                                    배당주 데이터를 불러오는 중...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p id="stockCount" style="margin-top: 1rem; color: #666; font-size: 0.9rem; text-align: right;">
+                    0개 종목 표시 중
+                </p>
             </section>
         </main>
         <div class="ad-slot"></div>
         <footer>
             <div class="footer-content">
-                <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
-                <p class="legal-disclaimer">본 콘텐츠는 정보 제공만을 목적으로 하며 금융 조언을 구성하지 않습니다. 투자에는 위험이 따릅니다.</p>
+                <p>&copy; 2026 StockWise.ai - 스마트 배당 투자</p>
+                <div class="legal-disclaimer">
+                    <h4 style="margin-bottom: 0.5rem; font-size: 0.9rem;">⚠️ Legal Disclaimer / 법적 고지</h4>
+                    <p style="font-size: 0.85rem; line-height: 1.6;">
+                        <strong>본 사이트의 모든 정보는 정보 제공 및 교육 목적이며, 투자 자문 또는 투자 권유가 아닙니다.</strong><br>
+                        배당금 및 배당률은 변동될 수 있으며 보장되지 않습니다.<br>
+                        과거의 성과가 미래의 수익을 보장하지 않습니다.<br>
+                        본 사이트의 정보를 이용한 투자 결과에 대해 책임을 지지 않습니다.
+                    </p>
+                </div>
             </div>
         </footer>
     </div>
+
+    <!-- Script to load Dividend Insights -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let dividendData = [];
+
+            // DOM Elements
+            const tableBody = document.getElementById('dividendTableBody');
+            const searchBox = document.getElementById('searchBox');
+            const gradeFilter = document.getElementById('gradeFilter');
+            const sortBy = document.getElementById('sortBy');
+            const stockCount = document.getElementById('stockCount');
+
+            // Grade Badge Component
+            const getGradeBadge = (grade) => {
+                const colors = {
+                    'S등급': 'background: linear-gradient(135deg, #FFD700 0%, #FDB931 100%); color: black; box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);',
+                    'A등급': 'background: #10B981; color: white;',
+                    'B등급': 'background: #3B82F6; color: white;',
+                    'C등급': 'background: #6B7280; color: white;'
+                };
+                const style = colors[grade] || 'background: #6B7280; color: white;';
+                return `<span style="padding: 4px 12px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; ${style}">${grade}</span>`;
+            };
+
+            // Render Table
+            const renderTable = (data) => {
+                tableBody.innerHTML = '';
+
+                if (data.length === 0) {
+                    tableBody.innerHTML = `<tr><td colspan="4" style="padding: 2rem; text-align: center; color: #666;">조건에 맞는 종목이 없습니다.</td></tr>`;
+                    stockCount.textContent = `0개 종목 표시 중`;
+                    return;
+                }
+
+                data.forEach(stock => {
+                    const row = document.createElement('tr');
+                    row.style.borderBottom = '1px solid #333';
+                    row.innerHTML = `
+                        <td style="padding: 1rem; font-weight: bold; color: #fff;">${stock.ticker}</td>
+                        <td style="padding: 1rem; color: #ccc;">${stock.name}</td>
+                        <td style="padding: 1rem; text-align: right; color: #4ADE80; font-weight: bold;">${stock.dividend_yield}%</td>
+                        <td style="padding: 1rem; text-align: center;">${getGradeBadge(stock.grade)}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+
+                stockCount.textContent = `${data.length}개 종목 표시 중`;
+            };
+
+            // Filter and Sort Logic
+            const filterAndSort = () => {
+                const searchTerm = searchBox.value.toLowerCase();
+                const gradeTerm = gradeFilter.value;
+                const sortType = sortBy.value;
+
+                let filtered = dividendData.filter(stock => {
+                    const matchesSearch = stock.ticker.toLowerCase().includes(searchTerm) ||
+                        stock.name.toLowerCase().includes(searchTerm);
+                    const matchesGrade = gradeTerm === 'all' || stock.grade === gradeTerm;
+                    return matchesSearch && matchesGrade;
+                });
+
+                filtered.sort((a, b) => {
+                    if (sortType === 'yield') return b.dividend_yield - a.dividend_yield;
+                    if (sortType === 'ticker') return a.ticker.localeCompare(b.ticker);
+                    if (sortType === 'grade') {
+                        const grades = { 'S등급': 4, 'A등급': 3, 'B등급': 2, 'C등급': 1 };
+                        return grades[b.grade] - grades[a.grade];
+                    }
+                });
+
+                renderTable(filtered);
+            };
+
+            // Initial Load - Note parent directory path
+            fetch('../dividend_insights.json')
+                .then(response => response.json())
+                .then(data => {
+                    dividendData = data.stocks;
+                    filterAndSort(); // Initial render
+                })
+                .catch(err => {
+                    console.error('Error loading dividend data:', err);
+                    tableBody.innerHTML = `<tr><td colspan="4" style="padding: 2rem; text-align: center; color: #ef4444;">데이터 로드 실패. 잠시 후 다시 시도해주세요.</td></tr>`;
+                });
+
+            // Event Listeners
+            searchBox.addEventListener('input', filterAndSort);
+            gradeFilter.addEventListener('change', filterAndSort);
+            sortBy.addEventListener('change', filterAndSort);
+        });
+    </script>
 </body>
 
 </html>

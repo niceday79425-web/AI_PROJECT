@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StockWise | Dividend Scouter</title>
+    <title>StockWise | Dividendos Premium</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -21,49 +21,170 @@
         <div class="ad-slot"></div>
         <main>
             <section class="card">
-                <h2>Lista de Melhores Ações de Dividendos</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem;">Lista selecionada de ações de dividendos
-                    de primeira linha.</p>
-                <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-                    <thead>
-                        <tr
-                            style="border-bottom: 1px solid var(--border-color); color: var(--text-secondary); text-align: left;">
-                            <th style="padding: 1rem;">Ticker</th>
-                            <th style="padding: 1rem;">Nome</th>
-                            <th style="padding: 1rem;">Yield</th>
-                            <th style="padding: 1rem;">Classificação</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="border-bottom: 1px solid var(--border-color);">
-                            <td style="padding: 1rem; font-weight: 600;">SCHD</td>
-                            <td style="padding: 1rem;">Schwab US Dividend Equity ETF</td>
-                            <td style="padding: 1rem; color: var(--success);">3.45%</td>
-                            <td style="padding: 1rem;"><span
-                                    style="background: var(--primary-gradient); padding: 4px 8px; border-radius: 4px; font-size: 0.75rem;">S-Tier</span>
-                            </td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid var(--border-color);">
-                            <td style="padding: 1rem; font-weight: 600;">O</td>
-                            <td style="padding: 1rem;">Realty Income Corp</td>
-                            <td style="padding: 1rem; color: var(--success);">5.21%</td>
-                            <td style="padding: 1rem;"><span
-                                    style="background: var(--secondary-gradient); padding: 4px 8px; border-radius: 4px; font-size: 0.75rem;">A-Tier</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h2>🏆 Insights de Dividendos Premium</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                    Analise mais de 50 ações de dividendos com nosso sistema exclusivo de classificação.
+                </p>
+
+                <!-- Controls -->
+                <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                    <input type="text" id="searchBox" placeholder="Pesquisar por ticker ou nome..."
+                        style="flex: 1; min-width: 200px; padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
+                    <select id="gradeFilter"
+                        style="padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
+                        <option value="all">Todas as Classificações</option>
+                        <option value="S등급">Classe S (Premium)</option>
+                        <option value="A등급">Classe A (Excelente)</option>
+                        <option value="B등급">Classe B (Bom)</option>
+                        <option value="C등급">Classe C (Regular)</option>
+                    </select>
+                    <select id="sortBy"
+                        style="padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
+                        <option value="yield">Ordenar por Rendimento</option>
+                        <option value="ticker">Ordenar por Ticker</option>
+                        <option value="grade">Ordenar por Classificação</option>
+                    </select>
+                </div>
+
+                <div style="overflow-x: auto;">
+                    <table id="dividendTable"
+                        style="width: 100%; border-collapse: collapse; margin-top: 1rem; background: #1a1a1a; border-radius: 12px; overflow: hidden;">
+                        <thead style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <tr style="color: white; text-align: left;">
+                                <th style="padding: 1rem;">Ticker</th>
+                                <th style="padding: 1rem;">Empresa</th>
+                                <th style="padding: 1rem; text-align: right;">Yield</th>
+                                <th style="padding: 1rem; text-align: center;">Classe</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dividendTableBody">
+                            <tr>
+                                <td colspan="4" style="padding: 2rem; text-align: center; color: #666;">
+                                    Carregando dados de dividendos...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p id="stockCount" style="margin-top: 1rem; color: #666; font-size: 0.9rem; text-align: right;">
+                    Exibindo 0 ações
+                </p>
             </section>
         </main>
         <div class="ad-slot"></div>
         <footer>
             <div class="footer-content">
-                <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
-                <p class="legal-disclaimer">Este conteúdo é apenas para fins informativos e não constitui aconselhamento
-                    financeiro. O investimento envolve risco.</p>
+                <p>&copy; 2026 StockWise.ai - Investimento Inteligente</p>
+                <div class="legal-disclaimer">
+                    <h4 style="margin-bottom: 0.5rem; font-size: 0.9rem;">⚠️ Aviso Legal</h4>
+                    <p style="font-size: 0.85rem; line-height: 1.6;">
+                        <strong>Todo o conteúdo deste site é apenas para fins informativos e educacionais e não
+                            constitui aconselhamento financeiro.</strong><br>
+                        Os dividendos e rendimentos podem flutuar e não são garantidos.<br>
+                        Desempenho passado não garante retornos futuros.<br>
+                        Não somos responsáveis por decisões de investimento baseadas nas informações deste site.
+                    </p>
+                </div>
             </div>
         </footer>
     </div>
+
+    <!-- Script to load Dividend Insights -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let dividendData = [];
+
+            // DOM Elements
+            const tableBody = document.getElementById('dividendTableBody');
+            const searchBox = document.getElementById('searchBox');
+            const gradeFilter = document.getElementById('gradeFilter');
+            const sortBy = document.getElementById('sortBy');
+            const stockCount = document.getElementById('stockCount');
+
+            // Grade Badge Component
+            const getGradeBadge = (grade) => {
+                const colors = {
+                    'S등급': 'background: linear-gradient(135deg, #FFD700 0%, #FDB931 100%); color: black; box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);',
+                    'A등급': 'background: #10B981; color: white;',
+                    'B등급': 'background: #3B82F6; color: white;',
+                    'C등급': 'background: #6B7280; color: white;'
+                };
+                const style = colors[grade] || 'background: #6B7280; color: white;';
+
+                // Map grade to PT if needed, but keeping internal codes same
+                let displayGrade = grade;
+
+                return `<span style="padding: 4px 12px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; ${style}">${displayGrade}</span>`;
+            };
+
+            // Render Table
+            const renderTable = (data) => {
+                tableBody.innerHTML = '';
+
+                if (data.length === 0) {
+                    tableBody.innerHTML = `<tr><td colspan="4" style="padding: 2rem; text-align: center; color: #666;">Nenhuma ação encontrada.</td></tr>`;
+                    stockCount.textContent = `Exibindo 0 ações`;
+                    return;
+                }
+
+                data.forEach(stock => {
+                    const row = document.createElement('tr');
+                    row.style.borderBottom = '1px solid #333';
+                    row.innerHTML = `
+                        <td style="padding: 1rem; font-weight: bold; color: #fff;">${stock.ticker}</td>
+                        <td style="padding: 1rem; color: #ccc;">${stock.name}</td>
+                        <td style="padding: 1rem; text-align: right; color: #4ADE80; font-weight: bold;">${stock.dividend_yield}%</td>
+                        <td style="padding: 1rem; text-align: center;">${getGradeBadge(stock.grade)}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+
+                stockCount.textContent = `Exibindo ${data.length} ações`;
+            };
+
+            // Filter and Sort Logic
+            const filterAndSort = () => {
+                const searchTerm = searchBox.value.toLowerCase();
+                const gradeTerm = gradeFilter.value;
+                const sortType = sortBy.value;
+
+                let filtered = dividendData.filter(stock => {
+                    const matchesSearch = stock.ticker.toLowerCase().includes(searchTerm) ||
+                        stock.name.toLowerCase().includes(searchTerm);
+                    const matchesGrade = gradeTerm === 'all' || stock.grade === gradeTerm;
+                    return matchesSearch && matchesGrade;
+                });
+
+                filtered.sort((a, b) => {
+                    if (sortType === 'yield') return b.dividend_yield - a.dividend_yield;
+                    if (sortType === 'ticker') return a.ticker.localeCompare(b.ticker);
+                    if (sortType === 'grade') {
+                        const grades = { 'S등급': 4, 'A등급': 3, 'B등급': 2, 'C등급': 1 };
+                        return grades[b.grade] - grades[a.grade];
+                    }
+                });
+
+                renderTable(filtered);
+            };
+
+            // Initial Load - relative path
+            fetch('../dividend_insights.json')
+                .then(response => response.json())
+                .then(data => {
+                    dividendData = data.stocks;
+                    filterAndSort(); // Initial render
+                })
+                .catch(err => {
+                    console.error('Error loading dividend data:', err);
+                    tableBody.innerHTML = `<tr><td colspan="4" style="padding: 2rem; text-align: center; color: #ef4444;">Falha ao carregar dados. Tente novamente mais tarde.</td></tr>`;
+                });
+
+            // Event Listeners
+            searchBox.addEventListener('input', filterAndSort);
+            gradeFilter.addEventListener('change', filterAndSort);
+            sortBy.addEventListener('change', filterAndSort);
+        });
+    </script>
 </body>
 
 </html>
