@@ -284,7 +284,7 @@ def save_and_index_multi(contents, ticker, chart_url):
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
             <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
+                 (adsbygoogle = window.adsbygoogle || []).push({{}});
             </script>
         </div>
         
