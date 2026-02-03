@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-04 08:22:02",
+  "generated_at": "2026-02-04 08:57:49",
   "total_stocks": 68,
   "stocks": [
     {
@@ -12,7 +12,7 @@
       "payout_ratio": 31.05,
       "five_year_avg_yield": 1.79,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:22:01"
+      "last_updated": "2026-02-04 08:56:53"
     },
     {
       "ticker": "MSFT",
@@ -24,7 +24,7 @@
       "payout_ratio": 21.28,
       "five_year_avg_yield": 0.79,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:04"
+      "last_updated": "2026-02-04 08:57:40"
     },
     {
       "ticker": "V",
@@ -36,7 +36,7 @@
       "payout_ratio": 22.91,
       "five_year_avg_yield": 0.68,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:34"
+      "last_updated": "2026-02-04 08:57:06"
     },
     {
       "ticker": "AVGO",
@@ -48,7 +48,7 @@
       "payout_ratio": 49.48,
       "five_year_avg_yield": 2.02,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:30"
+      "last_updated": "2026-02-04 08:56:50"
     },
     {
       "ticker": "WMT",
@@ -60,7 +60,7 @@
       "payout_ratio": 31.91,
       "five_year_avg_yield": 1.32,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:38"
+      "last_updated": "2026-02-04 08:57:44"
     },
     {
       "ticker": "MA",
@@ -72,7 +72,7 @@
       "payout_ratio": 18.4,
       "five_year_avg_yield": 0.53,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:35"
+      "last_updated": "2026-02-04 08:56:43"
     },
     {
       "ticker": "AAPL",
@@ -84,7 +84,7 @@
       "payout_ratio": 13.04,
       "five_year_avg_yield": 0.52,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:37"
+      "last_updated": "2026-02-04 08:57:39"
     },
     {
       "ticker": "ARR",
@@ -96,7 +96,7 @@
       "payout_ratio": 1515.79,
       "five_year_avg_yield": 17.95,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:41"
+      "last_updated": "2026-02-04 08:57:28"
     },
     {
       "ticker": "DX",
@@ -108,7 +108,7 @@
       "payout_ratio": 80.97,
       "five_year_avg_yield": 11.88,
       "grade": "S등급",
-      "last_updated": "2026-02-04 08:21:24"
+      "last_updated": "2026-02-04 08:57:05"
     },
     {
       "ticker": "AGNC",
@@ -120,7 +120,7 @@
       "payout_ratio": 97.96,
       "five_year_avg_yield": 13.36,
       "grade": "S등급",
-      "last_updated": "2026-02-04 08:21:58"
+      "last_updated": "2026-02-04 08:56:38"
     },
     {
       "ticker": "NLY",
@@ -132,7 +132,7 @@
       "payout_ratio": 95.89,
       "five_year_avg_yield": 13.53,
       "grade": "S등급",
-      "last_updated": "2026-02-04 08:21:23"
+      "last_updated": "2026-02-04 08:56:57"
     },
     {
       "ticker": "MO",
@@ -144,7 +144,7 @@
       "payout_ratio": 100.97,
       "five_year_avg_yield": 7.71,
       "grade": "B등급",
-      "last_updated": "2026-02-04 08:21:14"
+      "last_updated": "2026-02-04 08:56:28"
     },
     {
       "ticker": "VZ",
@@ -156,7 +156,7 @@
       "payout_ratio": 50.37,
       "five_year_avg_yield": 6.04,
       "grade": "S등급",
-      "last_updated": "2026-02-04 08:21:33"
+      "last_updated": "2026-02-04 08:56:40"
     },
     {
       "ticker": "O",
@@ -168,7 +168,7 @@
       "payout_ratio": 299.53,
       "five_year_avg_yield": 4.99,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:56"
+      "last_updated": "2026-02-04 08:57:30"
     },
     {
       "ticker": "BTI",
@@ -180,7 +180,7 @@
       "payout_ratio": 168.95,
       "five_year_avg_yield": 7.61,
       "grade": "B등급",
-      "last_updated": "2026-02-04 08:21:54"
+      "last_updated": "2026-02-04 08:57:41"
     },
     {
       "ticker": "SPG",
@@ -192,7 +192,7 @@
       "payout_ratio": 60.34,
       "five_year_avg_yield": 5.11,
       "grade": "S등급",
-      "last_updated": "2026-02-04 08:21:49"
+      "last_updated": "2026-02-04 08:56:42"
     },
     {
       "ticker": "SPYD",
@@ -204,7 +204,7 @@
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "B등급",
-      "last_updated": "2026-02-04 08:21:52"
+      "last_updated": "2026-02-04 08:56:36"
     },
     {
       "ticker": "EQR",
@@ -216,7 +216,7 @@
       "payout_ratio": 90.63,
       "five_year_avg_yield": 3.74,
       "grade": "S등급",
-      "last_updated": "2026-02-04 08:21:26"
+      "last_updated": "2026-02-04 08:57:36"
     },
     {
       "ticker": "PSA",
@@ -228,19 +228,7 @@
       "payout_ratio": 124.61,
       "five_year_avg_yield": 3.39,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:17"
-    },
-    {
-      "ticker": "PAYX",
-      "name": "Paychex, Inc.",
-      "sector": "Technology",
-      "current_price": 97.15,
-      "dividend_yield": 4.22,
-      "annual_dividend": 4.22,
-      "payout_ratio": 95.48,
-      "five_year_avg_yield": 2.7,
-      "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:09"
+      "last_updated": "2026-02-04 08:56:52"
     },
     {
       "ticker": "T",
@@ -252,7 +240,19 @@
       "payout_ratio": 27.38,
       "five_year_avg_yield": 6.49,
       "grade": "S등급",
-      "last_updated": "2026-02-04 08:21:21"
+      "last_updated": "2026-02-04 08:56:48"
+    },
+    {
+      "ticker": "PAYX",
+      "name": "Paychex, Inc.",
+      "sector": "Technology",
+      "current_price": 97.15,
+      "dividend_yield": 4.22,
+      "annual_dividend": 4.22,
+      "payout_ratio": 95.48,
+      "five_year_avg_yield": 2.7,
+      "grade": "C등급",
+      "last_updated": "2026-02-04 08:56:51"
     },
     {
       "ticker": "TGT",
@@ -264,7 +264,7 @@
       "payout_ratio": 54.55,
       "five_year_avg_yield": 2.83,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:22:00"
+      "last_updated": "2026-02-04 08:56:35"
     },
     {
       "ticker": "CVX",
@@ -276,7 +276,7 @@
       "payout_ratio": 103.17,
       "five_year_avg_yield": 4.12,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:19"
+      "last_updated": "2026-02-04 08:57:48"
     },
     {
       "ticker": "AVB",
@@ -288,7 +288,7 @@
       "payout_ratio": 84.76,
       "five_year_avg_yield": 3.32,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:07"
+      "last_updated": "2026-02-04 08:56:45"
     },
     {
       "ticker": "AMT",
@@ -300,7 +300,7 @@
       "payout_ratio": 107.18,
       "five_year_avg_yield": 2.8,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:05"
+      "last_updated": "2026-02-04 08:57:01"
     },
     {
       "ticker": "SCHD",
@@ -312,7 +312,7 @@
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:45"
+      "last_updated": "2026-02-04 08:56:37"
     },
     {
       "ticker": "PEP",
@@ -324,7 +324,7 @@
       "payout_ratio": 105.61,
       "five_year_avg_yield": 2.99,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:32"
+      "last_updated": "2026-02-04 08:56:34"
     },
     {
       "ticker": "DVY",
@@ -336,7 +336,7 @@
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:26"
+      "last_updated": "2026-02-04 08:57:45"
     },
     {
       "ticker": "BF-B",
@@ -348,7 +348,7 @@
       "payout_ratio": 52.98,
       "five_year_avg_yield": 1.68,
       "grade": "B등급",
-      "last_updated": "2026-02-04 08:21:08"
+      "last_updated": "2026-02-04 08:56:49"
     },
     {
       "ticker": "HDV",
@@ -360,7 +360,7 @@
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:47"
+      "last_updated": "2026-02-04 08:56:44"
     },
     {
       "ticker": "PLD",
@@ -372,7 +372,7 @@
       "payout_ratio": 115.99,
       "five_year_avg_yield": 2.69,
       "grade": "B등급",
-      "last_updated": "2026-02-04 08:21:11"
+      "last_updated": "2026-02-04 08:57:46"
     },
     {
       "ticker": "UNH",
@@ -384,7 +384,7 @@
       "payout_ratio": 44.92,
       "five_year_avg_yield": 1.56,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:42"
+      "last_updated": "2026-02-04 08:57:32"
     },
     {
       "ticker": "ADM",
@@ -396,7 +396,7 @@
       "payout_ratio": 82.52,
       "five_year_avg_yield": 2.71,
       "grade": "B등급",
-      "last_updated": "2026-02-04 08:21:53"
+      "last_updated": "2026-02-04 08:56:55"
     },
     {
       "ticker": "XOM",
@@ -408,7 +408,7 @@
       "payout_ratio": 59.7,
       "five_year_avg_yield": 3.94,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:06"
+      "last_updated": "2026-02-04 08:56:59"
     },
     {
       "ticker": "DLR",
@@ -420,7 +420,7 @@
       "payout_ratio": 126.42,
       "five_year_avg_yield": 3.44,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:43"
+      "last_updated": "2026-02-04 08:57:34"
     },
     {
       "ticker": "ABBV",
@@ -432,7 +432,7 @@
       "payout_ratio": 490.15,
       "five_year_avg_yield": 3.7,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:48"
+      "last_updated": "2026-02-04 08:56:56"
     },
     {
       "ticker": "GPC",
@@ -444,7 +444,7 @@
       "payout_ratio": 70.4,
       "five_year_avg_yield": 2.68,
       "grade": "B등급",
-      "last_updated": "2026-02-04 08:21:44"
+      "last_updated": "2026-02-04 08:57:20"
     },
     {
       "ticker": "PG",
@@ -456,7 +456,7 @@
       "payout_ratio": 61.88,
       "five_year_avg_yield": 2.45,
       "grade": "B등급",
-      "last_updated": "2026-02-04 08:21:31"
+      "last_updated": "2026-02-04 08:56:54"
     },
     {
       "ticker": "ADP",
@@ -468,7 +468,7 @@
       "payout_ratio": 60.71,
       "five_year_avg_yield": 1.97,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:15"
+      "last_updated": "2026-02-04 08:56:34"
     },
     {
       "ticker": "KO",
@@ -480,19 +480,7 @@
       "payout_ratio": 66.72,
       "five_year_avg_yield": 2.92,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:57"
-    },
-    {
-      "ticker": "SDY",
-      "name": "State Street SPDR S&P Dividend ETF",
-      "sector": "N/A",
-      "current_price": 150.46,
-      "dividend_yield": 2.61,
-      "annual_dividend": 0.0,
-      "payout_ratio": 0,
-      "five_year_avg_yield": 0,
-      "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:18"
+      "last_updated": "2026-02-04 08:56:41"
     },
     {
       "ticker": "SYY",
@@ -504,7 +492,19 @@
       "payout_ratio": 57.41,
       "five_year_avg_yield": 2.54,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:22:01"
+      "last_updated": "2026-02-04 08:56:52"
+    },
+    {
+      "ticker": "SDY",
+      "name": "State Street SPDR S&P Dividend ETF",
+      "sector": "N/A",
+      "current_price": 150.46,
+      "dividend_yield": 2.61,
+      "annual_dividend": 0.0,
+      "payout_ratio": 0,
+      "five_year_avg_yield": 0,
+      "grade": "C등급",
+      "last_updated": "2026-02-04 08:57:38"
     },
     {
       "ticker": "TXN",
@@ -516,7 +516,7 @@
       "payout_ratio": 100.92,
       "five_year_avg_yield": 2.7,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:49"
+      "last_updated": "2026-02-04 08:56:29"
     },
     {
       "ticker": "VTR",
@@ -528,7 +528,7 @@
       "payout_ratio": 356.6,
       "five_year_avg_yield": 3.39,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:05"
+      "last_updated": "2026-02-04 08:57:35"
     },
     {
       "ticker": "ACN",
@@ -540,7 +540,7 @@
       "payout_ratio": 50.17,
       "five_year_avg_yield": 1.51,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:16"
+      "last_updated": "2026-02-04 08:56:59"
     },
     {
       "ticker": "VYM",
@@ -552,7 +552,7 @@
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:29"
+      "last_updated": "2026-02-04 08:57:02"
     },
     {
       "ticker": "HD",
@@ -564,7 +564,7 @@
       "payout_ratio": 62.41,
       "five_year_avg_yield": 2.33,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:10"
+      "last_updated": "2026-02-04 08:57:47"
     },
     {
       "ticker": "FVD",
@@ -576,7 +576,7 @@
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:51"
+      "last_updated": "2026-02-04 08:57:43"
     },
     {
       "ticker": "MCD",
@@ -588,7 +588,7 @@
       "payout_ratio": 60.41,
       "five_year_avg_yield": 2.21,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:02"
+      "last_updated": "2026-02-04 08:57:31"
     },
     {
       "ticker": "QCOM",
@@ -600,7 +600,7 @@
       "payout_ratio": 69.46,
       "five_year_avg_yield": 2.1,
       "grade": "B등급",
-      "last_updated": "2026-02-04 08:21:27"
+      "last_updated": "2026-02-04 08:57:00"
     },
     {
       "ticker": "EQIX",
@@ -612,7 +612,7 @@
       "payout_ratio": 168.47,
       "five_year_avg_yield": 1.84,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:55"
+      "last_updated": "2026-02-04 08:57:33"
     },
     {
       "ticker": "ABT",
@@ -624,7 +624,7 @@
       "payout_ratio": 63.44,
       "five_year_avg_yield": 1.74,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:46"
+      "last_updated": "2026-02-04 08:56:39"
     },
     {
       "ticker": "CL",
@@ -636,7 +636,7 @@
       "payout_ratio": 78.33,
       "five_year_avg_yield": 2.31,
       "grade": "B등급",
-      "last_updated": "2026-02-04 08:21:00"
+      "last_updated": "2026-02-04 08:56:27"
     },
     {
       "ticker": "JNJ",
@@ -648,19 +648,7 @@
       "payout_ratio": 46.6,
       "five_year_avg_yield": 2.78,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:28"
-    },
-    {
-      "ticker": "IBM",
-      "name": "International Business Machines Corporation",
-      "sector": "Technology",
-      "current_price": 294.31,
-      "dividend_yield": 2.14,
-      "annual_dividend": 6.71,
-      "payout_ratio": 60.23,
-      "five_year_avg_yield": 4.06,
-      "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:12"
+      "last_updated": "2026-02-04 08:56:58"
     },
     {
       "ticker": "NOBL",
@@ -672,7 +660,19 @@
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:20"
+      "last_updated": "2026-02-04 08:56:31"
+    },
+    {
+      "ticker": "IBM",
+      "name": "International Business Machines Corporation",
+      "sector": "Technology",
+      "current_price": 294.31,
+      "dividend_yield": 2.14,
+      "annual_dividend": 6.71,
+      "payout_ratio": 60.23,
+      "five_year_avg_yield": 4.06,
+      "grade": "C등급",
+      "last_updated": "2026-02-04 08:57:46"
     },
     {
       "ticker": "DGRO",
@@ -684,7 +684,7 @@
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:01"
+      "last_updated": "2026-02-04 08:56:41"
     },
     {
       "ticker": "BAC",
@@ -696,7 +696,7 @@
       "payout_ratio": 28.35,
       "five_year_avg_yield": 2.33,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:13"
+      "last_updated": "2026-02-04 08:56:33"
     },
     {
       "ticker": "CSCO",
@@ -708,19 +708,7 @@
       "payout_ratio": 62.93,
       "five_year_avg_yield": 2.86,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:40"
-    },
-    {
-      "ticker": "JPM",
-      "name": "JPMorgan Chase & Co.",
-      "sector": "Financial Services",
-      "current_price": 314.85,
-      "dividend_yield": 1.95,
-      "annual_dividend": 5.8,
-      "payout_ratio": 28.97,
-      "five_year_avg_yield": 2.41,
-      "grade": "B등급",
-      "last_updated": "2026-02-04 08:21:25"
+      "last_updated": "2026-02-04 08:57:07"
     },
     {
       "ticker": "WFC",
@@ -732,19 +720,19 @@
       "payout_ratio": 27.16,
       "five_year_avg_yield": 2.11,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:36"
+      "last_updated": "2026-02-04 08:56:30"
     },
     {
-      "ticker": "GS",
-      "name": "The Goldman Sachs Group, Inc.",
+      "ticker": "JPM",
+      "name": "JPMorgan Chase & Co.",
       "sector": "Financial Services",
-      "current_price": 938.99,
-      "dividend_yield": 1.9,
-      "annual_dividend": 14.0,
-      "payout_ratio": 27.28,
-      "five_year_avg_yield": 2.18,
+      "current_price": 314.85,
+      "dividend_yield": 1.95,
+      "annual_dividend": 5.8,
+      "payout_ratio": 28.97,
+      "five_year_avg_yield": 2.41,
       "grade": "B등급",
-      "last_updated": "2026-02-04 08:21:03"
+      "last_updated": "2026-02-04 08:57:29"
     },
     {
       "ticker": "MMM",
@@ -756,7 +744,19 @@
       "payout_ratio": 48.67,
       "five_year_avg_yield": 3.95,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:39"
+      "last_updated": "2026-02-04 08:57:04"
+    },
+    {
+      "ticker": "GS",
+      "name": "The Goldman Sachs Group, Inc.",
+      "sector": "Financial Services",
+      "current_price": 938.99,
+      "dividend_yield": 1.9,
+      "annual_dividend": 14.0,
+      "payout_ratio": 27.28,
+      "five_year_avg_yield": 2.18,
+      "grade": "B등급",
+      "last_updated": "2026-02-04 08:57:37"
     },
     {
       "ticker": "BLK",
@@ -768,7 +768,7 @@
       "payout_ratio": 59.02,
       "five_year_avg_yield": 2.33,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:50"
+      "last_updated": "2026-02-04 08:56:47"
     },
     {
       "ticker": "LOW",
@@ -780,7 +780,7 @@
       "payout_ratio": 38.91,
       "five_year_avg_yield": 1.74,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:38"
+      "last_updated": "2026-02-04 08:56:32"
     },
     {
       "ticker": "VIG",
@@ -792,7 +792,7 @@
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:16"
+      "last_updated": "2026-02-04 08:56:46"
     },
     {
       "ticker": "WELL",
@@ -804,7 +804,7 @@
       "payout_ratio": 189.66,
       "five_year_avg_yield": 2.61,
       "grade": "C등급",
-      "last_updated": "2026-02-04 08:21:59"
+      "last_updated": "2026-02-04 08:57:42"
     },
     {
       "ticker": "ORCL",
@@ -816,7 +816,7 @@
       "payout_ratio": 35.71,
       "five_year_avg_yield": 1.29,
       "grade": "A등급",
-      "last_updated": "2026-02-04 08:21:22"
+      "last_updated": "2026-02-04 08:57:03"
     }
   ]
 }

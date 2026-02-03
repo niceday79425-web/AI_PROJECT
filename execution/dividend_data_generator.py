@@ -189,13 +189,80 @@ def generate_dividend_insights():
             "stocks": dividend_data
         }, f, ensure_ascii=False, indent=2)
     
-    print(f"\n[✓] Successfully generated data for {len(dividend_data)} dividend stocks")
-    print(f"[✓] Data saved to {output_file}")
+    print(f"\n[OK] Successfully generated data for {len(dividend_data)} dividend stocks")
+    print(f"[OK] Data saved to {output_file}")
     
     # Print summary
     print("\n=== Top 10 by Dividend Yield ===")
     for stock in dividend_data[:10]:
         print(f"{stock['ticker']:6} | {stock['name'][:30]:30} | {stock['dividend_yield']:5.2f}% | {stock['grade']}")
+
+    # Improvements: SSG Implementation
+    update_html_files(dividend_data)
+
+def update_html_files(data):
+    """Inject dividend table rows directly into HTML files for SEO (SSG)"""
+    print("\n[*] Updating HTML files with static data...")
+    
+    files = {
+        "en": "d:\\AI_PROJECT\\list.html",
+        "ko": "d:\\AI_PROJECT\\ko\\list.html",
+        "pt": "d:\\AI_PROJECT\\pt\\list.html"
+    }
+    
+    # Text mappings for Grades
+    grade_map = {
+        "en": {"S등급": "S-Tier", "A등급": "A-Tier", "B등급": "B-Tier", "C등급": "C-Tier"},
+        "ko": {"S등급": "S등급", "A등급": "A등급", "B등급": "B등급", "C등급": "C등급"},
+        "pt": {"S등급": "Classe S", "A등급": "Classe A", "B등급": "Classe B", "C등급": "Classe C"}
+    }
+    
+    grade_colors = {
+        "S등급": "background: linear-gradient(135deg, #FFD700 0%, #FDB931 100%); color: black; box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);",
+        "A등급": "background: #10B981; color: white;",
+        "B등급": "background: #3B82F6; color: white;",
+        "C등급": "background: #6B7280; color: white;"
+    }
+
+    for lang, filepath in files.items():
+        try:
+            # Generate HTML rows
+            html_rows = ""
+            for stock in data:
+                grade_text = grade_map[lang].get(stock['grade'], stock['grade'])
+                grade_style = grade_colors.get(stock['grade'], "background: #666; color: white;")
+                
+                html_rows += f"""
+                    <tr style="border-bottom: 1px solid #333;">
+                        <td style="padding: 1rem; font-weight: bold; color: #fff;">{stock['ticker']}</td>
+                        <td style="padding: 1rem; color: #ccc;">{stock['name']}</td>
+                        <td style="padding: 1rem; text-align: right; color: #4ADE80; font-weight: bold;">{stock['dividend_yield']}%</td>
+                        <td style="padding: 1rem; text-align: center;">
+                            <span style="padding: 4px 12px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; {grade_style}">{grade_text}</span>
+                        </td>
+                    </tr>"""
+            
+            # Read file
+            with open(filepath, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            # Find tbody content to replace
+            # Pattern: <tbody id="dividendTableBody"> ... </tbody>
+            # careful with newlines and existing content
+            import re
+            pattern = re.compile(r'(<tbody id="dividendTableBody">)(.*?)(</tbody>)', re.DOTALL)
+            
+            if pattern.search(content):
+                new_content = pattern.sub(f'\\1{html_rows}\\3', content)
+                
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(new_content)
+                print(f"[UPDATED] {filepath}")
+            else:
+                print(f"[WARNING] Could not find tbody in {filepath}")
+                
+        except Exception as e:
+            print(f"[ERROR] Updating {lang}: {e}")
 
 if __name__ == "__main__":
     generate_dividend_insights()
