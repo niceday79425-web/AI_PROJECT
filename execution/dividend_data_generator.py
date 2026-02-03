@@ -36,9 +36,17 @@ def get_dividend_data(ticker: str) -> Dict:
         
         # Get dividend yield
         dividend_yield = info.get('dividendYield', 0)
-        if dividend_yield:
-            dividend_yield = dividend_yield * 100  # Convert to percentage
         
+        # Check if it's already in percentage (some APIs return 16.5 instead of 0.165)
+        # If it's small (e.g. 0.05), multiply by 100. If it's big (e.g. 5.0), leave it.
+        # But be careful with 0. 
+        if dividend_yield:
+            # Most dividend yields are below 20%. If it's > 0.5 (50%), it's likely already a percentage or an error.
+            # But let's assume raw data is usually decimal (0.05).
+            # If we see > 1, treating it as percentage. 
+            if dividend_yield < 1: 
+                dividend_yield = dividend_yield * 100
+            
         # Get trailing annual dividend rate
         trailing_annual_dividend = info.get('trailingAnnualDividendRate', 0)
         
