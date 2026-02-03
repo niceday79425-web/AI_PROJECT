@@ -100,60 +100,6 @@
                     </script>
                 </div>
 
-                <!-- Premium Dividend Insights Section -->
-                <section class="dividend-insights" style="margin-top: 3rem;">
-                    <h2 style="text-align: left; margin-bottom: 1rem;">🏆 Premium Dividend Insights</h2>
-                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">
-                        Top-rated dividend stocks analyzed by performance, stability, and yield.
-                    </p>
-
-                    <!-- Controls -->
-                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                        <input type="text" id="searchBox" placeholder="Search by ticker or name..."
-                            style="flex: 1; min-width: 200px; padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
-                        <select id="gradeFilter"
-                            style="padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
-                            <option value="all">All Grades</option>
-                            <option value="S등급">S등급 (Premium)</option>
-                            <option value="A등급">A등급 (Excellent)</option>
-                            <option value="B등급">B등급 (Good)</option>
-                            <option value="C등급">C등급 (Fair)</option>
-                        </select>
-                        <select id="sortBy"
-                            style="padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
-                            <option value="yield">Sort by Yield</option>
-                            <option value="ticker">Sort by Ticker</option>
-                            <option value="grade">Sort by Grade</option>
-                        </select>
-                    </div>
-
-                    <!-- Dividend Table -->
-                    <div style="overflow-x: auto;">
-                        <table id="dividendTable"
-                            style="width: 100%; border-collapse: collapse; background: #1a1a1a; border-radius: 12px; overflow: hidden;">
-                            <thead style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                                <tr>
-                                    <th style="padding: 1rem; text-align: left; font-weight: 600;">Ticker</th>
-                                    <th style="padding: 1rem; text-align: left; font-weight: 600;">Company</th>
-                                    <th style="padding: 1rem; text-align: right; font-weight: 600;">Yield</th>
-                                    <th style="padding: 1rem; text-align: center; font-weight: 600;">Grade</th>
-                                </tr>
-                            </thead>
-                            <tbody id="dividendTableBody">
-                                <tr>
-                                    <td colspan="4" style="padding: 2rem; text-align: center; color: #666;">
-                                        Loading dividend data...
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <p id="stockCount" style="margin-top: 1rem; color: #666; font-size: 0.9rem; text-align: right;">
-                        Showing 0 stocks
-                    </p>
-                </section>
-
                 <!-- Recent Blog Posts Mini Section -->
                 <section class="blog-section" style="margin-top: 3rem;">
                     <h2 style="text-align: left; margin-bottom: 1.5rem;">Latest Insights</h2>

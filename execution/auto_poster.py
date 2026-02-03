@@ -265,6 +265,16 @@ def save_and_index_multi(contents, ticker, chart_url):
                 <a href="/pt/blog.html" class="lang-link {'active' if lang == 'pt' else ''}">PT</a>
             </nav>
         </header>
+
+        <!-- Google AdSense - Header Banner -->
+        <div class="ad-slot" style="margin: 2rem auto; max-width: 800px;">
+             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                data-ad-slot="XXXXXXXXXX" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({{}});
+            </script>
+        </div>
+
         
         <article style="max-width: 800px; margin: 2rem auto; padding: 0 1rem;">
             <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">{title}</h1>
