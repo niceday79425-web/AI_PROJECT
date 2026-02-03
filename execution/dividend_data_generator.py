@@ -68,7 +68,7 @@ def get_dividend_data(ticker: str) -> Dict:
         sector = info.get('sector', 'N/A')
         
         # Calculate dividend grade (S, A, B, C)
-        grade = calculate_dividend_grade(dividend_yield, payout_ratio, five_year_avg_yield)
+        grade = calculate_dividend_grade(dividend_yield, payout_ratio, five_year_avg_yield, sector)
         
         return {
             "ticker": ticker,
@@ -86,47 +86,73 @@ def get_dividend_data(ticker: str) -> Dict:
         print(f"[!] Error fetching {ticker}: {e}")
         return None
 
-def calculate_dividend_grade(yield_pct: float, payout_ratio: float, five_year_avg: float) -> str:
-    """Calculate dividend quality grade based on metrics"""
+def calculate_dividend_grade(yield_pct: float, payout_ratio: float, five_year_avg: float, sector: str = "N/A") -> str:
+    """Calculate dividend quality grade based on metrics with sector adjustments"""
     score = 0
     
-    # Yield score (0-40 points)
-    if yield_pct >= 4.0:
+    # 1. Yield Score (Max 40 points)
+    # Focus: Is the current return attractive?
+    if yield_pct >= 5.0:
         score += 40
+    elif yield_pct >= 4.0:
+        score += 35
     elif yield_pct >= 3.0:
-        score += 30
+        score += 25
     elif yield_pct >= 2.0:
-        score += 20
+        score += 15
     elif yield_pct >= 1.0:
-        score += 10
+        score += 5
     
-    # Payout ratio score (0-30 points) - lower is better for sustainability
-    if 0 < payout_ratio <= 50:
-        score += 30
-    elif payout_ratio <= 70:
-        score += 20
-    elif payout_ratio <= 90:
-        score += 10
+    # 2. Payout Ratio Score (Max 30 points)
+    # Focus: Sustainability. Lower is better, but depends on sector.
     
-    # Consistency score (0-30 points)
-    if five_year_avg > 0:
-        consistency = abs(yield_pct - five_year_avg) / five_year_avg if five_year_avg > 0 else 1
-        if consistency <= 0.1:  # Within 10% of 5-year average
-            score += 30
-        elif consistency <= 0.2:
-            score += 20
-        elif consistency <= 0.3:
-            score += 10
+    is_reit = sector == "Real Estate" or "REIT" in sector.upper()
     
-    # Grade assignment
-    if score >= 80:
-        return "S등급"  # S-tier
-    elif score >= 60:
-        return "A등급"  # A-tier
-    elif score >= 40:
-        return "B등급"  # B-tier
+    if is_reit:
+        # REITs are required to pay >90% of taxable income to shareholders.
+        # So a high payout ratio (around 90-100%) is normal and healthy.
+        if 0 < payout_ratio <= 95:
+            score += 30  # Excellent for REIT
+        elif payout_ratio <= 105:
+            score += 20  # Acceptable
+        elif payout_ratio <= 120:
+            score += 10  # Riskier
     else:
-        return "C등급"  # C-tier
+        # Standard corporations
+        if 0 < payout_ratio <= 50:
+            score += 30  # Very Safe
+        elif payout_ratio <= 70:
+            score += 20  # Safe
+        elif payout_ratio <= 90:
+            score += 10  # Caution
+            
+    # 3. Consistency/Stability Score (Max 30 points)
+    # Focus: Is the current yield consistent with history? (Proxyl for price/div stability)
+    if five_year_avg > 0:
+        # Calculate deviation from 5-year average
+        deviation = abs(yield_pct - five_year_avg) / five_year_avg
+        
+        if deviation <= 0.1:  # Within 10% deviation
+            score += 30
+        elif deviation <= 0.2: # Within 20%
+            score += 20
+        elif deviation <= 3.0: # Within 30%
+            score += 10
+            
+    # Bonus: Dividend Growth (Simplified logic if data not available)
+    # If yield is moderate (2-5%) and payout is healthy, it's likely a grower.
+    if 2.0 <= yield_pct <= 5.0 and score >= 50:
+        score += 5
+
+    # Grade Assignment
+    if score >= 80:
+        return "S등급"
+    elif score >= 65:
+        return "A등급"
+    elif score >= 50:
+        return "B등급"
+    else:
+        return "C등급"
 
 def generate_dividend_insights():
     """Generate comprehensive dividend insights for 50+ stocks"""
