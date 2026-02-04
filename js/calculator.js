@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             totalPrincipal += monthlyDeposit;
 
             // 주가 상승분 (월 복리 가정)
-            const monthlyGrowth = currentTotal * (Math.pow(1 + growthRate, 1/12) - 1);
+            const monthlyGrowth = currentTotal * (Math.pow(1 + growthRate, 1 / 12) - 1);
             capitalGains += monthlyGrowth;
             currentTotal += monthlyGrowth;
 
@@ -61,7 +61,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Chart.js 업데이트
     const updateChart = (labels, principal, growth, dividends) => {
         const ctx = document.getElementById('growthChart').getContext('2d');
-        
+        const lang = document.documentElement.lang || 'en';
+
+        const texts = {
+            ko: { principal: '원금', growth: '주가 수익', dividends: '배당 수익' },
+            pt: { principal: 'Principal', growth: 'Crescimento', dividends: 'Dividendos' },
+            en: { principal: 'Principal', growth: 'Capital Gains', dividends: 'Dividends' }
+        };
+        const t = texts[lang] || texts.en;
+
         if (growthChart) {
             growthChart.destroy();
         }
@@ -72,19 +80,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 labels: labels,
                 datasets: [
                     {
-                        label: '원금',
+                        label: t.principal,
                         data: principal,
                         backgroundColor: '#6366f1',
                         borderRadius: 4
                     },
                     {
-                        label: '주가 수익',
+                        label: t.growth,
                         data: growth,
                         backgroundColor: '#3b82f6',
                         borderRadius: 4
                     },
                     {
-                        label: '배당 수익',
+                        label: t.dividends,
                         data: dividends,
                         backgroundColor: '#2dd4bf',
                         borderRadius: 4
@@ -96,10 +104,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 maintainAspectRatio: false,
                 scales: {
                     x: { stacked: true, grid: { display: false }, ticks: { color: '#94a3b8' } },
-                    y: { 
-                        stacked: true, 
+                    y: {
+                        stacked: true,
                         grid: { color: 'rgba(255, 255, 255, 0.05)' },
-                        ticks: { 
+                        ticks: {
                             color: '#94a3b8',
                             callback: (value) => '$' + value.toLocaleString()
                         }
@@ -128,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch('posts.json');
             if (!response.ok) throw new Error('No posts found');
             const posts = await response.json();
-            
+
             blogGrid.innerHTML = '';
             posts.forEach(post => {
                 const card = document.createElement('div');
