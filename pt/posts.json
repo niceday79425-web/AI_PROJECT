@@ -1,5 +1,23 @@
 [
     {
+        "title": "A Queda da QCOM: Navegando o Futuro da Gigante dos Semicondutores em Meio à Turbulência do Mercado",
+        "date": "2026-02-05",
+        "link": "blog/2026-02-05-QCOM.html",
+        "summary": "A Qualcomm (QCOM) registrou uma queda significativa de 8,46% em meio à fraqueza generalizada do mercado e às 'preocupações com a IA'. Esta postagem analisa a forte posição da QCOM em dispositivos móveis, automotivos e IoT, enfatizando seu papel crítico na IA no dispositivo. Exploramos se essa queda representa uma oportunidade de compra ou sinaliza preocupações mais profundas para a gigante dos semicondutores, oferecendo insights sobre suas perspectivas estratégicas."
+    },
+    {
+        "title": "Bitcoin Despenca 13%: Decifrando a Correção Acentuada do BTC-USD em Meio à Incerteza do Mercado",
+        "date": "2026-02-05",
+        "link": "blog/2026-02-05-BTC-USD.html",
+        "summary": "O Bitcoin (BTC-USD) despencou 13,27% para $63.332,77 em meio a uma fraqueza generalizada do mercado, incluindo uma quebra nos futuros do Dow Jones e uma forte queda em Wall Street. Essa correção significativa destaca a crescente correlação do Bitcoin com ativos de risco tradicionais, impulsionada pelo sentimento geral de aversão ao risco. Os investidores devem monitorar os principais níveis de suporte, indicadores macroeconômicos e fluxos institucionais para determinar se esta é uma oportunidade de compra ou um sinal para maior cautela, reconhecendo a volatilidade inerente do Bitcoin."
+    },
+    {
+        "title": "A Queda Abrupta do Ethereum: Decifrando a Desvalorização do ETH-USD em Meio à Incerteza do Mercado Amplo",
+        "date": "2026-02-05",
+        "link": "blog/2026-02-05-ETH-USD.html",
+        "summary": "O ETH-USD sofreu uma queda significativa de -14.07%, espelhando uma desaceleração mais ampla do mercado. Analisamos as causas, desde as \"preocupações com IA\" de Wall Street até a queda do Bitcoin, e avaliamos se isso sinaliza uma oportunidade de compra ou uma correção mais profunda para os investidores de Ethereum."
+    },
+    {
         "title": "Nike (NKE) Mostra a Sua Força: Uma Análise Detalhada do Salto de 5,4% de Hoje e o Próximo Passo para a Gigante do Athleisure",
         "date": "2026-02-04",
         "link": "blog/2026-02-04-NKE.html",
@@ -100,23 +118,5 @@
         "date": "2026-01-29",
         "link": "blog/2026-01-29-MSFT.html",
         "summary": "A Microsoft (MSFT) registrou uma queda significativa de quase 10%, para $433.50, em meio a uma semana de resultados mistos no setor de tecnologia. Esta análise argumenta que, apesar do forte recuo, os pontos fortes fundamentais da Microsoft — domínio na nuvem (Azure), produtividade (Office 365), jogos e investimentos agressivos em IA — permanecem robustos. A queda é provavelmente atribuível à volatilidade mais ampla do mercado, realização de lucros ou uma mudança temporária de sentimento, em vez de problemas subjacentes nos negócios. Para investidores de longo prazo, essa desaceleração temporária pode apresentar uma oportunidade de compra atraente para uma líder de tecnologia resiliente e inovadora com substanciais catalisadores de crescimento futuro."
-    },
-    {
-        "title": "Meta Platforms (META) Dispara: Uma Análise Aprofundada do seu Desempenho Mais Recente",
-        "date": "2026-01-29",
-        "link": "blog/2026-01-29-META.html",
-        "summary": "A Meta Platforms (META) registou um impressionante aumento de 10.40% hoje, fechando a $738.31, impulsionado em grande parte pela forte confiança dos investidores no seu negócio principal de publicidade, ganhos de eficiência e esforços de monetização da IA. Esta subida significativa destaca-se num mercado mais amplo misto, sugerindo catalisadores positivos específicos da empresa e uma potencial reavaliação da ação. O desempenho futuro dependerá do crescimento sustentado da publicidade, da integração da IA e de gastos disciplinados."
-    },
-    {
-        "title": "Google (GOOGL): Navegando na Fronteira da IA em Meio a um Frenesi de Gastos em Tecnologia",
-        "date": "2026-01-29",
-        "link": "blog/2026-01-29-GOOGL.html",
-        "summary": "Alphabet (GOOGL) é uma gigante da tecnologia fortemente investida em Inteligência Artificial. Apesar de dados de preços atuais indisponíveis, sua posição estratégica em IA, especialmente em meio a um 'Frenesi de Gastos em IA' global por grandes empresas de tecnologia, é um vento favorável significativo. A forte fundação de IA do Google, do Gemini ao Google Cloud, a posiciona para participar e lucrar com a demanda acelerada por infraestrutura e serviços de IA. Sua extensa P&D e vasto ecossistema fornecem uma vantagem competitiva para o crescimento a longo prazo."
-    },
-    {
-        "title": "Apple (AAPL): Navegando na Onda da IA com a Força do Ecossistema",
-        "date": "2026-01-29",
-        "link": "blog/2026-01-29-AAPL.html",
-        "summary": "A Apple (AAPL) é uma líder tecnológica global com um ecossistema forte e resiliência financeira, impulsionada pelo crescimento dos serviços. Embora a indústria de tecnologia esteja focada em investimentos em IA, a estratégia da Apple tem sido historicamente em IA no dispositivo e com foco na privacidade. A questão é como a Apple se posicionará na IA generativa, com futuras atualizações de software e hardware sendo cruciais. A empresa enfrenta desafios como saturação de mercado e regulamentação, mas possui oportunidades em novos produtos (como o Vision Pro) e expansão de serviços. A tese de investimento de longo prazo permanece robusta, mas a estratégia de IA é um ponto de observação chave."
     }
 ]
