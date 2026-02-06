@@ -1,5 +1,23 @@
 [
     {
+        "title": "A Ascensão da AMD: Cavalgando a Onda da IA para Novas Alturas em Meio à Competição Feroz",
+        "date": "2026-02-06",
+        "link": "blog/2026-02-06-AMD.html",
+        "summary": "A Advanced Micro Devices (AMD) registrou um aumento significativo, fechando em alta de mais de 8% a US$ 208,44. Este post explora os fatores que impulsionam o momento da AMD, particularmente seus movimentos estratégicos no crescente mercado de chips de IA com seus aceleradores MI300X, seu portfólio de produtos diversificado e o formidável cenário competitivo dominado pela NVIDIA. Analisaremos as perspectivas de investimento para esta potência de semicondutores."
+    },
+    {
+        "title": "Bitcoin Dispara Acima de US$70.000: Decifrando a Corrida de Touros Cripto",
+        "date": "2026-02-06",
+        "link": "blog/2026-02-06-BTC-USD.html",
+        "summary": "O Bitcoin (BTC-USD) disparou acima de US$70.000, atualmente em US$70.622,28 (+12,63%), impulsionado pelo sucesso dos ETFs spot, o próximo evento de halving e a crescente adoção institucional. Embora sua trajetória seja distinta das ações tradicionais, os investidores devem estar cientes da volatilidade inerente do Bitcoin, do cenário regulatório em evolução e dos fatores macroeconômicos globais. Uma abordagem disciplinada e de longo prazo com gerenciamento adequado de riscos é aconselhável para este ativo digital dinâmico."
+    },
+    {
+        "title": "A Ascensão Eletrizante do Ethereum: O Que Vem Por Aí para ETH-USD Após Ultrapassar os US$2.000?",
+        "date": "2026-02-06",
+        "link": "blog/2026-02-06-ETH-USD.html",
+        "summary": "O ETH-USD disparou mais de 13% para US$2.063,22, rompendo a marca de US$2.000. Esta análise explora os impulsionadores por trás da recuperação do Ethereum, incluindo o otimismo mais amplo em cripto, a atualização Dencun, sua dominância em DeFi/NFTs e potenciais ETFs à vista. Também examinamos suas forças fundamentais e descrevemos oportunidades e riscos futuros para investidores neste ativo digital dinâmico."
+    },
+    {
         "title": "A Queda da QCOM: Navegando o Futuro da Gigante dos Semicondutores em Meio à Turbulência do Mercado",
         "date": "2026-02-05",
         "link": "blog/2026-02-05-QCOM.html",
@@ -100,23 +118,5 @@
         "date": "2026-01-30",
         "link": "blog/2026-01-30-AMD.html",
         "summary": "As ações da AMD tiveram uma queda de 6,13% hoje, para US$ 236,73. Apesar dessa volatilidade de curto prazo, a empresa continua sendo um player chave na revolução da IA com seus aceleradores MI300X. Seu portfólio diversificado em data center, cliente, jogos e segmentos embarcados oferece resiliência, enquanto a IA representa o principal motor de crescimento. A queda pode ser uma flutuação de curto prazo, mas o posicionamento estratégico de longo prazo em IA torna a AMD uma proposta atraente para investidores pacientes."
-    },
-    {
-        "title": "Verizon (VZ) Dispara: Uma Análise Mais Profunda sobre a Recente Valorização da Gigante das Telecomunicações",
-        "date": "2026-01-30",
-        "link": "blog/2026-01-30-VZ.html",
-        "summary": "A Verizon (VZ) registrou um salto significativo de preço em um único dia, reacendendo o interesse dos investidores no setor de telecomunicações. Esta publicação investiga os potenciais impulsionadores por trás desse forte desempenho, avalia a posição competitiva da Verizon e explora suas perspectivas em meio à evolução das dinâmicas de mercado e seu apelo consistente aos investidores que buscam renda."
-    },
-    {
-        "title": "A Prova de Volatilidade do Ethereum: Navegando no ETH-USD em Meio a Sinais de Mercado Mistos",
-        "date": "2026-01-29",
-        "link": "blog/2026-01-29-ETH-USD.html",
-        "summary": "O Ethereum (ETH) caiu 6.23% para $2819.38 hoje, demonstrando volatilidade significativa. Sinais mistos do mercado de ações (queda dos futuros do Dow, ascensão da Apple, resultados mistos de Big Tech) influenciam o apetite geral por risco dos investidores, incluindo para cripto. A força de longo prazo do ETH reside em seus fundamentos como plataforma de contratos inteligentes, seu ecossistema DeFi e NFT, atualizações contínuas de rede e potencial aprovação de ETF à vista. Os investidores devem estar cientes da volatilidade, dos fatores macroeconômicos e focar na inovação e adoção de longo prazo do Ethereum."
-    },
-    {
-        "title": "Queda Acentuada da Microsoft: Um Ponto Fora da Curva ou Uma Oportunidade de Compra?",
-        "date": "2026-01-29",
-        "link": "blog/2026-01-29-MSFT.html",
-        "summary": "A Microsoft (MSFT) registrou uma queda significativa de quase 10%, para $433.50, em meio a uma semana de resultados mistos no setor de tecnologia. Esta análise argumenta que, apesar do forte recuo, os pontos fortes fundamentais da Microsoft — domínio na nuvem (Azure), produtividade (Office 365), jogos e investimentos agressivos em IA — permanecem robustos. A queda é provavelmente atribuível à volatilidade mais ampla do mercado, realização de lucros ou uma mudança temporária de sentimento, em vez de problemas subjacentes nos negócios. Para investidores de longo prazo, essa desaceleração temporária pode apresentar uma oportunidade de compra atraente para uma líder de tecnologia resiliente e inovadora com substanciais catalisadores de crescimento futuro."
     }
 ]
