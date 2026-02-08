@@ -12,6 +12,11 @@
     --border-color: rgba(255, 255, 255, 0.1);
     --glass-bg: rgba(255, 255, 255, 0.03);
     --success: #10b981;
+    --danger: #ef4444;
+    --up-color: #ff4d4d;
+    /* Korean Rise: Red */
+    --down-color: #4d4dff;
+    /* Korean Fall: Blue */
     --neon-cyan: #22d3ee;
     --neon-magenta: #f472b6;
 }
@@ -570,4 +575,72 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     margin-top: 0.5rem;
     padding-top: 1rem;
+}
+
+/* Stock Cards List (Alternative to Table) */
+.stock-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.stock-card-compact {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.stock-card-compact:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-purple);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    background: rgba(30, 35, 50, 0.9);
+}
+
+.stock-row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stock-ticker {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.stock-price-container {
+    text-align: right;
+}
+
+.stock-price {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.price-up {
+    color: var(--up-color) !important;
+}
+
+.price-down {
+    color: var(--down-color) !important;
+}
+
+.change-pct {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.05);
 }

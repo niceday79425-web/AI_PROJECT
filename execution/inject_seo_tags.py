@@ -2,12 +2,13 @@
 import os
 
 BASE_URL = "https://ai-project-1en.pages.dev"
-PAGES = ["index.html", "list.html", "blog.html", "calculator.html", "calendar.html", "fortune.html"]
+PAGES = ["index.html", "list.html", "blog.html", "calculator.html", "calendar.html", "fortune.html", "privacy.html", "about.html", "contact.html"]
 
 def get_href_tags(filename):
     # Construct tags for a specific filename
     # Assumes filename is same across languages
     return f'''
+    <link rel="canonical" href="{BASE_URL}/{filename}" />
     <link rel="alternate" hreflang="en" href="{BASE_URL}/{filename}" />
     <link rel="alternate" hreflang="ko" href="{BASE_URL}/ko/{filename}" />
     <link rel="alternate" hreflang="pt" href="{BASE_URL}/pt/{filename}" />
@@ -16,21 +17,25 @@ def get_href_tags(filename):
 
 def inject_tags(filepath, filename):
     try:
+        if not os.path.exists(filepath):
+            return
+
         with open(filepath, 'r', encoding='utf-8') as f:
             content = f.read()
         
-        if "hreflang" in content:
-            print(f"[SKIPPED] {filepath} (Already has hreflang)")
-            return
-
-        tags = get_href_tags(filename)
+        tags = get_href_tags(filename).strip()
         
+        # Check if tags already exist and remove them to avoid duplicates
+        import re
+        content = re.sub(r'\s*<link rel="canonical".*?/>\s*', '\n', content)
+        content = re.sub(r'\s*<link rel="alternate" hreflang=".*?/>\s*', '\n', content)
+
         # Inject before </head>
         if "</head>" in content:
-            content = content.replace("</head>", f"{tags}\n</head>")
+            content = content.replace("</head>", f"    {tags}\n</head>")
             with open(filepath, 'w', encoding='utf-8') as f:
                 f.write(content)
-            print(f"[INJECTED] {filepath}")
+            print(f"[UPDATED] {filepath}")
             
     except Exception as e:
         print(f"[ERROR] {filepath}: {e}")
