@@ -1,5 +1,95 @@
 [
     {
+        "title": "Alphabet (GOOGL): Navigating the AI Frontier Amidst Shifting Market Tides",
+        "date": "2026-02-08",
+        "link": "blog/2026-02-08-GOOGL.html",
+        "summary": ""
+    },
+    {
+        "title": "Beyond the Headlines: Why Microsoft (MSFT) Remains a Cornerstone of Tech Investment",
+        "date": "2026-02-08",
+        "link": "blog/2026-02-08-MSFT.html",
+        "summary": "Microsoft (MSFT) stands out as a resilient and innovative tech investment despite broader market caution. Its leadership in cloud computing (Azure), aggressive integration of AI (Copilot), and diversified ecosystem (Office 365, Xbox) provide a strong foundation for sustained growth. MSFT's robust financials and strategic vision make it a cornerstone for long-term investors seeking stability and significant upside potential from major technological trends."
+    },
+    {
+        "title": "Apple (AAPL): Navigating the Tech Giant's Investment Horizon in a Shifting Market",
+        "date": "2026-02-08",
+        "link": "blog/2026-02-08-AAPL.html",
+        "summary": "Apple (AAPL) remains a dominant force in tech, driven by its robust ecosystem, strong brand, and growing Services segment. While facing market saturation, regulatory scrutiny, and valuation considerations, its future growth hinges on innovation like the Vision Pro and continued expansion into new categories. AAPL is a strong long-term holding, but investors should watch for new disruptive products and regulatory developments."
+    },
+    {
+        "title": "Beyond Search: Why GOOGL's AI Prowess Makes It a Compelling Long-Term Play",
+        "date": "2026-02-07",
+        "link": "blog/2026-02-07-GOOGL.html",
+        "summary": "Alphabet (GOOGL) remains a formidable investment, leveraging its dominant position in search, a robust advertising engine, and extensive AI investments like Gemini and Google Cloud. Despite competitive pressures and regulatory scrutiny, GOOGL's diversified ecosystem and relentless innovation across AI, cloud, and autonomous driving present a compelling case for long-term growth in the evolving tech landscape."
+    },
+    {
+        "title": "Microsoft (MSFT): The Unstoppable Tech Giant Powering the Future of AI and Cloud",
+        "date": "2026-02-07",
+        "link": "blog/2026-02-07-MSFT.html",
+        "summary": "An in-depth analysis of Microsoft (MSFT), highlighting its enduring strength in cloud computing, transformative AI leadership, and diversified ecosystem, making it a cornerstone investment for long-term growth despite market volatility and competitive pressures."
+    },
+    {
+        "title": "Navigating the Tech Tides: Why Apple (AAPL) Remains a Cornerstone Investment",
+        "date": "2026-02-07",
+        "link": "blog/2026-02-07-AAPL.html",
+        "summary": "Apple (AAPL) remains a cornerstone investment due to its robust, integrated ecosystem, rapidly growing services segment, and strategic innovations like the Vision Pro and pervasive AI integration. Despite regulatory challenges and intense competition, its strong financials, brand loyalty, and consistent shareholder returns position it as a resilient and foundational asset in any tech-focused portfolio."
+    },
+    {
+        "title": "AMD's Soaring Ambitions: Riding the AI Wave to New Heights Amidst Fierce Competition",
+        "date": "2026-02-06",
+        "link": "blog/2026-02-06-AMD.html",
+        "summary": "Advanced Micro Devices (AMD) saw a significant surge, closing up over 8% at $208.44. This post delves into the factors propelling AMD's momentum, particularly its strategic moves in the burgeoning AI chip market with its MI300X accelerators, its diversified product portfolio, and the formidable competitive landscape dominated by NVIDIA. We'll explore the investment outlook for this semiconductor powerhouse."
+    },
+    {
+        "title": "Bitcoin Blazes Past $70,000: Decoding the Crypto Bull Run",
+        "date": "2026-02-06",
+        "link": "blog/2026-02-06-BTC-USD.html",
+        "summary": "Bitcoin (BTC-USD) has surged past $70,000, currently at $70,622.28 (+12.63%), driven by the success of spot ETFs, the upcoming halving event, and growing institutional adoption. While its trajectory is distinct from traditional stocks, investors should remain mindful of Bitcoin's inherent volatility, evolving regulatory landscape, and global macroeconomic factors. A disciplined, long-term approach with proper risk management is advised for this dynamic digital asset."
+    },
+    {
+        "title": "Ethereum's Electrifying Surge: What's Next for ETH-USD After Breaking $2,000?",
+        "date": "2026-02-06",
+        "link": "blog/2026-02-06-ETH-USD.html",
+        "summary": "ETH-USD surged over 13% to $2,063.22, breaking the $2,000 mark. This analysis explores the drivers behind Ethereum's rally, including broader crypto optimism, the Dencun upgrade, its DeFi/NFT dominance, and potential Spot ETFs. We also examine its fundamental strengths and outline future opportunities and risks for investors in this dynamic digital asset."
+    },
+    {
+        "title": "QCOM's Plunge: Navigating the Semiconductor Giant's Future Amidst Market Turbulence",
+        "date": "2026-02-05",
+        "link": "blog/2026-02-05-QCOM.html",
+        "summary": "Qualcomm (QCOM) saw a significant 8.46% drop amidst broader market weakness and 'AI worries.' This post analyzes QCOM's strong position in mobile, automotive, and IoT, emphasizing its critical role in on-device AI. We explore whether this dip presents a buying opportunity or signals deeper concerns for the semiconductor giant, offering insights into its strategic outlook."
+    },
+    {
+        "title": "Bitcoin Plunges 13%: Decoding BTC-USD's Sharp Correction Amidst Market Jitters",
+        "date": "2026-02-05",
+        "link": "blog/2026-02-05-BTC-USD.html",
+        "summary": "Bitcoin (BTC-USD) has plummeted 13.27% to $63,332.77 amidst broad market weakness, including a Dow Jones futures breakdown and Wall Street's sharp decline. This significant correction highlights Bitcoin's growing correlation with traditional risk assets, driven by overall risk-off sentiment. Investors should monitor key support levels, macroeconomic indicators, and institutional flows to determine if this is a buying opportunity or a signal for further caution, while acknowledging Bitcoin's inherent volatility."
+    },
+    {
+        "title": "Ethereum's Steep Plunge: Decoding the ETH-USD Drop Amidst Broader Market Jitters",
+        "date": "2026-02-05",
+        "link": "blog/2026-02-05-ETH-USD.html",
+        "summary": "ETH-USD has taken a significant -14.07% hit, mirroring a broader market downturn. We analyze the causes, from Wall Street's \"AI worries\" to Bitcoin's dive, and assess whether this signals a buy opportunity or a deeper correction for Ethereum investors."
+    },
+    {
+        "title": "Nike (NKE) Flexes Muscle: A Closer Look at Today's 5.4% Surge and What's Next for the Athleisure Giant",
+        "date": "2026-02-04",
+        "link": "blog/2026-02-04-NKE.html",
+        "summary": "Nike (NKE) surged by 5.40% to $64.22 today, outperforming the market amidst a broader recovery following tech sector sell-offs. This rebound highlights Nike's enduring brand power, successful direct-to-consumer strategy, and consistent innovation. Despite ongoing macroeconomic challenges, NKE's global recognition and diversified market presence make it an attractive prospect for investors seeking quality and resilience. The move suggests a potential rotation towards established brands, though investors should monitor future earnings and market dynamics for sustained growth."
+    },
+    {
+        "title": "Eli Lilly (LLY) Stock Soars 10%+: Decoding the Pharma Giant's Explosive Growth",
+        "date": "2026-02-04",
+        "link": "blog/2026-02-04-LLY.html",
+        "summary": "Eli Lilly (LLY) stock experienced a massive surge of over 10% today, highlighting robust investor confidence in its blockbuster diabetes and weight-loss drugs like Mounjaro and Zepbound, alongside its promising pipeline, including the Alzheimer's treatment Donanemab. This post provides an in-depth analysis of the key drivers behind LLY's impressive market performance and its compelling long-term investment outlook for global investors."
+    },
+    {
+        "title": "AMD's Recent Slide: A Bargain for Bulls or a Bear Trap in the Tech Sell-off?",
+        "date": "2026-02-04",
+        "link": "blog/2026-02-04-AMD.html",
+        "summary": "Advanced Micro Devices (AMD) has seen a significant price drop amidst a broader tech sell-off. This analysis delves into whether its core strengths in data center and AI can overcome market headwinds, presenting an investment opportunity or a signal for caution."
+    },
+    {
         "title": "Adobe (ADBE) Plunges 7%: Is This a Creative Opportunity or a Broader Market Warning?",
         "date": "2026-02-03",
         "link": "blog/2026-02-03-ADBE.html",
@@ -28,17 +118,5 @@
         "date": "2026-01-29",
         "link": "blog/2026-01-29-GOOGL.html",
         "summary": "Alphabet (GOOGL) is strategically positioned for future growth, driven by its leadership in Artificial Intelligence (AI) and the expanding reach of Google Cloud. Despite a dynamic tech landscape and competitive pressures, its core search and advertising businesses remain resilient. GOOGL's deep investments in AI, exemplified by Gemini, are integrating across its ecosystem, while Google Cloud continues to gain traction in the enterprise market. Investors should view GOOGL as a long-term play on innovation and digital transformation."
-    },
-    {
-        "title": "Microsoft (MSFT): Navigating Short-Term Dips Amidst Long-Term AI Ambition",
-        "date": "2026-01-29",
-        "link": "blog/2026-01-29-MSFT.html",
-        "summary": "Microsoft (MSFT) recently saw a 6% dip in Frankfurt trading after results, potentially indicating market disappointment or cautious guidance. However, the company remains a leading player in AI and cloud computing, with strong growth prospects for Azure and AI integration. Irrelevant news items like winter storms or other companies' corporate actions do not affect MSFT's core analysis. The recent decline may offer a buying opportunity for long-term investors banking on Microsoft's strategic AI and cloud leadership."
-    },
-    {
-        "title": "Apple (AAPL): Navigating the Tech Landscape with Unwavering Ecosystem Strength",
-        "date": "2026-01-29",
-        "link": "blog/2026-01-29-AAPL.html",
-        "summary": "Despite absent real-time price data, Apple (AAPL) continues to stand as a titan in the tech world. Its robust ecosystem of hardware, software, and services, coupled with unparalleled brand loyalty and a strong financial position, underpins its long-term investment appeal. With strategic investments in AI and continued services growth, Apple is poised for sustained relevance and innovation."
     }
 ]
