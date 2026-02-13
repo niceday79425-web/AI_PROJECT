@@ -1,5 +1,23 @@
 [
     {
+        "title": "Bitcoin's Resurgence: Navigating the Digital Gold Rush as BTC-USD Eyes New Milestones",
+        "date": "2026-02-13",
+        "link": "blog/2026-02-13-BTC-USD.html",
+        "summary": "Bitcoin (BTC-USD) is once again seizing the market spotlight, surging over 3.95% to $68,834.72. This post delves into the driving forces behind its impressive rally, including institutional ETF adoption, the anticipated halving event, and growing global acceptance. It offers crucial investment insights for global investors, emphasizing long-term perspective, diversification, and understanding inherent volatility."
+    },
+    {
+        "title": "ABNB Takes Flight: Unpacking Airbnb's 4.65% Surge and What It Means for Investors",
+        "date": "2026-02-13",
+        "link": "blog/2026-02-13-ABNB.html",
+        "summary": "Airbnb (ABNB) stock surged +4.65% to $121.35, driven by cooler US CPI data boosting overall market optimism and hopes for interest rate cuts. This post analyzes ABNB's strengths, including its global brand, asset-light model, and diverse offerings, which position it well for continued post-pandemic travel recovery. It also discusses opportunities like innovation and strong financials, alongside considerations like regulatory headwinds and competition. The analysis suggests ABNB is a strong player in the travel sector but advises investors to monitor key risks and conduct due diligence."
+    },
+    {
+        "title": "Ethereum (ETH-USD) Soars Past $2000: Decoding the Smart Contract King's Next Move",
+        "date": "2026-02-13",
+        "link": "blog/2026-02-13-ETH-USD.html",
+        "summary": "Ethereum (ETH-USD) has surged past $2000, driven by anticipated Dencun upgrade, potential spot ETFs, and a broader risk-on market sentiment following cooler US CPI data. This professional analysis explores the catalysts, risks, and investment outlook for the smart contract king, urging global investors to consider its long-term potential amidst inherent volatility and regulatory uncertainty."
+    },
+    {
         "title": "Apple (AAPL) Dips 5%: Opportunity or Omen Amidst Market Jitters?",
         "date": "2026-02-13",
         "link": "blog/2026-02-13-AAPL.html",
@@ -100,23 +118,5 @@
         "date": "2026-02-07",
         "link": "blog/2026-02-07-MSFT.html",
         "summary": "An in-depth analysis of Microsoft (MSFT), highlighting its enduring strength in cloud computing, transformative AI leadership, and diversified ecosystem, making it a cornerstone investment for long-term growth despite market volatility and competitive pressures."
-    },
-    {
-        "title": "Navigating the Tech Tides: Why Apple (AAPL) Remains a Cornerstone Investment",
-        "date": "2026-02-07",
-        "link": "blog/2026-02-07-AAPL.html",
-        "summary": "Apple (AAPL) remains a cornerstone investment due to its robust, integrated ecosystem, rapidly growing services segment, and strategic innovations like the Vision Pro and pervasive AI integration. Despite regulatory challenges and intense competition, its strong financials, brand loyalty, and consistent shareholder returns position it as a resilient and foundational asset in any tech-focused portfolio."
-    },
-    {
-        "title": "AMD's Soaring Ambitions: Riding the AI Wave to New Heights Amidst Fierce Competition",
-        "date": "2026-02-06",
-        "link": "blog/2026-02-06-AMD.html",
-        "summary": "Advanced Micro Devices (AMD) saw a significant surge, closing up over 8% at $208.44. This post delves into the factors propelling AMD's momentum, particularly its strategic moves in the burgeoning AI chip market with its MI300X accelerators, its diversified product portfolio, and the formidable competitive landscape dominated by NVIDIA. We'll explore the investment outlook for this semiconductor powerhouse."
-    },
-    {
-        "title": "Bitcoin Blazes Past $70,000: Decoding the Crypto Bull Run",
-        "date": "2026-02-06",
-        "link": "blog/2026-02-06-BTC-USD.html",
-        "summary": "Bitcoin (BTC-USD) has surged past $70,000, currently at $70,622.28 (+12.63%), driven by the success of spot ETFs, the upcoming halving event, and growing institutional adoption. While its trajectory is distinct from traditional stocks, investors should remain mindful of Bitcoin's inherent volatility, evolving regulatory landscape, and global macroeconomic factors. A disciplined, long-term approach with proper risk management is advised for this dynamic digital asset."
     }
 ]
