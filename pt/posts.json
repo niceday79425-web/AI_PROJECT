@@ -1,5 +1,23 @@
 [
     {
+        "title": "Apple (AAPL) Cai 5%: Oportunidade ou Presságio em Meio à Incerteza do Mercado?",
+        "date": "2026-02-13",
+        "link": "blog/2026-02-13-AAPL.html",
+        "summary": "A AAPL sofreu uma queda significativa de 5% para US$ 261,73 hoje, levantando questões para os investidores. Esta análise aprofunda os fatores por trás da liquidação, incluindo ansiedades mais amplas do mercado, como medos de IA e dados do IPC, enquanto avalia a resiliência de longo prazo da Apple e o que os investidores devem observar a seguir."
+    },
+    {
+        "title": "Navegando pelo Reino Mágico: A Ação da Disney (DIS) Ainda é um Investimento de Conto de Fadas em Meio à Instabilidade do Mercado?",
+        "date": "2026-02-12",
+        "link": "blog/2026-02-12-DIS.html",
+        "summary": "As ações da Disney (DIS) caíram mais de 5% hoje, refletindo ansiedades mais amplas do mercado e pressões específicas do setor. Este post explora os diversos segmentos da Disney – desde o crescimento do streaming e a recuperação dos parques até iniciativas estratégicas – para avaliar seu apelo de investimento de longo prazo em meio à volatilidade atual, oferecendo insights para investidores globais."
+    },
+    {
+        "title": "Cisco (CSCO): Esta Queda Recente é uma Oportunidade de Ouro ou um Sinal de Alerta para Investidores?",
+        "date": "2026-02-12",
+        "link": "blog/2026-02-12-CSCO.html",
+        "summary": "A Cisco (CSCO) experimentou recentemente uma queda significativa de 12,32% no preço de suas ações, chamando a atenção dos investidores em meio à volatilidade do mercado e aos temores de IA. Esta análise investiga se o declínio apresenta uma oportunidade de compra, destacando o papel fundamental da Cisco em redes, cibersegurança e infraestrutura de IA. Apesar da turbulência de curto prazo do mercado, seu alinhamento com megatendências tecnológicas críticas, saúde financeira robusta e a transição para um modelo de assinatura a posicionam como um investimento de longo prazo potencialmente atraente, especialmente considerando sua estabilidade de dividendos e benefícios potenciais de acordos comerciais globais como o entre EUA e Taiwan."
+    },
+    {
         "title": "Ações da GEV Disparam Mais de 4%: Decifrando o Momento em Meio à Volatilidade do Mercado",
         "date": "2026-02-12",
         "link": "blog/2026-02-12-GEV.html",
@@ -100,23 +118,5 @@
         "date": "2026-02-06",
         "link": "blog/2026-02-06-BTC-USD.html",
         "summary": "O Bitcoin (BTC-USD) disparou acima de US$70.000, atualmente em US$70.622,28 (+12,63%), impulsionado pelo sucesso dos ETFs spot, o próximo evento de halving e a crescente adoção institucional. Embora sua trajetória seja distinta das ações tradicionais, os investidores devem estar cientes da volatilidade inerente do Bitcoin, do cenário regulatório em evolução e dos fatores macroeconômicos globais. Uma abordagem disciplinada e de longo prazo com gerenciamento adequado de riscos é aconselhável para este ativo digital dinâmico."
-    },
-    {
-        "title": "A Ascensão Eletrizante do Ethereum: O Que Vem Por Aí para ETH-USD Após Ultrapassar os US$2.000?",
-        "date": "2026-02-06",
-        "link": "blog/2026-02-06-ETH-USD.html",
-        "summary": "O ETH-USD disparou mais de 13% para US$2.063,22, rompendo a marca de US$2.000. Esta análise explora os impulsionadores por trás da recuperação do Ethereum, incluindo o otimismo mais amplo em cripto, a atualização Dencun, sua dominância em DeFi/NFTs e potenciais ETFs à vista. Também examinamos suas forças fundamentais e descrevemos oportunidades e riscos futuros para investidores neste ativo digital dinâmico."
-    },
-    {
-        "title": "A Queda da QCOM: Navegando o Futuro da Gigante dos Semicondutores em Meio à Turbulência do Mercado",
-        "date": "2026-02-05",
-        "link": "blog/2026-02-05-QCOM.html",
-        "summary": "A Qualcomm (QCOM) registrou uma queda significativa de 8,46% em meio à fraqueza generalizada do mercado e às 'preocupações com a IA'. Esta postagem analisa a forte posição da QCOM em dispositivos móveis, automotivos e IoT, enfatizando seu papel crítico na IA no dispositivo. Exploramos se essa queda representa uma oportunidade de compra ou sinaliza preocupações mais profundas para a gigante dos semicondutores, oferecendo insights sobre suas perspectivas estratégicas."
-    },
-    {
-        "title": "Bitcoin Despenca 13%: Decifrando a Correção Acentuada do BTC-USD em Meio à Incerteza do Mercado",
-        "date": "2026-02-05",
-        "link": "blog/2026-02-05-BTC-USD.html",
-        "summary": "O Bitcoin (BTC-USD) despencou 13,27% para $63.332,77 em meio a uma fraqueza generalizada do mercado, incluindo uma quebra nos futuros do Dow Jones e uma forte queda em Wall Street. Essa correção significativa destaca a crescente correlação do Bitcoin com ativos de risco tradicionais, impulsionada pelo sentimento geral de aversão ao risco. Os investidores devem monitorar os principais níveis de suporte, indicadores macroeconômicos e fluxos institucionais para determinar se esta é uma oportunidade de compra ou um sinal para maior cautela, reconhecendo a volatilidade inerente do Bitcoin."
     }
 ]
