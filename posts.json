@@ -1,5 +1,23 @@
 [
     {
+        "title": "VIST Stock: Powering Up Your Portfolio? An In-Depth Look at Vistra Corp.",
+        "date": "2026-02-18",
+        "link": "blog/2026-02-18-VIST.html",
+        "summary": "Vistra Corp. (VIST) gained 2.78% to $55.45, showcasing strength in the US energy sector. As an integrated power generator and retail electricity provider, VIST offers an attractive investment thesis driven by its stable business model, strategic shift towards renewables, and reliable cash flows. While facing risks like commodity volatility and regulatory changes, its market position and decarbonization efforts make it a compelling consideration for investors seeking exposure to a foundational and evolving energy player."
+    },
+    {
+        "title": "Is AT&T's 2.79% Dip an Opportunity? A Deep Dive into T Stock",
+        "date": "2026-02-18",
+        "link": "blog/2026-02-18-T.html",
+        "summary": "AT&T (T) experienced a notable 2.79% dip today, trading at $27.88, despite a generally rising S&P 500. This post delves into the potential reasons behind the telecom giant's downturn, examining its core business strengths in 5G and fiber, alongside ongoing challenges like its substantial debt and intense market competition. We analyze whether this price drop presents a buying opportunity for income-seeking investors or signals deeper structural concerns, urging a balanced perspective on T's future prospects."
+    },
+    {
+        "title": "ExxonMobil (XOM) Powers Up: Decoding the Energy Giant's Latest Surge and Future Prospects",
+        "date": "2026-02-18",
+        "link": "blog/2026-02-18-XOM.html",
+        "summary": "ExxonMobil (XOM) surged over 3% to $150.68 today, defying broader market fluctuations. This post analyzes the drivers behind XOM's robust performance, focusing on strong commodity prices, strategic investments in natural gas and LNG, consistent shareholder returns through dividends and buybacks, and resilient downstream/chemical operations. It also touches on the energy sector's role in a diversified portfolio, outlines key risks like price volatility and regulatory scrutiny, and offers actionable insights for investors monitoring this energy giant's future amidst global energy demand and transition."
+    },
+    {
         "title": "Alphabet (GOOGL): Navigating the AI Frontier Amidst Shifting Market Tides",
         "date": "2026-02-17",
         "link": "blog/2026-02-17-GOOGL.html",
@@ -100,23 +118,5 @@
         "date": "2026-02-12",
         "link": "blog/2026-02-12-CSCO.html",
         "summary": "Cisco (CSCO) recently experienced a significant 12.32% stock price drop, catching investor attention amidst broader market volatility and AI fears. This analysis delves into whether the decline presents a buying opportunity, highlighting Cisco's foundational role in networking, cybersecurity, and AI infrastructure. Despite short-term market turbulence, its alignment with critical tech mega-trends, robust financial health, and shift towards a subscription model position it as a potentially attractive long-term investment, especially considering its dividend stability and potential benefits from global trade deals like the US-Taiwan agreement."
-    },
-    {
-        "title": "GEV Stock Soars Over 4%: Decoding the Momentum Amidst Market Volatility",
-        "date": "2026-02-12",
-        "link": "blog/2026-02-12-GEV.html",
-        "summary": "GEV stock surged +4.16% to $823.67 amidst a cautious market and mixed earnings reports from other companies. This strong performance suggests deep investor confidence, robust underlying fundamentals, or anticipation of future catalysts, positioning GEV as a potential standout growth opportunity despite broader market volatility. Investors are advised to conduct thorough due diligence to understand the drivers behind this significant rally."
-    },
-    {
-        "title": "Navigating the Dip: Is Accenture (ACN) Still a Prime Buy for Long-Term Growth?",
-        "date": "2026-02-12",
-        "link": "blog/2026-02-12-ACN.html",
-        "summary": "Accenture (ACN) saw a notable dip today, trading at $230.43 with a 4.33% decline. Amidst broader tech sector jitters and specific peer disappointments, we analyze Accenture's robust business model, market leadership in digital transformation and AI, and whether this pullback presents a strategic entry point for long-term investors focused on quality growth."
-    },
-    {
-        "title": "Salesforce (CRM) Stock: Decoding Today's Dip and Charting the Cloud Giant's Future",
-        "date": "2026-02-11",
-        "link": "blog/2026-02-11-CRM.html",
-        "summary": "Salesforce (CRM) experienced a notable 4.37% dip today, closing at $185.00, likely due to broader market caution rather than specific negative news. This analysis delves into the cloud giant's enduring leadership in CRM, its aggressive pursuit of AI innovation via Einstein AI and AI Cloud, and its focus on profitability. Despite competitive pressures and macroeconomic risks, CRM's fundamental strengths and strategic direction suggest today's pullback could present a compelling long-term investment opportunity for those bullish on enterprise cloud and AI."
     }
 ]
