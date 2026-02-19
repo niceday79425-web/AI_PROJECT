@@ -4,13 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock Wise | Stock Gung-hap</title>
+    <title>StockWise | Compatibilidade com Ações</title>
+    <meta name="description"
+        content="Descubra seu MBTI de investidor! Confira a compatibilidade com uma ação e aprenda o método 'Sleep-Well-At-Night Investing' para resistir aos mercados em queda.">
     <link rel="stylesheet" href="../css/style.css">
     <script>sessionStorage.setItem('redirected', 'true');</script>
-
-
-
-
 
     <link rel="canonical" href="https://ai-project-1en.pages.dev/fortune.html" />
     <link rel="alternate" hreflang="en" href="https://ai-project-1en.pages.dev/fortune.html" />
@@ -29,7 +27,7 @@
                 <a href="/pt/fortune.html" class="lang-link active">PT</a>
             </nav>
         </header>
-        
+
         <!-- Google AdSense - Header Banner -->
         <div class="ad-slot">
             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
@@ -38,23 +36,196 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
         </div>
-        <main style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <section class="card fortune-card">
-                <h2>Verifique sua Compatibilidade 💖</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem;">Digite seu nome e o ticker da ação para
-                    ver se vocês são o par perfeito!</p>
-                <div class="input-group"><label for="userName">Seu Nome</label><input type="text" id="userName"></div>
-                <div class="input-group"><label for="tickerName">Ticker da Ação</label><input type="text"
-                        id="tickerName"></div>
-                <button onclick="checkCompatibility()" class="btn-calculate">Revelar Nosso Destino</button>
-                <div id="result" class="result-display">
-                    <div id="matchText" style="font-size: 1.25rem; font-weight: 600;">Calculando...</div>
-                    <div id="score" class="score-value">0%</div>
-                    <p id="comment" style="color: var(--text-secondary);"></p>
-                </div>
-            </section>
-        </main>
-        
+
+        <div class="content-with-sidebar">
+            <div class="main-content">
+                <main style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <section class="card fortune-card">
+                        <h2>Verifique sua Compatibilidade com a Ação 💖</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Digite seu nome e o ticker da ação
+                            para ver se vocês são o par perfeito!</p>
+
+                        <div class="input-group">
+                            <label for="userName">Seu Nome</label>
+                            <input type="text" id="userName" placeholder="Digite seu nome">
+                        </div>
+                        <div class="input-group">
+                            <label for="tickerName">Ticker da Ação</label>
+                            <input type="text" id="tickerName" placeholder="Ex: AAPL, SCHD, TSLA">
+                        </div>
+
+                        <button onclick="checkCompatibility()" class="btn-calculate">Revelar Nosso Destino</button>
+
+                        <div id="result" class="result-display">
+                            <div id="matchText" style="font-size: 1.25rem; font-weight: 600;">Calculando...</div>
+                            <div id="score" class="score-value">0%</div>
+                            <p id="comment" style="color: var(--text-secondary);"></p>
+                        </div>
+                    </section>
+
+                    <!-- Guia: MBTI do Investidor -->
+                    <section style="margin-top: 4rem; text-align: left;">
+                        <h2
+                            style="font-size: 2rem; margin-bottom: 0.75rem; background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-align: center;">
+                            Meu MBTI de Investidor: A Estabilidade Psicológica Determina os Retornos
+                        </h2>
+                        <p
+                            style="color: var(--text-secondary); margin-bottom: 3rem; font-size: 1rem; line-height: 1.7; text-align: center;">
+                            A "compatibilidade" com uma ação não é só diversão. Quando o perfil do investidor não
+                            combina com o ativo, a instabilidade emocional entra em jogo — e isso destrói os retornos.
+                        </p>
+
+                        <div style="display: grid; gap: 2rem;">
+
+                            <!-- Cartão 1: Por que a compatibilidade importa -->
+                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #ec4899; transition: transform 0.3s ease;"
+                                onmouseover="this.style.transform='translateY(-4px)'"
+                                onmouseout="this.style.transform='translateY(0)'">
+                                <h3
+                                    style="font-size: 1.3rem; color: #ec4899; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <span
+                                        style="background: rgba(236,72,153,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
+                                    Por Que a "Compatibilidade" com uma Ação É Importante?
+                                </h3>
+                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
+                                    Pesquisas em finanças comportamentais mostram que a maioria dos investidores
+                                    individuais perde dinheiro não por falta de informação, mas por <strong
+                                        style="color: var(--text-primary);">Panic Selling (venda em pânico)</strong>.
+                                    Quando um investidor compra uma ação de alto crescimento e o preço cai 30%, é muito
+                                    difícil manter a calma.
+                                </p>
+                                <p style="color: var(--text-secondary); line-height: 1.8;">
+                                    Sem estabilidade psicológica, o investidor acaba vendendo na mínima e recomprando na
+                                    máxima — um ciclo vicioso. Conhecer sua própria tolerância ao risco e escolher
+                                    ativos compatíveis com ela pode <strong style="color: #ec4899;">melhorar
+                                        significativamente seus retornos médios.</strong>
+                                </p>
+                                <div
+                                    style="margin-top: 1.25rem; padding: 1rem; background: rgba(236,72,153,0.06); border-radius: 10px; display: flex; gap: 1rem; align-items: flex-start;">
+                                    <span style="font-size: 1.5rem; flex-shrink: 0;">😰</span>
+                                    <div style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
+                                        <strong style="color: var(--text-primary);">Padrão de Panic Selling:</strong>
+                                        Compra no topo por FOMO → Nervosismo na queda → Vende em pânico na mínima →
+                                        Recompra no topo com o rebote → Repete
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cartão 2: Estilos de investimento -->
+                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #f59e0b; transition: transform 0.3s ease;"
+                                onmouseover="this.style.transform='translateY(-4px)'"
+                                onmouseout="this.style.transform='translateY(0)'">
+                                <h3
+                                    style="font-size: 1.3rem; color: #f59e0b; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <span
+                                        style="background: rgba(245,158,11,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">02</span>
+                                    Investimento em Valor vs. Crescimento vs. Dividendos
+                                </h3>
+                                <div
+                                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.25rem;">
+                                    <div
+                                        style="padding: 1.25rem; background: rgba(59,130,246,0.06); border-radius: 12px; border: 1px solid rgba(59,130,246,0.2);">
+                                        <div style="font-weight: 700; color: #3b82f6; margin-bottom: 0.5rem;">📊
+                                            Investimento em Valor</div>
+                                        <div
+                                            style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.75rem;">
+                                            Busca empresas subavaliadas em relação ao seu valor intrínseco para manter
+                                            no longo prazo. Ideal para quem tem paciência e aprecia análise
+                                            fundamentalista.</div>
+                                        <div
+                                            style="font-size: 0.8rem; padding: 0.4rem 0.6rem; background: rgba(59,130,246,0.1); border-radius: 6px; color: #3b82f6;">
+                                            Volatilidade: Média | Perfil: Analítico</div>
+                                    </div>
+                                    <div
+                                        style="padding: 1.25rem; background: rgba(239,68,68,0.06); border-radius: 12px; border: 1px solid rgba(239,68,68,0.2);">
+                                        <div style="font-weight: 700; color: #ef4444; margin-bottom: 0.5rem;">🚀
+                                            Investimento em Crescimento</div>
+                                        <div
+                                            style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.75rem;">
+                                            Foca em empresas de crescimento acelerado. Requer alta tolerância à
+                                            volatilidade e forte convicção de longo prazo.</div>
+                                        <div
+                                            style="font-size: 0.8rem; padding: 0.4rem 0.6rem; background: rgba(239,68,68,0.1); border-radius: 6px; color: #ef4444;">
+                                            Volatilidade: Alta | Perfil: Agressivo</div>
+                                    </div>
+                                    <div
+                                        style="padding: 1.25rem; background: rgba(16,185,129,0.06); border-radius: 12px; border: 1px solid rgba(16,185,129,0.2);">
+                                        <div style="font-weight: 700; color: #10b981; margin-bottom: 0.5rem;">💰
+                                            Investimento em Dividendos</div>
+                                        <div
+                                            style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.75rem;">
+                                            Prioriza fluxo de caixa consistente e estabilidade. Ideal para quem valoriza
+                                            a geração de renda e o poder dos juros compostos.</div>
+                                        <div
+                                            style="font-size: 0.8rem; padding: 0.4rem 0.6rem; background: rgba(16,185,129,0.1); border-radius: 6px; color: #10b981;">
+                                            Volatilidade: Baixa | Perfil: Defensivo</div>
+                                    </div>
+                                </div>
+                                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 0.9rem;">
+                                    Não existe um estilo superior. O mais importante é escolher a abordagem com a qual
+                                    você consegue permanecer investido por mais tempo, considerando sua idade, horizonte
+                                    de investimento, tolerância ao risco e objetivos financeiros.
+                                </p>
+                            </div>
+
+                            <!-- Cartão 3: Sleep-Well Investing -->
+                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #10b981; transition: transform 0.3s ease;"
+                                onmouseover="this.style.transform='translateY(-4px)'"
+                                onmouseout="this.style.transform='translateY(0)'">
+                                <h3
+                                    style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <span
+                                        style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">03</span>
+                                    O Método "Sleep-Well-At-Night" para Resistir aos Mercados em Queda
+                                </h3>
+                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
+                                    O lendário investidor Peter Lynch dizia: <em
+                                        style="color: var(--text-primary);">"Antes de comprar uma ação, pergunte a si
+                                        mesmo: eu conseguiria segurá-la se ela caísse 50%?"</em> Essa é a essência do
+                                    <strong style="color: #10b981;">Sleep-Well-At-Night (SWAN) Investing</strong>.
+                                </p>
+                                <div
+                                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+                                    <div
+                                        style="padding: 1rem; background: rgba(239,68,68,0.06); border-radius: 12px; text-align: center;">
+                                        <div style="font-size: 1.5rem; margin-bottom: 0.4rem;">😰</div>
+                                        <div
+                                            style="font-size: 0.85rem; color: #ef4444; font-weight: 600; margin-bottom: 0.3rem;">
+                                            Perfil ≠ Ativo</div>
+                                        <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5;">
+                                            Verifica o preço todo dia, noites sem dormir, vende na mínima</div>
+                                    </div>
+                                    <div
+                                        style="padding: 1rem; background: rgba(16,185,129,0.06); border-radius: 12px; text-align: center;">
+                                        <div style="font-size: 1.5rem; margin-bottom: 0.4rem;">😴</div>
+                                        <div
+                                            style="font-size: 0.85rem; color: #10b981; font-weight: 600; margin-bottom: 0.3rem;">
+                                            Perfil = Ativo</div>
+                                        <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5;">
+                                            Convicção mesmo na queda, sono tranquilo, retorno a longo prazo</div>
+                                    </div>
+                                </div>
+                                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 0.9rem;">
+                                    Quando você entende profundamente o modelo de negócios de uma empresa, acredita em
+                                    seu futuro de longo prazo e escolhe ativos compatíveis com sua psicologia, o
+                                    verdadeiro investimento de longo prazo se torna possível. Esperamos que o teste de
+                                    compatibilidade acima seja o ponto de partida para você descobrir quais ações
+                                    realmente combinam com você.
+                                </p>
+                                <div
+                                    style="margin-top: 1.25rem; padding: 0.9rem 1.2rem; background: rgba(16,185,129,0.08); border-radius: 10px; font-size: 0.9rem; color: #10b981;">
+                                    💡 <strong>Pergunta-chave:</strong> "O que eu faria se esta ação caísse 40%?" — Sua
+                                    resposta honesta define seu verdadeiro estilo de investimento.
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </main>
+            </div>
+            <aside class="ad-slot ad-sidebar"></aside>
+        </div>
+
         <!-- Google AdSense - Footer Banner -->
         <div class="ad-slot" style="margin-top: 2rem;">
             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
@@ -63,14 +234,18 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
         </div>
+
         <footer>
             <div class="footer-content">
-                
-                
                 <div class="footer-nav" style="margin-bottom: 1.5rem; font-size: 0.9rem;">
-                    <a href="/privacy.html" style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Política de Privacidade</a> | <a href="/about.html" style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Sobre Nós</a> | <a href="/contact.html" style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Contato</a>
+                    <a href="/privacy.html"
+                        style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Política de
+                        Privacidade</a> | <a href="/about.html"
+                        style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Sobre Nós</a> | <a
+                        href="/contact.html"
+                        style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Contato</a>
                 </div>
-<p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
+                <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
                 <p class="legal-disclaimer">Este conteúdo é apenas para fins informativos e não constitui aconselhamento
                     financeiro. O investimento envolve risco.</p>
             </div>
@@ -93,11 +268,11 @@
             matchText.innerText = `${name} + ${ticker}`;
             scoreDisplay.innerText = `${score}%`;
             let comment = "";
-            if (score >= 90) comment = "Par Perfeito! 💖 Esta ação pode ser sua alma gêmea.";
-            else if (score >= 70) comment = "Ótima Química! 📈 Uma adição sólida ao seu portfólio.";
-            else if (score >= 50) comment = "Bom Potencial! 👍 Explore mais para crescimento de longo prazo.";
-            else if (score >= 30) comment = "É Complicado... 😅 Prossiga com cautela.";
-            else comment = "Melhor como Amigos. 📉 Talvez procure outras oportunidades.";
+            if (score >= 90) comment = "Par Perfeito! 💖 Esta ação pode ser sua alma gêmea de investimentos.";
+            else if (score >= 70) comment = "Ótima Química! 📈 Uma adição sólida e confiável ao seu portfólio.";
+            else if (score >= 50) comment = "Bom Potencial! 👍 Explore mais antes de decidir pelo longo prazo.";
+            else if (score >= 30) comment = "É Complicado... 😅 Prossiga com cautela e faça mais pesquisas.";
+            else comment = "Melhor como Amigos. 📉 Talvez seja melhor procurar outras oportunidades.";
             commentDisplay.innerText = comment;
         }
     </script>
