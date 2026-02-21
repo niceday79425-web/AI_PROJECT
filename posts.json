@@ -1,5 +1,23 @@
 [
     {
+        "title": "Alphabet (GOOGL): Unpacking the Tech Titan's Enduring Power Amidst the AI Revolution",
+        "date": "2026-02-21",
+        "link": "blog/2026-02-21-GOOGL.html",
+        "summary": "Alphabet (GOOGL) stands as a tech titan, underpinned by its foundational search and advertising business, rapidly expanding Google Cloud, and transformative advancements in AI, particularly with Gemini. Despite facing regulatory scrutiny and intense competition, its diversified portfolio, significant R&D, and strong cash flow position it as a compelling long-term investment. GOOGL is an AI-first company with substantial runway for continued growth and value creation."
+    },
+    {
+        "title": "Microsoft (MSFT): Is This Tech Titan Still a Must-Own in the AI Era? An In-Depth Analyst Report",
+        "date": "2026-02-21",
+        "link": "blog/2026-02-21-MSFT.html",
+        "summary": "A deep dive into Microsoft's strategic positioning in the AI era, its robust business segments, and why MSFT remains a compelling long-term investment despite macro uncertainties. The analysis highlights Azure, Office 365, and AI integration via Copilot as key growth drivers, underpinning its strong financial outlook and market moat."
+    },
+    {
+        "title": "AAPL: Decoding Apple's Future – Is the Tech Giant Still a Must-Have for Global Investors?",
+        "date": "2026-02-21",
+        "link": "blog/2026-02-21-AAPL.html",
+        "summary": "An in-depth look at Apple (AAPL), exploring its enduring ecosystem strength, key growth drivers like AI and new products, and the challenges it faces. This analysis provides a professional perspective for global investors evaluating Apple's long-term investment potential amidst market dynamics."
+    },
+    {
         "title": "Amazon (AMZN) Soars: Why AWS is Your AI Superhighway Bet",
         "date": "2026-02-20",
         "link": "blog/2026-02-20-AMZN.html",
@@ -100,23 +118,5 @@
         "date": "2026-02-14",
         "link": "blog/2026-02-14-MSFT.html",
         "summary": "Microsoft (MSFT) stands as a technology titan, driven by the exponential growth of its Azure cloud platform and its aggressive leadership in AI integration via Copilot. Its diversified ecosystem, encompassing productivity software, gaming, and strategic acquisitions, provides deep economic moats. Despite market fluctuations, MSFT's robust financials and relentless innovation make it a cornerstone investment for long-term growth and stability, reinforcing its status as a core portfolio pillar."
-    },
-    {
-        "title": "AAPL's Next Chapter: Navigating Innovation, AI, and Market Headwinds",
-        "date": "2026-02-14",
-        "link": "blog/2026-02-14-AAPL.html",
-        "summary": "Apple (AAPL) stands at a crucial juncture, leveraging its robust ecosystem and brand loyalty for future growth. Key drivers include a strong push into AI integration, continued expansion of its high-margin Services segment, and the long-term potential of new categories like the Vision Pro. While facing regulatory scrutiny and a maturing smartphone market, Apple's strategic vision, strong balance sheet, and consistent shareholder returns position it as a compelling long-term investment, though investors must consider its premium valuation and the execution of its innovative strategies."
-    },
-    {
-        "title": "Bitcoin's Resurgence: Navigating the Digital Gold Rush as BTC-USD Eyes New Milestones",
-        "date": "2026-02-13",
-        "link": "blog/2026-02-13-BTC-USD.html",
-        "summary": "Bitcoin (BTC-USD) is once again seizing the market spotlight, surging over 3.95% to $68,834.72. This post delves into the driving forces behind its impressive rally, including institutional ETF adoption, the anticipated halving event, and growing global acceptance. It offers crucial investment insights for global investors, emphasizing long-term perspective, diversification, and understanding inherent volatility."
-    },
-    {
-        "title": "ABNB Takes Flight: Unpacking Airbnb's 4.65% Surge and What It Means for Investors",
-        "date": "2026-02-13",
-        "link": "blog/2026-02-13-ABNB.html",
-        "summary": "Airbnb (ABNB) stock surged +4.65% to $121.35, driven by cooler US CPI data boosting overall market optimism and hopes for interest rate cuts. This post analyzes ABNB's strengths, including its global brand, asset-light model, and diverse offerings, which position it well for continued post-pandemic travel recovery. It also discusses opportunities like innovation and strong financials, alongside considerations like regulatory headwinds and competition. The analysis suggests ABNB is a strong player in the travel sector but advises investors to monitor key risks and conduct due diligence."
     }
 ]
