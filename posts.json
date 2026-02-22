@@ -1,5 +1,23 @@
 [
     {
+        "title": "Alphabet (GOOGL): Navigating Market Turbulence and Sustaining Tech Dominance",
+        "date": "2026-02-22",
+        "link": "blog/2026-02-22-GOOGL.html",
+        "summary": "Amidst global tariff hikes and geopolitical uncertainties, Alphabet (GOOGL) stands as a resilient tech titan. This analysis explores GOOGL's diversified revenue streams, strong growth drivers like Cloud and AI, and its long-term investment appeal despite current market headwinds, offering insights for investors seeking stability and innovation."
+    },
+    {
+        "title": "Microsoft (MSFT): A Fortress in the Cloud Amidst Market Headwinds",
+        "date": "2026-02-22",
+        "link": "blog/2026-02-22-MSFT.html",
+        "summary": "Explore Microsoft's (MSFT) resilience and growth drivers, from its dominant cloud presence (Azure) to AI innovation, as we analyze its investment potential amidst global tariff concerns and market volatility. Despite broader market headwinds, MSFT's strong fundamentals and strategic positioning make it a compelling long-term anchor for investors."
+    },
+    {
+        "title": "AAPL Navigates Tariff Storm: Is Apple Stock a Resilient Buy Amidst Global Trade Tensions?",
+        "date": "2026-02-22",
+        "link": "blog/2026-02-22-AAPL.html",
+        "summary": "Apple (AAPL) faces significant headwinds from new global tariffs, threatening its supply chain and profit margins. However, its strong brand loyalty, growing services segment, massive cash reserves, and innovation pipeline provide substantial resilience. This analysis explores AAPL's vulnerabilities and strengths, guiding investors on whether the current market volatility presents a buying opportunity or calls for caution, emphasizing long-term fundamentals over short-term trade tensions."
+    },
+    {
         "title": "Alphabet (GOOGL): Unpacking the Tech Titan's Enduring Power Amidst the AI Revolution",
         "date": "2026-02-21",
         "link": "blog/2026-02-21-GOOGL.html",
@@ -100,23 +118,5 @@
         "date": "2026-02-15",
         "link": "blog/2026-02-15-MSFT.html",
         "summary": "Microsoft (MSFT) remains a premier tech investment, propelled by its strong Azure cloud platform, dominant enterprise software, and particularly its strategic leadership in artificial intelligence through OpenAI and Copilot. Recent AI talent acquisitions further solidify its position. The company's diversified growth pillars and proactive innovation make it a compelling choice for long-term investors seeking exposure to future tech trends."
-    },
-    {
-        "title": "Why Apple (AAPL) Remains a Core Investment in a Shifting Market",
-        "date": "2026-02-15",
-        "link": "blog/2026-02-15-AAPL.html",
-        "summary": "Apple (AAPL) remains a cornerstone investment for global portfolios, driven by its unparalleled brand loyalty, robust ecosystem, and growing Services segment. Despite its size, ongoing innovation, particularly in AI and new product categories like Vision Pro, positions AAPL for future growth. Its status as a market bellwether and strong financial health make it an enduring choice for long-term investors seeking stability and exposure to cutting-edge technology."
-    },
-    {
-        "title": "Alphabet (GOOGL): Decoding the Future of Tech Dominance and AI Innovation",
-        "date": "2026-02-14",
-        "link": "blog/2026-02-14-GOOGL.html",
-        "summary": "Alphabet (GOOGL) remains a tech titan with dominant positions in Search, YouTube, and Android. Its aggressive, foundational integration of AI across all segments, spearheaded by Gemini, positions it uniquely for future growth. Google Cloud's ascent to profitability further strengthens its investment thesis, making GOOGL a compelling long-term compounder despite regulatory headwinds and intense competition."
-    },
-    {
-        "title": "Microsoft's Unyielding Momentum: Why MSFT Remains a Core Portfolio Pillar",
-        "date": "2026-02-14",
-        "link": "blog/2026-02-14-MSFT.html",
-        "summary": "Microsoft (MSFT) stands as a technology titan, driven by the exponential growth of its Azure cloud platform and its aggressive leadership in AI integration via Copilot. Its diversified ecosystem, encompassing productivity software, gaming, and strategic acquisitions, provides deep economic moats. Despite market fluctuations, MSFT's robust financials and relentless innovation make it a cornerstone investment for long-term growth and stability, reinforcing its status as a core portfolio pillar."
     }
 ]
