@@ -1,5 +1,23 @@
 [
     {
+        "title": "Netflix (NFLX) Defies Market Wobble: Is the Streaming Giant Primed for a Comeback?",
+        "date": "2026-02-25",
+        "link": "blog/2026-02-25-NFLX.html",
+        "summary": "Despite broader market volatility post-NVIDIA earnings, Netflix (NFLX) surged 5.97% to $82.70. This blog post explores the factors driving NFLX's resilience, from its successful ad-tier and paid sharing crackdown to its robust content strategy and focus on profitability. We delve into its position in the evolving streaming landscape and offer key considerations for investors evaluating the long-term potential of this entertainment titan."
+    },
+    {
+        "title": "Bitcoin Blazes Past $67k: Decoding Crypto's Surge Amidst Shifting Market Tides",
+        "date": "2026-02-25",
+        "link": "blog/2026-02-25-BTC-USD.html",
+        "summary": "Bitcoin (BTC-USD) surges past $67,900, demonstrating robust strength despite broader market wobbles post-NVIDIA earnings. This post analyzes the drivers behind BTC's rebound, its intriguing relationship with traditional markets, and key investment considerations for a global audience."
+    },
+    {
+        "title": "Ethereum's Ascent: ETH-USD Breaches $2,000 Amidst Market Crosscurrents",
+        "date": "2026-02-25",
+        "link": "blog/2026-02-25-ETH-USD.html",
+        "summary": "Ethereum (ETH-USD) has surged past $2,000, trading at $2,053.24 (+10.81%), amidst mixed signals from traditional markets. This rally is driven by strong fundamentals like the upcoming Dencun upgrade, growing institutional interest, and a robust DeFi ecosystem. Despite broader market wobbles and corporate job cuts, ETH's performance highlights a strong appetite for innovative digital assets. Investors should monitor key resistance levels and consider Ethereum's long-term potential as a foundational asset."
+    },
+    {
         "title": "GEV Rockets Higher: Unpacking the $879.73 Surge and Investor Implications",
         "date": "2026-02-25",
         "link": "blog/2026-02-25-GEV.html",
@@ -100,23 +118,5 @@
         "date": "2026-02-18",
         "link": "blog/2026-02-18-VIST.html",
         "summary": "Vistra Corp. (VIST) gained 2.78% to $55.45, showcasing strength in the US energy sector. As an integrated power generator and retail electricity provider, VIST offers an attractive investment thesis driven by its stable business model, strategic shift towards renewables, and reliable cash flows. While facing risks like commodity volatility and regulatory changes, its market position and decarbonization efforts make it a compelling consideration for investors seeking exposure to a foundational and evolving energy player."
-    },
-    {
-        "title": "Is AT&T's 2.79% Dip an Opportunity? A Deep Dive into T Stock",
-        "date": "2026-02-18",
-        "link": "blog/2026-02-18-T.html",
-        "summary": "AT&T (T) experienced a notable 2.79% dip today, trading at $27.88, despite a generally rising S&P 500. This post delves into the potential reasons behind the telecom giant's downturn, examining its core business strengths in 5G and fiber, alongside ongoing challenges like its substantial debt and intense market competition. We analyze whether this price drop presents a buying opportunity for income-seeking investors or signals deeper structural concerns, urging a balanced perspective on T's future prospects."
-    },
-    {
-        "title": "ExxonMobil (XOM) Powers Up: Decoding the Energy Giant's Latest Surge and Future Prospects",
-        "date": "2026-02-18",
-        "link": "blog/2026-02-18-XOM.html",
-        "summary": "ExxonMobil (XOM) surged over 3% to $150.68 today, defying broader market fluctuations. This post analyzes the drivers behind XOM's robust performance, focusing on strong commodity prices, strategic investments in natural gas and LNG, consistent shareholder returns through dividends and buybacks, and resilient downstream/chemical operations. It also touches on the energy sector's role in a diversified portfolio, outlines key risks like price volatility and regulatory scrutiny, and offers actionable insights for investors monitoring this energy giant's future amidst global energy demand and transition."
-    },
-    {
-        "title": "Alphabet (GOOGL): Navigating the AI Frontier Amidst Shifting Market Tides",
-        "date": "2026-02-17",
-        "link": "blog/2026-02-17-GOOGL.html",
-        "summary": "A deep dive into Alphabet (GOOGL), exploring its formidable position in the AI landscape, its core revenue drivers, and the recent institutional sentiment shifts affecting the broader AI sector. We analyze whether GOOGL remains a compelling long-term investment amidst growing competition and evolving market dynamics."
     }
 ]
