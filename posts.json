@@ -1,5 +1,23 @@
 [
     {
+        "title": "Salesforce (CRM) Surges: A Beacon of Strength Amidst Tech Market Jitters?",
+        "date": "2026-02-26",
+        "link": "blog/2026-02-26-CRM.html",
+        "summary": "Salesforce (CRM) defied a broader tech market slump today, climbing over 4%. This post delves into CRM's resilience, its powerful AI strategy with Einstein AI and Data Cloud, and its long-term investment potential as a leader in enterprise software, offering insights for investors seeking stability and growth amidst market volatility."
+    },
+    {
+        "title": "NVIDIA's Recent Dip: A Buying Opportunity or a Warning for AI's Future?",
+        "date": "2026-02-26",
+        "link": "blog/2026-02-26-NVDA.html",
+        "summary": "NVIDIA (NVDA) dropped 5.46% to $184.89, contributing to a broader AI stock slump. While this raises concerns about AI market sentiment, NVIDIA remains a dominant force in AI infrastructure. The rise of custom AI chips (like Google-Meta deal) signals evolving competition. Investors must weigh NVIDIA's strong fundamentals and long-term AI growth potential against its premium valuation and market volatility to determine if this dip is an opportunity or a warning."
+    },
+    {
+        "title": "Accenture (ACN): Up Over 8% As AI Stocks Stumble – Why Investors Are Eyeing This Tech Services Giant",
+        "date": "2026-02-26",
+        "link": "blog/2026-02-26-ACN.html",
+        "summary": "Accenture (ACN) defied a broader market slump and AI stock jitters today, soaring over 8% to $207.38. As a global professional services giant, ACN benefits from the essential need for businesses to implement and integrate AI, cloud, and digital transformation solutions, positioning it as a resilient investment less susceptible to the volatility of pure-play AI hardware or software providers. Its diversified services and client base offer stability amidst market uncertainty."
+    },
+    {
         "title": "Netflix (NFLX) Defies Market Wobble: Is the Streaming Giant Primed for a Comeback?",
         "date": "2026-02-25",
         "link": "blog/2026-02-25-NFLX.html",
@@ -100,23 +118,5 @@
         "date": "2026-02-20",
         "link": "blog/2026-02-20-GOOGL.html",
         "summary": "Alphabet (GOOGL) is surging, fueled by strong market sentiment and its pivotal role in the burgeoning AI landscape. As competitors like OpenAI announce massive compute targets, we analyze how Google's vast resources, AI innovations, and Google Cloud position it for sustained growth in the multi-billion dollar artificial intelligence race, offering key insights for investors."
-    },
-    {
-        "title": "TXN Stock: Is This Dip Your Opportunity to Invest in Silicon's Steadfast Star?",
-        "date": "2026-02-19",
-        "link": "blog/2026-02-19-TXN.html",
-        "summary": "Texas Instruments (TXN) specializes in critical analog and embedded processing products for industrial and automotive sectors. With its focus on secular growth drivers, manufacturing advantage, and strong financial discipline, TXN offers a resilient investment opportunity. The current modest price dip to $218.05 could present an attractive entry for long-term investors seeking stability in the semiconductor market."
-    },
-    {
-        "title": "Accenture (ACN): Decoding Today's Dip – A Strategic Buying Opportunity?",
-        "date": "2026-02-19",
-        "link": "blog/2026-02-19-ACN.html",
-        "summary": "Accenture (ACN) experienced a 3.87% dip, prompting an analysis of whether this represents a strategic buying opportunity. The post highlights ACN's strong position in global professional services, its critical role in digital transformation, and its resilience amidst broader market volatility, drawing parallels with various tech sector news. With diversified revenue, global reach, and robust financials, Accenture's long-term appeal remains strong, suggesting the current dip could be an attractive entry point for discerning investors."
-    },
-    {
-        "title": "VIST Stock: Powering Up Your Portfolio? An In-Depth Look at Vistra Corp.",
-        "date": "2026-02-18",
-        "link": "blog/2026-02-18-VIST.html",
-        "summary": "Vistra Corp. (VIST) gained 2.78% to $55.45, showcasing strength in the US energy sector. As an integrated power generator and retail electricity provider, VIST offers an attractive investment thesis driven by its stable business model, strategic shift towards renewables, and reliable cash flows. While facing risks like commodity volatility and regulatory changes, its market position and decarbonization efforts make it a compelling consideration for investors seeking exposure to a foundational and evolving energy player."
     }
 ]
