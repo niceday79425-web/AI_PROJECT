@@ -1,5 +1,17 @@
 [
     {
+        "title": "Bank of America (BAC) Slips: Is This Dip a Golden Opportunity or a Signal to Pause?",
+        "date": "2026-02-27",
+        "link": "blog/2026-02-27-BAC.html",
+        "summary": "Bank of America (BAC) experienced a significant 4.72% stock price drop today, likely driven by broader market sentiment rather than specific company news. This analysis examines BAC's strong, diversified business model, its sensitivity to macroeconomic factors like interest rates, and whether the current dip presents a compelling long-term buying opportunity for investors or signals a need for caution amidst ongoing market uncertainties."
+    },
+    {
+        "title": "Ethereum's Latest Dip: Opportunity or Warning Sign for ETH-USD Investors?",
+        "date": "2026-02-27",
+        "link": "blog/2026-02-27-ETH-USD.html",
+        "summary": "Ethereum (ETH-USD) experienced a significant 5.12% drop, pushing its price to $1922.95. This post analyzes the potential reasons behind the dip, from macroeconomic headwinds to platform-specific developments, offering insights into whether this represents a buying opportunity for long-term holders or a signal for further caution in the volatile crypto market."
+    },
+    {
         "title": "Salesforce (CRM) Surges: A Beacon of Strength Amidst Tech Market Jitters?",
         "date": "2026-02-26",
         "link": "blog/2026-02-26-CRM.html",
@@ -106,17 +118,5 @@
         "date": "2026-02-21",
         "link": "blog/2026-02-21-AAPL.html",
         "summary": "An in-depth look at Apple (AAPL), exploring its enduring ecosystem strength, key growth drivers like AI and new products, and the challenges it faces. This analysis provides a professional perspective for global investors evaluating Apple's long-term investment potential amidst market dynamics."
-    },
-    {
-        "title": "Amazon (AMZN) Soars: Why AWS is Your AI Superhighway Bet",
-        "date": "2026-02-20",
-        "link": "blog/2026-02-20-AMZN.html",
-        "summary": "Amazon's stock is up, fueled by its robust e-commerce and rapidly expanding cloud division, AWS. With massive projected AI compute spending, AWS is poised to be a dominant \"picks and shovels\" provider for the artificial intelligence revolution, making AMZN a compelling long-term investment."
-    },
-    {
-        "title": "Alphabet (GOOGL) Takes Flight: Decoding AI's Multi-Billion Dollar Race & What Investors Need to Know",
-        "date": "2026-02-20",
-        "link": "blog/2026-02-20-GOOGL.html",
-        "summary": "Alphabet (GOOGL) is surging, fueled by strong market sentiment and its pivotal role in the burgeoning AI landscape. As competitors like OpenAI announce massive compute targets, we analyze how Google's vast resources, AI innovations, and Google Cloud position it for sustained growth in the multi-billion dollar artificial intelligence race, offering key insights for investors."
     }
 ]

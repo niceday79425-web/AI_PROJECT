@@ -1,5 +1,17 @@
 [
     {
+        "title": "Bank of America (BAC) Cai: Esta Queda é uma Oportunidade de Ouro ou um Sinal para Pausar?",
+        "date": "2026-02-27",
+        "link": "blog/2026-02-27-BAC.html",
+        "summary": "O Bank of America (BAC) registrou uma queda significativa de 4,72% no preço de suas ações hoje, provavelmente impulsionada pelo sentimento geral do mercado em vez de notícias específicas da empresa. Esta análise examina o modelo de negócios robusto e diversificado do BAC, sua sensibilidade a fatores macroeconômicos como as taxas de juros, e se a queda atual representa uma oportunidade de compra atraente de longo prazo para investidores ou sinaliza a necessidade de cautela em meio às incertezas do mercado."
+    },
+    {
+        "title": "A Recente Queda do Ethereum: Oportunidade ou Sinal de Alerta para Investidores de ETH-USD?",
+        "date": "2026-02-27",
+        "link": "blog/2026-02-27-ETH-USD.html",
+        "summary": "O Ethereum (ETH-USD) experimentou uma queda significativa de 5,12%, empurrando seu preço para $1922,95. Esta postagem analisa as possíveis razões por trás da queda, desde ventos contrários macroeconômicos até desenvolvimentos específicos da plataforma, oferecendo insights sobre se isso representa uma oportunidade de compra para detentores de longo prazo ou um sinal para maior cautela no volátil mercado de criptomoedas."
+    },
+    {
         "title": "Salesforce (CRM) Sobe: Um Farol de Força em Meio às Dificuldades do Mercado de Tecnologia?",
         "date": "2026-02-26",
         "link": "blog/2026-02-26-CRM.html",
@@ -106,17 +118,5 @@
         "date": "2026-02-21",
         "link": "blog/2026-02-21-AAPL.html",
         "summary": "Uma análise aprofundada da Apple (AAPL), explorando a força duradoura do seu ecossistema, os principais impulsionadores de crescimento como IA e novos produtos, e os desafios que enfrenta. Esta análise oferece uma perspectiva profissional para investidores globais avaliando o potencial de investimento a longo prazo da Apple em meio às dinâmicas do mercado."
-    },
-    {
-        "title": "Amazon (AMZN) Dispara: Por Que a AWS é Sua Aposta na Superestrada da IA",
-        "date": "2026-02-20",
-        "link": "blog/2026-02-20-AMZN.html",
-        "summary": "As ações da Amazon estão em alta, impulsionadas pelo seu robusto e-commerce e pela divisão de nuvem em rápida expansão, AWS. Com um gasto projetado massivo em computação de IA, a AWS está posicionada para ser uma provedora dominante de \"ferramentas e equipamentos\" para a revolução da inteligência artificial, tornando a AMZN um investimento de longo prazo atraente."
-    },
-    {
-        "title": "Alphabet (GOOGL) Em Ascensão: Decifrando a Corrida Bilionária da IA e O Que Os Investidores Precisam Saber",
-        "date": "2026-02-20",
-        "link": "blog/2026-02-20-GOOGL.html",
-        "summary": "A Alphabet (GOOGL) está em alta, impulsionada por um forte sentimento de mercado e seu papel crucial no crescente cenário da IA. Enquanto concorrentes como a OpenAI anunciam metas massivas de computação, analisamos como os vastos recursos do Google, inovações em IA e o Google Cloud a posicionam para um crescimento sustentado na corrida bilionária da inteligência artificial, oferecendo insights-chave para os investidores."
     }
 ]
