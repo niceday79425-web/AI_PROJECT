@@ -1,5 +1,23 @@
 [
     {
+        "title": "GOOGL: Navigating the AI Frontier – Is Alphabet Still a Top Tech Pick?",
+        "date": "2026-02-28",
+        "link": "blog/2026-02-28-GOOGL.html",
+        "summary": "Alphabet (GOOGL) remains a dominant force in tech, strategically positioned in the AI race with Gemini, DeepMind, and Waymo. Its core businesses—Search, Cloud (GCP), and YouTube—provide robust revenue, while proprietary TPUs could mitigate AI infrastructure bottlenecks. Despite regulatory scrutiny, intense competition, and broader geopolitical risks, GOOGL's innovation, diversified revenue, and strong financials make it a compelling long-term investment in the evolving tech landscape."
+    },
+    {
+        "title": "Microsoft (MSFT): AI's Unstoppable Colossus Navigating Evolving Market Dynamics",
+        "date": "2026-02-28",
+        "link": "blog/2026-02-28-MSFT.html",
+        "summary": "An in-depth analysis of Microsoft (MSFT), focusing on its pivotal role in the AI revolution through its OpenAI partnership and Azure cloud. The post examines the emerging 'power bottleneck' challenge for AI infrastructure and MSFT's strategic position to overcome it, alongside its diversified business model. It concludes with an investment outlook on why MSFT remains a core tech investment despite market volatility."
+    },
+    {
+        "title": "Apple (AAPL): AI Ambitions vs. Market Realities – What Investors Need to Know",
+        "date": "2026-02-28",
+        "link": "blog/2026-02-28-AAPL.html",
+        "summary": "This post delves into Apple's (AAPL) investment outlook, analyzing its strategic positioning amidst the burgeoning AI revolution and the backdrop of escalating geopolitical tensions. We explore how Apple's robust ecosystem and upcoming AI innovations could drive future growth, while also assessing potential risks from global market volatility and supply chain pressures."
+    },
+    {
         "title": "Bank of America (BAC) Slips: Is This Dip a Golden Opportunity or a Signal to Pause?",
         "date": "2026-02-27",
         "link": "blog/2026-02-27-BAC.html",
@@ -100,23 +118,5 @@
         "date": "2026-02-22",
         "link": "blog/2026-02-22-AAPL.html",
         "summary": "Apple (AAPL) faces significant headwinds from new global tariffs, threatening its supply chain and profit margins. However, its strong brand loyalty, growing services segment, massive cash reserves, and innovation pipeline provide substantial resilience. This analysis explores AAPL's vulnerabilities and strengths, guiding investors on whether the current market volatility presents a buying opportunity or calls for caution, emphasizing long-term fundamentals over short-term trade tensions."
-    },
-    {
-        "title": "Alphabet (GOOGL): Unpacking the Tech Titan's Enduring Power Amidst the AI Revolution",
-        "date": "2026-02-21",
-        "link": "blog/2026-02-21-GOOGL.html",
-        "summary": "Alphabet (GOOGL) stands as a tech titan, underpinned by its foundational search and advertising business, rapidly expanding Google Cloud, and transformative advancements in AI, particularly with Gemini. Despite facing regulatory scrutiny and intense competition, its diversified portfolio, significant R&D, and strong cash flow position it as a compelling long-term investment. GOOGL is an AI-first company with substantial runway for continued growth and value creation."
-    },
-    {
-        "title": "Microsoft (MSFT): Is This Tech Titan Still a Must-Own in the AI Era? An In-Depth Analyst Report",
-        "date": "2026-02-21",
-        "link": "blog/2026-02-21-MSFT.html",
-        "summary": "A deep dive into Microsoft's strategic positioning in the AI era, its robust business segments, and why MSFT remains a compelling long-term investment despite macro uncertainties. The analysis highlights Azure, Office 365, and AI integration via Copilot as key growth drivers, underpinning its strong financial outlook and market moat."
-    },
-    {
-        "title": "AAPL: Decoding Apple's Future – Is the Tech Giant Still a Must-Have for Global Investors?",
-        "date": "2026-02-21",
-        "link": "blog/2026-02-21-AAPL.html",
-        "summary": "An in-depth look at Apple (AAPL), exploring its enduring ecosystem strength, key growth drivers like AI and new products, and the challenges it faces. This analysis provides a professional perspective for global investors evaluating Apple's long-term investment potential amidst market dynamics."
     }
 ]

@@ -1,5 +1,23 @@
 [
     {
+        "title": "GOOGL: Navegando a Fronteira da IA – A Alphabet Ainda é uma Escolha de Tecnologia de Ponta?",
+        "date": "2026-02-28",
+        "link": "blog/2026-02-28-GOOGL.html",
+        "summary": "A Alphabet (GOOGL) continua sendo uma força dominante em tecnologia, estrategicamente posicionada na corrida da IA com Gemini, DeepMind e Waymo. Seus negócios principais — Pesquisa, Nuvem (GCP) e YouTube — fornecem receita robusta, enquanto os TPUs proprietários podem mitigar gargalos de infraestrutura de IA. Apesar do escrutínio regulatório, concorrência intensa e riscos geopolíticos mais amplos, a inovação da GOOGL, receita diversificada e finanças fortes a tornam um investimento atraente de longo prazo no cenário tecnológico em evolução."
+    },
+    {
+        "title": "Microsoft (MSFT): O Colosso Imparável da IA Navegando por Dinâmicas de Mercado em Evolução",
+        "date": "2026-02-28",
+        "link": "blog/2026-02-28-MSFT.html",
+        "summary": "Uma análise aprofundada da Microsoft (MSFT), focando em seu papel central na revolução da IA através de sua parceria com a OpenAI e a nuvem Azure. A postagem examina o desafio emergente do 'gargalo de energia' para a infraestrutura de IA e a posição estratégica da MSFT para superá-lo, juntamente com seu modelo de negócios diversificado. Conclui com uma perspectiva de investimento sobre por que a MSFT permanece um investimento tecnológico essencial apesar da volatilidade do mercado."
+    },
+    {
+        "title": "Apple (AAPL): Ambições de IA vs. Realidades de Mercado – O Que os Investidores Precisam Saber",
+        "date": "2026-02-28",
+        "link": "blog/2026-02-28-AAPL.html",
+        "summary": "Esta publicação aprofunda a perspetiva de investimento da Apple (AAPL), analisando o seu posicionamento estratégico no meio da crescente revolução da IA e do pano de fundo de crescentes tensões geopolíticas. Exploramos como o robusto ecossistema da Apple e as próximas inovações de IA podem impulsionar o crescimento futuro, ao mesmo tempo que avaliamos os riscos potenciais da volatilidade do mercado global e das pressões na cadeia de suprimentos."
+    },
+    {
         "title": "Bank of America (BAC) Cai: Esta Queda é uma Oportunidade de Ouro ou um Sinal para Pausar?",
         "date": "2026-02-27",
         "link": "blog/2026-02-27-BAC.html",
@@ -100,23 +118,5 @@
         "date": "2026-02-22",
         "link": "blog/2026-02-22-AAPL.html",
         "summary": "A Apple (AAPL) enfrenta ventos contrários significativos devido às novas tarifas globais, ameaçando sua cadeia de suprimentos e margens de lucro. No entanto, sua forte lealdade à marca, segmento de serviços em crescimento, reservas de caixa massivas e pipeline de inovação fornecem resiliência substancial. Esta análise explora as vulnerabilidades e forças da AAPL, orientando os investidores sobre se a atual volatilidade do mercado apresenta uma oportunidade de compra ou exige cautela, enfatizando os fundamentos de longo prazo sobre as tensões comerciais de curto prazo."
-    },
-    {
-        "title": "Alphabet (GOOGL): Desvendando o Poder Duradouro da Gigante da Tecnologia em Meio à Revolução da IA",
-        "date": "2026-02-21",
-        "link": "blog/2026-02-21-GOOGL.html",
-        "summary": "A Alphabet (GOOGL) se destaca como uma gigante da tecnologia, sustentada por seu negócio fundamental de pesquisa e publicidade, pelo Google Cloud em rápida expansão e por avanços transformadores em IA, especialmente com o Gemini. Apesar de enfrentar escrutínio regulatório e concorrência intensa, seu portfólio diversificado, P&D significativo e forte fluxo de caixa a posicionam como um investimento de longo prazo atraente. A GOOGL é uma empresa 'AI-first' com um caminho substancial para crescimento contínuo e criação de valor."
-    },
-    {
-        "title": "Microsoft (MSFT): Este Titã da Tecnologia Ainda É Essencial na Era da IA? Um Relatório de Análise Aprofundado",
-        "date": "2026-02-21",
-        "link": "blog/2026-02-21-MSFT.html",
-        "summary": "Uma análise aprofundada do posicionamento estratégico da Microsoft na era da IA, seus robustos segmentos de negócios e por que a MSFT continua sendo um investimento de longo prazo atraente, apesar das incertezas macroeconômicas. A análise destaca Azure, Office 365 e a integração de IA via Copilot como principais impulsionadores de crescimento, sustentando suas fortes perspectivas financeiras e fosso de mercado."
-    },
-    {
-        "title": "AAPL: Decifrando o Futuro da Apple – A Gigante da Tecnologia Ainda é Essencial para Investidores Globais?",
-        "date": "2026-02-21",
-        "link": "blog/2026-02-21-AAPL.html",
-        "summary": "Uma análise aprofundada da Apple (AAPL), explorando a força duradoura do seu ecossistema, os principais impulsionadores de crescimento como IA e novos produtos, e os desafios que enfrenta. Esta análise oferece uma perspectiva profissional para investidores globais avaliando o potencial de investimento a longo prazo da Apple em meio às dinâmicas do mercado."
     }
 ]
