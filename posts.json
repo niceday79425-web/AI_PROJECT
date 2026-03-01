@@ -1,5 +1,23 @@
 [
     {
+        "title": "GOOGL: Is Google's AI Edge Enough to Power Future Growth Amidst Global Shifts?",
+        "date": "2026-03-01",
+        "link": "blog/2026-03-01-GOOGL.html",
+        "summary": "An in-depth look at Alphabet (GOOGL), evaluating its core strengths in Search, Advertising, and Cloud, with a keen focus on its pivotal role in AI development. This analysis assesses how GOOGL is positioned to navigate broader market volatility and increasing regulatory scrutiny, particularly in the AI space, to sustain long-term growth."
+    },
+    {
+        "title": "Microsoft's Enduring Strength: Navigating the Future with AI and Cloud Dominance (MSFT)",
+        "date": "2026-03-01",
+        "link": "blog/2026-03-01-MSFT.html",
+        "summary": "Microsoft (MSFT) stands out as a robust investment amidst market volatility, driven by its dominant Azure cloud platform and pioneering AI integration (Copilot). Its strong enterprise ecosystem provides resilience and diverse revenue streams. Despite broader market concerns, MSFT's strategic focus on long-term technological trends positions it as a core holding for growth, stability, and sustained innovation."
+    },
+    {
+        "title": "Apple (AAPL): Navigating Global Headwinds with a Resilient Ecosystem",
+        "date": "2026-03-01",
+        "link": "blog/2026-03-01-AAPL.html",
+        "summary": "Amidst heightened market volatility and geopolitical concerns, Apple (AAPL) stands as a beacon of stability and innovation. This analysis delves into AAPL's enduring strengths, growth drivers, and potential headwinds, offering investors a comprehensive look at its position and future prospects in the current economic climate."
+    },
+    {
         "title": "GOOGL: Navigating the AI Frontier – Is Alphabet Still a Top Tech Pick?",
         "date": "2026-02-28",
         "link": "blog/2026-02-28-GOOGL.html",
@@ -100,23 +118,5 @@
         "date": "2026-02-23",
         "link": "blog/2026-02-23-AAPL.html",
         "summary": "A deep dive into Apple (AAPL)'s enduring strengths, from its robust ecosystem and services growth to its innovation pipeline and financial prowess. Despite a dynamic market, Apple at $266.18 continues to offer compelling reasons for long-term investors, balancing global challenges with consistent value creation."
-    },
-    {
-        "title": "Alphabet (GOOGL): Navigating Market Turbulence and Sustaining Tech Dominance",
-        "date": "2026-02-22",
-        "link": "blog/2026-02-22-GOOGL.html",
-        "summary": "Amidst global tariff hikes and geopolitical uncertainties, Alphabet (GOOGL) stands as a resilient tech titan. This analysis explores GOOGL's diversified revenue streams, strong growth drivers like Cloud and AI, and its long-term investment appeal despite current market headwinds, offering insights for investors seeking stability and innovation."
-    },
-    {
-        "title": "Microsoft (MSFT): A Fortress in the Cloud Amidst Market Headwinds",
-        "date": "2026-02-22",
-        "link": "blog/2026-02-22-MSFT.html",
-        "summary": "Explore Microsoft's (MSFT) resilience and growth drivers, from its dominant cloud presence (Azure) to AI innovation, as we analyze its investment potential amidst global tariff concerns and market volatility. Despite broader market headwinds, MSFT's strong fundamentals and strategic positioning make it a compelling long-term anchor for investors."
-    },
-    {
-        "title": "AAPL Navigates Tariff Storm: Is Apple Stock a Resilient Buy Amidst Global Trade Tensions?",
-        "date": "2026-02-22",
-        "link": "blog/2026-02-22-AAPL.html",
-        "summary": "Apple (AAPL) faces significant headwinds from new global tariffs, threatening its supply chain and profit margins. However, its strong brand loyalty, growing services segment, massive cash reserves, and innovation pipeline provide substantial resilience. This analysis explores AAPL's vulnerabilities and strengths, guiding investors on whether the current market volatility presents a buying opportunity or calls for caution, emphasizing long-term fundamentals over short-term trade tensions."
     }
 ]
