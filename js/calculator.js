@@ -39,7 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // 1년 단위로 차트 데이터 기록
             if (m % 12 === 0) {
-                labels.push(`${m / 12}년`);
+                const lang = document.documentElement.lang || 'en';
+                const yearLabel = lang === 'ko' ? '년' : lang === 'pt' ? 'Ano' : 'Yr';
+                labels.push(`${m / 12}${yearLabel}`);
+
                 principalData.push(Math.round(totalPrincipal));
                 growthData.push(Math.round(capitalGains));
                 dividendData.push(Math.round(totalDividends));

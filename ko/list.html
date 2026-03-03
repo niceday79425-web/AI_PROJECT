@@ -243,24 +243,17 @@
                     return;
                 }
                 data.forEach(stock => {
-                    const changePct = stock.change_pct || (Math.random() * 4 - 1.5).toFixed(2);
-                    const isUp = changePct >= 0;
-                    const changeClass = isUp ? 'price-up' : 'price-down';
-                    const changeSign = isUp ? '▲' : '▼';
                     const card = document.createElement('div');
                     card.className = 'stock-card-compact';
                     card.innerHTML = `
                         <div class="stock-row-1">
                             <div class="stock-ticker">${stock.ticker}</div>
-                            <div class="stock-price-container">
-                                <div class="stock-price">$${stock.current_price || '0.00'}</div>
-                                <div class="change-pct ${changeClass}">${changeSign} ${Math.abs(changePct)}%</div>
-                            </div>
+                            <div class="stock-price">$${stock.current_price || '0.00'}</div>
                         </div>
                         <div style="display: flex; justify-content: space-between; align-items: flex-end;">
                             <div style="flex: 1;">
                                 <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.25rem;">${stock.name}</div>
-                                <div style="font-size: 0.75rem; color: var(--accent-blue); font-weight: 600;">${stock.sector || 'Etc'}</div>
+                                <div style="font-size: 0.75rem; color: var(--accent-blue); font-weight: 600;">${stock.sector || '기타'}</div>
                             </div>
                             <div style="text-align: right;">
                                 <div style="font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 0.25rem;">배당률</div>
@@ -269,7 +262,7 @@
                         </div>
                         <div style="margin-top: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
                             <div style="font-size: 0.75rem; color: var(--text-secondary);">등급: ${getGradeBadge(stock.grade)}</div>
-                            <div style="font-size: 0.7rem; color: #444;">ID: ${stock.ticker.toLowerCase()}</div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary);">${stock.last_updated ? '업데이트: ' + stock.last_updated.slice(0, 10) : ''}</div>
                         </div>
                     `;
                     stockGrid.appendChild(card);
