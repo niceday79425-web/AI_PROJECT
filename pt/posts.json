@@ -1,5 +1,23 @@
 [
     {
+        "title": "Ações da Adobe (ADBE): Gigante Criativa ou Campo de Batalha da IA? Uma Análise Aprofundada para Investidores",
+        "date": "2026-03-03",
+        "link": "blog/2026-03-03-ADBE.html",
+        "summary": "Uma análise aprofundada das ações da Adobe (ADBE), examinando seu forte modelo de assinatura, inovação em IA com Firefly, cenário competitivo incluindo novos participantes de IA como OpenAI, e o desempenho atual do mercado, oferecendo insights para investidores globais."
+    },
+    {
+        "title": "Queda da GEV: Decifrando o Impacto de Choques Geopolíticos e Volatilidade do Mercado",
+        "date": "2026-03-03",
+        "link": "blog/2026-03-03-GEV.html",
+        "summary": "A GEV sofreu uma queda notável de 4,45%, para US$ 842,00, impulsionada pela escalada do conflito no Oriente Médio e pelos preços do petróleo em alta. Esta postagem analisa como as tensões geopolíticas e o aumento dos custos de energia podem impactar as operações da GEV e o sentimento dos investidores. Ela fornece insights acionáveis para que os investidores avaliem a exposição setorial, os fundamentos de longo prazo e a avaliação da GEV em meio à volatilidade do mercado."
+    },
+    {
+        "title": "Intel (INTC) Sofre Queda: Navegando Ventos Contrários do Mercado e uma Virada Estratégica",
+        "date": "2026-03-03",
+        "link": "blog/2026-03-03-INTC.html",
+        "summary": "As ações da Intel (INTC) caíram 5,27%, atingindo US$ 43,10 hoje, provavelmente influenciadas por um sentimento de 'aversão ao risco' mais amplo no mercado devido à escalada de conflitos geopolíticos. Apesar da queda de curto prazo, a postagem do blog enfatiza a ambiciosa e contínua transformação estratégica IDM 2.0 da Intel, visando recuperar a liderança de fabricação e construir um robusto negócio de fundição. Destaca-se tanto os desafios significativos (intensidade de capital, concorrência da AMD, Nvidia, TSMC) quanto as oportunidades (recuperação do mercado de PCs, subsídios da Lei CHIPS, crescimento do mercado de IA). A análise sugere que a INTC é uma aposta de investimento de longo prazo, exigindo paciência para avaliar o sucesso de seus esforços de recuperação ao longo de vários anos."
+    },
+    {
         "title": "Alphabet (GOOGL): Navegando na Inovação da IA e na Dinâmica do Mercado para Valor de Longo Prazo",
         "date": "2026-03-02",
         "link": "blog/2026-03-02-GOOGL.html",
@@ -100,23 +118,5 @@
         "date": "2026-02-25",
         "link": "blog/2026-02-25-ETH-USD.html",
         "summary": "O Ethereum (ETH-USD) disparou acima de US$ 2.000, negociado a US$ 2.053,24 (+10,81%), em meio a sinais mistos dos mercados tradicionais. Este rali é impulsionado por fortes fundamentos como a próxima atualização Dencun, o crescente interesse institucional e um robusto ecossistema DeFi. Apesar das oscilações mais amplas do mercado e dos cortes de empregos corporativos, o desempenho do ETH destaca um forte apetite por ativos digitais inovadores. Os investidores devem monitorar os principais níveis de resistência e considerar o potencial de longo prazo do Ethereum como um ativo fundamental."
-    },
-    {
-        "title": "GEV Dispara: Desvendando a Alta de US$ 879,73 e as Implicações para Investidores",
-        "date": "2026-02-25",
-        "link": "blog/2026-02-25-GEV.html",
-        "summary": "As ações da GEV dispararam +5,77%, atingindo US$ 879,73 hoje, desafiando o sentimento misto do mercado mais amplo. Esse forte rali sugere catalisadores robustos específicos da empresa ou fortes ventos favoráveis do setor. Os investidores devem monitorar de perto os próximos lucros da GEV, o posicionamento competitivo e as métricas de avaliação, especialmente enquanto o mercado mais amplo se prepara para eventos significativos como os lucros da Nvidia e discursos políticos importantes."
-    },
-    {
-        "title": "PayPal (PYPL) Dispara: Decifrando o Salto de 6,74% e o Que Significa para Investidores",
-        "date": "2026-02-25",
-        "link": "blog/2026-02-25-PYPL.html",
-        "summary": "A PayPal (PYPL) disparou +6,74% hoje para US$ 47,02, chamando a atenção dos investidores em meio a uma recuperação mais ampla do mercado. Este aumento significativo provoca uma análise para determinar se a gigante FinTech está a iniciar uma reviravolta ou se é um movimento temporário do mercado. Apesar dos desafios passados de concorrência e crescimento lento, a PayPal mantém uma enorme base de utilizadores, uma marca forte e ativos estratégicos como Venmo e Braintree. A nova gestão está focada no crescimento lucrativo e na redução de custos. Embora encorajador, os investidores devem monitorizar a execução da sua estratégia de reviravolta, as respostas competitivas e as tendências do e-commerce. A PYPL é agora uma ação chave a observar para uma potencial recuperação a longo prazo."
-    },
-    {
-        "title": "AMD Dispara: A Fabricante de Chips de IA Está Pronta para Desafiar o Reinado da Nvidia?",
-        "date": "2026-02-25",
-        "link": "blog/2026-02-25-AMD.html",
-        "summary": "As ações da AMD subiram mais de 8% hoje, atingindo US$ 213,84, impulsionadas pela forte confiança dos investidores em seus aceleradores de IA, como o MI300X. Em meio à expectativa pelos resultados da Nvidia e relatórios de que a China não recebeu chips Nvidia H200, a AMD é vista como um formidável concorrente no crescente mercado de IA. Esta postagem analisa o posicionamento estratégico da AMD, o cenário competitivo e as principais considerações de investimento para investidores globais."
     }
 ]

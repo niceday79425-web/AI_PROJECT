@@ -1,5 +1,23 @@
 [
     {
+        "title": "Adobe (ADBE) Stock: Creative Powerhouse or AI Battleground? A Deep Dive for Investors",
+        "date": "2026-03-03",
+        "link": "blog/2026-03-03-ADBE.html",
+        "summary": "An in-depth analysis of Adobe (ADBE) stock, examining its strong subscription model, AI innovation with Firefly, competitive landscape including new AI entrants like OpenAI, and current market performance, offering insights for global investors."
+    },
+    {
+        "title": "GEV's Dip: Decoding the Impact of Geopolitical Shocks and Market Volatility",
+        "date": "2026-03-03",
+        "link": "blog/2026-03-03-GEV.html",
+        "summary": "GEV experienced a notable 4.45% drop to $842.00, driven by escalating Middle East conflict and surging oil prices. This post analyzes how geopolitical tensions and rising energy costs could impact GEV's operations and investor sentiment. It provides actionable insights for investors to assess GEV's industry exposure, long-term fundamentals, and valuation amidst market volatility."
+    },
+    {
+        "title": "Intel (INTC) Takes a Hit: Navigating Market Headwinds and a Strategic Turnaround",
+        "date": "2026-03-03",
+        "link": "blog/2026-03-03-INTC.html",
+        "summary": "Intel (INTC) shares dropped 5.27% to $43.10 today, likely influenced by broader market 'risk-off' sentiment due to escalating geopolitical conflicts. Despite the short-term dip, the blog post emphasizes Intel's ongoing, ambitious IDM 2.0 strategic transformation, aimed at reclaiming manufacturing leadership and building a robust foundry business. It highlights both the significant challenges (capital intensity, competition from AMD, Nvidia, TSMC) and opportunities (PC market recovery, CHIPS Act subsidies, AI market growth). The analysis suggests INTC is a long-term investment play, requiring patience to assess the success of its multi-year turnaround."
+    },
+    {
         "title": "Alphabet (GOOGL): Navigating AI Innovation and Market Dynamics for Long-Term Value",
         "date": "2026-03-02",
         "link": "blog/2026-03-02-GOOGL.html",
@@ -100,23 +118,5 @@
         "date": "2026-02-25",
         "link": "blog/2026-02-25-ETH-USD.html",
         "summary": "Ethereum (ETH-USD) has surged past $2,000, trading at $2,053.24 (+10.81%), amidst mixed signals from traditional markets. This rally is driven by strong fundamentals like the upcoming Dencun upgrade, growing institutional interest, and a robust DeFi ecosystem. Despite broader market wobbles and corporate job cuts, ETH's performance highlights a strong appetite for innovative digital assets. Investors should monitor key resistance levels and consider Ethereum's long-term potential as a foundational asset."
-    },
-    {
-        "title": "GEV Rockets Higher: Unpacking the $879.73 Surge and Investor Implications",
-        "date": "2026-02-25",
-        "link": "blog/2026-02-25-GEV.html",
-        "summary": "GEV shares soared +5.77% to $879.73 today, defying mixed broader market sentiment. This strong rally suggests robust company-specific catalysts or powerful sector tailwinds. Investors should closely monitor GEV's upcoming earnings, competitive positioning, and valuation metrics, especially as the broader market prepares for significant events like Nvidia's earnings and key political speeches."
-    },
-    {
-        "title": "PayPal (PYPL) Surges: Decoding the 6.74% Jump and What It Means for Investors",
-        "date": "2026-02-25",
-        "link": "blog/2026-02-25-PYPL.html",
-        "summary": "PayPal (PYPL) jumped +6.74% today to $47.02, catching investor attention amidst a broader market bounce. This significant surge prompts analysis into whether the FinTech giant is beginning a turnaround or if it's a temporary market movement. Despite past challenges from competition and slowing growth, PayPal retains a massive user base, strong brand, and strategic assets like Venmo and Braintree. New management is focused on profitable growth and cost-cutting. While encouraging, investors should monitor the execution of its turnaround strategy, competitive responses, and e-commerce trends. PYPL is now a key stock to watch for potential long-term recovery."
-    },
-    {
-        "title": "AMD Soars: Is the AI Chipmaker Ready to Challenge Nvidia's Reign?",
-        "date": "2026-02-25",
-        "link": "blog/2026-02-25-AMD.html",
-        "summary": "AMD stock surged over 8% today, reaching $213.84, driven by strong investor confidence in its AI accelerators like the MI300X. Amidst anticipation for Nvidia's earnings and reports of China not receiving Nvidia H200 chips, AMD is seen as a formidable competitor in the burgeoning AI market. This post analyzes AMD's strategic positioning, competitive landscape, and key investment considerations for global investors."
     }
 ]
