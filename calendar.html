@@ -54,15 +54,280 @@
         <div class="content-with-sidebar">
             <div class="main-content">
                 <main>
-                    <section class="card">
-                        <h2>Upcoming Dividend Paydays</h2>
+                    <!-- Dividend Calendar Section -->
+                    <section class="card" style="padding: 1.5rem;">
                         <div
-                            style="padding: 2rem; text-align: center; border: 1px dashed var(--border-color); border-radius: 12px;">
-                            <i class="fas fa-calendar-alt"
-                                style="font-size: 3rem; color: var(--text-secondary); margin-bottom: 1rem;"></i>
-                            <p>Calendar visualization is coming soon.</p>
+                            style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem;">
+                            <h2 style="margin:0;">📅 Dividend Calendar</h2>
+                            <div style="display:flex; gap:0.5rem;">
+                                <button id="btnCalView" onclick="setView('calendar')"
+                                    style="padding:0.5rem 1.1rem; border-radius:8px; border:1px solid #3b82f6; background:#3b82f6; color:#fff; font-weight:600; cursor:pointer; font-size:0.9rem;">Calendar</button>
+                                <button id="btnTimeView" onclick="setView('timeline')"
+                                    style="padding:0.5rem 1.1rem; border-radius:8px; border:1px solid var(--border-color); background:transparent; color:var(--text-secondary); font-weight:600; cursor:pointer; font-size:0.9rem;">Timeline</button>
+                            </div>
+                        </div>
+
+                        <!-- Disclaimer -->
+                        <div
+                            style="background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.3); border-radius:10px; padding:0.75rem 1rem; margin-bottom:1.25rem; font-size:0.82rem; color:#f59e0b; display:flex; gap:0.6rem; align-items:flex-start;">
+                            <span style="flex-shrink:0;">⚠️</span>
+                            <span><strong>Estimated dates only.</strong> Dividend payment dates are based on historical
+                                patterns and may differ from actual announced dates. Always verify with the company's
+                                official IR page before making investment decisions.</span>
+                        </div>
+
+                        <!-- Calendar View -->
+                        <div id="calendarView">
+                            <div
+                                style="display:flex; align-items:center; justify-content:space-between; margin-bottom:1rem;">
+                                <button onclick="prevMonth()"
+                                    style="background:var(--glass-bg); border:1px solid var(--border-color); border-radius:8px; padding:0.4rem 0.9rem; color:var(--text-primary); cursor:pointer; font-size:1rem;">◀</button>
+                                <h3 id="calTitle" style="margin:0; font-size:1.2rem;"></h3>
+                                <button onclick="nextMonth()"
+                                    style="background:var(--glass-bg); border:1px solid var(--border-color); border-radius:8px; padding:0.4rem 0.9rem; color:var(--text-primary); cursor:pointer; font-size:1rem;">▶</button>
+                            </div>
+                            <div style="display:grid; grid-template-columns:repeat(7,1fr); gap:2px; margin-bottom:4px;">
+                                <div
+                                    style="text-align:center; font-size:0.78rem; font-weight:700; color:#ef4444; padding:0.4rem;">
+                                    Sun</div>
+                                <div
+                                    style="text-align:center; font-size:0.78rem; font-weight:700; color:var(--text-secondary); padding:0.4rem;">
+                                    Mon</div>
+                                <div
+                                    style="text-align:center; font-size:0.78rem; font-weight:700; color:var(--text-secondary); padding:0.4rem;">
+                                    Tue</div>
+                                <div
+                                    style="text-align:center; font-size:0.78rem; font-weight:700; color:var(--text-secondary); padding:0.4rem;">
+                                    Wed</div>
+                                <div
+                                    style="text-align:center; font-size:0.78rem; font-weight:700; color:var(--text-secondary); padding:0.4rem;">
+                                    Thu</div>
+                                <div
+                                    style="text-align:center; font-size:0.78rem; font-weight:700; color:var(--text-secondary); padding:0.4rem;">
+                                    Fri</div>
+                                <div
+                                    style="text-align:center; font-size:0.78rem; font-weight:700; color:#3b82f6; padding:0.4rem;">
+                                    Sat</div>
+                            </div>
+                            <div id="calGrid" style="display:grid; grid-template-columns:repeat(7,1fr); gap:2px;"></div>
+                        </div>
+
+                        <!-- Timeline View -->
+                        <div id="timelineView" style="display:none;">
+                            <h3 style="margin:0 0 1rem 0; font-size:1rem; color:var(--text-secondary);">Next 3 months
+                                upcoming dividends</h3>
+                            <div id="timelineList"></div>
+                        </div>
+
+                        <!-- Day Detail Modal -->
+                        <div id="dayModal"
+                            style="display:none; margin-top:1.25rem; border:1px solid var(--border-color); border-radius:14px; padding:1.25rem; background:var(--glass-bg);">
+                            <div
+                                style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+                                <h4 id="modalDate" style="margin:0; font-size:1rem;"></h4>
+                                <button onclick="closeModal()"
+                                    style="background:none; border:none; color:var(--text-secondary); cursor:pointer; font-size:1.1rem;">✕</button>
+                            </div>
+                            <div id="modalContent"></div>
                         </div>
                     </section>
+
+                    <script>
+                        // ── 배당 지급 월 스케줄 (과거 패턴 기반, 예상) ──────────────────
+                        const SCHEDULE = {
+                            // 그룹 A: 1,4,7,10월 (day ~8)
+                            'JNJ': [1, 4, 7, 10], 'JPM': [1, 4, 7, 10], 'BAC': [1, 4, 7, 10],
+                            'WFC': [1, 4, 7, 10], 'GS': [1, 4, 7, 10], 'BLK': [1, 4, 7, 10],
+                            'UNH': [1, 4, 7, 10], 'ABT': [1, 4, 7, 10], 'MMM': [1, 4, 7, 10],
+                            'TGT': [1, 4, 7, 10], 'WMT': [1, 4, 7, 10], 'HD': [1, 4, 7, 10],
+                            'LOW': [1, 4, 7, 10], 'MCD': [1, 4, 7, 10], 'CSCO': [1, 4, 7, 10],
+                            'IBM': [1, 4, 7, 10], 'TXN': [1, 4, 7, 10], 'QCOM': [1, 4, 7, 10],
+                            // 그룹 B: 2,5,8,11월 (day ~15)
+                            'MSFT': [2, 5, 8, 11], 'AAPL': [2, 5, 8, 11], 'KO': [2, 5, 8, 11],
+                            'PEP': [2, 5, 8, 11], 'V': [2, 5, 8, 11], 'MA': [2, 5, 8, 11],
+                            'ADP': [2, 5, 8, 11], 'PAYX': [2, 5, 8, 11], 'ACN': [2, 5, 8, 11],
+                            'AVGO': [2, 5, 8, 11], 'ADM': [2, 5, 8, 11], 'SYY': [2, 5, 8, 11],
+                            'GPC': [2, 5, 8, 11], 'MO': [2, 5, 8, 11], 'BTI': [2, 5, 8, 11],
+                            'VZ': [2, 5, 8, 11], 'T': [2, 5, 8, 11], 'CL': [2, 5, 8, 11],
+                            // 그룹 C: 3,6,9,12월 (day ~22)
+                            'XOM': [3, 6, 9, 12], 'CVX': [3, 6, 9, 12], 'PG': [3, 6, 9, 12],
+                            'CAT': [3, 6, 9, 12], 'ABBV': [3, 6, 9, 12], 'AMT': [3, 6, 9, 12],
+                            'DLR': [3, 6, 9, 12], 'PLD': [3, 6, 9, 12], 'PSA': [3, 6, 9, 12],
+                            'SPG': [3, 6, 9, 12], 'EQR': [3, 6, 9, 12], 'AVB': [3, 6, 9, 12],
+                            'VTR': [3, 6, 9, 12], 'NLY': [3, 6, 9, 12], 'AGNC': [3, 6, 9, 12],
+                            'ARR': [3, 6, 9, 12], 'DX': [3, 6, 9, 12], 'EQIX': [3, 6, 9, 12],
+                            // 월배당 (매달 15일)
+                            'O': 'monthly',
+                            // ETF: 분기 (2,5,8,11)
+                            'SCHD': [2, 5, 8, 11], 'VYM': [2, 5, 8, 11], 'VIG': [2, 5, 8, 11],
+                            'NOBL': [2, 5, 8, 11], 'DGRO': [2, 5, 8, 11], 'DVY': [2, 5, 8, 11],
+                            'SPYD': [3, 6, 9, 12], 'SDY': [3, 6, 9, 12], 'HDV': [3, 6, 9, 12],
+                            'FVD': [3, 6, 9, 12]
+                        };
+                        // 그룹별 지급일 오프셋
+                        const GROUP_DAY = { A: 8, B: 15, C: 22, M: 15 };
+
+                        const GRADE_COLOR = {
+                            'S등급': '#f59e0b', 'A등급': '#10b981', 'B등급': '#3b82f6', 'C등급': '#6b7280'
+                        };
+                        const GRADE_BG = {
+                            'S등급': 'rgba(245,158,11,0.15)', 'A등급': 'rgba(16,185,129,0.15)',
+                            'B등급': 'rgba(59,130,246,0.15)', 'C등급': 'rgba(107,114,128,0.15)'
+                        };
+
+                        let stockData = [];
+                        let currentYear, currentMonth, currentView = 'calendar';
+                        const now = new Date();
+                        currentYear = now.getFullYear();
+                        currentMonth = now.getMonth() + 1;
+
+                        function getGroupDay(ticker) {
+                            const s = SCHEDULE[ticker];
+                            if (!s) return null;
+                            if (s === 'monthly') return GROUP_DAY.M;
+                            if (s[0] === 1) return GROUP_DAY.A;
+                            if (s[0] === 2) return GROUP_DAY.B;
+                            return GROUP_DAY.C;
+                        }
+
+                        // 해당 월에 배당 지급하는 종목 목록 반환
+                        function getStocksForMonth(year, month) {
+                            const result = [];
+                            for (const stock of stockData) {
+                                const sched = SCHEDULE[stock.ticker];
+                                if (!sched) continue;
+                                let pays = false;
+                                if (sched === 'monthly') pays = true;
+                                else if (sched.includes(month)) pays = true;
+                                if (pays) {
+                                    const day = getGroupDay(stock.ticker);
+                                    // 주말이면 금요일로 조정
+                                    let d = new Date(year, month - 1, day);
+                                    const dow = d.getDay();
+                                    if (dow === 0) d.setDate(day - 2);
+                                    else if (dow === 6) d.setDate(day - 1);
+                                    result.push({ ...stock, payDay: d.getDate() });
+                                }
+                            }
+                            result.sort((a, b) => a.payDay - b.payDay);
+                            return result;
+                        }
+
+                        function renderCalendar() {
+                            const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                            document.getElementById('calTitle').textContent = `${MONTHS[currentMonth - 1]} ${currentYear}`;
+                            const stocks = getStocksForMonth(currentYear, currentMonth);
+                            // group by day
+                            const byDay = {};
+                            for (const s of stocks) {
+                                if (!byDay[s.payDay]) byDay[s.payDay] = [];
+                                byDay[s.payDay].push(s);
+                            }
+                            const firstDow = new Date(currentYear, currentMonth - 1, 1).getDay();
+                            const daysInMonth = new Date(currentYear, currentMonth, 0).getDate();
+                            let html = '';
+                            // empty cells
+                            for (let i = 0; i < firstDow; i++) html += `<div style="min-height:80px;border-radius:8px;"></div>`;
+                            const todayStr = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`;
+                            for (let d = 1; d <= daysInMonth; d++) {
+                                const isToday = `${currentYear}-${currentMonth}-${d}` === todayStr;
+                                const hasDividend = !!byDay[d];
+                                const border = isToday ? '2px solid #3b82f6' : '1px solid var(--border-color)';
+                                const bg = isToday ? 'rgba(59,130,246,0.08)' : 'var(--glass-bg)';
+                                let badges = '';
+                                if (hasDividend) {
+                                    const list = byDay[d].slice(0, 3);
+                                    badges = list.map(s => `<span onclick="event.stopPropagation();showDay(${d})" style="display:inline-block;padding:1px 5px;border-radius:4px;font-size:0.65rem;font-weight:700;background:${GRADE_BG[s.grade]};color:${GRADE_COLOR[s.grade]};cursor:pointer;">${s.ticker}</span>`).join('');
+                                    if (byDay[d].length > 3) badges += `<span style="font-size:0.65rem;color:var(--text-secondary);">+${byDay[d].length - 3}</span>`;
+                                }
+                                html += `<div onclick="showDay(${d})" style="min-height:80px;border:${border};background:${bg};border-radius:8px;padding:0.4rem;cursor:pointer;transition:transform 0.15s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+                                <div style="font-size:0.8rem;font-weight:${isToday ? '700' : '500'};color:${isToday ? '#3b82f6' : 'var(--text-secondary)'};">${d}</div>
+                                <div style="display:flex;flex-wrap:wrap;gap:2px;margin-top:4px;">${badges}</div>
+                            </div>`;
+                            }
+                            document.getElementById('calGrid').innerHTML = html;
+                        }
+
+                        function showDay(day) {
+                            const stocks = getStocksForMonth(currentYear, currentMonth).filter(s => s.payDay === day);
+                            if (stocks.length === 0) return;
+                            const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                            document.getElementById('modalDate').textContent = `💰 ${MONTHS[currentMonth - 1]} ${day}, ${currentYear} — ${stocks.length} dividend(s)`;
+                            document.getElementById('modalContent').innerHTML = stocks.map(s => `
+                            <div style="display:flex;align-items:center;gap:1rem;padding:0.75rem;border-radius:10px;background:var(--card-bg);margin-bottom:0.5rem;">
+                                <div style="font-weight:700;font-size:1rem;min-width:60px;">${s.ticker}</div>
+                                <div style="flex:1;font-size:0.85rem;color:var(--text-secondary);">${s.name}</div>
+                                <div style="font-size:0.85rem;color:${GRADE_COLOR[s.grade]};font-weight:700;">${s.grade}</div>
+                                <div style="font-size:0.85rem;color:#10b981;font-weight:700;">${s.dividend_yield}%</div>
+                            </div>`).join('');
+                            document.getElementById('dayModal').style.display = 'block';
+                        }
+                        function closeModal() { document.getElementById('dayModal').style.display = 'none'; }
+
+                        function renderTimeline() {
+                            const list = [];
+                            for (let offset = 0; offset < 3; offset++) {
+                                let m = currentMonth + offset;
+                                let y = currentYear;
+                                if (m > 12) { m -= 12; y++; }
+                                const stocks = getStocksForMonth(y, m);
+                                for (const s of stocks) {
+                                    const payDate = new Date(y, m - 1, s.payDay);
+                                    const diff = Math.ceil((payDate - now) / 86400000);
+                                    list.push({ ...s, payDate, diff, month: m, year: y });
+                                }
+                            }
+                            list.sort((a, b) => a.payDate - b.payDate);
+                            const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                            document.getElementById('timelineList').innerHTML = list.map(s => {
+                                let dday = '';
+                                if (s.diff === 0) dday = `<span style="background:#10b981;color:#fff;padding:2px 8px;border-radius:20px;font-size:0.75rem;font-weight:700;">D-DAY</span>`;
+                                else if (s.diff > 0 && s.diff <= 7) dday = `<span style="background:#f59e0b;color:#000;padding:2px 8px;border-radius:20px;font-size:0.75rem;font-weight:700;">D-${s.diff}</span>`;
+                                else if (s.diff < 0) dday = `<span style="background:var(--glass-bg);color:var(--text-secondary);padding:2px 8px;border-radius:20px;font-size:0.75rem;">Paid</span>`;
+                                else dday = `<span style="color:var(--text-secondary);font-size:0.75rem;">D-${s.diff}</span>`;
+                                return `<div style="display:flex;align-items:center;gap:1rem;padding:0.85rem;border-radius:10px;background:var(--glass-bg);border:1px solid var(--border-color);margin-bottom:0.5rem;">
+                                <div style="min-width:80px;font-size:0.8rem;font-weight:600;color:var(--text-secondary);">${MONTHS[s.month - 1]} ${s.payDay}</div>
+                                <div style="font-weight:700;min-width:55px;">${s.ticker}</div>
+                                <div style="flex:1;font-size:0.82rem;color:var(--text-secondary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${s.name}</div>
+                                <div style="font-size:0.82rem;color:${GRADE_COLOR[s.grade]};font-weight:700;min-width:45px;text-align:right;">${s.grade}</div>
+                                <div style="min-width:60px;text-align:right;">${dday}</div>
+                            </div>`;
+                            }).join('');
+                        }
+
+                        function setView(v) {
+                            currentView = v;
+                            document.getElementById('calendarView').style.display = v === 'calendar' ? 'block' : 'none';
+                            document.getElementById('timelineView').style.display = v === 'timeline' ? 'block' : 'none';
+                            document.getElementById('btnCalView').style.background = v === 'calendar' ? '#3b82f6' : 'transparent';
+                            document.getElementById('btnCalView').style.color = v === 'calendar' ? '#fff' : 'var(--text-secondary)';
+                            document.getElementById('btnTimeView').style.background = v === 'timeline' ? '#3b82f6' : 'transparent';
+                            document.getElementById('btnTimeView').style.color = v === 'timeline' ? '#fff' : 'var(--text-secondary)';
+                            if (v === 'timeline') renderTimeline();
+                        }
+
+                        function prevMonth() {
+                            currentMonth--;
+                            if (currentMonth < 1) { currentMonth = 12; currentYear--; }
+                            renderCalendar();
+                            closeModal();
+                        }
+                        function nextMonth() {
+                            currentMonth++;
+                            if (currentMonth > 12) { currentMonth = 1; currentYear++; }
+                            renderCalendar();
+                            closeModal();
+                        }
+
+                        // Load stock data and init
+                        fetch('dividend_insights.json')
+                            .then(r => r.json())
+                            .then(data => {
+                                stockData = data.stocks || [];
+                                renderCalendar();
+                            })
+                            .catch(() => { stockData = []; renderCalendar(); });
+                    </script>
 
                     <section class="education-section" style="margin-top: 4rem;">
                         <h2
