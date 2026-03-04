@@ -1,5 +1,23 @@
 [
     {
+        "title": "A Disparada da AMD Acima de US$ 200: Desvendando o Momento da Estrela dos Semicondutores",
+        "date": "2026-03-04",
+        "link": "blog/2026-03-04-AMD.html",
+        "summary": "A AMD (Advanced Micro Devices) superou os US$ 200 hoje, impulsionada pelo forte sentimento em torno de suas ofertas de IA e data center, como o acelerador MI300X e as CPUs EPYC. Esta publicação explora os catalisadores por trás da alta da AMD, sua posição competitiva contra Intel e NVIDIA, e as principais considerações para investidores em meio às tendências mais amplas do mercado de tecnologia."
+    },
+    {
+        "title": "Bitcoin Ultrapassa os US$ 72.700: Decifrando o Momento Cripto e as Perspectivas Futuras",
+        "date": "2026-03-04",
+        "link": "blog/2026-03-04-BTC-USD.html",
+        "summary": "O Bitcoin (BTC-USD) disparou para mais de US$ 72.700 com um ganho de 6,51%, atingindo novas máximas. Este rali é impulsionado principalmente por fortes entradas nos ETFs Spot de Bitcoin dos EUA, a antecipação do próximo evento de halving e o aumento da adoção institucional. Embora fatores macroeconômicos e um sentimento de 'risk-on' também contribuam, os investidores devem monitorar a demanda por ETFs, a dinâmica pós-halving e os desenvolvimentos regulatórios para entender a descoberta de preços futura e a potencial volatilidade."
+    },
+    {
+        "title": "Ethereum (ETH-USD) Rugge com Força: É o Início de uma Nova Ascensão?",
+        "date": "2026-03-04",
+        "link": "blog/2026-03-04-ETH-USD.html",
+        "summary": "Ethereum (ETH-USD) disparou mais de 7% para $2130.97, desafiando a instabilidade do mercado em geral. Esta publicação explora os principais impulsionadores por trás da recuperação do ETH, desde suas atualizações fundamentais e ecossistema robusto até potenciais ventos favoráveis macroeconômicos, oferecendo uma perspectiva de investimento abrangente para investidores globais."
+    },
+    {
         "title": "Ações da Adobe (ADBE): Gigante Criativa ou Campo de Batalha da IA? Uma Análise Aprofundada para Investidores",
         "date": "2026-03-03",
         "link": "blog/2026-03-03-ADBE.html",
@@ -100,23 +118,5 @@
         "date": "2026-02-26",
         "link": "blog/2026-02-26-ACN.html",
         "summary": "A Accenture (ACN) desafiou hoje a queda generalizada do mercado e a instabilidade das ações de IA, disparando mais de 8% para US$ 207,38. Como um gigante global de serviços profissionais, a ACN se beneficia da necessidade essencial das empresas de implementar e integrar soluções de IA, nuvem e transformação digital, posicionando-se como um investimento resiliente menos suscetível à volatilidade de provedores de hardware ou software de IA puros. Seus serviços e base de clientes diversificados oferecem estabilidade em meio à incerteza do mercado."
-    },
-    {
-        "title": "Netflix (NFLX) Desafia a Instabilidade do Mercado: A Gigante do Streaming Está Preparada para um Retorno?",
-        "date": "2026-02-25",
-        "link": "blog/2026-02-25-NFLX.html",
-        "summary": "Apesar da volatilidade mais ampla do mercado após os lucros da NVIDIA, a Netflix (NFLX) subiu 5,97%, atingindo US$ 82,70. Esta postagem de blog explora os fatores que impulsionam a resiliência da NFLX, desde seu bem-sucedido plano com anúncios e a repressão ao compartilhamento pago até sua robusta estratégia de conteúdo e foco na lucratividade. Analisamos sua posição no cenário de streaming em evolução e oferecemos considerações importantes para investidores que avaliam o potencial de longo prazo desta gigante do entretenimento."
-    },
-    {
-        "title": "Bitcoin Dispara Acima de US$ 67 mil: Decifrando a Alta da Cripto em Meio a Mudanças no Mercado",
-        "date": "2026-02-25",
-        "link": "blog/2026-02-25-BTC-USD.html",
-        "summary": "O Bitcoin (BTC-USD) dispara acima de US$ 67.900, demonstrando força robusta apesar da instabilidade mais ampla do mercado pós-lucros da NVIDIA. Esta postagem analisa os impulsionadores por trás da recuperação do BTC, sua intrigante relação com os mercados tradicionais e as principais considerações de investimento para um público global."
-    },
-    {
-        "title": "A Ascensão do Ethereum: ETH-USD Ultrapassa US$ 2.000 Em Meio a Correntes Cruzadas do Mercado",
-        "date": "2026-02-25",
-        "link": "blog/2026-02-25-ETH-USD.html",
-        "summary": "O Ethereum (ETH-USD) disparou acima de US$ 2.000, negociado a US$ 2.053,24 (+10,81%), em meio a sinais mistos dos mercados tradicionais. Este rali é impulsionado por fortes fundamentos como a próxima atualização Dencun, o crescente interesse institucional e um robusto ecossistema DeFi. Apesar das oscilações mais amplas do mercado e dos cortes de empregos corporativos, o desempenho do ETH destaca um forte apetite por ativos digitais inovadores. Os investidores devem monitorar os principais níveis de resistência e considerar o potencial de longo prazo do Ethereum como um ativo fundamental."
     }
 ]

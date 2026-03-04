@@ -1,5 +1,23 @@
 [
     {
+        "title": "AMD's $200 Breakout: Unpacking the Momentum of the Semiconductor Star",
+        "date": "2026-03-04",
+        "link": "blog/2026-03-04-AMD.html",
+        "summary": "AMD (Advanced Micro Devices) surged past $200 today, driven by strong sentiment around its AI and data center offerings like the MI300X accelerator and EPYC CPUs. This post explores the catalysts behind AMD's rally, its competitive position against Intel and NVIDIA, and key considerations for investors amidst the broader tech market trends."
+    },
+    {
+        "title": "Bitcoin Blazes Past $72,700: Decoding the Crypto Momentum and Future Outlook",
+        "date": "2026-03-04",
+        "link": "blog/2026-03-04-BTC-USD.html",
+        "summary": "Bitcoin (BTC-USD) has surged past $72,700 with a 6.51% gain, reaching new highs. This rally is primarily fueled by strong inflows into U.S. Spot Bitcoin ETFs, anticipation of the upcoming halving event, and increasing institutional adoption. While macroeconomic factors and a 'risk-on' sentiment also contribute, investors should monitor ETF demand, post-halving dynamics, and regulatory developments to understand future price discovery and potential volatility."
+    },
+    {
+        "title": "Ethereum (ETH-USD) Roars Back: Is This The Start of a New Ascent?",
+        "date": "2026-03-04",
+        "link": "blog/2026-03-04-ETH-USD.html",
+        "summary": "Ethereum (ETH-USD) has surged over 7% to $2130.97, defying broader market jitters. This post dives into the key drivers behind ETH's rally, from its foundational upgrades and robust ecosystem to potential macro tailwinds, offering a comprehensive investment outlook for global investors."
+    },
+    {
         "title": "Adobe (ADBE) Stock: Creative Powerhouse or AI Battleground? A Deep Dive for Investors",
         "date": "2026-03-03",
         "link": "blog/2026-03-03-ADBE.html",
@@ -100,23 +118,5 @@
         "date": "2026-02-26",
         "link": "blog/2026-02-26-ACN.html",
         "summary": "Accenture (ACN) defied a broader market slump and AI stock jitters today, soaring over 8% to $207.38. As a global professional services giant, ACN benefits from the essential need for businesses to implement and integrate AI, cloud, and digital transformation solutions, positioning it as a resilient investment less susceptible to the volatility of pure-play AI hardware or software providers. Its diversified services and client base offer stability amidst market uncertainty."
-    },
-    {
-        "title": "Netflix (NFLX) Defies Market Wobble: Is the Streaming Giant Primed for a Comeback?",
-        "date": "2026-02-25",
-        "link": "blog/2026-02-25-NFLX.html",
-        "summary": "Despite broader market volatility post-NVIDIA earnings, Netflix (NFLX) surged 5.97% to $82.70. This blog post explores the factors driving NFLX's resilience, from its successful ad-tier and paid sharing crackdown to its robust content strategy and focus on profitability. We delve into its position in the evolving streaming landscape and offer key considerations for investors evaluating the long-term potential of this entertainment titan."
-    },
-    {
-        "title": "Bitcoin Blazes Past $67k: Decoding Crypto's Surge Amidst Shifting Market Tides",
-        "date": "2026-02-25",
-        "link": "blog/2026-02-25-BTC-USD.html",
-        "summary": "Bitcoin (BTC-USD) surges past $67,900, demonstrating robust strength despite broader market wobbles post-NVIDIA earnings. This post analyzes the drivers behind BTC's rebound, its intriguing relationship with traditional markets, and key investment considerations for a global audience."
-    },
-    {
-        "title": "Ethereum's Ascent: ETH-USD Breaches $2,000 Amidst Market Crosscurrents",
-        "date": "2026-02-25",
-        "link": "blog/2026-02-25-ETH-USD.html",
-        "summary": "Ethereum (ETH-USD) has surged past $2,000, trading at $2,053.24 (+10.81%), amidst mixed signals from traditional markets. This rally is driven by strong fundamentals like the upcoming Dencun upgrade, growing institutional interest, and a robust DeFi ecosystem. Despite broader market wobbles and corporate job cuts, ETH's performance highlights a strong appetite for innovative digital assets. Investors should monitor key resistance levels and consider Ethereum's long-term potential as a foundational asset."
     }
 ]
