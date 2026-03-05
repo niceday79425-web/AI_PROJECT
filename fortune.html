@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock Wise | Stock Gung-hap</title>
+    <title>StockWise.ai | Stock Compatibility Check — Find Your Dividend Match</title>
     <meta name="description"
-        content="Check your compatibility with a stock! High-speed compatibility matching algorithm.">
+        content="For fun: check your name compatibility with any stock ticker! For real investors: discover which dividend stocks actually match your risk tolerance and investment style.">
+    <meta name="keywords"
+        content="stock compatibility, dividend stock match, investment personality, dividend investing, passive income stocks">
     <link rel="stylesheet" href="css/style.css">
     <script>
         (function () {
@@ -301,6 +303,65 @@
     </div>
 
     <script>
+        // Score-based real dividend stock recommendations
+        const STOCK_ADVICE = {
+            perfect: {
+                label: "Perfect Match! 💖",
+                comment: "This stock might be your soulmate.",
+                advice: {
+                    title: "Your Score: 90-100% — You & This Stock Are Soulmates",
+                    text: "A score like this suggests your investment temperament aligns perfectly with this type of stock. For investors who feel this level of conviction, <strong>high-quality dividend growth stocks</strong> tend to reward patience most generously. Stocks like <strong>Realty Income (O)</strong>, <strong>Coca-Cola (KO)</strong>, and <strong>Johnson & Johnson (JNJ)</strong> have delivered decades of growing income to committed long-term holders. If your ticker is a dividend payer with a strong track record, this could genuinely be worth researching further.",
+                    yield: "Target yield: 3–6% | Dividend growth: 5–10%/yr",
+                    link: "list.html",
+                    cta: "Explore S-Grade Dividend Stocks"
+                }
+            },
+            great: {
+                label: "Great Chemistry! 📈",
+                comment: "A solid addition to your portfolio.",
+                advice: {
+                    title: "Your Score: 70-89% — Strong Investment Chemistry",
+                    text: "Strong compatibility signals that this stock fits your psychological risk profile well. Investors with this level of alignment rarely panic-sell during market corrections — the most common way individual investors destroy their returns. Proven dividend growth stocks like <strong>Microsoft (MSFT)</strong>, <strong>Apple (AAPL)</strong>, and <strong>Visa (V)</strong> reward investors who can hold through volatility. Lower yield, but strong dividend growth and capital appreciation.",
+                    yield: "Target yield: 1–3% | Dividend growth: 8–15%/yr",
+                    link: "list.html",
+                    cta: "Explore A-Grade Dividend Stocks"
+                }
+            },
+            good: {
+                label: "Good Potential! 👍",
+                comment: "Explore further for long-term growth.",
+                advice: {
+                    title: "Your Score: 50-69% — Worth Researching Further",
+                    text: "A moderate compatibility score is actually realistic for most investor-stock relationships. It suggests you'll need to do deeper research before committing. For investors at this level, <strong>diversified dividend ETFs</strong> might be a better starting point: <strong>SCHD (Schwab US Dividend Equity ETF)</strong> or <strong>VYM (Vanguard High Dividend Yield ETF)</strong> provide broad exposure to dozens of quality dividend payers, reducing single-stock risk while still delivering steady income.",
+                    yield: "Target yield: 3–4% | Built-in diversification",
+                    link: "calculator.html",
+                    cta: "Simulate ETF Dividend Growth"
+                }
+            },
+            caution: {
+                label: "It's Complicated... 😅",
+                comment: "Proceed with caution and more research.",
+                advice: {
+                    title: "Your Score: 30-49% — Proceed With Caution",
+                    text: "A lower compatibility score often reflects a mismatch between the stock's volatility profile and your emotional tolerance. This doesn't mean the stock is bad — it may mean you need to either: (a) research it much more deeply before buying, or (b) start with a much smaller position. Defensive dividend stocks like <strong>Procter & Gamble (PG)</strong>, <strong>Colgate-Palmolive (CL)</strong>, or <strong>Utilities ETFs (XLU)</strong> offer very low volatility and consistent dividends — more compatible with cautious investors.",
+                    yield: "Target yield: 2.5–4% | Low volatility / defensive sector",
+                    link: "list.html",
+                    cta: "Find Low-Volatility Dividend Stocks"
+                }
+            },
+            skip: {
+                label: "Better as Friends. 📉",
+                comment: "Maybe look for other opportunities.",
+                advice: {
+                    title: "Your Score: 0-29% — This Might Not Be Your Match",
+                    text: "A very low score suggests a potential fundamental mismatch between this stock's characteristics and your investment style. This is valuable information. The best investors know when NOT to buy. Instead of forcing a poor fit, consider exploring stocks that actually match your dividend income goals. Use our <strong>Dividend Scouter</strong> to filter by grade, yield, and sector to find stocks that genuinely align with your financial objectives. There are 50+ quality dividend stocks waiting to be discovered.",
+                    yield: "Recommendation: Use the Scouter to find YOUR match",
+                    link: "list.html",
+                    cta: "Find Your Real Dividend Match"
+                }
+            }
+        };
+
         function checkCompatibility() {
             const name = document.getElementById('userName').value.trim();
             const ticker = document.getElementById('tickerName').value.trim().toUpperCase();
@@ -315,29 +376,45 @@
             const commentDisplay = document.getElementById('comment');
             const matchText = document.getElementById('matchText');
 
-            // Simple hash-like algorithm for consistency
             let combined = name + ticker;
             let hash = 0;
             for (let i = 0; i < combined.length; i++) {
                 hash = ((hash << 5) - hash) + combined.charCodeAt(i);
                 hash |= 0;
             }
-
             let score = Math.abs(hash % 101);
 
-            // Visual feedback
             resultDiv.style.display = 'block';
             matchText.innerText = `${name} + ${ticker}`;
             scoreDisplay.innerText = `${score}%`;
 
-            let comment = "";
-            if (score >= 90) comment = "Perfect Match! 💖 This stock might be your soulmate.";
-            else if (score >= 70) comment = "Great Chemistry! 📈 A solid addition to your portfolio.";
-            else if (score >= 50) comment = "Good Potential! 👍 Explore further for long-term growth.";
-            else if (score >= 30) comment = "It's Complicated... 😅 Proceed with caution.";
-            else comment = "Better as Friends. 📉 Maybe look for other opportunities.";
+            // Pick tier
+            let tier;
+            if (score >= 90) tier = STOCK_ADVICE.perfect;
+            else if (score >= 70) tier = STOCK_ADVICE.great;
+            else if (score >= 50) tier = STOCK_ADVICE.good;
+            else if (score >= 30) tier = STOCK_ADVICE.caution;
+            else tier = STOCK_ADVICE.skip;
 
-            commentDisplay.innerText = comment;
+            commentDisplay.innerText = `${tier.label} ${tier.comment}`;
+
+            // Inject investment advice card
+            let adviceEl = document.getElementById('investAdvice');
+            if (!adviceEl) {
+                adviceEl = document.createElement('div');
+                adviceEl.id = 'investAdvice';
+                resultDiv.appendChild(adviceEl);
+            }
+            const a = tier.advice;
+            adviceEl.innerHTML = `
+                <div style="margin-top:1.5rem; padding:1.25rem; background:rgba(16,185,129,0.07); border:1px solid rgba(16,185,129,0.25); border-radius:12px; text-align:left;">
+                    <p style="font-size:0.82rem; color:#a855f7; font-style:italic; margin-bottom:0.5rem;">&#x1F3AE; Entertainment score above | Real Investment Insight below</p>
+                    <h4 style="color:#10b981; font-size:1rem; margin-bottom:0.6rem;">${a.title}</h4>
+                    <p style="font-size:0.88rem; color:#94a3b8; line-height:1.7; margin-bottom:0.75rem;">${a.text}</p>
+                    <p style="font-size:0.82rem; color:#60a5fa; margin-bottom:1rem;">&#x1F4CA; ${a.yield}</p>
+                    <a href="${a.link}" style="display:inline-block; padding:0.5rem 1.1rem; background:linear-gradient(135deg,#10b981,#3b82f6); color:#fff; border-radius:8px; font-size:0.85rem; font-weight:600; text-decoration:none;">${a.cta} &rarr;</a>
+                    <p style="font-size:0.75rem; color:#475569; margin-top:0.9rem; font-style:italic;">Disclaimer: For entertainment only. Not financial advice. Research all investments thoroughly.</p>
+                </div>`;
         }
     </script>
 </body>

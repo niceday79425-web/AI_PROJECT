@@ -6,6 +6,42 @@
     "link": "blog/dividend-trap-guide.html"
   },
   {
+    "title": "AMD's $200 Breakout: Unpacking the Momentum of the Semiconductor Star",
+    "date": "2026-03-04",
+    "link": "blog/2026-03-04-AMD.html",
+    "summary": "AMD (Advanced Micro Devices) surged past $200 today, driven by strong sentiment around its AI and data center offerings like the MI300X accelerator and EPYC CPUs. This post explores the catalysts behind AMD's rally, its competitive position against Intel and NVIDIA, and key considerations for investors amidst the broader tech market trends."
+  },
+  {
+    "title": "Bitcoin Blazes Past $72,700: Decoding the Crypto Momentum and Future Outlook",
+    "date": "2026-03-04",
+    "link": "blog/2026-03-04-BTC-USD.html",
+    "summary": "Bitcoin (BTC-USD) has surged past $72,700 with a 6.51% gain, reaching new highs. This rally is primarily fueled by strong inflows into U.S. Spot Bitcoin ETFs, anticipation of the upcoming halving event, and increasing institutional adoption. While macroeconomic factors and a 'risk-on' sentiment also contribute, investors should monitor ETF demand, post-halving dynamics, and regulatory developments to understand future price discovery and potential volatility."
+  },
+  {
+    "title": "Ethereum (ETH-USD) Roars Back: Is This The Start of a New Ascent?",
+    "date": "2026-03-04",
+    "link": "blog/2026-03-04-ETH-USD.html",
+    "summary": "Ethereum (ETH-USD) has surged over 7% to $2130.97, defying broader market jitters. This post dives into the key drivers behind ETH's rally, from its foundational upgrades and robust ecosystem to potential macro tailwinds, offering a comprehensive investment outlook for global investors."
+  },
+  {
+    "title": "Adobe (ADBE) Stock: Creative Powerhouse or AI Battleground? A Deep Dive for Investors",
+    "date": "2026-03-03",
+    "link": "blog/2026-03-03-ADBE.html",
+    "summary": "An in-depth analysis of Adobe (ADBE) stock, examining its strong subscription model, AI innovation with Firefly, competitive landscape including new AI entrants like OpenAI, and current market performance, offering insights for global investors."
+  },
+  {
+    "title": "GEV's Dip: Decoding the Impact of Geopolitical Shocks and Market Volatility",
+    "date": "2026-03-03",
+    "link": "blog/2026-03-03-GEV.html",
+    "summary": "GEV experienced a notable 4.45% drop to $842.00, driven by escalating Middle East conflict and surging oil prices. This post analyzes how geopolitical tensions and rising energy costs could impact GEV's operations and investor sentiment. It provides actionable insights for investors to assess GEV's industry exposure, long-term fundamentals, and valuation amidst market volatility."
+  },
+  {
+    "title": "Intel (INTC) Takes a Hit: Navigating Market Headwinds and a Strategic Turnaround",
+    "date": "2026-03-03",
+    "link": "blog/2026-03-03-INTC.html",
+    "summary": "Intel (INTC) shares dropped 5.27% to $43.10 today, likely influenced by broader market 'risk-off' sentiment due to escalating geopolitical conflicts. Despite the short-term dip, the blog post emphasizes Intel's ongoing, ambitious IDM 2.0 strategic transformation, aimed at reclaiming manufacturing leadership and building a robust foundry business. It highlights both the significant challenges (capital intensity, competition from AMD, Nvidia, TSMC) and opportunities (PC market recovery, CHIPS Act subsidies, AI market growth). The analysis suggests INTC is a long-term investment play, requiring patience to assess the success of its multi-year turnaround."
+  },
+  {
     "date": "2026-03-02",
     "title": "The Power of Compound Interest: How $10,000 Becomes $100,000",
     "summary": "The Power of Compound Interest: How $10,000 Becomes $100,000...",
@@ -82,41 +118,5 @@
     "date": "2026-02-27",
     "link": "blog/2026-02-27-ETH-USD.html",
     "summary": "Ethereum (ETH-USD) experienced a significant 5.12% drop, pushing its price to $1922.95. This post analyzes the potential reasons behind the dip, from macroeconomic headwinds to platform-specific developments, offering insights into whether this represents a buying opportunity for long-term holders or a signal for further caution in the volatile crypto market."
-  },
-  {
-    "title": "Salesforce (CRM) Surges: A Beacon of Strength Amidst Tech Market Jitters?",
-    "date": "2026-02-26",
-    "link": "blog/2026-02-26-CRM.html",
-    "summary": "Salesforce (CRM) defied a broader tech market slump today, climbing over 4%. This post delves into CRM's resilience, its powerful AI strategy with Einstein AI and Data Cloud, and its long-term investment potential as a leader in enterprise software, offering insights for investors seeking stability and growth amidst market volatility."
-  },
-  {
-    "title": "NVIDIA's Recent Dip: A Buying Opportunity or a Warning for AI's Future?",
-    "date": "2026-02-26",
-    "link": "blog/2026-02-26-NVDA.html",
-    "summary": "NVIDIA (NVDA) dropped 5.46% to $184.89, contributing to a broader AI stock slump. While this raises concerns about AI market sentiment, NVIDIA remains a dominant force in AI infrastructure. The rise of custom AI chips (like Google-Meta deal) signals evolving competition. Investors must weigh NVIDIA's strong fundamentals and long-term AI growth potential against its premium valuation and market volatility to determine if this dip is an opportunity or a warning."
-  },
-  {
-    "title": "Accenture (ACN): Up Over 8% As AI Stocks Stumble – Why Investors Are Eyeing This Tech Services Giant",
-    "date": "2026-02-26",
-    "link": "blog/2026-02-26-ACN.html",
-    "summary": "Accenture (ACN) defied a broader market slump and AI stock jitters today, soaring over 8% to $207.38. As a global professional services giant, ACN benefits from the essential need for businesses to implement and integrate AI, cloud, and digital transformation solutions, positioning it as a resilient investment less susceptible to the volatility of pure-play AI hardware or software providers. Its diversified services and client base offer stability amidst market uncertainty."
-  },
-  {
-    "title": "Netflix (NFLX) Defies Market Wobble: Is the Streaming Giant Primed for a Comeback?",
-    "date": "2026-02-25",
-    "link": "blog/2026-02-25-NFLX.html",
-    "summary": "Despite broader market volatility post-NVIDIA earnings, Netflix (NFLX) surged 5.97% to $82.70. This blog post explores the factors driving NFLX's resilience, from its successful ad-tier and paid sharing crackdown to its robust content strategy and focus on profitability. We delve into its position in the evolving streaming landscape and offer key considerations for investors evaluating the long-term potential of this entertainment titan."
-  },
-  {
-    "title": "Bitcoin Blazes Past $67k: Decoding Crypto's Surge Amidst Shifting Market Tides",
-    "date": "2026-02-25",
-    "link": "blog/2026-02-25-BTC-USD.html",
-    "summary": "Bitcoin (BTC-USD) surges past $67,900, demonstrating robust strength despite broader market wobbles post-NVIDIA earnings. This post analyzes the drivers behind BTC's rebound, its intriguing relationship with traditional markets, and key investment considerations for a global audience."
-  },
-  {
-    "title": "Ethereum's Ascent: ETH-USD Breaches $2,000 Amidst Market Crosscurrents",
-    "date": "2026-02-25",
-    "link": "blog/2026-02-25-ETH-USD.html",
-    "summary": "Ethereum (ETH-USD) has surged past $2,000, trading at $2,053.24 (+10.81%), amidst mixed signals from traditional markets. This rally is driven by strong fundamentals like the upcoming Dencun upgrade, growing institutional interest, and a robust DeFi ecosystem. Despite broader market wobbles and corporate job cuts, ETH's performance highlights a strong appetite for innovative digital assets. Investors should monitor key resistance levels and consider Ethereum's long-term potential as a foundational asset."
   }
 ]

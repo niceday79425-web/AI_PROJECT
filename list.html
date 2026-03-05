@@ -4,8 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StockWise | Dividend Scouter</title>
+    <title>StockWise.ai | Dividend Scouter — Top US Dividend Stocks Ranked & Graded</title>
+    <meta name="description"
+        content="Find the best US dividend stocks with our proprietary S/A/B/C grading system. Filter by yield, payout ratio, dividend growth, and safety score. Updated regularly.">
+    <meta name="keywords"
+        content="best dividend stocks, dividend scouter, dividend yield ranking, dividend growth stocks, passive income stocks, S&P 500 dividends">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Tooltip System */
+        .tip {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            cursor: help;
+        }
+
+        .tip-icon {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: rgba(59, 130, 246, 0.25);
+            color: #60a5fa;
+            font-size: 10px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: background 0.2s;
+        }
+
+        .tip:hover .tip-icon {
+            background: rgba(59, 130, 246, 0.5);
+        }
+
+        .tip-box {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            bottom: calc(100% + 8px);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 240px;
+            background: #1e2535;
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            border-radius: 10px;
+            padding: 0.75rem 0.9rem;
+            font-size: 0.78rem;
+            color: #cbd5e1;
+            line-height: 1.55;
+            z-index: 999;
+            pointer-events: none;
+            transition: opacity 0.18s ease;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        .tip-box::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent;
+            border-top-color: rgba(59, 130, 246, 0.35);
+        }
+
+        .tip:hover .tip-box,
+        .tip:focus .tip-box {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Grade badge colors */
+        .grade-S {
+            color: #fbbf24;
+            background: rgba(251, 191, 36, 0.12);
+            border: 1px solid rgba(251, 191, 36, 0.35);
+        }
+
+        .grade-A {
+            color: #10b981;
+            background: rgba(16, 185, 129, 0.12);
+            border: 1px solid rgba(16, 185, 129, 0.35);
+        }
+
+        .grade-B {
+            color: #3b82f6;
+            background: rgba(59, 130, 246, 0.12);
+            border: 1px solid rgba(59, 130, 246, 0.35);
+        }
+
+        .grade-C {
+            color: #94a3b8;
+            background: rgba(148, 163, 184, 0.12);
+            border: 1px solid rgba(148, 163, 184, 0.35);
+        }
+    </style>
     <script>
         (function () {
             const userLang = navigator.language || navigator.userLanguage;
@@ -51,9 +146,37 @@
         <main>
             <section class="card">
                 <h2>🏆 Premium Dividend Insights (Scouter)</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
-                    Analyze top 50+ dividend stocks with our proprietary grading system.
+                <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
+                    Analyze top 50+ dividend stocks with our proprietary grading system. Hover the <span
+                        class="tip-icon" style="display:inline-flex;">?</span> icons for metric explanations.
                 </p>
+                <!-- Metric Legend / Tooltip Guide -->
+                <div style="display:flex; flex-wrap:wrap; gap:0.65rem; margin-bottom:1.5rem; font-size:0.8rem;">
+                    <span class="tip">Yield<span class="tip-icon">?</span><span class="tip-box"><strong>Dividend
+                                Yield</strong> = Annual Dividend &divide; Stock Price &times; 100. Shows annual income
+                            per dollar invested. Target: 2&ndash;6% for balanced safety &amp; income. Very high yields
+                            (&gt;8%) may indicate a Dividend Trap.</span></span>
+                    <span style="color:var(--border-color)">|</span>
+                    <span class="tip">Payout Ratio<span class="tip-icon">?</span><span class="tip-box"><strong>Payout
+                                Ratio</strong> = Dividends Paid &divide; Net Income &times; 100. How much of earnings go
+                            to dividends. &lt;60% = Healthy &bull; 60&ndash;80% = Caution &bull; &gt;80% = Danger zone
+                            (except REITs, where &lt;90% is normal).</span></span>
+                    <span style="color:var(--border-color)">|</span>
+                    <span class="tip">Grade<span class="tip-icon">?</span><span class="tip-box"><strong>StockWise
+                                Grade</strong> is our proprietary composite score based on: Yield sustainability, Payout
+                            Ratio, dividend growth streak, FCF coverage, and sector outlook. <br><br>S = Premium &bull;
+                            A = Excellent &bull; B = Good &bull; C = Fair</span></span>
+                    <span style="color:var(--border-color)">|</span>
+                    <span class="tip">Growth Streak<span class="tip-icon">?</span><span
+                            class="tip-box"><strong>Consecutive Dividend Growth</strong> — how many years in a row the
+                            company has increased its dividend. 25+ years = Dividend Aristocrat. 50+ years = Dividend
+                            King. Higher streak = stronger dividend commitment.</span></span>
+                    <span style="color:var(--border-color)">|</span>
+                    <span class="tip">FCF Cover<span class="tip-icon">?</span><span class="tip-box"><strong>Free Cash
+                                Flow Coverage</strong>: Free Cash Flow &divide; Total Dividends Paid. &gt;1.5&times; =
+                            Very safe &bull; 1.0&ndash;1.5&times; = Adequate &bull; &lt;1.0&times; = Dividends funded by
+                            debt — risk signal.</span></span>
+                </div>
 
                 <!-- Controls -->
                 <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
