@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StockWise | Snowball Simulator</title>
+    <title>StockWise.ai | Snowball Dividend Calculator — Compound Interest Simulator</title>
     <meta name="description"
-        content="Calculate your long-term compound growth and dividend yield with our snowball simulator.">
+        content="Simulate your dividend portfolio's compound growth over 20+ years. Uses the compound interest formula A = P(1+r/n)^nt with DRIP reinvestment and dividend growth. Free, no login required.">
+    <meta name="keywords"
+        content="compound interest calculator, dividend calculator, DRIP calculator, snowball effect, passive income calculator, dividend growth investing">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
@@ -279,6 +281,111 @@
             <aside class="ad-slot ad-sidebar"></aside>
         </div>
 
+
+
+        <!-- Compound Interest Formula Guide -->
+        <section style="max-width: 900px; margin: 3rem auto 0; padding: 0 1rem;">
+            <div class="card" style="border-left: 4px solid var(--accent-blue);">
+                <h2 style="font-size: 1.6rem; margin-bottom: 1rem;">How the Compound Interest Formula Works</h2>
+
+                <!-- Formula Box -->
+                <div
+                    style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.3); border-radius: 12px; padding: 1.5rem; text-align: center; margin-bottom: 1.5rem;">
+                    <p
+                        style="font-size: 1.4rem; font-family: monospace; color: #60a5fa; font-weight: 700; margin-bottom: 0.5rem;">
+                        A = P &times; (1 + r/n)<sup>n&times;t</sup> + D &times; G<sup>t</sup> / r
+                    </p>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary);">
+                        <strong>A</strong> = Final portfolio value &nbsp;|&nbsp;
+                        <strong>P</strong> = Principal investment &nbsp;|&nbsp;
+                        <strong>r</strong> = Annual return rate &nbsp;|&nbsp;
+                        <strong>n</strong> = Compounding periods per year &nbsp;|&nbsp;
+                        <strong>t</strong> = Years &nbsp;|&nbsp;
+                        <strong>D</strong> = Annual dividend &nbsp;|&nbsp;
+                        <strong>G</strong> = Dividend growth rate
+                    </p>
+                </div>
+
+                <h3 style="font-size: 1.2rem; color: var(--accent-blue); margin-bottom: 0.75rem;">What is Compound
+                    Interest?</h3>
+                <p style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 1rem;">
+                    Compound interest is often called the <strong style="color:#fff;">"eighth wonder of the
+                        world"</strong> — a phrase attributed to Albert Einstein. Unlike simple interest (which only
+                    calculates interest on the original principal), compound interest calculates interest on both the
+                    <strong style="color:#fff;">principal AND all previously accumulated interest</strong>. In the
+                    context of dividend investing, this means your dividends earn dividends — a self-reinforcing
+                    snowball effect.
+                </p>
+
+                <h3 style="font-size: 1.2rem; color: var(--accent-blue); margin-bottom: 0.75rem;">How the Snowball
+                    Calculator Works</h3>
+                <p style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 0.75rem;">This simulator models
+                    your portfolio growth using <strong style="color:#fff;">monthly compounding</strong> — the most
+                    accurate method for dividend investing. Here's what each input controls:</p>
+                <ul style="line-height: 2.2; color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 1rem;">
+                    <li><strong style="color:#fff;">Initial Investment (P):</strong> Your starting capital. Even small
+                        amounts like $1,000 demonstrate the power of time in compound growth.</li>
+                    <li><strong style="color:#fff;">Annual Dividend Yield (r):</strong> The annual dividend income as a
+                        percentage of the stock price. For a stock priced at $100 paying $4/year, the yield is 4%. Our
+                        simulator uses this to calculate monthly dividend income.</li>
+                    <li><strong style="color:#fff;">Annual Price Growth (g):</strong> The expected annual stock price
+                        appreciation rate. This is separate from dividends — quality dividend stocks often deliver both
+                        income AND capital growth.</li>
+                    <li><strong style="color:#fff;">Annual Dividend Growth:</strong> How much the company increases its
+                        dividend each year. This is the key driver of long-term Yield on Cost. A 7% growth rate means
+                        your dividend double every ~10 years (Rule of 72).</li>
+                    <li><strong style="color:#fff;">Investment Period (t):</strong> The number of years you plan to
+                        hold. Time is the most powerful variable — the difference between 10 and 20 years is often 3–4×
+                        the final portfolio value.</li>
+                    <li><strong style="color:#fff;">Monthly Contribution:</strong> Regular additional investments
+                        amplify the snowball. Even $100/month significantly accelerates the compounding process.</li>
+                    <li><strong style="color:#fff;">DRIP (Dividend Reinvestment):</strong> When enabled, all dividends
+                        are automatically reinvested to buy more shares each month. This is the core engine of compound
+                        growth. Without DRIP, dividend income is taken as cash; with DRIP, it compounds exponentially.
+                    </li>
+                    <li><strong style="color:#fff;">Tax Rate on Dividends:</strong> The withholding tax applied to
+                        dividends before reinvestment or withdrawal. Default is 15%, representing the most common
+                        US-treaty rate for international investors. US residents typically pay 0%–20% depending on
+                        income bracket.</li>
+                </ul>
+
+                <h3 style="font-size: 1.2rem; color: var(--accent-blue); margin-bottom: 0.75rem;">Reading the Results
+                </h3>
+                <p style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 0.75rem;">The simulator outputs
+                    three key figures:</p>
+                <ul style="line-height: 2; color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 1rem;">
+                    <li><strong style="color:#fff;">Total Portfolio Value:</strong> Your final wealth including all
+                        reinvested dividends and capital appreciation after the investment period.</li>
+                    <li><strong style="color:#fff;">Total Dividend Income:</strong> The cumulative dividends received
+                        (and reinvested) over the entire period. Compare this to your initial investment to see
+                        dividend-on-cost.</li>
+                    <li><strong style="color:#fff;">Total Gain:</strong> The difference between your final portfolio
+                        value and total capital invested (initial + monthly contributions). This represents your pure
+                        investment return.</li>
+                </ul>
+
+                <div
+                    style="background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); border-radius: 10px; padding: 1.25rem; margin-top: 1rem;">
+                    <p style="font-size: 0.92rem; color: #10b981; font-weight: 600; margin-bottom: 0.5rem;">💡 Pro
+                        Strategy: The DRIP vs. Cash-Out Test</p>
+                    <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7;">
+                        Run the calculator twice: once with DRIP enabled, once without. Compare the 20-year results. The
+                        difference shows the exact additional wealth generated by <strong>reinvesting dividends</strong>
+                        rather than withdrawing them as cash. For most portfolios at 4%+ yield, DRIP significantly adds
+                        50–100% more wealth over 20 years.
+                    </p>
+                </div>
+
+                <p style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7;">
+                    <strong style="color:#fff;">Important note:</strong> This calculator provides hypothetical
+                    projections based on constant input values. Real-world returns vary due to market volatility,
+                    dividend cuts, changes in payout ratios, inflation, and currency fluctuations. Always consult a
+                    licensed financial advisor before making investment decisions. Explore our <a href="list.html"
+                        style="color:#3b82f6;">Dividend Scouter</a> to find stocks that match your target yield and
+                    growth profile.
+                </p>
+            </div>
+        </section>
 
         <!-- Google AdSense - Footer Banner -->
         <div class="ad-slot" style="margin-top: 2rem;">

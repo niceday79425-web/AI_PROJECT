@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StockWise | Simulador Snowball</title>
+    <title>StockWise.ai | Simulador Snowball de Dividendos — Calculadora de Juros Compostos</title>
     <meta name="description"
-        content="Calcule o crescimento do seu patrimônio com dividendos reinvestidos. Entenda a diferença entre juros simples e compostos, o efeito DRIP e o Yield on Cost.">
+        content="Simule o crescimento do seu portfólio de dividendos por 20+ anos. Usa a fórmula de juros compostos A = P(1+r/n)^nt com reinvestimento DRIP e crescimento de dividendos. Gratuito.">
+    <meta name="keywords"
+        content="calculadora de juros compostos, calculadora de dividendos, DRIP, efeito bola de neve, renda passiva, investimento em dividendos">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>sessionStorage.setItem('redirected', 'true');</script>
@@ -254,6 +256,86 @@
             </div>
             <aside class="ad-slot ad-sidebar"></aside>
         </div>
+
+
+        <!-- Guia: Fórmula de Juros Compostos -->
+        <section style="max-width: 900px; margin: 3rem auto 0; padding: 0 1rem;">
+            <div class="card" style="border-left: 4px solid var(--accent-blue);">
+                <h2 style="font-size: 1.6rem; margin-bottom: 1rem;">Como Funciona a Fórmula de Juros Compostos</h2>
+
+                <div
+                    style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.3); border-radius: 12px; padding: 1.5rem; text-align: center; margin-bottom: 1.5rem;">
+                    <p
+                        style="font-size: 1.4rem; font-family: monospace; color: #60a5fa; font-weight: 700; margin-bottom: 0.5rem;">
+                        A = P &times; (1 + r/n)<sup>n&times;t</sup>
+                    </p>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary);">
+                        <strong>A</strong> = Valor final &nbsp;|&nbsp;
+                        <strong>P</strong> = Principal &nbsp;|&nbsp;
+                        <strong>r</strong> = Taxa anual &nbsp;|&nbsp;
+                        <strong>n</strong> = Períodos de capitalização/ano &nbsp;|&nbsp;
+                        <strong>t</strong> = Anos
+                    </p>
+                </div>
+
+                <h3 style="font-size: 1.2rem; color: var(--accent-blue); margin-bottom: 0.75rem;">O que são Juros
+                    Compostos?</h3>
+                <p style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 1rem;">
+                    Os juros compostos são frequentemente chamados de <strong style="color:#fff;">"a oitava maravilha do
+                        mundo"</strong>. Ao contrário dos juros simples (calculados apenas sobre o principal), os juros
+                    compostos incidem sobre <strong style="color:#fff;">o principal E todos os juros acumulados
+                        anteriormente</strong>. No investimento em dividendos, isso significa que seus dividendos geram
+                    mais dividendos — um efeito bola de neve autorreforzado.
+                </p>
+
+                <h3 style="font-size: 1.2rem; color: var(--accent-blue); margin-bottom: 0.75rem;">Explicação dos Campos
+                    de Entrada</h3>
+                <ul style="line-height: 2.2; color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 1rem;">
+                    <li><strong style="color:#fff;">Investimento Inicial (P):</strong> Seu capital de partida. Mesmo
+                        $1.000 demonstram o poder do tempo com juros compostos.</li>
+                    <li><strong style="color:#fff;">Rendimento Anual de Dividendos (r):</strong> O dividendo anual como
+                        percentagem do preço da ação. Ação a $100 pagando $4/ano = rendimento de 4%.</li>
+                    <li><strong style="color:#fff;">Crescimento Anual do Preço (g):</strong> Taxa esperada de
+                        valorização da ação. Aplicada separadamente dos dividendos.</li>
+                    <li><strong style="color:#fff;">Crescimento do Dividendo:</strong> Quanto a empresa aumenta seu
+                        dividendo por ano. Taxa de 7% significa que o dividendo dobra em ~10 anos (Regra do 72:
+                        72÷7=10,3).</li>
+                    <li><strong style="color:#fff;">Período de Investimento (t):</strong> Número de anos de manutenção.
+                        O tempo é a variável mais poderosa — a diferença entre 10 e 20 anos pode ser 3–4× o valor final.
+                    </li>
+                    <li><strong style="color:#fff;">Aporte Mensal:</strong> Investimentos regulares adicionais
+                        amplificam a bola de neve. Até $100/mês faz grande diferença em 20 anos.</li>
+                    <li><strong style="color:#fff;">DRIP (Reinvestimento de Dividendos):</strong> Quando ativado, todos
+                        os dividendos são automaticamente reinvestidos para comprar mais ações a cada mês. É o motor
+                        central do crescimento composto.</li>
+                    <li><strong style="color:#fff;">Imposto sobre Dividendos:</strong> Padrão de 15%, representando a
+                        taxa de tratado fiscal EUA-Brasil mais comum. Residentes nos EUA pagam 0–20% dependendo da faixa
+                        de renda.</li>
+                </ul>
+
+                <div
+                    style="background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); border-radius: 10px; padding: 1.25rem; margin-top: 1rem;">
+                    <p style="font-size: 0.92rem; color: #10b981; font-weight: 600; margin-bottom: 0.5rem;">💡
+                        Estratégia Inteligente: Teste DRIP Ativado vs. Desativado</p>
+                    <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7;">
+                        Execute a calculadora duas vezes: uma com DRIP ativado, outra sem. Compare os resultados em 20
+                        anos.
+                        A diferença mostra a riqueza adicional gerada pelo <strong>reinvestimento de
+                            dividendos</strong>.
+                        Para a maioria dos portfólios com rendimento de 4%+, o DRIP adiciona significativamente
+                        <strong>50–100% mais patrimônio</strong> em 20 anos.
+                    </p>
+                </div>
+
+                <p style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7;">
+                    <strong style="color:#fff;">Aviso importante:</strong> Esta calculadora fornece projeções
+                    hipotéticas baseadas em valores constantes. Os retornos reais variam devido à volatilidade do
+                    mercado, cortes de dividendos, inflação e flutuações cambiais. Consulte sempre um assessor
+                    financeiro antes de investir. Explore nosso <a href="../list.html" style="color:#3b82f6;">Scouter de
+                        Dividendos</a> para encontrar ações que correspondam ao seu perfil.
+                </p>
+            </div>
+        </section>
 
         <!-- Google AdSense - Footer Banner -->
         <div class="ad-slot" style="margin-top: 2rem;">
