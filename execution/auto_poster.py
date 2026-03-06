@@ -334,7 +334,7 @@ def save_and_index_multi(contents, ticker, chart_url):
         posts = [new_post] + [p for p in posts if p['link'] != new_post['link']]
         
         with open(posts_path, "w", encoding="utf-8") as f:
-            json.dump(posts[:20], f, ensure_ascii=False, indent=4)
+            json.dump(posts[:60], f, ensure_ascii=False, indent=4)
             
     print(f"[✓] {ticker} - English content generated with Korean & Portuguese translations")
 
@@ -393,9 +393,9 @@ def cleanup_old_posts(keep_days=30):
         # Filter out deleted entries
         posts = [p for p in posts if p.get("link") not in deleted_links]
 
-        # Re-sort by date desc, keep latest 20
+        # Re-sort by date desc, keep latest 60
         posts.sort(key=lambda x: x.get("date", ""), reverse=True)
-        posts = posts[:20]
+        posts = posts[:60]
 
         with open(posts_path, "w", encoding="utf-8") as f:
             json.dump(posts, f, ensure_ascii=False, indent=4)
