@@ -1,45 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | StockWise.ai</title>
+    <title>About Us | StockWise.ai — Dividend Investing Platform</title>
+    <meta name="description"
+        content="Learn about StockWise.ai — an independent dividend investment research platform built on data engineering and financial APIs. Educational content for long-term investors.">
+    <meta name="keywords"
+        content="about stockwise, dividend investing platform, dividend research, financial data, passive income education">
     <link rel="stylesheet" href="css/style.css">
-
-
-
     <link rel="canonical" href="https://ai-project-1en.pages.dev/about.html" />
     <link rel="alternate" hreflang="en" href="https://ai-project-1en.pages.dev/about.html" />
     <link rel="alternate" hreflang="ko" href="https://ai-project-1en.pages.dev/ko/about.html" />
     <link rel="alternate" hreflang="pt" href="https://ai-project-1en.pages.dev/pt/about.html" />
     <link rel="alternate" hreflang="x-default" href="https://ai-project-1en.pages.dev/about.html" />
+    <style>
+        .about-section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .about-section h2 {
+            color: var(--accent-blue);
+            font-size: 1.2rem;
+            margin-bottom: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .about-section p {
+            color: var(--text-secondary);
+            line-height: 1.85;
+            margin-bottom: 0.75rem;
+        }
+
+        .disclaimer-box {
+            background: rgba(239, 68, 68, 0.06);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-left: 4px solid #ef4444;
+            border-radius: 10px;
+            padding: 1.25rem 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .disclaimer-box h3 {
+            color: #ef4444;
+            font-size: 1rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .disclaimer-box p {
+            color: var(--text-secondary);
+            font-size: 0.88rem;
+            line-height: 1.75;
+            margin: 0;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
         <header>
-             <a href="/" class="logo">StockWise.ai</a>
+            <a href="/" class="logo">StockWise.ai</a>
+            <nav class="lang-selector">
+                <a href="/ko/about.html" class="lang-link">KO</a>
+                <a href="/about.html" class="lang-link active">EN</a>
+                <a href="/pt/about.html" class="lang-link">PT</a>
+            </nav>
         </header>
-        <main style="max-width: 800px; margin: 4rem auto; min-height: 60vh;">
-            <h1 style="margin-bottom: 2rem;">About Us</h1>
 
-<p>Welcome to StockWise.ai, your number one source for all things dividend investing. We're dedicated to pointing you to the very best of dividend stocks, with a focus on data accuracy, sustainability, and long-term growth.</p>
-<p>Founded in 2026, StockWise.ai has come a long way from its beginnings. When we first started out, our passion for "echo-free financial data" drove us to start this project so that StockWise.ai can offer you the world's most advanced dividend grading system.</p>
-<p>We serve customers all over the world, and are thrilled that we're able to turn our passion into our own website.</p>
-<p>I hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
-<p>Sincerely,<br>The StockWise Team</p>
+        <main style="max-width: 800px; margin: 3rem auto; min-height: 60vh; padding: 0 1rem;">
+            <h1 style="margin-bottom: 0.4rem;">About StockWise.ai</h1>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 2.5rem;">Last updated: March 6,
+                2026</p>
 
+            <div class="about-section">
+                <h2>🎯 Our Mission</h2>
+                <p>StockWise.ai is an independent dividend investment research platform dedicated to helping individual
+                    investors make <strong>informed, data-driven decisions</strong> about US dividend stocks and
+                    long-term passive income strategies.</p>
+                <p>We believe that access to quality financial data and educational content should not be limited to
+                    institutional investors. Our goal is to bridge that gap — providing retail investors with the
+                    analytical tools and knowledge that were previously available only to professionals.</p>
+            </div>
+
+            <div class="about-section">
+                <h2>🛠️ Technical Foundation & Data Methodology</h2>
+                <p>StockWise.ai is built on a foundation of <strong>data engineering and IT systems expertise</strong>.
+                    Our platform aggregates and processes financial data from verified, industry-standard sources
+                    including:</p>
+                <ul style="color: var(--text-secondary); line-height: 2.1; padding-left: 1.5rem; margin-bottom: 1rem;">
+                    <li><strong>Yahoo Finance API</strong> — Real-time and historical stock price data, dividend
+                        history, and financial ratios</li>
+                    <li><strong>SEC EDGAR</strong> — Regulatory filings for earnings and payout verification</li>
+                    <li><strong>Public financial databases</strong> — Cross-referenced dividend records for accuracy
+                    </li>
+                </ul>
+                <p>Our proprietary <strong>S/A/B/C grading system</strong> scores dividend stocks based on a composite
+                    algorithm that evaluates: Dividend Yield sustainability, Payout Ratio, consecutive years of dividend
+                    growth, Free Cash Flow coverage, sector outlook, and stability score. All grades are algorithmically
+                    generated and reviewed periodically.</p>
+            </div>
+
+            <div class="about-section">
+                <h2>📚 Educational Focus</h2>
+                <p>Beyond stock screening, StockWise.ai is committed to financial education. Our platform includes:</p>
+                <ul style="color: var(--text-secondary); line-height: 2.1; padding-left: 1.5rem; margin-bottom: 1rem;">
+                    <li><strong>Snowball Calculator</strong> — Simulate compound interest and DRIP growth over time</li>
+                    <li><strong>Dividend Calendar</strong> — Track upcoming dividend payment dates</li>
+                    <li><strong>Market Insights Blog</strong> — Daily analysis of high-interest stocks and market trends
+                    </li>
+                    <li><strong>FAQ & Educational Guides</strong> — Beginner-friendly explanations of key dividend
+                        investing concepts</li>
+                </ul>
+                <p>All educational content is produced with the goal of explaining complex financial concepts in
+                    accessible, beginner-friendly language.</p>
+            </div>
+
+            <div class="about-section">
+                <h2>🌐 Global Reach</h2>
+                <p>StockWise.ai serves investors across the world with full multilingual support in <strong>English,
+                        Korean (한국어), and Portuguese (Português)</strong>. All content — including stock analysis,
+                    educational guides, and legal pages — is fully localized for each language.</p>
+                <p>We understand that international investors face unique challenges, including foreign withholding
+                    taxes, currency risk, and access to US markets. Our platform addresses these topics directly with
+                    region-specific educational content.</p>
+            </div>
+
+            <div class="about-section">
+                <h2>📬 Contact & Transparency</h2>
+                <p>We are committed to transparency in all aspects of our operation. For questions, feedback,
+                    partnerships, or content correction requests, please contact our team:</p>
+                <p style="margin-top: 0.5rem;"><strong>Email:</strong> <a href="mailto:support@stockwise.ai"
+                        style="color: var(--accent-blue);">support@stockwise.ai</a></p>
+                <p>We aim to respond to all inquiries within <strong>24–48 business hours</strong>.</p>
+                <p>You can also visit our <a href="/contact.html" style="color: var(--accent-blue);">Contact Page</a> or
+                    review our <a href="/privacy.html" style="color: var(--accent-blue);">Privacy Policy</a> for full
+                    data handling details.</p>
+            </div>
+
+            <!-- Critical Disclaimer -->
+            <div class="disclaimer-box">
+                <h3>⚠️ Important Disclaimer</h3>
+                <p><strong>StockWise.ai is an information and education provider, not a licensed financial advisor or
+                        investment firm.</strong> All content published on this platform — including stock grades,
+                    dividend data, market analysis, and educational articles — is provided for <strong>informational and
+                        educational purposes only</strong> and does not constitute financial advice, investment
+                    recommendations, or solicitation to buy or sell any securities.</p>
+                <p style="margin-top: 0.75rem;">Our grading system is based on historical data and algorithmic analysis
+                    and does not guarantee future performance. Dividend yields may fluctuate and dividends are not
+                    guaranteed. <strong>Always consult with a qualified financial professional before making any
+                        investment decisions.</strong> All investment decisions and their outcomes remain the sole
+                    responsibility of the individual investor.</p>
+            </div>
         </main>
+
         <footer>
             <div class="footer-content">
-                
-                
                 <div class="footer-nav" style="margin-bottom: 1.5rem; font-size: 0.9rem;">
-                    <a href="/privacy.html" style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Privacy Policy</a> | <a href="/about.html" style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">About Us</a> | <a href="/contact.html" style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Contact</a>
+                    <a href="/privacy.html"
+                        style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Privacy Policy</a>
+                    |
+                    <a href="/about.html"
+                        style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">About Us</a> |
+                    <a href="/contact.html"
+                        style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Contact</a>
                 </div>
-<p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
-                <!-- Links will be updated by another script -->
+                <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
+                <p class="legal-disclaimer">This content is for informational purposes only and does not constitute
+                    financial advice. Investment involves risk.</p>
             </div>
         </footer>
     </div>
 </body>
+
 </html>
