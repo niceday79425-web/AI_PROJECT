@@ -339,57 +339,72 @@ def save_and_index_multi(contents, ticker, chart_url):
     print(f"[✓] {ticker} - English content generated with Korean & Portuguese translations")
 
 def cleanup_old_posts(keep_days=30):
-    """Delete blog HTML files older than keep_days and sync posts.json"""
+    """Delete dated blog HTML files older than keep_days and sync posts.json.
+    Files without YYYY-MM-DD prefix (e.g. edu blog posts) are preserved.
+    """
     print(f"[*] Cleaning up posts older than {keep_days} days...")
     cutoff = datetime.datetime.now() - datetime.timedelta(days=keep_days)
 
     blog_configs = [
-        {"dir": "blog",    "posts": "posts.json"},
-        {"dir": "ko/blog", "posts": "ko/posts.json"},
-        {"dir": "pt/blog", "posts": "pt/posts.json"},
+        {"dir": "blog",    "posts": "posts.json",    "link_prefix": "blog/"},
+        {"dir": "ko/blog", "posts": "ko/posts.json", "link_prefix": "blog/"},
+        {"dir": "pt/blog", "posts": "pt/posts.json", "link_prefix": "blog/"},
     ]
 
     for cfg in blog_configs:
-        blog_dir = cfg["dir"]
+        blog_dir  = cfg["dir"]
         posts_path = cfg["posts"]
+        link_prefix = cfg["link_prefix"]
 
         if not os.path.exists(blog_dir):
             continue
 
         deleted_links = set()
 
-        # Scan HTML files; filename format: YYYY-MM-DD-TICKER.html
+        # Scan HTML files — only delete those with YYYY-MM-DD prefix
         for fname in os.listdir(blog_dir):
             if not fname.endswith(".html"):
                 continue
+
             # Extract date prefix (first 10 chars: YYYY-MM-DD)
             date_str = fname[:10]
             try:
                 file_date = datetime.datetime.strptime(date_str, "%Y-%m-%d")
             except ValueError:
-                continue  # Skip filenames without date prefix
+                # No date prefix → edu blog post, skip
+                continue
 
             if file_date < cutoff:
                 filepath = os.path.join(blog_dir, fname)
                 os.remove(filepath)
-                deleted_links.add(f"blog/{fname}")
+                deleted_links.add(link_prefix + fname)
                 print(f"  [del] {filepath}")
 
-        # Update posts.json: remove entries pointing to deleted files
+        # Sync posts.json — remove entries pointing to deleted files
         if not os.path.exists(posts_path):
             continue
+
         with open(posts_path, "r", encoding="utf-8") as f:
             try:
                 posts = json.load(f)
-            except:
+            except Exception:
                 posts = []
 
+        # Filter out deleted entries
         posts = [p for p in posts if p.get("link") not in deleted_links]
+
+        # Re-sort by date desc, keep latest 20
+        posts.sort(key=lambda x: x.get("date", ""), reverse=True)
+        posts = posts[:20]
 
         with open(posts_path, "w", encoding="utf-8") as f:
             json.dump(posts, f, ensure_ascii=False, indent=4)
 
-    print("[✓] Cleanup complete.")
+        print(f"  [sync] {posts_path}: {len(posts)} entries remaining")
+
+    print("[OK] Cleanup complete.")
+
+
 
 
 def main():

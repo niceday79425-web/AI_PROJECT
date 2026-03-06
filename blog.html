@@ -59,12 +59,17 @@
         <div class="content-with-sidebar">
             <div class="main-content">
                 <section class="blog-section" style="margin-top: 0;">
-                    <h2>Market Insights</h2>
+                    <div style="display:flex; align-items:baseline; gap:1rem; margin-bottom:1.5rem; flex-wrap:wrap;">
+                        <h2 style="margin:0;">Market Insights</h2>
+                        <span id="postCount"
+                            style="font-size:0.85rem; color:var(--text-secondary); background:rgba(59,130,246,0.12); padding:0.25rem 0.7rem; border-radius:20px; border:1px solid rgba(59,130,246,0.25);">Loading...</span>
+                    </div>
                     <div id="blogGrid" class="blog-grid"
                         style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));">
                         <!-- All posts listed here -->
                     </div>
                 </section>
+
             </div>
             <!-- Google AdSense - Sidebar -->
             <aside class="ad-slot ad-sidebar">
@@ -85,7 +90,7 @@
             </script>
         </div>
 
-        
+
         <!-- Google AdSense - Footer Banner -->
         <div class="ad-slot" style="margin-top: 2rem;">
             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
@@ -94,15 +99,20 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
         </div>
-<footer>
+        <footer>
             <div class="footer-content">
                 <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
-                
-                
+
+
                 <div class="footer-nav" style="margin-bottom: 1.5rem; font-size: 0.9rem;">
-                    <a href="/privacy.html" style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Privacy Policy</a> | <a href="/about.html" style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">About Us</a> | <a href="/contact.html" style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Contact</a>
+                    <a href="/privacy.html"
+                        style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Privacy Policy</a>
+                    | <a href="/about.html"
+                        style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">About Us</a> | <a
+                        href="/contact.html"
+                        style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Contact</a>
                 </div>
-<div class="legal-disclaimer">
+                <div class="legal-disclaimer">
                     <h4 style="margin-bottom: 0.5rem; font-size: 0.9rem;">⚠️ Legal Disclaimer / 법적 고지</h4>
                     <p style="font-size: 0.85rem; line-height: 1.6;">
                         <strong>본 사이트의 모든 정보는 정보 제공 및 교육 목적이며, 투자 자문 또는 투자 권유가 아닙니다.</strong><br>
@@ -120,26 +130,67 @@
     </div>
     <script>
         async function loadBlog() {
+            const grid = document.getElementById('blogGrid');
+            const countEl = document.getElementById('postCount');
             try {
                 const response = await fetch('posts.json');
                 const posts = await response.json();
-                const grid = document.getElementById('blogGrid');
+
+                // Filter: only posts within last 30 days
+                const now = new Date();
+                const cutoff = new Date(now);
+                cutoff.setDate(cutoff.getDate() - 30);
+
+                const recent = posts.filter(post => {
+                    if (!post.date) return false;
+                    const postDate = new Date(post.date);
+                    return postDate >= cutoff;
+                });
+
+                if (countEl) countEl.textContent = `${recent.length} articles (last 30 days)`;
+
                 grid.innerHTML = '';
-                posts.forEach(post => {
+
+                if (recent.length === 0) {
+                    grid.innerHTML = `
+                        <div style="grid-column:1/-1; padding:3rem; text-align:center; color:var(--text-secondary);">
+                            <p style="font-size:1.1rem; margin-bottom:0.5rem;">No posts in the last 30 days.</p>
+                            <p style="font-size:0.9rem;">New market insights are published daily.</p>
+                        </div>`;
+                    return;
+                }
+
+                recent.forEach(post => {
                     const card = document.createElement('div');
                     card.className = 'blog-card';
+                    card.style.cursor = 'pointer';
                     card.onclick = () => window.location.href = post.link;
+
+                    // Format date nicely
+                    let dateStr = post.date || '';
+                    try {
+                        const d = new Date(post.date);
+                        const diff = Math.floor((now - d) / 86400000);
+                        const badge = diff === 0 ? 'Today' : diff === 1 ? '1 day ago' : `${diff} days ago`;
+                        dateStr = `${post.date} <span style="font-size:0.75rem; color:#10b981; margin-left:6px;">${badge}</span>`;
+                    } catch (e) { }
+
                     card.innerHTML = `
-                        <span class="blog-date">${post.date}</span>
+                        <span class="blog-date">${dateStr}</span>
                         <h3>${post.title}</h3>
-                        <p>${post.summary}</p>
+                        <p>${post.summary || ''}</p>
                     `;
                     grid.appendChild(card);
                 });
-            } catch (e) { console.error(e); }
+
+            } catch (e) {
+                console.error('Failed to load blog posts:', e);
+                grid.innerHTML = `<div style="grid-column:1/-1; padding:2rem; text-align:center; color:#ef4444;">Failed to load posts. Please try again later.</div>`;
+            }
         }
         loadBlog();
     </script>
+
 </body>
 
 </html>

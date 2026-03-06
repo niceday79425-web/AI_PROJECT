@@ -41,6 +41,11 @@
         <div class="content-with-sidebar">
             <div class="main-content">
                 <section class="blog-section" style="margin-top: 0;">
+                    <div style="display:flex; align-items:baseline; gap:1rem; margin-bottom:1.5rem; flex-wrap:wrap;">
+                        <h2 style="margin:0;">Market Insights</h2>
+                        <span id="postCount"
+                            style="font-size:0.85rem; color:var(--text-secondary); background:rgba(59,130,246,0.12); padding:0.25rem 0.7rem; border-radius:20px; border:1px solid rgba(59,130,246,0.25);">Carregando...</span>
+                    </div>
                     <h2>Insights de Mercado</h2>
                     <div id="blogGrid" class="blog-grid"
                         style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));">
@@ -86,23 +91,59 @@
     </div>
     <script>
         async function loadBlog() {
+            const grid = document.getElementById('blogGrid');
+            const countEl = document.getElementById('postCount');
             try {
                 const response = await fetch('posts.json');
                 const posts = await response.json();
-                const grid = document.getElementById('blogGrid');
+
+                const now = new Date();
+                const cutoff = new Date(now);
+                cutoff.setDate(cutoff.getDate() - 30);
+
+                const recent = posts.filter(post => {
+                    if (!post.date) return false;
+                    return new Date(post.date) >= cutoff;
+                });
+
+                if (countEl) countEl.textContent = `${recent.length} artigos (últimos 30 dias)`;
                 grid.innerHTML = '';
-                posts.forEach(post => {
+
+                if (recent.length === 0) {
+                    grid.innerHTML = `
+                        <div style="grid-column:1/-1; padding:3rem; text-align:center; color:var(--text-secondary);">
+                            <p style="font-size:1.1rem; margin-bottom:0.5rem;">Nenhum post nos últimos 30 dias.</p>
+                            <p style="font-size:0.9rem;">Novos insights de mercado são publicados diariamente.</p>
+                        </div>`;
+                    return;
+                }
+
+                recent.forEach(post => {
                     const card = document.createElement('div');
                     card.className = 'blog-card';
+                    card.style.cursor = 'pointer';
                     card.onclick = () => window.location.href = post.link;
+
+                    let dateStr = post.date || '';
+                    try {
+                        const d = new Date(post.date);
+                        const diff = Math.floor((now - d) / 86400000);
+                        const badge = diff === 0 ? 'Hoje' : diff === 1 ? 'há 1 dia' : `há ${diff} dias`;
+                        dateStr = `${post.date} <span style="font-size:0.75rem; color:#10b981; margin-left:6px;">${badge}</span>`;
+                    } catch (e) { }
+
                     card.innerHTML = `
-                        <span class="blog-date">${post.date}</span>
+                        <span class="blog-date">${dateStr}</span>
                         <h3>${post.title}</h3>
-                        <p>${post.summary}</p>
+                        <p>${post.summary || ''}</p>
                     `;
                     grid.appendChild(card);
                 });
-            } catch (e) { console.error(e); }
+
+            } catch (e) {
+                console.error('Falha ao carregar posts:', e);
+                grid.innerHTML = `<div style="grid-column:1/-1; padding:2rem; text-align:center; color:#ef4444;">Falha ao carregar os dados. Tente novamente mais tarde.</div>`;
+            }
         }
         loadBlog();
     </script>
