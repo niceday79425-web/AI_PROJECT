@@ -1,5 +1,17 @@
 [
     {
+        "title": "Alphabet (GOOGL): Navigating the Future of Tech and AI Investment",
+        "date": "2026-03-07",
+        "link": "blog/2026-03-07-GOOGL.html",
+        "summary": "Explore Alphabet's enduring strength as a core tech investment, driven by its search dominance, burgeoning cloud business, and leading AI innovations. We analyze why GOOGL remains a compelling long-term play despite market fluctuations."
+    },
+    {
+        "title": "Decoding Apple's Enduring Appeal: Beyond the iPhone Cycle",
+        "date": "2026-03-07",
+        "link": "blog/2026-03-07-AAPL.html",
+        "summary": "This blog post analyzes Apple (AAPL) beyond its iPhone reliance, highlighting its robust services ecosystem, financial strength, and strategic innovation in new product categories like Vision Pro. It discusses market dominance, shareholder returns through buybacks and dividends, and potential headwinds like regulatory scrutiny. The article concludes that AAPL remains a compelling long-term investment due to its stability, innovation, and strategic growth potential, despite competitive and regulatory challenges."
+    },
+    {
         "title": "Bitcoin's Latest Dip: Opportunity or Warning Sign Amidst Market Volatility?",
         "date": "2026-03-06",
         "link": "blog/2026-03-06-BTC-USD.html",
@@ -346,17 +358,5 @@
         "title": "Alphabet (GOOGL): Decoding the Future of Tech Dominance and AI Innovation",
         "link": "blog/2026-02-14-GOOGL.html",
         "summary": "Alphabet (GOOGL) remains a tech titan with dominant positions in Search, YouTube, and Android. Its aggressive, foundational integration of AI across a"
-    },
-    {
-        "date": "2026-02-14",
-        "title": "Microsoft's Unyielding Momentum: Why MSFT Remains a Core Portfolio Pillar",
-        "link": "blog/2026-02-14-MSFT.html",
-        "summary": "Microsoft (MSFT) stands as a technology titan, driven by the exponential growth of its Azure cloud platform and its aggressive leadership in AI integr"
-    },
-    {
-        "date": "2026-02-13",
-        "title": "Apple (AAPL) Dips 5%: Opportunity or Omen Amidst Market Jitters?",
-        "link": "blog/2026-02-13-AAPL.html",
-        "summary": "AAPL saw a significant 5% dip to $261.73 today, prompting questions for investors. This analysis dives into the drivers behind the sell-off, including"
     }
 ]
