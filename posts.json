@@ -1,5 +1,17 @@
 [
     {
+        "title": "Microsoft's AI & Cloud Dominance: Why MSFT Remains a Core Long-Term Investment",
+        "date": "2026-03-09",
+        "link": "blog/2026-03-09-MSFT.html",
+        "summary": "Microsoft (MSFT) remains a compelling long-term investment, trading around $409.41. Its growth is primarily driven by the robust performance of its cloud computing platform, Azure, and its aggressive, company-wide integration of advanced AI capabilities, including Copilot. Microsoft's diversified ecosystem, encompassing Windows, Office, Gaming (Xbox), and LinkedIn, provides enduring resilience and multiple growth avenues, justifying its premium valuation for investors seeking exposure to future-defining technologies."
+    },
+    {
+        "title": "Apple's AI Odyssey: Will Budget Devices Sustain Valuation and Fuel Services Growth?",
+        "date": "2026-03-09",
+        "link": "blog/2026-03-09-AAPL.html",
+        "summary": "Apple (AAPL) is strategically moving into 'budget AI devices' to expand its user base and fuel its high-margin services ecosystem. This shift, while potentially boosting reach, presents a test for its premium valuation, requiring investors to closely monitor services revenue growth and margin trends against the backdrop of its current price of $259.88."
+    },
+    {
         "title": "Alphabet (GOOGL): Navigating Turbulence, Sustaining Innovation Amidst Geopolitical Jitters",
         "date": "2026-03-08",
         "link": "blog/2026-03-08-GOOGL.html",
@@ -346,17 +358,5 @@
         "title": "Microsoft (MSFT): The AI Powerhouse Redefining the Future of Tech Investing",
         "link": "blog/2026-02-16-MSFT.html",
         "summary": "Explore why Microsoft (MSFT) remains a premier investment, driven by its dominant cloud platform Azure, groundbreaking AI innovations, and robust fina"
-    },
-    {
-        "date": "2026-02-15",
-        "title": "Why Apple (AAPL) Remains a Core Investment in a Shifting Market",
-        "link": "blog/2026-02-15-AAPL.html",
-        "summary": "Apple (AAPL) remains a cornerstone investment for global portfolios, driven by its unparalleled brand loyalty, robust ecosystem, and growing Services"
-    },
-    {
-        "date": "2026-02-15",
-        "title": "Alphabet (GOOGL) in the Spotlight: Decoding Google's Path Amidst Tech's AI Revolution",
-        "link": "blog/2026-02-15-GOOGL.html",
-        "summary": "A deep dive into Alphabet (GOOGL)'s market position, analyzing its core advertising business, burgeoning cloud segment, and critical AI initiatives. W"
     }
 ]

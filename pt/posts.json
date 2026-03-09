@@ -1,5 +1,17 @@
 [
     {
+        "title": "Dominância de IA e Nuvem da Microsoft: Por Que a MSFT Permanece um Investimento Fundamental de Longo Prazo",
+        "date": "2026-03-09",
+        "link": "blog/2026-03-09-MSFT.html",
+        "summary": "A Microsoft (MSFT) continua sendo um investimento de longo prazo atraente, negociando em torno de US$ 409,41. Seu crescimento é impulsionado principalmente pelo desempenho robusto de sua plataforma de computação em nuvem, Azure, e sua integração agressiva e abrangente de recursos avançados de IA, incluindo o Copilot. O ecossistema diversificado da Microsoft, que inclui Windows, Office, Gaming (Xbox) e LinkedIn, oferece resiliência duradoura e múltiplas vias de crescimento, justificando sua avaliação premium para investidores que buscam exposição a tecnologias que definem o futuro."
+    },
+    {
+        "title": "A Odisseia da IA da Apple: Dispositivos de Orçamento Sustentarão a Avaliação e Impulsionarão o Crescimento dos Serviços?",
+        "date": "2026-03-09",
+        "link": "blog/2026-03-09-AAPL.html",
+        "summary": "A Apple (AAPL) está fazendo uma mudança estratégica para 'dispositivos de IA de orçamento' para expandir sua base de usuários e alimentar seu ecossistema de serviços de alta margem. Essa mudança, embora possa aumentar o alcance, representa um teste para sua avaliação premium, exigindo que os investidores monitorem de perto o crescimento da receita de serviços e as tendências de margem, em contraste com seu preço atual de $259.88."
+    },
+    {
         "title": "Alphabet (GOOGL): Navegando na Turbulência, Mantendo a Inovação em Meio a Tensões Geopolíticas",
         "date": "2026-03-08",
         "link": "blog/2026-03-08-GOOGL.html",
@@ -346,17 +358,5 @@
         "title": "Microsoft (MSFT): A Potência da IA Redefinindo o Futuro do Investimento em Tecnologia",
         "link": "blog/2026-02-16-MSFT.html",
         "summary": "Descubra por que a Microsoft (MSFT) continua sendo um investimento de primeira linha, impulsionada por sua plataforma de nuvem dominante Azure, inovaç"
-    },
-    {
-        "date": "2026-02-15",
-        "title": "Por Que a Apple (AAPL) Continua Sendo um Investimento Essencial em um Mercado em Transformação",
-        "link": "blog/2026-02-15-AAPL.html",
-        "summary": "A Apple (AAPL) permanece um investimento fundamental para portfólios globais, impulsionada por sua lealdade de marca inigualável, ecossistema robusto"
-    },
-    {
-        "date": "2026-02-15",
-        "title": "Alphabet (GOOGL) em Destaque: Decifrando o Caminho do Google em Meio à Revolução da IA na Tecnologia",
-        "link": "blog/2026-02-15-GOOGL.html",
-        "summary": "Uma análise aprofundada da posição de mercado da Alphabet (GOOGL), avaliando seu principal negócio de publicidade, o crescente segmento de nuvem e as"
     }
 ]
