@@ -1,450 +1,450 @@
 {
-  "generated_at": "2026-03-09 01:19:55",
+  "generated_at": "2026-03-10 01:14:16",
   "total_stocks": 68,
   "stocks": [
     {
       "ticker": "CAT",
       "name": "Caterpillar Inc.",
       "sector": "Industrials",
-      "current_price": 680.9,
+      "current_price": 704.82,
       "dividend_yield": 89.0,
       "annual_dividend": 5.94,
       "payout_ratio": 31.05,
       "five_year_avg_yield": 1.77,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:35"
+      "last_updated": "2026-03-10 01:13:48"
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corporation",
       "sector": "Technology",
-      "current_price": 408.96,
+      "current_price": 409.41,
       "dividend_yield": 89.0,
       "annual_dividend": 3.48,
       "payout_ratio": 21.28,
       "five_year_avg_yield": 0.79,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:43"
+      "last_updated": "2026-03-10 01:14:04"
     },
     {
       "ticker": "V",
       "name": "Visa Inc.",
       "sector": "Financial Services",
-      "current_price": 317.36,
+      "current_price": 315.97,
       "dividend_yield": 84.0,
       "annual_dividend": 2.52,
       "payout_ratio": 22.91,
       "five_year_avg_yield": 0.69,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:29"
+      "last_updated": "2026-03-10 01:13:31"
     },
     {
       "ticker": "WMT",
       "name": "Walmart Inc.",
       "sector": "Consumer Defensive",
-      "current_price": 123.8,
+      "current_price": 124.34,
       "dividend_yield": 80.0,
       "annual_dividend": 0.94,
       "payout_ratio": 34.43,
       "five_year_avg_yield": 1.3,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:06"
+      "last_updated": "2026-03-10 01:13:43"
     },
     {
       "ticker": "AVGO",
       "name": "Broadcom Inc.",
       "sector": "Technology",
-      "current_price": 330.45,
+      "current_price": 345.75,
       "dividend_yield": 79.0,
       "annual_dividend": 2.48,
       "payout_ratio": 49.48,
       "five_year_avg_yield": 1.99,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:25"
+      "last_updated": "2026-03-10 01:13:32"
     },
     {
       "ticker": "MA",
       "name": "Mastercard Incorporated",
       "sector": "Financial Services",
-      "current_price": 522.34,
+      "current_price": 517.72,
       "dividend_yield": 67.0,
       "annual_dividend": 3.15,
       "payout_ratio": 18.4,
       "five_year_avg_yield": 0.53,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:21"
+      "last_updated": "2026-03-10 01:13:39"
     },
     {
       "ticker": "AAPL",
       "name": "Apple Inc.",
       "sector": "Technology",
-      "current_price": 257.46,
+      "current_price": 259.88,
       "dividend_yield": 40.0,
       "annual_dividend": 1.03,
       "payout_ratio": 13.04,
       "five_year_avg_yield": 0.52,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:38"
+      "last_updated": "2026-03-10 01:13:34"
     },
     {
       "ticker": "ARR",
       "name": "ARMOUR Residential REIT, Inc.",
       "sector": "Real Estate",
-      "current_price": 17.71,
+      "current_price": 17.27,
       "dividend_yield": 16.26,
       "annual_dividend": 2.88,
       "payout_ratio": 87.27,
       "five_year_avg_yield": 18.02,
       "grade": "S등급",
-      "last_updated": "2026-03-09 01:19:09"
+      "last_updated": "2026-03-10 01:14:09"
     },
     {
       "ticker": "DX",
       "name": "Dynex Capital, Inc.",
       "sector": "Real Estate",
-      "current_price": 13.44,
+      "current_price": 13.42,
       "dividend_yield": 15.18,
       "annual_dividend": 2.0,
       "payout_ratio": 80.97,
       "five_year_avg_yield": 11.98,
       "grade": "S등급",
-      "last_updated": "2026-03-09 01:19:03"
+      "last_updated": "2026-03-10 01:14:15"
     },
     {
       "ticker": "AGNC",
       "name": "AGNC Investment Corp.",
       "sector": "Real Estate",
-      "current_price": 10.64,
+      "current_price": 10.54,
       "dividend_yield": 13.53,
       "annual_dividend": 1.44,
       "payout_ratio": 97.96,
       "five_year_avg_yield": 13.42,
       "grade": "S등급",
-      "last_updated": "2026-03-09 01:19:17"
+      "last_updated": "2026-03-10 01:13:44"
     },
     {
       "ticker": "NLY",
       "name": "Annaly Capital Management, Inc.",
       "sector": "Real Estate",
-      "current_price": 22.41,
+      "current_price": 22.19,
       "dividend_yield": 12.49,
       "annual_dividend": 2.8,
       "payout_ratio": 95.89,
       "five_year_avg_yield": 13.54,
       "grade": "S등급",
-      "last_updated": "2026-03-09 01:19:05"
+      "last_updated": "2026-03-10 01:13:52"
     },
     {
       "ticker": "MO",
       "name": "Altria Group, Inc.",
       "sector": "Consumer Defensive",
-      "current_price": 66.51,
+      "current_price": 67.04,
       "dividend_yield": 6.37,
       "annual_dividend": 4.16,
       "payout_ratio": 100.97,
       "five_year_avg_yield": 7.68,
       "grade": "B등급",
-      "last_updated": "2026-03-09 01:19:30"
+      "last_updated": "2026-03-10 01:13:37"
     },
     {
       "ticker": "BTI",
       "name": "British American Tobacco p.l.c.",
       "sector": "Consumer Defensive",
-      "current_price": 57.87,
-      "dividend_yield": 5.77,
+      "current_price": 58.33,
+      "dividend_yield": 5.73,
       "annual_dividend": 2.45,
       "payout_ratio": 68.73,
       "five_year_avg_yield": 7.57,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:19"
+      "last_updated": "2026-03-10 01:14:11"
     },
     {
       "ticker": "VZ",
       "name": "Verizon Communications Inc.",
       "sector": "Communication Services",
-      "current_price": 51.12,
+      "current_price": 50.45,
       "dividend_yield": 5.54,
       "annual_dividend": 2.73,
       "payout_ratio": 50.37,
       "five_year_avg_yield": 6.06,
       "grade": "S등급",
-      "last_updated": "2026-03-09 01:19:21"
+      "last_updated": "2026-03-10 01:14:16"
     },
     {
       "ticker": "O",
       "name": "Realty Income Corporation",
       "sector": "Real Estate",
-      "current_price": 65.0,
+      "current_price": 64.94,
       "dividend_yield": 4.98,
       "annual_dividend": 3.22,
       "payout_ratio": 275.47,
       "five_year_avg_yield": 4.99,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:52"
+      "last_updated": "2026-03-10 01:13:49"
     },
     {
       "ticker": "SPG",
       "name": "Simon Property Group, Inc.",
       "sector": "Real Estate",
-      "current_price": 194.83,
+      "current_price": 192.83,
       "dividend_yield": 4.44,
       "annual_dividend": 8.55,
       "payout_ratio": 60.34,
       "five_year_avg_yield": 5.09,
       "grade": "S등급",
-      "last_updated": "2026-03-09 01:19:13"
+      "last_updated": "2026-03-10 01:13:54"
     },
     {
       "ticker": "EQR",
       "name": "Equity Residential",
       "sector": "Real Estate",
-      "current_price": 62.72,
+      "current_price": 62.18,
       "dividend_yield": 4.42,
       "annual_dividend": 2.77,
       "payout_ratio": 94.35,
       "five_year_avg_yield": 3.75,
       "grade": "S등급",
-      "last_updated": "2026-03-09 01:19:47"
+      "last_updated": "2026-03-10 01:13:43"
     },
     {
       "ticker": "PAYX",
       "name": "Paychex, Inc.",
       "sector": "Technology",
-      "current_price": 100.85,
+      "current_price": 98.3,
       "dividend_yield": 4.28,
       "annual_dividend": 4.22,
       "payout_ratio": 95.48,
       "five_year_avg_yield": 2.73,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:49"
+      "last_updated": "2026-03-10 01:14:03"
     },
     {
       "ticker": "SPYD",
       "name": "State Street SPDR Portfolio S&P 500 High Dividend ETF",
       "sector": "N/A",
-      "current_price": 47.07,
+      "current_price": 46.75,
       "dividend_yield": 4.08,
       "annual_dividend": 0,
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "B등급",
-      "last_updated": "2026-03-09 01:18:59"
+      "last_updated": "2026-03-10 01:13:45"
     },
     {
       "ticker": "AVB",
       "name": "AvalonBay Communities, Inc.",
       "sector": "Real Estate",
-      "current_price": 177.89,
+      "current_price": 176.71,
       "dividend_yield": 4.0,
       "annual_dividend": 7.0,
       "payout_ratio": 94.59,
       "five_year_avg_yield": 3.33,
       "grade": "S등급",
-      "last_updated": "2026-03-09 01:19:14"
+      "last_updated": "2026-03-10 01:14:01"
     },
     {
       "ticker": "PSA",
       "name": "Public Storage",
       "sector": "Real Estate",
-      "current_price": 308.13,
+      "current_price": 306.48,
       "dividend_yield": 3.89,
       "annual_dividend": 12.0,
       "payout_ratio": 133.19,
       "five_year_avg_yield": 3.39,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:12"
+      "last_updated": "2026-03-10 01:13:53"
     },
     {
       "ticker": "T",
       "name": "AT&T Inc.",
       "sector": "Communication Services",
-      "current_price": 28.64,
+      "current_price": 27.53,
       "dividend_yield": 3.88,
       "annual_dividend": 1.11,
       "payout_ratio": 27.38,
       "five_year_avg_yield": 6.43,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:48"
+      "last_updated": "2026-03-10 01:13:59"
     },
     {
       "ticker": "TGT",
       "name": "Target Corporation",
       "sector": "Consumer Defensive",
-      "current_price": 120.79,
+      "current_price": 120.14,
       "dividend_yield": 3.78,
       "annual_dividend": 4.52,
       "payout_ratio": 54.55,
       "five_year_avg_yield": 2.87,
       "grade": "B등급",
-      "last_updated": "2026-03-09 01:19:48"
+      "last_updated": "2026-03-10 01:13:50"
     },
     {
       "ticker": "CVX",
       "name": "Chevron Corporation",
       "sector": "Energy",
-      "current_price": 189.94,
+      "current_price": 189.44,
       "dividend_yield": 3.75,
       "annual_dividend": 6.84,
       "payout_ratio": 103.17,
       "five_year_avg_yield": 4.1,
       "grade": "B등급",
-      "last_updated": "2026-03-09 01:19:23"
+      "last_updated": "2026-03-10 01:13:37"
     },
     {
       "ticker": "GPC",
       "name": "Genuine Parts Company",
       "sector": "Consumer Cyclical",
-      "current_price": 115.52,
+      "current_price": 111.84,
       "dividend_yield": 3.68,
       "annual_dividend": 4.12,
       "payout_ratio": 876.6,
       "five_year_avg_yield": 2.69,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:39"
+      "last_updated": "2026-03-10 01:13:57"
     },
     {
       "ticker": "AMT",
       "name": "American Tower Corporation",
       "sector": "Real Estate",
-      "current_price": 188.59,
+      "current_price": 186.64,
       "dividend_yield": 3.65,
       "annual_dividend": 6.8,
       "payout_ratio": 125.93,
       "five_year_avg_yield": 2.83,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:52"
+      "last_updated": "2026-03-10 01:14:05"
     },
     {
       "ticker": "BF-B",
       "name": "Brown-Forman Corporation",
       "sector": "Consumer Defensive",
-      "current_price": 25.26,
+      "current_price": 24.88,
       "dividend_yield": 3.62,
       "annual_dividend": 0.91,
       "payout_ratio": 52.98,
       "five_year_avg_yield": 1.71,
       "grade": "B등급",
-      "last_updated": "2026-03-09 01:19:34"
+      "last_updated": "2026-03-10 01:13:57"
     },
     {
       "ticker": "PEP",
       "name": "PepsiCo, Inc.",
       "sector": "Consumer Defensive",
-      "current_price": 159.43,
+      "current_price": 161.53,
       "dividend_yield": 3.57,
       "annual_dividend": 5.62,
       "payout_ratio": 93.71,
       "five_year_avg_yield": 2.99,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:42"
+      "last_updated": "2026-03-10 01:14:12"
     },
     {
       "ticker": "SCHD",
       "name": "Schwab U.S. Dividend Equity ETF",
       "sector": "N/A",
-      "current_price": 31.13,
+      "current_price": 31.02,
       "dividend_yield": 3.3,
       "annual_dividend": 0.0,
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:20"
+      "last_updated": "2026-03-10 01:14:01"
     },
     {
       "ticker": "DVY",
       "name": "iShares Select Dividend ETF",
       "sector": "N/A",
-      "current_price": 152.42,
+      "current_price": 152.03,
       "dividend_yield": 3.29,
       "annual_dividend": 3.54,
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:50"
+      "last_updated": "2026-03-10 01:13:53"
     },
     {
       "ticker": "PLD",
       "name": "Prologis, Inc.",
       "sector": "Real Estate",
-      "current_price": 134.54,
+      "current_price": 135.15,
       "dividend_yield": 3.18,
       "annual_dividend": 4.04,
       "payout_ratio": 113.48,
       "five_year_avg_yield": 2.7,
       "grade": "B등급",
-      "last_updated": "2026-03-09 01:19:11"
+      "last_updated": "2026-03-10 01:14:05"
     },
     {
       "ticker": "UNH",
       "name": "UnitedHealth Group Incorporated",
       "sector": "Healthcare",
-      "current_price": 286.48,
+      "current_price": 285.17,
       "dividend_yield": 3.09,
       "annual_dividend": 8.73,
       "payout_ratio": 65.99,
       "five_year_avg_yield": 1.58,
       "grade": "B등급",
-      "last_updated": "2026-03-09 01:19:46"
+      "last_updated": "2026-03-10 01:13:46"
     },
     {
       "ticker": "ADM",
       "name": "Archer-Daniels-Midland Company",
       "sector": "Consumer Defensive",
-      "current_price": 67.44,
+      "current_price": 67.92,
       "dividend_yield": 3.08,
       "annual_dividend": 2.04,
       "payout_ratio": 91.48,
       "five_year_avg_yield": 2.71,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:37"
+      "last_updated": "2026-03-10 01:14:11"
     },
     {
       "ticker": "ACN",
       "name": "Accenture plc",
       "sector": "Technology",
-      "current_price": 215.0,
+      "current_price": 209.36,
       "dividend_yield": 3.03,
       "annual_dividend": 6.22,
       "payout_ratio": 50.17,
       "five_year_avg_yield": 1.53,
       "grade": "B등급",
-      "last_updated": "2026-03-09 01:19:40"
+      "last_updated": "2026-03-10 01:13:35"
     },
     {
       "ticker": "ADP",
       "name": "Automatic Data Processing, Inc.",
       "sector": "Technology",
-      "current_price": 226.25,
+      "current_price": 223.04,
       "dividend_yield": 3.01,
       "annual_dividend": 6.32,
       "payout_ratio": 60.71,
       "five_year_avg_yield": 1.98,
       "grade": "B등급",
-      "last_updated": "2026-03-09 01:19:07"
+      "last_updated": "2026-03-10 01:13:33"
     },
     {
       "ticker": "ABBV",
       "name": "AbbVie Inc.",
       "sector": "Healthcare",
-      "current_price": 230.11,
+      "current_price": 227.45,
       "dividend_yield": 3.01,
       "annual_dividend": 6.65,
       "payout_ratio": 276.79,
       "five_year_avg_yield": 3.67,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:43"
+      "last_updated": "2026-03-10 01:13:59"
     },
     {
       "ticker": "TXN",
       "name": "Texas Instruments Incorporated",
       "sector": "Technology",
-      "current_price": 193.21,
+      "current_price": 196.2,
       "dividend_yield": 2.94,
       "annual_dividend": 5.5,
       "payout_ratio": 100.92,
       "five_year_avg_yield": 2.71,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:16"
+      "last_updated": "2026-03-10 01:13:51"
     },
     {
       "ticker": "HDV",
@@ -456,367 +456,367 @@
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:18"
+      "last_updated": "2026-03-10 01:13:41"
     },
     {
       "ticker": "DLR",
       "name": "Digital Realty Trust, Inc.",
       "sector": "Real Estate",
-      "current_price": 176.19,
+      "current_price": 179.65,
       "dividend_yield": 2.77,
       "annual_dividend": 4.88,
       "payout_ratio": 136.31,
       "five_year_avg_yield": 3.43,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:01"
+      "last_updated": "2026-03-10 01:13:38"
     },
     {
       "ticker": "PG",
       "name": "The Procter & Gamble Company",
       "sector": "Consumer Defensive",
-      "current_price": 153.63,
+      "current_price": 155.22,
       "dividend_yield": 2.75,
       "annual_dividend": 4.18,
       "payout_ratio": 61.88,
       "five_year_avg_yield": 2.45,
       "grade": "B등급",
-      "last_updated": "2026-03-09 01:19:32"
+      "last_updated": "2026-03-10 01:13:55"
     },
     {
       "ticker": "XOM",
       "name": "Exxon Mobil Corporation",
       "sector": "Energy",
-      "current_price": 151.21,
+      "current_price": 150.44,
       "dividend_yield": 2.72,
       "annual_dividend": 4.0,
       "payout_ratio": 59.7,
       "five_year_avg_yield": 3.87,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:36"
+      "last_updated": "2026-03-10 01:14:03"
     },
     {
       "ticker": "KO",
       "name": "The Coca-Cola Company",
       "sector": "Consumer Defensive",
-      "current_price": 77.04,
+      "current_price": 77.8,
       "dividend_yield": 2.67,
       "annual_dividend": 2.04,
       "payout_ratio": 67.11,
       "five_year_avg_yield": 2.91,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:26"
+      "last_updated": "2026-03-10 01:13:45"
     },
     {
       "ticker": "QCOM",
       "name": "QUALCOMM Incorporated",
       "sector": "Technology",
-      "current_price": 135.66,
+      "current_price": 138.11,
       "dividend_yield": 2.62,
       "annual_dividend": 3.52,
       "payout_ratio": 70.97,
       "five_year_avg_yield": 2.11,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:26"
-    },
-    {
-      "ticker": "IBM",
-      "name": "International Business Machines Corporation",
-      "sector": "Technology",
-      "current_price": 258.85,
-      "dividend_yield": 2.6,
-      "annual_dividend": 6.71,
-      "payout_ratio": 60.23,
-      "five_year_avg_yield": 4.01,
-      "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:27"
+      "last_updated": "2026-03-10 01:14:13"
     },
     {
       "ticker": "HD",
       "name": "The Home Depot, Inc.",
       "sector": "Consumer Cyclical",
-      "current_price": 357.92,
+      "current_price": 353.56,
       "dividend_yield": 2.6,
       "annual_dividend": 9.23,
       "payout_ratio": 64.65,
       "five_year_avg_yield": 2.33,
       "grade": "B등급",
-      "last_updated": "2026-03-09 01:19:51"
+      "last_updated": "2026-03-10 01:13:41"
+    },
+    {
+      "ticker": "IBM",
+      "name": "International Business Machines Corporation",
+      "sector": "Technology",
+      "current_price": 253.33,
+      "dividend_yield": 2.6,
+      "annual_dividend": 6.71,
+      "payout_ratio": 60.23,
+      "five_year_avg_yield": 4.01,
+      "grade": "C등급",
+      "last_updated": "2026-03-10 01:14:15"
     },
     {
       "ticker": "SYY",
       "name": "Sysco Corporation",
       "sector": "Consumer Defensive",
-      "current_price": 85.23,
+      "current_price": 84.7,
       "dividend_yield": 2.53,
       "annual_dividend": 2.13,
       "payout_ratio": 57.41,
       "five_year_avg_yield": 2.54,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:24"
+      "last_updated": "2026-03-10 01:13:51"
     },
     {
       "ticker": "VTR",
       "name": "Ventas, Inc.",
       "sector": "Real Estate",
-      "current_price": 84.87,
+      "current_price": 86.21,
       "dividend_yield": 2.45,
       "annual_dividend": 1.92,
       "payout_ratio": 355.56,
       "five_year_avg_yield": 3.36,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:44"
+      "last_updated": "2026-03-10 01:13:35"
     },
     {
       "ticker": "BLK",
       "name": "BlackRock, Inc.",
       "sector": "Financial Services",
-      "current_price": 955.45,
+      "current_price": 957.67,
       "dividend_yield": 2.4,
       "annual_dividend": 20.84,
       "payout_ratio": 59.02,
       "five_year_avg_yield": 2.32,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:34"
+      "last_updated": "2026-03-10 01:13:42"
     },
     {
       "ticker": "SDY",
       "name": "State Street SPDR S&P Dividend ETF",
       "sector": "N/A",
-      "current_price": 151.45,
+      "current_price": 151.24,
       "dividend_yield": 2.33,
       "annual_dividend": 0.0,
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:03"
-    },
-    {
-      "ticker": "ABT",
-      "name": "Abbott Laboratories",
-      "sector": "Healthcare",
-      "current_price": 109.56,
-      "dividend_yield": 2.3,
-      "annual_dividend": 2.4,
-      "payout_ratio": 63.44,
-      "five_year_avg_yield": 1.75,
-      "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:15"
+      "last_updated": "2026-03-10 01:14:10"
     },
     {
       "ticker": "BAC",
       "name": "Bank of America Corporation",
       "sector": "Financial Services",
-      "current_price": 48.64,
+      "current_price": 47.9,
       "dividend_yield": 2.3,
       "annual_dividend": 1.08,
       "payout_ratio": 28.35,
       "five_year_avg_yield": 2.33,
       "grade": "S등급",
-      "last_updated": "2026-03-09 01:19:22"
+      "last_updated": "2026-03-10 01:13:46"
+    },
+    {
+      "ticker": "ABT",
+      "name": "Abbott Laboratories",
+      "sector": "Healthcare",
+      "current_price": 112.65,
+      "dividend_yield": 2.3,
+      "annual_dividend": 2.4,
+      "payout_ratio": 63.44,
+      "five_year_avg_yield": 1.75,
+      "grade": "C등급",
+      "last_updated": "2026-03-10 01:14:14"
     },
     {
       "ticker": "MCD",
       "name": "McDonald's Corporation",
       "sector": "Consumer Cyclical",
-      "current_price": 328.06,
+      "current_price": 330.8,
       "dividend_yield": 2.27,
       "annual_dividend": 7.17,
       "payout_ratio": 60.0,
       "five_year_avg_yield": 2.2,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:00"
+      "last_updated": "2026-03-10 01:14:09"
     },
     {
       "ticker": "VYM",
       "name": "Vanguard High Dividend Yield Index Fund ETF Shares",
       "sector": "N/A",
-      "current_price": 150.74,
+      "current_price": 151.22,
       "dividend_yield": 2.26,
       "annual_dividend": 0,
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:11"
+      "last_updated": "2026-03-10 01:13:36"
     },
     {
       "ticker": "WFC",
       "name": "Wells Fargo & Company",
       "sector": "Financial Services",
-      "current_price": 80.42,
+      "current_price": 78.83,
       "dividend_yield": 2.24,
       "annual_dividend": 1.7,
       "payout_ratio": 27.16,
       "five_year_avg_yield": 2.1,
       "grade": "S등급",
-      "last_updated": "2026-03-09 01:19:17"
+      "last_updated": "2026-03-10 01:13:47"
     },
     {
       "ticker": "CL",
       "name": "Colgate-Palmolive Company",
       "sector": "Consumer Defensive",
-      "current_price": 93.56,
+      "current_price": 93.0,
       "dividend_yield": 2.22,
       "annual_dividend": 2.06,
       "payout_ratio": 78.33,
       "five_year_avg_yield": 2.31,
       "grade": "B등급",
-      "last_updated": "2026-03-09 01:19:31"
+      "last_updated": "2026-03-10 01:13:49"
     },
     {
       "ticker": "GS",
       "name": "The Goldman Sachs Group, Inc.",
       "sector": "Financial Services",
-      "current_price": 821.42,
+      "current_price": 832.03,
       "dividend_yield": 2.19,
       "annual_dividend": 14.0,
       "payout_ratio": 27.28,
       "five_year_avg_yield": 2.18,
       "grade": "S등급",
-      "last_updated": "2026-03-09 01:19:10"
+      "last_updated": "2026-03-10 01:14:08"
     },
     {
       "ticker": "FVD",
       "name": "First Trust Value Line Dividend Index Fund",
       "sector": "N/A",
-      "current_price": 48.93,
+      "current_price": 48.77,
       "dividend_yield": 2.17,
       "annual_dividend": 0.81,
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:29"
+      "last_updated": "2026-03-10 01:13:58"
     },
     {
       "ticker": "JNJ",
       "name": "Johnson & Johnson",
       "sector": "Healthcare",
-      "current_price": 240.4,
+      "current_price": 242.59,
       "dividend_yield": 2.16,
       "annual_dividend": 5.14,
       "payout_ratio": 46.6,
       "five_year_avg_yield": 2.78,
       "grade": "B등급",
-      "last_updated": "2026-03-09 01:19:45"
+      "last_updated": "2026-03-10 01:13:39"
     },
     {
       "ticker": "CSCO",
       "name": "Cisco Systems, Inc.",
       "sector": "Technology",
-      "current_price": 78.64,
+      "current_price": 76.21,
       "dividend_yield": 2.14,
       "annual_dividend": 1.64,
       "payout_ratio": 58.99,
       "five_year_avg_yield": 2.85,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:02"
+      "last_updated": "2026-03-10 01:14:00"
     },
     {
       "ticker": "JPM",
       "name": "JPMorgan Chase & Co.",
       "sector": "Financial Services",
-      "current_price": 289.48,
+      "current_price": 289.92,
       "dividend_yield": 2.07,
       "annual_dividend": 5.8,
       "payout_ratio": 28.97,
       "five_year_avg_yield": 2.4,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:39"
+      "last_updated": "2026-03-10 01:13:33"
     },
     {
       "ticker": "EQIX",
       "name": "Equinix, Inc.",
       "sector": "Real Estate",
-      "current_price": 937.2,
+      "current_price": 944.91,
       "dividend_yield": 2.05,
       "annual_dividend": 18.76,
       "payout_ratio": 136.34,
       "five_year_avg_yield": 1.84,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:41"
+      "last_updated": "2026-03-10 01:14:06"
     },
     {
       "ticker": "MMM",
       "name": "3M Company",
       "sector": "Industrials",
-      "current_price": 153.41,
+      "current_price": 151.63,
       "dividend_yield": 2.03,
       "annual_dividend": 2.92,
       "payout_ratio": 48.67,
       "five_year_avg_yield": 3.92,
       "grade": "B등급",
-      "last_updated": "2026-03-09 01:19:08"
+      "last_updated": "2026-03-10 01:14:07"
     },
     {
       "ticker": "DGRO",
       "name": "iShares Core Dividend Growth ETF",
       "sector": "N/A",
-      "current_price": 71.65,
+      "current_price": 71.85,
       "dividend_yield": 1.96,
       "annual_dividend": 0,
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:07"
+      "last_updated": "2026-03-10 01:13:55"
     },
     {
       "ticker": "NOBL",
       "name": "ProShares S&P 500 Dividend Aristocrats ETF",
       "sector": "N/A",
-      "current_price": 110.31,
+      "current_price": 110.17,
       "dividend_yield": 1.94,
       "annual_dividend": 0,
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:28"
+      "last_updated": "2026-03-10 01:14:13"
     },
     {
       "ticker": "LOW",
       "name": "Lowe's Companies, Inc.",
       "sector": "Consumer Cyclical",
-      "current_price": 251.89,
+      "current_price": 250.22,
       "dividend_yield": 1.91,
       "annual_dividend": 4.75,
       "payout_ratio": 40.08,
       "five_year_avg_yield": 1.75,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:54"
+      "last_updated": "2026-03-10 01:13:56"
     },
     {
       "ticker": "VIG",
       "name": "Vanguard Dividend Appreciation Index Fund ETF Shares",
       "sector": "N/A",
-      "current_price": 221.52,
+      "current_price": 222.76,
       "dividend_yield": 1.56,
       "annual_dividend": 0,
       "payout_ratio": 0,
       "five_year_avg_yield": 0,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:33"
+      "last_updated": "2026-03-10 01:14:07"
     },
     {
       "ticker": "WELL",
       "name": "Welltower Inc.",
       "sector": "Real Estate",
-      "current_price": 204.29,
+      "current_price": 207.68,
       "dividend_yield": 1.45,
       "annual_dividend": 2.89,
       "payout_ratio": 198.59,
       "five_year_avg_yield": 2.57,
       "grade": "C등급",
-      "last_updated": "2026-03-09 01:19:53"
+      "last_updated": "2026-03-10 01:14:02"
     },
     {
       "ticker": "ORCL",
       "name": "Oracle Corporation",
       "sector": "Technology",
-      "current_price": 152.96,
+      "current_price": 151.56,
       "dividend_yield": 1.31,
       "annual_dividend": 2.0,
       "payout_ratio": 35.71,
       "five_year_avg_yield": 1.29,
       "grade": "A등급",
-      "last_updated": "2026-03-09 01:19:04"
+      "last_updated": "2026-03-10 01:13:40"
     }
   ]
 }
