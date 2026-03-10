@@ -1,5 +1,23 @@
 [
     {
+        "title": "Adobe (ADBE): A Creative Powerhouse Poised for AI Growth Amidst Market Swings",
+        "date": "2026-03-10",
+        "link": "blog/2026-03-10-ADBE.html",
+        "summary": "Despite today's 2.59% dip, Adobe (ADBE) remains a compelling investment. Its robust subscription-based Creative and Document Clouds provide stability, while aggressive integration of generative AI (like Firefly) positions it for significant future growth. This current price dip, amidst broader market volatility and rising AI enthusiasm, could offer a strategic entry point for long-term investors."
+    },
+    {
+        "title": "INTC Jumps: Is Intel Finally Hitting its Stride in the AI Race?",
+        "date": "2026-03-10",
+        "link": "blog/2026-03-10-INTC.html",
+        "summary": "Intel (INTC) saw a +2.63% gain to $46.78 today, sparking questions about its AI turnaround. Amidst strong market sentiment for AI, fueled by Oracle's success and generative AI adoption, Intel is aggressively pursuing an 'AI Everywhere' strategy with Gaudi accelerators, AI PCs, and Edge AI. The company's Intel Foundry Services (IFS) is also a crucial long-term growth pillar. Despite market volatility and intense competition, Intel's ability to execute on its ambitious roadmap in AI and foundry will determine its future investment appeal."
+    },
+    {
+        "title": "Accenture (ACN): Navigating Market Headwinds with an AI Tailwind?",
+        "date": "2026-03-10",
+        "link": "blog/2026-03-10-ACN.html",
+        "summary": "Despite a recent dip, Accenture (ACN) stands as a resilient force in professional services, uniquely positioned to capitalize on the burgeoning AI revolution. This post delves into ACN's strategic advantage amidst broader market volatility and its role in driving enterprise digital transformation, making it a potentially compelling long-term investment."
+    },
+    {
         "title": "Microsoft's AI & Cloud Dominance: Why MSFT Remains a Core Long-Term Investment",
         "date": "2026-03-09",
         "link": "blog/2026-03-09-MSFT.html",
@@ -340,23 +358,5 @@
         "title": "Alphabet (GOOGL): Navigating the AI Frontier Amidst Shifting Market Tides",
         "link": "blog/2026-02-17-GOOGL.html",
         "summary": "A deep dive into Alphabet (GOOGL), exploring its formidable position in the AI landscape, its core revenue drivers, and the recent institutional senti"
-    },
-    {
-        "date": "2026-02-16",
-        "title": "AAPL: Navigating Apple's Ecosystem – A Core Investment for the Future?",
-        "link": "blog/2026-02-16-AAPL.html",
-        "summary": "Apple Inc. (AAPL) remains a dominant force in technology, driven by its strong ecosystem and growing services segment. While facing regulatory challen"
-    },
-    {
-        "date": "2026-02-16",
-        "title": "Decoding Alphabet (GOOGL): Why This Tech Titan Remains a Core Portfolio Play",
-        "link": "blog/2026-02-16-GOOGL.html",
-        "summary": "A deep dive into Alphabet's (GOOGL) enduring strengths, AI leadership, and future growth drivers, analyzing why it remains a compelling long-term inve"
-    },
-    {
-        "date": "2026-02-16",
-        "title": "Microsoft (MSFT): The AI Powerhouse Redefining the Future of Tech Investing",
-        "link": "blog/2026-02-16-MSFT.html",
-        "summary": "Explore why Microsoft (MSFT) remains a premier investment, driven by its dominant cloud platform Azure, groundbreaking AI innovations, and robust fina"
     }
 ]
