@@ -1,5 +1,23 @@
 [
     {
+        "title": "Intel (INTC): A Gigante dos Semicondutores Está Preparada para um Ressurgimento na Era da IA?",
+        "date": "2026-03-11",
+        "link": "blog/2026-03-11-INTC.html",
+        "summary": ""
+    },
+    {
+        "title": "Chevron (CVX) Brilha à Medida que o Petróleo Ultrapassa US$ 90: Um Farol para Investidores em Mercados Voláteis",
+        "date": "2026-03-11",
+        "link": "blog/2026-03-11-CVX.html",
+        "summary": "Apesar da instabilidade geral do mercado e da queda dos futuros do Dow Jones, a Chevron (CVX) subiu quase 3% hoje, impulsionada pelos preços do petróleo bruto que ultrapassaram os US$ 90, destacando seu potencial como um ativo defensivo gerador de renda e proteção contra a inflação em um mercado focado em tecnologia e IA."
+    },
+    {
+        "title": "A Ascensão da Nuvem de IA da Oracle: Por que a ORCL Acabou de Saltar 9% e o que Vem por Aí para os Investidores",
+        "date": "2026-03-11",
+        "link": "blog/2026-03-11-ORCL.html",
+        "summary": "A Oracle (ORCL) subiu mais de 9% hoje, impulsionada por sua forte posição em inteligência artificial (IA) e computação em nuvem. Sua Infraestrutura de Nuvem Gen2 (OCI) está se tornando uma plataforma preferencial para cargas de trabalho de IA exigentes, apoiada por parcerias estratégicas como a Nvidia. Analistas veem a ORCL como uma excelente ação de crescimento de longo prazo, beneficiando-se do investimento empresarial sustentado na expansão de IA e nuvem. Essa alta destaca a transformação bem-sucedida da Oracle e seu potencial de crescimento contínuo como um provedor fundamental de infraestrutura de IA."
+    },
+    {
         "title": "Adobe (ADBE): Uma Potência Criativa Pronta para o Crescimento da IA em Meio às Flutuações do Mercado",
         "date": "2026-03-10",
         "link": "blog/2026-03-10-ADBE.html",
@@ -340,23 +358,5 @@
         "title": "Ações da VIST: Impulsionando Seu Portfólio? Uma Análise Detalhada da Vistra Corp.",
         "link": "blog/2026-02-18-VIST.html",
         "summary": "A Vistra Corp. (VIST) subiu 2,78%, para US$ 55,45, demonstrando força no setor de energia dos EUA. Como geradora de energia integrada e provedora de e"
-    },
-    {
-        "date": "2026-02-18",
-        "title": "ExxonMobil (XOM) Impulsiona: Decifrando o Último Salto da Gigante de Energia e Perspectivas Futuras",
-        "link": "blog/2026-02-18-XOM.html",
-        "summary": "A ExxonMobil (XOM) subiu mais de 3%, fechando a $150,68 hoje, desafiando as flutuações do mercado mais amplo. Este post analisa os fatores por trás do"
-    },
-    {
-        "date": "2026-02-17",
-        "title": "AAPL Dispara para US$ 263,88: Decifrando a Trajetória da Apple em Meio a Mudanças de Mercado",
-        "link": "blog/2026-02-17-AAPL.html",
-        "summary": "Uma análise abrangente da ação da Apple (AAPL), atualmente cotada a US$ 263,88. Esta publicação examina os pontos fortes duradouros da Apple, incluind"
-    },
-    {
-        "date": "2026-02-17",
-        "title": "Alphabet (GOOGL): Navegando na Fronteira da IA em Meio a Mudanças nas Marés do Mercado",
-        "link": "blog/2026-02-17-GOOGL.html",
-        "summary": "Uma análise aprofundada da Alphabet (GOOGL), explorando sua posição formidável no cenário da IA, seus principais impulsionadores de receita e as recen"
     }
 ]

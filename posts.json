@@ -1,5 +1,23 @@
 [
     {
+        "title": "Intel (INTC): Is the Semiconductor Giant Poised for a Resurgence in the AI Era?",
+        "date": "2026-03-11",
+        "link": "blog/2026-03-11-INTC.html",
+        "summary": "Intel (INTC) is showing signs of a potential resurgence, with shares up +2.57% to $47.98. The semiconductor giant is aggressively pursuing AI integration across its product lines and venturing into the foundry business (Intel Foundry Services) as part of CEO Pat Gelsinger's IDM 2.0 strategy. While facing intense competition and execution risks, Intel's strategic investments in AI accelerators and manufacturing capacity aim to reclaim leadership and diversify revenue streams, presenting a complex but potentially rewarding turnaround story for investors."
+    },
+    {
+        "title": "Chevron (CVX) Shines as Oil Surges Past $90: An Investor's Beacon in Volatile Markets",
+        "date": "2026-03-11",
+        "link": "blog/2026-03-11-CVX.html",
+        "summary": "Despite broader market jitters and falling Dow futures, Chevron (CVX) surged nearly 3% today, propelled by crude oil prices breaking above $90, highlighting its potential as a defensive income play and inflation hedge in a market increasingly focused on tech and AI."
+    },
+    {
+        "title": "Oracle's AI Cloud Surge: Why ORCL Just Jumped 9% and What's Next for Investors",
+        "date": "2026-03-11",
+        "link": "blog/2026-03-11-ORCL.html",
+        "summary": "Oracle (ORCL) surged over 9% today, driven by its strong position in artificial intelligence (AI) and cloud computing. Its Gen2 Cloud Infrastructure (OCI) is becoming a preferred platform for demanding AI workloads, supported by strategic partnerships like Nvidia. Analysts view ORCL as a brilliant long-term growth stock, benefiting from sustained enterprise investment in AI and cloud expansion. This rally highlights Oracle's successful transformation and its potential for continued growth as a foundational AI infrastructure provider."
+    },
+    {
         "title": "Adobe (ADBE): A Creative Powerhouse Poised for AI Growth Amidst Market Swings",
         "date": "2026-03-10",
         "link": "blog/2026-03-10-ADBE.html",
@@ -340,23 +358,5 @@
         "title": "VIST Stock: Powering Up Your Portfolio? An In-Depth Look at Vistra Corp.",
         "link": "blog/2026-02-18-VIST.html",
         "summary": "Vistra Corp. (VIST) gained 2.78% to $55.45, showcasing strength in the US energy sector. As an integrated power generator and retail electricity provi"
-    },
-    {
-        "date": "2026-02-18",
-        "title": "ExxonMobil (XOM) Powers Up: Decoding the Energy Giant's Latest Surge and Future Prospects",
-        "link": "blog/2026-02-18-XOM.html",
-        "summary": "ExxonMobil (XOM) surged over 3% to $150.68 today, defying broader market fluctuations. This post analyzes the drivers behind XOM's robust performance,"
-    },
-    {
-        "date": "2026-02-17",
-        "title": "AAPL Soars to $263.88: Decoding Apple's Trajectory Amidst Market Shifts",
-        "link": "blog/2026-02-17-AAPL.html",
-        "summary": "A comprehensive analysis of Apple (AAPL) stock, currently priced at $263.88. This post examines Apple's enduring strengths, including its powerful eco"
-    },
-    {
-        "date": "2026-02-17",
-        "title": "Alphabet (GOOGL): Navigating the AI Frontier Amidst Shifting Market Tides",
-        "link": "blog/2026-02-17-GOOGL.html",
-        "summary": "A deep dive into Alphabet (GOOGL), exploring its formidable position in the AI landscape, its core revenue drivers, and the recent institutional senti"
     }
 ]
