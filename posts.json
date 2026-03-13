@@ -1,5 +1,17 @@
 [
     {
+        "title": "Broadcom (AVGO) Takes a Dip: Decoding the Opportunity in a Shifting Tech Landscape",
+        "date": "2026-03-13",
+        "link": "blog/2026-03-13-AVGO.html",
+        "summary": "Broadcom (AVGO) shares dipped by 4.11% today, prompting an analysis of whether this presents a buying opportunity. Despite no direct negative news, the fall contrasts with positive shifts in other enterprise tech stocks. The article highlights AVGO's strong dual-engine growth in semiconductors (AI, data centers) and enterprise software (VMware), its financial strength, and strategic acquisitions. While risks like macroeconomic headwinds exist, AVGO's core role in digital infrastructure makes it a compelling long-term investment, particularly after a price correction."
+    },
+    {
+        "title": "Adobe (ADBE) Stock Plunges: Is This a Buy-the-Dip Opportunity or a Sign of Trouble?",
+        "date": "2026-03-13",
+        "link": "blog/2026-03-13-ADBE.html",
+        "summary": "Adobe (ADBE) experienced a significant price drop, prompting investors to question its future. This analysis dives into Adobe's dominant market position, its strong subscription model, AI integration, and key factors for investors considering whether this dip presents a buying opportunity or a warning sign amidst current market dynamics."
+    },
+    {
         "title": "Danaher (DHR): Decoding Today's Dip and Its Long-Term Investment Promise",
         "date": "2026-03-12",
         "link": "blog/2026-03-12-DHR.html",
@@ -346,17 +358,5 @@
         "title": "Amazon (AMZN) Soars: Why AWS is Your AI Superhighway Bet",
         "link": "blog/2026-02-20-AMZN.html",
         "summary": "Amazon's stock is up, fueled by its robust e-commerce and rapidly expanding cloud division, AWS. With massive projected AI compute spending, AWS is po"
-    },
-    {
-        "date": "2026-02-20",
-        "title": "Alphabet (GOOGL) Takes Flight: Decoding AI's Multi-Billion Dollar Race & What Investors Need to Know",
-        "link": "blog/2026-02-20-GOOGL.html",
-        "summary": "Alphabet (GOOGL) is surging, fueled by strong market sentiment and its pivotal role in the burgeoning AI landscape. As competitors like OpenAI announc"
-    },
-    {
-        "date": "2026-02-19",
-        "title": "Accenture (ACN): Decoding Today's Dip – A Strategic Buying Opportunity?",
-        "link": "blog/2026-02-19-ACN.html",
-        "summary": "Accenture (ACN) experienced a 3.87% dip, prompting an analysis of whether this represents a strategic buying opportunity. The post highlights ACN's st"
     }
 ]
