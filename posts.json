@@ -1,5 +1,23 @@
 [
     {
+        "title": "GOOGL: Is This Magnificent Seven AI Powerhouse Still a Smart Bet?",
+        "date": "2026-03-15",
+        "link": "blog/2026-03-15-GOOGL.html",
+        "summary": "Alphabet (GOOGL) remains a pivotal player within the 'Magnificent Seven,' leveraging its deep AI expertise across Search, Cloud, and YouTube. Despite market volatility and competitive pressures, its foundational technology and diversified revenue streams suggest significant long-term growth potential for investors eyeing the AI revolution."
+    },
+    {
+        "title": "Decoding Microsoft (MSFT): Why This AI Juggernaut Remains a Core Investment",
+        "date": "2026-03-15",
+        "link": "blog/2026-03-15-MSFT.html",
+        "summary": "Microsoft (MSFT) stands as a formidable leader in the AI revolution, leveraging its robust Azure cloud platform and transformative Copilot offerings. As a pivotal 'Magnificent Seven' member, its diversified ecosystem and strategic innovation position it for sustained long-term growth, making it a compelling consideration for investors seeking exposure to the future of technology, even amidst broader market movements and shifts in billionaire portfolios."
+    },
+    {
+        "title": "Beyond the Hype: Decoding Apple's (AAPL) Enduring Appeal in a Shifting Market",
+        "date": "2026-03-15",
+        "link": "blog/2026-03-15-AAPL.html",
+        "summary": "Apple (AAPL) remains a core investment despite market shifts, driven by its integrated AI strategy, robust services segment, and an unparalleled product ecosystem. While it commands a premium valuation, its financial stability, strong brand loyalty, and consistent innovation position it as a long-term cornerstone in diversified portfolios, offering a blend of reliability and strategic growth."
+    },
+    {
         "title": "Alphabet (GOOGL): Your AI Anchor in a Volatile Market?",
         "date": "2026-03-14",
         "link": "blog/2026-03-14-GOOGL.html",
@@ -340,23 +358,5 @@
         "title": "AAPL Navigates Tariff Storm: Is Apple Stock a Resilient Buy Amidst Global Trade Tensions?",
         "link": "blog/2026-02-22-AAPL.html",
         "summary": "Apple (AAPL) faces significant headwinds from new global tariffs, threatening its supply chain and profit margins. However, its strong brand loyalty,"
-    },
-    {
-        "date": "2026-02-22",
-        "title": "Alphabet (GOOGL): Navigating Market Turbulence and Sustaining Tech Dominance",
-        "link": "blog/2026-02-22-GOOGL.html",
-        "summary": "Amidst global tariff hikes and geopolitical uncertainties, Alphabet (GOOGL) stands as a resilient tech titan. This analysis explores GOOGL's diversifi"
-    },
-    {
-        "date": "2026-02-22",
-        "title": "Microsoft (MSFT): A Fortress in the Cloud Amidst Market Headwinds",
-        "link": "blog/2026-02-22-MSFT.html",
-        "summary": "Explore Microsoft's (MSFT) resilience and growth drivers, from its dominant cloud presence (Azure) to AI innovation, as we analyze its investment pote"
-    },
-    {
-        "date": "2026-02-21",
-        "title": "AAPL: Decoding Apple's Future – Is the Tech Giant Still a Must-Have for Global Investors?",
-        "link": "blog/2026-02-21-AAPL.html",
-        "summary": "An in-depth look at Apple (AAPL), exploring its enduring ecosystem strength, key growth drivers like AI and new products, and the challenges it faces."
     }
 ]
