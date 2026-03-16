@@ -1,5 +1,17 @@
 [
     {
+        "title": "Decoding Alphabet (GOOGL): Navigating the AI Frontier and Beyond",
+        "date": "2026-03-16",
+        "link": "blog/2026-03-16-GOOGL.html",
+        "summary": "Alphabet (GOOGL), currently trading around $305.56, remains a tech titan driven by its dominant advertising business, rapidly growing Google Cloud, and ambitious AI innovations like Gemini. This post explores GOOGL's investment appeal amidst increasing competition and regulatory scrutiny, highlighting its foundational strengths and strategic plays in the AI race that could redefine its future growth trajectory."
+    },
+    {
+        "title": "Microsoft (MSFT): The AI Juggernaut's Path to Future Growth",
+        "date": "2026-03-16",
+        "link": "blog/2026-03-16-MSFT.html",
+        "summary": "Microsoft (MSFT), trading at $399.95, is a leading tech giant poised for significant future growth, primarily driven by its unparalleled commitment to AI through Azure and Copilot. Its strong cloud computing platform, dominant enterprise software ecosystem, and strategic expansion into gaming via Activision Blizzard solidify its position. While facing competition and regulatory scrutiny, MSFT's robust fundamentals and innovation make it a compelling long-term investment in the evolving tech landscape."
+    },
+    {
         "title": "GOOGL: Is This Magnificent Seven AI Powerhouse Still a Smart Bet?",
         "date": "2026-03-15",
         "link": "blog/2026-03-15-GOOGL.html",
@@ -346,17 +358,5 @@
         "title": "Alphabet (GOOGL): Unpacking the Tech Titan's Investment Future",
         "link": "blog/2026-02-23-GOOGL.html",
         "summary": "Explore Alphabet (GOOGL)'s strategic dominance across search, cloud, and AI. This analysis delves into its core strengths, growth drivers, and potenti"
-    },
-    {
-        "date": "2026-02-23",
-        "title": "Microsoft (MSFT): Why This Tech Titan Remains a Cornerstone for Your Portfolio",
-        "link": "blog/2026-02-23-MSFT.html",
-        "summary": "Microsoft (MSFT) at $384.47 is a strong long-term investment due to its leading position in Azure cloud, pioneering AI integration (Copilot, OpenAI),"
-    },
-    {
-        "date": "2026-02-22",
-        "title": "AAPL Navigates Tariff Storm: Is Apple Stock a Resilient Buy Amidst Global Trade Tensions?",
-        "link": "blog/2026-02-22-AAPL.html",
-        "summary": "Apple (AAPL) faces significant headwinds from new global tariffs, threatening its supply chain and profit margins. However, its strong brand loyalty,"
     }
 ]
