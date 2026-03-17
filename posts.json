@@ -1,5 +1,23 @@
 [
     {
+        "title": "Decoding Intel's Latest Dip: A Deep Dive into INTC's Tumultuous Turnaround",
+        "date": "2026-03-17",
+        "link": "blog/2026-03-17-INTC.html",
+        "summary": "Intel (INTC) dipped 3.72% today, reflecting market volatility and ongoing investor skepticism. Despite the short-term decline, CEO Pat Gelsinger's aggressive 'IDM 2.0' strategy aims to reclaim manufacturing leadership, boost foundry services, and innovate across products. While facing intense competition and high CapEx, Intel also benefits from government support and AI growth opportunities. Investors should monitor process technology milestones, foundry wins, and data center revenue for signs of success in this high-risk, high-reward turnaround story."
+    },
+    {
+        "title": "VIST Stock Explodes Over 5%: What's Driving the Surge and Is It a Buy?",
+        "date": "2026-03-17",
+        "link": "blog/2026-03-17-VIST.html",
+        "summary": "VIST shares surged over 5% to $69.11, capturing investor attention. This post dissects potential catalysts behind the significant move, offers key insights for investors, and explores whether this momentum is sustainable or signals a deeper opportunity."
+    },
+    {
+        "title": "Eli Lilly (LLY) Plunges 6%: Decoding the Dip for Investors",
+        "date": "2026-03-17",
+        "link": "blog/2026-03-17-LLY.html",
+        "summary": "Eli Lilly's stock dropped nearly 6% today. This analysis dives into potential reasons, the impact of the FTC monitoring patent cliffs on the broader pharma sector, and whether this dip presents a buying opportunity for the pharma giant, which is largely driven by its blockbuster GLP-1 drugs and robust pipeline."
+    },
+    {
         "title": "Decoding Alphabet (GOOGL): Navigating the AI Frontier and Beyond",
         "date": "2026-03-16",
         "link": "blog/2026-03-16-GOOGL.html",
@@ -340,23 +358,5 @@
         "title": "Netflix (NFLX) Defies Market Wobble: Is the Streaming Giant Primed for a Comeback?",
         "link": "blog/2026-02-25-NFLX.html",
         "summary": "Despite broader market volatility post-NVIDIA earnings, Netflix (NFLX) surged 5.97% to $82.70. This blog post explores the factors driving NFLX's resi"
-    },
-    {
-        "date": "2026-02-25",
-        "title": "PayPal (PYPL) Surges: Decoding the 6.74% Jump and What It Means for Investors",
-        "link": "blog/2026-02-25-PYPL.html",
-        "summary": "PayPal (PYPL) jumped +6.74% today to $47.02, catching investor attention amidst a broader market bounce. This significant surge prompts analysis into"
-    },
-    {
-        "date": "2026-02-23",
-        "title": "AAPL at $266: Why Apple Remains a Cornerstone Investment in a Dynamic Market",
-        "link": "blog/2026-02-23-AAPL.html",
-        "summary": "A deep dive into Apple (AAPL)'s enduring strengths, from its robust ecosystem and services growth to its innovation pipeline and financial prowess. De"
-    },
-    {
-        "date": "2026-02-23",
-        "title": "Alphabet (GOOGL): Unpacking the Tech Titan's Investment Future",
-        "link": "blog/2026-02-23-GOOGL.html",
-        "summary": "Explore Alphabet (GOOGL)'s strategic dominance across search, cloud, and AI. This analysis delves into its core strengths, growth drivers, and potenti"
     }
 ]
