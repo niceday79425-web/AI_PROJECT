@@ -1,5 +1,23 @@
 [
     {
+        "title": "Comcast (CMCSA) em Queda Livre: Desvendando a Queda de 5% e o Que Isso Significa para Investidores",
+        "date": "2026-03-18",
+        "link": "blog/2026-03-18-CMCSA.html",
+        "summary": "A Comcast (CMCSA) sofreu uma queda significativa de mais de 5% hoje, com o preço de suas ações chegando a US$ 28,57. Esta postagem disseca a reação imediata do mercado, explorando a interação dos ventos contrários do mercado mais amplo, as pressões competitivas nos setores de mídia e banda larga, e as perspectivas para seu portfólio diversificado, incluindo NBCUniversal e Universal Theme Parks. Analisamos se esta queda apresenta uma oportunidade de compra ou sinaliza desafios mais profundos para a gigante de telecomunicações e entretenimento."
+    },
+    {
+        "title": "AbbVie (ABBV) é uma Compra Após a Queda de Hoje? Desvendando o Futuro da Gigante Farmacêutica",
+        "date": "2026-03-18",
+        "link": "blog/2026-03-18-ABBV.html",
+        "summary": "A AbbVie (ABBV) experimentou uma queda notável de -5,20% hoje. Esta análise aprofunda a resiliência da gigante biofarmacêutica além do Humira, seu pipeline robusto, incluindo Skyrizi e Rinvoq, e seu status atraente como uma ação de crescimento de dividendos. Exploramos se a avaliação atual apresenta um ponto de entrada estratégico para investidores de longo prazo em meio à evolução da dinâmica do mercado."
+    },
+    {
+        "title": "Ethereum Sob Pressão: Decodificando a Última Queda do ETH-USD em Meio a Mudanças Amplas do Mercado",
+        "date": "2026-03-18",
+        "link": "blog/2026-03-18-ETH-USD.html",
+        "summary": "O Ethereum (ETH-USD) registrou uma queda notável, caindo para US$ 2190,91 hoje. Este post oferece uma análise profissional da ação imediata do preço, a relaciona a tendências mais amplas do mercado, incluindo a queda dos futuros do Dow e preocupações no setor de tecnologia, e fornece insights acionáveis para investidores que navegam na volatilidade das criptomoedas. Exploramos os fundamentos do Ethereum, os principais impulsionadores do mercado e o caminho a seguir."
+    },
+    {
         "title": "Decifrando a Última Queda da Intel: Um Mergulho Profundo na Tumultuosa Reviravolta da INTC",
         "date": "2026-03-17",
         "link": "blog/2026-03-17-INTC.html",
@@ -340,23 +358,5 @@
         "title": "Bitcoin Dispara Acima de US$ 67 mil: Decifrando a Alta da Cripto em Meio a Mudanças no Mercado",
         "link": "blog/2026-02-25-BTC-USD.html",
         "summary": "O Bitcoin (BTC-USD) dispara acima de US$ 67.900, demonstrando força robusta apesar da instabilidade mais ampla do mercado pós-lucros da NVIDIA. Esta p"
-    },
-    {
-        "date": "2026-02-25",
-        "title": "A Ascensão do Ethereum: ETH-USD Ultrapassa US$ 2.000 Em Meio a Correntes Cruzadas do Mercado",
-        "link": "blog/2026-02-25-ETH-USD.html",
-        "summary": "O Ethereum (ETH-USD) disparou acima de US$ 2.000, negociado a US$ 2.053,24 (+10,81%), em meio a sinais mistos dos mercados tradicionais. Este rali é i"
-    },
-    {
-        "date": "2026-02-25",
-        "title": "GEV Dispara: Desvendando a Alta de US$ 879,73 e as Implicações para Investidores",
-        "link": "blog/2026-02-25-GEV.html",
-        "summary": "As ações da GEV dispararam +5,77%, atingindo US$ 879,73 hoje, desafiando o sentimento misto do mercado mais amplo. Esse forte rali sugere catalisadore"
-    },
-    {
-        "date": "2026-02-25",
-        "title": "Netflix (NFLX) Desafia a Instabilidade do Mercado: A Gigante do Streaming Está Preparada para um Retorno?",
-        "link": "blog/2026-02-25-NFLX.html",
-        "summary": "Apesar da volatilidade mais ampla do mercado após os lucros da NVIDIA, a Netflix (NFLX) subiu 5,97%, atingindo US$ 82,70. Esta postagem de blog explor"
     }
 ]

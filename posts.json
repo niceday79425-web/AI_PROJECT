@@ -1,5 +1,23 @@
 [
     {
+        "title": "Comcast (CMCSA) Takes a Dive: Unpacking the 5% Drop and What It Means for Investors",
+        "date": "2026-03-18",
+        "link": "blog/2026-03-18-CMCSA.html",
+        "summary": "Comcast (CMCSA) saw a significant 5% drop today, pushing its stock to $28.57. This post dissects the immediate market reaction, exploring the interplay of broader market headwinds, the competitive pressures in media and broadband, and the outlook for its diversified portfolio including NBCUniversal and Universal Theme Parks. We analyze whether this dip presents a buying opportunity or signals deeper challenges for the telecommunications and entertainment giant."
+    },
+    {
+        "title": "Is AbbVie (ABBV) a Buy After Today's Dip? Unpacking the Pharma Giant's Future",
+        "date": "2026-03-18",
+        "link": "blog/2026-03-18-ABBV.html",
+        "summary": "AbbVie (ABBV) experienced a notable -5.20% dip today. This analysis delves into the biopharmaceutical giant's resilience beyond Humira, its robust pipeline including Skyrizi and Rinvoq, and its compelling status as a dividend growth stock. We explore if the current valuation presents a strategic entry point for long-term investors amidst evolving market dynamics."
+    },
+    {
+        "title": "Ethereum Under Pressure: Decoding ETH-USD's Latest Dip Amidst Broader Market Shifts",
+        "date": "2026-03-18",
+        "link": "blog/2026-03-18-ETH-USD.html",
+        "summary": "Ethereum (ETH-USD) has seen a notable dip, falling to $2190.91 today. This post offers a professional analysis of the immediate price action, links it to broader market trends including falling Dow futures and tech sector concerns, and provides actionable insights for investors navigating crypto volatility. We explore Ethereum's fundamentals, key market drivers, and the path forward."
+    },
+    {
         "title": "Decoding Intel's Latest Dip: A Deep Dive into INTC's Tumultuous Turnaround",
         "date": "2026-03-17",
         "link": "blog/2026-03-17-INTC.html",
@@ -340,23 +358,5 @@
         "title": "Bitcoin Blazes Past $67k: Decoding Crypto's Surge Amidst Shifting Market Tides",
         "link": "blog/2026-02-25-BTC-USD.html",
         "summary": "Bitcoin (BTC-USD) surges past $67,900, demonstrating robust strength despite broader market wobbles post-NVIDIA earnings. This post analyzes the drive"
-    },
-    {
-        "date": "2026-02-25",
-        "title": "Ethereum's Ascent: ETH-USD Breaches $2,000 Amidst Market Crosscurrents",
-        "link": "blog/2026-02-25-ETH-USD.html",
-        "summary": "Ethereum (ETH-USD) has surged past $2,000, trading at $2,053.24 (+10.81%), amidst mixed signals from traditional markets. This rally is driven by stro"
-    },
-    {
-        "date": "2026-02-25",
-        "title": "GEV Rockets Higher: Unpacking the $879.73 Surge and Investor Implications",
-        "link": "blog/2026-02-25-GEV.html",
-        "summary": "GEV shares soared +5.77% to $879.73 today, defying mixed broader market sentiment. This strong rally suggests robust company-specific catalysts or pow"
-    },
-    {
-        "date": "2026-02-25",
-        "title": "Netflix (NFLX) Defies Market Wobble: Is the Streaming Giant Primed for a Comeback?",
-        "link": "blog/2026-02-25-NFLX.html",
-        "summary": "Despite broader market volatility post-NVIDIA earnings, Netflix (NFLX) surged 5.97% to $82.70. This blog post explores the factors driving NFLX's resi"
     }
 ]
