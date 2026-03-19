@@ -1,5 +1,23 @@
 [
     {
+        "title": "Tesla (TSLA) Navega na Volatilidade: A Última Queda é uma Oportunidade de Compra ou um Sinal de Alerta?",
+        "date": "2026-03-19",
+        "link": "blog/2026-03-19-TSLA.html",
+        "summary": "A Tesla (TSLA) registou uma queda hoje, refletindo a dinâmica mais ampla do mercado e as reavaliações dos investidores. Este artigo analisa a posição atual da TSLA, equilibrando a sua visão inovadora em EVs, IA e energia com desafios prementes como a intensa concorrência e riscos geopolíticos, oferecendo insights para investidores."
+    },
+    {
+        "title": "ACN Dispara: A Fortaleza Digital da Accenture em um Mundo Impulsionado pela IA",
+        "date": "2026-03-19",
+        "link": "blog/2026-03-19-ACN.html",
+        "summary": "A Accenture (ACN) está surfando uma forte onda de transformação digital e integração de IA, como evidenciado por sua recente valorização. Este artigo analisa a posição estratégica da ACN como líder global em serviços profissionais, sua capacidade de capitalizar tendências tecnológicas emergentes como a IA corporativa e sua resiliência em um mercado dinâmico, tornando-a uma consideração atraente para investidores de longo prazo."
+    },
+    {
+        "title": "Vistra Corp. (VIST) Ganha Força: Decifrando a Subida de Hoje e as Perspetivas Futuras",
+        "date": "2026-03-19",
+        "link": "blog/2026-03-19-VIST.html",
+        "summary": "A Vistra Corp. (VIST) registou um ganho significativo de 5,08%, sinalizando um renovado interesse dos investidores no seu modelo integrado de geração de energia e eletricidade retalhista. Esta publicação explora a posição de mercado da VIST, as vantagens estratégicas no panorama energético em evolução e os fatores chave para os investidores considerarem no meio do seu atual ímpeto."
+    },
+    {
         "title": "Comcast (CMCSA) em Queda Livre: Desvendando a Queda de 5% e o Que Isso Significa para Investidores",
         "date": "2026-03-18",
         "link": "blog/2026-03-18-CMCSA.html",
@@ -340,23 +358,5 @@
         "title": "Salesforce (CRM) Sobe: Um Farol de Força em Meio às Dificuldades do Mercado de Tecnologia?",
         "link": "blog/2026-02-26-CRM.html",
         "summary": "A Salesforce (CRM) desafiou uma queda mais ampla do mercado de tecnologia hoje, subindo mais de 4%. Este post aprofunda a resiliência da CRM, sua pode"
-    },
-    {
-        "date": "2026-02-26",
-        "title": "A Recente Queda da NVIDIA: Uma Oportunidade de Compra ou um Alerta para o Futuro da IA?",
-        "link": "blog/2026-02-26-NVDA.html",
-        "summary": "A NVIDIA (NVDA) caiu 5,46% para US$ 184,89, contribuindo para uma queda mais ampla das ações de IA. Embora isso levante preocupações sobre o sentiment"
-    },
-    {
-        "date": "2026-02-25",
-        "title": "AMD Dispara: A Fabricante de Chips de IA Está Pronta para Desafiar o Reinado da Nvidia?",
-        "link": "blog/2026-02-25-AMD.html",
-        "summary": "As ações da AMD subiram mais de 8% hoje, atingindo US$ 213,84, impulsionadas pela forte confiança dos investidores em seus aceleradores de IA, como o"
-    },
-    {
-        "date": "2026-02-25",
-        "title": "Bitcoin Dispara Acima de US$ 67 mil: Decifrando a Alta da Cripto em Meio a Mudanças no Mercado",
-        "link": "blog/2026-02-25-BTC-USD.html",
-        "summary": "O Bitcoin (BTC-USD) dispara acima de US$ 67.900, demonstrando força robusta apesar da instabilidade mais ampla do mercado pós-lucros da NVIDIA. Esta p"
     }
 ]
