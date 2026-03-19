@@ -1,4 +1,4 @@
-import google.generativeai as genai
+﻿import google.generativeai as genai
 import os
 import datetime
 import time
@@ -247,7 +247,7 @@ def save_and_index_multi(contents, ticker, chart_url):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title} | StockWise.ai</title>
+    <title>{title} | WiseAIWiseU</title>
     <meta name="description" content="{summary[:150]}">
     <link rel="stylesheet" href="{'../css/style.css' if lang != 'en' else 'css/style.css'}">
     
@@ -258,7 +258,7 @@ def save_and_index_multi(contents, ticker, chart_url):
 <body>
     <div class="container">
         <header>
-            <a href="{'/' if lang == 'en' else '/' + lang + '/'}" class="logo">StockWise.ai</a>
+            <a href="{'/' if lang == 'en' else '/' + lang + '/'}" class="logo">WiseAIWiseU</a>
             <nav class="lang-selector">
                 <a href="/ko/blog.html" class="lang-link {'active' if lang == 'ko' else ''}">KO</a>
                 <a href="/blog.html" class="lang-link {'active' if lang == 'en' else ''}">EN</a>
@@ -300,7 +300,7 @@ def save_and_index_multi(contents, ticker, chart_url):
         
         <footer>
             <div class="footer-content">
-                <p>&copy; 2026 StockWise.ai - Smart Dividend Investing</p>
+                <p>&copy; 2026 WiseAIWiseU - Smart Dividend Investing</p>
                 <p style="font-size: 0.85rem;"><a href="/" style="color: #666;">← Back to Home</a></p>
             </div>
         </footer>

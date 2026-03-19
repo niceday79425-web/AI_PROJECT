@@ -1,4 +1,4 @@
-"""
+﻿"""
 교육 블로그 정적 HTML 생성기
 EN/KO/PT 각 10개 = 총 30개 교육 포스트 생성
 """
@@ -326,19 +326,19 @@ def get_template(lang, title, content, slug, keywords, date_str):
         back_link = "/blog.html"
         list_link = "/list.html"
         calc_link = "/calculator.html"
-        footer_txt = "© 2026 StockWise.ai - Smart Dividend Investing"
+        footer_txt = "© 2026 WiseAIWiseU - Smart Dividend Investing"
         disclaimer = "This content is for informational and educational purposes only and does not constitute financial advice. Investment involves risk, including the possible loss of principal."
     elif lang == "ko":
         back_link = "/ko/blog.html"
         list_link = "/ko/list.html"
         calc_link = "/ko/calculator.html"
-        footer_txt = "© 2026 StockWise.ai - Smart Dividend Investing"
+        footer_txt = "© 2026 WiseAIWiseU - Smart Dividend Investing"
         disclaimer = "본 콘텐츠는 정보 제공 및 교육 목적으로만 제공되며 투자 조언을 구성하지 않습니다. 투자에는 원금 손실을 포함한 위험이 따릅니다."
     else:
         back_link = "/pt/blog.html"
         list_link = "/pt/list.html"
         calc_link = "/pt/calculator.html"
-        footer_txt = "© 2026 StockWise.ai - Smart Dividend Investing"
+        footer_txt = "© 2026 WiseAIWiseU - Smart Dividend Investing"
         disclaimer = "Este conteúdo é apenas para fins informativos e educacionais e não constitui aconselhamento financeiro. O investimento envolve risco."
 
     css_path = "../css/style.css" if lang != "en" else "css/style.css"
@@ -348,11 +348,11 @@ def get_template(lang, title, content, slug, keywords, date_str):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title} | StockWise.ai</title>
+    <title>{title} | WiseAIWiseU</title>
     <meta name="description" content="{title} — Expert dividend investing education for long-term passive income growth.">
     <meta name="keywords" content="{keywords}">
     <link rel="stylesheet" href="{css_path}">
-    <link rel="canonical" href="https://ai-project-1en.pages.dev/{lang + '/' if lang != 'en' else ''}blog/{slug}.html" />
+    <link rel="canonical" href="https://wiseaiwiseu.com/{lang + '/' if lang != 'en' else ''}blog/{slug}.html" />
     <style>
         .blog-post-content {{ max-width: 780px; margin: 2rem auto; padding: 0 1rem; line-height: 1.9; }}
         .blog-post-content h2 {{ color: var(--accent-blue); margin: 2rem 0 0.75rem; font-size: 1.4rem; }}
@@ -367,7 +367,7 @@ def get_template(lang, title, content, slug, keywords, date_str):
 <body>
     <div class="container">
         <header>
-            <a href="{'/' if lang == 'en' else '/' + lang + '/'}" class="logo">StockWise.ai</a>
+            <a href="{'/' if lang == 'en' else '/' + lang + '/'}" class="logo">WiseAIWiseU</a>
             <nav class="lang-selector">
                 <a href="/ko/blog/{slug.replace('-ko','').replace('-pt','')}-ko.html" class="lang-link{'  active' if lang=='ko' else ''}">KO</a>
                 <a href="/blog/{slug.replace('-ko','').replace('-pt','')}.html" class="lang-link{'  active' if lang=='en' else ''}">EN</a>

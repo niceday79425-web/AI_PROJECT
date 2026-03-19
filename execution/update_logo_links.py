@@ -1,13 +1,13 @@
-import os
+﻿import os
 
 # Define replacement rules by directory
 REPLACEMENTS = {
-    "d:\\AI_PROJECT": '<a href="/" class="logo">StockWise.ai</a>',
-    "d:\\AI_PROJECT\\ko": '<a href="/ko/" class="logo">StockWise.ai</a>',
-    "d:\\AI_PROJECT\\pt": '<a href="/pt/" class="logo">StockWise.ai</a>'
+    "d:\\AI_PROJECT": '<a href="/" class="logo">WiseAIWiseU</a>',
+    "d:\\AI_PROJECT\\ko": '<a href="/ko/" class="logo">WiseAIWiseU</a>',
+    "d:\\AI_PROJECT\\pt": '<a href="/pt/" class="logo">WiseAIWiseU</a>'
 }
 
-TARGET_STRING = '<div class="logo">StockWise.ai</div>'
+TARGET_STRING = '<div class="logo">WiseAIWiseU</div>'
 
 def update_files():
     print("Starting update...")
@@ -44,7 +44,7 @@ def update_files():
                         print(f"[UPDATED] {filepath}")
                     else:
                         # Check if already updated (to avoid double work or confusion)
-                        if 'class="logo">StockWise.ai</a>' in content:
+                        if 'class="logo">WiseAIWiseU</a>' in content:
                             print(f"[SKIPPED] {filepath} (Already updated)")
                         else:
                             print(f"[SKIPPED] {filepath} (Pattern not found)")

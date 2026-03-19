@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Shield, TrendingUp, TrendingDown, ChevronRight, Search, Filter } from 'lucide-react';
 
 /**
- * StockWise Mobile-Optimized Stock List Component
+ * WiseAIWiseU Mobile-Optimized Stock List Component
  * Designed by: Antigravity (Senior Frontend Developer & UI/UX Designer)
  */
 
@@ -160,7 +160,7 @@ const DividendScouter = () => {
             <div className="sticky top-0 z-20 bg-black/80 backdrop-blur-xl border-b border-zinc-800/50 px-4 py-4">
                 <div className="flex justify-between items-center mb-4">
                     <h1 className="text-2xl font-black italic tracking-tighter bg-gradient-to-r from-white to-zinc-500 bg-clip-text text-transparent">
-                        STOCKWISE<span className="text-[#10B981]">.ai</span>
+                        WiseAIWiseU<span className="text-[#10B981]">.ai</span>
                     </h1>
                     <div className="p-2 border border-zinc-800 rounded-full hover:bg-zinc-900 transition-colors">
                         <Filter size={18} className="text-zinc-400" />
@@ -213,7 +213,7 @@ const DividendScouter = () => {
             {/* Footer Info */}
             <div className="p-6 text-center">
                 <p className="text-[10px] text-zinc-600 font-bold uppercase tracking-[0.2em]">
-                    Powered by StockWise Proprietary Intelligence
+                    Powered by WiseAIWiseU Proprietary Intelligence
                 </p>
             </div>
 

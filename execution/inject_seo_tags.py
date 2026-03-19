@@ -1,7 +1,7 @@
-
+﻿
 import os
 
-BASE_URL = "https://ai-project-1en.pages.dev"
+BASE_URL = "https://wiseaiwiseu.com"
 PAGES = ["index.html", "list.html", "blog.html", "calculator.html", "calendar.html", "fortune.html", "privacy.html", "about.html", "contact.html"]
 
 def get_href_tags(filename):
