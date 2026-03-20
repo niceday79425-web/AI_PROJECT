@@ -90,4 +90,13 @@ rebuild_posts_json("ko/blog", "ko/posts.json", "ko", "blog/")
 # PT
 rebuild_posts_json("pt/blog", "pt/posts.json", "pt", "blog/")
 
-print("\nDone. Check posts.json for the updated list.")
+# SITEMAP 자동 갱신
+try:
+    import sys
+    sys.path.append(os.getcwd())
+    from generate_sitemap import generate_sitemap
+    generate_sitemap()
+except Exception as e:
+    print(f"[ERROR] Sitemap update failed: {e}")
+
+print("\nDone. Check posts.json and sitemap.xml for the updated list.")
