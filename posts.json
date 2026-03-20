@@ -1,5 +1,23 @@
 [
     {
+        "title": "Honeywell (HON) Stock: Analyzing the Dip in an Industrial Powerhouse",
+        "date": "2026-03-20",
+        "link": "blog/2026-03-20-HON.html",
+        "summary": "Honeywell (HON) experienced a -3.29% dip, trading at $221.50, amidst a broader market sell-off. This analysis explores HON's diverse segments (Aerospace, Building Technologies, PMT, SPS), its strong financial footing, and key growth catalysts like aerospace recovery, smart building solutions, industrial automation, and sustainability. The article suggests the dip could be a 'buy the dip' opportunity for long-term investors seeking a stable, dividend-paying industrial technology leader with significant future growth potential."
+    },
+    {
+        "title": "Decoding Oracle's Dip: Is ORCL a Cloud Opportunity or a Cautionary Tale?",
+        "date": "2026-03-20",
+        "link": "blog/2026-03-20-ORCL.html",
+        "summary": "Oracle (ORCL) shares dropped 3.76% today, prompting analysis of its cloud computing transition (OCI) and core strengths. While broader market volatility may be a factor, ORCL's consistent cloud growth, sticky customer base, and AI potential offer a strong bull case. Investors should weigh these against intense competition and growth rate concerns to decide if today's dip is a buying opportunity for this enterprise software giant."
+    },
+    {
+        "title": "Intel (INTC) Sinks 5%: Dissecting the Dip and Its Semiconductor Future",
+        "date": "2026-03-20",
+        "link": "blog/2026-03-20-INTC.html",
+        "summary": "Intel (INTC) shares dropped 5% to $43.87, raising questions for investors. This post dissects Intel's current position, its ambitious IDM 2.0 and Foundry Services strategy, and analyzes both the opportunities (AI PC, government support, diversified portfolio) and challenges (competition, execution risk, high CAPEX). While volatile, Intel's long-term potential in the growing semiconductor market hinges on flawless execution."
+    },
+    {
         "title": "Tesla (TSLA) Navigates Volatility: Is the Latest Dip a Buying Opportunity or a Warning Sign?",
         "date": "2026-03-19",
         "link": "blog/2026-03-19-TSLA.html",
@@ -340,23 +358,5 @@
         "title": "Bank of America (BAC) Slips: Is This Dip a Golden Opportunity or a Signal to Pause?",
         "link": "blog/2026-02-27-BAC.html",
         "summary": "Bank of America (BAC) experienced a significant 4.72% stock price drop today, likely driven by broader market sentiment rather than specific company n"
-    },
-    {
-        "date": "2026-02-27",
-        "title": "Ethereum's Latest Dip: Opportunity or Warning Sign for ETH-USD Investors?",
-        "link": "blog/2026-02-27-ETH-USD.html",
-        "summary": "Ethereum (ETH-USD) experienced a significant 5.12% drop, pushing its price to $1922.95. This post analyzes the potential reasons behind the dip, from"
-    },
-    {
-        "date": "2026-02-26",
-        "title": "Accenture (ACN): Up Over 8% As AI Stocks Stumble – Why Investors Are Eyeing This Tech Services Giant",
-        "link": "blog/2026-02-26-ACN.html",
-        "summary": "Accenture (ACN) defied a broader market slump and AI stock jitters today, soaring over 8% to $207.38. As a global professional services giant, ACN ben"
-    },
-    {
-        "date": "2026-02-26",
-        "title": "Salesforce (CRM) Surges: A Beacon of Strength Amidst Tech Market Jitters?",
-        "link": "blog/2026-02-26-CRM.html",
-        "summary": "Salesforce (CRM) defied a broader tech market slump today, climbing over 4%. This post delves into CRM's resilience, its powerful AI strategy with Ein"
     }
 ]

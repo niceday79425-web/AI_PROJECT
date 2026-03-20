@@ -1,5 +1,23 @@
 [
     {
+        "title": "Ações da Honeywell (HON): Analisando a Queda de uma Potência Industrial",
+        "date": "2026-03-20",
+        "link": "blog/2026-03-20-HON.html",
+        "summary": "A Honeywell (HON) experimentou uma queda de -3,29%, sendo negociada a US$ 221,50, em meio a uma venda mais ampla do mercado. Esta análise explora os diversos segmentos da HON (Aeroespacial, Tecnologias de Construção, PMT, SPS), sua forte base financeira e os principais catalisadores de crescimento, como a recuperação aeroespacial, soluções de edifícios inteligentes, automação industrial e sustentabilidade. O artigo sugere que a queda pode ser uma oportunidade de 'comprar na baixa' para investidores de longo prazo que buscam um líder estável e pagador de dividendos em tecnologia industrial com um potencial de crescimento futuro significativo."
+    },
+    {
+        "title": "Decifrando a Queda da Oracle: ORCL é uma Oportunidade na Nuvem ou um Conto de Advertência?",
+        "date": "2026-03-20",
+        "link": "blog/2026-03-20-ORCL.html",
+        "summary": "As ações da Oracle (ORCL) caíram 3,76% hoje, provocando uma análise de sua transição para a computação em nuvem (OCI) e seus pontos fortes principais. Embora a volatilidade mais ampla do mercado possa ser um fator, o crescimento consistente da nuvem da ORCL, a base de clientes fiel e o potencial de IA oferecem um forte argumento de alta. Os investidores devem pesar esses fatores contra a concorrência intensa e as preocupações com a taxa de crescimento para decidir se a queda de hoje é uma oportunidade de compra para este gigante do software empresarial."
+    },
+    {
+        "title": "Intel (INTC) Cai 5%: Dissecando a Queda e o Futuro dos Semicondutores",
+        "date": "2026-03-20",
+        "link": "blog/2026-03-20-INTC.html",
+        "summary": "As ações da Intel (INTC) caíram 5% para $43.87, levantando questões para os investidores. Este post dissecou a posição atual da Intel, sua ambiciosa estratégia IDM 2.0 e de Serviços de Fundição, e analisou tanto as oportunidades (AI PC, suporte governamental, portfólio diversificado) quanto os desafios (concorrência, risco de execução, CAPEX elevado). Embora volátil, o potencial de longo prazo da Intel no crescente mercado de semicondutores depende de uma execução impecável."
+    },
+    {
         "title": "Tesla (TSLA) Navega na Volatilidade: A Última Queda é uma Oportunidade de Compra ou um Sinal de Alerta?",
         "date": "2026-03-19",
         "link": "blog/2026-03-19-TSLA.html",
@@ -340,23 +358,5 @@
         "title": "Bank of America (BAC) Cai: Esta Queda é uma Oportunidade de Ouro ou um Sinal para Pausar?",
         "link": "blog/2026-02-27-BAC.html",
         "summary": "O Bank of America (BAC) registrou uma queda significativa de 4,72% no preço de suas ações hoje, provavelmente impulsionada pelo sentimento geral do me"
-    },
-    {
-        "date": "2026-02-27",
-        "title": "A Recente Queda do Ethereum: Oportunidade ou Sinal de Alerta para Investidores de ETH-USD?",
-        "link": "blog/2026-02-27-ETH-USD.html",
-        "summary": "O Ethereum (ETH-USD) experimentou uma queda significativa de 5,12%, empurrando seu preço para $1922,95. Esta postagem analisa as possíveis razões por"
-    },
-    {
-        "date": "2026-02-26",
-        "title": "Accenture (ACN): Mais de 8% de Alta Enquanto Ações de IA Tropeçam – Por Que os Investidores Estão de Olho Neste Gigante de Serviços de Tecnologia?",
-        "link": "blog/2026-02-26-ACN.html",
-        "summary": "A Accenture (ACN) desafiou hoje a queda generalizada do mercado e a instabilidade das ações de IA, disparando mais de 8% para US$ 207,38. Como um giga"
-    },
-    {
-        "date": "2026-02-26",
-        "title": "Salesforce (CRM) Sobe: Um Farol de Força em Meio às Dificuldades do Mercado de Tecnologia?",
-        "link": "blog/2026-02-26-CRM.html",
-        "summary": "A Salesforce (CRM) desafiou uma queda mais ampla do mercado de tecnologia hoje, subindo mais de 4%. Este post aprofunda a resiliência da CRM, sua pode"
     }
 ]
