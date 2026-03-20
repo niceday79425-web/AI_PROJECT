@@ -1,5 +1,23 @@
 [
     {
+        "title": "Tesla (TSLA) Navigates Volatility: Is the Latest Dip a Buying Opportunity or a Warning Sign?",
+        "date": "2026-03-19",
+        "link": "blog/2026-03-19-TSLA.html",
+        "summary": "Tesla (TSLA) experienced a dip today, reflecting broader market dynamics and investor reassessments. This post dissects TSLA's current standing, balancing its innovative vision in EVs, AI, and energy with pressing challenges like intense competition and geopolitical risks, offering insights for investors."
+    },
+    {
+        "title": "ACN Soars: Accenture's Digital Fortress in an AI-Driven World",
+        "date": "2026-03-19",
+        "link": "blog/2026-03-19-ACN.html",
+        "summary": "Accenture (ACN) is riding a strong wave of digital transformation and AI integration, as evidenced by its recent price surge. This post analyzes ACN's strategic position as a global leader in professional services, its ability to capitalize on emerging tech trends like enterprise AI, and its resilience in a dynamic market, making it a compelling consideration for long-term investors."
+    },
+    {
+        "title": "Vistra Corp. (VIST) Powers Up: Decoding Today's Surge and Future Outlook",
+        "date": "2026-03-19",
+        "link": "blog/2026-03-19-VIST.html",
+        "summary": "Vistra Corp. (VIST) saw a significant 5.08% gain, signaling renewed investor interest in its integrated power generation and retail electricity model. This post explores VIST's market position, strategic advantages in the evolving energy landscape, and key factors for investors to consider amidst its current momentum."
+    },
+    {
         "title": "Comcast (CMCSA) Takes a Dive: Unpacking the 5% Drop and What It Means for Investors",
         "date": "2026-03-18",
         "link": "blog/2026-03-18-CMCSA.html",
@@ -340,23 +358,5 @@
         "title": "Salesforce (CRM) Surges: A Beacon of Strength Amidst Tech Market Jitters?",
         "link": "blog/2026-02-26-CRM.html",
         "summary": "Salesforce (CRM) defied a broader tech market slump today, climbing over 4%. This post delves into CRM's resilience, its powerful AI strategy with Ein"
-    },
-    {
-        "date": "2026-02-26",
-        "title": "NVIDIA's Recent Dip: A Buying Opportunity or a Warning for AI's Future?",
-        "link": "blog/2026-02-26-NVDA.html",
-        "summary": "NVIDIA (NVDA) dropped 5.46% to $184.89, contributing to a broader AI stock slump. While this raises concerns about AI market sentiment, NVIDIA remains"
-    },
-    {
-        "date": "2026-02-25",
-        "title": "AMD Soars: Is the AI Chipmaker Ready to Challenge Nvidia's Reign?",
-        "link": "blog/2026-02-25-AMD.html",
-        "summary": "AMD stock surged over 8% today, reaching $213.84, driven by strong investor confidence in its AI accelerators like the MI300X. Amidst anticipation for"
-    },
-    {
-        "date": "2026-02-25",
-        "title": "Bitcoin Blazes Past $67k: Decoding Crypto's Surge Amidst Shifting Market Tides",
-        "link": "blog/2026-02-25-BTC-USD.html",
-        "summary": "Bitcoin (BTC-USD) surges past $67,900, demonstrating robust strength despite broader market wobbles post-NVIDIA earnings. This post analyzes the drive"
     }
 ]
