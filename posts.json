@@ -1,5 +1,23 @@
 [
     {
+        "title": "Alphabet (GOOGL): Is This Tech Titan Poised for Its Next Growth Surge Amidst the AI Revolution?",
+        "date": "2026-03-21",
+        "link": "blog/2026-03-21-GOOGL.html",
+        "summary": "Unpack Alphabet (GOOGL)'s investment thesis. We analyze its resilient digital advertising core, aggressive AI strategy (in light of rivals like OpenAI), and the burgeoning potential of Google Cloud. Discover why GOOGL remains a compelling long-term play for savvy investors."
+    },
+    {
+        "title": "Microsoft's AI Ascendancy: Is MSFT Still a Cornerstone Investment?",
+        "date": "2026-03-21",
+        "link": "blog/2026-03-21-MSFT.html",
+        "summary": "An in-depth analysis of Microsoft (MSFT)'s strategic position, focusing on its dominant role in AI through OpenAI partnership and Azure, alongside its diversified ecosystem. We examine its growth drivers and address current valuation questions for investors, emphasizing its status as a core long-term holding."
+    },
+    {
+        "title": "Is AAPL Still a Golden Ticket? Navigating Apple's Investment Horizon",
+        "date": "2026-03-21",
+        "link": "blog/2026-03-21-AAPL.html",
+        "summary": "A deep dive into Apple (AAPL), exploring its robust ecosystem, innovation pipeline, and market position. We analyze whether the tech giant presents a compelling \"buy the dip\" opportunity for investors amidst current market dynamics, examining growth drivers like services and AI, alongside potential challenges."
+    },
+    {
         "title": "Honeywell (HON) Stock: Analyzing the Dip in an Industrial Powerhouse",
         "date": "2026-03-20",
         "link": "blog/2026-03-20-HON.html",
@@ -340,23 +358,5 @@
         "title": "Apple (AAPL): AI Ambitions vs. Market Realities – What Investors Need to Know",
         "link": "blog/2026-02-28-AAPL.html",
         "summary": "This post delves into Apple's (AAPL) investment outlook, analyzing its strategic positioning amidst the burgeoning AI revolution and the backdrop of e"
-    },
-    {
-        "date": "2026-02-28",
-        "title": "GOOGL: Navigating the AI Frontier – Is Alphabet Still a Top Tech Pick?",
-        "link": "blog/2026-02-28-GOOGL.html",
-        "summary": "Alphabet (GOOGL) remains a dominant force in tech, strategically positioned in the AI race with Gemini, DeepMind, and Waymo. Its core businesses—Searc"
-    },
-    {
-        "date": "2026-02-28",
-        "title": "Microsoft (MSFT): AI's Unstoppable Colossus Navigating Evolving Market Dynamics",
-        "link": "blog/2026-02-28-MSFT.html",
-        "summary": "An in-depth analysis of Microsoft (MSFT), focusing on its pivotal role in the AI revolution through its OpenAI partnership and Azure cloud. The post e"
-    },
-    {
-        "date": "2026-02-27",
-        "title": "Bank of America (BAC) Slips: Is This Dip a Golden Opportunity or a Signal to Pause?",
-        "link": "blog/2026-02-27-BAC.html",
-        "summary": "Bank of America (BAC) experienced a significant 4.72% stock price drop today, likely driven by broader market sentiment rather than specific company n"
     }
 ]
