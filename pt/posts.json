@@ -1,5 +1,23 @@
 [
     {
+        "title": "Alphabet (GOOGL): Desvendando o Próximo Horizonte de Crescimento da Gigante da Tecnologia em Meio à Rali do Mercado",
+        "date": "2026-03-23",
+        "link": "blog/2026-03-23-GOOGL.html",
+        "summary": "Esta publicação analisa a Alphabet (GOOGL) como um investimento atraente em meio a um rali mais amplo do mercado. Destaca as principais forças da GOOGL: domínio da publicidade digital (Pesquisa, YouTube), crescimento acelerado no Google Cloud e sua liderança crucial em IA. Embora reconhecendo os desafios competitivos e regulatórios, a análise sublinha as finanças robustas e o ecossistema diversificado da GOOGL, posicionando-a como uma aposta sólida de longo prazo no setor de tecnologia, especialmente na era da IA."
+    },
+    {
+        "title": "Microsoft (MSFT) a $383: Decodificando o Apelo Duradouro da Gigante da Tecnologia em Meio ao Rali do Mercado",
+        "date": "2026-03-23",
+        "link": "blog/2026-03-23-MSFT.html",
+        "summary": "A Microsoft (MSFT), avaliada em $383.00, continua sendo um investimento robusto, alavancando seus serviços dominantes de nuvem Azure, integração de IA de ponta (Copilot, OpenAI) e software empresarial \"grudento\". Apesar de uma avaliação premium, sua forte saúde financeira, vetores de crescimento diversificados como jogos e retornos consistentes aos acionistas a tornam uma participação central duradoura em meio a um mercado em rali. A MSFT é uma peça essencial de infraestrutura para a era digital."
+    },
+    {
+        "title": "Apple (AAPL): Navegando Pelas Dificuldades do Mercado e Desbloqueando Valor de Longo Prazo",
+        "date": "2026-03-23",
+        "link": "blog/2026-03-23-AAPL.html",
+        "summary": "Uma análise aprofundada da posição atual da Apple no mercado, seu recente desempenho em ações a $251.49, e sua resiliência em meio a mudanças geopolíticas. Analisamos os principais impulsionadores, desafios potenciais e o que os investidores globais devem considerar para a AAPL, enfatizando seu forte ecossistema, crescimento de serviços e inovação a longo prazo."
+    },
+    {
         "title": "Alphabet (GOOGL): Decodificando o Futuro da Gigante da Tecnologia na Era da IA",
         "date": "2026-03-22",
         "link": "blog/2026-03-22-GOOGL.html",
@@ -340,23 +358,5 @@
         "title": "A Jogada Estratégica da Apple: Decifrando a Trajetória da AAPL a $264,72 em Meio à Evolução da Estratégia do iPhone e Mudanças Globais",
         "link": "blog/2026-03-02-AAPL.html",
         "summary": "A Apple (AAPL) negocia a $264,72, sinalizando um momento crucial à medida que a gigante da tecnologia reformula estrategicamente sua linha de iPhones"
-    },
-    {
-        "date": "2026-03-02",
-        "title": "Alphabet (GOOGL): Navegando na Inovação da IA e na Dinâmica do Mercado para Valor de Longo Prazo",
-        "link": "blog/2026-03-02-GOOGL.html",
-        "summary": "Uma análise aprofundada da Alphabet (GOOGL), avaliando seus principais pontos fortes em IA, Nuvem e Pesquisa, enquanto considera fatores macro como ri"
-    },
-    {
-        "date": "2026-03-02",
-        "title": "Microsoft (MSFT): Superando a Volatilidade com IA, Nuvem e Valor Duradouro",
-        "link": "blog/2026-03-02-MSFT.html",
-        "summary": "Uma análise aprofundada da Microsoft (MSFT) a $398.55, focando em suas forças estratégicas em IA e computação em nuvem (Azure), ecossistema diversific"
-    },
-    {
-        "date": "2026-03-01",
-        "title": "Apple (AAPL): Navegando Ventos Contrários Globais com um Ecossistema Resiliente",
-        "link": "blog/2026-03-01-AAPL.html",
-        "summary": "Em meio à elevada volatilidade do mercado e preocupações geopolíticas, a Apple (AAPL) se destaca como um farol de estabilidade e inovação. Esta anális"
     }
 ]
