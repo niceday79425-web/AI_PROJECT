@@ -1,5 +1,59 @@
 [
     {
+        "title": "Alphabet (GOOGL): Decodificando o Futuro da Gigante da Tecnologia na Era da IA",
+        "date": "2026-03-22",
+        "link": "blog/2026-03-22-GOOGL.html",
+        "summary": "A Alphabet (GOOGL) continua sendo um investimento tecnológico fundamental, impulsionado por receitas resilientes de pesquisa e publicidade, o rápido crescimento do Google Cloud e a liderança fundamental em IA com inovações como o Gemini. Apesar do escrutínio regulatório e da intensa concorrência, seu domínio de mercado, motor de inovação e força financeira a posicionam como uma aposta atraente de longo prazo na evolução da era da IA."
+    },
+    {
+        "title": "Microsoft (MSFT): Por Que Este Gigante da Tecnologia é Mais do Que Apenas uma Jogada na Nuvem na Era da IA",
+        "date": "2026-03-22",
+        "link": "blog/2026-03-22-MSFT.html",
+        "summary": "Explore a força duradoura da Microsoft além de suas ofertas dominantes de nuvem, focando em seu papel fundamental na Inteligência Artificial e ecossistema diversificado, tornando a MSFT um investimento de longo prazo atraente no cenário tecnológico em evolução."
+    },
+    {
+        "title": "Apple (AAPL): Navegando a Volatilidade com Inovação – Uma Análise Profunda para Investidores Globais",
+        "date": "2026-03-22",
+        "link": "blog/2026-03-22-AAPL.html",
+        "summary": "A Apple (AAPL) continua sendo uma gigante da tecnologia, mas enfrenta um ambiente de mercado complexo, marcado por tensões geopolíticas e volatilidade crescente. Esta análise explora os pontos fortes duradouros da Apple, os principais impulsionadores de crescimento como serviços e inovação em IA, e como ela se posiciona em meio a mudanças mais amplas do mercado, oferecendo insights para investidores de longo prazo."
+    },
+    {
+        "title": "Alphabet (GOOGL): Este Titã da Tecnologia Está Preparado para Sua Próxima Onda de Crescimento em Meio à Revolução da IA?",
+        "date": "2026-03-21",
+        "link": "blog/2026-03-21-GOOGL.html",
+        "summary": "Analise a tese de investimento da Alphabet (GOOGL). Analisamos seu resiliente núcleo de publicidade digital, sua agressiva estratégia de IA (à luz de rivais como a OpenAI) e o potencial crescente do Google Cloud. Descubra por que a GOOGL continua sendo uma aposta de longo prazo atraente para investidores experientes."
+    },
+    {
+        "title": "A Ascensão da IA da Microsoft: A MSFT Ainda é um Investimento Fundamental?",
+        "date": "2026-03-21",
+        "link": "blog/2026-03-21-MSFT.html",
+        "summary": "Uma análise aprofundada da posição estratégica da Microsoft (MSFT), focando em seu papel dominante em IA através da parceria com a OpenAI e Azure, juntamente com seu ecossistema diversificado. Examinamos seus impulsionadores de crescimento e abordamos questões de avaliação atuais para investidores, enfatizando seu status como um investimento fundamental de longo prazo."
+    },
+    {
+        "title": "A AAPL Ainda é um Bilhete Dourado? Navegando no Horizonte de Investimento da Apple",
+        "date": "2026-03-21",
+        "link": "blog/2026-03-21-AAPL.html",
+        "summary": "Uma análise aprofundada da Apple (AAPL), explorando seu robusto ecossistema, pipeline de inovação e posição de mercado. Analisamos se a gigante da tecnologia apresenta uma oportunidade atraente de \"comprar na baixa\" para investidores em meio à dinâmica atual do mercado, examinando impulsionadores de crescimento como serviços e IA, juntamente com desafios potenciais."
+    },
+    {
+        "title": "Ações da Honeywell (HON): Analisando a Queda de uma Potência Industrial",
+        "date": "2026-03-20",
+        "link": "blog/2026-03-20-HON.html",
+        "summary": "A Honeywell (HON) experimentou uma queda de -3,29%, sendo negociada a US$ 221,50, em meio a uma venda mais ampla do mercado. Esta análise explora os diversos segmentos da HON (Aeroespacial, Tecnologias de Construção, PMT, SPS), sua forte base financeira e os principais catalisadores de crescimento, como a recuperação aeroespacial, soluções de edifícios inteligentes, automação industrial e sustentabilidade. O artigo sugere que a queda pode ser uma oportunidade de 'comprar na baixa' para investidores de longo prazo que buscam um líder estável e pagador de dividendos em tecnologia industrial com um potencial de crescimento futuro significativo."
+    },
+    {
+        "title": "Decifrando a Queda da Oracle: ORCL é uma Oportunidade na Nuvem ou um Conto de Advertência?",
+        "date": "2026-03-20",
+        "link": "blog/2026-03-20-ORCL.html",
+        "summary": "As ações da Oracle (ORCL) caíram 3,76% hoje, provocando uma análise de sua transição para a computação em nuvem (OCI) e seus pontos fortes principais. Embora a volatilidade mais ampla do mercado possa ser um fator, o crescimento consistente da nuvem da ORCL, a base de clientes fiel e o potencial de IA oferecem um forte argumento de alta. Os investidores devem pesar esses fatores contra a concorrência intensa e as preocupações com a taxa de crescimento para decidir se a queda de hoje é uma oportunidade de compra para este gigante do software empresarial."
+    },
+    {
+        "title": "Intel (INTC) Cai 5%: Dissecando a Queda e o Futuro dos Semicondutores",
+        "date": "2026-03-20",
+        "link": "blog/2026-03-20-INTC.html",
+        "summary": "As ações da Intel (INTC) caíram 5% para $43.87, levantando questões para os investidores. Este post dissecou a posição atual da Intel, sua ambiciosa estratégia IDM 2.0 e de Serviços de Fundição, e analisou tanto as oportunidades (AI PC, suporte governamental, portfólio diversificado) quanto os desafios (concorrência, risco de execução, CAPEX elevado). Embora volátil, o potencial de longo prazo da Intel no crescente mercado de semicondutores depende de uma execução impecável."
+    },
+    {
         "title": "Tesla (TSLA) Navega na Volatilidade: A Última Queda é uma Oportunidade de Compra ou um Sinal de Alerta?",
         "date": "2026-03-19",
         "link": "blog/2026-03-19-TSLA.html",
@@ -304,59 +358,5 @@
         "title": "Apple (AAPL): Navegando Ventos Contrários Globais com um Ecossistema Resiliente",
         "link": "blog/2026-03-01-AAPL.html",
         "summary": "Em meio à elevada volatilidade do mercado e preocupações geopolíticas, a Apple (AAPL) se destaca como um farol de estabilidade e inovação. Esta anális"
-    },
-    {
-        "date": "2026-03-01",
-        "title": "GOOGL: A Vantagem da IA do Google é Suficiente para Impulsionar o Crescimento Futuro em Meio a Mudanças Globais?",
-        "link": "blog/2026-03-01-GOOGL.html",
-        "summary": "Uma análise aprofundada da Alphabet (GOOGL), avaliando suas principais fortalezas em Busca, Publicidade e Nuvem, com foco especial em seu papel pivota"
-    },
-    {
-        "date": "2026-03-01",
-        "title": "A Força Duradoura da Microsoft: Navegando o Futuro com Dominância em IA e Nuvem (MSFT)",
-        "link": "blog/2026-03-01-MSFT.html",
-        "summary": "A Microsoft (MSFT) se destaca como um investimento robusto em meio à volatilidade do mercado, impulsionada por sua plataforma de nuvem Azure dominante"
-    },
-    {
-        "date": "2026-02-28",
-        "title": "Apple (AAPL): Ambições de IA vs. Realidades de Mercado – O Que os Investidores Precisam Saber",
-        "link": "blog/2026-02-28-AAPL.html",
-        "summary": "Esta publicação aprofunda a perspetiva de investimento da Apple (AAPL), analisando o seu posicionamento estratégico no meio da crescente revolução da"
-    },
-    {
-        "date": "2026-02-28",
-        "title": "GOOGL: Navegando a Fronteira da IA – A Alphabet Ainda é uma Escolha de Tecnologia de Ponta?",
-        "link": "blog/2026-02-28-GOOGL.html",
-        "summary": "A Alphabet (GOOGL) continua sendo uma força dominante em tecnologia, estrategicamente posicionada na corrida da IA com Gemini, DeepMind e Waymo. Seus"
-    },
-    {
-        "date": "2026-02-28",
-        "title": "Microsoft (MSFT): O Colosso Imparável da IA Navegando por Dinâmicas de Mercado em Evolução",
-        "link": "blog/2026-02-28-MSFT.html",
-        "summary": "Uma análise aprofundada da Microsoft (MSFT), focando em seu papel central na revolução da IA através de sua parceria com a OpenAI e a nuvem Azure. A p"
-    },
-    {
-        "date": "2026-02-27",
-        "title": "Bank of America (BAC) Cai: Esta Queda é uma Oportunidade de Ouro ou um Sinal para Pausar?",
-        "link": "blog/2026-02-27-BAC.html",
-        "summary": "O Bank of America (BAC) registrou uma queda significativa de 4,72% no preço de suas ações hoje, provavelmente impulsionada pelo sentimento geral do me"
-    },
-    {
-        "date": "2026-02-27",
-        "title": "A Recente Queda do Ethereum: Oportunidade ou Sinal de Alerta para Investidores de ETH-USD?",
-        "link": "blog/2026-02-27-ETH-USD.html",
-        "summary": "O Ethereum (ETH-USD) experimentou uma queda significativa de 5,12%, empurrando seu preço para $1922,95. Esta postagem analisa as possíveis razões por"
-    },
-    {
-        "date": "2026-02-26",
-        "title": "Accenture (ACN): Mais de 8% de Alta Enquanto Ações de IA Tropeçam – Por Que os Investidores Estão de Olho Neste Gigante de Serviços de Tecnologia?",
-        "link": "blog/2026-02-26-ACN.html",
-        "summary": "A Accenture (ACN) desafiou hoje a queda generalizada do mercado e a instabilidade das ações de IA, disparando mais de 8% para US$ 207,38. Como um giga"
-    },
-    {
-        "date": "2026-02-26",
-        "title": "Salesforce (CRM) Sobe: Um Farol de Força em Meio às Dificuldades do Mercado de Tecnologia?",
-        "link": "blog/2026-02-26-CRM.html",
-        "summary": "A Salesforce (CRM) desafiou uma queda mais ampla do mercado de tecnologia hoje, subindo mais de 4%. Este post aprofunda a resiliência da CRM, sua pode"
     }
 ]
