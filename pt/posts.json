@@ -1,5 +1,23 @@
 [
     {
+        "title": "Decifrando a Merck (MRK): Será Esta Gigante Farmacêutica a Próxima Âncora do Seu Portfólio?",
+        "date": "2026-03-25",
+        "link": "blog/2026-03-25-MRK.html",
+        "summary": "A Merck (MRK) se destaca como uma robusta gigante farmacêutica, oferecendo aos investidores uma combinação de estabilidade defensiva, dividendos consistentes e crescimento promissor através de seu pipeline de P&D. Com suas ações subindo mais de 2,5% hoje, mergulhamos no porquê da MRK poder ser uma adição atraente a longo prazo, especialmente no atual ambiente de mercado volátil."
+    },
+    {
+        "title": "Intel (INTC) Sobe 7%: A Gigante dos Chips Finalmente Está Virando a Esquina?",
+        "date": "2026-03-25",
+        "link": "blog/2026-03-25-INTC.html",
+        "summary": "A Intel (INTC) subiu mais de 7% hoje, gerando debate sobre se a ambiciosa estratégia IDM 2.0 da gigante dos chips está finalmente ganhando a confiança dos investidores. Enquanto os otimistas veem um ativo subvalorizado com potencial em IA e fundição, os pessimistas destacam riscos significativos de execução e concorrência feroz. O artigo explora ambos os lados, enfatizando a natureza de longo prazo da reviravolta da Intel e a importância da execução estratégica contínua para os investidores."
+    },
+    {
+        "title": "A Ascensão da AMD: Por que a Disparada Desta Fabricante de Chips é Mais do Que Apenas um Pico Diário",
+        "date": "2026-03-25",
+        "link": "blog/2026-03-25-AMD.html",
+        "summary": "A Advanced Micro Devices (AMD) está demonstrando um crescimento robusto, impulsionada por sua agressiva incursão em IA, expansão de data centers e portfólio de produtos diversificado. Com um ganho diário significativo de +7,26%, a posição da AMD como um player-chave na revolução da computação de alto desempenho e da IA está se solidificando, oferecendo perspectivas de investimento de longo prazo atraentes, apesar da volatilidade do mercado."
+    },
+    {
         "title": "VIST em Alta: Analisando o Momento de Mercado da Vista Outdoor e o Próximo Passo",
         "date": "2026-03-24",
         "link": "blog/2026-03-24-VIST.html",
@@ -340,23 +358,5 @@
         "title": "A Disparada da AMD Acima de US$ 200: Desvendando o Momento da Estrela dos Semicondutores",
         "link": "blog/2026-03-04-AMD.html",
         "summary": "A AMD (Advanced Micro Devices) superou os US$ 200 hoje, impulsionada pelo forte sentimento em torno de suas ofertas de IA e data center, como o aceler"
-    },
-    {
-        "date": "2026-03-04",
-        "title": "Bitcoin Ultrapassa os US$ 72.700: Decifrando o Momento Cripto e as Perspectivas Futuras",
-        "link": "blog/2026-03-04-BTC-USD.html",
-        "summary": "O Bitcoin (BTC-USD) disparou para mais de US$ 72.700 com um ganho de 6,51%, atingindo novas máximas. Este rali é impulsionado principalmente por forte"
-    },
-    {
-        "date": "2026-03-04",
-        "title": "Ethereum (ETH-USD) Rugge com Força: É o Início de uma Nova Ascensão?",
-        "link": "blog/2026-03-04-ETH-USD.html",
-        "summary": "Ethereum (ETH-USD) disparou mais de 7% para $2130.97, desafiando a instabilidade do mercado em geral. Esta publicação explora os principais impulsiona"
-    },
-    {
-        "date": "2026-03-03",
-        "title": "Ações da Adobe (ADBE): Gigante Criativa ou Campo de Batalha da IA? Uma Análise Aprofundada para Investidores",
-        "link": "blog/2026-03-03-ADBE.html",
-        "summary": "Uma análise aprofundada das ações da Adobe (ADBE), examinando seu forte modelo de assinatura, inovação em IA com Firefly, cenário competitivo incluind"
     }
 ]
