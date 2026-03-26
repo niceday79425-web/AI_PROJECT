@@ -1,5 +1,23 @@
 [
     {
+        "title": "Intel (INTC) Sob Pressão: Navegando na Última Queda da Gigante dos Semicondutores",
+        "date": "2026-03-26",
+        "link": "blog/2026-03-26-INTC.html",
+        "summary": "As ações da Intel (INTC) sofreram uma queda significativa de 6,53%, para US$ 44,10, em meio a uma fraqueza mais ampla do mercado. Esta postagem analisa os fatores imediatos por trás da venda, examina a estratégia de recuperação da Intel em andamento e oferece insights sobre se essa queda apresenta uma oportunidade de investimento ou um sinal de alerta para investidores no setor de semicondutores."
+    },
+    {
+        "title": "O Dia Tumultuado da AMD: Uma Análise Aprofundada do Futuro da Gigante dos Semicondutores em Meio à Instabilidade do Mercado",
+        "date": "2026-03-26",
+        "link": "blog/2026-03-26-AMD.html",
+        "summary": "A AMD experimentou uma queda significativa no preço em meio a uma desaceleração mais ampla do mercado. Esta análise explora se isso representa uma oportunidade de compra para investidores de longo prazo na história de crescimento de semicondutores e IA, ou se os ventos contrários atuais sinalizam preocupações mais profundas. Mergulhamos na posição de mercado da AMD, ambições de IA e os fatores que influenciam sua volatilidade de curto prazo e potencial de longo prazo."
+    },
+    {
+        "title": "Meta Platforms (META) Despenca: Oportunidade ou Sinal de Alerta?",
+        "date": "2026-03-26",
+        "link": "blog/2026-03-26-META.html",
+        "summary": "A Meta Platforms (META) experimentou uma queda significativa de -7,96% hoje em meio à fraqueza mais ampla do mercado. Esta postagem analisa as causas imediatas, examina os pontos fortes subjacentes da Meta em publicidade e IA, aborda desafios como escrutínio regulatório e investimentos em Reality Labs, e oferece insights para investidores que consideram sua valuation atual."
+    },
+    {
         "title": "Decifrando a Merck (MRK): Será Esta Gigante Farmacêutica a Próxima Âncora do Seu Portfólio?",
         "date": "2026-03-25",
         "link": "blog/2026-03-25-MRK.html",
@@ -340,23 +358,5 @@
         "title": "AVGO: A Onda de IA da Broadcom é Sustentável? Desvendando o Futuro da Gigante dos Semicondutores",
         "link": "blog/2026-03-05-AVGO.html",
         "summary": "A Broadcom (AVGO) está experimentando um aumento significativo impulsionado principalmente pela forte demanda por seus chips de IA e soluções de rede"
-    },
-    {
-        "date": "2026-03-05",
-        "title": "Ações da CRM Disparam: Desvendando o Futuro Impulsionado por IA da Salesforce",
-        "link": "blog/2026-03-05-CRM.html",
-        "summary": "As ações da Salesforce (CRM) subiram 4,30% para $201,39, impulsionadas pela força geral do setor de tecnologia e pela confiança dos investidores em su"
-    },
-    {
-        "date": "2026-03-05",
-        "title": "Queda da UPS: Aumento do Petróleo é um Obstáculo ou um Sinal de Compra para a Gigante da Logística?",
-        "link": "blog/2026-03-05-UPS.html",
-        "summary": "As ações da UPS caíram mais de 5% hoje, impulsionadas pela alta dos preços do petróleo que impacta diretamente os custos de combustível substanciais d"
-    },
-    {
-        "date": "2026-03-04",
-        "title": "A Disparada da AMD Acima de US$ 200: Desvendando o Momento da Estrela dos Semicondutores",
-        "link": "blog/2026-03-04-AMD.html",
-        "summary": "A AMD (Advanced Micro Devices) superou os US$ 200 hoje, impulsionada pelo forte sentimento em torno de suas ofertas de IA e data center, como o aceler"
     }
 ]

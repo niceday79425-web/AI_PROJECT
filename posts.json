@@ -1,5 +1,23 @@
 [
     {
+        "title": "Intel (INTC) Under Pressure: Navigating the Semiconductor Giant's Latest Dip",
+        "date": "2026-03-26",
+        "link": "blog/2026-03-26-INTC.html",
+        "summary": "Intel (INTC) shares experienced a significant 6.53% drop to $44.10 amidst broader market weakness. This post analyzes the immediate factors behind the sell-off, examines Intel's ongoing turnaround strategy, and offers insights into whether this dip presents an investment opportunity or a cautionary signal for investors in the semiconductor sector."
+    },
+    {
+        "title": "AMD's Tumultuous Day: A Deep Dive into the Semiconductor Giant's Future Amidst Market Jitters",
+        "date": "2026-03-26",
+        "link": "blog/2026-03-26-AMD.html",
+        "summary": "AMD experienced a significant price dip amidst a broader market downturn. This analysis explores whether this presents a buying opportunity for long-term investors in the semiconductor and AI growth story, or if current headwinds signal deeper concerns. We delve into AMD's market position, AI ambitions, and the factors influencing its short-term volatility and long-term potential."
+    },
+    {
+        "title": "Meta Platforms (META) Takes a Dive: Opportunity or Red Flag?",
+        "date": "2026-03-26",
+        "link": "blog/2026-03-26-META.html",
+        "summary": "Meta Platforms (META) experienced a significant -7.96% drop today amidst broader market weakness. This post analyzes the immediate causes, examines Meta's underlying strengths in advertising and AI, addresses challenges like regulatory scrutiny and Reality Labs investments, and offers insights for investors considering its current valuation."
+    },
+    {
         "title": "Decoding Merck (MRK): Is This Pharma Giant Your Portfolio's Next Anchor?",
         "date": "2026-03-25",
         "link": "blog/2026-03-25-MRK.html",
@@ -340,23 +358,5 @@
         "title": "Unpacking Broadcom's (AVGO) Surge: AI Chip Demand Powers a Robust Outlook",
         "link": "blog/2026-03-05-AVGO.html",
         "summary": "Broadcom (AVGO) is experiencing a significant surge driven primarily by strong demand for its AI chips and high-performance networking solutions, esse"
-    },
-    {
-        "date": "2026-03-05",
-        "title": "CRM Stock Jumps: Unpacking Salesforce's AI-Powered Future",
-        "link": "blog/2026-03-05-CRM.html",
-        "summary": "Salesforce (CRM) stock surged +4.30% to $201.39, driven by broad tech sector strength and investor confidence in its AI and cloud leadership. The mark"
-    },
-    {
-        "date": "2026-03-05",
-        "title": "UPS Plunge: Is Surging Oil a Roadblock or a Buy Signal for the Logistics Giant?",
-        "link": "blog/2026-03-05-UPS.html",
-        "summary": "UPS shares tumbled over 5% today, driven by surging oil prices which directly impact the logistics giant's substantial fuel costs. While short-term he"
-    },
-    {
-        "date": "2026-03-04",
-        "title": "AMD's $200 Breakout: Unpacking the Momentum of the Semiconductor Star",
-        "link": "blog/2026-03-04-AMD.html",
-        "summary": "AMD (Advanced Micro Devices) surged past $200 today, driven by strong sentiment around its AI and data center offerings like the MI300X accelerator an"
     }
 ]
