@@ -1,5 +1,23 @@
 [
     {
+        "title": "A Última Queda do Bitcoin: Navegando pela Volatilidade e Correntes Institucionais",
+        "date": "2026-03-27",
+        "link": "blog/2026-03-27-BTC-USD.html",
+        "summary": "O Bitcoin (BTC-USD) está experimentando um notável recuo, caindo 3,96% para US$ 66.068,41. Este post analisa a ação de preço atual, examinando a influência institucional através dos ETFs de Bitcoin, o impacto da dinâmica recente do mercado, e oferece insights sobre o cenário de investimento volátil, mas potencialmente recompensador, do BTC para um público global."
+    },
+    {
+        "title": "Análise da Ação META: Navegando a Última Volatilidade e Potencial de Longo Prazo",
+        "date": "2026-03-27",
+        "link": "blog/2026-03-27-META.html",
+        "summary": "Uma análise aprofundada da ação da Meta Platforms (META), examinando sua recente queda de preço, pontos fortes do negócio principal em publicidade e IA, desafios contínuos com o Reality Labs e fornecendo uma perspectiva de investimento para investidores globais."
+    },
+    {
+        "title": "A Queda da Airbnb é uma Oportunidade de Compra? Análise da Ação ABNB",
+        "date": "2026-03-27",
+        "link": "blog/2026-03-27-ABNB.html",
+        "summary": "Uma análise aprofundada da ação da Airbnb (ABNB), avaliando sua recente queda de 6,25% para $122,87. Exploramos seu robusto modelo de negócios, liderança de mercado, principais impulsionadores de crescimento e potenciais ventos contrários. A análise fornece uma perspectiva de investimento, sugerindo que a retração pode ser uma oportunidade para investidores de longo prazo neste líder da indústria de viagens."
+    },
+    {
         "title": "Intel (INTC) Sob Pressão: Navegando na Última Queda da Gigante dos Semicondutores",
         "date": "2026-03-26",
         "link": "blog/2026-03-26-INTC.html",
@@ -340,23 +358,5 @@
         "date": "2026-03-06",
         "link": "blog/2026-03-06-BTC-USD.html",
         "summary": "O Bitcoin (BTC-USD) registrou uma queda de -3,54%, chegando a $68.335,20, gerando debate entre investidores. Essa correção ocorre em meio a atividades de mercado mais amplas, mas é influenciada por eventos cripto-específicos como a positiva rejeição do processo da Binance, fatores macroeconômicos e a dinâmica pós-halving. Embora a volatilidade de curto prazo persista, o sentimento de alta de longo prazo permanece forte, posicionando os níveis atuais como uma potencial oportunidade de 'comprar na baixa' para investidores com tolerância ao risco."
-    },
-    {
-        "title": "Decifrando a Queda do Ethereum: A Retração do ETH-USD é uma Oportunidade de Compra?",
-        "date": "2026-03-06",
-        "link": "blog/2026-03-06-ETH-USD.html",
-        "summary": "O Ethereum (ETH-USD) registrou uma queda notável, sendo negociado a US$ 1984,88. Esta análise explora as razões por trás da volatilidade, examina os fortes fundamentos do ETH e oferece insights para investidores que navegam no cenário atual das criptomoedas, destacando oportunidades e riscos potenciais."
-    },
-    {
-        "title": "A Montanha-Russa da Intel: Mergulhando na Última Queda da INTC e Suas Perspectivas de Longo Prazo",
-        "date": "2026-03-06",
-        "link": "blog/2026-03-06-INTC.html",
-        "summary": "A Intel (INTC) caiu 5,51% hoje, sendo negociada a US$ 43,42, em meio à volatilidade do mercado de semicondutores. Esta postagem explora a ambiciosa estratégia IDM 2.0 da Intel, visando recuperar a liderança de processo e estabelecer os Intel Foundry Services. Investigamos tanto o caso de alta, impulsionado por subsídios governamentais e potencial momento da fundição, quanto o caso de baixa, destacando riscos de execução, intensa competição da AMD, Nvidia e TSMC, e despesas de capital significativas. A análise conclui que a INTC é um investimento de longo prazo de alto risco, apostando em uma reinvenção bem-sucedida."
-    },
-    {
-        "date": "2026-03-05",
-        "title": "AVGO: A Onda de IA da Broadcom é Sustentável? Desvendando o Futuro da Gigante dos Semicondutores",
-        "link": "blog/2026-03-05-AVGO.html",
-        "summary": "A Broadcom (AVGO) está experimentando um aumento significativo impulsionado principalmente pela forte demanda por seus chips de IA e soluções de rede"
     }
 ]

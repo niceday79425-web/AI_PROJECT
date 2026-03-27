@@ -1,5 +1,23 @@
 [
     {
+        "title": "Bitcoin's Latest Dip: Navigating Volatility and Institutional Undercurrents",
+        "date": "2026-03-27",
+        "link": "blog/2026-03-27-BTC-USD.html",
+        "summary": "Bitcoin (BTC-USD) is experiencing a notable pullback, dipping 3.96% to $66,068.41. This post analyzes the current price action, examining institutional influence through Bitcoin ETFs, the impact of recent market dynamics, and offers insights into BTC's volatile yet potentially rewarding investment landscape for a global audience."
+    },
+    {
+        "title": "META Stock Analysis: Navigating the Latest Volatility and Long-Term Potential",
+        "date": "2026-03-27",
+        "link": "blog/2026-03-27-META.html",
+        "summary": "An in-depth analysis of Meta Platforms (META) stock, examining its recent price dip, core business strengths in advertising and AI, ongoing challenges with Reality Labs, and providing an investment outlook for global investors."
+    },
+    {
+        "title": "Is Airbnb's Pullback a Buying Opportunity? ABNB Stock Analysis",
+        "date": "2026-03-27",
+        "link": "blog/2026-03-27-ABNB.html",
+        "summary": "A deep dive into Airbnb (ABNB) stock, analyzing its recent 6.25% dip to $122.87. We explore its robust business model, market leadership, key growth drivers, and potential headwinds. The analysis provides an investment outlook, suggesting the pullback could be an opportunity for long-term investors in this travel industry leader."
+    },
+    {
         "title": "Intel (INTC) Under Pressure: Navigating the Semiconductor Giant's Latest Dip",
         "date": "2026-03-26",
         "link": "blog/2026-03-26-INTC.html",
@@ -340,23 +358,5 @@
         "date": "2026-03-06",
         "link": "blog/2026-03-06-BTC-USD.html",
         "summary": "Bitcoin (BTC-USD) saw a -3.54% dip to $68,335.20, sparking investor debate. This correction comes amidst broader market activity but is influenced by crypto-specific events like the positive Binance lawsuit dismissal, macroeconomic factors, and post-halving dynamics. While short-term volatility persists, long-term bullish sentiment remains strong, positioning current levels as a potential 'buy the dip' opportunity for risk-tolerant investors."
-    },
-    {
-        "title": "Decoding Ethereum's Dip: Is ETH-USD's Pullback a Buying Opportunity?",
-        "date": "2026-03-06",
-        "link": "blog/2026-03-06-ETH-USD.html",
-        "summary": "Ethereum (ETH-USD) has seen a notable dip, trading at $1984.88. This analysis explores the reasons behind the volatility, examines ETH's strong fundamentals, and offers insights for investors navigating the current crypto landscape, highlighting potential opportunities and risks."
-    },
-    {
-        "title": "Intel's Rollercoaster Ride: Diving into INTC's Latest Dip and Long-Term Prospects",
-        "date": "2026-03-06",
-        "link": "blog/2026-03-06-INTC.html",
-        "summary": "Intel (INTC) dipped 5.51% today, trading at $43.42, amidst broader semiconductor market volatility. This post explores Intel's ambitious IDM 2.0 strategy, aiming to regain process leadership and establish Intel Foundry Services. We delve into both the bull case, driven by government subsidies and potential foundry momentum, and the bear case, highlighting execution risks, intense competition from AMD, Nvidia, and TSMC, and significant capital expenditures. The analysis concludes that INTC is a high-stakes, long-term investment betting on a successful reinvention."
-    },
-    {
-        "date": "2026-03-05",
-        "title": "Unpacking Broadcom's (AVGO) Surge: AI Chip Demand Powers a Robust Outlook",
-        "link": "blog/2026-03-05-AVGO.html",
-        "summary": "Broadcom (AVGO) is experiencing a significant surge driven primarily by strong demand for its AI chips and high-performance networking solutions, esse"
     }
 ]
