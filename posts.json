@@ -1,5 +1,23 @@
 [
     {
+        "title": "Meta Platforms (META) Stock Surges: Is the Momentum Sustainable?",
+        "date": "2026-03-31",
+        "link": "blog/2026-03-31-META.html",
+        "summary": "Meta Platforms (META) saw a significant jump of +6.67% today, hitting $572.13. This post dives into the catalysts driving its impressive recovery, from robust ad revenue growth and efficiency gains to its ambitious AI roadmap. We'll explore the balance between its core business strength, long-term metaverse investments, and potential risks, offering insights for investors evaluating META's future trajectory."
+    },
+    {
+        "title": "GEV Stock Soars 6.8%: Decoding Today's Rally and What It Means for Your Portfolio",
+        "date": "2026-03-31",
+        "link": "blog/2026-03-31-GEV.html",
+        "summary": "GEV stock surged an impressive 6.80% to $872.90 today, drawing significant investor attention amidst a mixed broader market. While no specific news directly drove the rally, potential factors include sectoral strength, anticipatory trading, analyst sentiment, or short covering. This analysis explores the implications for both current and prospective investors, stressing the importance of due diligence and understanding the underlying drivers beyond daily fluctuations."
+    },
+    {
+        "title": "Intel (INTC) Powers Up: Examining the Semiconductor Behemoth's Strategic Pivot",
+        "date": "2026-03-31",
+        "link": "blog/2026-03-31-INTC.html",
+        "summary": "Intel (INTC) surged over 7% today, signaling renewed investor interest in the semiconductor giant's ambitious IDM 2.0 turnaround strategy. This post delves into Intel's efforts to regain manufacturing leadership, expand its foundry services, and compete in the booming AI and data center markets. We explore the bull and bear cases, highlighting the immense potential if execution is flawless, but also the significant competitive and capital expenditure risks involved in its transformation."
+    },
+    {
         "title": "Alphabet (GOOGL): Decoding Innovation, Navigating Regulation, and the Road Ahead",
         "date": "2026-03-30",
         "link": "blog/2026-03-30-GOOGL.html",
@@ -340,23 +358,5 @@
         "date": "2026-03-11",
         "link": "blog/2026-03-11-CVX.html",
         "summary": "Despite broader market jitters and falling Dow futures, Chevron (CVX) surged nearly 3% today, propelled by crude oil prices breaking above $90, highlighting its potential as a defensive income play and inflation hedge in a market increasingly focused on tech and AI."
-    },
-    {
-        "title": "Oracle's AI Cloud Surge: Why ORCL Just Jumped 9% and What's Next for Investors",
-        "date": "2026-03-11",
-        "link": "blog/2026-03-11-ORCL.html",
-        "summary": "Oracle (ORCL) surged over 9% today, driven by its strong position in artificial intelligence (AI) and cloud computing. Its Gen2 Cloud Infrastructure (OCI) is becoming a preferred platform for demanding AI workloads, supported by strategic partnerships like Nvidia. Analysts view ORCL as a brilliant long-term growth stock, benefiting from sustained enterprise investment in AI and cloud expansion. This rally highlights Oracle's successful transformation and its potential for continued growth as a foundational AI infrastructure provider."
-    },
-    {
-        "title": "Adobe (ADBE): A Creative Powerhouse Poised for AI Growth Amidst Market Swings",
-        "date": "2026-03-10",
-        "link": "blog/2026-03-10-ADBE.html",
-        "summary": "Despite today's 2.59% dip, Adobe (ADBE) remains a compelling investment. Its robust subscription-based Creative and Document Clouds provide stability, while aggressive integration of generative AI (like Firefly) positions it for significant future growth. This current price dip, amidst broader market volatility and rising AI enthusiasm, could offer a strategic entry point for long-term investors."
-    },
-    {
-        "title": "INTC Jumps: Is Intel Finally Hitting its Stride in the AI Race?",
-        "date": "2026-03-10",
-        "link": "blog/2026-03-10-INTC.html",
-        "summary": "Intel (INTC) saw a +2.63% gain to $46.78 today, sparking questions about its AI turnaround. Amidst strong market sentiment for AI, fueled by Oracle's success and generative AI adoption, Intel is aggressively pursuing an 'AI Everywhere' strategy with Gaudi accelerators, AI PCs, and Edge AI. The company's Intel Foundry Services (IFS) is also a crucial long-term growth pillar. Despite market volatility and intense competition, Intel's ability to execute on its ambitious roadmap in AI and foundry will determine its future investment appeal."
     }
 ]
