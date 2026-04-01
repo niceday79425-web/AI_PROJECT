@@ -1,5 +1,23 @@
 [
     {
+        "title": "VIST's Volatile Day: Decoding the 8% Plunge and What It Means for Your Portfolio",
+        "date": "2026-04-01",
+        "link": "blog/2026-04-01-VIST.html",
+        "summary": "VIST experienced a sharp 8.41% decline today, closing at $69.12, despite broader market rallies. This post analyzes potential catalysts for the significant dip, including profit-taking and sector-specific pressures, and offers key considerations for investors navigating market volatility."
+    },
+    {
+        "title": "Intel (INTC) Electrifies the Market: Is the Chip Giant's Turnaround Taking Hold?",
+        "date": "2026-04-01",
+        "link": "blog/2026-04-01-INTC.html",
+        "summary": "Intel (INTC) shares soared an impressive 8.84% today, closing at $48.03, sparking renewed optimism about the semiconductor titan's ambitious IDM 2.0 turnaround strategy. This post delves into the potential drivers behind the surge, including broader market optimism and increasing investor confidence in CEO Pat Gelsinger's vision for reclaiming process leadership and expanding Intel Foundry Services. We explore Intel's position in the competitive AI era, highlight both the significant opportunities and formidable headwinds, and discuss what investors should watch next for this complex long-term investment."
+    },
+    {
+        "title": "Nike's Deep Dive: Is the Swoosh Stumbling or Setting Up for a Power Play?",
+        "date": "2026-04-01",
+        "link": "blog/2026-04-01-NKE.html",
+        "summary": "Nike (NKE) shares have seen a significant dip of over 15%, prompting investors to question if the iconic brand is losing its stride or presenting a compelling long-term opportunity. This analysis explores the current challenges, Nike's enduring strengths, and key factors investors should monitor amid market volatility."
+    },
+    {
         "title": "Meta Platforms (META) Stock Surges: Is the Momentum Sustainable?",
         "date": "2026-03-31",
         "link": "blog/2026-03-31-META.html",
@@ -340,23 +358,5 @@
         "date": "2026-03-12",
         "link": "blog/2026-03-12-VIST.html",
         "summary": "VIST surged 4.52% today to $62.37, catching significant market attention. This analysis delves into potential drivers behind its strong performance, emphasizing the importance of thorough fundamental research in the absence of explicit company news. It offers actionable insights for investors to evaluate VIST's valuation, catalysts, and long-term potential amidst broader market trends."
-    },
-    {
-        "title": "Intel (INTC): A Chip Off the Old Block or a New Foundation? Analyzing the Recent Dip and Future Prospects",
-        "date": "2026-03-12",
-        "link": "blog/2026-03-12-INTC.html",
-        "summary": "Intel's stock dipped over 5% today, prompting a closer look at whether the semiconductor giant's ambitious turnaround plan makes it a compelling investment amidst fierce competition and evolving market dynamics. We dissect its IDM 2.0 strategy, foundry aspirations, and AI ambitions."
-    },
-    {
-        "title": "Intel (INTC): Is the Semiconductor Giant Poised for a Resurgence in the AI Era?",
-        "date": "2026-03-11",
-        "link": "blog/2026-03-11-INTC.html",
-        "summary": "Intel (INTC) is showing signs of a potential resurgence, with shares up +2.57% to $47.98. The semiconductor giant is aggressively pursuing AI integration across its product lines and venturing into the foundry business (Intel Foundry Services) as part of CEO Pat Gelsinger's IDM 2.0 strategy. While facing intense competition and execution risks, Intel's strategic investments in AI accelerators and manufacturing capacity aim to reclaim leadership and diversify revenue streams, presenting a complex but potentially rewarding turnaround story for investors."
-    },
-    {
-        "title": "Chevron (CVX) Shines as Oil Surges Past $90: An Investor's Beacon in Volatile Markets",
-        "date": "2026-03-11",
-        "link": "blog/2026-03-11-CVX.html",
-        "summary": "Despite broader market jitters and falling Dow futures, Chevron (CVX) surged nearly 3% today, propelled by crude oil prices breaking above $90, highlighting its potential as a defensive income play and inflation hedge in a market increasingly focused on tech and AI."
     }
 ]

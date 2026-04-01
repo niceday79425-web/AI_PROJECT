@@ -1,5 +1,23 @@
 [
     {
+        "title": "O Dia Volátil da VIST: Decifrando a Queda de 8% e o Que Significa Para a Sua Carteira",
+        "date": "2026-04-01",
+        "link": "blog/2026-04-01-VIST.html",
+        "summary": "A VIST sofreu uma queda acentuada de 8,41% hoje, fechando em US$ 69,12, apesar dos ralis mais amplos do mercado. Este post analisa potenciais catalisadores para a queda significativa, incluindo realização de lucros e pressões setoriais, e oferece considerações-chave para investidores que navegam pela volatilidade do mercado."
+    },
+    {
+        "title": "Intel (INTC) Eletriza o Mercado: A Reviravolta da Gigante dos Chips Está Finalmente Acontecendo?",
+        "date": "2026-04-01",
+        "link": "blog/2026-04-01-INTC.html",
+        "summary": "As ações da Intel (INTC) dispararam impressionantes 8,84% hoje, fechando a $48.03, acendendo um renovado otimismo sobre a ambiciosa estratégia de recuperação IDM 2.0 da gigante dos semicondutores. Este post explora os potenciais impulsionadores por trás do salto, incluindo o otimismo mais amplo do mercado e o aumento da confiança dos investidores na visão do CEO Pat Gelsinger para recuperar a liderança em processos e expandir os Intel Foundry Services. Analisamos a posição da Intel na era competitiva da IA, destacamos tanto as oportunidades significativas quanto os formidáveis obstáculos, e discutimos o que os investidores devem observar a seguir para este investimento complexo de longo prazo."
+    },
+    {
+        "title": "O Mergulho da Nike: O Swoosh Está Tropeçando ou Preparando um Golpe de Mestre?",
+        "date": "2026-04-01",
+        "link": "blog/2026-04-01-NKE.html",
+        "summary": "As ações da Nike (NKE) sofreram uma queda significativa de mais de 15%, levando os investidores a questionar se a marca icônica está perdendo seu ritmo ou apresentando uma oportunidade atraente de longo prazo. Esta análise explora os desafios atuais, as forças duradouras da Nike e os principais fatores que os investidores devem monitorar em meio à volatilidade do mercado."
+    },
+    {
         "title": "Ações da Meta Platforms (META) Disparam: O Impulso é Sustentável?",
         "date": "2026-03-31",
         "link": "blog/2026-03-31-META.html",
@@ -340,23 +358,5 @@
         "date": "2026-03-12",
         "link": "blog/2026-03-12-VIST.html",
         "summary": "A VIST disparou 4,52% hoje, atingindo $62,37, atraindo significativa atenção do mercado. Esta análise explora os potenciais impulsionadores por trás de seu forte desempenho, enfatizando a importância de uma pesquisa fundamental aprofundada na ausência de notícias explícitas da empresa. Oferece insights acionáveis para investidores avaliarem a avaliação da VIST, catalisadores e potencial de longo prazo em meio a tendências mais amplas do mercado."
-    },
-    {
-        "title": "Intel (INTC): Um Pedacinho do Bloco Antigo ou Uma Nova Fundação? Analisando a Recente Queda e as Perspectivas Futuras",
-        "date": "2026-03-12",
-        "link": "blog/2026-03-12-INTC.html",
-        "summary": "As ações da Intel caíram mais de 5% hoje, o que levou a uma análise mais aprofundada se o ambicioso plano de recuperação da gigante dos semicondutores a torna um investimento atraente em meio à concorrência feroz e à dinâmica de mercado em evolução. Dissecamos sua estratégia IDM 2.0, aspirações de fundição e ambições de IA."
-    },
-    {
-        "title": "Intel (INTC): A Gigante dos Semicondutores Está Preparada para um Ressurgimento na Era da IA?",
-        "date": "2026-03-11",
-        "link": "blog/2026-03-11-INTC.html",
-        "summary": ""
-    },
-    {
-        "title": "Chevron (CVX) Brilha à Medida que o Petróleo Ultrapassa US$ 90: Um Farol para Investidores em Mercados Voláteis",
-        "date": "2026-03-11",
-        "link": "blog/2026-03-11-CVX.html",
-        "summary": "Apesar da instabilidade geral do mercado e da queda dos futuros do Dow Jones, a Chevron (CVX) subiu quase 3% hoje, impulsionada pelos preços do petróleo bruto que ultrapassaram os US$ 90, destacando seu potencial como um ativo defensivo gerador de renda e proteção contra a inflação em um mercado focado em tecnologia e IA."
     }
 ]
