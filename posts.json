@@ -1,5 +1,23 @@
 [
     {
+        "title": "Alphabet (GOOGL): Navigating the AI Frontier and Beyond – A Deep Dive for Investors",
+        "date": "2026-04-03",
+        "link": "blog/2026-04-03-GOOGL.html",
+        "summary": "Explore Alphabet (GOOGL)'s multifaceted investment case, from its dominant search engine to its surging AI ambitions and growing cloud presence. This analysis delves into Google's core strengths, growth drivers, and challenges, offering insights for long-term investors in the evolving tech landscape."
+    },
+    {
+        "title": "Microsoft (MSFT): A Tech Behemoth Redefining the Future",
+        "date": "2026-04-03",
+        "link": "blog/2026-04-03-MSFT.html",
+        "summary": "Microsoft (MSFT) stands as a tech titan, showcasing enduring strength through its dominant Azure cloud platform, pioneering AI initiatives like Copilot, and robust productivity suite (Office 365). Its diversified revenue streams and strategic innovation in cutting-edge technologies position it as a compelling investment for long-term growth and stability amidst evolving global markets."
+    },
+    {
+        "title": "AAPL: Navigating the Tech Giant's Future – Is Apple Still a Golden Bite?",
+        "date": "2026-04-03",
+        "link": "blog/2026-04-03-AAPL.html",
+        "summary": "This analysis provides a comprehensive overview of Apple (AAPL) for global investors. It delves into the company's core strengths, including its robust services growth, unparalleled brand loyalty, and strong financial position. The post explores critical future drivers such as the Vision Pro and Apple's impending generative AI strategy, while also highlighting key challenges like increasing regulatory scrutiny and geopolitical factors. It offers a balanced investment thesis, emphasizing Apple's blend of stability and future growth potential, particularly contingent on its innovation in AI."
+    },
+    {
         "title": "Ethereum (ETH-USD) Navigates Choppy Waters: Is This Dip a Buying Opportunity?",
         "date": "2026-04-02",
         "link": "blog/2026-04-02-ETH-USD.html",
@@ -340,23 +358,5 @@
         "date": "2026-03-14",
         "link": "blog/2026-03-14-GOOGL.html",
         "summary": "Alphabet (GOOGL) remains a pivotal player in the tech landscape, especially with its leading position in AI. Despite a broadly expensive market and shifts towards speculative AI plays, GOOGL's core dominance in search, YouTube, and its rapidly growing Google Cloud, bolstered by groundbreaking AI like Gemini, positions it as a resilient, diversified investment. This analysis explores GOOGL's enduring value, growth drivers, and ability to navigate market challenges."
-    },
-    {
-        "title": "Microsoft (MSFT): AI's Unquestionable Leader Amidst Market Peaks",
-        "date": "2026-03-14",
-        "link": "blog/2026-03-14-MSFT.html",
-        "summary": "A deep dive into Microsoft's enduring strength as an AI and cloud computing leader, analyzing its investment case amidst an expensive market and recent billionaire portfolio shifts. Discover why MSFT remains a core holding for long-term growth."
-    },
-    {
-        "title": "Apple (AAPL): A Core Portfolio Pillar or Priced for Perfection in an AI-Driven Market?",
-        "date": "2026-03-14",
-        "link": "blog/2026-03-14-AAPL.html",
-        "summary": "Explore Apple's position amidst record market valuations and the surging AI narrative. We analyze AAPL's enduring strengths, its role in the AI ecosystem, and key considerations for investors navigating a potentially overheated market."
-    },
-    {
-        "title": "Broadcom (AVGO) Takes a Dip: Decoding the Opportunity in a Shifting Tech Landscape",
-        "date": "2026-03-13",
-        "link": "blog/2026-03-13-AVGO.html",
-        "summary": "Broadcom (AVGO) shares dipped by 4.11% today, prompting an analysis of whether this presents a buying opportunity. Despite no direct negative news, the fall contrasts with positive shifts in other enterprise tech stocks. The article highlights AVGO's strong dual-engine growth in semiconductors (AI, data centers) and enterprise software (VMware), its financial strength, and strategic acquisitions. While risks like macroeconomic headwinds exist, AVGO's core role in digital infrastructure makes it a compelling long-term investment, particularly after a price correction."
     }
 ]
