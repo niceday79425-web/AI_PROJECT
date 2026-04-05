@@ -1,5 +1,23 @@
 [
     {
+        "title": "Alphabet (GOOGL): Charting the Future of AI, Search, and Cloud Dominance",
+        "date": "2026-04-05",
+        "link": "blog/2026-04-05-GOOGL.html",
+        "summary": "An in-depth analysis of Alphabet (GOOGL)'s position as a tech giant, exploring its core strengths in search, cloud, and AI. This post provides investment insights into its growth drivers, potential challenges, and future trajectory, offering a professional perspective for global investors."
+    },
+    {
+        "title": "Microsoft (MSFT): A Tech Titan's Enduring Strength in the AI Era",
+        "date": "2026-04-05",
+        "link": "blog/2026-04-05-MSFT.html",
+        "summary": "Microsoft (MSFT) stands as a formidable tech giant, leveraging its dominant position in cloud computing (Azure), groundbreaking AI initiatives (OpenAI integration), and indispensable enterprise software. Despite not having specific real-time price data for this analysis, MSFT's diversified revenue streams, strong competitive advantages, and strategic investments in future growth drivers like AI and cloud make it an attractive long-term anchor for investor portfolios, even amid broader market uncertainties. Key risks include regulatory scrutiny and intense competition."
+    },
+    {
+        "title": "Decoding Apple (AAPL): The Tech Giant's Enduring Investment Appeal",
+        "date": "2026-04-05",
+        "link": "blog/2026-04-05-AAPL.html",
+        "summary": "This blog post analyzes Apple (AAPL) as an investment, highlighting its robust ecosystem, the growth of its high-margin Services segment, and ongoing innovation efforts like Vision Pro and AI. It also addresses potential risks such as regulatory scrutiny and supply chain challenges. The post concludes that AAPL remains a compelling, high-quality asset for long-term investors, emphasizing the importance of its premium branding and financial strength."
+    },
+    {
         "title": "Alphabet (GOOGL): Navigating the AI Frontier – A Core Tech Investment?",
         "date": "2026-04-04",
         "link": "blog/2026-04-04-GOOGL.html",
@@ -340,23 +358,5 @@
         "date": "2026-03-17",
         "link": "blog/2026-03-17-LLY.html",
         "summary": "Eli Lilly's stock dropped nearly 6% today. This analysis dives into potential reasons, the impact of the FTC monitoring patent cliffs on the broader pharma sector, and whether this dip presents a buying opportunity for the pharma giant, which is largely driven by its blockbuster GLP-1 drugs and robust pipeline."
-    },
-    {
-        "title": "Decoding Alphabet (GOOGL): Navigating the AI Frontier and Beyond",
-        "date": "2026-03-16",
-        "link": "blog/2026-03-16-GOOGL.html",
-        "summary": "Alphabet (GOOGL), currently trading around $305.56, remains a tech titan driven by its dominant advertising business, rapidly growing Google Cloud, and ambitious AI innovations like Gemini. This post explores GOOGL's investment appeal amidst increasing competition and regulatory scrutiny, highlighting its foundational strengths and strategic plays in the AI race that could redefine its future growth trajectory."
-    },
-    {
-        "title": "Microsoft (MSFT): The AI Juggernaut's Path to Future Growth",
-        "date": "2026-03-16",
-        "link": "blog/2026-03-16-MSFT.html",
-        "summary": "Microsoft (MSFT), trading at $399.95, is a leading tech giant poised for significant future growth, primarily driven by its unparalleled commitment to AI through Azure and Copilot. Its strong cloud computing platform, dominant enterprise software ecosystem, and strategic expansion into gaming via Activision Blizzard solidify its position. While facing competition and regulatory scrutiny, MSFT's robust fundamentals and innovation make it a compelling long-term investment in the evolving tech landscape."
-    },
-    {
-        "title": "GOOGL: Is This Magnificent Seven AI Powerhouse Still a Smart Bet?",
-        "date": "2026-03-15",
-        "link": "blog/2026-03-15-GOOGL.html",
-        "summary": "Alphabet (GOOGL) remains a pivotal player within the 'Magnificent Seven,' leveraging its deep AI expertise across Search, Cloud, and YouTube. Despite market volatility and competitive pressures, its foundational technology and diversified revenue streams suggest significant long-term growth potential for investors eyeing the AI revolution."
     }
 ]
