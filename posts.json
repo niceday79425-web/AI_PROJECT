@@ -1,5 +1,23 @@
 [
     {
+        "title": "GOOGL's AI Ascent: Why Alphabet's Strategic Chip Deals Could Drive Future Growth",
+        "date": "2026-04-06",
+        "link": "blog/2026-04-06-GOOGL.html",
+        "summary": "Alphabet (GOOGL) is making aggressive moves in AI hardware, partnering with Broadcom for custom chips. This post dissects how these strategic alliances position Google for sustained growth in the competitive AI era, offering crucial insights for investors."
+    },
+    {
+        "title": "Microsoft (MSFT): Riding the AI Tsunami to New Heights – An Investor's Deep Dive",
+        "date": "2026-04-06",
+        "link": "blog/2026-04-06-MSFT.html",
+        "summary": "Explore why Microsoft (MSFT) remains a cornerstone investment, driven by its unparalleled leadership in AI, cloud computing (Azure), and a robust diversified ecosystem. We analyze MSFT's strategic position amid the current tech boom, offering key insights for global investors."
+    },
+    {
+        "title": "Apple's Next Frontier: Decoding AAPL's AI Ambitions, Services Growth, and Market Outlook at $258.86",
+        "date": "2026-04-06",
+        "link": "blog/2026-04-06-AAPL.html",
+        "summary": "This post analyzes Apple (AAPL) stock at $258.86, focusing on its pivotal role in the AI landscape amidst fierce competition, the robust growth of its Services segment, and its enduring ecosystem strength. We assess the investment implications, considering Apple's strategic moves in silicon and software for long-term shareholder value."
+    },
+    {
         "title": "Alphabet (GOOGL): Charting the Future of AI, Search, and Cloud Dominance",
         "date": "2026-04-05",
         "link": "blog/2026-04-05-GOOGL.html",
@@ -340,23 +358,5 @@
         "date": "2026-03-18",
         "link": "blog/2026-03-18-ETH-USD.html",
         "summary": "Ethereum (ETH-USD) has seen a notable dip, falling to $2190.91 today. This post offers a professional analysis of the immediate price action, links it to broader market trends including falling Dow futures and tech sector concerns, and provides actionable insights for investors navigating crypto volatility. We explore Ethereum's fundamentals, key market drivers, and the path forward."
-    },
-    {
-        "title": "Decoding Intel's Latest Dip: A Deep Dive into INTC's Tumultuous Turnaround",
-        "date": "2026-03-17",
-        "link": "blog/2026-03-17-INTC.html",
-        "summary": "Intel (INTC) dipped 3.72% today, reflecting market volatility and ongoing investor skepticism. Despite the short-term decline, CEO Pat Gelsinger's aggressive 'IDM 2.0' strategy aims to reclaim manufacturing leadership, boost foundry services, and innovate across products. While facing intense competition and high CapEx, Intel also benefits from government support and AI growth opportunities. Investors should monitor process technology milestones, foundry wins, and data center revenue for signs of success in this high-risk, high-reward turnaround story."
-    },
-    {
-        "title": "VIST Stock Explodes Over 5%: What's Driving the Surge and Is It a Buy?",
-        "date": "2026-03-17",
-        "link": "blog/2026-03-17-VIST.html",
-        "summary": "VIST shares surged over 5% to $69.11, capturing investor attention. This post dissects potential catalysts behind the significant move, offers key insights for investors, and explores whether this momentum is sustainable or signals a deeper opportunity."
-    },
-    {
-        "title": "Eli Lilly (LLY) Plunges 6%: Decoding the Dip for Investors",
-        "date": "2026-03-17",
-        "link": "blog/2026-03-17-LLY.html",
-        "summary": "Eli Lilly's stock dropped nearly 6% today. This analysis dives into potential reasons, the impact of the FTC monitoring patent cliffs on the broader pharma sector, and whether this dip presents a buying opportunity for the pharma giant, which is largely driven by its blockbuster GLP-1 drugs and robust pipeline."
     }
 ]
