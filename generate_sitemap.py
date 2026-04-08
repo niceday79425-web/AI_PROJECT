@@ -43,24 +43,41 @@ def generate_sitemap():
             url_node = ET.SubElement(urlset, "url")
             
             # loc
-            path = info["path"] + page
+            if page == "index.html":
+                path = info["path"] # Just / or ko/
+            else:
+                path = (info["path"] + page).replace(".html", "")
+            
             loc_val = f"{DOMAIN}/{path}"
+            if loc_val.endswith("//"): loc_val = loc_val[:-1]
             loc = ET.SubElement(url_node, "loc")
             loc.text = loc_val
             
             # alternate links
             for alt_lang, alt_info in LANGS.items():
                 alt_path = alt_info["path"] + page
+                if page == "index.html":
+                    alt_path = alt_info["path"]
+                else:
+                    alt_path = alt_path.replace(".html", "")
+                
+                alt_href = f"{DOMAIN}/{alt_path}"
+                if alt_href.endswith("//"): alt_href = alt_href[:-1]
+                
                 alt_link = ET.SubElement(url_node, "{http://www.w3.org/1999/xhtml}link")
                 alt_link.set("rel", "alternate")
                 alt_link.set("hreflang", alt_info["hreflang"])
-                alt_link.set("href", f"{DOMAIN}/{alt_path}")
+                alt_link.set("href", alt_href)
             
             # x-default
+            x_default_rel = (page if page != "index.html" else "").replace(".html", "")
+            x_default_href = f"{DOMAIN}/{x_default_rel}"
+            if x_default_href.endswith("//"): x_default_href = x_default_href[:-1]
+            
             default_link = ET.SubElement(url_node, "{http://www.w3.org/1999/xhtml}link")
             default_link.set("rel", "alternate")
             default_link.set("hreflang", "x-default")
-            default_link.set("href", f"{DOMAIN}/{page}")
+            default_link.set("href", x_default_href)
 
             # lastmod
             full_path = os.path.join(os.getcwd(), info["path"], page)
@@ -107,14 +124,14 @@ def generate_sitemap():
         for lang, full_path in lang_links.items():
             url_node = ET.SubElement(urlset, "url")
             loc = ET.SubElement(url_node, "loc")
-            loc.text = f"{DOMAIN}/{full_path}"
+            loc.text = f"{DOMAIN}/{full_path.replace('.html', '')}"
             
             # Alternate links for blog posts
             for alt_lang, alt_link in lang_links.items():
                 alt_node = ET.SubElement(url_node, "{http://www.w3.org/1999/xhtml}link")
                 alt_node.set("rel", "alternate")
                 alt_node.set("hreflang", LANGS[alt_lang]["hreflang"])
-                alt_node.set("href", f"{DOMAIN}/{alt_link}")
+                alt_node.set("href", f"{DOMAIN}/{alt_link.replace('.html', '')}")
             
             # lastmod (try to get from filename or actual file)
             # filenames often start with YYYY-MM-DD
