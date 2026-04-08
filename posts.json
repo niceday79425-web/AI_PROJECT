@@ -1,5 +1,23 @@
 [
     {
+        "title": "VIST Stock Plunges 6%: Navigating Volatility Amidst Shifting Market Narratives",
+        "date": "2026-04-08",
+        "link": "blog/2026-04-08-VIST.html",
+        "summary": "VIST experienced a significant -6.46% drop to $65.60 today, sparking investor questions. This post analyzes the potential drivers behind the sell-off, including broader market sentiment towards tech valuations and recent industry news, offering insights for both short-term traders and long-term investors."
+    },
+    {
+        "title": "Meta Platforms (META) Soars +6.50%: Decoding the AI-Driven Rally and What's Next",
+        "date": "2026-04-08",
+        "link": "blog/2026-04-08-META.html",
+        "summary": "Meta Platforms (META) surged 6.50% to $612.42, driven by strong investor confidence in its AI strategy and robust digital advertising business. This analysis delves into the reasons behind the rally, including AI-driven ad optimization and resilient core business, while also discussing key investment considerations like Reality Labs' long-term vision, competitive landscape, and valuation, offering insights for global investors."
+    },
+    {
+        "title": "Intel's Phoenix Moment? Decoding INTC's +11% Surge and the Road Ahead",
+        "date": "2026-04-08",
+        "link": "blog/2026-04-08-INTC.html",
+        "summary": "Intel (INTC) shares surged over 11% today, closing at $58.95, reflecting renewed investor confidence in its IDM 2.0 turnaround strategy. This post details the potential catalysts for the rally, Intel's bold Foundry Services (IFS) initiatives, its push into AI, and the ongoing challenges in the competitive semiconductor market. For global investors, INTC remains a high-stakes play requiring close monitoring of execution."
+    },
+    {
         "title": "AVGO Soars: Is Broadcom the AI & Software Powerhouse Your Portfolio Needs?",
         "date": "2026-04-07",
         "link": "blog/2026-04-07-AVGO.html",
@@ -340,23 +358,5 @@
         "date": "2026-03-20",
         "link": "blog/2026-03-20-INTC.html",
         "summary": "Intel (INTC) shares dropped 5% to $43.87, raising questions for investors. This post dissects Intel's current position, its ambitious IDM 2.0 and Foundry Services strategy, and analyzes both the opportunities (AI PC, government support, diversified portfolio) and challenges (competition, execution risk, high CAPEX). While volatile, Intel's long-term potential in the growing semiconductor market hinges on flawless execution."
-    },
-    {
-        "title": "Tesla (TSLA) Navigates Volatility: Is the Latest Dip a Buying Opportunity or a Warning Sign?",
-        "date": "2026-03-19",
-        "link": "blog/2026-03-19-TSLA.html",
-        "summary": "Tesla (TSLA) experienced a dip today, reflecting broader market dynamics and investor reassessments. This post dissects TSLA's current standing, balancing its innovative vision in EVs, AI, and energy with pressing challenges like intense competition and geopolitical risks, offering insights for investors."
-    },
-    {
-        "title": "ACN Soars: Accenture's Digital Fortress in an AI-Driven World",
-        "date": "2026-03-19",
-        "link": "blog/2026-03-19-ACN.html",
-        "summary": "Accenture (ACN) is riding a strong wave of digital transformation and AI integration, as evidenced by its recent price surge. This post analyzes ACN's strategic position as a global leader in professional services, its ability to capitalize on emerging tech trends like enterprise AI, and its resilience in a dynamic market, making it a compelling consideration for long-term investors."
-    },
-    {
-        "title": "Vistra Corp. (VIST) Powers Up: Decoding Today's Surge and Future Outlook",
-        "date": "2026-03-19",
-        "link": "blog/2026-03-19-VIST.html",
-        "summary": "Vistra Corp. (VIST) saw a significant 5.08% gain, signaling renewed investor interest in its integrated power generation and retail electricity model. This post explores VIST's market position, strategic advantages in the evolving energy landscape, and key factors for investors to consider amidst its current momentum."
     }
 ]
