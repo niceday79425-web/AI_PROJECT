@@ -1,5 +1,11 @@
 [
     {
+        "title": "Amazon (AMZN) Surges: Unpacking the Cloud and E-commerce Powerhouse",
+        "date": "2026-04-09",
+        "link": "blog/2026-04-09-AMZN.html",
+        "summary": "Amazon (AMZN) stock jumped +5.60% today, driven by its robust AWS cloud computing division, which is poised to benefit significantly from the AI infrastructure boom. Improvements in e-commerce logistics and a growing advertising segment also contribute to its strong performance. While navigating broader market dynamics, AMZN presents a compelling long-term investment opportunity in digital transformation and cloud leadership."
+    },
+    {
         "title": "VIST Stock Plunges 6%: Navigating Volatility Amidst Shifting Market Narratives",
         "date": "2026-04-08",
         "link": "blog/2026-04-08-VIST.html",
@@ -352,11 +358,5 @@
         "date": "2026-03-20",
         "link": "blog/2026-03-20-ORCL.html",
         "summary": "Oracle (ORCL) shares dropped 3.76% today, prompting analysis of its cloud computing transition (OCI) and core strengths. While broader market volatility may be a factor, ORCL's consistent cloud growth, sticky customer base, and AI potential offer a strong bull case. Investors should weigh these against intense competition and growth rate concerns to decide if today's dip is a buying opportunity for this enterprise software giant."
-    },
-    {
-        "title": "Intel (INTC) Sinks 5%: Dissecting the Dip and Its Semiconductor Future",
-        "date": "2026-03-20",
-        "link": "blog/2026-03-20-INTC.html",
-        "summary": "Intel (INTC) shares dropped 5% to $43.87, raising questions for investors. This post dissects Intel's current position, its ambitious IDM 2.0 and Foundry Services strategy, and analyzes both the opportunities (AI PC, government support, diversified portfolio) and challenges (competition, execution risk, high CAPEX). While volatile, Intel's long-term potential in the growing semiconductor market hinges on flawless execution."
     }
 ]
