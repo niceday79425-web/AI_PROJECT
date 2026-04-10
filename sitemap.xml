@@ -6,7 +6,7 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/"/>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -16,7 +16,7 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/"/>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -26,7 +26,7 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/"/>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -156,7 +156,7 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/blog"/>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -166,7 +166,7 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/blog"/>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -176,7 +176,7 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/blog"/>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -269,6 +269,114 @@
     <lastmod>2026-04-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/blog/2026-04-09-AMZN</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-04-09-AMZN"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-04-09-AMZN"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-04-09-AMZN"/>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/ko/blog/2026-04-09-AMZN</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-04-09-AMZN"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-04-09-AMZN"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-04-09-AMZN"/>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/pt/blog/2026-04-09-AMZN</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-04-09-AMZN"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-04-09-AMZN"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-04-09-AMZN"/>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/blog/2026-04-08-VIST</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-04-08-VIST"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-04-08-VIST"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-04-08-VIST"/>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/ko/blog/2026-04-08-VIST</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-04-08-VIST"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-04-08-VIST"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-04-08-VIST"/>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/pt/blog/2026-04-08-VIST</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-04-08-VIST"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-04-08-VIST"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-04-08-VIST"/>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/blog/2026-04-08-META</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-04-08-META"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-04-08-META"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-04-08-META"/>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/ko/blog/2026-04-08-META</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-04-08-META"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-04-08-META"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-04-08-META"/>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/pt/blog/2026-04-08-META</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-04-08-META"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-04-08-META"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-04-08-META"/>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/blog/2026-04-08-INTC</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-04-08-INTC"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-04-08-INTC"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-04-08-INTC"/>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/ko/blog/2026-04-08-INTC</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-04-08-INTC"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-04-08-INTC"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-04-08-INTC"/>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/pt/blog/2026-04-08-INTC</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-04-08-INTC"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-04-08-INTC"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-04-08-INTC"/>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://wiseaiwiseu.com/blog/2026-04-07-AVGO</loc>
@@ -1779,114 +1887,6 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-03-20-ORCL"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-03-20-ORCL"/>
     <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wiseaiwiseu.com/blog/2026-03-20-INTC</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-03-20-INTC"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-03-20-INTC"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-03-20-INTC"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wiseaiwiseu.com/ko/blog/2026-03-20-INTC</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-03-20-INTC"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-03-20-INTC"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-03-20-INTC"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wiseaiwiseu.com/pt/blog/2026-03-20-INTC</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-03-20-INTC"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-03-20-INTC"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-03-20-INTC"/>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wiseaiwiseu.com/blog/2026-03-19-TSLA</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-03-19-TSLA"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-03-19-TSLA"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-03-19-TSLA"/>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wiseaiwiseu.com/ko/blog/2026-03-19-TSLA</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-03-19-TSLA"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-03-19-TSLA"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-03-19-TSLA"/>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wiseaiwiseu.com/pt/blog/2026-03-19-TSLA</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-03-19-TSLA"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-03-19-TSLA"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-03-19-TSLA"/>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wiseaiwiseu.com/blog/2026-03-19-ACN</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-03-19-ACN"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-03-19-ACN"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-03-19-ACN"/>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wiseaiwiseu.com/ko/blog/2026-03-19-ACN</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-03-19-ACN"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-03-19-ACN"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-03-19-ACN"/>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wiseaiwiseu.com/pt/blog/2026-03-19-ACN</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-03-19-ACN"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-03-19-ACN"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-03-19-ACN"/>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wiseaiwiseu.com/blog/2026-03-19-VIST</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-03-19-VIST"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-03-19-VIST"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-03-19-VIST"/>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wiseaiwiseu.com/ko/blog/2026-03-19-VIST</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-03-19-VIST"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-03-19-VIST"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-03-19-VIST"/>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wiseaiwiseu.com/pt/blog/2026-03-19-VIST</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-03-19-VIST"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-03-19-VIST"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-03-19-VIST"/>
-    <lastmod>2026-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
