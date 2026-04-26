@@ -10,20 +10,6 @@
     <meta name="keywords"
         content="stock compatibility, dividend stock match, investment personality, dividend investing, passive income stocks">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-        (function () {
-            const userLang = navigator.language || navigator.userLanguage;
-            const hasRedirected = sessionStorage.getItem('redirected');
-            if (!hasRedirected) {
-                sessionStorage.setItem('redirected', 'true');
-                if (userLang.startsWith('ko')) {
-                    window.location.href = '/ko' + window.location.pathname;
-                } else if (userLang.startsWith('pt')) {
-                    window.location.href = '/pt' + window.location.pathname;
-                }
-            }
-        })();
-    </script>
 
 
 
@@ -41,9 +27,9 @@
         <header>
             <a href="/" class="logo">WiseAIWiseU</a>
             <nav class="lang-selector">
-                <a href="/ko/fortune.html" class="lang-link">KO</a>
-                <a href="/fortune.html" class="lang-link active">EN</a>
-                <a href="/pt/fortune.html" class="lang-link">PT</a>
+                <a href="/ko/fortune" class="lang-link">KO</a>
+                <a href="/fortune" class="lang-link active">EN</a>
+                <a href="/pt/fortune" class="lang-link">PT</a>
             </nav>
         </header>
 
@@ -288,11 +274,11 @@
 
 
                 <div class="footer-nav" style="margin-bottom: 1.5rem; font-size: 0.9rem;">
-                    <a href="/privacy.html"
+                    <a href="/privacy"
                         style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Privacy Policy</a>
-                    | <a href="/about.html"
+                    | <a href="/about"
                         style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">About Us</a> | <a
-                        href="/contact.html"
+                        href="/contact"
                         style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Contact</a>
                 </div>
                 <p>&copy; 2026 WiseAIWiseU - Smart Dividend Investing</p>

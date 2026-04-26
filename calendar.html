@@ -6,20 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WiseAIWiseU | Payday Calendar</title>
     <link rel="stylesheet" href="css/style.css">
-    <script>
-        (function () {
-            const userLang = navigator.language || navigator.userLanguage;
-            const hasRedirected = sessionStorage.getItem('redirected');
-            if (!hasRedirected) {
-                sessionStorage.setItem('redirected', 'true');
-                if (userLang.startsWith('ko')) {
-                    window.location.href = '/ko' + window.location.pathname;
-                } else if (userLang.startsWith('pt')) {
-                    window.location.href = '/pt' + window.location.pathname;
-                }
-            }
-        })();
-    </script>
 
 
 
@@ -37,9 +23,9 @@
         <header>
             <a href="/" class="logo">WiseAIWiseU</a>
             <nav class="lang-selector">
-                <a href="/ko/calendar.html" class="lang-link">KO</a>
-                <a href="/calendar.html" class="lang-link active">EN</a>
-                <a href="/pt/calendar.html" class="lang-link">PT</a>
+                <a href="/ko/calendar" class="lang-link">KO</a>
+                <a href="/calendar" class="lang-link active">EN</a>
+                <a href="/pt/calendar" class="lang-link">PT</a>
             </nav>
         </header>
 
@@ -506,7 +492,7 @@
                                 </p>
                                 <div
                                     style="margin-top: 1.25rem; padding: 0.9rem 1.2rem; background: rgba(16,185,129,0.08); border-radius: 10px; font-size: 0.9rem; color: #10b981;">
-                                    💡 <strong>팁:</strong> <a href="/list.html"
+                                    💡 <strong>팁:</strong> <a href="/list"
                                         style="color: #10b981; font-weight: 700;">배당 스카우터</a>에서 각 그룹의 우량주를 먼저 필터링하고, 배당
                                     지급 월을 확인해 조합하세요.
                                 </div>
@@ -533,11 +519,11 @@
 
 
                 <div class="footer-nav" style="margin-bottom: 1.5rem; font-size: 0.9rem;">
-                    <a href="/privacy.html"
+                    <a href="/privacy"
                         style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Privacy Policy</a>
-                    | <a href="/about.html"
+                    | <a href="/about"
                         style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">About Us</a> | <a
-                        href="/contact.html"
+                        href="/contact"
                         style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Contact</a>
                 </div>
                 <p>&copy; 2026 WiseAIWiseU - Smart Dividend Investing</p>

@@ -11,21 +11,6 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
         crossorigin="anonymous"></script>
 
-    <script>
-        (function () {
-            const userLang = navigator.language || navigator.userLanguage;
-            const hasRedirected = sessionStorage.getItem('redirected');
-            if (!hasRedirected) {
-                sessionStorage.setItem('redirected', 'true');
-                if (userLang.startsWith('ko')) {
-                    window.location.href = '/ko' + window.location.pathname;
-                } else if (userLang.startsWith('pt')) {
-                    window.location.href = '/pt' + window.location.pathname;
-                }
-            }
-        })();
-    </script>
-
 
 
 
@@ -42,9 +27,9 @@
         <header>
             <a href="/" class="logo">WiseAIWiseU</a>
             <nav class="lang-selector">
-                <a href="/ko/blog.html" class="lang-link">KO</a>
-                <a href="/blog.html" class="lang-link active">EN</a>
-                <a href="/pt/blog.html" class="lang-link">PT</a>
+                <a href="/ko/blog" class="lang-link">KO</a>
+                <a href="/blog" class="lang-link active">EN</a>
+                <a href="/pt/blog" class="lang-link">PT</a>
             </nav>
         </header>
 
@@ -67,17 +52,68 @@
                     <div id="blogGrid" class="blog-grid"
                         style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));">
                         <!-- Technical SEO: Static links for crawlers to discover latest content (Top 10) -->
-                        <div class="static-links" style="display:none;">
+                        <div class="static-links" style="margin-bottom:1.5rem;">
+                            <p style="font-size:0.8rem;color:var(--text-secondary);margin-bottom:0.5rem;">Latest Articles:</p>
+                            <a href="/blog/yield-on-cost-explained">Yield on Cost: The Hidden Metric That Makes Long-Term Dividend Investing So Powerful</a>
+                            <a href="/blog/us-dividend-tax-guide">US Dividend Tax Guide for International Investors: Everything You Need to Know</a>
+                            <a href="/blog/reits-complete-guide">REITs Investing: The Complete Guide to Real Estate Dividends</a>
+                            <a href="/blog/portfolio-construction">How to Build a Dividend Portfolio: From $1,000 to Financial Freedom</a>
+                            <a href="/blog/monthly-dividend-stocks">Monthly Dividend Stocks: Getting Paid Every 30 Days</a>
+                            <a href="/blog/drip-strategy-deep-dive">DRIP Investing: The Complete Strategy Guide for Dividend Reinvestment</a>
+                            <a href="/blog/dividend-trap-guide">How to Avoid the Dividend Trap: A Beginner's Complete Guide</a>
+                            <a href="/blog/dividend-kings-analysis">Dividend Kings: The 50+ Year Club of Dividend Excellence</a>
+                            <a href="/blog/dividend-aristocrats-guide">Dividend Aristocrats: 25 Years of Consecutive Growth Explained</a>
+                            <a href="/blog/compound-interest-power">The Power of Compound Interest: How $10,000 Becomes $100,000</a>
                             <a href="/blog/2026-04-09-AMZN">Amazon (AMZN) Surges: Unpacking the Cloud and E-commerce Powerhouse</a>
                             <a href="/blog/2026-04-08-VIST">VIST Stock Plunges 6%: Navigating Volatility Amidst Shifting Market Narratives</a>
                             <a href="/blog/2026-04-08-META">Meta Platforms (META) Soars +6.50%: Decoding the AI-Driven Rally and What's Next</a>
                             <a href="/blog/2026-04-08-INTC">Intel's Phoenix Moment? Decoding INTC's +11% Surge and the Road Ahead</a>
-                            <a href="/blog/2026-04-07-AVGO">AVGO Soars: Is Broadcom the AI & Software Powerhouse Your Portfolio Needs?</a>
+                            <a href="/blog/2026-04-07-UNH">UnitedHealth Group (UNH) Rockets Over 9%: A Deep Dive into Healthcare's Powerhouse Amidst Market Optimism</a>
                             <a href="/blog/2026-04-07-ETH-USD">ETH-USD Breaks Out: What's Driving Ethereum's Impressive 7% Gain?</a>
-                            <a href="/blog/2026-04-07-UNH">UnitedHealth Group (UNH) Rockets Over 9%: A Deep Dive into Healthcare's Powerhouse</a>
-                            <a href="/blog/2026-04-06-GOOGL">GOOGL's AI Ascent: Why Alphabet's Strategic Chip Deals Could Drive Future Growth</a>
+                            <a href="/blog/2026-04-07-AVGO">AVGO Soars: Is Broadcom the AI &amp; Software Powerhouse Your Portfolio Needs?</a>
                             <a href="/blog/2026-04-06-MSFT">Microsoft (MSFT): Riding the AI Tsunami to New Heights – An Investor's Deep Dive</a>
-                            <a href="/blog/2026-04-06-AAPL">Apple's Next Frontier: Decoding AAPL's AI Ambitions, Services Growth, and Market Outlook</a>
+                            <a href="/blog/2026-04-06-GOOGL">GOOGL's AI Ascent: Why Alphabet's Strategic Chip Deals Could Drive Future Growth</a>
+                            <a href="/blog/2026-04-06-AAPL">Apple's Next Frontier: Decoding AAPL's AI Ambitions, Services Growth, and Market Outlook at $258.86</a>
+                            <a href="/blog/2026-04-05-MSFT">Microsoft (MSFT): A Tech Titan's Enduring Strength in the AI Era</a>
+                            <a href="/blog/2026-04-05-GOOGL">Alphabet (GOOGL): Charting the Future of AI, Search, and Cloud Dominance</a>
+                            <a href="/blog/2026-04-05-AAPL">Decoding Apple (AAPL): The Tech Giant's Enduring Investment Appeal</a>
+                            <a href="/blog/2026-04-04-MSFT">Microsoft (MSFT): Is the Tech Titan Primed to 'Get Its Act Together'?</a>
+                            <a href="/blog/2026-04-04-GOOGL">Alphabet (GOOGL): Navigating the AI Frontier – A Core Tech Investment?</a>
+                            <a href="/blog/2026-04-04-AAPL">Apple (AAPL): Beyond the iPhone - Unpacking the Tech Titan's Investment Thesis</a>
+                            <a href="/blog/2026-04-03-MSFT">Microsoft (MSFT): A Tech Behemoth Redefining the Future</a>
+                            <a href="/blog/2026-04-03-GOOGL">Alphabet (GOOGL): Navigating the AI Frontier and Beyond – A Deep Dive for Investors</a>
+                            <a href="/blog/2026-04-03-AAPL">AAPL: Navigating the Tech Giant's Future – Is Apple Still a Golden Bite?</a>
+                            <a href="/blog/2026-04-02-TSLA">Tesla's Tumultuous Day: Decoding TSLA's 5% Drop Amidst Geopolitical Jitters and AI Questions</a>
+                            <a href="/blog/2026-04-02-INTC">Intel (INTC) Roars Back: Is the Chip Giant's Turnaround Taking Hold?</a>
+                            <a href="/blog/2026-04-02-ETH-USD">Ethereum (ETH-USD) Navigates Choppy Waters: Is This Dip a Buying Opportunity?</a>
+                            <a href="/blog/2026-04-01-VIST">VIST's Volatile Day: Decoding the 8% Plunge and What It Means for Your Portfolio</a>
+                            <a href="/blog/2026-04-01-NKE">Nike's Deep Dive: Is the Swoosh Stumbling or Setting Up for a Power Play?</a>
+                            <a href="/blog/2026-04-01-INTC">Intel (INTC) Electrifies the Market: Is the Chip Giant's Turnaround Taking Hold?</a>
+                            <a href="/blog/2026-03-31-META">Meta Platforms (META) Stock Surges: Is the Momentum Sustainable?</a>
+                            <a href="/blog/2026-03-31-INTC">Intel (INTC) Powers Up: Examining the Semiconductor Behemoth's Strategic Pivot</a>
+                            <a href="/blog/2026-03-31-GEV">GEV Stock Soars 6.8%: Decoding Today's Rally and What It Means for Your Portfolio</a>
+                            <a href="/blog/2026-03-30-MSFT">Navigating the AI Wave: Why Microsoft (MSFT) Continues to Shine Brightly</a>
+                            <a href="/blog/2026-03-30-GOOGL">Alphabet (GOOGL): Decoding Innovation, Navigating Regulation, and the Road Ahead</a>
+                            <a href="/blog/2026-03-30-AAPL">AAPL: Beyond the $246.63 Mark – Navigating Apple's Future Amidst Innovation &amp; Regulatory Headwinds</a>
+                            <a href="/blog/2026-03-29-MSFT">Decoding Microsoft (MSFT): AI, Cloud, and Enduring Investment Value</a>
+                            <a href="/blog/2026-03-29-GOOGL">Alphabet (GOOGL): A Beacon of Innovation and Value in a Shifting Market Landscape</a>
+                            <a href="/blog/2026-03-29-AAPL">AAPL: Navigating Market Choppiness with a Tech Titan – Is Apple Still a Golden Bite?</a>
+                            <a href="/blog/2026-03-28-MSFT">Microsoft (MSFT): Why This Tech Titan Remains a Cornerstone Investment</a>
+                            <a href="/blog/2026-03-28-GOOGL">Unpacking Alphabet (GOOGL)'s AI-Driven Future: Opportunity Amidst Innovation</a>
+                            <a href="/blog/2026-03-28-AAPL">Apple (AAPL): Beyond the iPhone – Navigating Growth, AI, and Shareholder Value</a>
+                            <a href="/blog/2026-03-27-META">META Stock Analysis: Navigating the Latest Volatility and Long-Term Potential</a>
+                            <a href="/blog/2026-03-27-BTC-USD">Bitcoin's Latest Dip: Navigating Volatility and Institutional Undercurrents</a>
+                            <a href="/blog/2026-03-27-ABNB">Is Airbnb's Pullback a Buying Opportunity? ABNB Stock Analysis</a>
+                            <a href="/blog/2026-03-26-META">Meta Platforms (META) Takes a Dive: Opportunity or Red Flag?</a>
+                            <a href="/blog/2026-03-26-INTC">Intel (INTC) Under Pressure: Navigating the Semiconductor Giant's Latest Dip</a>
+                            <a href="/blog/2026-03-26-AMD">AMD's Tumultuous Day: A Deep Dive into the Semiconductor Giant's Future Amidst Market Jitters</a>
+                            <a href="/blog/2026-03-25-MRK">Decoding Merck (MRK): Is This Pharma Giant Your Portfolio's Next Anchor?</a>
+                            <a href="/blog/2026-03-25-INTC">Intel (INTC) Surges 7%: Is the Chip Giant Finally Primed for a Comeback?</a>
+                            <a href="/blog/2026-03-25-AMD">AMD's Ascent: Why This Chipmaker's Surge is More Than Just a Daily Spike</a>
+                            <a href="/blog/2026-03-24-VIST">VIST Soars: Unpacking Vista Outdoor's Market Momentum and What's Next</a>
+                            <a href="/blog/2026-03-24-HD">Home Depot (HD): Building Enduring Value in the Shifting Home Improvement Landscape</a>
+                            <a href="/blog/2026-03-24-CRM">Salesforce's Slide: Is CRM a Buy After Its Recent Pullback?</a>
+                            <a href="/blog/2026-03-23-MSFT">Microsoft (MSFT) at $383: Decoding the Tech Giant's Enduring Appeal Amidst Market Rally</a>
                         </div>
                         <!-- All posts listed here -->
                     </div>
@@ -118,11 +154,11 @@
 
 
                 <div class="footer-nav" style="margin-bottom: 1.5rem; font-size: 0.9rem;">
-                    <a href="/privacy.html"
+                    <a href="/privacy"
                         style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Privacy Policy</a>
-                    | <a href="/about.html"
+                    | <a href="/about"
                         style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">About Us</a> | <a
-                        href="/contact.html"
+                        href="/contact"
                         style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Contact</a>
                 </div>
                 <div class="legal-disclaimer">

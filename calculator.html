@@ -11,20 +11,6 @@
         content="compound interest calculator, dividend calculator, DRIP calculator, snowball effect, passive income calculator, dividend growth investing">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        (function () {
-            const userLang = navigator.language || navigator.userLanguage;
-            const hasRedirected = sessionStorage.getItem('redirected');
-            if (!hasRedirected) {
-                sessionStorage.setItem('redirected', 'true');
-                if (userLang.startsWith('ko')) {
-                    window.location.href = '/ko' + window.location.pathname;
-                } else if (userLang.startsWith('pt')) {
-                    window.location.href = '/pt' + window.location.pathname;
-                }
-            }
-        })();
-    </script>
 
 
 
@@ -42,9 +28,9 @@
         <header>
             <a href="/" class="logo">WiseAIWiseU</a>
             <nav class="lang-selector">
-                <a href="/ko/calculator.html" class="lang-link">KO</a>
-                <a href="/calculator.html" class="lang-link active">EN</a>
-                <a href="/pt/calculator.html" class="lang-link">PT</a>
+                <a href="/ko/calculator" class="lang-link">KO</a>
+                <a href="/calculator" class="lang-link active">EN</a>
+                <a href="/pt/calculator" class="lang-link">PT</a>
             </nav>
         </header>
 
@@ -380,7 +366,7 @@
                     <strong style="color:#fff;">Important note:</strong> This calculator provides hypothetical
                     projections based on constant input values. Real-world returns vary due to market volatility,
                     dividend cuts, changes in payout ratios, inflation, and currency fluctuations. Always consult a
-                    licensed financial advisor before making investment decisions. Explore our <a href="list.html"
+                    licensed financial advisor before making investment decisions. Explore our <a href="list"
                         style="color:#3b82f6;">Dividend Scouter</a> to find stocks that match your target yield and
                     growth profile.
                 </p>
@@ -401,11 +387,11 @@
 
 
                 <div class="footer-nav" style="margin-bottom: 1.5rem; font-size: 0.9rem;">
-                    <a href="/privacy.html"
+                    <a href="/privacy"
                         style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Privacy Policy</a>
-                    | <a href="/about.html"
+                    | <a href="/about"
                         style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">About Us</a> | <a
-                        href="/contact.html"
+                        href="/contact"
                         style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Contact</a>
                 </div>
                 <p>&copy; 2026 WiseAIWiseU - Smart Dividend Investing</p>
