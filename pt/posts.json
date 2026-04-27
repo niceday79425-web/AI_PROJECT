@@ -1,242 +1,362 @@
 [
-    {
-        "title": "Alphabet (GOOGL): Superando Adversidades com IA, Nuvem e Domínio Digital Inigualável",
-        "date": "2026-04-26",
-        "link": "blog/2026-04-26-GOOGL.html",
-        "summary": "A Alphabet (GOOGL) se destaca como um investimento resiliente em meio à volatilidade do mercado, impulsionada por seu dominante negócio de publicidade digital (Google Search, YouTube), o rápido crescimento do Google Cloud e uma profunda liderança na inovação em IA. Apesar das incertezas econômicas mais amplas e das pressões competitivas em IA, as fontes de receita diversificadas da GOOGL, um balanço sólido e o compromisso de longo prazo com P&D a posicionam como uma opção atraente para manter a longo prazo. Sua capacidade de liderar discussões de resultados e integrar IA avançada em todo o seu ecossistema a torna uma pedra angular para portfólios à prova de futuro."
-    },
-    {
-        "title": "Além das Manchetes: Desvendando as Ambições de IA da Microsoft (MSFT) em Meio a Tensões Legais",
-        "date": "2026-04-26",
-        "link": "blog/2026-04-26-MSFT.html",
-        "summary": "A Microsoft (MSFT) é uma gigante de tecnologia diversificada com uma forte aposta em IA através de sua parceria com a OpenAI. Embora um processo recente contra a OpenAI coloque essa estratégia sob escrutínio, os robustos serviços de nuvem Azure, Office 365 e as divisões de jogos da Microsoft proporcionam significativa resiliência. Apesar dos ventos contrários do mercado mais amplo, as forças centrais e o posicionamento de longo prazo da MSFT a tornam um investimento atraente para o crescimento duradouro, encorajando os investidores a olhar além das manchetes imediatas."
-    },
-    {
-        "title": "Apple (AAPL): Navegando Ganhos, IA e Correntes Cruzadas Globais – Uma Análise Crítica do Futuro",
-        "date": "2026-04-26",
-        "link": "blog/2026-04-26-AAPL.html",
-        "summary": "Com a temporada de resultados aquecendo, a Apple (AAPL) encontra-se em um ponto crucial. Esta postagem explora os principais impulsionadores e desafios que influenciam os próximos passos da AAPL, desde os resultados trimestrais antecipados e sua estratégia de IA em evolução até o impacto das tensões geopolíticas. Analisamos o que os investidores devem observar enquanto a gigante da tecnologia busca inovar e sustentar o crescimento em um cenário global complexo."
-    },
-    {
-        "title": "Amazon (AMZN) Dispara: Desvendando a Força da Nuvem e do E-commerce",
-        "date": "2026-04-09",
-        "link": "blog/2026-04-09-AMZN.html",
-        "summary": "As ações da Amazon (AMZN) subiram +5.60% hoje, impulsionadas por sua robusta divisão de computação em nuvem AWS, que está posicionada para se beneficiar significativamente do boom da infraestrutura de IA. Melhorias na logística de e-commerce e um segmento de publicidade em crescimento também contribuem para seu forte desempenho. Embora navegando pela dinâmica do mercado mais amplo, a AMZN apresenta uma oportunidade de investimento atraente de longo prazo em transformação digital e liderança em nuvem."
-    },
-    {
-        "title": "Ações da VIST Despencam 6%: Navegando a Volatilidade em Meio a Narrativas de Mercado em Mutação",
-        "date": "2026-04-08",
-        "link": "blog/2026-04-08-VIST.html",
-        "summary": "A VIST experimentou uma queda significativa de -6.46%, para US$ 65.60, hoje, levantando questões entre os investidores. Este post analisa os potenciais impulsionadores por trás da liquidação, incluindo o sentimento de mercado mais amplo em relação às avaliações de tecnologia e notícias recentes da indústria, oferecendo insights tanto para traders de curto prazo quanto para investidores de longo prazo."
-    },
-    {
-        "title": "Meta Platforms (META) Dispara +6,50%: Decifrando o Rally Impulsionado pela IA e O Que Vem Por Aí",
-        "date": "2026-04-08",
-        "link": "blog/2026-04-08-META.html",
-        "summary": "A Meta Platforms (META) disparou 6,50% para US$ 612,42, impulsionada pela forte confiança dos investidores em sua estratégia de IA e no robusto negócio de publicidade digital. Esta análise aprofunda as razões por trás do rally, incluindo a otimização de anúncios impulsionada por IA e a resiliência do negócio principal, ao mesmo tempo em que discute as principais considerações de investimento, como a visão de longo prazo da Reality Labs, o cenário competitivo e a avaliação, oferecendo insights para investidores globais."
-    },
-    {
-        "title": "O Momento Fênix da Intel? Decifrando o Salto de +11% da INTC e o Caminho a Seguir",
-        "date": "2026-04-08",
-        "link": "blog/2026-04-08-INTC.html",
-        "summary": "As ações da Intel (INTC) subiram mais de 11% hoje, fechando em $58,95, refletindo a confiança renovada dos investidores em sua estratégia de recuperação IDM 2.0. Este post detalha os potenciais catalisadores para o rali, as ousadas iniciativas de Foundry Services (IFS) da Intel, seu impulso na IA e os desafios contínuos no competitivo mercado de semicondutores. Para investidores globais, a INTC continua sendo uma aposta de alto risco que exige monitoramento rigoroso da execução."
-    },
-    {
-        "title": "AVGO Dispara: A Broadcom é a Potência de IA e Software que Seu Portfólio Precisa?",
-        "date": "2026-04-07",
-        "link": "blog/2026-04-07-AVGO.html",
-        "summary": "A Broadcom (AVGO) disparou mais de 6% hoje, impulsionada pela robusta demanda por IA e pela diminuição das tensões geopolíticas. Esta análise aprofunda o império diversificado de semicondutores e software empresarial da AVGO, sua posição estratégica no boom da IA e por que continua sendo um investimento de longo prazo atraente."
-    },
-    {
-        "title": "ETH-USD Desponta: O Que Está Impulsionando o Ganho Impressionante de 7% do Ethereum?",
-        "date": "2026-04-07",
-        "link": "blog/2026-04-07-ETH-USD.html",
-        "summary": "O Ethereum (ETH-USD) disparou mais de 6,98% para US$ 2254,89, beneficiando-se de uma mudança mais ampla de \"risco positivo\" no mercado, alimentada pela desescalada das tensões geopolíticas e pela renovada confiança dos investidores. Este post do blog explora a confluência de fatores que impulsionam o rali do ETH, examinando suas robustas forças fundamentais, avanços tecnológicos contínuos e o sentimento de mercado em evolução. Fornecemos insights de investimento, destacando tanto as oportunidades quanto os riscos inerentes na navegação do caminho futuro do Ethereum na economia digital."
-    },
-    {
-        "title": "UnitedHealth Group (UNH) Dispara Mais de 9%: Uma Análise Aprofundada da Potência da Saúde em Meio ao Otimismo do Mercado",
-        "date": "2026-04-07",
-        "link": "blog/2026-04-07-UNH.html",
-        "summary": "O UnitedHealth Group (UNH) subiu mais de 9% hoje, fechando a US$ 307,73, impulsionado em grande parte pelo otimismo mais amplo do mercado após a desescalada das tensões geopolíticas. A postagem do blog destaca os pontos fortes intrínsecos da UNH, incluindo seus segmentos de negócios diversificados (UnitedHealthcare e Optum), liderança de mercado, desempenho financeiro consistente e resiliência dentro do setor de saúde. Também aborda considerações importantes de investimento, como riscos regulatórios e aumento dos custos de saúde, concluindo que a UNH continua sendo uma gigante da saúde poderosa e estrategicamente posicionada para investidores de longo prazo."
-    },
-    {
-        "title": "A Ascensão da IA da GOOGL: Por Que os Acordos Estratégicos de Chips da Alphabet Podem Impulsionar o Crescimento Futuro",
-        "date": "2026-04-06",
-        "link": "blog/2026-04-06-GOOGL.html",
-        "summary": "A Alphabet (GOOGL) está fazendo movimentos agressivos no hardware de IA, em parceria com a Broadcom para chips personalizados. Esta postagem analisa como essas alianças estratégicas posicionam o Google para um crescimento sustentado na era competitiva da IA, oferecendo insights cruciais para investidores."
-    },
-    {
-        "title": "Microsoft (MSFT): Surfando o Tsunami da IA para Novas Alturas – Um Mergulho Profundo para o Investidor",
-        "date": "2026-04-06",
-        "link": "blog/2026-04-06-MSFT.html",
-        "summary": "Explore por que a Microsoft (MSFT) continua sendo um investimento fundamental, impulsionada por sua liderança incomparável em IA, computação em nuvem (Azure) e um ecossistema robusto e diversificado. Analisamos a posição estratégica da MSFT em meio ao atual boom tecnológico, oferecendo insights essenciais para investidores globais."
-    },
-    {
-        "title": "A Próxima Fronteira da Apple: Decifrando as Ambições de IA, Crescimento de Serviços e Perspectivas de Mercado da AAPL a $258.86",
-        "date": "2026-04-06",
-        "link": "blog/2026-04-06-AAPL.html",
-        "summary": "Este post analisa as ações da Apple (AAPL) a $258.86, focando em seu papel central no cenário da IA em meio à concorrência acirrada, o crescimento robusto de seu segmento de Serviços e a força duradoura de seu ecossistema. Avaliamos as implicações de investimento, considerando os movimentos estratégicos da Apple em silício e software para valor de longo prazo para os acionistas."
-    },
-    {
-        "title": "Alphabet (GOOGL): Traçando o Futuro da IA, Busca e Domínio da Nuvem",
-        "date": "2026-04-05",
-        "link": "blog/2026-04-05-GOOGL.html",
-        "summary": "Uma análise aprofundada da posição da Alphabet (GOOGL) como gigante da tecnologia, explorando seus pontos fortes centrais em busca, nuvem e IA. Esta postagem fornece insights de investimento sobre seus impulsionadores de crescimento, desafios potenciais e trajetória futura, oferecendo uma perspectiva profissional para investidores globais."
-    },
-    {
-        "title": "Microsoft (MSFT): A Força Duradoura de um Titã da Tecnologia na Era da IA",
-        "date": "2026-04-05",
-        "link": "blog/2026-04-05-MSFT.html",
-        "summary": "A Microsoft (MSFT) se destaca como um gigante tecnológico formidável, aproveitando sua posição dominante em computação em nuvem (Azure), iniciativas inovadoras de IA (integração OpenAI) e software empresarial indispensável. Embora não haja dados de preços em tempo real específicos para esta análise, os fluxos de receita diversificados da MSFT, fortes vantagens competitivas e investimentos estratégicos em impulsionadores de crescimento futuros como IA e nuvem a tornam uma âncora atraente de longo prazo para portfólios de investidores, mesmo em meio a incertezas mais amplas do mercado. Os principais riscos incluem escrutínio regulatório e intensa concorrência."
-    },
-    {
-        "title": "Decifrando a Apple (AAPL): O Apelo de Investimento Duradouro da Gigante da Tecnologia",
-        "date": "2026-04-05",
-        "link": "blog/2026-04-05-AAPL.html",
-        "summary": "Esta postagem de blog analisa a Apple (AAPL) como um investimento, destacando seu ecossistema robusto, o crescimento de seu segmento de Serviços de alta margem e os esforços de inovação contínuos, como Vision Pro e IA. Também aborda riscos potenciais, como escrutínio regulatório e desafios na cadeia de suprimentos. A postagem conclui que a AAPL continua sendo um ativo atraente e de alta qualidade para investidores de longo prazo, enfatizando a importância de sua marca premium e força financeira."
-    },
-    {
-        "title": "Alphabet (GOOGL): Navegando a Fronteira da IA – Um Investimento Tecnológico Essencial?",
-        "date": "2026-04-04",
-        "link": "blog/2026-04-04-GOOGL.html",
-        "summary": "A Alphabet (GOOGL) continua sendo uma força tecnológica dominante, ancorada por seu império de publicidade resiliente (Google Search, YouTube) e pelo Google Cloud em rápida ascensão. A empresa está na vanguarda da revolução da IA com inovações como o Gemini, integrando profundamente a IA em seu vasto ecossistema de produtos. Apesar de enfrentar desafios regulatórios e intensa concorrência, o forte balanço da Alphabet e seu foco implacável na inovação a posicionam como um investimento atraente de longo prazo."
-    },
-    {
-        "title": "Microsoft (MSFT): A Gigante da Tecnologia Está Preparada para 'Entrar nos Eixos'?",
-        "date": "2026-04-04",
-        "link": "blog/2026-04-04-MSFT.html",
-        "summary": "Exploramos a posição robusta da Microsoft (MSFT) em nuvem, IA e software, avaliando seu apelo de investimento em meio a comentários recentes do mercado. O apelo de Jim Cramer para que a Microsoft 'entre nos eixos' impulsiona uma análise das oportunidades e desafios estratégicos da gigante da tecnologia, destacando seu potencial para execução renovada e crescimento a longo prazo, apesar da cautela geral do mercado."
-    },
-    {
-        "title": "Apple (AAPL): Além do iPhone - Desvendando a Tese de Investimento da Gigante da Tecnologia",
-        "date": "2026-04-04",
-        "link": "blog/2026-04-04-AAPL.html",
-        "summary": "Uma análise aprofundada da Apple (AAPL), avaliando suas forças duradouras, impulsionadores de crescimento e possíveis ventos contrários em meio a mudanças mais amplas do mercado. Exploramos por que esta gigante da tecnologia permanece uma consideração crucial para investidores globais."
-    },
-    {
-        "title": "Alphabet (GOOGL): Navegando na Fronteira da IA e Além – Uma Análise Aprofundada para Investidores",
-        "date": "2026-04-03",
-        "link": "blog/2026-04-03-GOOGL.html",
-        "summary": "Explore o multifacetado caso de investimento da Alphabet (GOOGL), desde seu motor de busca dominante até suas crescentes ambições de IA e sua presença crescente na nuvem. Esta análise aprofunda os principais pontos fortes, impulsionadores de crescimento e desafios do Google, oferecendo insights para investidores de longo prazo no cenário tecnológico em evolução."
-    },
-    {
-        "title": "Microsoft (MSFT): Um Gigante da Tecnologia Redefinindo o Futuro",
-        "date": "2026-04-03",
-        "link": "blog/2026-04-03-MSFT.html",
-        "summary": "A Microsoft (MSFT) se destaca como um titã da tecnologia, demonstrando força duradoura por meio de sua plataforma de nuvem Azure dominante, iniciativas pioneiras de IA como o Copilot e um robusto conjunto de produtividade (Office 365). Suas diversas fontes de receita e inovação estratégica em tecnologias de ponta a posicionam como um investimento atraente para crescimento e estabilidade a longo prazo em meio à evolução dos mercados globais."
-    },
-    {
-        "title": "AAPL: Navegando o Futuro da Gigante da Tecnologia – A Apple Ainda é uma Mordida de Ouro?",
-        "date": "2026-04-03",
-        "link": "blog/2026-04-03-AAPL.html",
-        "summary": "Esta análise oferece uma visão geral abrangente da Apple (AAPL) para investidores globais. Aprofunda-se nos pontos fortes da empresa, incluindo seu robusto crescimento de serviços, lealdade inigualável à marca e forte posição financeira. A postagem explora os principais impulsionadores futuros, como o Vision Pro e a iminente estratégia de IA generativa da Apple, ao mesmo tempo em que destaca desafios importantes, como o crescente escrutínio regulatório e fatores geopolíticos. Oferece uma tese de investimento equilibrada, enfatizando a mistura de estabilidade e potencial de crescimento futuro da Apple, particularmente contingente à sua inovação em IA."
-    },
-    {
-        "title": "Ethereum (ETH-USD) Navega em Águas Turbulentas: Esta Queda é uma Oportunidade de Compra?",
-        "date": "2026-04-02",
-        "link": "blog/2026-04-02-ETH-USD.html",
-        "summary": "O Ethereum (ETH-USD) caiu 3,65% para $2060,59 em meio a preocupações mais amplas do mercado, como o aumento dos preços do petróleo, temores de inflação e nervosismo pré-feriado. Esta postagem analisa como os ventos contrários macroeconômicos impactam ativos de risco como o ETH, enquanto destaca os pontos fortes intrínsecos do Ethereum em DeFi, NFTs e sua evolução tecnológica contínua. Oferece insights para investidores sobre se as condições atuais apresentam uma oportunidade de compra estratégica ou exigem cautela para a altcoin líder."
-    },
-    {
-        "title": "Intel (INTC) Reage Forte: A Reviravolta da Gigante dos Chips Está Ganhando Força?",
-        "date": "2026-04-02",
-        "link": "blog/2026-04-02-INTC.html",
-        "summary": "A Intel (INTC) registrou um forte aumento de 4,89%, atingindo US$ 50,38, sinalizando um renovado interesse dos investidores. Esta análise aprofunda a ambiciosa estratégia IDM 2.0 da Intel, seu impulso nos serviços de fundição (IFS) e seu papel fundamental no mercado de hardware de IA, além das oportunidades de mercado e riscos inerentes para os investidores."
-    },
-    {
-        "title": "O Dia Tumultuado da Tesla: Decifrando a Queda de 5% da TSLA em Meio a Tensões Geopolíticas e Questões de IA",
-        "date": "2026-04-02",
-        "link": "blog/2026-04-02-TSLA.html",
-        "summary": "A Tesla (TSLA) experimentou uma queda notável hoje, despencando mais de 5% enquanto ansiedades mais amplas do mercado e a alta dos preços do petróleo criavam um cenário complexo. Esta postagem disseca os impulsionadores imediatos, os desafios de longo prazo como avaliação e o ROI da IA, e o caso de alta duradouro para a gigante dos veículos elétricos, oferecendo insights para investidores globais."
-    },
-    {
-        "title": "O Dia Volátil da VIST: Decifrando a Queda de 8% e o Que Significa Para a Sua Carteira",
-        "date": "2026-04-01",
-        "link": "blog/2026-04-01-VIST.html",
-        "summary": "A VIST sofreu uma queda acentuada de 8,41% hoje, fechando em US$ 69,12, apesar dos ralis mais amplos do mercado. Este post analisa potenciais catalisadores para a queda significativa, incluindo realização de lucros e pressões setoriais, e oferece considerações-chave para investidores que navegam pela volatilidade do mercado."
-    },
-    {
-        "title": "Intel (INTC) Eletriza o Mercado: A Reviravolta da Gigante dos Chips Está Finalmente Acontecendo?",
-        "date": "2026-04-01",
-        "link": "blog/2026-04-01-INTC.html",
-        "summary": "As ações da Intel (INTC) dispararam impressionantes 8,84% hoje, fechando a $48.03, acendendo um renovado otimismo sobre a ambiciosa estratégia de recuperação IDM 2.0 da gigante dos semicondutores. Este post explora os potenciais impulsionadores por trás do salto, incluindo o otimismo mais amplo do mercado e o aumento da confiança dos investidores na visão do CEO Pat Gelsinger para recuperar a liderança em processos e expandir os Intel Foundry Services. Analisamos a posição da Intel na era competitiva da IA, destacamos tanto as oportunidades significativas quanto os formidáveis obstáculos, e discutimos o que os investidores devem observar a seguir para este investimento complexo de longo prazo."
-    },
-    {
-        "title": "O Mergulho da Nike: O Swoosh Está Tropeçando ou Preparando um Golpe de Mestre?",
-        "date": "2026-04-01",
-        "link": "blog/2026-04-01-NKE.html",
-        "summary": "As ações da Nike (NKE) sofreram uma queda significativa de mais de 15%, levando os investidores a questionar se a marca icônica está perdendo seu ritmo ou apresentando uma oportunidade atraente de longo prazo. Esta análise explora os desafios atuais, as forças duradouras da Nike e os principais fatores que os investidores devem monitorar em meio à volatilidade do mercado."
-    },
-    {
-        "title": "Ações da Meta Platforms (META) Disparam: O Impulso é Sustentável?",
-        "date": "2026-03-31",
-        "link": "blog/2026-03-31-META.html",
-        "summary": "A Meta Platforms (META) registrou um salto significativo de +6,67% hoje, atingindo US$ 572,13. Esta postagem aborda os catalisadores que impulsionam sua impressionante recuperação, desde o robusto crescimento da receita de anúncios e ganhos de eficiência até seu ambicioso roteiro de IA. Exploraremos o equilíbrio entre a força de seu negócio principal, os investimentos de longo prazo no metaverso e os riscos potenciais, oferecendo insights para investidores que avaliam a trajetória futura da META."
-    },
-    {
-        "title": "Ações da GEV Disparam 6,8%: Decifrando o Rally de Hoje e o Que Isso Significa para Sua Carteira",
-        "date": "2026-03-31",
-        "link": "blog/2026-03-31-GEV.html",
-        "summary": "As ações da GEV subiram impressionantes 6,80% para US$ 872,90 hoje, atraindo significativa atenção dos investidores em meio a um mercado mais amplo misto. Embora nenhuma notícia específica tenha impulsionado diretamente o rally, fatores potenciais incluem força setorial, negociação antecipatória, sentimento de analistas ou cobertura de posições vendidas. Esta análise explora as implicações para investidores atuais e potenciais, enfatizando a importância da devida diligência e da compreensão dos fatores subjacentes além das flutuações diárias."
-    },
-    {
-        "title": "Intel (INTC) Ganha Força: Examinando a Virada Estratégica da Gigante dos Semicondutores",
-        "date": "2026-03-31",
-        "link": "blog/2026-03-31-INTC.html",
-        "summary": "A Intel (INTC) subiu mais de 7% hoje, sinalizando um renovado interesse dos investidores na ambiciosa estratégia de virada IDM 2.0 da gigante dos semicondutores. Esta postagem aprofunda os esforços da Intel para recuperar a liderança na fabricação, expandir seus serviços de fundição e competir nos crescentes mercados de IA e data center. Exploramos os cenários otimista e pessimista, destacando o imenso potencial se a execução for impecável, mas também os significativos riscos competitivos e de despesas de capital envolvidos em sua transformação."
-    },
-    {
-        "title": "Alphabet (GOOGL): Decodificando a Inovação, Navegando pela Regulamentação e o Caminho a Seguir",
-        "date": "2026-03-30",
-        "link": "blog/2026-03-30-GOOGL.html",
-        "summary": "A Alphabet (GOOGL) é negociada a US$ 273,50, posicionada entre a inovação implacável, exemplificada por seus avanços de memória e liderança em IA, e o crescente escrutínio regulatório global, como visto nas investigações da Austrália. O negócio principal robusto da empresa e os motores de crescimento diversificados oferecem um forte potencial de longo prazo, mas os investidores devem ponderar isso contra os riscos persistentes de batalhas legais e as crescentes demandas de conformidade. A GOOGL apresenta uma oportunidade complexa, mas atraente, para aqueles que buscam exposição a uma gigante líder da tecnologia."
-    },
-    {
-        "title": "Navegando na Onda da IA: Por que a Microsoft (MSFT) Continua a Brilhar Intensamente",
-        "date": "2026-03-30",
-        "link": "blog/2026-03-30-MSFT.html",
-        "summary": "A Microsoft (MSFT) se destaca como uma gigante tecnológica resiliente e inovadora, atualmente cotada a US$ 358,96. Sua liderança estratégica em IA, especialmente através do Copilot e da integração com a OpenAI, combinada com o crescimento robusto dos serviços de nuvem Azure e seu ecossistema abrangente, a posiciona fortemente para o crescimento futuro. Embora enfrente intensa concorrência e crescente escrutínio regulatório, o portfólio diversificado da MSFT e seu compromisso com a inovação a tornam um investimento de longo prazo atraente no cenário tecnológico em evolução."
-    },
-    {
-        "title": "AAPL: Além da Marca de US$ 246,63 – Navegando o Futuro da Apple em Meio à Inovação e Ventos Regulatórios Contrários",
-        "date": "2026-03-30",
-        "link": "blog/2026-03-30-AAPL.html",
-        "summary": "Uma análise aprofundada das ações da Apple (AAPL) a US$ 246,63, analisando seu robusto ecossistema, impulsionadores de crescimento como IA e serviços, e as crescentes pressões regulatórias de governos globais, oferecendo uma perspectiva de investimento equilibrada para investidores internacionais."
-    },
-    {
-        "title": "Alphabet (GOOGL): Um Farol de Inovação e Valor em um Cenário de Mercado em Transformação",
-        "date": "2026-03-29",
-        "link": "blog/2026-03-29-GOOGL.html",
-        "summary": "Descubra por que a Alphabet (GOOGL) continua sendo um investimento atraente, aproveitando seu mecanismo de busca dominante, serviços de nuvem em ascensão e avanços de IA de ponta para prosperar em meio às incertezas do mercado."
-    },
-    {
-        "title": "Decodificando a Microsoft (MSFT): IA, Nuvem e Valor de Investimento Duradouro",
-        "date": "2026-03-29",
-        "link": "blog/2026-03-29-MSFT.html",
-        "summary": "A Microsoft (MSFT) se mantém como um titã tecnológico resiliente, impulsionada por sua dominante plataforma de nuvem Azure e liderança pioneira em IA com o Copilot. Apesar da volatilidade mais ampla do mercado, suas fontes de receita diversificadas do Office 365 e Xbox proporcionam estabilidade. Esta análise destaca a força fundamental duradoura da MSFT, a inovação estratégica e a posição como uma ação de crescimento de qualidade para investidores de longo prazo em meio a paisagens tecnológicas em evolução."
-    },
-    {
-        "title": "AAPL: Navegando pela Turbulência do Mercado com um Gigante da Tecnologia – A Apple Ainda é uma Mordida de Ouro?",
-        "date": "2026-03-29",
-        "link": "blog/2026-03-29-AAPL.html",
-        "summary": "Este post analisa as ações da Apple (AAPL) para um público global, focando em suas forças duradouras como seu ecossistema, o crescente segmento de serviços e o pipeline de inovação em meio à atual volatilidade do mercado. Também aborda desafios como avaliação, ventos macroeconômicas e escrutínio regulatório. O artigo sugere que, embora o mercado mais amplo enfrente incertezas, ativos de qualidade como a Apple podem apresentar oportunidades de longo prazo durante as quedas do mercado, reforçando seu status como um investimento atraente, apesar das flutuações de curto prazo."
-    },
-    {
-        "title": "Desvendando o Futuro Impulsionado por IA da Alphabet (GOOGL): Oportunidade em Meio à Inovação",
-        "date": "2026-03-28",
-        "link": "blog/2026-03-28-GOOGL.html",
-        "summary": "A Alphabet (GOOGL) continua sendo uma força dominante no cenário tecnológico, especialmente com seus avanços agressivos em Inteligência Artificial. Esta análise aprofunda como a liderança em IA do Google, o robusto negócio de nuvem e os investimentos estratégicos a posicionam para um crescimento significativo de longo prazo, apesar das complexidades contínuas do mercado e do escrutínio regulatório."
-    },
-    {
-        "title": "Microsoft (MSFT): Por Que Este Titã da Tecnologia Permanece um Investimento Essencial",
-        "date": "2026-03-28",
-        "link": "blog/2026-03-28-MSFT.html",
-        "summary": "A Microsoft (MSFT) permanece um investimento fundamental devido à sua liderança em IA, ao crescimento robusto de sua plataforma de nuvem Azure e a um portfólio diversificado que abrange software de produtividade e jogos. A forte saúde financeira da empresa e seus investimentos estratégicos a posicionam para crescimento contínuo a longo prazo e criação de valor para os acionistas, tornando-a uma escolha atraente para investidores."
-    },
-    {
-        "title": "Apple (AAPL): Além do iPhone – Navegando no Crescimento, IA e Valor para o Acionista",
-        "date": "2026-03-28",
-        "link": "blog/2026-03-28-AAPL.html",
-        "summary": "Uma análise aprofundada da tese de investimento da Apple (AAPL), explorando seu ecossistema robusto, o crescimento acelerado de seus serviços e sua posição estratégica em meio aos avanços da IA e às dinâmicas de mercado em evolução. Analisamos sua saúde financeira e potencial de longo prazo para investidores globais, destacando sua marca inabalável, fluxos de receita recorrentes e estratégia de alocação de capital favorável aos acionistas em meio a desafios macro e oportunidades futuras."
-    }
+  {
+    "date": "2026-04-26",
+    "title": "Apple (AAPL): Navegando Ganhos, IA e Correntes Cruzadas Globais – Uma Análise Crítica do Futuro",
+    "link": "blog/2026-04-26-AAPL.html",
+    "summary": "Com a temporada de resultados aquecendo, a Apple (AAPL) encontra-se em um ponto crucial. Esta postagem explora os principais impulsionadores e desafio"
+  },
+  {
+    "date": "2026-04-26",
+    "title": "Alphabet (GOOGL): Superando Adversidades com IA, Nuvem e Domínio Digital Inigualável",
+    "link": "blog/2026-04-26-GOOGL.html",
+    "summary": "A Alphabet (GOOGL) se destaca como um investimento resiliente em meio à volatilidade do mercado, impulsionada por seu dominante negócio de publicidade"
+  },
+  {
+    "date": "2026-04-26",
+    "title": "Além das Manchetes: Desvendando as Ambições de IA da Microsoft (MSFT) em Meio a Tensões Legais",
+    "link": "blog/2026-04-26-MSFT.html",
+    "summary": "A Microsoft (MSFT) é uma gigante de tecnologia diversificada com uma forte aposta em IA através de sua parceria com a OpenAI. Embora um processo recen"
+  },
+  {
+    "date": "2026-04-25",
+    "title": "Apple (AAPL): Navegando nas Ondas Tecnológicas – Uma Análise Aprofundada para Investidores",
+    "link": "blog/2026-04-25-AAPL.html",
+    "summary": "Este post analisa a Apple (AAPL) para investidores globais, destacando seu ecossistema duradouro, crescimento de serviços e inovação como principais p"
+  },
+  {
+    "date": "2026-04-25",
+    "title": "Alphabet (GOOGL): Decifrando o Pilar Duradouro do Gigante da Tecnologia em um Mercado em Mutação",
+    "link": "blog/2026-04-25-GOOGL.html",
+    "summary": "Este post analisa a sólida posição de mercado da Alphabet (GOOGL), dissecando seu domínio central em publicidade, a diversificação estratégica em IA e"
+  },
+  {
+    "date": "2026-04-25",
+    "title": "Microsoft (MSFT): Por Que Este Gigante da Tecnologia Continua a Impulsionar o Crescimento do Portfólio",
+    "link": "blog/2026-04-25-MSFT.html",
+    "summary": "Explore por que a Microsoft (MSFT) continua sendo um investimento fundamental no cenário tecnológico em evolução. Aprofundamos sua robusta infraestrut"
+  },
+  {
+    "date": "2026-04-24",
+    "title": "A Ascensão Estelar da AMD: Decifrando o Salto de 13% e o Que Significa para Investidores",
+    "link": "blog/2026-04-24-AMD.html",
+    "summary": "Advanced Micro Devices (AMD) viu o preço de suas ações disparar mais de 13% hoje, atingindo US$ 347,81. Esta postagem do blog aprofunda os potenciais"
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Comcast (CMCSA) Despenca Mais de 12%: Caça a Barganhas ou Sino de Alerta?",
+    "link": "blog/2026-04-24-CMCSA.html",
+    "summary": "As ações da Comcast (CMCSA) despencaram mais de 12% para US$ 27,56 hoje, levantando questões sobre se é uma oportunidade de compra ou um sinal de aler"
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Intel Desencadeada: O que está impulsionando o Rally Explosivo de 23% da INTC no Mercado?",
+    "link": "blog/2026-04-24-INTC.html",
+    "summary": "As ações da Intel (INTC) dispararam mais de 23% hoje, desafiando o sentimento geral do mercado. Este post dissecou os prováveis catalisadores por trás"
+  },
+  {
+    "date": "2026-04-23",
+    "title": "Salesforce (CRM) Despenca 8,7%: É Um Soluço Ou Uma Oportunidade de Compra?",
+    "link": "blog/2026-04-23-CRM.html",
+    "summary": "As ações da Salesforce (CRM) caíram 8,69% para $173,30 em meio à fraqueza mais ampla do mercado e a relatórios de lucros mistos, embora nenhuma notíci"
+  },
+  {
+    "date": "2026-04-23",
+    "title": "Queda da Thermo Fisher Scientific (TMO): Decifrando a Baixa de 9% e o que Isso Significa para Seu Portfólio",
+    "link": "blog/2026-04-23-TMO.html",
+    "summary": "A Thermo Fisher Scientific (TMO) sofreu uma queda significativa de aproximadamente 9% hoje, levando seu preço para US$ 466,70. Esta análise aprofundad"
+  },
+  {
+    "date": "2026-04-23",
+    "title": "Texas Instruments (TXN) Dispara: Decifrando o Rali Impressionante de 19% da Gigante dos Semicondutores!",
+    "link": "blog/2026-04-23-TXN.html",
+    "summary": "As ações da Texas Instruments (TXN) dispararam impressionantes 19.43% hoje, atingindo $282.23. Este rali significativo, provavelmente impulsionado por"
+  },
+  {
+    "date": "2026-04-22",
+    "title": "AMD Dispara: A Gigante dos Chips Está Preparada para o Domínio da IA ou para uma Correção de Mercado?",
+    "link": "blog/2026-04-22-AMD.html",
+    "summary": "A AMD disparou mais de 6% hoje, impulsionada por um forte sentimento de mercado e seu papel crucial na revolução da IA e dos data centers. Este post a"
+  },
+  {
+    "date": "2026-04-22",
+    "title": "Danaher (DHR) Sofre Queda: Gigante MedTech em Promoção ou Sinal de Alerta?",
+    "link": "blog/2026-04-22-DHR.html",
+    "summary": "A Danaher (DHR) sofreu uma queda de aproximadamente 5,4% hoje, contrastando fortemente com os recordes do mercado mais amplo. Esta postagem examina o"
+  },
+  {
+    "date": "2026-04-21",
+    "title": "A Ascensão da AMD: Cavalgando a Onda da IA e Preparada para Maiores Ganhos?",
+    "link": "blog/2026-04-21-AMD.html",
+    "summary": "A AMD fechou em alta de 3,47% a $284,49, impulsionada pela forte confiança dos investidores em seus aceleradores de IA (série MI300X) projetados para"
+  },
+  {
+    "date": "2026-04-21",
+    "title": "Decifrando a Recente Queda da Merck (MRK): Oportunidade ou Sinal de Alerta para Investidores?",
+    "link": "blog/2026-04-21-MRK.html",
+    "summary": "A Merck (MRK) experimentou uma queda intradiária de quase 4%, levando os investidores a reavaliar sua posição. Esta análise aprofunda as formidáveis f"
+  },
+  {
+    "date": "2026-04-21",
+    "title": "UnitedHealth Group (UNH) Dispara: Decifrando o Apelo de Investimento da Gigante da Saúde Após um Salto de Quase 7%",
+    "link": "blog/2026-04-21-UNH.html",
+    "summary": "O UnitedHealth Group (UNH) registrou um salto significativo de 6,96%, atingindo $346,01, atraindo a atenção dos investidores. Esta publicação aprofund"
+  },
+  {
+    "date": "2026-04-20",
+    "title": "Apple (AAPL): Navegando Especulações de CEO e Ventos Contrários do Mercado a $273.05 – O Que Vem Por Aí?",
+    "link": "blog/2026-04-20-AAPL.html",
+    "summary": "Esta publicação analisa a Apple (AAPL) a $273.05, focando no impacto de mercado da especulação sobre a mudança de CEO e nas tendências mais amplas do"
+  },
+  {
+    "date": "2026-04-20",
+    "title": "A Próxima Fronteira do Google: Decifrando as Ambições de IA do GOOGL em Meio a Mudanças de Mercado",
+    "link": "blog/2026-04-20-GOOGL.html",
+    "summary": "A Alphabet (GOOGL) está em uma conjuntura crítica, equilibrando sua formidável liderança em IA e um crescente segmento de nuvem contra uma concorrênci"
+  },
+  {
+    "date": "2026-04-20",
+    "title": "Microsoft (MSFT): Ascensão da IA Encontra Ventos Contrário do Mercado – Uma Análise Profunda para Investidores",
+    "link": "blog/2026-04-20-MSFT.html",
+    "summary": "A Microsoft (MSFT) é uma ação de tecnologia líder, atualmente em torno de $418.07, demonstrando forte liderança em IA através do Azure e Copilot. Seu"
+  },
+  {
+    "date": "2026-04-19",
+    "title": "A Renascença da Apple na China: Decodificando o Aumento do iPhone e Seu Impacto na História de Crescimento da AAPL",
+    "link": "blog/2026-04-19-AAPL.html",
+    "summary": "A Apple (AAPL) viu recentemente um aumento significativo nas vendas de iPhone na China, um mercado crítico. Embora positivo para a receita, isso levan"
+  },
+  {
+    "date": "2026-04-19",
+    "title": "A Vantagem Duradoura da GOOGL: Decifrando a Resiliência de Investimento da Alphabet em um Mercado Dinâmico",
+    "link": "blog/2026-04-19-GOOGL.html",
+    "summary": "A Alphabet (GOOGL) continua sendo uma potência na economia digital, impulsionada por sua publicidade de pesquisa dominante, a enorme plataforma YouTub"
+  },
+  {
+    "date": "2026-04-19",
+    "title": "O Impulso Imparável da Microsoft: Por Que a MSFT Permanece Uma Força Fundamental no Portfólio",
+    "link": "blog/2026-04-19-MSFT.html",
+    "summary": "A Microsoft (MSFT) se destaca como um farol de estabilidade e inovação, impulsionada por sua dominante plataforma de nuvem Azure, iniciativas pioneira"
+  },
+  {
+    "date": "2026-04-18",
+    "title": "A Apple (AAPL) Ainda é um Investimento Essencial? Decifrando o Apelo Duradouro da Gigante da Tecnologia",
+    "link": "blog/2026-04-18-AAPL.html",
+    "summary": "Este post analisa por que a Apple (AAPL) continua sendo um ativo fundamental para portfólios diversificados. Ele destaca o ecossistema robusto da Appl"
+  },
+  {
+    "date": "2026-04-18",
+    "title": "Além do Hype: Por Que a Alphabet (GOOGL) É Seu Investimento Essencial em IA em um Mercado em Mudança",
+    "link": "blog/2026-04-18-GOOGL.html",
+    "summary": "A Alphabet (GOOGL) é apresentada como um investimento fundamental em IA em meio à especulação do mercado. Destaca a liderança da GOOGL em IA generativ"
+  },
+  {
+    "date": "2026-04-18",
+    "title": "Microsoft (MSFT): Seu Investimento Fundamental em um Mercado Volátil",
+    "link": "blog/2026-04-18-MSFT.html",
+    "summary": "A Microsoft (MSFT) se destaca como um investimento fundamental em meio à volatilidade do mercado, oferecendo estabilidade e crescimento. Sua liderança"
+  },
+  {
+    "date": "2026-04-17",
+    "title": "O Projeto para Retornos: Analisando a Home Depot (HD) Enquanto Wall Street Atinge Novos Máximos",
+    "link": "blog/2026-04-17-HD.html",
+    "summary": "As ações da Home Depot (HD) subiram 3,63% para US$ 349,40 em meio a recordes históricos nos índices de Wall Street. Esta análise explora o modelo de n"
+  },
+  {
+    "date": "2026-04-17",
+    "title": "Netflix (NFLX): A Segunda Jornada do Rei do Streaming é um Investimento Real?",
+    "link": "blog/2026-04-17-NFLX.html",
+    "summary": "A Netflix (NFLX) tem navegado com maestria pelas mudanças de mercado e pela intensa competição, transformando seu modelo de negócios com níveis de ass"
+  },
+  {
+    "date": "2026-04-17",
+    "title": "ExxonMobil (XOM) em Queda: Analisando a Baixa de 3,65% de Hoje e Suas Implicações para o Investimento",
+    "link": "blog/2026-04-17-XOM.html",
+    "summary": "A ExxonMobil (XOM) registrou um declínio de 3,65% para US$ 146,44 hoje, impulsionado principalmente pela queda nos preços do petróleo após a notícia d"
+  },
+  {
+    "date": "2026-04-16",
+    "title": "Abbott Laboratories (ABT): Esta Recente Queda é uma Oportunidade de Ouro para Investidores de Longo Prazo?",
+    "link": "blog/2026-04-16-ABT.html",
+    "summary": "Abbott Laboratories (ABT) recentemente experimentou uma notável queda de 6% no preço de suas ações. Este post explora o robusto portfólio diversificad"
+  },
+  {
+    "date": "2026-04-16",
+    "title": "A Ruptura Explosiva da AMD: Será Apenas o Começo para a Gigante dos Semicondutores?",
+    "link": "blog/2026-04-16-AMD.html",
+    "summary": "A Advanced Micro Devices (AMD) acaba de registrar um impressionante aumento de +7,80%, rompendo em meio a um rali de mercado mais amplo. Esta postagem"
+  },
+  {
+    "date": "2026-04-16",
+    "title": "A Recuperação da Intel: A INTC pode sustentar sua ascensão e recuperar a liderança em semicondutores?",
+    "link": "blog/2026-04-16-INTC.html",
+    "summary": "A Intel (INTC) saltou 5,48% para $68,50 hoje, sinalizando uma renovada confiança dos investidores em meio a um rali tecnológico mais amplo. O artigo e"
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Broadcom (AVGO) Dispara: Por Que Este Gigante da Tecnologia É Um Item Essencial Para Investidores Globais",
+    "link": "blog/2026-04-15-AVGO.html",
+    "summary": "Broadcom (AVGO) subiu 4,19% para US$ 396,72, demonstrando forte confiança dos investidores apesar das tendências mistas do mercado. A força da empresa"
+  },
+  {
+    "date": "2026-04-15",
+    "title": "MSFT Dispara: Decifrando a Força Duradoura da Microsoft em um Mundo Impulsionado pela IA",
+    "link": "blog/2026-04-15-MSFT.html",
+    "summary": "A Microsoft (MSFT) continua sua impressionante trajetória, alavancando sua liderança em IA, computação em nuvem (Azure) e um ecossistema diversificado"
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Ações da Tesla (TSLA) Disparam Mais de 7%: O Que Está Impulsionando o Momento?",
+    "link": "blog/2026-04-15-TSLA.html",
+    "summary": "As ações da Tesla (TSLA) dispararam mais de 7% hoje, atingindo $391.95, desafiando um mercado mais amplo misto. Esta postagem explora potenciais catal"
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Amazon (AMZN) Dispara: Dominância na Nuvem e Inovação em IA Impulsionam um Novo Pico?",
+    "link": "blog/2026-04-14-AMZN.html",
+    "summary": "A Amazon (AMZN) teve um salto significativo (+3,81%) hoje, impulsionado pelo desempenho robusto da AWS, investimentos estratégicos em IA e operações r"
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Meta Platforms (META) Dispara: Ambições de IA Assumem o Palco Principal com Acordo Broadcom",
+    "link": "blog/2026-04-14-META.html",
+    "summary": "As ações da Meta Platforms subiram mais de 4% hoje, impulsionadas pela notícia de um acordo estendido de chips personalizados com a Broadcom, sublinha"
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Oracle (ORCL) Dispara: O Impulso da Nuvem e a Inovação em IA Estão Abastecendo Sua Próxima Ascensão?",
+    "link": "blog/2026-04-14-ORCL.html",
+    "summary": "A Oracle (ORCL) subiu +4.74% hoje, sinalizando forte confiança dos investidores. Esta postagem do blog explora os principais impulsionadores por trás"
+  },
+  {
+    "date": "2026-04-13",
+    "title": "AAPL a US$ 259,20: Decifrando o Apelo Duradouro e a Trajetória Futura da Apple",
+    "link": "blog/2026-04-13-AAPL.html",
+    "summary": "Uma análise aprofundada do caso de investimento da Apple (AAPL) em sua avaliação atual de US$ 259,20, explorando seu robusto ecossistema, o crescente"
+  },
+  {
+    "date": "2026-04-13",
+    "title": "Alphabet (GOOGL): Decodificando o Futuro do Domínio Digital",
+    "link": "blog/2026-04-13-GOOGL.html",
+    "summary": "A Alphabet (GOOGL) se destaca como um gigante digital a US$ 321,31, impulsionando a inovação em pesquisa, publicidade, computação em nuvem e IA. Esta"
+  },
+  {
+    "date": "2026-04-13",
+    "title": "Decifrando o Domínio da Microsoft: Por Que a Ação MSFT Continua a Brilhar Forte",
+    "link": "blog/2026-04-13-MSFT.html",
+    "summary": "A Microsoft (MSFT) permanece uma potência de investimento em tecnologia, impulsionada por sua liderança inigualável em IA através da OpenAI e Copilot,"
+  },
+  {
+    "date": "2026-04-12",
+    "title": "Navegando na Tempestade: A Apple (AAPL) Continua Sendo um Farol de Estabilidade em Meio à Turbulência Global?",
+    "link": "blog/2026-04-12-AAPL.html",
+    "summary": "Em um mercado que lida com tensões geopolíticas, aumento dos preços do petróleo e um dólar em fortalecimento, a Apple (AAPL) enfrenta ventos contrário"
+  },
+  {
+    "date": "2026-04-12",
+    "title": "Alphabet (GOOGL): Navegando na Fronteira da IA, Correntes Regulatórias e Marés Geopolíticas",
+    "link": "blog/2026-04-12-GOOGL.html",
+    "summary": "A Alphabet (GOOGL) encontra-se em um ponto crucial, equilibrando suas posições dominantes no mercado de busca e publicidade com a intensa concorrência"
+  },
+  {
+    "date": "2026-04-12",
+    "title": "Microsoft (MSFT): Navegando Desafios Globais com IA em seu Núcleo",
+    "link": "blog/2026-04-12-MSFT.html",
+    "summary": "Em um mercado volátil marcado por tensões geopolíticas e cenários econômicos em mudança, a Microsoft (MSFT) se destaca como um investimento robusto. E"
+  },
+  {
+    "date": "2026-04-11",
+    "title": "AAPL: Navegando o Futuro da Tecnologia – IA, Serviços e o Apelo Duradouro do Investimento",
+    "link": "blog/2026-04-11-AAPL.html",
+    "summary": "A Apple Inc. (AAPL) encontra-se em um ponto crucial, integrando estrategicamente a IA e avançando sua visão de computação espacial com o Vision Pro. E"
+  },
+  {
+    "date": "2026-04-11",
+    "title": "Decifrando a Alphabet (GOOGL): Por que a Aposta em IA Desta Gigante da Tecnologia Pode Definir o Futuro do Seu Portfólio",
+    "link": "blog/2026-04-11-GOOGL.html",
+    "summary": "A Alphabet (GOOGL) permanece uma força dominante no mundo da tecnologia, alavancando seu vasto ecossistema e investimentos agressivos em IA para impul"
+  },
+  {
+    "date": "2026-04-11",
+    "title": "Decodificando o Império de IA e Nuvem da Microsoft: Por que a MSFT Permanece um Investimento Essencial",
+    "link": "blog/2026-04-11-MSFT.html",
+    "summary": "Explore por que a Microsoft (MSFT) continua sendo um player fundamental no cenário global de tecnologia, impulsionada por sua liderança incomparável e"
+  },
+  {
+    "date": "2026-04-10",
+    "title": "A Ascensão da IA da AMD: Decodificando o Salto de Hoje e a Trajetória de Amanhã",
+    "link": "blog/2026-04-10-AMD.html",
+    "summary": "A Advanced Micro Devices (AMD) está causando ondas significativas, impulsionada por sua forte posição no crescente mercado de chips de IA. Este post a"
+  },
+  {
+    "date": "2026-04-10",
+    "title": "Broadcom (AVGO) Dispara: Esta Gigante de Semicondutores e Software Está Preparada para o Crescimento a Longo Prazo?",
+    "link": "blog/2026-04-10-AVGO.html",
+    "summary": "Broadcom (AVGO) subiu +4,69% para $371,55, impulsionada por sua dupla força em semicondutores e software empresarial. A empresa se beneficia significa"
+  },
+  {
+    "date": "2026-04-10",
+    "title": "Verizon (VZ) Cai: Desvendando o Último Movimento da Gigante de Telecomunicações e o Que Significa Para Seu Portfólio",
+    "link": "blog/2026-04-10-VZ.html",
+    "summary": "A Verizon (VZ) registrou uma queda de 3,64% nas ações hoje, levando os investidores a reavaliar sua posição. Esta análise explora o cenário competitiv"
+  },
+  {
+    "date": "2026-04-09",
+    "title": "AMZN — Market Analysis 2026-04-09",
+    "link": "blog/2026-04-09-AMZN.html",
+    "summary": "As ações da Amazon (AMZN) subiram +5.60% hoje, impulsionadas por sua robusta div"
+  },
+  {
+    "date": "2026-04-08",
+    "title": "INTC — Market Analysis 2026-04-08",
+    "link": "blog/2026-04-08-INTC.html",
+    "summary": "As ações da Intel (INTC) subiram mais de 11% hoje, fechando em $58,95, refletind"
+  },
+  {
+    "date": "2026-04-08",
+    "title": "META — Market Analysis 2026-04-08",
+    "link": "blog/2026-04-08-META.html",
+    "summary": "A Meta Platforms (META) disparou 6,50% para US$ 612,42, impulsionada pela forte"
+  },
+  {
+    "date": "2026-04-08",
+    "title": "VIST — Market Analysis 2026-04-08",
+    "link": "blog/2026-04-08-VIST.html",
+    "summary": "A VIST experimentou uma queda significativa de -6.46%, para US$ 65.60, hoje, lev"
+  },
+  {
+    "date": "2026-04-07",
+    "title": "AVGO — Market Analysis 2026-04-07",
+    "link": "blog/2026-04-07-AVGO.html",
+    "summary": "A Broadcom (AVGO) disparou mais de 6% hoje, impulsionada pela robusta demanda po"
+  },
+  {
+    "date": "2026-04-07",
+    "title": "ETH-USD — Market Analysis 2026-04-07",
+    "link": "blog/2026-04-07-ETH-USD.html",
+    "summary": "O Ethereum (ETH-USD) disparou mais de 6,98% para US$ 2254,89, beneficiando-se de"
+  },
+  {
+    "date": "2026-04-07",
+    "title": "UNH — Market Analysis 2026-04-07",
+    "link": "blog/2026-04-07-UNH.html",
+    "summary": "O UnitedHealth Group (UNH) subiu mais de 9% hoje, fechando a US$ 307,73, impulsi"
+  },
+  {
+    "date": "2026-04-06",
+    "title": "AAPL — Market Analysis 2026-04-06",
+    "link": "blog/2026-04-06-AAPL.html",
+    "summary": "Este post analisa as ações da Apple (AAPL) a $258.86, focando em seu papel centr"
+  },
+  {
+    "date": "2026-04-06",
+    "title": "GOOGL — Market Analysis 2026-04-06",
+    "link": "blog/2026-04-06-GOOGL.html",
+    "summary": "A Alphabet (GOOGL) está fazendo movimentos agressivos no hardware de IA, em parc"
+  },
+  {
+    "date": "2026-04-06",
+    "title": "MSFT — Market Analysis 2026-04-06",
+    "link": "blog/2026-04-06-MSFT.html",
+    "summary": "Explore por que a Microsoft (MSFT) continua sendo um investimento fundamental, i"
+  }
 ]
