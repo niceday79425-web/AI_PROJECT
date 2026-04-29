@@ -1,5 +1,6 @@
 import google.generativeai as genai
 import os
+import re
 import datetime
 import time
 import json
@@ -41,37 +42,79 @@ RSS_URLS = [
     "https://www.investing.com/rss/news_25.rss"
 ]
 
-def get_top_volatile_tickers(tickers, count=3):
-    """Select stocks with highest volatility (absolute returns) over the last 5 days"""
-    print("[*] Volatility Hunter activated...")
-    volatility_data = []
-    
-    # Fetch all data at once (performance optimization)
-    data = yf.download(tickers, period="5d", interval="1d", group_by='ticker', progress=False)
-    
-    for ticker in tickers:
-        try:
-            ticker_data = data[ticker] if len(tickers) > 1 else data
-            if len(ticker_data) < 2: continue
-            
-            # Compare last close with previous close
-            last_close = ticker_data['Close'].iloc[-1]
-            prev_close = ticker_data['Close'].iloc[-2]
-            
-            change = (last_close - prev_close) / prev_close
-            abs_change = abs(change)
-            
-            volatility_data.append({
-                "ticker": ticker,
-                "change": change * 100,
-                "abs_change": abs_change * 100,
-                "price": last_close
-            })
-        except:
+COOLDOWN_DAYS = 7  # A ticker won't be re-posted within this many days
+
+def get_recently_posted_tickers(cooldown_days=COOLDOWN_DAYS):
+    """Read posts.json files and return set of tickers posted within cooldown_days."""
+    cutoff = datetime.datetime.now() - datetime.timedelta(days=cooldown_days)
+    recent = set()
+    for posts_path in ["posts.json", "ko/posts.json", "pt/posts.json"]:
+        if not os.path.exists(posts_path):
             continue
-    
-    # Sort by volatility
+        try:
+            with open(posts_path, "r", encoding="utf-8") as f:
+                posts = json.load(f)
+            for p in posts:
+                try:
+                    post_date = datetime.datetime.strptime(p.get("date", ""), "%Y-%m-%d")
+                except ValueError:
+                    continue
+                if post_date >= cutoff:
+                    fname = os.path.basename(p.get("link", ""))
+                    if re.match(r'\d{4}-\d{2}-\d{2}-', fname):
+                        ticker = os.path.splitext(fname)[0].split("-", 3)[-1]
+                        recent.add(ticker)
+        except Exception:
+            continue
+    return recent
+
+def get_top_volatile_tickers(tickers, count=3):
+    """Select highest-volatility tickers, skipping those posted recently (cooldown)."""
+    print("[*] Volatility Hunter activated...")
+
+    # --- Cooldown filter ---
+    recently_posted = get_recently_posted_tickers(COOLDOWN_DAYS)
+    if recently_posted:
+        print(f"  [skip] On cooldown ({COOLDOWN_DAYS}d): {', '.join(sorted(recently_posted))}")
+
+    eligible = [t for t in tickers if t not in recently_posted]
+
+    # Relax to 3 days if too few candidates
+    if len(eligible) < count:
+        print(f"  [warn] Only {len(eligible)} candidates — relaxing cooldown to 3 days")
+        recently_posted = get_recently_posted_tickers(cooldown_days=3)
+        eligible = [t for t in tickers if t not in recently_posted]
+
+    # Last resort: ignore cooldown entirely
+    if len(eligible) < count:
+        print("  [warn] Still too few — using full ticker pool")
+        eligible = list(tickers)
+
+    # --- Fetch & score volatility ---
+    data = yf.download(eligible, period="5d", interval="1d", group_by='ticker', progress=False)
+
+    volatility_data = []
+    for ticker in eligible:
+        try:
+            ticker_data = data[ticker] if len(eligible) > 1 else data
+            if len(ticker_data) < 2:
+                continue
+            last_close = float(ticker_data['Close'].iloc[-1])
+            prev_close = float(ticker_data['Close'].iloc[-2])
+            if prev_close == 0:
+                continue
+            change = (last_close - prev_close) / prev_close
+            volatility_data.append({
+                "ticker":     ticker,
+                "change":     change * 100,
+                "abs_change": abs(change) * 100,
+                "price":      last_close,
+            })
+        except Exception:
+            continue
+
     top_volatile = sorted(volatility_data, key=lambda x: x['abs_change'], reverse=True)[:count]
+    print(f"  [picked] {', '.join(s['ticker'] for s in top_volatile)}")
     return top_volatile
 
 def get_quickchart_url(ticker):
