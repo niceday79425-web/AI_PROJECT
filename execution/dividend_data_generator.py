@@ -43,10 +43,19 @@ def get_dividend_growth_years(ticker: str) -> int:
         annual = divs.groupby(divs.index.year).sum()
         if len(annual) < 2:
             return 0
+        
         years = sorted(annual.index, reverse=True)
         streak = 0
-        for i in range(len(years) - 1):
-            if annual[years[i]] > annual[years[i + 1]] * 0.98:  # 2% tolerance
+        
+        # If the most recent year is the current incomplete year and its sum is smaller than last year,
+        # we start counting from the previous year.
+        current_year = datetime.datetime.now().year
+        start_idx = 0
+        if years[0] == current_year and annual[years[0]] <= annual[years[1]] * 1.02:
+            start_idx = 1
+            
+        for i in range(start_idx, len(years) - 1):
+            if annual[years[i]] >= annual[years[i + 1]] * 0.98:  # Allow 2% rounding tolerance
                 streak += 1
             else:
                 break
