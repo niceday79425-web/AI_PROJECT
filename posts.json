@@ -1,5 +1,23 @@
 [
     {
+        "title": "Decoding Alphabet: Why GOOGL's AI Edge and Market Dominance Make It a Must-Watch Tech Titan",
+        "date": "2026-04-29",
+        "link": "blog/2026-04-29-GOOGL.html",
+        "summary": "Alphabet Inc. (GOOGL) stands as a pivotal tech titan, navigating a macro storm and intense AI competition. This analysis explores GOOGL's robust core businesses – Search, YouTube, and Google Cloud – alongside its pioneering AI efforts with Gemini and DeepMind. Despite potential short-term volatility from upcoming 'Mag 7' earnings, GOOGL's diversified revenue and formidable innovation engine position it as a compelling long-term investment in the evolving digital landscape."
+    },
+    {
+        "title": "Microsoft (MSFT): The Unstoppable Titan Redefining the Future of Tech",
+        "date": "2026-04-29",
+        "link": "blog/2026-04-29-MSFT.html",
+        "summary": "An in-depth analysis of Microsoft (MSFT), exploring its pivotal role in the AI revolution through OpenAI, the enduring strength of Azure's cloud dominance, and its strategic positioning as a core holding for long-term investors. We examine how MSFT continues to innovate and dominate key technology sectors amidst broader market dynamics, including upcoming earnings for 'Titans on Tap'."
+    },
+    {
+        "title": "Apple (AAPL): Navigating the Tech Tides Ahead of Key Earnings",
+        "date": "2026-04-29",
+        "link": "blog/2026-04-29-AAPL.html",
+        "summary": "Apple (AAPL) faces a crucial period as Q1 earnings approach, amidst evolving tech market dynamics and upcoming Fed decisions. Despite its resilient ecosystem and strong brand loyalty, investors will scrutinize iPhone performance, Services growth, gross margins, and China market commentary in the upcoming report. Long-term, Apple's AI strategy and the Vision Pro's impact will be key. The earnings call is vital for understanding AAPL's trajectory and whether its valuation aligns with its growth prospects."
+    },
+    {
         "title": "Alphabet (GOOGL) Stock: Navigating the AI Frontier and Digital Ad Dominance",
         "date": "2026-04-27",
         "link": "blog/2026-04-27-GOOGL.html",
@@ -340,23 +358,5 @@
         "title": "VIST — Market Analysis 2026-04-08",
         "link": "blog/2026-04-08-VIST.html",
         "summary": "VIST experienced a significant -6.46% drop to $65.60 today, sparking investor qu"
-    },
-    {
-        "date": "2026-04-07",
-        "title": "AVGO — Market Analysis 2026-04-07",
-        "link": "blog/2026-04-07-AVGO.html",
-        "summary": "Broadcom (AVGO) surged over 6% today, fueled by robust AI demand and easing geop"
-    },
-    {
-        "date": "2026-04-07",
-        "title": "ETH-USD — Market Analysis 2026-04-07",
-        "link": "blog/2026-04-07-ETH-USD.html",
-        "summary": "Ethereum (ETH-USD) has surged over 6.98% to $2254.89, benefiting from a broader"
-    },
-    {
-        "date": "2026-04-07",
-        "title": "UNH — Market Analysis 2026-04-07",
-        "link": "blog/2026-04-07-UNH.html",
-        "summary": "UnitedHealth Group (UNH) surged over 9% today, closing at $307.73, largely drive"
     }
 ]
