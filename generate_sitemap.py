@@ -155,6 +155,10 @@ def generate_sitemap():
     
     # Fix a bug where minidom might add extra empty lines
     pretty_xml = "\n".join([line for line in pretty_xml.splitlines() if line.strip()])
+    
+    # Ensure standard XML declaration
+    if pretty_xml.startswith('<?xml version="1.0" ?>'):
+        pretty_xml = pretty_xml.replace('<?xml version="1.0" ?>', '<?xml version="1.0" encoding="UTF-8"?>', 1)
 
     with open("sitemap.xml", "w", encoding='utf-8') as f:
         f.write(pretty_xml)
