@@ -210,11 +210,21 @@ def generate_multi_lang_content(stock_info, news_text):
     }}
 
     Requirements:
+    - Minimum 1000 words per language (quality over quantity)
     - Use semantic HTML (h2, p, ul, li, strong, em)
     - Include [CHART-HERE] placeholder where the stock chart should appear
-    - Make English content professional and data-driven
-    - Ensure translations maintain the same tone and information
-    - Focus on investment insights, market trends, and actionable analysis
+    - REQUIRED SECTIONS (use <h2> for each):
+      1. Executive Summary (3-sentence overview with current price data)
+      2. Recent Performance & Key Events (with specific numbers/percentages)
+      3. Technical Analysis (support/resistance levels, RSI, momentum)
+      4. Dividend Investor Perspective (dividend history, payout ratio, sustainability)
+      5. Risk Factors (minimum 3 specific risks with explanation)
+      6. Conclusion & Investor Action Points
+      7. FAQ (3 Q&A pairs relevant to this stock)
+    - Make English content professional and data-driven with specific numbers
+    - Ensure translations are natural, not just word-for-word
+    - Focus on actionable insights that help investors make informed decisions
+    - Add internal links: mention Dividend Scouter at /list and Calculator at /calculator
     """
 
     try:
@@ -229,23 +239,11 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
     """Build premium HTML for a daily blog post."""
     change_color = "#10b981" if "+" in ticker else "#ef4444"
 
-    ad_header = '''<div class="ad-slot" style="margin:1.5rem auto;max-width:860px;">
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-        data-ad-slot="XXXXXXXXXX" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-    </div>'''
+    ad_header = ''''''
 
-    ad_mid = '''<div class="ad-in-article" style="margin:2rem 0;text-align:center;">
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-        data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-    </div>'''
+    ad_mid = ''''''
 
-    ad_footer = '''<div class="ad-slot" style="margin:2rem auto;max-width:860px;">
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-        data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-    </div>'''
+    ad_footer = ''''''
 
     disclaimer_texts = {
         "en": ("<strong>All information is for educational purposes only and does not constitute investment advice.</strong><br>"
@@ -279,8 +277,7 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
   <link rel="stylesheet" href="{css_path}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  <!-- Google AdSense: pending approval -->
   <style>
     /* ── Reading Progress Bar ── */
     #progress-bar {{
@@ -382,6 +379,17 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
     <main class="post-content">
       <a href="{blog_path}" class="back-btn">{back_label}</a>
 
+      <!-- Author Box -->
+      <div style="display:flex;align-items:center;gap:1rem;background:#f8f9fb;border:1px solid #e5e7eb;border-radius:12px;padding:1rem 1.2rem;margin-bottom:2rem;">
+        <div style="width:48px;height:48px;background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <span style="color:#fff;font-weight:700;font-size:1.1rem;">W</span>
+        </div>
+        <div>
+          <strong style="display:block;color:#1e1b4b;font-size:0.95rem;">WiseAIWiseU Research Team</strong>
+          <span style="font-size:0.8rem;color:#6b7280;">Data-driven dividend &amp; market analysis | Published: {today} | Educational purposes only</span>
+        </div>
+      </div>
+
       {article_body}
 
       <div class="disclaimer">
@@ -443,11 +451,7 @@ def save_and_index_multi(contents, ticker, chart_url):
             article_body = chart_tag + content
 
         # Mid-article ad insertion
-        ad_mid = '''<div class="ad-in-article" style="margin:2rem 0;text-align:center;">
-          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-            data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
-          <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-        </div>'''
+        ad_mid = ''''''
         if "</p>" in article_body:
             p_tags   = article_body.split("</p>")
             mid      = len(p_tags) // 2
@@ -557,8 +561,8 @@ def cleanup_old_posts(keep_days=30):
 
 def main():
     print("=== Volatility Hunter v2.0 ===")
-    cleanup_old_posts()  # Remove posts older than 30 days first
-    top_stocks = get_top_volatile_tickers(TICKERS, 3)
+    # cleanup_old_posts() DISABLED - posts are kept permanently for SEO
+    top_stocks = get_top_volatile_tickers(TICKERS, 1)  # 1 per day for quality
     news = get_latest_news()
     
     for stock in top_stocks:
