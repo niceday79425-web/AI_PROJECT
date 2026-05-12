@@ -1,0 +1,43 @@
+name: Generate Education Series (One-time)
+
+on:
+  workflow_dispatch:  # 수동 실행만
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install google-generativeai python-dotenv
+
+      - name: Generate education series
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python execution/create_edu_series.py
+
+      - name: Update blog static HTML & sitemap
+        run: |
+          python execution/update_blog_static.py
+          python generate_sitemap.py
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add ko/blog/ ko/posts.json sitemap.xml blog.html ko/blog.html pt/blog.html
+          git diff --quiet && git diff --staged --quiet || git commit -m "Add: Korean education series 30 posts [배당주 초보자/월별/섹터별]"
+          git pull --rebase origin main
+          git push
