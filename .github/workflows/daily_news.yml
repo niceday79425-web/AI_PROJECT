@@ -30,6 +30,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python execution/auto_poster.py
+          python execution/create_edu_series.py
           python execution/update_blog_static.py
           python generate_sitemap.py
 

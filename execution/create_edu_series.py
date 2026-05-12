@@ -3,14 +3,13 @@
 - 배당주 초보자 가이드 10편
 - 월별 배당주 포트폴리오 12편
 - 섹터별 배당주 분석 8편
+auto_poster.py의 Gemini 설정을 재사용
 """
-import google.generativeai as genai
-import os, time, json
-from dotenv import load_dotenv
+import sys, os, time, json
 
-load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-model = genai.GenerativeModel('gemini-2.5-flash')
+# auto_poster.py가 있는 execution 폴더를 경로에 추가
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from auto_poster import model  # 기존 Gemini API 설정 재사용
 
 ROOT = r"d:\AI_PROJECT"
 KO_BLOG_DIR = os.path.join(ROOT, "ko", "blog")
