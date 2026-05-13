@@ -1,13 +1,9 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Power of Compound Interest: How $10,</title>
-    <meta name="description" content="The Power of Compound Interest: How $10,000 Becomes $100,000 — Expert dividend i">
-    <meta name="keywords" content="compound interest, dividend growth, DRIP, snowball effect, passive income">
-    <link rel="stylesheet" href="css/style.css">
-      <style>
+import os, glob, re
+
+ROOT = r"d:\AI_PROJECT"
+
+# 새로운 다크 테마 공통 CSS (모든 블로그 포스트 적용)
+NEW_STYLE = """  <style>
     /* ── Reading Progress Bar ── */
     #progress-bar {
       position: fixed; top: 0; left: 0; height: 3px; width: 0%;
@@ -104,64 +100,30 @@
     .series-nav ul { list-style:none;padding:0;margin:0; }
     .series-nav li { padding:0.3rem 0;font-size:0.9rem; }
     .series-nav a { color:#a78bfa;text-decoration:none; }
-  </style>
-    <link rel="canonical" href="https://wiseaiwiseu.com/blog/compound-interest-power" />
-    <link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/compound-interest-power" />
-    <link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/blog/compound-interest-power" />
-    <meta property="og:title" content="The Power of Compound Interest: How $10,">
-    <meta property="og:description" content="The Power of Compound Interest: How $10,000 Becomes $100,000 — Expert dividend i">
-    <meta property="og:url" content="https://wiseaiwiseu.com/blog/compound-interest-power">
-    <meta property="og:image" content="https://wiseaiwiseu.com/logo.png">
-    <meta property="og:type" content="article">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <a href="/" class="logo">WiseAIWiseU</a>
-            <nav class="lang-selector">
-                <a href="/ko/blog/compound-interest-power-ko.html" class="lang-link">KO</a>
-                <a href="/blog/compound-interest-power.html" class="lang-link  active">EN</a>
-                <a href="/pt/blog/compound-interest-power-pt.html" class="lang-link">PT</a>
-            </nav>
-        </header>
-        <main class="blog-post-content">
-            <p class="post-meta">📅 2026-03-02 &nbsp;|&nbsp; 🏷️ Dividend Investing Education</p>
-            <h1>The Power of Compound Interest: How $10,000 Becomes $100,000</h1>
-            <p>Albert Einstein reportedly called compound interest the <strong>"eighth wonder of the world."</strong> Whether he said it or not, the sentiment is mathematically accurate — and understanding it is the single most important concept in dividend investing.</p>
-<h2>Simple vs. Compound Interest</h2>
-<p><strong>Simple interest</strong> calculates returns only on your original principal. If you invest $10,000 at 5% annual return, simple interest gives you $500/year — always $500, year after year. After 20 years: $10,000 + ($500 × 20) = $20,000.</p>
-<p><strong>Compound interest</strong> calculates returns on your principal PLUS all previously accumulated returns. That same $10,000 at 5% compounded annually: Year 1 earns $500 (total: $10,500). Year 2 earns $525 on $10,500 (total: $11,025). Each year, your earning base grows. After 20 years: approximately $26,533 — 33% more than simple interest.</p>
-<h2>The Formula: A = P(1 + r/n)^(nt)</h2>
-<ul>
-<li><strong>A</strong> = Final amount</li>
-<li><strong>P</strong> = Principal ($10,000)</li>
-<li><strong>r</strong> = Annual interest rate (0.05 for 5%)</li>
-<li><strong>n</strong> = Compounding periods per year (12 for monthly)</li>
-<li><strong>t</strong> = Time in years</li>
-</ul>
-<p>With monthly compounding (n=12) at 5%, $10,000 grows to <strong>$27,126</strong> after 20 years — slightly more than annual compounding due to the more frequent reinvestment.</p>
-<h2>The DRIP Multiplier Effect</h2>
-<p>In dividend investing, compound interest works through DRIP (Dividend Reinvestment Plan). Every dividend payment buys more shares. More shares generate more dividends. Those dividends buy even more shares. The cycle accelerates over time.</p>
-<p>Here's a real example: $10,000 invested in a stock with 4% dividend yield and 6% annual stock appreciation, with dividends reinvested monthly via DRIP:</p>
-<ul>
-<li>After 10 years: ~$24,000</li>
-<li>After 20 years: ~$58,000</li>
-<li>After 30 years: ~$137,000</li>
-</ul>
-<p>Without DRIP (dividends taken as cash): After 30 years: ~$57,000. The DRIP investor ends up with <strong>2.4× more wealth</strong> — entirely from the compounding of reinvested dividends.</p>
-<p>Try different scenarios with our <a href="/calculator.html" style="color:#3b82f6;">Snowball Simulator</a> and see exactly how years and DRIP affect your final portfolio value.</p>
-<p><em>Disclaimer: Projections shown are hypothetical and based on constant return assumptions. Actual results will vary.</em></p>
-            <div class="post-disclaimer">This content is for informational and educational purposes only and does not constitute financial advice. Investment involves risk, including the possible loss of principal.</div>
-            <p style="margin-top:2rem;">
-                <a href="/list.html" style="color:#3b82f6; margin-right:1.5rem;">→ Dividend Scouter</a>
-                <a href="/calculator.html" style="color:#3b82f6;">→ Snowball Calculator</a>
-            </p>
-        </main>
-        <footer>
-            <div class="footer-content">
-                <p>© 2026 WiseAIWiseU - Smart Dividend Investing</p>
-            </div>
-        </footer>
-    </div>
-</body>
-</html>
+  </style>"""
+
+STYLE_PATTERN = re.compile(r'<style>.*?</style>', re.DOTALL)
+
+def patch_all_html_files():
+    # 모든 블로그 포스트 (일일 시황 + 교육 시리즈)
+    files = glob.glob(os.path.join(ROOT, "blog", "*.html")) + \
+            glob.glob(os.path.join(ROOT, "ko", "blog", "*.html")) + \
+            glob.glob(os.path.join(ROOT, "pt", "blog", "*.html"))
+            
+    count = 0
+    for fpath in files:
+        with open(fpath, "r", encoding="utf-8") as f:
+            content = f.read()
+        
+        # style 태그 교체
+        new_content = STYLE_PATTERN.sub(NEW_STYLE, content)
+        
+        if new_content != content:
+            with open(fpath, "w", encoding="utf-8") as f:
+                f.write(new_content)
+            count += 1
+            
+    print(f"[Success] {count} HTML files completely restyled with Dark Theme.")
+
+if __name__ == "__main__":
+    patch_all_html_files()

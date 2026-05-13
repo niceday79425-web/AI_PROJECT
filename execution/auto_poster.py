@@ -286,7 +286,7 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
       z-index: 9999; transition: width 0.1s linear;
     }}
     /* ── Post Styles ── */
-    body {{ font-family: 'Inter', sans-serif; background: #f8f9fb; color: #1a1a2e; margin: 0; }}
+    body {{ font-family: 'Inter', sans-serif; background: var(--bg-color); color: var(--text-primary); margin: 0; }}
     .post-hero {{
       background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
       color: #fff; padding: 4rem 1.5rem 3rem; text-align: center;
@@ -299,7 +299,7 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
     }}
     .post-hero h1 {{
       font-size: clamp(1.6rem, 4vw, 2.6rem); font-weight: 800;
-      line-height: 1.3; max-width: 820px; margin: 0 auto 1rem;
+      line-height: 1.3; max-width: 820px; margin: 0 auto 1rem; color: #fff;
     }}
     .post-hero .meta {{
       font-size: 0.9rem; opacity: 0.7; display: flex;
@@ -310,42 +310,50 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
       max-width: 860px; margin: 0 auto; padding: 2.5rem 1.5rem;
     }}
     .post-content h2 {{
-      font-size: 1.45rem; font-weight: 700; color: #1e1b4b;
+      font-size: 1.45rem; font-weight: 700; color: var(--text-primary);
       margin: 2.5rem 0 1rem; border-left: 4px solid #6366f1;
       padding-left: 0.75rem;
     }}
-    .post-content p {{ line-height: 1.85; color: #374151; margin-bottom: 1.2rem; }}
+    .post-content h3 {{ font-size: 1.2rem; font-weight: 700; color: var(--text-primary); margin: 1.8rem 0 0.8rem; }}
+    .post-content p {{ line-height: 1.85; color: var(--text-primary); margin-bottom: 1.2rem; font-size: 1.05rem; }}
     .post-content ul, .post-content ol {{
       padding-left: 1.5rem; margin-bottom: 1.2rem;
     }}
-    .post-content li {{ line-height: 1.8; color: #374151; margin-bottom: 0.4rem; }}
-    .post-content strong {{ color: #1e1b4b; }}
+    .post-content li {{ line-height: 1.8; color: var(--text-primary); margin-bottom: 0.4rem; font-size: 1.05rem; }}
+    .post-content strong {{ color: var(--text-primary); font-weight: 700; }}
     .post-content img {{
       width: 100%; border-radius: 14px; margin: 1.8rem 0;
-      box-shadow: 0 8px 32px rgba(99,102,241,0.15);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5); border: 1px solid var(--border-color);
     }}
+    /* ── Key Point ── */
+    .key-point {{ 
+      background: rgba(99,102,241,0.1); border-left: 4px solid #6366f1; 
+      border-radius: 0 10px 10px 0; padding: 1.2rem 1.5rem; margin: 1.5rem 0; 
+      color: var(--text-primary); font-size: 1.05rem; 
+    }}
+    .key-point strong {{ color: #a78bfa; }}
     /* ── Key Metrics Card ── */
     .metrics-bar {{
       display: flex; gap: 1rem; flex-wrap: wrap;
-      background: #fff; border: 1px solid #e5e7eb;
+      background: var(--card-bg); border: 1px solid var(--border-color);
       border-radius: 14px; padding: 1.2rem 1.5rem;
-      margin: 2rem 0; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      margin: 2rem 0;
     }}
     .metric-item {{ flex: 1; min-width: 120px; text-align: center; }}
-    .metric-item .label {{ font-size: 0.75rem; color: #9ca3af; text-transform: uppercase; letter-spacing: 1px; }}
-    .metric-item .value {{ font-size: 1.3rem; font-weight: 700; color: #1e1b4b; margin-top: 0.2rem; }}
+    .metric-item .label {{ font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; }}
+    .metric-item .value {{ font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-top: 0.2rem; }}
     /* ── Disclaimer ── */
     .disclaimer {{
       margin-top: 3rem; padding: 1.25rem 1.5rem;
-      background: #fff7f7; border-left: 4px solid #ef4444;
-      border-radius: 10px; font-size: 0.83rem; color: #666; line-height: 1.7;
+      background: rgba(239,68,68,0.05); border-left: 4px solid #ef4444;
+      border-radius: 10px; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7;
     }}
     .disclaimer .disc-title {{ font-weight: 700; color: #ef4444; margin-bottom: 0.5rem; }}
     /* ── Back Button ── */
     .back-btn {{
       display: inline-flex; align-items: center; gap: 0.4rem;
-      color: #6366f1; font-weight: 600; text-decoration: none;
-      font-size: 0.9rem; margin-bottom: 1.5rem;
+      color: #a78bfa; font-weight: 600; text-decoration: none;
+      font-size: 0.95rem; margin-bottom: 1.5rem;
       transition: opacity 0.2s;
     }}
     .back-btn:hover {{ opacity: 0.7; }}
