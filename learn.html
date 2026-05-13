@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dividend Investing Academy | Free US Dividend Stock Education | WiseAIWiseU</title>
+  <meta name="description" content="Learn dividend investing for free. Beginner guides, monthly portfolio strategies, and sector-by-sector analysis of US dividend stocks. From zero to dividend expert.">
+  <meta name="keywords" content="dividend investing guide, how to invest in dividend stocks, dividend stocks for beginners, US dividend investing, dividend portfolio strategy, passive income investing">
+  <meta property="og:title" content="Dividend Investing Academy | Free US Dividend Stock Education">
+  <meta property="og:description" content="Learn dividend investing for free. Beginner guides, monthly strategies, sector analysis — all in one place.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://wiseaiwiseu.com/og-image.png">
+  <link rel="canonical" href="https://wiseaiwiseu.com/learn">
+  <link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/learn">
+  <link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/learn">
+  <link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/learn">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .academy-hero { background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); padding: 4rem 1.5rem 3rem; text-align: center; color: #fff; }
+    .academy-hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 900; margin-bottom: 1rem; line-height: 1.3; }
+    .academy-hero p { font-size: 1.1rem; opacity: 0.8; max-width: 620px; margin: 0 auto 2rem; line-height: 1.7; }
+    .hero-stats { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+    .hero-stat { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 0.75rem 1.5rem; text-align: center; }
+    .hero-stat .num { font-size: 1.6rem; font-weight: 900; color: #a78bfa; }
+    .hero-stat .label { font-size: 0.8rem; opacity: 0.7; }
+    .academy-main { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem; }
+    .series-block { margin-bottom: 4rem; }
+    .series-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid var(--border-color, #2a2a3e); }
+    .series-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; }
+    .series-icon.blue  { background: linear-gradient(135deg, #3b82f6, #6366f1); }
+    .series-icon.green { background: linear-gradient(135deg, #10b981, #059669); }
+    .series-icon.orange{ background: linear-gradient(135deg, #f59e0b, #ef4444); }
+    .series-header h2 { font-size: 1.4rem; font-weight: 800; margin: 0 0 0.25rem; }
+    .series-header p  { font-size: 0.88rem; color: var(--text-secondary, #9ca3af); margin: 0; }
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+    .lesson-card { background: var(--card-bg, #1a1a2e); border: 1px solid var(--border-color, #2a2a3e); border-radius: 14px; padding: 1.25rem 1.4rem; text-decoration: none; display: block; transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s; position: relative; }
+    .lesson-card:hover { transform: translateY(-3px); border-color: #6366f1; box-shadow: 0 8px 24px rgba(99,102,241,0.15); }
+    .lesson-card.locked { opacity: 0.5; cursor: default; pointer-events: none; }
+    .lesson-num { font-size: 0.72rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #6366f1; margin-bottom: 0.4rem; }
+    .lesson-card h3 { font-size: 0.97rem; font-weight: 700; color: var(--text-primary, #fff); margin: 0 0 0.4rem; line-height: 1.4; }
+    .lesson-card p { font-size: 0.82rem; color: var(--text-secondary, #9ca3af); margin: 0; line-height: 1.5; }
+    .coming-badge { position: absolute; top: 0.75rem; right: 0.75rem; background: #374151; color: #9ca3af; font-size: 0.65rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 99px; }
+    .done-badge { position: absolute; top: 0.75rem; right: 0.75rem; background: rgba(16,185,129,0.15); color: #10b981; font-size: 0.65rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 99px; }
+    .cta-banner { background: linear-gradient(135deg, #1e1b4b, #2d2a5e); border: 1px solid #4338ca; border-radius: 20px; padding: 2.5rem 2rem; text-align: center; margin-top: 3rem; }
+    .cta-banner h2 { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.75rem; }
+    .cta-banner p  { color: #a5b4fc; margin-bottom: 1.5rem; }
+    .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: linear-gradient(135deg, #6366f1, #8b5cf6); color: #fff; text-decoration: none; padding: 0.75rem 1.75rem; border-radius: 10px; font-weight: 700; font-size: 0.95rem; transition: opacity 0.2s; }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-secondary { background: transparent; color: #a5b4fc; border: 1px solid #4338ca; text-decoration: none; padding: 0.75rem 1.75rem; border-radius: 10px; font-weight: 600; font-size: 0.95rem; }
+    .btn-secondary:hover { background: rgba(99,102,241,0.1); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="/" class="logo">WiseAIWiseU</a>
+      <nav class="lang-selector">
+        <a href="/learn" class="lang-link active">EN</a>
+        <a href="/ko/learn" class="lang-link">KO</a>
+      </nav>
+    </header>
+            <nav class="main-nav" style="display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:0.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border-color);font-size:0.9rem;">
+          <a href="/blog" style="color:var(--text-secondary);text-decoration:none;">Market Insights</a>
+          <a href="/learn" style="color:#6366f1;font-weight:700;text-decoration:none;">📚 Dividend Academy</a>
+          <a href="/list" style="color:var(--text-secondary);text-decoration:none;">Dividend Scouter</a>
+          <a href="/calculator" style="color:var(--text-secondary);text-decoration:none;">Snowball Calculator</a>
+          <a href="/calendar" style="color:var(--text-secondary);text-decoration:none;">Dividend Calendar</a>
+          <a href="/about" style="color:var(--text-secondary);text-decoration:none;">About</a>
+        </nav>
+
+    <section class="academy-hero">
+      <h1>📚 Dividend Investing Academy</h1>
+      <p>Learn everything about US dividend stock investing — completely free.<br>
+         From beginner basics to advanced portfolio strategies.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num">30</div><div class="label">Lessons</div></div>
+        <div class="hero-stat"><div class="num">3</div><div class="label">Series</div></div>
+        <div class="hero-stat"><div class="num">Free</div><div class="label">100% Free</div></div>
+      </div>
+    </section>
+
+    <main class="academy-main">
+      <div class="series-block">
+        <div class="series-header">
+          <div class="series-icon blue">🎓</div>
+          <div>
+            <h2>Dividend Investing for Beginners</h2>
+            <p>A 10-lesson series covering everything you need to start investing in dividend stocks</p>
+          </div>
+        </div>
+        <div class="cards-grid">
+          <a href="/blog/beginner-01-what-is-dividend" class="lesson-card"><div class="done-badge">✓ Done</div><div class="lesson-num">Lesson 01</div><h3>What Are Dividend Stocks?</h3><p>How dividends work, yield calculations, and the basics of income investing</p></a>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Lesson 02</div><h3>Understanding Dividend Yield</h3><p>Why high yield isn't always better — avoiding the dividend trap</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Lesson 03</div><h3>Payout Ratio Analysis</h3><p>How to judge dividend sustainability before it gets cut</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Lesson 04</div><h3>The Power of DRIP</h3><p>How dividend reinvestment creates the snowball effect</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Lesson 05</div><h3>Dividend Aristocrats Explained</h3><p>25+ years of consecutive dividend growth — what it means</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Lesson 06</div><h3>Yield on Cost: The Hidden Metric</h3><p>Why long-term investors care about this more than current yield</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Lesson 07</div><h3>Dividend Calendar Strategy</h3><p>Designing monthly cash flow with dividend payment dates</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Lesson 08</div><h3>Sector Diversification</h3><p>Building a resilient dividend portfolio across sectors</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Lesson 09</div><h3>US Dividend Tax for Int'l Investors</h3><p>Withholding tax, treaty rates, and how to claim credits</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Lesson 10</div><h3>Starting Your First Portfolio</h3><p>Step-by-step guide to buying your first dividend stocks</p></div>
+        </div>
+      </div>
+
+      <div class="series-block">
+        <div class="series-header">
+          <div class="series-icon green">📅</div>
+          <div>
+            <h2>Monthly Dividend Portfolio Strategy</h2>
+            <p>The best dividend stocks and strategies for each month of the year</p>
+          </div>
+        </div>
+        <div class="cards-grid">
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">January</div><h3>New Year Dividend Strategy</h3><p>Top dividend payers starting the year strong</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">February</div><h3>Valentine's Day Dividend Picks</h3><p>Growth-focused dividend stocks for Q1</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">March</div><h3>Q1 Dividend Season Peak</h3><p>How to maximize quarterly dividend collections</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">April</div><h3>Earnings Season Check</h3><p>Reviewing dividend safety after Q1 earnings</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">May</div><h3>Sell in May? Not for Dividends</h3><p>Dividend stocks that defy seasonal weakness</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">June</div><h3>Mid-Year Rebalancing</h3><p>H1 performance review and portfolio adjustment</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">July</div><h3>Summer: Energy & Utilities Focus</h3><p>Defensive dividend plays for the summer months</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">August</div><h3>Dividends Never Take a Vacation</h3><p>H2 dividend strategy setup</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">September</div><h3>Q3 Dividend Season</h3><p>Rate environment impact on dividend stocks</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">October</div><h3>Earnings Season Plays</h3><p>Dividend aristocrats during Q3 earnings</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">November</div><h3>Year-End Dividend Rally Prep</h3><p>Selecting stocks announcing dividend raises</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">December</div><h3>Annual Review & Next Year Plan</h3><p>Special dividends, rebalancing, and 2027 outlook</p></div>
+        </div>
+      </div>
+
+      <div class="series-block">
+        <div class="series-header">
+          <div class="series-icon orange">🏭</div>
+          <div>
+            <h2>Sector-by-Sector Dividend Analysis</h2>
+            <p>Deep-dive analysis of dividend stocks across 8 major sectors</p>
+          </div>
+        </div>
+        <div class="cards-grid">
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Sector 01</div><h3>Consumer Staples: KO, PG, WMT</h3><p>Recession-proof dividend kings explained</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Sector 02</div><h3>Healthcare: JNJ, ABT, MRK</h3><p>Aging demographics and dividend stability</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Sector 03</div><h3>Utilities: The High-Yield Staple</h3><p>Interest rate sensitivity and dividend safety</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Sector 04</div><h3>Financials: JPM, BAC, V</h3><p>Dividend growth drivers in banking and payments</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Sector 05</div><h3>Energy: XOM, CVX</h3><p>Oil price risk vs. high dividend sustainability</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Sector 06</div><h3>REITs: Monthly Dividend Machines</h3><p>FFO, AFFO analysis — the real REIT metrics</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Sector 07</div><h3>Technology: MSFT, AAPL</h3><p>Low yield, high growth — the tech dividend case</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Coming soon</div><div class="lesson-num">Sector 08</div><h3>Industrials: HON, UPS</h3><p>Economic cycles and dividend resilience</p></div>
+        </div>
+      </div>
+
+      <div class="cta-banner">
+        <h2>🚀 Put Your Learning Into Action</h2>
+        <p>Screen dividend stocks with our Scouter and simulate your wealth growth with the Snowball Calculator.</p>
+        <div class="cta-btns">
+          <a href="/list" class="btn-primary">📊 Dividend Scouter</a>
+          <a href="/calculator" class="btn-secondary">🧮 Snowball Calculator</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-nav" style="margin-bottom:1.5rem;font-size:0.9rem;">
+          <a href="/privacy" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">Privacy Policy</a> |
+          <a href="/about" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">About Us</a> |
+          <a href="/contact" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">Contact</a>
+        </div>
+        <p>&copy; 2026 WiseAIWiseU - Smart Dividend Investing</p>
+        <p class="legal-disclaimer">Educational content only. Not financial advice. Investment involves risk.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
