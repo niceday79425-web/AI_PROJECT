@@ -177,43 +177,45 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     .key-point strong {{ color: #60a5fa; }}
     
     /* ── Data Table ── */
-    .data-table {{ width:100%;border-collapse:collapse;margin:2rem 0;font-size:0.95rem; }}
-    .data-table th {{ background:rgba(255,255,255,0.03);color:var(--text-primary);padding:1rem;text-align:left; border-bottom:1px solid rgba(255,255,255,0.1); font-weight: 600; }}
-    .data-table td {{ padding:1rem;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--text-secondary); }}
+    .data-table {{ width:100%;border-collapse:collapse;margin:2.5rem 0;font-size:0.95rem; }}
+    .data-table th {{ background:rgba(255,255,255,0.04);color:var(--text-primary);padding:1.2rem;text-align:left; border-bottom:1px solid rgba(255,255,255,0.1); font-weight: 700; }}
+    .data-table td {{ padding:1.2rem;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--text-secondary); }}
     
     /* ── Nav Links & Author Box ── */
-    .nav-links {{ display:flex;gap:1.5rem;flex-wrap:wrap;margin:3rem 0;padding:1.5rem;background:rgba(255,255,255,0.02);border-radius:12px; }}
-    .nav-links a {{ color:var(--text-primary);text-decoration:none;font-weight:500;font-size:0.95rem; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 2px; transition: border-color 0.3s; }}
-    .nav-links a:hover {{ border-color: var(--text-primary); }}
+    .nav-links {{ display:flex;gap:1.5rem;flex-wrap:wrap;margin:4rem 0;padding:2rem;background:rgba(255,255,255,0.02);border: 1px solid rgba(255,255,255,0.05); border-radius:16px; }}
+    .nav-links a {{ color:var(--text-primary);text-decoration:none;font-weight:600;font-size:1rem; border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 4px; transition: all 0.3s; }}
+    .nav-links a:hover {{ border-color: #6366f1; color: #6366f1; }}
     
-    .author-box {{ display:flex;align-items:center;gap:1.2rem;background:transparent;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1);padding:1.5rem 0;margin:3rem 0; }}
-    .author-avatar {{ width:56px;height:56px;background:rgba(255,255,255,0.05);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--text-primary);font-weight:600;font-size:1.2rem; }}
-    .author-box strong {{ color:var(--text-primary); display:block; margin-bottom: 0.2rem; font-size: 1.1rem; }}
-    .author-box span {{ color:var(--text-secondary); font-size: 0.95rem; }}
+    .author-box {{ display:flex;align-items:center;gap:1.5rem;background:transparent;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);padding:2rem 0;margin:4rem 0; }}
+    .author-avatar {{ width:64px;height:64px;background:var(--primary-gradient);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#fff;font-weight:700;font-size:1.4rem; box-shadow: 0 10px 20px rgba(99,102,241,0.2); }}
+    .author-box strong {{ color:var(--text-primary); display:block; margin-bottom: 0.3rem; font-size: 1.2rem; }}
+    .author-box span {{ color:var(--text-secondary); font-size: 1rem; }}
     
     /* ── Disclaimer ── */
     .disclaimer {{
-      margin-top: 4rem; padding: 1.5rem;
-      background: transparent; border: 1px solid rgba(255,255,255,0.05);
-      border-radius: 12px; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7;
+      margin-top: 5rem; padding: 2rem;
+      background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 16px; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;
     }}
-    .disclaimer .disc-title {{ font-weight: 600; color: var(--text-secondary); margin-bottom: 0.5rem; }}
+    .disclaimer .disc-title {{ font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem; display: block; }}
     
     /* ── Back Button ── */
     .back-btn {{
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      color: var(--text-secondary); font-weight: 500; text-decoration: none;
-      font-size: 0.95rem; margin-bottom: 2rem; transition: color 0.3s;
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      color: var(--text-secondary); font-weight: 600; text-decoration: none;
+      font-size: 1rem; margin-bottom: 3rem; transition: all 0.3s;
+      padding: 0.5rem 1rem; border-radius: 8px; background: rgba(255,255,255,0.03);
     }}
-    .back-btn:hover {{ color: var(--text-primary); }}
+    .back-btn:hover {{ color: var(--text-primary); background: rgba(255,255,255,0.08); transform: translateX(-5px); }}
     
     /* ── Series Nav ── */
-    .series-nav {{ background:rgba(255,255,255,0.02);border-radius:12px;padding:1.5rem;margin-top:4rem; border:1px solid rgba(255,255,255,0.05); }}
-    .series-nav h3 {{ color:var(--text-primary);font-size:1.1rem;margin-bottom:1rem; }}
+    .series-nav {{ background:rgba(255,255,255,0.02);border-radius:16px;padding:2rem;margin-top:5rem; border:1px solid rgba(255,255,255,0.08); }}
+    .series-nav h3 {{ color:var(--text-primary);font-size:1.25rem;margin-bottom:1.5rem; font-weight: 700; }}
     .series-nav ul {{ list-style:none;padding:0;margin:0; }}
-    .series-nav li {{ padding:0.4rem 0;font-size:0.95rem; color: var(--text-secondary); }}
-    .series-nav a {{ color:var(--text-primary);text-decoration:none; border-bottom: 1px solid rgba(255,255,255,0.2); }}
-    .series-nav a:hover {{ border-color: var(--text-primary); }}
+    .series-nav li {{ padding:0.6rem 0;font-size:1rem; color: var(--text-secondary); border-bottom: 1px solid rgba(255,255,255,0.03); }}
+    .series-nav li:last-child {{ border: none; }}
+    .series-nav a {{ color:var(--text-primary);text-decoration:none; font-weight: 500; transition: color 0.3s; }}
+    .series-nav a:hover {{ color: #6366f1; }}
 </head>
 <body>
   <div id="progress-bar"></div>
@@ -226,19 +228,20 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         <a href="/pt/blog" class="lang-link">PT</a>
       </nav>
     </header>
-    <nav class="main-nav" style="display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:0.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border-color);font-size:0.9rem;">
-      <a href="/ko/blog" style="color:var(--text-secondary);text-decoration:none;">마켓 인사이트</a>
-      <a href="/ko/list" style="color:var(--text-secondary);text-decoration:none;">배당주 스카우터</a>
-      <a href="/ko/calculator" style="color:var(--text-secondary);text-decoration:none;">스노볼 계산기</a>
-      <a href="/ko/calendar" style="color:var(--text-secondary);text-decoration:none;">배당 캘린더</a>
-      <a href="/ko/about" style="color:var(--text-secondary);text-decoration:none;">소개</a>
+    <nav class="glass-nav">
+      <a href="/ko/blog" class="active">마켓 인사이트</a>
+      <a href="/ko/learn">배당 아카데미</a>
+      <a href="/ko/list">배당주 스카우터</a>
+      <a href="/ko/calculator">스노볼 계산기</a>
+      <a href="/ko/calendar">배당 캘린더</a>
+      <a href="/ko/about">소개</a>
     </nav>
 
     <section class="post-hero">
       <span class="series-badge">📚 {series}</span>
       <h1>{title}</h1>
       <div class="meta" style="font-size:0.9rem;opacity:0.7;display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;margin-top:0.75rem;">
-        <span>📅 2026-05-12</span>
+        <span>📅 2026-05-14</span>
         <span>⏱️ 읽는 시간: 약 8분</span>
         <span>🌐 WiseAIWiseU</span>
       </div>
@@ -250,8 +253,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="author-box">
         <div class="author-avatar">W</div>
         <div>
-          <strong style="display:block;color:#1e1b4b;font-size:0.95rem;">WiseAIWiseU 리서치팀</strong>
-          <span style="font-size:0.8rem;color:#6b7280;">미국 배당주 전문 분석 | 2026-05-12 | 교육 목적 콘텐츠</span>
+          <strong style="display:block;color:var(--text-primary);font-size:0.95rem;">WiseAIWiseU 리서치팀</strong>
+          <span style="font-size:0.8rem;color:var(--text-secondary);">미국 배당주 전문 분석 | 2026-05-14 | 교육 목적 콘텐츠</span>
         </div>
       </div>
 

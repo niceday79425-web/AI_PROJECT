@@ -90,43 +90,45 @@
     .key-point strong { color: #60a5fa; }
     
     /* ── Data Table ── */
-    .data-table { width:100%;border-collapse:collapse;margin:2rem 0;font-size:0.95rem; }
-    .data-table th { background:rgba(255,255,255,0.03);color:var(--text-primary);padding:1rem;text-align:left; border-bottom:1px solid rgba(255,255,255,0.1); font-weight: 600; }
-    .data-table td { padding:1rem;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--text-secondary); }
+    .data-table { width:100%;border-collapse:collapse;margin:2.5rem 0;font-size:0.95rem; }
+    .data-table th { background:rgba(255,255,255,0.04);color:var(--text-primary);padding:1.2rem;text-align:left; border-bottom:1px solid rgba(255,255,255,0.1); font-weight: 700; }
+    .data-table td { padding:1.2rem;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--text-secondary); }
     
     /* ── Nav Links & Author Box ── */
-    .nav-links { display:flex;gap:1.5rem;flex-wrap:wrap;margin:3rem 0;padding:1.5rem;background:rgba(255,255,255,0.02);border-radius:12px; }
-    .nav-links a { color:var(--text-primary);text-decoration:none;font-weight:500;font-size:0.95rem; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 2px; transition: border-color 0.3s; }
-    .nav-links a:hover { border-color: var(--text-primary); }
+    .nav-links { display:flex;gap:1.5rem;flex-wrap:wrap;margin:4rem 0;padding:2rem;background:rgba(255,255,255,0.02);border: 1px solid rgba(255,255,255,0.05); border-radius:16px; }
+    .nav-links a { color:var(--text-primary);text-decoration:none;font-weight:600;font-size:1rem; border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 4px; transition: all 0.3s; }
+    .nav-links a:hover { border-color: #6366f1; color: #6366f1; }
     
-    .author-box { display:flex;align-items:center;gap:1.2rem;background:transparent;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1);padding:1.5rem 0;margin:3rem 0; }
-    .author-avatar { width:56px;height:56px;background:rgba(255,255,255,0.05);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--text-primary);font-weight:600;font-size:1.2rem; }
-    .author-box strong { color:var(--text-primary); display:block; margin-bottom: 0.2rem; font-size: 1.1rem; }
-    .author-box span { color:var(--text-secondary); font-size: 0.95rem; }
+    .author-box { display:flex;align-items:center;gap:1.5rem;background:transparent;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);padding:2rem 0;margin:4rem 0; }
+    .author-avatar { width:64px;height:64px;background:var(--primary-gradient);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#fff;font-weight:700;font-size:1.4rem; box-shadow: 0 10px 20px rgba(99,102,241,0.2); }
+    .author-box strong { color:var(--text-primary); display:block; margin-bottom: 0.3rem; font-size: 1.2rem; }
+    .author-box span { color:var(--text-secondary); font-size: 1rem; }
     
     /* ── Disclaimer ── */
     .disclaimer {
-      margin-top: 4rem; padding: 1.5rem;
-      background: transparent; border: 1px solid rgba(255,255,255,0.05);
-      border-radius: 12px; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7;
+      margin-top: 5rem; padding: 2rem;
+      background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 16px; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;
     }
-    .disclaimer .disc-title { font-weight: 600; color: var(--text-secondary); margin-bottom: 0.5rem; }
+    .disclaimer .disc-title { font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem; display: block; }
     
     /* ── Back Button ── */
     .back-btn {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      color: var(--text-secondary); font-weight: 500; text-decoration: none;
-      font-size: 0.95rem; margin-bottom: 2rem; transition: color 0.3s;
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      color: var(--text-secondary); font-weight: 600; text-decoration: none;
+      font-size: 1rem; margin-bottom: 3rem; transition: all 0.3s;
+      padding: 0.5rem 1rem; border-radius: 8px; background: rgba(255,255,255,0.03);
     }
-    .back-btn:hover { color: var(--text-primary); }
+    .back-btn:hover { color: var(--text-primary); background: rgba(255,255,255,0.08); transform: translateX(-5px); }
     
     /* ── Series Nav ── */
-    .series-nav { background:rgba(255,255,255,0.02);border-radius:12px;padding:1.5rem;margin-top:4rem; border:1px solid rgba(255,255,255,0.05); }
-    .series-nav h3 { color:var(--text-primary);font-size:1.1rem;margin-bottom:1rem; }
+    .series-nav { background:rgba(255,255,255,0.02);border-radius:16px;padding:2rem;margin-top:5rem; border:1px solid rgba(255,255,255,0.08); }
+    .series-nav h3 { color:var(--text-primary);font-size:1.25rem;margin-bottom:1.5rem; font-weight: 700; }
     .series-nav ul { list-style:none;padding:0;margin:0; }
-    .series-nav li { padding:0.4rem 0;font-size:0.95rem; color: var(--text-secondary); }
-    .series-nav a { color:var(--text-primary);text-decoration:none; border-bottom: 1px solid rgba(255,255,255,0.2); }
-    .series-nav a:hover { border-color: var(--text-primary); }
+    .series-nav li { padding:0.6rem 0;font-size:1rem; color: var(--text-secondary); border-bottom: 1px solid rgba(255,255,255,0.03); }
+    .series-nav li:last-child { border: none; }
+    .series-nav a { color:var(--text-primary);text-decoration:none; font-weight: 500; transition: color 0.3s; }
+    .series-nav a:hover { color: #6366f1; }
 </head>
 <body>
   <div id="progress-bar"></div>
@@ -139,12 +141,13 @@
         <a href="/pt/blog" class="lang-link">PT</a>
       </nav>
     </header>
-    <nav class="main-nav" style="display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:0.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border-color);font-size:0.9rem;">
-      <a href="/ko/blog" style="color:var(--text-secondary);text-decoration:none;">마켓 인사이트</a>
-      <a href="/ko/list" style="color:var(--text-secondary);text-decoration:none;">배당주 스카우터</a>
-      <a href="/ko/calculator" style="color:var(--text-secondary);text-decoration:none;">스노볼 계산기</a>
-      <a href="/ko/calendar" style="color:var(--text-secondary);text-decoration:none;">배당 캘린더</a>
-      <a href="/ko/about" style="color:var(--text-secondary);text-decoration:none;">소개</a>
+    <nav class="glass-nav">
+      <a href="/ko/blog" class="active">마켓 인사이트</a>
+      <a href="/ko/learn">배당 아카데미</a>
+      <a href="/ko/list">배당주 스카우터</a>
+      <a href="/ko/calculator">스노볼 계산기</a>
+      <a href="/ko/calendar">배당 캘린더</a>
+      <a href="/ko/about">소개</a>
     </nav>
 
     <section class="post-hero">
@@ -163,223 +166,196 @@
       <div class="author-box">
         <div class="author-avatar">W</div>
         <div>
-          <strong style="display:block;color:#1e1b4b;font-size:0.95rem;">WiseAIWiseU 리서치팀</strong>
-          <span style="font-size:0.8rem;color:#6b7280;">미국 배당주 전문 분석 | 2026-05-14 | 교육 목적 콘텐츠</span>
+          <strong style="display:block;color:var(--text-primary);font-size:0.95rem;">WiseAIWiseU 리서치팀</strong>
+          <span style="font-size:0.8rem;color:var(--text-secondary);">미국 배당주 전문 분석 | 2026-05-14 | 교육 목적 콘텐츠</span>
         </div>
       </div>
 
-      <div class="blog-post">
-    <h2>월별 배당주 포트폴리오 5월: Sell in May? 배당주는 예외다!</h2>
+      <body>
+    <h2 class="title">5월 배당주 포트폴리오: "Sell in May?" 배당주는 예외다!</h2>
+    <p class="series">시리즈: 월별 배당주 포트폴리오 5월</p>
+
+    <h2 id="section-1">5월, 투자자의 고민: "Sell in May?" 배당주는 다릅니다!</h2>
+    <p>투자 시장에 조금이라도 발을 담그셨던 분이라면 "Sell in May and Go Away"라는 오래된 격언을 한 번쯤 들어보셨을 겁니다. 전통적으로 5월부터 10월까지는 주식 시장의 수익률이 약세를 보이는 경향이 있다는 의미인데요. 다가오는 5월, 한국 투자자분들 중에서도 이 격언 때문에 포트폴리오 조정에 대한 고민을 하고 계신 분들이 많으실 겁니다.</p>
+    <p><strong>하지만 2026년 5월 현재, 미국 배당주 투자 전문가로서 저는 감히 말씀드립니다. "Sell in May"는 배당주에는 해당되지 않는 이야기일 수 있습니다!</strong> 특히 꾸준한 현금 흐름을 중시하는 배당주 투자자에게 5월은 오히려 매력적인 배당금을 수확하고, 다음 분기를 위한 포트폴리오를 점검할 수 있는 기회의 시간이 될 수 있습니다.</p>
+    <p>이번 블로그 포스팅에서는 5월의 계절적 약세장 속에서도 빛을 발하는 배당주 전략과, 2026년 5월 현재 주목할 만한 배당 지급 종목들을 심도 있게 분석해 드리겠습니다. 초보 투자자분들도 쉽게 이해하실 수 있도록 상세한 개념 설명부터 실제 데이터 기반의 사례, 그리고 실전 적용 방법까지 모두 담았으니 끝까지 주목해 주세요.</p>
 
     <div class="key-point">
-        <strong>핵심 포인트:</strong> "Sell in May and Go Away"라는 증시 격언은 5월의 계절적 약세를 경고하지만, 꾸준한 현금 흐름을 제공하는 미국 배당주는 이러한 흐름과 무관하게 강력한 투자 가치를 제공합니다. 특히 월별 배당을 지급하는 종목들은 5월에도 안정적인 수익을 기대할 수 있습니다.
+        <strong>핵심 포인트:</strong> "Sell in May" 격언은 시장 전체의 일반적인 경향을 나타낼 뿐, 꾸준한 배당금을 지급하는 우량 배당주에는 적용되지 않을 수 있습니다. 5월은 오히려 배당 포트폴리오를 강화할 기회가 될 수 있습니다.
     </div>
 
-    <h3>1. 핵심 요약: 5월, 배당주 투자 전략의 재고가 필요한 시점</h3>
-    <p>미국 주식시장에서 오랜 기간 회자되는 격언 중 하나는 바로 "Sell in May and Go Away"입니다. 이는 통계적으로 5월부터 10월까지의 기간에 주식시장 수익률이 상대적으로 저조했다는 관찰에서 비롯된 말이죠. 투자자들에게는 이 기간 동안 주식 포지션을 줄이고 관망하거나 현금 비중을 늘리라는 경고로 받아들여지곤 합니다. 하지만 배당주 투자자들에게도 이 격언이 유효할까요?</p>
-    <p>미국 배당주 투자 전문가로서, 저는 단언컨대 '아니요'라고 말씀드립니다. 특히 <strong>현재 2026년 5월 14일</strong>의 시장 상황을 고려할 때, 배당주는 단순한 시세 차익을 넘어선 가치를 제공하기 때문입니다. 시장의 단기적인 등락에 일희일비하기보다는, 꾸준히 현금 흐름을 창출하는 배당주는 5월의 계절적 약세장에서도 투자자에게 심리적 안정감과 실질적인 수익을 안겨줄 수 있는 든든한 존재입니다. 이번 포스팅에서는 5월이라는 특수한 시기에도 흔들림 없는 배당주 포트폴리오를 구성하는 전략과 구체적인 종목들을 함께 살펴보겠습니다.</p>
+    <h2 id="section-2">"Sell in May and Go Away"의 진실과 배당주의 역할</h2>
 
-    <h3>2. 상세 개념 설명: 'Sell in May'와 배당주 투자</h3>
-    <p><strong>'Sell in May and Go Away'란 무엇인가?</strong></p>
-    <p>이 격언은 런던 증권가에서 유래한 것으로, 역사적으로 5월부터 10월까지는 주식시장의 변동성이 커지고 수익률이 낮아지는 경향이 있었다는 점에서 나왔습니다. 여름 휴가철과 함께 거래량이 줄어들고, 기업 실적 발표가 집중되는 시기가 아니기 때문에 투자자들의 관심이 덜해진다는 해석도 있습니다. 실제로 많은 성장주나 기술주들은 이러한 계절적 요인에 영향을 받아 등락을 거듭할 수 있습니다.</p>
+    <h3>"Sell in May"는 무엇인가요?</h3>
+    <p>"Sell in May and Go Away, but remember to come back in September" (5월에 팔고 떠났다가 9월에 돌아오라)는 월스트리트의 오랜 격언입니다. 통계적으로 북반구의 여름 휴가철인 5월부터 10월까지는 기관 투자자들의 거래량이 줄어들고 시장 활동이 뜸해지면서 주식 시장의 수익률이 상대적으로 저조했다는 역사적 패턴에서 유래했습니다. 실제로 많은 연구에서 이러한 계절적 패턴이 일정 부분 존재함을 보여주기도 합니다.</p>
 
-    <p><strong>배당주는 왜 'Sell in May'의 예외일까?</strong></p>
-    <p>배당주 투자의 핵심은 <strong>기업의 이익을 주주와 공유하는 '배당금'</strong>을 받는 것입니다. 주가가 일시적으로 하락하더라도 기업의 근본적인 사업이 견고하고 배당 지급 능력이 유지된다면, 투자자는 정기적으로 현금 수익을 얻을 수 있습니다. 이는 다음과 같은 이유로 'Sell in May' 효과를 상쇄합니다.</p>
+    <h3>왜 배당주는 예외일 수 있을까요?</h3>
+    <p>하지만 이 격언은 주로 단기적인 시세차익을 노리는 트레이딩 관점에 가깝습니다. 장기적인 관점에서 꾸준한 현금 흐름을 추구하는 배당주 투자자에게는 다른 이야기가 됩니다. 그 이유는 다음과 같습니다.</p>
     <ul>
-        <li><strong>현금 흐름의 안정성:</strong> 주식 시세 변동과 관계없이 배당금을 받기 때문에, 시장이 부진한 시기에도 포트폴리오의 수익률을 일정 부분 방어할 수 있습니다.</li>
-        <li><strong>재투자 기회:</strong> 시장이 약세일 때 받은 배당금으로 더 많은 주식을 저렴하게 매수할 수 있는 기회가 될 수 있습니다. 이는 장기적으로 복리 효과를 극대화하는 전략입니다.</li>
-        <li><strong>기업의 견고함:</strong> 꾸준히 배당을 지급하는 기업들은 대체로 안정적인 현금 흐름과 재무 구조를 갖추고 있습니다. 경기 방어적인 성격이 강한 기업들이 많아 시장의 전반적인 약세에도 비교적 덜 민감합니다.</li>
+        <li><strong>변동성 완화 효과:</strong> 시장이 약세장이거나 횡보할 때, 배당주는 꾸준한 배당금 지급을 통해 투자자에게 안정적인 수익원을 제공합니다. 주가 하락 시 배당수익률이 상대적으로 높아지면서 하방 경직성을 제공하기도 합니다.</li>
+        <li><strong>복리의 마법:</strong> 배당금을 재투자함으로써 주식 수를 늘리고, 이는 다시 더 많은 배당금을 창출하는 선순환 구조를 만듭니다. 시장의 단기적인 등락에 일희일비하기보다는 꾸준히 배당금을 모아 재투자하는 것이 장기적으로 훨씬 강력한 수익을 안겨줍니다. WiseAIWiseU의 <a href="/ko/calculator" target="_blank">스노볼 계산기</a>를 활용하면 복리의 마법을 직접 경험해 볼 수 있습니다.</li>
+        <li><strong>기업의 펀더멘털 중요성:</strong> 배당금을 꾸준히 지급하는 기업은 대체로 탄탄한 사업 모델과 안정적인 현금 흐름을 가진 우량 기업인 경우가 많습니다. 이러한 기업들은 단기적인 시장 상황보다는 장기적인 성장 동력과 경영 능력에 의해 가치가 결정됩니다.</li>
     </ul>
-    <p>특히 <strong>월별 배당을 지급하는 종목</strong>들은 매달 꾸준한 현금 흐름을 제공함으로써 투자자에게 심리적 안정감과 재투자 기회를 더 자주 제공합니다. 5월에 배당을 지급하는 종목들을 포트폴리오에 포함시키는 것은 이러한 계절적 약세장을 현명하게 헤쳐나갈 수 있는 전략이 됩니다.</p>
+
+    <h2 id="section-3">2026년 5월, 주목해야 할 배당주 포트폴리오 전략</h2>
+    <p>2026년 5월 현재, 배당주 포트폴리오를 구성하는 데 있어 몇 가지 유형의 종목들을 고려해 볼 수 있습니다. 높은 배당수익률을 자랑하는 리츠(REITs)부터 꾸준한 성장을 보여주는 우량 배당주, 그리고 분산 투자에 적합한 배당 ETF까지 살펴보겠습니다. 제공된 <a href="https://wiseaiwiseu.com/ko/list" target="_blank">WiseAIWiseU 배당주 스카우터</a> 데이터를 기반으로 분석해 드립니다.</p>
+
+    <h3>고배당 리츠 (REITs) – 매력적인 월배당의 유혹</h3>
+    <p>리츠(Real Estate Investment Trusts)는 부동산에 투자하여 발생하는 수익의 대부분을 배당으로 지급하는 특징 때문에 높은 배당수익률과 월배당의 매력을 지닌 경우가 많습니다. 다만, 일반 기업과는 달리 FFO(Funds From Operations)나 AFFO(Adjusted Funds From Operations)를 기준으로 배당성향을 판단해야 하며, 배당성향이 100%를 넘더라도 수익성이 유지된다면 문제가 되지 않을 수 있습니다. 2026년 5월 현재, 다음 리츠들이 눈에 띕니다.</p>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>티커</th>
+                <th>기업명</th>
+                <th>현재가 (USD)</th>
+                <th>배당수익률 (%)</th>
+                <th>연간 배당금 (USD)</th>
+                <th>배당성향 (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ARR</td>
+                <td>ARMOUR Residential REIT, Inc.</td>
+                <td>$17.39</td>
+                <td>16.56</td>
+                <td>$2.88</td>
+                <td>115.66</td>
+            </tr>
+            <tr>
+                <td>DX</td>
+                <td>Dynex Capital, Inc.</td>
+                <td>$13.19</td>
+                <td>15.47</td>
+                <td>$2.04</td>
+                <td>96.23</td>
+            </tr>
+            <tr>
+                <td>AGNC</td>
+                <td>AGNC Investment Corp.</td>
+                <td>$10.63</td>
+                <td>13.55</td>
+                <td>$1.44</td>
+                <td>112.50</td>
+            </tr>
+            <tr>
+                <td>NLY</td>
+                <td>Annaly Capital Management, Inc.</td>
+                <td>$22.16</td>
+                <td>12.64</td>
+                <td>$2.80</td>
+                <td>90.32</td>
+            </tr>
+            <tr>
+                <td>O</td>
+                <td>Realty Income Corporation</td>
+                <td>$61.52</td>
+                <td>5.26</td>
+                <td>$3.23</td>
+                <td>265.00</td>
+            </tr>
+            <tr>
+                <td>SPG</td>
+                <td>Simon Property Group, Inc.</td>
+                <td>$200.56</td>
+                <td>4.31</td>
+                <td>$8.65</td>
+                <td>60.15</td>
+            </tr>
+            <tr>
+                <td>EQR</td>
+                <td>Equity Residential</td>
+                <td>$65.83</td>
+                <td>4.22</td>
+                <td>$2.78</td>
+                <td>111.18</td>
+            </tr>
+            <tr>
+                <td>AMT</td>
+                <td>American Tower Corporation</td>
+                <td>$173.87</td>
+                <td>3.96</td>
+                <td>$6.89</td>
+                <td>82.26</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><em>(참고: 리츠의 높은 배당성향은 일반 기업과 달리 FFO/AFFO 기준으로 판단해야 하며, 이는 투자설명서를 통해 확인하는 것이 좋습니다.)</em></p>
+
+    <h3>꾸준함이 강점, 배당 성장주/우량주 – 시장 방어에 탁월</h3>
+    <p>높은 배당수익률만큼이나 중요한 것이 꾸준함과 배당 성장입니다. 시장의 변동성이 커질 때, 안정적인 사업 기반과 현금 흐름을 바탕으로 꾸준히 배당금을 지급하고 성장시키는 기업들은 포트폴리오의 든든한 버팀목이 되어줍니다.</p>
+    <ul>
+        <li><strong>MO (Altria Group, Inc.):</strong> 현재가 $71.54, 배당수익률 5.87%, 연간 배당금 $4.20, 배당성향 87.68%. 담배 산업의 독점적 지위 덕분에 꾸준한 현금 흐름을 창출하며 높은 배당금을 지급해 온 대표적인 배당주입니다. 배당성향이 높지만, 사업의 특성상 안정성이 높은 편입니다.</li>
+        <li><strong>VZ (Verizon Communications Inc.):</strong> 현재가 $47.21, 배당수익률 5.86%, 연간 배당금 $2.77, 배당성향 67.44%. 통신 산업의 강자로서 필수 서비스 제공을 통해 안정적인 수익을 올리며 매력적인 배당을 지급합니다. 배당성향도 안정적인 수준입니다.</li>
+        <li><strong>T (AT&T Inc.):</strong> 현재가 $24.74, 배당수익률 4.49%, 연간 배당금 $1.11, 배당성향 36.51%. 한때 배당 삭감 이슈가 있었으나, 사업 구조조정을 통해 안정적인 배당 정책을 유지하려는 노력을 보여주고 있습니다. 현재 배당성향은 매우 건전한 수준으로 나타납니다.</li>
+        <li><strong>ACN (Accenture plc):</strong> 현재가 $159.64, 배당수익률 3.99%, 연간 배당금 $6.37, 배당성향 50.98%. 글로벌 컨설팅 및 IT 서비스 기업으로, 안정적인 수익성과 지속적인 성장을 바탕으로 꾸준히 배당을 지급합니다. 상대적으로 높은 성장성과 안정적인 배당을 동시에 추구하는 투자자에게 적합합니다.</li>
+    </ul>
+
+    <h3>분산 투자를 위한 배당 ETF – SPYD</h3>
+    <p>개별 종목 발굴에 어려움을 느끼거나, 한 번에 여러 우량 배당주에 분산 투자하고 싶다면 배당 ETF(Exchange Traded Fund)가 좋은 대안이 됩니다.</p>
+    <ul>
+        <li><strong>SPYD (State Street SPDR Portfolio S&P 500 High Dividend ETF):</strong> 현재가 $46.62, 배당수익률 4.23%. S&P 500 지수 내에서 배당수익률이 높은 80개 종목에 투자하는 ETF입니다. 특정 섹터에 집중하기보다는 넓은 범위에서 고배당 기업들에 분산 투자하고 싶은 투자자에게 적합합니다. (참고: 제공된 데이터의 '연간 배당금 $0.0'은 ETF의 분배금 특성상 오기일 수 있으며, 실제 배당수익률을 기준으로 판단해야 합니다.)</li>
+    </ul>
+
+    <h3>주의해야 할 '고배당 함정'</h3>
+    <p>높은 배당수익률은 매력적이지만, 무조건적인 투자는 위험할 수 있습니다. 특히 배당성향이 비정상적으로 높다면 주의해야 합니다. 2026년 5월 현재 데이터를 보면 <strong>GPC (Genuine Parts Company)</strong>는 배당수익률이 4.2%로 매력적으로 보이지만, <strong>배당성향이 무려 943.75%</strong>에 달합니다. 이는 기업이 벌어들이는 이익보다 훨씬 많은 돈을 배당으로 지급하고 있다는 뜻으로, <strong>배당 삭감 또는 중단의 위험이 매우 높은 '고배당 함정'일 가능성이 큽니다.</strong> 투자 결정 전에는 반드시 기업의 재무 건전성과 배당 지속 가능성을 면밀히 분석해야 합니다.</p>
 
     <div class="key-point">
-        <strong>핵심 포인트:</strong> 2026년 5월 현재, 높은 배당수익률을 자랑하는 모기지 REIT(mREIT) 및 안정적인 배당을 지급하는 통신, 필수 소비재 기업들이 5월 배당 포트폴리오의 주요 후보군입니다. 배당성향을 면밀히 검토하여 지속 가능한 배당 여부를 판단하는 것이 중요합니다.
+        <strong>핵심 포인트:</strong> 높은 배당수익률에 현혹되기보다, 배당성향, 기업의 현금 흐름, 사업의 안정성을 종합적으로 고려해야 합니다. 특히 비정상적으로 높은 배당성향은 위험 신호일 수 있습니다.
     </div>
 
-    <h3>3. 실제 데이터와 사례: 2026년 5월 배당 지급 종목 분석</h3>
-    <p><strong>현재 2026년 5월 14일 기준</strong>의 시장 데이터를 바탕으로, 5월 배당 포트폴리오에 고려해볼 만한 미국 배당주들을 살펴보겠습니다. 특히 월별 또는 분기별로 꾸준히 배당을 지급하며 5월에도 배당락일이 예정되어 있거나 배당금을 지급하는 종목들에 주목해봅니다. (아래 데이터는 2026년 5월 14일 기준이며, 배당금 지급은 통상적으로 배당락일 이후 며칠 또는 몇 주 뒤에 이뤄집니다.)</p>
+    <h2 id="section-4">나만의 5월 배당주 포트폴리오 구축, 실전 가이드</h2>
+    <p>이제 2026년 5월, 자신만의 배당주 포트폴리오를 어떻게 구축할지 단계별로 알아보겠습니다.</p>
 
-    <div class="data-table">
-        <h3>2026년 5월 주요 배당주 데이터 (2026.05.14 기준)</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>티커</th>
-                    <th>회사명</th>
-                    <th>현재가</th>
-                    <th>배당수익률</th>
-                    <th>연간 배당금</th>
-                    <th>배당성향</th>
-                    <th>특징 및 코멘트</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ARR</td>
-                    <td>ARMOUR Residential REIT, Inc.</td>
-                    <td>$17.39</td>
-                    <td>16.56%</td>
-                    <td>$2.88</td>
-                    <td>115.66%</td>
-                    <td>높은 배당수익률의 모기지 REIT. 월별 배당.</td>
-                </tr>
-                <tr>
-                    <td>DX</td>
-                    <td>Dynex Capital, Inc.</td>
-                    <td>$13.19</td>
-                    <td>15.47%</td>
-                    <td>$2.04</td>
-                    <td>96.23%</td>
-                    <td>월별 배당 지급 모기지 REIT.</td>
-                </tr>
-                <tr>
-                    <td>AGNC</td>
-                    <td>AGNC Investment Corp.</td>
-                    <td>$10.63</td>
-                    <td>13.55%</td>
-                    <td>$1.44</td>
-                    <td>112.5%</td>
-                    <td>월별 배당 지급 모기지 REIT.</td>
-                </tr>
-                <tr>
-                    <td>NLY</td>
-                    <td>Annaly Capital Management, Inc.</td>
-                    <td>$22.16</td>
-                    <td>12.64%</td>
-                    <td>$2.80</td>
-                    <td>90.32%</td>
-                    <td>월별 배당 지급 모기지 REIT.</td>
-                </tr>
-                <tr>
-                    <td>MO</td>
-                    <td>Altria Group, Inc.</td>
-                    <td>$71.54</td>
-                    <td>5.87%</td>
-                    <td>$4.20</td>
-                    <td>87.68%</td>
-                    <td>경기 방어적 필수 소비재, 꾸준한 배당 성장의 역사.</td>
-                </tr>
-                <tr>
-                    <td>VZ</td>
-                    <td>Verizon Communications Inc.</td>
-                    <td>$47.21</td>
-                    <td>5.86%</td>
-                    <td>$2.77</td>
-                    <td>67.44%</td>
-                    <td>안정적인 통신 산업, 비교적 낮은 배당성향으로 안정성.</td>
-                </tr>
-                <tr>
-                    <td>O</td>
-                    <td>Realty Income Corporation</td>
-                    <td>$61.52</td>
-                    <td>5.26%</td>
-                    <td>$3.23</td>
-                    <td>265.0%</td>
-                    <td>'월배당의 왕', 수십 년간 배당 성장. REIT 특성상 배당성향 높음.</td>
-                </tr>
-                <tr>
-                    <td>T</td>
-                    <td>AT&T Inc.</td>
-                    <td>$24.74</td>
-                    <td>4.49%</td>
-                    <td>$1.11</td>
-                    <td>36.51%</td>
-                    <td>안정적인 통신 사업, 배당성향이 낮아 재무 건전성 양호.</td>
-                </tr>
-                <tr>
-                    <td>SPG</td>
-                    <td>Simon Property Group, Inc.</td>
-                    <td>$200.56</td>
-                    <td>4.31%</td>
-                    <td>$8.65</td>
-                    <td>60.15%</td>
-                    <td>대형 쇼핑몰 REIT, 경기 회복 시 수혜 기대.</td>
-                </tr>
-                <tr>
-                    <td>AMT</td>
-                    <td>American Tower Corporation</td>
-                    <td>$173.87</td>
-                    <td>3.96%</td>
-                    <td>$6.89</td>
-                    <td>82.26%</td>
-                    <td>통신 인프라 REIT, 5G 시대 성장 잠재력.</td>
-                </tr>
-                <tr>
-                    <td>ACN</td>
-                    <td>Accenture plc</td>
-                    <td>$159.64</td>
-                    <td>3.99%</td>
-                    <td>$6.37</td>
-                    <td>50.98%</td>
-                    <td>글로벌 컨설팅 기업, 안정적인 실적과 꾸준한 배당 성장.</td>
-                </tr>
-                <tr>
-                    <td>GPC</td>
-                    <td>Genuine Parts Company</td>
-                    <td>$98.87</td>
-                    <td>4.20%</td>
-                    <td>$4.15</td>
-                    <td>943.75%</td>
-                    <td>자동차 부품 유통. 배당성향이 매우 높아 주의 필요.</td>
-                </tr>
-                <tr>
-                    <td>EQR</td>
-                    <td>Equity Residential</td>
-                    <td>$65.83</td>
-                    <td>4.22%</td>
-                    <td>$2.78</td>
-                    <td>111.18%</td>
-                    <td>주거용 부동산 REIT, 대도시 임대 수요에 영향.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <h3>1단계: 투자 목표 설정</h3>
+    <p>가장 먼저 자신의 투자 목표를 명확히 해야 합니다. 단순히 높은 배당수익률을 원하는지, 아니면 배당 성장과 함께 장기적인 자산 증식을 목표로 하는지, 월별 배당금을 규칙적으로 받고 싶은지 등을 정해야 합니다. 이에 따라 종목 선정 기준이 달라집니다.</p>
 
-    <p><strong>분석 및 투자 아이디어:</strong></p>
-    <ul>
-        <li><strong>월배당 모기지 REITs (ARR, DX, AGNC, NLY):</strong> 이들 종목은 매우 높은 배당수익률을 제공하며 대부분 월별로 배당금을 지급합니다. 2026년 5월 현재, 금리 인상 사이클이 어느 정도 마무리 단계에 접어들었다면 이자율 변동성에 대한 부담이 줄어들 수 있습니다. 하지만 배당성향이 100%를 넘는 경우가 많으므로 (REIT는 법적으로 이익의 90% 이상을 배당해야 하므로 배당성향이 높을 수 있음) 금리 환경 변화나 주택 시장 변동성에 민감하게 반응할 수 있다는 점은 항상 유의해야 합니다.</li>
-        <li><strong>월배당 리얼티 인컴 (O):</strong> '월배당의 왕'이라는 별명처럼 수십 년간 꾸준히 월별 배당을 지급하고 성장시켜 온 대표적인 종목입니다. 현재가 $61.52에 배당수익률 5.26%로 안정적인 현금 흐름을 선호하는 투자자에게 매력적입니다. 배당성향 265.0%로 매우 높지만, 이는 REIT의 특성상 내부 현금 흐름(AFFO)을 기준으로 판단해야 하며, 단순 이익 기준 배당성향과는 다를 수 있습니다.</li>
-        <li><strong>안정적인 고배당 통신주 (MO, VZ, T):</strong> 알트리아(MO)는 필수 소비재, 버라이즌(VZ)과 AT&T(T)는 통신 산업의 대표 주자입니다. 이들 기업은 경기 침체기에도 비교적 안정적인 수요를 유지하며 꾸준한 배당을 지급하는 경향이 있습니다. 특히 VZ와 T는 5%대의 배당수익률을 제공하며, VZ는 67.44%, T는 36.51%의 비교적 건전한 배당성향을 보여 안정적인 투자를 고려할 수 있습니다.</li>
-        <li><strong>성장성 있는 배당주 (ACN, AMT, SPG):</strong> 액센츄어(ACN)는 컨설팅 분야의 강자로, 꾸준한 실적과 함께 배당을 성장시키는 종목입니다. 아메리칸 타워(AMT)는 통신 인프라 REIT로 5G 시대의 수혜가 예상됩니다. 사이먼 프로퍼티 그룹(SPG)은 대형 쇼핑몰 REIT로, 경제 활동 재개 및 소비 심리 회복에 따라 잠재적 성장 여력이 있습니다. 이들 종목은 배당과 함께 자본 차익도 기대할 수 있습니다.</li>
-        <li><strong>고배당 ETF (SPYD):</strong> SPDR Portfolio S&P 500 High Dividend ETF (SPYD)는 S&P 500 내 고배당 기업들에 분산 투자하는 대표적인 ETF입니다. 현재가 $46.62에 4.23%의 배당수익률을 제공합니다. 개별 종목 분석이 어렵거나 분산 투자를 선호하는 투자자에게 좋은 대안이 될 수 있습니다. (제공된 데이터에 연간 배당금 및 배당성향이 0.0으로 표기되어 있으나, SPYD는 분기별 배당을 꾸준히 지급하는 대표적인 ETF이므로 이는 일시적인 데이터 반영 오류일 가능성이 높습니다. 투자 시에는 최신 배당 지급 내역을 확인해야 합니다.)</li>
-        <li><strong>주의가 필요한 GPC:</strong> Genuine Parts Company (GPC)는 $98.87에 4.20%의 배당수익률을 보여주지만, 배당성향이 943.75%로 매우 높게 나타납니다. 이는 현재 이익만으로는 배당금을 감당하기 어렵다는 신호일 수 있습니다. 이러한 종목은 배당 지속 가능성에 대한 심층적인 분석이 반드시 필요합니다.</li>
-    </ul>
-
-    <h3>4. 실전 적용 방법: 5월 배당 포트폴리오 구축 가이드</h3>
-    <p>5월에도 안정적인 배당 수익을 얻기 위한 포트폴리오 구축 전략은 다음과 같습니다.</p>
+    <h3>2단계: 종목 선별 기준</h3>
+    <p>다음 기준들을 고려하여 종목을 선별합니다.</p>
     <ol>
-        <li><strong>월별/분기별 배당 지급일 확인:</strong> 관심 종목의 배당락일과 지급일을 정확히 파악하여 5월에 배당금을 받을 수 있도록 계획합니다. 많은 REITs는 월별 또는 분기별로 배당을 지급하며, 이 중 상당수가 5월에도 배당금을 지급합니다.</li>
-        <li><strong>다각적인 포트폴리오 구성:</strong> 특정 산업이나 섹터에 집중하기보다는, 경기 방어적 성격의 필수 소비재(MO), 통신(VZ, T), 그리고 부동산(O, SPG, AMT) 등 다양한 섹터의 배당주를 섞어 분산 투자합니다. 모기지 REITs(ARR, DX, AGNC, NLY)의 높은 수익률은 매력적이지만, 변동성을 고려하여 비중을 조절하는 것이 현명합니다.</li>
-        <li><strong>배당성향 및 배당 성장률 분석:</strong> 단순히 배당수익률이 높은 종목만을 쫓기보다는, 기업의 재무 건전성을 나타내는 배당성향과 미래 배당 성장을 기대할 수 있는 배당 성장률을 함께 고려해야 합니다. 지속 가능한 배당은 장기 투자의 핵심입니다. WiseAIWiseU의 <a href="/ko/list" target="_blank">배당주 스카우터</a>를 활용하시면 다양한 기준으로 배당주를 검색하고 분석할 수 있습니다.</li>
-        <li><strong>재투자 전략:</strong> 받은 배당금을 다시 배당주에 투자하는 '스노볼' 효과를 노리는 것이 장기적인 배당 투자의 핵심입니다. 특히 시장이 약세일 때 배당금으로 주식을 추가 매수하는 것은 평균 매수 단가를 낮추고 미래 배당 수익을 늘리는 효과적인 방법입니다. WiseAIWiseU의 <a href="/ko/calculator" target="_blank">스노볼 계산기</a>를 이용해 여러분의 배당금 재투자 효과를 미리 시뮬레이션 해보세요.</li>
-        <li><strong>포트폴리오 정기 검토:</strong> 시장 상황과 기업 실적은 계속 변하므로, 최소 분기별로 포트폴리오를 검토하고 필요시 리밸런싱하는 것이 좋습니다. 배당 삭감 가능성이 있는 종목은 미리 대응하여 리스크를 관리해야 합니다.</li>
+        <li><strong>배당수익률:</strong> 현재 시장의 평균 배당수익률 대비 매력적인 수준인가?</li>
+        <li><strong>배당성향:</strong> 기업이 벌어들이는 이익 대비 배당금 지급 비율이 적절한가? (일반 기업은 70% 이하, 리츠는 90% 이상도 가능)</li>
+        <li><strong>배당 성장률 및 역사:</strong> 꾸준히 배당금을 늘려온 기업인가? 배당 삭감 이력은 없는가?</li>
+        <li><strong>사업의 안정성 및 경쟁력:</strong> 해당 기업의 사업 모델이 장기적으로 지속 가능한가? 경기 침체에도 강한가?</li>
+        <li><strong>지급 주기:</strong> 월배당을 원하는지, 분기 배당을 원하는지 등 배당 지급 주기를 고려합니다.</li>
     </ol>
+    <p>WiseAIWiseU의 <a href="/ko/list" target="_blank">배당주 스카우터</a>를 활용하면 위와 같은 다양한 필터링 조건으로 원하는 배당주를 손쉽게 찾을 수 있습니다.</p>
 
-    <h3>5. 주의사항과 리스크</h3>
-    <p>배당주 투자에도 항상 주의해야 할 점과 리스크가 존재합니다.</p>
-    <ul>
-        <li><strong>고배당 함정 (Dividend Trap):</strong> 단순히 배당수익률이 높다고 해서 무조건 좋은 종목은 아닙니다. 기업의 실적 악화나 사업 모델의 위기 등으로 인해 주가가 폭락하면서 배당수익률이 일시적으로 높아 보이는 경우가 있습니다. 이러한 경우 배당 삭감 또는 중단 위험이 크므로, 기업의 펀더멘털을 반드시 확인해야 합니다. 위 데이터의 GPC와 같이 배당성향이 비정상적으로 높은 종목은 특별한 주의가 필요합니다.</li>
-        <li><strong>금리 변동성:</strong> 특히 REITs나 고정 수입 관련 종목들은 금리 변화에 민감하게 반응합니다. 금리가 인상되면 자금 조달 비용이 증가하거나, 배당주의 매력이 상대적으로 감소할 수 있습니다. 2026년 현재 금리 향방은 여전히 주요 변수입니다.</li>
-        <li><strong>환율 변동성:</strong> 한국 투자자들은 미국 주식에 투자할 때 달러/원 환율 변동에 노출됩니다. 배당금과 주가 수익 모두 환율 영향을 받으므로, 환율 동향도 함께 고려해야 합니다.</li>
-        <li><strong>세금 문제:</strong> 미국 주식 배당금에는 15%의 배당소득세가 부과됩니다. 또한 연간 일정 금액 이상의 수익에 대해서는 국내 양도소득세도 고려해야 합니다. 세금 효율적인 투자 전략을 전문가와 상담하는 것도 좋은 방법입니다.</li>
-        <li><strong>기업 특유의 리스크:</strong> 각 기업의 사업 모델, 경쟁 환경, 경영진 역량 등 개별 기업이 가진 고유한 리스크를 파악하고 투자해야 합니다.</li>
-    </ul>
+    <h3>3단계: 포트폴리오 분산</h3>
+    <p>아무리 좋은 종목이라도 한두 종목에만 집중하는 것은 위험합니다. 최소 5~10개 이상의 종목에 분산 투자하고, 다양한 섹터(리츠, 통신, 소비재 등)와 배당 지급 주기를 고려하여 포트폴리오를 구성하는 것이 좋습니다. ETF를 활용하는 것도 좋은 분산 투자 방법입니다.</p>
+
+    <h3>4단계: 재투자 및 복리의 마법</h3>
+    <p>받은 배당금을 다시 투자하여 주식 수를 늘리는 것이 장기적인 수익률에 지대한 영향을 미칩니다. 이 과정을 통해 여러분의 자산은 눈덩이처럼 불어나는 '스노볼 효과'를 경험하게 될 것입니다. 앞서 언급했듯이 <a href="/ko/calculator" target="_blank">WiseAIWiseU 스노볼 계산기</a>를 이용해 미래 수익을 예측해 보세요.</p>
+
+    <h2 id="section-5">5월 배당주 투자, 꼭 알아야 할 주의사항 및 리스크</h2>
+    <p>배당주 투자가 매력적인 것은 분명하지만, 모든 투자에는 리스크가 따릅니다. 다음 사항들을 유념해야 합니다.</p>
+    <h3>고금리 환경과 리츠의 리스크</h3>
+    <p>2026년 현재 금리 환경은 과거와 다를 수 있습니다. 금리가 높아지면 리츠는 일반적으로 두 가지 측면에서 불리해질 수 있습니다. 첫째, 부채 조달 비용이 증가하여 수익성이 악화될 수 있습니다. 둘째, 채권 등 다른 고정 수입 자산의 매력이 증가하여 리츠의 상대적 매력이 감소하고 자금 유출로 이어질 수 있습니다. 특히 모기지 리츠(mREITs)는 금리 변동성에 더욱 민감합니다.</p>
+    <h3>배당 삭감 또는 중단의 가능성</h3>
+    <p>기업의 재무 상태가 악화되거나 사업 환경이 급변하면 배당금을 삭감하거나 아예 중단할 수 있습니다. 이는 주가 하락으로 이어질 수 있으므로, 기업의 실적 발표와 뉴스에 항상 귀 기울여야 합니다. 높은 배당수익률만 보고 투자했다가는 '고배당 함정'에 빠질 수 있습니다.</p>
+    <h3>환율 변동성</h3>
+    <p>미국 배당주에 투자하는 한국 투자자들은 원/달러 환율 변동에 노출됩니다. 환율이 상승하면 자산 가치가 올라가지만, 환율이 하락하면 배당금 수령 시에도, 주식을 매도할 때도 손실을 볼 수 있습니다. 환율 헤지 전략을 고려하거나, 장기적인 관점에서 환율 변동을 감내할 준비가 되어 있어야 합니다.</p>
 
     <div class="key-point">
-        <strong>핵심 포인트:</strong> 높은 배당수익률은 매력적이지만, 지속 가능한 배당을 위해서는 기업의 배당성향, 재무 건전성, 그리고 배당 성장 스토리를 종합적으로 분석해야 합니다. 시장의 단기적인 움직임보다는 장기적인 현금 흐름 창출에 집중하는 것이 배당주 투자의 성공 비결입니다.
+        <strong>핵심 포인트:</strong> 배당주 투자 역시 금리, 기업 실적, 환율 등 다양한 리스크에 노출됩니다. 철저한 분석과 분산 투자를 통해 리스크를 관리하는 것이 중요합니다.
     </div>
 
-    <h3>6. 자주 묻는 질문 (FAQ)</h3>
+    <h2 id="section-6">자주 묻는 질문 (FAQ)</h2>
 
-    <p><strong>Q1: "Sell in May"가 배당주 투자에도 정말 적용되지 않나요?</strong></p>
-    <p>A1: "Sell in May"는 주로 시장의 시세 차익을 노리는 투자자들에게 의미 있는 격언입니다. 배당주는 주가 상승 외에 정기적인 배당금이라는 현금 흐름을 제공하기 때문에, 시장이 약세일 때도 안정적인 수익을 기대할 수 있습니다. 오히려 주가가 하락하여 배당수익률이 높아진다면, 저렴한 가격에 더 많은 배당주를 매수할 수 있는 기회가 될 수도 있습니다. 따라서 배당주 투자자에게는 'Sell in May'가 오히려 'Buy in May'의 기회로 작용할 수도 있습니다.</p>
+    <h3>Q1: 5월에 배당주를 매수해도 괜찮을까요?</h3>
+    <p>네, 괜찮습니다. "Sell in May" 격언은 단기적인 시장 타이밍에 관한 것이며, 배당주 투자는 장기적인 현금 흐름과 복리 효과를 목표로 합니다. 우량 배당주라면 5월의 일시적인 시장 약세가 오히려 좋은 매수 기회가 될 수도 있습니다. 중요한 것은 시장 타이밍보다는 기업의 본질적 가치와 배당 지속 가능성입니다.</p>
 
-    <p><strong>Q2: 높은 배당수익률은 무조건 좋은 건가요?</strong></p>
-    <p>A2: 아닙니다. 높은 배당수익률은 매력적이지만, '고배당 함정(Dividend Trap)'에 빠질 위험도 있습니다. 기업의 실적이 악화되거나 사업 전망이 어두워져 주가가 크게 하락하면, 배당금 자체가 변하지 않더라도 배당수익률은 역설적으로 높아집니다. 이러한 경우 배당 삭감이나 중단될 가능성이 크므로, 높은 배당수익률만 보고 투자하기보다는 기업의 재무 건전성, 배당성향(Payout Ratio), 그리고 배당 성장 내역 등을 종합적으로 분석해야 합니다.</p>
+    <h3>Q2: 고배당주만으로 포트폴리오를 구성해도 될까요?</h3>
+    <p>권장하지 않습니다. 높은 배당수익률은 때로는 기업의 위험 신호일 수 있습니다. 고배당주 위주로만 포트폴리오를 구성할 경우, 특정 섹터(예: 리츠)에 과도하게 집중되거나, 배당 삭감 리스크가 높은 종목에 노출될 수 있습니다. 안정적인 배당 성장주, 배당 귀족주, 그리고 고배당주를 적절히 섞어 균형 잡힌 포트폴리오를 구축하는 것이 현명합니다.</p>
 
-    <p><strong>Q3: 5월에 특히 주목해야 할 배당주 섹터가 있나요?</strong></p>
-    <p>A3: 5월에 특정 섹터가 특별히 더 유리하다고 보기는 어렵습니다. 하지만 월별 또는 분기별로 꾸준히 배당을 지급하며 5월에도 배당을 받을 수 있는 종목들에 주목하는 것이 좋습니다. 전통적으로 경기 방어적 성격이 강한 필수 소비재(MO), 통신(VZ, T), 그리고 임대료 수입을 기반으로 하는 리츠(REITs) (O, SPG, AMT, ARR, DX, AGNC, NLY, EQR 등)는 계절적 변동성이 적고 안정적인 현금 흐름을 제공하는 경향이 있어 좋은 대안이 될 수 있습니다. 포트폴리오의 균형을 위해 다양한 섹터에 분산 투자하는 것이 중요합니다.</p>
-</div>
+    <h3>Q3: 배당성향이 100%가 넘는 종목은 위험한가요?</h3>
+    <p>일반적인 기업이라면 위험 신호일 수 있지만, 리츠(REITs)의 경우에는 다릅니다. 리츠는 법적으로 수익의 상당 부분을 배당으로 지급해야 하므로, 배당성향이 100%를 넘는 경우가 흔합니다. 이때는 EPS(주당 순이익) 대신 FFO(Funds From Operations)나 AFFO(Adjusted Funds From Operations)를 기준으로 배당성향을 판단해야 합니다. 하지만 일반 기업에서 배당성향이 100%를 훨씬 초과한다면, 이는 장기적으로 지속 불가능한 배당 정책이므로 주의해야 합니다.</p>
+
+    <h2 id="section-7">현명한 배당주 투자의 시작, WiseAIWiseU와 함께!</h2>
+    <p>2026년 5월, "Sell in May"의 유혹에도 흔들리지 않는 현명한 배당주 투자는 여러분의 재정적 자유를 향한 든든한 발판이 될 것입니다. 오늘 소개해 드린 전략과 종목들을 바탕으로 자신만의 배당주 포트폴리오를 구축해 보세요. 또한, <a href="https://wiseaiwiseu.com/ko/list" target="_blank">WiseAIWiseU 배당주 스카우터</a>를 활용하면 더욱 쉽고 효율적으로 여러분에게 맞는 미국 배당주를 찾고 관리할 수 있습니다.</p>
+    <p>꾸준한 배당금으로 미래를 설계하는 현명한 투자자가 되시기를 응원합니다!</p>
+</body>
 
       <div class="nav-links">
         <a href="/ko/list">→ 배당주 스카우터 보기</a>
