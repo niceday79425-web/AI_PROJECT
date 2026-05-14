@@ -289,76 +289,97 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
     body {{ font-family: 'Inter', sans-serif; background: var(--bg-color); color: var(--text-primary); margin: 0; }}
     
     .post-hero {{
-      padding: 5rem 1.5rem 4rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding: 6rem 1.5rem 5rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05);
+      background: radial-gradient(circle at top, rgba(99,102,241,0.05) 0%, transparent 70%);
     }}
     .post-hero .ticker-badge {{
       display: inline-block; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
-      color: var(--text-secondary); font-size: 0.8rem; font-weight: 600; letter-spacing: 1px;
-      text-transform: uppercase; padding: 0.4rem 1.2rem; border-radius: 999px;
-      margin-bottom: 1.5rem;
+      color: #60a5fa; font-size: 0.8rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 0.5rem 1.4rem; border-radius: 999px;
+      margin-bottom: 2rem; backdrop-filter: blur(10px);
     }}
     .post-hero h1 {{
-      font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; letter-spacing: -1px;
-      line-height: 1.2; max-width: 800px; margin: 0 auto 1.5rem; color: var(--text-primary);
+      font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 800; letter-spacing: -1.5px;
+      line-height: 1.1; max-width: 900px; margin: 0 auto 2rem; color: var(--text-primary);
     }}
     .post-hero .meta {{
       font-size: 0.95rem; color: var(--text-secondary); display: flex;
-      gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;
+      gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;
+      opacity: 0.8;
     }}
     
     /* ── Article Layout ── */
     .post-content {{
-      max-width: 760px; margin: 0 auto; padding: 3rem 1.5rem;
+      max-width: 760px; margin: 0 auto; padding: 4rem 1.5rem;
     }}
     .post-content h2 {{
-      font-size: 1.75rem; font-weight: 700; color: var(--text-primary);
-      margin: 3.5rem 0 1.25rem; letter-spacing: -0.5px;
+      font-size: 1.85rem; font-weight: 700; color: var(--text-primary);
+      margin: 4rem 0 1.5rem; letter-spacing: -0.5px;
+      display: flex; align-items: center; gap: 0.75rem;
     }}
-    .post-content h3 {{ font-size: 1.3rem; font-weight: 600; color: var(--text-primary); margin: 2.5rem 0 1rem; letter-spacing: -0.3px; }}
-    .post-content p {{ line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 1.1rem; font-weight: 400; }}
+    .post-content h2::before {{
+      content: ''; display: inline-block; width: 4px; height: 1.5rem;
+      background: var(--primary-gradient); border-radius: 2px;
+    }}
+    .post-content h3 {{ 
+      font-size: 1.4rem; font-weight: 600; color: var(--text-primary); 
+      margin: 3rem 0 1.25rem; letter-spacing: -0.3px;
+    }}
+    .post-content p {{ 
+      line-height: 1.9; color: var(--text-secondary); 
+      margin-bottom: 1.75rem; font-size: 1.125rem; font-weight: 400; 
+    }}
     .post-content ul, .post-content ol {{
-      padding-left: 1.5rem; margin-bottom: 1.5rem;
+      padding-left: 1.5rem; margin-bottom: 1.75rem;
     }}
-    .post-content li {{ line-height: 1.8; color: var(--text-secondary); margin-bottom: 0.5rem; font-size: 1.1rem; }}
+    .post-content li {{ 
+      line-height: 1.9; color: var(--text-secondary); 
+      margin-bottom: 0.75rem; font-size: 1.125rem; 
+    }}
     .post-content strong {{ color: var(--text-primary); font-weight: 600; }}
     .post-content img {{
-      width: 100%; border-radius: 12px; margin: 2rem 0;
+      width: 100%; border-radius: 16px; margin: 2.5rem 0;
       border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
     }}
     
     /* ── Key Point ── */
     .key-point {{ 
-      background: rgba(255,255,255,0.02); border-left: 3px solid var(--text-secondary); 
-      border-radius: 0 8px 8px 0; padding: 1.5rem; margin: 2rem 0; 
-      color: var(--text-primary); font-size: 1.05rem; 
+      background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+      border-left: 4px solid #6366f1; 
+      border-radius: 12px; padding: 2rem; margin: 3rem 0; 
+      color: var(--text-primary); font-size: 1.1rem; 
+      backdrop-filter: blur(5px);
     }}
-    .key-point strong {{ color: var(--text-primary); }}
+    .key-point strong {{ color: #60a5fa; }}
     
     /* ── Key Metrics Card ── */
     .metrics-bar {{
-      display: flex; gap: 1rem; flex-wrap: wrap;
-      background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);
-      border-radius: 12px; padding: 1.5rem; margin: 2rem 0;
+      display: flex; gap: 1.5rem; flex-wrap: wrap;
+      background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px; padding: 2rem; margin: 3rem 0;
+      backdrop-filter: blur(10px);
     }}
-    .metric-item {{ flex: 1; min-width: 120px; text-align: center; }}
-    .metric-item .label {{ font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; display: block; }}
-    .metric-item .value {{ font-size: 1.5rem; font-weight: 700; color: var(--text-primary); }}
+    .metric-item {{ flex: 1; min-width: 140px; text-align: center; }}
+    .metric-item .label {{ font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.75rem; display: block; opacity: 0.8; }}
+    .metric-item .value {{ font-size: 1.75rem; font-weight: 800; color: var(--text-primary); }}
     
     /* ── Disclaimer ── */
     .disclaimer {{
-      margin-top: 4rem; padding: 1.5rem;
-      background: transparent; border: 1px solid rgba(255,255,255,0.05);
-      border-radius: 12px; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7;
+      margin-top: 5rem; padding: 2rem;
+      background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 16px; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;
     }}
-    .disclaimer .disc-title {{ font-weight: 600; color: var(--text-secondary); margin-bottom: 0.5rem; }}
+    .disclaimer .disc-title {{ font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem; display: block; }}
     
     /* ── Back Button ── */
     .back-btn {{
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      color: var(--text-secondary); font-weight: 500; text-decoration: none;
-      font-size: 0.95rem; margin-bottom: 2rem; transition: color 0.3s;
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      color: var(--text-secondary); font-weight: 600; text-decoration: none;
+      font-size: 1rem; margin-bottom: 3rem; transition: all 0.3s;
+      padding: 0.5rem 1rem; border-radius: 8px; background: rgba(255,255,255,0.03);
     }}
-    .back-btn:hover {{ color: var(--text-primary); }}
+    .back-btn:hover {{ color: var(--text-primary); background: rgba(255,255,255,0.08); transform: translateX(-5px); }}
   </style>
 </head>
 <body>

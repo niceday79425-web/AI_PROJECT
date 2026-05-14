@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia de Investimento em Dividendos | Educação Gratuita em Ações de Dividendos dos EUA | WiseAIWiseU</title>
+  <meta name="description" content="Aprenda a investir em dividendos gratuitamente. Guias para iniciantes, estratégias de portfólio mensal e análise setor por setor de ações de dividendos dos EUA. Do zero ao especialista em dividendos.">
+  <meta name="keywords" content="guia de investimento em dividendos, como investir em ações de dividendos, ações de dividendos para iniciantes, investimento em dividendos nos EUA, estratégia de portfólio de dividendos, investimento em renda passiva">
+  <meta property="og:title" content="Academia de Investimento em Dividendos | Educação Gratuita em Ações de Dividendos dos EUA">
+  <meta property="og:description" content="Aprenda a investir em dividendos gratuitamente. Guias para iniciantes, estratégias mensais, análise setorial — tudo em um só lugar.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://wiseaiwiseu.com/og-image.png">
+  <link rel="canonical" href="https://wiseaiwiseu.com/pt/learn">
+  <link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/learn">
+  <link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/learn">
+  <link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/learn">
+  <link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/learn">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .academy-hero { background: radial-gradient(circle at top, rgba(99,102,241,0.15) 0%, transparent 70%); padding: 6rem 1.5rem 4rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .academy-hero h1 { font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 800; letter-spacing: -1.5px; margin-bottom: 1.5rem; line-height: 1.1; }
+    .academy-hero p { font-size: 1.25rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto 3rem; line-height: 1.7; }
+    .hero-stats { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+    .hero-stat { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 1.5rem 2.5rem; text-align: center; backdrop-filter: blur(10px); }
+    .hero-stat .num { font-size: 2rem; font-weight: 800; color: #60a5fa; margin-bottom: 0.25rem; }
+    .hero-stat .label { font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; }
+    .academy-main { max-width: 1100px; margin: 0 auto; padding: 4rem 1.5rem; }
+    .series-block { margin-bottom: 5rem; }
+    .series-header { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .series-icon { width: 64px; height: 64px; border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; flex-shrink: 0; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+    .series-icon.blue  { background: linear-gradient(135deg, #3b82f6, #6366f1); }
+    .series-icon.green { background: linear-gradient(135deg, #10b981, #059669); }
+    .series-icon.orange{ background: linear-gradient(135deg, #f59e0b, #ef4444); }
+    .series-header h2 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.5rem; letter-spacing: -0.5px; }
+    .series-header p  { font-size: 1rem; color: var(--text-secondary); margin: 0; }
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
+    .lesson-card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 1.75rem; text-decoration: none; display: block; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; }
+    .lesson-card:hover { transform: translateY(-5px); border-color: #6366f1; box-shadow: 0 15px 30px rgba(0,0,0,0.3); background: rgba(30, 35, 50, 0.95); }
+    .lesson-card.locked { opacity: 0.5; cursor: default; pointer-events: none; }
+    .lesson-num { font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #60a5fa; margin-bottom: 0.75rem; display: block; }
+    .lesson-card h3 { font-size: 1.2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem; line-height: 1.4; }
+    .lesson-card p { font-size: 0.95rem; color: var(--text-secondary); margin: 0; line-height: 1.6; }
+    .coming-badge { position: absolute; top: 1rem; right: 1rem; background: rgba(255,255,255,0.05); color: var(--text-secondary); font-size: 0.7rem; font-weight: 700; padding: 0.3rem 0.7rem; border-radius: 99px; border: 1px solid rgba(255,255,255,0.1); }
+    .done-badge { position: absolute; top: 1rem; right: 1rem; background: rgba(16,185,129,0.1); color: #10b981; font-size: 0.7rem; font-weight: 700; padding: 0.3rem 0.7rem; border-radius: 99px; border: 1px solid rgba(16,185,129,0.2); }
+    .cta-banner { background: radial-gradient(circle at top right, rgba(99,102,241,0.1), transparent); border: 1px solid rgba(99,102,241,0.2); border-radius: 24px; padding: 4rem 2rem; text-align: center; margin-top: 5rem; backdrop-filter: blur(10px); }
+    .cta-banner h2 { font-size: 2rem; font-weight: 800; margin-bottom: 1rem; letter-spacing: -1px; }
+    .cta-banner p  { font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .cta-btns { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: var(--primary-gradient); color: #fff; text-decoration: none; padding: 1rem 2.5rem; border-radius: 14px; font-weight: 700; font-size: 1rem; transition: all 0.3s; box-shadow: 0 10px 20px rgba(99,102,241,0.2); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 15px 30px rgba(99,102,241,0.3); opacity: 0.95; }
+    .btn-secondary { background: rgba(255,255,255,0.03); color: var(--text-primary); border: 1px solid rgba(255,255,255,0.1); text-decoration: none; padding: 1rem 2.5rem; border-radius: 14px; font-weight: 700; font-size: 1rem; transition: all 0.3s; }
+    .btn-secondary:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.2); }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="/pt/" class="logo">WiseAIWiseU</a>
+      <nav class="lang-selector">
+        <a href="/ko/learn" class="lang-link">KO</a>
+        <a href="/learn" class="lang-link">EN</a>
+        <a href="/pt/learn" class="lang-link active">PT</a>
+      </nav>
+    </header>
+            <nav class="glass-nav">
+          <a href="/pt/blog">Market Insights</a>
+          <a href="/pt/learn" class="active">Dividend Academy</a>
+          <a href="/pt/list">Dividend Scouter</a>
+          <a href="/pt/calculator">Snowball Simulator</a>
+          <a href="/pt/calendar">Dividend Calendar</a>
+          <a href="/pt/fortune">Stock Match</a>
+          <a href="/pt/about">About</a>
+        </nav>
+
+    <section class="academy-hero">
+      <h1>📚 Academia de Dividendos</h1>
+      <p>Aprenda tudo sobre investimento em ações de dividendos dos EUA — totalmente grátis.<br>
+         Do básico para iniciantes a estratégias avançadas de portfólio.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num">30</div><div class="label">Aulas</div></div>
+        <div class="hero-stat"><div class="num">3</div><div class="label">Séries</div></div>
+        <div class="hero-stat"><div class="num">Grátis</div><div class="label">100% Grátis</div></div>
+      </div>
+    </section>
+
+    <main class="academy-main">
+      <div class="series-block">
+        <div class="series-header">
+          <div class="series-icon blue">🎓</div>
+          <div>
+            <h2>Investimento em Dividendos para Iniciantes</h2>
+            <p>Uma série de 10 aulas cobrindo tudo o que você precisa para começar a investir</p>
+          </div>
+        </div>
+        <div class="cards-grid">
+          <a href="/pt/blog/beginner-01-what-is-dividend" class="lesson-card"><div class="done-badge">✓ Feito</div><div class="lesson-num">Aula 01</div><h3>O que são Ações de Dividendos?</h3><p>Como os dividendos funcionam, cálculos de yield e o básico do investimento em renda</p></a>
+          <div class="lesson-card locked"><div class="coming-badge">Em breve</div><div class="lesson-num">Aula 02</div><h3>Entendendo o Dividend Yield</h3><p>Por que o yield alto nem sempre é melhor — evitando a armadilha dos dividendos</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Em breve</div><div class="lesson-num">Aula 03</div><h3>Análise do Payout Ratio</h3><p>Como julgar a sustentabilidade dos dividendos antes que sejam cortados</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Em breve</div><div class="lesson-num">Aula 04</div><h3>O Poder do DRIP</h3><p>Como o reinvestimento de dividendos cria o efeito bola de neve</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Em breve</div><div class="lesson-num">Aula 05</div><h3>Dividend Aristocrats Explicados</h3><p>25+ anos de crescimento consecutivo de dividendos — o que significa</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Em breve</div><div class="lesson-num">Aula 06</div><h3>Yield on Cost: A Métrica Oculta</h3><p>Por que investidores de longo prazo se importam mais com isso</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Em breve</div><div class="lesson-num">Aula 07</div><h3>Estratégia de Calendário de Dividendos</h3><p>Projetando fluxo de caixa mensal com datas de pagamento</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Em breve</div><div class="lesson-num">Aula 08</div><h3>Diversificação Setorial</h3><p>Construindo um portfólio de dividendos resiliente entre setores</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Em breve</div><div class="lesson-num">Aula 09</div><h3>Impostos dos EUA para Investidores Int'l</h3><p>Retenção na fonte, alíquotas de tratados e como declarar</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Em breve</div><div class="lesson-num">Aula 10</div><h3>Começando seu Primeiro Portfólio</h3><p>Guia passo a passo para comprar suas primeiras ações</p></div>
+        </div>
+      </div>
+
+      <div class="series-block">
+        <div class="series-header">
+          <div class="series-icon green">📅</div>
+          <div>
+            <h2>Estratégia Mensal de Portfólio</h2>
+            <p>As melhores ações e estratégias para cada mês do ano</p>
+          </div>
+        </div>
+        <div class="cards-grid">
+          <div class="lesson-card locked"><div class="coming-badge">Em breve</div><div class="lesson-num">Janeiro</div><h3>Estratégia de Ano Novo</h3><p>Principais pagadores de dividendos começando o ano forte</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Em breve</div><div class="lesson-num">Fevereiro</div><h3>Escolhas de Fevereiro</h3><p>Ações de dividendos focadas em crescimento para o Q1</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Em breve</div><div class="lesson-num">Março</div><h3>Pico da Temporada do Q1</h3><p>Como maximizar a coleta de dividendos trimestrais</p></div>
+          <div class="lesson-card locked"><div class="coming-badge">Em breve</div><div class="lesson-num">Abril</div><h3>Verificação de Lucros</h3><p>Revisando a segurança dos dividendos após os lucros do Q1</p></div>
+        </div>
+      </div>
+
+      <div class="cta-banner">
+        <h2>🚀 Coloque seu Aprendizado em Ação</h2>
+        <p>Analise ações com nosso Scouter e simule seu crescimento de riqueza com o Simulador Bola de Neve.</p>
+        <div class="cta-btns">
+          <a href="/pt/list" class="btn-primary">📊 Dividend Scouter</a>
+          <a href="/pt/calculator" class="btn-secondary">🧮 Simulador Snowball</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-nav" style="margin-bottom:1.5rem;font-size:0.9rem;">
+          <a href="/pt/privacy" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">Política de Privacidade</a> |
+          <a href="/pt/about" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">Sobre Nós</a> |
+          <a href="/pt/contact" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">Contato</a>
+        </div>
+        <p>&copy; 2026 WiseAIWiseU - Smart Dividend Investing</p>
+        <p class="legal-disclaimer">Conteúdo educacional apenas. Não é aconselhamento financeiro. O investimento envolve risco.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
