@@ -1,58 +1,76 @@
-"""내비게이션 메뉴에 아카데미 링크 추가 + 교육 포스트 링크를 아카데미 페이지로 업데이트"""
+"""내비게이션 메뉴를 최신 Glassmorphism 디자인으로 업데이트"""
 import os, re, glob
 
 ROOT = r"d:\AI_PROJECT"
 
-# 기존 내비게이션 교체 패턴
-OLD_NAV_EN = 'href="/blog" style="color:var(--text-secondary);text-decoration:none;">Market Insights</a>'
 NEW_NAV_EN_ITEMS = [
-    ('href="/blog"', 'Market Insights'),
-    ('href="/learn"', '📚 Dividend Academy'),
-    ('href="/list"', 'Dividend Scouter'),
-    ('href="/calculator"', 'Snowball Calculator'),
-    ('href="/calendar"', 'Dividend Calendar'),
-    ('href="/about"', 'About'),
+    ('href="/blog.html"', '<i class="fas fa-newspaper"></i> Market Insights'),
+    ('href="/learn.html"', '<i class="fas fa-graduation-cap"></i> Dividend Academy'),
+    ('href="/list.html"', '<i class="fas fa-chart-line"></i> Dividend Scouter'),
+    ('href="/calculator.html"', '<i class="fas fa-calculator"></i> Snowball Calculator'),
+    ('href="/calendar.html"', '<i class="fas fa-calendar-alt"></i> Dividend Calendar'),
+    ('href="/about.html"', '<i class="fas fa-info-circle"></i> About'),
 ]
 
-OLD_NAV_KO = 'href="/ko/blog" style="color:var(--text-secondary);text-decoration:none;">마켓 인사이트</a>'
 NEW_NAV_KO_ITEMS = [
-    ('href="/ko/blog"', '마켓 인사이트'),
-    ('href="/ko/learn"', '📚 배당투자 아카데미'),
-    ('href="/ko/list"', '배당주 스카우터'),
-    ('href="/ko/calculator"', '스노볼 계산기'),
-    ('href="/ko/calendar"', '배당 캘린더'),
-    ('href="/ko/about"', '소개'),
+    ('href="/ko/blog.html"', '<i class="fas fa-newspaper"></i> 마켓 인사이트'),
+    ('href="/ko/learn.html"', '<i class="fas fa-graduation-cap"></i> 배당 아카데미'),
+    ('href="/ko/list.html"', '<i class="fas fa-chart-line"></i> 배당주 스카우터'),
+    ('href="/ko/calculator.html"', '<i class="fas fa-calculator"></i> 스노볼 계산기'),
+    ('href="/ko/calendar.html"', '<i class="fas fa-calendar-alt"></i> 배당 캘린더'),
+    ('href="/ko/about.html"', '<i class="fas fa-info-circle"></i> 소개'),
 ]
 
 def build_nav_en(active_href=""):
     items = []
+    # Convert active_href to full file path style for matching, or just match the base
+    # Because active_href could be '/blog' or '/ko/blog' or '/ko/blog.html'
     for href, label in NEW_NAV_EN_ITEMS:
-        if href.strip('"') == active_href or (active_href == "/learn" and "Academy" in label):
-            items.append(f'<a {href} style="color:#6366f1;font-weight:700;text-decoration:none;">{label}</a>')
+        # Check if the href matches the active page
+        clean_href = href.replace('href="', '').replace('"', '').replace('.html', '')
+        clean_active = active_href.replace('.html', '')
+        
+        # Exact match or if active is a sub-page of the section
+        if clean_href == clean_active or (clean_href != "/" and clean_active.startswith(clean_href)):
+            items.append(f'<a {href.replace(".html", "")} class="active">{label}</a>')
         else:
-            items.append(f'<a {href} style="color:var(--text-secondary);text-decoration:none;">{label}</a>')
-    return '        <nav class="main-nav" style="display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:0.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border-color);font-size:0.9rem;">\n          ' + '\n          '.join(items) + '\n        </nav>'
+            items.append(f'<a {href.replace(".html", "")}>{label}</a>')
+            
+    return '        <nav class="glass-nav">\n          ' + '\n          '.join(items) + '\n        </nav>'
 
 def build_nav_ko(active_href=""):
     items = []
     for href, label in NEW_NAV_KO_ITEMS:
-        if "learn" in href and "learn" in active_href:
-            items.append(f'<a {href} style="color:#6366f1;font-weight:700;text-decoration:none;">{label}</a>')
+        clean_href = href.replace('href="', '').replace('"', '').replace('.html', '')
+        clean_active = active_href.replace('.html', '')
+        
+        if clean_href == clean_active or (clean_href != "/ko/" and clean_active.startswith(clean_href)):
+            items.append(f'<a {href.replace(".html", "")} class="active">{label}</a>')
         else:
-            items.append(f'<a {href} style="color:var(--text-secondary);text-decoration:none;">{label}</a>')
-    return '        <nav class="main-nav" style="display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:0.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border-color);font-size:0.9rem;">\n          ' + '\n          '.join(items) + '\n        </nav>'
+            items.append(f'<a {href.replace(".html", "")}>{label}</a>')
+            
+    return '        <nav class="glass-nav">\n          ' + '\n          '.join(items) + '\n        </nav>'
 
 NAV_PATTERN = re.compile(
-    r'<nav class="main-nav"[^>]*>.*?</nav>',
+    r'<nav class="(main-nav|glass-nav)"[^>]*>.*?</nav>',
     re.DOTALL
 )
 
 def update_nav(path, new_nav):
     with open(path, "r", encoding="utf-8") as f:
         html = f.read()
-    if 'class="main-nav"' not in html:
+        
+    # main-nav나 glass-nav가 있는지 확인
+    if not re.search(r'<nav class="(main-nav|glass-nav)"', html):
         return False
+        
     new_html = NAV_PATTERN.sub(new_nav, html, count=1)
+    
+    # 만약 FontAwesome이 없다면 <head> 태그 닫히기 전에 추가
+    if '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/' not in new_html:
+        fa_link = '  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">\n</head>'
+        new_html = new_html.replace('</head>', fa_link)
+
     if new_html != html:
         with open(path, "w", encoding="utf-8") as f:
             f.write(new_html)
@@ -79,21 +97,23 @@ ko_pages = [
     (os.path.join(ROOT, "ko", "blog.html"), "/ko/blog"),
     (os.path.join(ROOT, "ko", "about.html"), "/ko/about"),
     (os.path.join(ROOT, "ko", "learn.html"), "/ko/learn"),
+    (os.path.join(ROOT, "ko", "calculator.html"), "/ko/calculator"),
+    (os.path.join(ROOT, "ko", "calendar.html"), "/ko/calendar"),
+    (os.path.join(ROOT, "ko", "list.html"), "/ko/list"),
+    (os.path.join(ROOT, "ko", "fortune.html"), "/ko/fortune"),
 ]
 for path, active in ko_pages:
     if os.path.exists(path):
         if update_nav(path, build_nav_ko(active)):
             print(f"  [nav-ko] {os.path.basename(path)}")
 
-# Also update nav in KO blog posts (교육 시리즈 포스트)
-ko_edu_posts = glob.glob(os.path.join(ROOT, "ko", "blog", "beginner-*.html")) + \
-               glob.glob(os.path.join(ROOT, "ko", "blog", "monthly-*.html")) + \
-               glob.glob(os.path.join(ROOT, "ko", "blog", "sector-*.html"))
+# Also update nav in all blog posts (KO, EN, PT)
+ko_posts = glob.glob(os.path.join(ROOT, "ko", "blog", "*.html"))
+for path in ko_posts:
+    update_nav(path, build_nav_ko("/ko/blog"))
+    
+en_posts = glob.glob(os.path.join(ROOT, "blog", "*.html"))
+for path in en_posts:
+    update_nav(path, build_nav_en("/blog"))
 
-updated = 0
-for path in ko_edu_posts:
-    if update_nav(path, build_nav_ko()):
-        updated += 1
-print(f"  [nav-ko-edu] {updated}개 교육 포스트 내비 업데이트")
-
-print("\n[OK] 내비게이션 업데이트 완료")
+print("\n[OK] 모든 페이지의 내비게이션 바 디자인 업데이트 완료")
