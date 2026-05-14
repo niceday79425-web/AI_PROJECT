@@ -1,4 +1,4 @@
-﻿"""
+"""
 교육 블로그 정적 HTML 생성기
 EN/KO/PT 각 10개 = 총 30개 교육 포스트 생성
 """
@@ -86,7 +86,7 @@ TOPICS = {
 
         ("dividend-aristocrats-guide", "Dividend Aristocrats: 25 Years of Consecutive Growth Explained",
          "dividend aristocrats, dividend growth, S&P 500, long-term investing, passive income",
-         """<p>The Dividend Aristocrats are an elite group of S&P 500 companies that have increased their dividend payments every single year for at least <strong>25 consecutive years</strong>. As of 2025, there are approximately 65 companies in this distinguished group. Understanding why these companies are so reliable — and how to use them in your portfolio — is foundational to long-term dividend investing.</p>
+         """<p>The Dividend Aristocrats are an elite group of S&P 500 companies that have increased their dividend payments every single year for at least <strong>25 consecutive years</strong>. As of 2026, there are approximately 65 companies in this distinguished group. Understanding why these companies are so reliable — and how to use them in your portfolio — is foundational to long-term dividend investing.</p>
 <h2>Why the 25-Year Threshold Matters</h2>
 <p>In 25 years, the world experiences multiple recessions, bear markets, industry disruptions, and global crises. A company that maintained and grew its dividend through the dot-com crash (2000-02), the Global Financial Crisis (2008-09), the COVID-19 pandemic (2020), and various oil price collapses has demonstrated extraordinary business resilience. These are not lucky companies — they have durable competitive advantages, strong free cash flow, and disciplined capital allocation.</p>
 <h2>Notable Dividend Aristocrats</h2>
@@ -99,7 +99,7 @@ TOPICS = {
 <li><strong>Chevron (CVX):</strong> Energy sector, benefiting from commodity super-cycles.</li>
 </ul>
 <h2>The Yield on Cost Advantage</h2>
-<p>Here's the magic of dividend aristocrats for long-term investors. Suppose you bought Coca-Cola in 2005 at $20/share with a 3% dividend yield (paying $0.60/year). By 2025, KO's annual dividend per share had grown to approximately $1.84. Your Yield on Cost — calculated on your original purchase price — is now <strong>9.2%</strong>. Your income nearly tripled on the same investment.</p>
+<p>Here's the magic of dividend aristocrats for long-term investors. Suppose you bought Coca-Cola in 2005 at $20/share with a 3% dividend yield (paying $0.60/year). By 2026, KO's annual dividend per share had grown to approximately $2.06. Your Yield on Cost — calculated on your original purchase price — is now <strong>10.3%</strong>. Your income nearly tripled on the same investment.</p>
 <h2>How to Build a Dividend Aristocrat Portfolio</h2>
 <p>Diversify across sectors: consumer staples, healthcare, industrials, financials, and utilities. Aim for a blend of higher-yielding aristocrats (3-5%) and faster-growing ones (1-3% yield but 8-12% dividend growth). Reinvest all dividends via DRIP during accumulation phase.</p>
 <p>Find top-rated dividend aristocrats in our <a href="/list.html" style="color:#3b82f6;">Dividend Scouter</a>.</p>
@@ -166,7 +166,7 @@ TOPICS = {
          """<p>Yield on Cost (YoC) is one of the most important — and most misunderstood — metrics in dividend investing. While standard dividend yield tells you what a stock pays relative to today's market price, Yield on Cost tells you what a stock pays relative to <em>your original purchase price</em>. For long-term dividend investors, this is the number that truly matters.</p>
 <h2>The Formula</h2>
 <p><strong>Yield on Cost = Annual Dividend Per Share ÷ Original Purchase Price Per Share × 100</strong></p>
-<p>Example: You buy Coca-Cola at $40/share in 2010 when it pays $0.88/year (2.2% yield). By 2025, KO pays $1.84/year. Your Yield on Cost = $1.84 ÷ $40 = <strong>4.6%</strong> — more than double your original yield, without any additional investment.</p>
+<p>Example: You buy Coca-Cola at $40/share in 2010 when it pays $0.88/year (2.2% yield). By 2026, KO pays $2.06/year. Your Yield on Cost = $2.06 ÷ $40 = <strong>5.15%</strong> — more than double your original yield, without any additional investment.</p>
 <h2>The Rule of 72 Applied to Dividend Growth</h2>
 <p>The Rule of 72 is a shortcut to calculate how long it takes for a quantity to double at a fixed growth rate: divide 72 by the growth rate. Applied to dividends: at 8% annual dividend growth, your dividend income doubles every 9 years (72 ÷ 8 = 9). At 12% growth, it doubles every 6 years.</p>
 <p>This means that a dividend growth stock with a starting yield of 3% and 10% annual dividend growth will have a Yield on Cost of:</p>
@@ -183,7 +183,7 @@ TOPICS = {
 
         ("dividend-kings-analysis", "Dividend Kings: The 50+ Year Club of Dividend Excellence",
          "dividend kings, dividend aristocrats, long-term investing, Johnson and Johnson, Coca-Cola",
-         """<p>If Dividend Aristocrats (25+ years of consecutive increases) represent the elite of dividend investing, then <strong>Dividend Kings</strong> — companies with 50+ consecutive years of dividend increases — represent the absolute pinnacle of corporate financial discipline. As of 2025, fewer than 50 companies have achieved this remarkable status.</p>
+         """<p>If Dividend Aristocrats (25+ years of consecutive increases) represent the elite of dividend investing, then <strong>Dividend Kings</strong> — companies with 50+ consecutive years of dividend increases — represent the absolute pinnacle of corporate financial discipline. As of 2026, fewer than 50 companies have achieved this remarkable status.</p>
 <h2>What It Takes to Become a Dividend King</h2>
 <p>Think about what 50 consecutive years of dividend increases means. The company must have increased its dividend through: the 1973-74 oil crisis, the stagflation of the late 1970s, the early 1980s recession, the 1987 stock market crash, the early 1990s recession, the dot-com bust (2000-02), the Global Financial Crisis (2008-09), and COVID-19 (2020). Maintaining — let alone growing — a dividend through all of these events requires extraordinary business resilience, diversified revenue streams, and conservative financial management.</p>
 <h2>Notable Dividend Kings</h2>
@@ -416,7 +416,7 @@ def update_posts_json(json_path, new_entries, max_posts=20):
 
 
 def main():
-    base_date = datetime(2026, 3, 5)
+    base_date = datetime(2026, 5, 14)
     
     # ── EN ──
     en_blog_dir = os.path.join(BASE, "blog")
@@ -454,7 +454,7 @@ def main():
         print(f"[PT] Generated: {slug}.html")
     update_posts_json(pt_json_path, pt_entries)
 
-    print("\n✅ All edu blog posts generated!")
+    print("\n[OK] All edu blog posts generated!")
     print(f"  EN: {len(TOPICS['en'])} posts")
     print(f"  KO: {len(TOPICS_KO)} posts")
     print(f"  PT: {len(TOPICS_PT)} posts")

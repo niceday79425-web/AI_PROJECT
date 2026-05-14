@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRIP(배당재투자)의 마법: 스노볼 효과로 부를 불리는 전략 | WiseAIWiseU</title>
+  <meta name="description" content="DRIP 개념, 복리 효과 계산 예시, DRIP 설정 방법과 장단점 분석">
+  <meta name="keywords" content="배당주, 미국 주식, 배당 투자, 패시브 인컴, 배당주 초보자 가이드 4편">
+  <meta property="og:title" content="DRIP(배당재투자)의 마법: 스노볼 효과로 부를 불리는 전략 | WiseAIWiseU">
+  <meta property="og:description" content="DRIP 개념, 복리 효과 계산 예시, DRIP 설정 방법과 장단점 분석">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://wiseaiwiseu.com/og-image.png">
+  <link rel="canonical" href="https://wiseaiwiseu.com/ko/blog/beginner-04-drip">
+  <link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/beginner-04-drip">
+  <link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/ko/blog/beginner-04-drip">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    /* ── Reading Progress Bar ── */
+    #progress-bar {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+      background: linear-gradient(90deg, #6366f1, #2dd4bf);
+      z-index: 9999; transition: width 0.1s linear;
+    }
+    /* ── Post Styles ── */
+    body { font-family: 'Inter', sans-serif; background: var(--bg-color); color: var(--text-primary); margin: 0; }
+    
+    .post-hero {
+      padding: 6rem 1.5rem 5rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05);
+      background: radial-gradient(circle at top, rgba(99,102,241,0.05) 0%, transparent 70%);
+    }
+    .post-hero .ticker-badge, .series-badge {
+      display: inline-block; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+      color: #60a5fa; font-size: 0.8rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 0.5rem 1.4rem; border-radius: 999px;
+      margin-bottom: 2rem; backdrop-filter: blur(10px);
+    }
+    .post-hero h1 {
+      font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 800; letter-spacing: -1.5px;
+      line-height: 1.1; max-width: 900px; margin: 0 auto 2rem; color: var(--text-primary);
+    }
+    .post-hero .meta {
+      font-size: 0.95rem; color: var(--text-secondary); display: flex;
+      gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;
+      opacity: 0.8;
+    }
+    
+    /* ── Article Layout ── */
+    .post-content {
+      max-width: 760px; margin: 0 auto; padding: 4rem 1.5rem;
+    }
+    .post-content h2 {
+      font-size: 1.85rem; font-weight: 700; color: var(--text-primary);
+      margin: 4rem 0 1.5rem; letter-spacing: -0.5px;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .post-content h2::before {
+      content: ''; display: inline-block; width: 4px; height: 1.5rem;
+      background: var(--primary-gradient); border-radius: 2px;
+    }
+    .post-content h3 { 
+      font-size: 1.4rem; font-weight: 600; color: var(--text-primary); 
+      margin: 3rem 0 1.25rem; letter-spacing: -0.3px;
+    }
+    .post-content p { 
+      line-height: 1.9; color: var(--text-secondary); 
+      margin-bottom: 1.75rem; font-size: 1.125rem; font-weight: 400; 
+    }
+    .post-content ul, .post-content ol {
+      padding-left: 1.5rem; margin-bottom: 1.75rem;
+    }
+    .post-content li { 
+      line-height: 1.9; color: var(--text-secondary); 
+      margin-bottom: 0.75rem; font-size: 1.125rem; 
+    }
+    .post-content strong { color: var(--text-primary); font-weight: 600; }
+    .post-content img {
+      width: 100%; border-radius: 16px; margin: 2.5rem 0;
+      border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    
+    /* ── Key Point ── */
+    .key-point { 
+      background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+      border-left: 4px solid #6366f1; 
+      border-radius: 12px; padding: 2rem; margin: 3rem 0; 
+      color: var(--text-primary); font-size: 1.1rem; 
+      backdrop-filter: blur(5px);
+    }
+    .key-point strong { color: #60a5fa; }
+    
+    /* ── Data Table ── */
+    .data-table { width:100%;border-collapse:collapse;margin:2rem 0;font-size:0.95rem; }
+    .data-table th { background:rgba(255,255,255,0.03);color:var(--text-primary);padding:1rem;text-align:left; border-bottom:1px solid rgba(255,255,255,0.1); font-weight: 600; }
+    .data-table td { padding:1rem;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--text-secondary); }
+    
+    /* ── Nav Links & Author Box ── */
+    .nav-links { display:flex;gap:1.5rem;flex-wrap:wrap;margin:3rem 0;padding:1.5rem;background:rgba(255,255,255,0.02);border-radius:12px; }
+    .nav-links a { color:var(--text-primary);text-decoration:none;font-weight:500;font-size:0.95rem; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 2px; transition: border-color 0.3s; }
+    .nav-links a:hover { border-color: var(--text-primary); }
+    
+    .author-box { display:flex;align-items:center;gap:1.2rem;background:transparent;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1);padding:1.5rem 0;margin:3rem 0; }
+    .author-avatar { width:56px;height:56px;background:rgba(255,255,255,0.05);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--text-primary);font-weight:600;font-size:1.2rem; }
+    .author-box strong { color:var(--text-primary); display:block; margin-bottom: 0.2rem; font-size: 1.1rem; }
+    .author-box span { color:var(--text-secondary); font-size: 0.95rem; }
+    
+    /* ── Disclaimer ── */
+    .disclaimer {
+      margin-top: 4rem; padding: 1.5rem;
+      background: transparent; border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 12px; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7;
+    }
+    .disclaimer .disc-title { font-weight: 600; color: var(--text-secondary); margin-bottom: 0.5rem; }
+    
+    /* ── Back Button ── */
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      color: var(--text-secondary); font-weight: 500; text-decoration: none;
+      font-size: 0.95rem; margin-bottom: 2rem; transition: color 0.3s;
+    }
+    .back-btn:hover { color: var(--text-primary); }
+    
+    /* ── Series Nav ── */
+    .series-nav { background:rgba(255,255,255,0.02);border-radius:12px;padding:1.5rem;margin-top:4rem; border:1px solid rgba(255,255,255,0.05); }
+    .series-nav h3 { color:var(--text-primary);font-size:1.1rem;margin-bottom:1rem; }
+    .series-nav ul { list-style:none;padding:0;margin:0; }
+    .series-nav li { padding:0.4rem 0;font-size:0.95rem; color: var(--text-secondary); }
+    .series-nav a { color:var(--text-primary);text-decoration:none; border-bottom: 1px solid rgba(255,255,255,0.2); }
+    .series-nav a:hover { border-color: var(--text-primary); }
+</head>
+<body>
+  <div id="progress-bar"></div>
+  <div class="container">
+    <header>
+      <a href="/ko/" class="logo">WiseAIWiseU</a>
+      <nav class="lang-selector">
+        <a href="/ko/blog" class="lang-link active">KO</a>
+        <a href="/blog" class="lang-link">EN</a>
+        <a href="/pt/blog" class="lang-link">PT</a>
+      </nav>
+    </header>
+    <nav class="main-nav" style="display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:0.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border-color);font-size:0.9rem;">
+      <a href="/ko/blog" style="color:var(--text-secondary);text-decoration:none;">마켓 인사이트</a>
+      <a href="/ko/list" style="color:var(--text-secondary);text-decoration:none;">배당주 스카우터</a>
+      <a href="/ko/calculator" style="color:var(--text-secondary);text-decoration:none;">스노볼 계산기</a>
+      <a href="/ko/calendar" style="color:var(--text-secondary);text-decoration:none;">배당 캘린더</a>
+      <a href="/ko/about" style="color:var(--text-secondary);text-decoration:none;">소개</a>
+    </nav>
+
+    <section class="post-hero">
+      <span class="series-badge">📚 배당주 초보자 가이드 4편</span>
+      <h1>DRIP(배당재투자)의 마법: 스노볼 효과로 부를 불리는 전략</h1>
+      <div class="meta" style="font-size:0.9rem;opacity:0.7;display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;margin-top:0.75rem;">
+        <span>📅 2026-05-14</span>
+        <span>⏱️ 읽는 시간: 약 8분</span>
+        <span>🌐 WiseAIWiseU</span>
+      </div>
+    </section>
+
+    <main class="post-content">
+      <a href="/ko/blog" class="back-btn">← 블로그로 돌아가기</a>
+
+      <div class="author-box">
+        <div class="author-avatar">W</div>
+        <div>
+          <strong style="display:block;color:#1e1b4b;font-size:0.95rem;">WiseAIWiseU 리서치팀</strong>
+          <span style="font-size:0.8rem;color:#6b7280;">미국 배당주 전문 분석 | 2026-05-14 | 교육 목적 콘텐츠</span>
+        </div>
+      </div>
+
+      <body>
+    <div class="blog-post">
+        <h1 id="post-title">DRIP(배당재투자)의 마법: 스노볼 효과로 부를 불리는 전략 - 배당주 초보자 가이드 4편</h1>
+
+        <p>안녕하세요, 미국 배당주 투자 전문가 WiseAIWiseU입니다. 오늘은 한국 투자자분들이 미국 배당주 투자를 통해 장기적인 자산 증식을 이루는 데 핵심적인 전략인 DRIP(Dividend Reinvestment Plan), 즉 배당 재투자에 대해 깊이 있게 다뤄보겠습니다. 마치 눈덩이를 굴리듯 자산을 불려나가는 스노볼 효과의 비밀을 함께 파헤쳐 볼 시간입니다.</p>
+
+        <h2 id="section-summary">1. 핵심 요약: 왜 DRIP 전략이 중요한가요?</h2>
+        <p>많은 투자자분들이 배당주 투자를 통해 정기적인 현금 흐름을 얻는 것에 집중합니다. 물론 이는 배당주 투자의 큰 매력 중 하나입니다. 하지만 여기서 한 발 더 나아가, 받은 배당금을 다시 해당 주식에 재투자하는 DRIP 전략을 활용한다면, 여러분의 자산은 상상 이상의 속도로 불어날 수 있습니다. 바로 <strong>복리의 마법</strong> 때문이죠.</p>
+        <p>DRIP은 투자의 본질적인 가치 중 하나인 시간을 내 편으로 만들고, 여러분이 잠자는 동안에도 꾸준히 자산을 성장시키는 가장 강력한 도구입니다. 특히 배당주 초보자분들이라면 이 전략을 반드시 이해하고 실전에 적용해야 장기적인 부의 축적을 현실로 만들 수 있습니다.</p>
+        <div class="key-point"><strong>핵심 포인트:</strong> DRIP은 받은 배당금으로 더 많은 주식을 매수하고, 이 주식들이 또다시 더 많은 배당금을 창출하는 선순환 구조를 만들어 복리 효과를 극대화하는 장기 투자 전략입니다.</div>
+
+        <h2 id="section-concept">2. DRIP 개념 상세 설명: 복리의 엔진, 배당 재투자</h2>
+        <h3>DRIP이란 무엇인가요?</h3>
+        <p>DRIP은 <strong>Dividend Reinvestment Plan(배당 재투자 계획)</strong>의 약자입니다. 간단히 말해, 기업이 주주에게 지급하는 현금 배당금을 현금으로 수령하는 대신, 그 배당금으로 해당 기업의 주식을 자동으로 추가 매수하도록 설정하는 것을 의미합니다. 여러분의 증권사 계좌에서 몇 번의 클릭만으로 이 기능을 활성화할 수 있습니다.</p>
+
+        <h3>DRIP은 어떻게 작동하며, 복리 효과를 만드는가요?</h3>
+        <p>DRIP의 작동 원리는 매우 간단하면서도 강력합니다.</p>
+        <ol>
+            <li><strong>배당금 발생:</strong> 여러분이 보유한 주식에서 배당금이 발생합니다.</li>
+            <li><strong>자동 재투자:</strong> 이 배당금이 현금으로 지급되는 대신, 자동으로 해당 주식을 매수하는 데 사용됩니다. 증권사에 따라 주가가 아무리 높아도 소수점 단위의 주식(Fractional Shares)까지 매수할 수 있습니다.</li>
+            <li><strong>주식 수 증가:</strong> 재투자로 인해 여러분이 보유한 주식의 수가 증가합니다.</li>
+            <li><strong>더 많은 배당금:</strong> 늘어난 주식 수만큼 다음 배당금은 더 많이 지급됩니다.</li>
+            <li><strong>선순환 반복:</strong> 더 많아진 배당금은 다시 더 많은 주식을 매수하고, 이는 다시 더 많은 배당금으로 이어지는 선순환 구조를 만들어냅니다.</li>
+        </ol>
+        <p>이러한 과정이 반복될수록 여러분의 자산은 기하급수적으로 성장하게 됩니다. 마치 작은 눈덩이가 언덕을 굴러 내려오면서 점점 더 커지는 '스노볼 효과'와 같습니다. 투입되는 추가 자본 없이도 시간이 지남에 따라 자산이 저절로 불어나는 마법을 경험할 수 있습니다.</p>
+
+        <h2 id="section-examples">3. 실제 데이터와 사례: 스노볼이 얼마나 커질 수 있을까? (2026년 5월 기준)</h2>
+        <p>그럼 2026년 5월 14일 현재 시장 데이터를 바탕으로 DRIP의 스노볼 효과가 얼마나 강력한지 구체적인 예시를 통해 살펴보겠습니다. 여기서는 이해를 돕기 위해 주가와 배당금은 일정하게 유지된다고 가정하겠습니다. 실제 시장에서는 주가와 배당금 변동이 발생하며, 이는 WiseAIWiseU의 <a href="/ko/calculator">스노볼 계산기</a>를 통해 더욱 현실적으로 시뮬레이션해 볼 수 있습니다.</p>
+
+        <h3>사례 1: 알트리아 그룹 (MO)으로 보는 DRIP 효과</h3>
+        <p>담배 회사로 유명한 알트리아 그룹(Altria Group, Inc., 티커: MO)은 꾸준한 배당 성장을 보여주는 대표적인 배당주 중 하나입니다. 2026년 5월 14일 현재 MO의 주가는 <strong>$71.54</strong>이며, 연간 배당금은 주당 <strong>$4.20</strong>으로 배당수익률은 약 <strong>5.87%</strong>입니다.</p>
+        <p>만약 여러분이 MO 주식 100주를 초기 투자했다고 가정하고, DRIP을 설정했을 때 5년 후 어떻게 자산이 변화하는지 살펴보겠습니다.</p>
+        <ul>
+            <li>초기 투자: MO 100주 ($71.54/주) = 총 $7,154</li>
+            <li>연간 배당금: 주당 $4.20</li>
+        </ul>
+
+        <table class="data-table">
+            <caption>MO DRIP 적용 5년간 주식 수 변화 시뮬레이션 (2026년 5월 기준, 주가/배당금 일정 가정)</caption>
+            <thead>
+                <tr>
+                    <th>연차</th>
+                    <th>연초 보유 주식 수</th>
+                    <th>연간 배당금 수령액</th>
+                    <th>재투자 주식 수 (약)</th>
+                    <th>연말 보유 주식 수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1년 차</td>
+                    <td>100.00주</td>
+                    <td>$420.00</td>
+                    <td>5.87주</td>
+                    <td>105.87주</td>
+                </tr>
+                <tr>
+                    <td>2년 차</td>
+                    <td>105.87주</td>
+                    <td>$444.65</td>
+                    <td>6.21주</td>
+                    <td>112.08주</td>
+                </tr>
+                <tr>
+                    <td>3년 차</td>
+                    <td>112.08주</td>
+                    <td>$470.74</td>
+                    <td>6.58주</td>
+                    <td>118.66주</td>
+                </tr>
+                <tr>
+                    <td>4년 차</td>
+                    <td>118.66주</td>
+                    <td>$498.41</td>
+                    <td>6.97주</td>
+                    <td>125.63주</td>
+                </tr>
+                <tr>
+                    <td>5년 차</td>
+                    <td>125.63주</td>
+                    <td>$527.65</td>
+                    <td>7.38주</td>
+                    <td><strong>133.01주</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>보시는 것처럼, 5년 만에 초기 100주였던 주식 수가 133.01주로 약 33% 증가했습니다. 이는 추가적인 현금 투입 없이 배당금 재투자만으로 이루어진 성과입니다. 5년 후에는 연간 배당금 수령액 또한 $420에서 $527.65로 약 25% 증가하게 됩니다.</p>
+        <p>만약 주가가 상승하고 배당금 또한 인상된다면 이 효과는 훨씬 더 극대화될 것입니다. 이것이 바로 DRIP의 복리 마법입니다.</p>
+
+        <h3>사례 2: 리얼티 인컴 (O)으로 보는 월배당 DRIP 효과</h3>
+        <p>월배당의 상징, 리얼티 인컴(Realty Income Corporation, 티커: O)은 2026년 5월 14일 현재 주가 <strong>$61.52</strong>, 연간 배당금 <strong>$3.23</strong> (월 약 $0.269)으로 배당수익률은 약 <strong>5.26%</strong>입니다. 리얼티 인컴처럼 매월 배당하는 종목에 DRIP을 설정하면, 복리 효과가 분기별/연간 배당 종목보다 훨씬 빠르게 나타날 수 있습니다. 매월 소액이라도 주식을 계속 매수함으로써 더 자주, 더 많은 주식 수를 늘릴 수 있기 때문입니다.</p>
+        <p>이처럼 DRIP은 고배당주나 월배당 종목에서 그 효과를 더욱 강력하게 발휘합니다. 여러분의 투자 목표에 맞는 우량 배당주를 찾고 싶다면, WiseAIWiseU의 <a href="/ko/list">배당주 스카우터</a>를 활용해 보세요.</p>
+        <div class="key-point"><strong>핵심 포인트:</strong> 고배당주나 월배당 종목에 DRIP을 적용하면 복리 효과가 더욱 빠르게 나타나며, 장기적으로 훨씬 큰 자산 증식을 기대할 수 있습니다.</div>
+
+        <h2 id="section-how-to">4. 실전 적용 방법: DRIP, 어떻게 설정하나요?</h2>
+        <p>DRIP 설정은 생각보다 쉽습니다. 대부분의 해외 주식 거래를 지원하는 국내 증권사(예: 키움증권, 미래에셋증권, 삼성증권 등)를 통해 간편하게 설정할 수 있습니다.</p>
+
+        <h3>일반적인 DRIP 설정 단계 (증권사별 상이할 수 있음):</h3>
+        <ol>
+            <li><strong>증권사 HTS/MTS 접속:</strong> 사용하시는 증권사의 홈트레이딩시스템(HTS) 또는 모바일트레이딩시스템(MTS)에 로그인합니다.</li>
+            <li><strong>해외 주식 메뉴 이동:</strong> 해외 주식 관련 메뉴로 이동합니다.</li>
+            <li><strong>배당 재투자 설정 찾기:</strong> '권리/배당' 또는 '계좌 관리', '환경 설정' 등의 메뉴에서 '배당 재투자 신청/해지' 또는 'DRIP 설정'과 같은 항목을 찾아 클릭합니다.</li>
+            <li><strong>종목 선택 및 설정:</strong> DRIP을 적용할 미국 주식 종목을 선택하고, 배당 재투자를 '신청' 또는 '활성화'로 설정합니다. 보통 전체 종목에 일괄 적용하거나, 개별 종목별로 설정할 수 있습니다.</li>
+            <li><strong>확인 및 저장:</strong> 설정을 확인하고 저장합니다. 이후부터 해당 종목에서 발생하는 배당금은 자동으로 주식 재투자에 사용됩니다.</li>
+        </ol>
+        <p>대부분의 증권사는 소수점 단위 주식 매수를 지원하여, 배당금 전액이 재투자될 수 있도록 합니다. 만약 특정 종목에만 DRIP을 적용하고 싶다면 개별 설정이 가능한지 확인해 보세요.</p>
+
+        <h2 id="section-cautions">5. 주의사항과 리스크: DRIP의 그림자도 알아야 합니다</h2>
+        <p>DRIP이 강력한 전략인 것은 분명하지만, 모든 투자 전략이 그렇듯이 주의해야 할 점과 잠재적인 리스크도 존재합니다.</p>
+        <ul>
+            <li><strong>세금 문제:</strong> 한국 투자자의 경우, 미국 주식 배당금에는 미국 원천징수세 15%가 부과됩니다. DRIP을 설정하더라도 배당금 지급 시점에 이 세금은 차감되며, 이후 한국에서 종합소득세 또는 양도소득세 신고 시 국내 배당소득세(15.4%)와의 차액을 정산하게 됩니다. 배당금이 현금으로 들어오지 않고 재투자되기 때문에, 원천징수된 세금을 제외하고 재투자된 금액에 대해서는 나중에 현금으로 세금을 납부해야 할 수도 있음을 인지해야 합니다.</li>
+            <li><strong>자동 투자로 인한 시장 타이밍 상실:</strong> DRIP은 배당금을 받을 때마다 자동으로 주식을 매수합니다. 이는 시장 상황(주가가 고평가되어 있든 저평가되어 있든)과 관계없이 기계적으로 매수가 이루어지므로, 주가 고점에서도 추가 매수가 될 수 있다는 단점이 있습니다.</li>
+            <li><strong>포트폴리오 집중 위험:</strong> 특정 종목에만 DRIP을 설정하고 오랜 기간 유지하면, 해당 종목이 포트폴리오에서 차지하는 비중이 과도하게 커질 수 있습니다. 이는 분산 투자 원칙에 위배되어 특정 기업의 리스크에 과도하게 노출될 수 있습니다. 정기적으로 포트폴리오 리밸런싱을 통해 비중을 조절하는 것이 중요합니다.</li>
+            <li><strong>기업의 배당 정책 변화:</strong> 기업의 실적 악화나 경영 전략 변화로 인해 배당금이 삭감되거나 중단될 수도 있습니다. 이 경우 DRIP의 효과가 크게 감소하거나 사라질 수 있습니다. 투자 전 기업의 재무 건전성과 배당 지속 가능성을 꼼꼼히 확인해야 합니다. (예시로 제공된 ARR, DX, AGNC, NLY, O와 같은 REITs는 배당성향이 높게 나타나는데, 이는 FFO(Funds From Operations) 기준이 아닌 EPS 기준이기 때문일 수 있으며, REIT의 배당은 경기 변동에 더 민감할 수 있습니다.)</li>
+            <li><strong>성장주에는 부적합:</strong> DRIP은 배당을 지급하는 기업에만 적용될 수 있습니다. 배당보다는 기업 성장에 초점을 맞추는 성장주에는 DRIP을 적용할 수 없습니다.</li>
+        </ul>
+
+        <h2 id="section-faq">6. 자주 묻는 질문 (FAQ)</h2>
+        <h3>Q1: 모든 미국 배당주에 DRIP을 설정할 수 있나요?</h3>
+        <p><strong>A:</strong> 대부분의 국내 증권사에서 거래 가능한 미국 배당주에 DRIP을 설정할 수 있습니다. 하지만 간혹 일부 종목은 증권사 시스템 상의 제약으로 DRIP이 지원되지 않을 수도 있으니, 투자하시려는 종목에 DRIP 적용이 가능한지 증권사에 확인하시는 것이 가장 정확합니다.</p>
+
+        <h3>Q2: DRIP으로 매수한 주식의 세금 계산은 어떻게 되나요?</h3>
+        <p><strong>A:</strong> DRIP으로 매수한 주식은 현금으로 매수한 주식과 동일하게 처리됩니다. 주식의 취득 단가는 배당금으로 주식을 매수한 시점의 평균 단가로 계산됩니다. 이후 이 주식을 매도하여 양도차익이 발생하면 양도소득세가 부과됩니다. 배당소득세는 배당금을 받는 시점에 이미 원천징수됩니다.</p>
+
+        <h3>Q3: DRIP 설정을 도중에 해지하고 싶으면 어떻게 해야 하나요?</h3>
+        <p><strong>A:</strong> 네, DRIP 설정은 언제든지 해지할 수 있습니다. 증권사 HTS/MTS의 '배당 재투자 신청/해지' 메뉴에서 '해지' 또는 '미신청'으로 변경하시면 됩니다. 해지 이후에는 배당금이 현금으로 여러분의 계좌로 입금됩니다. 상황에 따라 현금 흐름이 필요한 경우 유연하게 변경하여 활용할 수 있습니다.</p>
+
+        <p>DRIP은 장기적인 부의 축적을 위한 가장 강력한 도구 중 하나입니다. 오늘 배운 내용을 바탕으로 여러분의 투자 여정에 DRIP의 마법을 더해 보세요. 다음 편에서는 더욱 유익한 정보로 찾아뵙겠습니다. 성공적인 투자를 기원합니다!</p>
+    </div>
+</body>
+
+      <div class="nav-links">
+        <a href="/ko/list">→ 배당주 스카우터 보기</a>
+        <a href="/ko/calculator">→ 스노볼 계산기 사용하기</a>
+        <a href="/ko/blog">→ 더 많은 인사이트 보기</a>
+      </div>
+
+      <div class="disclaimer">
+        <strong style="color:#ef4444;display:block;margin-bottom:0.5rem;">⚠️ 투자 위험 고지</strong>
+        본 콘텐츠는 정보 제공 및 교육 목적으로만 작성되었으며, 투자 권유 또는 금융 조언을 구성하지 않습니다.
+        배당금과 수익률은 변동될 수 있으며 보장되지 않습니다. 과거 성과는 미래 수익을 보장하지 않습니다.
+        투자 결정 전 반드시 전문 금융 상담사와 상의하시기 바랍니다.
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-nav" style="margin-bottom:1.5rem;font-size:0.9rem;">
+          <a href="/privacy" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">개인정보처리방침</a> |
+          <a href="/ko/about" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">소개</a> |
+          <a href="/contact" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">문의하기</a>
+        </div>
+        <p>&copy; 2026 WiseAIWiseU - Smart Dividend Investing</p>
+        <p class="legal-disclaimer">본 콘텐츠는 정보 제공만을 목적으로 하며 금융 조언이 아닙니다.</p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    window.addEventListener('scroll', () => {
+      const el = document.getElementById('progress-bar');
+      const total = document.body.scrollHeight - window.innerHeight;
+      if(total > 0) el.style.width = (window.scrollY / total * 100) + '%';
+    });
+  </script>
+</body>
+</html>

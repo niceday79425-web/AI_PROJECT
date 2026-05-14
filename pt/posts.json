@@ -1,362 +1,122 @@
 [
-    {
-        "title": "JPMorgan Chase (JPM): A Perspectiva Resiliente da Gigante Financeira para Investidores em Ações dos EUA | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-14",
-        "link": "blog/2026-05-14-JPM.html",
-        "summary": "O JPMorgan Chase (JPM) demonstra sua liderança no setor financeiro dos EUA por meio de forte resiliência e crescimento estratégico. Com os dados de mercado atuais em $300,25 (-1,52%), analisamos as perspectivas para este titã financeiro."
-    },
-    {
-        "title": "Berkshire Hathaway (BRK-B): A Âncora em um Mar de Hype da IA | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-11",
-        "link": "blog/2026-05-11-BRK-B.html",
-        "summary": "Em meio ao frenesi da IA, a Berkshire Hathaway (BRK-B) permanece um farol de valor. Descubra por que esta icônica ação dos EUA continua a atrair investidores astutos em busca de estabilidade e crescimento a longo prazo."
-    },
-    {
-        "title": "NVIDIA (NVDA): Impulsionando a Revolução da IA – Qual o Próximo Passo para Esta Gigante das Ações dos EUA? | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-11",
-        "link": "blog/2026-05-11-NVDA.html",
-        "summary": "NVIDIA (NVDA) continua sendo um pilar do boom da IA, com suas GPUs de ponta alimentando uma demanda sem precedentes em todas as indústrias. Descubra por que esta ação dos EUA continua a cativar investidores e quais tendências de mercado podem moldar seu futuro."
-    },
-    {
-        "title": "Além dos EVs: A Estratégia de IA e Robótica da Tesla em um Mercado em Transformação | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-11",
-        "link": "blog/2026-05-11-TSLA.html",
-        "summary": "Aprofunde-se para descobrir se o impulso agressivo da Tesla em IA e robótica a posiciona como um investimento atraente em ações dos EUA, mesmo em meio a um cenário competitivo de EVs. Explore os fatores-chave que impulsionam a avaliação futura da TSLA além das vendas de carros."
-    },
-    {
-        "title": "A Pivô Estratégico da META: Navegando na IA, Metaverso e Crescimento Futuro | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-10",
-        "link": "blog/2026-05-10-META.html",
-        "summary": "Mergulhe na estratégia transformadora da Meta Platforms (META), equilibrando a robusta publicidade central com investimentos agressivos em IA e no metaverso. Descubra por que esta ação dos EUA permanece um player crucial na economia digital e o que os investidores devem observar a seguir."
-    },
-    {
-        "title": "Amazon (AMZN): Navegando Desafios do Mercado com Crescimento Inigualável | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-10",
-        "link": "blog/2026-05-10-AMZN.html",
-        "summary": "Descubra por que a Amazon (AMZN) permanece um investimento atraente em ações dos EUA, aproveitando seu domínio no e-commerce e o poder da nuvem AWS, apesar das incertezas do mercado. Explore seu potencial de crescimento futuro e vantagens estratégicas."
-    },
-    {
-        "title": "Alphabet (GOOGL): Por Que Este Hiperescalador de IA é um Investimento Essencial em Ações dos EUA | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-09",
-        "link": "blog/2026-05-09-GOOGL.html",
-        "summary": "Mergulhe fundo na Alphabet (GOOGL), uma ação líder nos EUA, e descubra sua posição estratégica nos setores em expansão de IA e computação em nuvem. Entenda por que esta gigante da tecnologia continua sendo um investimento atraente no dinâmico mercado atual."
-    },
-    {
-        "title": "Microsoft (MSFT): A Potência da IA Que Impulsiona o Crescimento Futuro | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-09",
-        "link": "blog/2026-05-09-MSFT.html",
-        "summary": "Descubra por que a Microsoft (MSFT) se posiciona como uma ação dos EUA líder, alavancando seu domínio em IA e robusta infraestrutura de nuvem para um crescimento sustentado. Esta análise revela por que a MSFT continua sendo um investimento de longo prazo atraente."
-    },
-    {
-        "title": "Apple (AAPL): A Eterna Potência Tecnológica em Meio à Ascensão Louca da IA | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-09",
-        "link": "blog/2026-05-09-AAPL.html",
-        "summary": "Descubra por que a Apple (AAPL) permanece uma poderosa ação dos EUA, apesar do foco do mercado em empresas de IA pura. Esta análise aprofunda sua evolução estratégica, forte ecossistema e valor para os acionistas, tornando-a um investimento de longo prazo atraente."
-    },
-    {
-        "title": "Comcast (CMCSA) Cai: Este Gigante da Mídia é Uma Pechincha para Investidores de Ações dos EUA? | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-08",
-        "link": "blog/2026-05-08-CMCSA.html",
-        "summary": "A Comcast (CMCSA) registrou uma queda notável hoje, levantando questões para os investidores de ações dos EUA. Esta análise aprofunda os segmentos, desafios e oportunidades da gigante de mídia e telecomunicações para avaliar se é uma pechincha."
-    },
-    {
-        "title": "Broadcom (AVGO) Sobe: Desvendando a Tese de Investimento da Gigante da Tecnologia | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-08",
-        "link": "blog/2026-05-08-AVGO.html",
-        "summary": "A Broadcom (AVGO) está em alta, e investidores experientes estão se perguntando o porquê. Mergulhe fundo nas aquisições estratégicas desta gigante das ações dos EUA, sua posição dominante no mercado e seu robusto desempenho financeiro para ver se ela pertence ao seu portfólio."
-    },
-    {
-        "title": "Accenture (ACN) Sobe: Por Que Esta Líder em Transformação Digital é uma Ação dos EUA Para Observar | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-07",
-        "link": "blog/2026-05-07-ACN.html",
-        "summary": "A Accenture (ACN) está demonstrando resiliência com uma alta significativa hoje. Descubra por que esta potência global de consultoria permanece uma ação dos EUA fundamental para investidores que buscam crescimento de longo prazo em transformação digital."
-    },
-    {
-        "title": "Qualcomm (QCOM) Sobe 5%: Decifrando o Momento e o Futuro Estratégico da Fabricante de Chips | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-07",
-        "link": "blog/2026-05-07-QCOM.html",
-        "summary": "A Qualcomm (QCOM) está experimentando um impulso significativo de alta, e a impressionante valorização desta ação dos EUA hoje levanta questões cruciais sobre seu potencial de longo prazo em um cenário tecnológico em rápida evolução. Descubra as forças centrais e os impulsionadores futuros que tornam esta ação dos EUA um destaque."
-    },
-    {
-        "title": "Vista Outdoor (VIST) em Queda: Oportunidade ou Alerta para Investidores em Ações dos EUA? | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-06",
-        "link": "blog/2026-05-06-VIST.html",
-        "summary": "Vista Outdoor (VIST) registrou um declínio significativo hoje enquanto o mercado mais amplo disparava. Descubra se esta queda representa uma excelente oportunidade de compra ou um sinal de cautela para investidores em ações dos EUA."
-    },
-    {
-        "title": "Disney (DIS) Dispara: A Magia Está Voltando Para Esta Gigante das Ações dos EUA? | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-06",
-        "link": "blog/2026-05-06-DIS.html",
-        "summary": "Após um aumento significativo em um único dia, os investidores estão reavaliando a Disney (DIS) e seu potencial para uma grande recuperação. Descubra o que está impulsionando o momentum desta icônica ação dos EUA e o que o futuro reserva para a gigante do entretenimento."
-    },
-    {
-        "title": "A Ascensão da IA da AMD: Por Que Esta Gigante dos Semicondutores Ganhou Mais de 4% Hoje | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-05",
-        "link": "blog/2026-05-05-AMD.html",
-        "summary": "A Advanced Micro Devices (AMD) disparou mais de 4% hoje, sinalizando forte confiança dos investidores em suas estratégias de IA e data center. Descubra por que os investidores de ações dos EUA estão observando atentamente o papel crucial da AMD no cenário em evolução dos semicondutores."
-    },
-    {
-        "title": "PayPal (PYPL) Despenca: Uma Reviravolta Está no Horizonte para a Gigante Fintech? | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-05",
-        "link": "blog/2026-05-05-PYPL.html",
-        "summary": "As ações da PayPal (PYPL) estão sofrendo um golpe, levantando questões sobre seu futuro no competitivo cenário fintech. Descubra se esta ação dos EUA oferece uma oportunidade de recuperação ou se seus desafios vieram para ficar."
-    },
-    {
-        "title": "Intel (INTC) Dispara: A Gigante dos Chips Está Finalmente Pronta para Seu Retorno na IA? | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-05",
-        "link": "blog/2026-05-05-INTC.html",
-        "summary": "A Intel (INTC) registrou um aumento significativo hoje, alimentando especulações sobre seu tão esperado retorno no competitivo mercado de ações dos EUA. Descubra os movimentos estratégicos que impulsionam o potencial ressurgimento da Intel na era da IA."
-    },
-    {
-        "title": "Home Depot (HD): Construindo um Portfólio Resiliente em Meio à Incerteza do Mercado | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-04",
-        "link": "blog/2026-05-04-HD.html",
-        "summary": "Em meio à recente volatilidade do mercado, o Home Depot (HD) pode oferecer estabilidade à sua carteira de ações dos EUA? Analisamos os pontos fortes, a posição de mercado e o apelo de dividendos desta gigante do varejo."
-    },
-    {
-        "title": "Procter & Gamble (PG): O Poder Duradouro dos Dividendos e da Estabilidade nas Ações dos EUA | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-04",
-        "link": "blog/2026-05-04-PG.html",
-        "summary": "Em um mercado volátil, a Procter & Gamble (PG) se destaca como um farol de estabilidade e dividendos consistentes. Descubra por que este gigante dos bens de consumo continua sendo um pilar para muitos investidores em ações dos EUA que buscam resiliência e renda."
-    },
-    {
-        "title": "Walmart (WMT): A Resiliência de um Gigante do Varejo na Guerra do E-commerce | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-03",
-        "link": "blog/2026-05-03-WMT.html",
-        "summary": "Descubra por que o Walmart (WMT) continua sendo um investimento robusto em ações dos EUA, navegando pela intensa concorrência no varejo com estratégias únicas para crescimento de longo prazo. Conheça os movimentos que impulsionam o futuro deste gigante do varejo."
-    },
-    {
-        "title": "JNJ: Por Que Esta Gigante da Saúde Continua Sendo um Ativo Essencial nas Ações dos EUA | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-03",
-        "link": "blog/2026-05-03-JNJ.html",
-        "summary": "Descubra por que a Johnson & Johnson (JNJ) continua a ser uma ação essencial dos EUA para estabilidade e renda. Explore o apelo duradouro desta titã da saúde em mercados voláteis."
-    },
-    {
-        "title": "JPMorgan (JPM): Uma Fortaleza Financeira para Sua Carteira de Ações dos EUA | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-03",
-        "link": "blog/2026-05-03-JPM.html",
-        "summary": "Descubra por que o JPMorgan Chase (JPM) permanece um pilar para investidores de ações dos EUA em meio às mudanças do mercado global. Esta análise explora sua resiliência, pontos fortes diversificados e potencial de investimento atraente."
-    },
-    {
-        "title": "Berkshire Hathaway (BRK-B): Navegando a Concorrência e o Valor Duradouro nas Ações dos EUA | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-02",
-        "link": "blog/2026-05-02-BRK-B.html",
-        "summary": "Explore por que a Berkshire Hathaway (BRK-B) permanece um titã entre as ações dos EUA, analisando sua resposta estratégica à crescente concorrência em seguros e a força duradoura de seu portfólio diversificado, incluindo grandes participações como a Apple."
-    },
-    {
-        "title": "Tesla (TSLA): Navegando na Inovação, Volatilidade e o Futuro da Mobilidade | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-02",
-        "link": "blog/2026-05-02-TSLA.html",
-        "summary": "Mergulhe nas ações da Tesla (TSLA), examinando seu papel fundamental além dos VEs em IA, energia e robótica para investidores de ações dos EUA. Descubra como sua inovação e posição de mercado impulsionam sua avaliação altamente debatida e potencial futuro."
-    },
-    {
-        "title": "O Próximo Capítulo da Amazon: Desvendando os Impulsionadores de Crescimento e o Potencial de Investimento da AMZN | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-02",
-        "link": "blog/2026-05-02-AMZN.html",
-        "summary": "Descubra por que a Amazon (AMZN) continua sendo uma ação dos EUA atraente, apesar de sua escala massiva. Analisamos seus pontos fortes, como AWS e e-commerce, especulamos sobre seu 'próximo grande movimento' em IA e saúde, e avaliamos seu potencial de investimento."
-    },
-    {
-        "title": "Salesforce (CRM) Dispara: Este Gigante da Nuvem Está Pronto para o Crescimento Impulsionado por IA? | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-01",
-        "link": "blog/2026-05-01-CRM.html",
-        "summary": "As ações da Salesforce (CRM) subiram recentemente, despertando interesse em seu futuro. Descubra se este líder do mercado de ações dos EUA em software em nuvem está pronto para um crescimento sustentado em meio a uma revolução da IA."
-    },
-    {
-        "title": "Oracle (ORCL) Dispara: A Demanda por Nuvem e IA Está Impulsionando Sua Próxima Fase de Crescimento? | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-05-01",
-        "link": "blog/2026-05-01-ORCL.html",
-        "summary": "A Oracle (ORCL) está registrando ganhos impressionantes, impulsionada pela crescente demanda por infraestrutura de nuvem e IA. Descubra se esta ação dos EUA está preparada para uma ascensão sustentada em meio ao boom dos data centers."
-    },
-    {
-        "title": "NVIDIA (NVDA) Sofre Queda: É Esta a Baixa Que os Investidores de Ações dos EUA Esperavam? | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-04-30",
-        "link": "blog/2026-04-30-NVDA.html",
-        "summary": "NVIDIA (NVDA) registrou uma queda notável hoje. Descubra o que está impulsionando esse movimento e se ele representa um ponto de entrada ideal para investidores em ações dos EUA de olho na líder em IA."
-    },
-    {
-        "title": "A Queda Repentina da META: Oportunidade ou Sinal de Alerta para Ações dos EUA? | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-04-30",
-        "link": "blog/2026-04-30-META.html",
-        "summary": "A Meta Platforms (META) registrou um declínio acentuado de -8,55%, em contraste com um mercado de ações dos EUA em alta. Será esta uma chance para os investidores comprarem na baixa, ou um sinal de preocupações mais profundas para esta ação chave dos EUA?"
-    },
-    {
-        "title": "Eli Lilly (LLY) Dispara 9,8%: Desvendando o Rali Explosivo da Gigante Farmacêutica | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-04-30",
-        "link": "blog/2026-04-30-LLY.html",
-        "summary": "As ações da Eli Lilly (LLY) dispararam +9,80% hoje, destacando seu papel crucial no setor de saúde das ações dos EUA. Descubra o que impulsiona o rali explosivo desta gigante farmacêutica e suas implicações para os investidores."
-    },
-    {
-        "title": "Mastercard (MA) Avança Fortemente: Por Que Esta Gigante de Pagamentos Disparou Mais de 3% Hoje | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-04-29",
-        "link": "blog/2026-04-29-MA.html",
-        "summary": "Mastercard (MA) está avançando fortemente, ganhando mais de 3% hoje, enquanto a temporada de lucros eletrifica o mercado de ações dos EUA. Descubra os pontos fortes subjacentes que tornam esta gigante de pagamentos uma oportunidade de investimento de longo prazo atraente para investidores globais."
-    },
-    {
-        "title": "Qualcomm (QCOM) em Alta: Decifrando os Catalisadores de IA e Automotivos para Investidores de Ações dos EUA | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-04-29",
-        "link": "blog/2026-04-29-QCOM.html",
-        "summary": "A Qualcomm (QCOM) está surfando uma onda de inovação, com suas ambições de IA no dispositivo e automotivas impulsionando um potencial significativo de alta. Descubra por que esta ação dos EUA pode ser um player fundamental no cenário tecnológico em evolução."
-    },
-    {
-        "title": "Visa (V) Dispara: O Que Impulsiona a Rali da Gigante dos Pagamentos? | Análise de Ações dos EUA · WiseAIWiseU",
-        "date": "2026-04-29",
-        "link": "blog/2026-04-29-V.html",
-        "summary": "A Visa (V) registrou um impressionante salto hoje, destacando sua força duradoura como líder global em pagamentos digitais. Descubra o que está impulsionando a valorização desta ação dos EUA e seu potencial de investimento a longo prazo."
-    },
-    {
-        "title": "Decifrando a Alphabet: Por que a Vantagem em IA e o Domínio de Mercado da GOOGL a Tornam uma Gigante da Tecnologia a Ser Observada",
-        "date": "2026-04-29",
-        "link": "blog/2026-04-29-GOOGL.html",
-        "summary": "A Alphabet Inc. (GOOGL) se destaca como uma gigante tecnológica fundamental, navegando por uma tempestade macroeconômica e intensa competição em IA. Esta análise explora os robustos negócios centrais da GOOGL – Busca, YouTube e Google Cloud – ao lado de seus esforços pioneiros em IA com Gemini e DeepMind. Apesar da potencial volatilidade de curto prazo decorrente dos próximos resultados das 'Sete Magníficas', as receitas diversificadas da GOOGL e seu formidável motor de inovação a posicionam como um investimento de longo prazo atraente no cenário digital em evolução."
-    },
-    {
-        "title": "Microsoft (MSFT): A Titã Imparável Redefinindo o Futuro da Tecnologia",
-        "date": "2026-04-29",
-        "link": "blog/2026-04-29-MSFT.html",
-        "summary": "Uma análise aprofundada da Microsoft (MSFT), explorando seu papel fundamental na revolução da IA através da OpenAI, a força duradoura do domínio da nuvem Azure e seu posicionamento estratégico como um ativo central para investidores de longo prazo. Examinamos como a MSFT continua a inovar e dominar os principais setores de tecnologia em meio à dinâmica mais ampla do mercado, incluindo os próximos resultados para 'Titans on Tap'."
-    },
-    {
-        "title": "Apple (AAPL): Navegando pelas Marés da Tecnologia Antes dos Resultados Chave",
-        "date": "2026-04-29",
-        "link": "blog/2026-04-29-AAPL.html",
-        "summary": "A Apple (AAPL) enfrenta um período crucial à medida que os resultados do 1º trimestre se aproximam, em meio à dinâmica evolutiva do mercado de tecnologia e às próximas decisões do Fed. Apesar de seu ecossistema resiliente e forte lealdade à marca, os investidores analisarão o desempenho do iPhone, o crescimento dos Serviços, as margens brutas e os comentários sobre o mercado chinês no próximo relatório. A longo prazo, a estratégia de IA da Apple e o impacto do Vision Pro serão fundamentais. A teleconferência de resultados é vital para entender a trajetória da AAPL e se sua avaliação se alinha com suas perspectivas de crescimento."
-    },
-    {
-        "title": "Ações da Alphabet (GOOGL): Navegando pela Fronteira da IA e o Domínio da Publicidade Digital",
-        "date": "2026-04-27",
-        "link": "blog/2026-04-27-GOOGL.html",
-        "summary": "Uma análise aprofundada da Alphabet (GOOGL), focando em sua posição formidável na pesquisa e publicidade digital, seu papel fundamental na revolução da IA com o Gemini e a trajetória de crescimento do Google Cloud. Examinamos oportunidades de investimento, desafios potenciais e o que este gigante da tecnologia significa para investidores que buscam crescimento a longo prazo no mercado de ações dos EUA."
-    },
-    {
-        "title": "Microsoft (MSFT): A Gigante Tecnológica Imparável Redefinindo o Futuro",
-        "date": "2026-04-27",
-        "link": "blog/2026-04-27-MSFT.html",
-        "summary": "Descubra por que a Microsoft (MSFT) continua sendo um investimento crucial, impulsionada por seu domínio em computação em nuvem (Azure), integração agressiva de IA (OpenAI, Copilot), robusto ecossistema empresarial e sólida saúde financeira. Conheça os catalisadores de longo prazo que fazem da MSFT um ativo fundamental para investidores exigentes."
-    },
-    {
-        "title": "AAPL a $267.61: Navegando o Próximo Capítulo e o Horizonte de Investimento da Apple",
-        "date": "2026-04-27",
-        "link": "blog/2026-04-27-AAPL.html",
-        "summary": "Explore a avaliação atual da Apple (AAPL), seu poderoso ecossistema, impulsionadores de inovação como IA e Vision Pro, e os principais desafios. Esta análise oferece insights para investidores que contemplam o potencial de longo prazo da Apple em meio à dinâmica de mercado em evolução e sua posição como uma gigante líder em tecnologia."
-    },
-    {
-        "date": "2026-04-26",
-        "title": "Apple (AAPL): Navegando Ganhos, IA e Correntes Cruzadas Globais – Uma Análise Crítica do Futuro",
-        "link": "blog/2026-04-26-AAPL.html",
-        "summary": "Com a temporada de resultados aquecendo, a Apple (AAPL) encontra-se em um ponto crucial. Esta postagem explora os principais impulsionadores e desafio"
-    },
-    {
-        "date": "2026-04-26",
-        "title": "Alphabet (GOOGL): Superando Adversidades com IA, Nuvem e Domínio Digital Inigualável",
-        "link": "blog/2026-04-26-GOOGL.html",
-        "summary": "A Alphabet (GOOGL) se destaca como um investimento resiliente em meio à volatilidade do mercado, impulsionada por seu dominante negócio de publicidade"
-    },
-    {
-        "date": "2026-04-26",
-        "title": "Além das Manchetes: Desvendando as Ambições de IA da Microsoft (MSFT) em Meio a Tensões Legais",
-        "link": "blog/2026-04-26-MSFT.html",
-        "summary": "A Microsoft (MSFT) é uma gigante de tecnologia diversificada com uma forte aposta em IA através de sua parceria com a OpenAI. Embora um processo recen"
-    },
-    {
-        "date": "2026-04-25",
-        "title": "Apple (AAPL): Navegando nas Ondas Tecnológicas – Uma Análise Aprofundada para Investidores",
-        "link": "blog/2026-04-25-AAPL.html",
-        "summary": "Este post analisa a Apple (AAPL) para investidores globais, destacando seu ecossistema duradouro, crescimento de serviços e inovação como principais p"
-    },
-    {
-        "date": "2026-04-25",
-        "title": "Alphabet (GOOGL): Decifrando o Pilar Duradouro do Gigante da Tecnologia em um Mercado em Mutação",
-        "link": "blog/2026-04-25-GOOGL.html",
-        "summary": "Este post analisa a sólida posição de mercado da Alphabet (GOOGL), dissecando seu domínio central em publicidade, a diversificação estratégica em IA e"
-    },
-    {
-        "date": "2026-04-25",
-        "title": "Microsoft (MSFT): Por Que Este Gigante da Tecnologia Continua a Impulsionar o Crescimento do Portfólio",
-        "link": "blog/2026-04-25-MSFT.html",
-        "summary": "Explore por que a Microsoft (MSFT) continua sendo um investimento fundamental no cenário tecnológico em evolução. Aprofundamos sua robusta infraestrut"
-    },
-    {
-        "date": "2026-04-24",
-        "title": "A Ascensão Estelar da AMD: Decifrando o Salto de 13% e o Que Significa para Investidores",
-        "link": "blog/2026-04-24-AMD.html",
-        "summary": "Advanced Micro Devices (AMD) viu o preço de suas ações disparar mais de 13% hoje, atingindo US$ 347,81. Esta postagem do blog aprofunda os potenciais"
-    },
-    {
-        "date": "2026-04-24",
-        "title": "Comcast (CMCSA) Despenca Mais de 12%: Caça a Barganhas ou Sino de Alerta?",
-        "link": "blog/2026-04-24-CMCSA.html",
-        "summary": "As ações da Comcast (CMCSA) despencaram mais de 12% para US$ 27,56 hoje, levantando questões sobre se é uma oportunidade de compra ou um sinal de aler"
-    },
-    {
-        "date": "2026-04-24",
-        "title": "Intel Desencadeada: O que está impulsionando o Rally Explosivo de 23% da INTC no Mercado?",
-        "link": "blog/2026-04-24-INTC.html",
-        "summary": "As ações da Intel (INTC) dispararam mais de 23% hoje, desafiando o sentimento geral do mercado. Este post dissecou os prováveis catalisadores por trás"
-    },
-    {
-        "date": "2026-04-23",
-        "title": "Salesforce (CRM) Despenca 8,7%: É Um Soluço Ou Uma Oportunidade de Compra?",
-        "link": "blog/2026-04-23-CRM.html",
-        "summary": "As ações da Salesforce (CRM) caíram 8,69% para $173,30 em meio à fraqueza mais ampla do mercado e a relatórios de lucros mistos, embora nenhuma notíci"
-    },
-    {
-        "date": "2026-04-23",
-        "title": "Queda da Thermo Fisher Scientific (TMO): Decifrando a Baixa de 9% e o que Isso Significa para Seu Portfólio",
-        "link": "blog/2026-04-23-TMO.html",
-        "summary": "A Thermo Fisher Scientific (TMO) sofreu uma queda significativa de aproximadamente 9% hoje, levando seu preço para US$ 466,70. Esta análise aprofundad"
-    },
-    {
-        "date": "2026-04-23",
-        "title": "Texas Instruments (TXN) Dispara: Decifrando o Rali Impressionante de 19% da Gigante dos Semicondutores!",
-        "link": "blog/2026-04-23-TXN.html",
-        "summary": "As ações da Texas Instruments (TXN) dispararam impressionantes 19.43% hoje, atingindo $282.23. Este rali significativo, provavelmente impulsionado por"
-    },
-    {
-        "date": "2026-04-22",
-        "title": "AMD Dispara: A Gigante dos Chips Está Preparada para o Domínio da IA ou para uma Correção de Mercado?",
-        "link": "blog/2026-04-22-AMD.html",
-        "summary": "A AMD disparou mais de 6% hoje, impulsionada por um forte sentimento de mercado e seu papel crucial na revolução da IA e dos data centers. Este post a"
-    },
-    {
-        "date": "2026-04-22",
-        "title": "Danaher (DHR) Sofre Queda: Gigante MedTech em Promoção ou Sinal de Alerta?",
-        "link": "blog/2026-04-22-DHR.html",
-        "summary": "A Danaher (DHR) sofreu uma queda de aproximadamente 5,4% hoje, contrastando fortemente com os recordes do mercado mais amplo. Esta postagem examina o"
-    },
-    {
-        "date": "2026-04-21",
-        "title": "A Ascensão da AMD: Cavalgando a Onda da IA e Preparada para Maiores Ganhos?",
-        "link": "blog/2026-04-21-AMD.html",
-        "summary": "A AMD fechou em alta de 3,47% a $284,49, impulsionada pela forte confiança dos investidores em seus aceleradores de IA (série MI300X) projetados para"
-    },
-    {
-        "date": "2026-04-21",
-        "title": "Decifrando a Recente Queda da Merck (MRK): Oportunidade ou Sinal de Alerta para Investidores?",
-        "link": "blog/2026-04-21-MRK.html",
-        "summary": "A Merck (MRK) experimentou uma queda intradiária de quase 4%, levando os investidores a reavaliar sua posição. Esta análise aprofunda as formidáveis f"
-    },
-    {
-        "date": "2026-04-21",
-        "title": "UnitedHealth Group (UNH) Dispara: Decifrando o Apelo de Investimento da Gigante da Saúde Após um Salto de Quase 7%",
-        "link": "blog/2026-04-21-UNH.html",
-        "summary": "O UnitedHealth Group (UNH) registrou um salto significativo de 6,96%, atingindo $346,01, atraindo a atenção dos investidores. Esta publicação aprofund"
-    },
-    {
-        "date": "2026-04-20",
-        "title": "Apple (AAPL): Navegando Especulações de CEO e Ventos Contrários do Mercado a $273.05 – O Que Vem Por Aí?",
-        "link": "blog/2026-04-20-AAPL.html",
-        "summary": "Esta publicação analisa a Apple (AAPL) a $273.05, focando no impacto de mercado da especulação sobre a mudança de CEO e nas tendências mais amplas do"
-    },
-    {
-        "date": "2026-04-20",
-        "title": "A Próxima Fronteira do Google: Decifrando as Ambições de IA do GOOGL em Meio a Mudanças de Mercado",
-        "link": "blog/2026-04-20-GOOGL.html",
-        "summary": "A Alphabet (GOOGL) está em uma conjuntura crítica, equilibrando sua formidável liderança em IA e um crescente segmento de nuvem contra uma concorrênci"
-    },
-    {
-        "date": "2026-04-20",
-        "title": "Microsoft (MSFT): Ascensão da IA Encontra Ventos Contrário do Mercado – Uma Análise Profunda para Investidores",
-        "link": "blog/2026-04-20-MSFT.html",
-        "summary": "A Microsoft (MSFT) é uma ação de tecnologia líder, atualmente em torno de $418.07, demonstrando forte liderança em IA através do Azure e Copilot. Seu"
-    }
+  {
+    "date": "2026-05-14",
+    "title": "Como Evitar a Armadilha de Dividendos: Guia Completo para Iniciantes",
+    "summary": "Como Evitar a Armadilha de Dividendos: Guia Completo para Iniciantes...",
+    "link": "blog/dividend-trap-guide-pt.html"
+  },
+  {
+    "title": "JPMorgan Chase (JPM): A Perspectiva Resiliente da Gigante Financeira para Investidores em Ações dos EUA | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-14",
+    "link": "blog/2026-05-14-JPM.html",
+    "summary": "O JPMorgan Chase (JPM) demonstra sua liderança no setor financeiro dos EUA por meio de forte resiliência e crescimento estratégico. Com os dados de mercado atuais em $300,25 (-1,52%), analisamos as perspectivas para este titã financeiro."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "O Poder dos Juros Compostos: Como $10.000 Vira $100.000",
+    "summary": "O Poder dos Juros Compostos: Como $10.000 Vira $100.000...",
+    "link": "blog/compound-interest-power-pt.html"
+  },
+  {
+    "title": "Berkshire Hathaway (BRK-B): A Âncora em um Mar de Hype da IA | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-11",
+    "link": "blog/2026-05-11-BRK-B.html",
+    "summary": "Em meio ao frenesi da IA, a Berkshire Hathaway (BRK-B) permanece um farol de valor. Descubra por que esta icônica ação dos EUA continua a atrair investidores astutos em busca de estabilidade e crescimento a longo prazo."
+  },
+  {
+    "title": "NVIDIA (NVDA): Impulsionando a Revolução da IA – Qual o Próximo Passo para Esta Gigante das Ações dos EUA? | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-11",
+    "link": "blog/2026-05-11-NVDA.html",
+    "summary": "NVIDIA (NVDA) continua sendo um pilar do boom da IA, com suas GPUs de ponta alimentando uma demanda sem precedentes em todas as indústrias. Descubra por que esta ação dos EUA continua a cativar investidores e quais tendências de mercado podem moldar seu futuro."
+  },
+  {
+    "title": "Além dos EVs: A Estratégia de IA e Robótica da Tesla em um Mercado em Transformação | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-11",
+    "link": "blog/2026-05-11-TSLA.html",
+    "summary": "Aprofunde-se para descobrir se o impulso agressivo da Tesla em IA e robótica a posiciona como um investimento atraente em ações dos EUA, mesmo em meio a um cenário competitivo de EVs. Explore os fatores-chave que impulsionam a avaliação futura da TSLA além das vendas de carros."
+  },
+  {
+    "title": "A Pivô Estratégico da META: Navegando na IA, Metaverso e Crescimento Futuro | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-10",
+    "link": "blog/2026-05-10-META.html",
+    "summary": "Mergulhe na estratégia transformadora da Meta Platforms (META), equilibrando a robusta publicidade central com investimentos agressivos em IA e no metaverso. Descubra por que esta ação dos EUA permanece um player crucial na economia digital e o que os investidores devem observar a seguir."
+  },
+  {
+    "title": "Amazon (AMZN): Navegando Desafios do Mercado com Crescimento Inigualável | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-10",
+    "link": "blog/2026-05-10-AMZN.html",
+    "summary": "Descubra por que a Amazon (AMZN) permanece um investimento atraente em ações dos EUA, aproveitando seu domínio no e-commerce e o poder da nuvem AWS, apesar das incertezas do mercado. Explore seu potencial de crescimento futuro e vantagens estratégicas."
+  },
+  {
+    "title": "Alphabet (GOOGL): Por Que Este Hiperescalador de IA é um Investimento Essencial em Ações dos EUA | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-09",
+    "link": "blog/2026-05-09-GOOGL.html",
+    "summary": "Mergulhe fundo na Alphabet (GOOGL), uma ação líder nos EUA, e descubra sua posição estratégica nos setores em expansão de IA e computação em nuvem. Entenda por que esta gigante da tecnologia continua sendo um investimento atraente no dinâmico mercado atual."
+  },
+  {
+    "title": "Microsoft (MSFT): A Potência da IA Que Impulsiona o Crescimento Futuro | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-09",
+    "link": "blog/2026-05-09-MSFT.html",
+    "summary": "Descubra por que a Microsoft (MSFT) se posiciona como uma ação dos EUA líder, alavancando seu domínio em IA e robusta infraestrutura de nuvem para um crescimento sustentado. Esta análise revela por que a MSFT continua sendo um investimento de longo prazo atraente."
+  },
+  {
+    "title": "Apple (AAPL): A Eterna Potência Tecnológica em Meio à Ascensão Louca da IA | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-09",
+    "link": "blog/2026-05-09-AAPL.html",
+    "summary": "Descubra por que a Apple (AAPL) permanece uma poderosa ação dos EUA, apesar do foco do mercado em empresas de IA pura. Esta análise aprofunda sua evolução estratégica, forte ecossistema e valor para os acionistas, tornando-a um investimento de longo prazo atraente."
+  },
+  {
+    "title": "Comcast (CMCSA) Cai: Este Gigante da Mídia é Uma Pechincha para Investidores de Ações dos EUA? | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-08",
+    "link": "blog/2026-05-08-CMCSA.html",
+    "summary": "A Comcast (CMCSA) registrou uma queda notável hoje, levantando questões para os investidores de ações dos EUA. Esta análise aprofunda os segmentos, desafios e oportunidades da gigante de mídia e telecomunicações para avaliar se é uma pechincha."
+  },
+  {
+    "title": "Broadcom (AVGO) Sobe: Desvendando a Tese de Investimento da Gigante da Tecnologia | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-08",
+    "link": "blog/2026-05-08-AVGO.html",
+    "summary": "A Broadcom (AVGO) está em alta, e investidores experientes estão se perguntando o porquê. Mergulhe fundo nas aquisições estratégicas desta gigante das ações dos EUA, sua posição dominante no mercado e seu robusto desempenho financeiro para ver se ela pertence ao seu portfólio."
+  },
+  {
+    "title": "Accenture (ACN) Sobe: Por Que Esta Líder em Transformação Digital é uma Ação dos EUA Para Observar | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-07",
+    "link": "blog/2026-05-07-ACN.html",
+    "summary": "A Accenture (ACN) está demonstrando resiliência com uma alta significativa hoje. Descubra por que esta potência global de consultoria permanece uma ação dos EUA fundamental para investidores que buscam crescimento de longo prazo em transformação digital."
+  },
+  {
+    "title": "Qualcomm (QCOM) Sobe 5%: Decifrando o Momento e o Futuro Estratégico da Fabricante de Chips | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-07",
+    "link": "blog/2026-05-07-QCOM.html",
+    "summary": "A Qualcomm (QCOM) está experimentando um impulso significativo de alta, e a impressionante valorização desta ação dos EUA hoje levanta questões cruciais sobre seu potencial de longo prazo em um cenário tecnológico em rápida evolução. Descubra as forças centrais e os impulsionadores futuros que tornam esta ação dos EUA um destaque."
+  },
+  {
+    "title": "Vista Outdoor (VIST) em Queda: Oportunidade ou Alerta para Investidores em Ações dos EUA? | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-06",
+    "link": "blog/2026-05-06-VIST.html",
+    "summary": "Vista Outdoor (VIST) registrou um declínio significativo hoje enquanto o mercado mais amplo disparava. Descubra se esta queda representa uma excelente oportunidade de compra ou um sinal de cautela para investidores em ações dos EUA."
+  },
+  {
+    "title": "Disney (DIS) Dispara: A Magia Está Voltando Para Esta Gigante das Ações dos EUA? | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-06",
+    "link": "blog/2026-05-06-DIS.html",
+    "summary": "Após um aumento significativo em um único dia, os investidores estão reavaliando a Disney (DIS) e seu potencial para uma grande recuperação. Descubra o que está impulsionando o momentum desta icônica ação dos EUA e o que o futuro reserva para a gigante do entretenimento."
+  },
+  {
+    "title": "A Ascensão da IA da AMD: Por Que Esta Gigante dos Semicondutores Ganhou Mais de 4% Hoje | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-05",
+    "link": "blog/2026-05-05-AMD.html",
+    "summary": "A Advanced Micro Devices (AMD) disparou mais de 4% hoje, sinalizando forte confiança dos investidores em suas estratégias de IA e data center. Descubra por que os investidores de ações dos EUA estão observando atentamente o papel crucial da AMD no cenário em evolução dos semicondutores."
+  },
+  {
+    "title": "PayPal (PYPL) Despenca: Uma Reviravolta Está no Horizonte para a Gigante Fintech? | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-05",
+    "link": "blog/2026-05-05-PYPL.html",
+    "summary": "As ações da PayPal (PYPL) estão sofrendo um golpe, levantando questões sobre seu futuro no competitivo cenário fintech. Descubra se esta ação dos EUA oferece uma oportunidade de recuperação ou se seus desafios vieram para ficar."
+  },
+  {
+    "title": "Intel (INTC) Dispara: A Gigante dos Chips Está Finalmente Pronta para Seu Retorno na IA? | Análise de Ações dos EUA · WiseAIWiseU",
+    "date": "2026-05-05",
+    "link": "blog/2026-05-05-INTC.html",
+    "summary": "A Intel (INTC) registrou um aumento significativo hoje, alimentando especulações sobre seu tão esperado retorno no competitivo mercado de ações dos EUA. Descubra os movimentos estratégicos que impulsionam o potencial ressurgimento da Intel na era da IA."
+  }
 ]

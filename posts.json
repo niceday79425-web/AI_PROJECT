@@ -1,362 +1,122 @@
 [
-    {
-        "title": "JPMorgan Chase (JPM): The Financial Giant's Resilient Outlook for US Stock Investors | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-14",
-        "link": "blog/2026-05-14-JPM.html",
-        "summary": "JPMorgan Chase (JPM) demonstrates its leadership in the US financial sector through strong resilience and strategic growth. With current market data at $300.25 (-1.52%), we analyze the outlook for this financial titan."
-    },
-    {
-        "title": "Berkshire Hathaway (BRK-B): The Anchor in a Sea of AI Hype | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-11",
-        "link": "blog/2026-05-11-BRK-B.html",
-        "summary": "Amidst the AI frenzy, Berkshire Hathaway (BRK-B) remains a beacon of value. Discover why this iconic US stock continues to attract savvy investors looking for long-term stability and growth."
-    },
-    {
-        "title": "NVIDIA (NVDA): Powering the AI Revolution – What’s Next for This US Stock Giant? | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-11",
-        "link": "blog/2026-05-11-NVDA.html",
-        "summary": "NVIDIA (NVDA) remains a cornerstone of the AI boom, with its cutting-edge GPUs fueling unprecedented demand across industries. Discover why this US stock continues to captivate investors and what market trends could shape its future."
-    },
-    {
-        "title": "Beyond EVs: Tesla's AI & Robotics Play in a Shifting Market | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-11",
-        "link": "blog/2026-05-11-TSLA.html",
-        "summary": "Dive deep into whether Tesla's aggressive push into AI and robotics positions it as a compelling US stock investment, even amidst a competitive EV landscape. Discover the key factors driving TSLA's future valuation beyond car sales."
-    },
-    {
-        "title": "META's Strategic Pivot: Navigating AI, Metaverse, and Future Growth | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-10",
-        "link": "blog/2026-05-10-META.html",
-        "summary": "Dive into Meta Platforms (META)'s transformative strategy, balancing robust core advertising with aggressive investments in AI and the metaverse. Discover why this US stock remains a pivotal player in the digital economy and what investors should watch next."
-    },
-    {
-        "title": "Amazon (AMZN): Navigating Market Headwinds with Unrivaled Growth | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-10",
-        "link": "blog/2026-05-10-AMZN.html",
-        "summary": "Explore why Amazon (AMZN) remains a compelling US stock investment, leveraging its e-commerce dominance and AWS cloud power despite broader market uncertainties. Discover its future growth potential and strategic advantages."
-    },
-    {
-        "title": "Alphabet (GOOGL): Why This AI Hyperscaler is a Core US Stock Investment | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-09",
-        "link": "blog/2026-05-09-GOOGL.html",
-        "summary": "Dive deep into Alphabet (GOOGL), a leading US stock, and uncover its strategic position in the booming AI and cloud computing sectors. Discover why this tech giant remains a compelling investment in today's dynamic market."
-    },
-    {
-        "title": "Microsoft (MSFT): The AI Powerhouse Driving Future Growth | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-09",
-        "link": "blog/2026-05-09-MSFT.html",
-        "summary": "Discover why Microsoft (MSFT) is positioned as a leading US stock, leveraging its AI dominance and robust cloud infrastructure for sustained growth. This analysis reveals why MSFT remains a compelling long-term investment."
-    },
-    {
-        "title": "Apple (AAPL): The Enduring Tech Powerhouse Amidst AI's Wild Ride | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-09",
-        "link": "blog/2026-05-09-AAPL.html",
-        "summary": "Discover why Apple (AAPL) remains a powerhouse US stock despite the market's focus on AI pure-plays. This analysis delves into its strategic evolution, strong ecosystem, and shareholder value, making it a compelling long-term investment."
-    },
-    {
-        "title": "Comcast (CMCSA) Dips: Is This Media Giant a Bargain for US Stock Investors? | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-08",
-        "link": "blog/2026-05-08-CMCSA.html",
-        "summary": "Comcast (CMCSA) saw a notable dip today, sparking questions for US stock investors. This analysis dives into the media and telecom giant's segments, challenges, and opportunities to evaluate if it's a bargain buy."
-    },
-    {
-        "title": "Broadcom (AVGO) Surges: Unpacking the Tech Titan's Investment Thesis | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-08",
-        "link": "blog/2026-05-08-AVGO.html",
-        "summary": "Broadcom (AVGO) is on the move, and savvy investors are asking why. Dive deep into this US stock giant's strategic acquisitions, dominant market position, and robust financial performance to see if it belongs in your portfolio."
-    },
-    {
-        "title": "Accenture (ACN) Rallies: Why This Digital Transformation Leader Is a US Stock Worth Watching | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-07",
-        "link": "blog/2026-05-07-ACN.html",
-        "summary": "Accenture (ACN) is demonstrating resilience with a significant rally today. Discover why this global consulting powerhouse remains a foundational US stock for investors eyeing long-term growth in digital transformation."
-    },
-    {
-        "title": "Qualcomm (QCOM) Surges 5%: Unpacking the Chipmaker's Momentum and Strategic Future | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-07",
-        "link": "blog/2026-05-07-QCOM.html",
-        "summary": "Qualcomm (QCOM) is witnessing significant upward momentum, and this US stock's impressive surge today sparks crucial questions about its long-term potential in a rapidly evolving tech landscape, driven by its strategic diversification beyond mobile. Discover the core strengths and future drivers making this US stock a standout performer."
-    },
-    {
-        "title": "Vista Outdoor (VIST) Takes a Dip: Opportunity or Warning for US Stock Investors? | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-06",
-        "link": "blog/2026-05-06-VIST.html",
-        "summary": "Vista Outdoor (VIST) saw a significant decline today while the broader market soared. Discover if this dip presents a prime buying opportunity or a signal for caution for US stock investors."
-    },
-    {
-        "title": "Disney (DIS) Soars: Is the Magic Returning to This US Stock Giant? | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-06",
-        "link": "blog/2026-05-06-DIS.html",
-        "summary": "After a significant single-day surge, investors are re-evaluating Disney (DIS) and its potential for a major rebound. Discover what's driving this iconic US stock's momentum and what lies ahead for the entertainment giant."
-    },
-    {
-        "title": "AMD's AI Ascendancy: Why This Semiconductor Titan Just Gained Over 4% Today | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-05",
-        "link": "blog/2026-05-05-AMD.html",
-        "summary": "Advanced Micro Devices (AMD) surged over 4% today, signaling strong investor confidence in its AI and data center strategies. Discover why US stock investors are keenly watching AMD's pivotal role in the evolving semiconductor landscape."
-    },
-    {
-        "title": "PayPal (PYPL) Plunges: Is a Turnaround on the Horizon for the Fintech Giant? | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-05",
-        "link": "blog/2026-05-05-PYPL.html",
-        "summary": "PayPal (PYPL) stock is taking a hit, raising questions about its future in the competitive fintech landscape. Discover if this US stock offers a potential rebound opportunity or if its challenges are here to stay."
-    },
-    {
-        "title": "Intel (INTC) Surges: Is the Chip Giant Finally Ready for its AI Comeback? | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-05",
-        "link": "blog/2026-05-05-INTC.html",
-        "summary": "Intel (INTC) saw a significant surge today, fueling speculation about its long-awaited comeback in the competitive US stock market. Discover the strategic moves powering Intel's potential resurgence in the AI era."
-    },
-    {
-        "title": "Home Depot (HD): Building a Resilient Portfolio Amidst Market Uncertainty | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-04",
-        "link": "blog/2026-05-04-HD.html",
-        "summary": "Amidst recent market volatility, can Home Depot (HD) offer stability to your US stock portfolio? We dive into the retail giant's strengths, market position, and dividend appeal for investors."
-    },
-    {
-        "title": "Procter & Gamble (PG): The Enduring Power of Dividends and Stability in US Stock Portfolios | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-04",
-        "link": "blog/2026-05-04-PG.html",
-        "summary": "In a volatile market, Procter & Gamble (PG) stands out as a beacon of stability and consistent dividends. Discover why this consumer staples giant remains a cornerstone for many US stock investors seeking resilience and income."
-    },
-    {
-        "title": "Walmart (WMT): A Retail Giant's Resilience Amid E-commerce Wars | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-03",
-        "link": "blog/2026-05-03-WMT.html",
-        "summary": "Explore why Walmart (WMT) remains a formidable US stock investment, navigating intense retail competition and leveraging its unique market position for long-term growth. Discover the strategic moves fueling this retail titan's future."
-    },
-    {
-        "title": "JNJ: Why This Healthcare Giant Remains a Core US Stock Holding | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-03",
-        "link": "blog/2026-05-03-JNJ.html",
-        "summary": "Discover why Johnson & Johnson (JNJ) continues to be a cornerstone US stock for stability and income. Uncover the enduring appeal of this healthcare titan in volatile markets."
-    },
-    {
-        "title": "JPMorgan (JPM): A Financial Fortress for Your US Stock Portfolio | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-03",
-        "link": "blog/2026-05-03-JPM.html",
-        "summary": "Discover why JPMorgan Chase (JPM) remains a cornerstone for US stock investors amidst global market shifts. This analysis delves into its resilience, diversified strengths, and compelling investment potential."
-    },
-    {
-        "title": "Berkshire Hathaway (BRK-B): Navigating Competition & Enduring Value in US Stocks | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-02",
-        "link": "blog/2026-05-02-BRK-B.html",
-        "summary": "Explore why Berkshire Hathaway (BRK-B) remains a titan among US stocks, analyzing its strategic response to increasing competition in insurance and the enduring strength of its diversified portfolio, including major holdings like Apple."
-    },
-    {
-        "title": "Tesla (TSLA): Navigating Innovation, Volatility, and the Future of Mobility | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-02",
-        "link": "blog/2026-05-02-TSLA.html",
-        "summary": "Dive into Tesla (TSLA) stock, examining its pivotal role beyond EVs in AI, energy, and robotics for US stock investors. Discover how its innovation and market position drive its highly debated valuation and future potential."
-    },
-    {
-        "title": "Amazon's Next Chapter: Unpacking AMZN's Growth Drivers and Investment Potential | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-02",
-        "link": "blog/2026-05-02-AMZN.html",
-        "summary": "Discover why Amazon (AMZN) remains a compelling US stock despite its massive scale. We analyze its core strengths like AWS and e-commerce, speculate on its 'next big move' into AI and healthcare, and evaluate its investment potential."
-    },
-    {
-        "title": "Salesforce (CRM) Surges: Is This Cloud Giant Primed for AI-Driven Growth? | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-01",
-        "link": "blog/2026-05-01-CRM.html",
-        "summary": "Salesforce (CRM) shares recently jumped, sparking interest in its future. Discover whether this US stock market leader in cloud software is poised for sustained growth amidst an AI revolution."
-    },
-    {
-        "title": "Oracle (ORCL) Soars: Is Cloud & AI Demand Fueling Its Next Growth Phase? | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-05-01",
-        "link": "blog/2026-05-01-ORCL.html",
-        "summary": "Oracle (ORCL) is seeing impressive gains, fueled by surging demand for cloud infrastructure and AI. Discover if this US stock is poised for a sustained ascent amidst the data center boom."
-    },
-    {
-        "title": "NVIDIA (NVDA) Takes a Hit: Is This the Dip US Stock Investors Have Been Waiting For? | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-04-30",
-        "link": "blog/2026-04-30-NVDA.html",
-        "summary": "NVIDIA (NVDA) saw a notable decline today. Discover what's driving this move and whether it presents a prime entry point for US stock investors eyeing the AI leader."
-    },
-    {
-        "title": "META's Sudden Dip: An Opportunity or a Red Flag for US Stocks? | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-04-30",
-        "link": "blog/2026-04-30-META.html",
-        "summary": "Meta Platforms (META) saw a sharp -8.55% decline, contrasting with a rising US stock market. Is this a chance for investors to buy the dip, or a signal of deeper concerns for this key US stock?"
-    },
-    {
-        "title": "Eli Lilly (LLY) Soars 9.8%: Unpacking the Pharma Giant's Explosive Rally | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-04-30",
-        "link": "blog/2026-04-30-LLY.html",
-        "summary": "Eli Lilly (LLY) shares surged +9.80% today, highlighting its pivotal role in the US stock market's healthcare sector. Discover what's driving this pharmaceutical giant's explosive rally and its implications for investors."
-    },
-    {
-        "title": "Mastercard (MA) Charges Ahead: Why This Payment Powerhouse Soared Over 3% Today | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-04-29",
-        "link": "blog/2026-04-29-MA.html",
-        "summary": "Mastercard (MA) is charging ahead, gaining over 3% today as earnings season electrifies the US stock market. Discover the underlying strengths that make this payment giant a compelling long-term investment opportunity for global investors."
-    },
-    {
-        "title": "Qualcomm (QCOM) Surges: Unpacking the AI & Automotive Catalysts for US Stock Investors | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-04-29",
-        "link": "blog/2026-04-29-QCOM.html",
-        "summary": "Qualcomm (QCOM) is riding a wave of innovation, with its on-device AI and automotive ambitions fueling significant upside. Discover why this US stock could be a pivotal player in the evolving tech landscape."
-    },
-    {
-        "title": "Visa (V) Rockets Higher: What Drives the Payment Giant's Rally? | US Stock Analysis · WiseAIWiseU",
-        "date": "2026-04-29",
-        "link": "blog/2026-04-29-V.html",
-        "summary": "Visa (V) saw an impressive surge today, highlighting its enduring strength as a global digital payment leader. Discover what's powering this US stock's rally and its long-term investment potential."
-    },
-    {
-        "title": "Decoding Alphabet: Why GOOGL's AI Edge and Market Dominance Make It a Must-Watch Tech Titan",
-        "date": "2026-04-29",
-        "link": "blog/2026-04-29-GOOGL.html",
-        "summary": "Alphabet Inc. (GOOGL) stands as a pivotal tech titan, navigating a macro storm and intense AI competition. This analysis explores GOOGL's robust core businesses – Search, YouTube, and Google Cloud – alongside its pioneering AI efforts with Gemini and DeepMind. Despite potential short-term volatility from upcoming 'Mag 7' earnings, GOOGL's diversified revenue and formidable innovation engine position it as a compelling long-term investment in the evolving digital landscape."
-    },
-    {
-        "title": "Microsoft (MSFT): The Unstoppable Titan Redefining the Future of Tech",
-        "date": "2026-04-29",
-        "link": "blog/2026-04-29-MSFT.html",
-        "summary": "An in-depth analysis of Microsoft (MSFT), exploring its pivotal role in the AI revolution through OpenAI, the enduring strength of Azure's cloud dominance, and its strategic positioning as a core holding for long-term investors. We examine how MSFT continues to innovate and dominate key technology sectors amidst broader market dynamics, including upcoming earnings for 'Titans on Tap'."
-    },
-    {
-        "title": "Apple (AAPL): Navigating the Tech Tides Ahead of Key Earnings",
-        "date": "2026-04-29",
-        "link": "blog/2026-04-29-AAPL.html",
-        "summary": "Apple (AAPL) faces a crucial period as Q1 earnings approach, amidst evolving tech market dynamics and upcoming Fed decisions. Despite its resilient ecosystem and strong brand loyalty, investors will scrutinize iPhone performance, Services growth, gross margins, and China market commentary in the upcoming report. Long-term, Apple's AI strategy and the Vision Pro's impact will be key. The earnings call is vital for understanding AAPL's trajectory and whether its valuation aligns with its growth prospects."
-    },
-    {
-        "title": "Alphabet (GOOGL) Stock: Navigating the AI Frontier and Digital Ad Dominance",
-        "date": "2026-04-27",
-        "link": "blog/2026-04-27-GOOGL.html",
-        "summary": "An in-depth analysis of Alphabet (GOOGL), focusing on its formidable position in search and digital advertising, its pivotal role in the AI revolution with Gemini, and the growth trajectory of Google Cloud. We examine investment opportunities, potential challenges, and what this tech titan means for investors eyeing long-term growth in the US stock market."
-    },
-    {
-        "title": "Microsoft (MSFT): The Unstoppable Tech Behemoth Redefining the Future",
-        "date": "2026-04-27",
-        "link": "blog/2026-04-27-MSFT.html",
-        "summary": "Explore why Microsoft (MSFT) remains a critical investment, driven by its dominance in cloud computing (Azure), aggressive AI integration (OpenAI, Copilot), robust enterprise ecosystem, and strong financial health. Discover the long-term catalysts making MSFT a core holding for discerning investors."
-    },
-    {
-        "title": "AAPL at $267.61: Navigating Apple's Next Chapter and Investment Horizon",
-        "date": "2026-04-27",
-        "link": "blog/2026-04-27-AAPL.html",
-        "summary": "Explore Apple's (AAPL) current valuation, its powerful ecosystem, innovation drivers like AI and Vision Pro, and key challenges. This analysis offers insights for investors contemplating Apple's long-term potential amidst evolving market dynamics and its position as a leading tech giant."
-    },
-    {
-        "date": "2026-04-26",
-        "title": "Apple (AAPL): Navigating Earnings, AI, and Global Crosscurrents – A Critical Look Ahead",
-        "link": "blog/2026-04-26-AAPL.html",
-        "summary": "As earnings season heats up, Apple (AAPL) stands at a pivotal juncture. This post dives into the key drivers and headwinds influencing AAPL's next mov"
-    },
-    {
-        "date": "2026-04-26",
-        "title": "Alphabet (GOOGL): Powering Through Headwinds with AI, Cloud, and Unmatched Digital Dominance",
-        "link": "blog/2026-04-26-GOOGL.html",
-        "summary": "Alphabet (GOOGL) stands out as a resilient investment amidst market volatility, driven by its dominant digital advertising business (Google Search, Yo"
-    },
-    {
-        "date": "2026-04-26",
-        "title": "Beyond the Headlines: Unpacking Microsoft's (MSFT) AI Ambitions Amidst Legal Tensions",
-        "link": "blog/2026-04-26-MSFT.html",
-        "summary": "Microsoft (MSFT) is a diversified tech giant with a strong bet on AI via its OpenAI partnership. While a recent lawsuit against OpenAI puts this strat"
-    },
-    {
-        "date": "2026-04-25",
-        "title": "Apple (AAPL): Navigating the Tech Tides – A Deeper Dive for Investors",
-        "link": "blog/2026-04-25-AAPL.html",
-        "summary": "This blog post analyzes Apple (AAPL) for global investors, focusing on its enduring ecosystem, services growth, and innovation as key strengths. It ad"
-    },
-    {
-        "date": "2026-04-25",
-        "title": "Alphabet (GOOGL): Decoding the Tech Giant's Enduring Moat in a Shifting Market",
-        "link": "blog/2026-04-25-GOOGL.html",
-        "summary": "This post delves into Alphabet's (GOOGL) robust market position, dissecting its core advertising dominance, strategic diversification into AI and clou"
-    },
-    {
-        "date": "2026-04-25",
-        "title": "Microsoft (MSFT): Why This Tech Titan Continues to Power Portfolio Growth",
-        "link": "blog/2026-04-25-MSFT.html",
-        "summary": "Explore why Microsoft (MSFT) remains a cornerstone investment in the evolving tech landscape. We delve into its robust cloud infrastructure, strategic"
-    },
-    {
-        "date": "2026-04-24",
-        "title": "AMD's Stellar Surge: Unpacking the 13% Jump and What It Means for Investors",
-        "link": "blog/2026-04-24-AMD.html",
-        "summary": "Advanced Micro Devices (AMD) saw its stock price skyrocket over 13% today, reaching $347.81. This blog post delves into the potential catalysts behind"
-    },
-    {
-        "date": "2026-04-24",
-        "title": "Comcast (CMCSA) Plunges Over 12%: Bargain Hunt or Warning Bell?",
-        "link": "blog/2026-04-24-CMCSA.html",
-        "summary": "Comcast (CMCSA) shares plunged over 12% to $27.56 today, raising questions about whether this is a buying opportunity or a warning sign. The drop come"
-    },
-    {
-        "date": "2026-04-24",
-        "title": "Intel Unleashed: What's Fueling INTC's Explosive 23% Market Rally?",
-        "link": "blog/2026-04-24-INTC.html",
-        "summary": "Intel (INTC) shares surged over 23% today, defying broader market sentiment. This post dissects the likely catalysts behind this massive rally, from p"
-    },
-    {
-        "date": "2026-04-23",
-        "title": "Salesforce (CRM) Plunges 8.7%: Is This a Blip or a Buying Opportunity?",
-        "link": "blog/2026-04-23-CRM.html",
-        "summary": "Salesforce (CRM) shares tumbled 8.69% to $173.30 amid broader market weakness and mixed earnings reports, though no specific company news directly exp"
-    },
-    {
-        "date": "2026-04-23",
-        "title": "Thermo Fisher Scientific (TMO) Plunge: Decoding the 9% Drop & What It Means for Your Portfolio",
-        "link": "blog/2026-04-23-TMO.html",
-        "summary": "Thermo Fisher Scientific (TMO) experienced a significant ~9% drop today, pushing its price to $466.70. This deep dive analyzes the potential reasons b"
-    },
-    {
-        "date": "2026-04-23",
-        "title": "Texas Instruments (TXN) Soars: Unpacking the Semiconductor Giant's Impressive 19% Rally!",
-        "link": "blog/2026-04-23-TXN.html",
-        "summary": "Texas Instruments (TXN) stock surged an impressive 19.43% today, reaching $282.23. This significant rally, likely fueled by strong earnings or positiv"
-    },
-    {
-        "date": "2026-04-22",
-        "title": "AMD Soars: Is the Chip Giant Poised for AI Dominance or a Market Correction?",
-        "link": "blog/2026-04-22-AMD.html",
-        "summary": "AMD surged over 6% today, fueled by strong market sentiment and its pivotal role in the AI and data center revolution. This post dissects AMD's curren"
-    },
-    {
-        "date": "2026-04-22",
-        "title": "Danaher (DHR) Takes a Dip: Is This MedTech Giant on Sale or Signaling Caution?",
-        "link": "blog/2026-04-22-DHR.html",
-        "summary": "Danaher (DHR) experienced a ~5.4% drop today, contrasting sharply with broader market record highs. This post examines DHR's robust business model, it"
-    },
-    {
-        "date": "2026-04-21",
-        "title": "AMD's Ascent: Riding the AI Wave and Poised for Further Gains?",
-        "link": "blog/2026-04-21-AMD.html",
-        "summary": "AMD closed up 3.47% at $284.49, fueled by strong investor confidence in its AI accelerators (MI300X series) designed for the booming AI market. Beyond"
-    },
-    {
-        "date": "2026-04-21",
-        "title": "Decoding Merck's (MRK) Recent Dip: Opportunity or Cautionary Flag for Investors?",
-        "link": "blog/2026-04-21-MRK.html",
-        "summary": "Merck (MRK) experienced a nearly 4% intraday dip, prompting investors to re-evaluate its position. This analysis delves into MRK's formidable strength"
-    },
-    {
-        "date": "2026-04-21",
-        "title": "UnitedHealth Group (UNH) Soars: Unpacking the Healthcare Giant's Investment Appeal After a Nearly 7% Jump",
-        "link": "blog/2026-04-21-UNH.html",
-        "summary": "UnitedHealth Group (UNH) saw a significant 6.96% jump to $346.01, attracting investor attention. This post dives into UNH's resilient business model,"
-    },
-    {
-        "date": "2026-04-20",
-        "title": "Apple (AAPL): Navigating CEO Speculation & Market Headwinds at $273.05 – What's Next?",
-        "link": "blog/2026-04-20-AAPL.html",
-        "summary": "This post analyzes Apple (AAPL) at $273.05, focusing on the market impact of CEO change speculation and broader tech sector trends. It delves into the"
-    },
-    {
-        "date": "2026-04-20",
-        "title": "Google's Next Frontier: Decoding GOOGL's AI Ambitions Amidst Market Shifts",
-        "link": "blog/2026-04-20-GOOGL.html",
-        "summary": "Alphabet (GOOGL) is at a critical juncture, balancing its formidable AI leadership and growing cloud segment against intensified competition and a cau"
-    },
-    {
-        "date": "2026-04-20",
-        "title": "Microsoft (MSFT): AI Ascendancy Meets Market Headwinds – A Deep Dive for Investors",
-        "link": "blog/2026-04-20-MSFT.html",
-        "summary": "Microsoft (MSFT) is a leading tech stock, currently around $418.07, demonstrating strong leadership in AI through Azure and Copilot. Its diverse portf"
-    }
+  {
+    "date": "2026-05-14",
+    "title": "How to Avoid the Dividend Trap: A Beginner's Complete Guide",
+    "summary": "How to Avoid the Dividend Trap: A Beginner's Complete Guide...",
+    "link": "blog/dividend-trap-guide.html"
+  },
+  {
+    "title": "JPMorgan Chase (JPM): The Financial Giant's Resilient Outlook for US Stock Investors | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-14",
+    "link": "blog/2026-05-14-JPM.html",
+    "summary": "JPMorgan Chase (JPM) demonstrates its leadership in the US financial sector through strong resilience and strategic growth. With current market data at $300.25 (-1.52%), we analyze the outlook for this financial titan."
+  },
+  {
+    "date": "2026-05-11",
+    "title": "The Power of Compound Interest: How $10,000 Becomes $100,000",
+    "summary": "The Power of Compound Interest: How $10,000 Becomes $100,000...",
+    "link": "blog/compound-interest-power.html"
+  },
+  {
+    "title": "Berkshire Hathaway (BRK-B): The Anchor in a Sea of AI Hype | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-11",
+    "link": "blog/2026-05-11-BRK-B.html",
+    "summary": "Amidst the AI frenzy, Berkshire Hathaway (BRK-B) remains a beacon of value. Discover why this iconic US stock continues to attract savvy investors looking for long-term stability and growth."
+  },
+  {
+    "title": "NVIDIA (NVDA): Powering the AI Revolution – What’s Next for This US Stock Giant? | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-11",
+    "link": "blog/2026-05-11-NVDA.html",
+    "summary": "NVIDIA (NVDA) remains a cornerstone of the AI boom, with its cutting-edge GPUs fueling unprecedented demand across industries. Discover why this US stock continues to captivate investors and what market trends could shape its future."
+  },
+  {
+    "title": "Beyond EVs: Tesla's AI & Robotics Play in a Shifting Market | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-11",
+    "link": "blog/2026-05-11-TSLA.html",
+    "summary": "Dive deep into whether Tesla's aggressive push into AI and robotics positions it as a compelling US stock investment, even amidst a competitive EV landscape. Discover the key factors driving TSLA's future valuation beyond car sales."
+  },
+  {
+    "title": "META's Strategic Pivot: Navigating AI, Metaverse, and Future Growth | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-10",
+    "link": "blog/2026-05-10-META.html",
+    "summary": "Dive into Meta Platforms (META)'s transformative strategy, balancing robust core advertising with aggressive investments in AI and the metaverse. Discover why this US stock remains a pivotal player in the digital economy and what investors should watch next."
+  },
+  {
+    "title": "Amazon (AMZN): Navigating Market Headwinds with Unrivaled Growth | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-10",
+    "link": "blog/2026-05-10-AMZN.html",
+    "summary": "Explore why Amazon (AMZN) remains a compelling US stock investment, leveraging its e-commerce dominance and AWS cloud power despite broader market uncertainties. Discover its future growth potential and strategic advantages."
+  },
+  {
+    "title": "Alphabet (GOOGL): Why This AI Hyperscaler is a Core US Stock Investment | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-09",
+    "link": "blog/2026-05-09-GOOGL.html",
+    "summary": "Dive deep into Alphabet (GOOGL), a leading US stock, and uncover its strategic position in the booming AI and cloud computing sectors. Discover why this tech giant remains a compelling investment in today's dynamic market."
+  },
+  {
+    "title": "Microsoft (MSFT): The AI Powerhouse Driving Future Growth | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-09",
+    "link": "blog/2026-05-09-MSFT.html",
+    "summary": "Discover why Microsoft (MSFT) is positioned as a leading US stock, leveraging its AI dominance and robust cloud infrastructure for sustained growth. This analysis reveals why MSFT remains a compelling long-term investment."
+  },
+  {
+    "title": "Apple (AAPL): The Enduring Tech Powerhouse Amidst AI's Wild Ride | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-09",
+    "link": "blog/2026-05-09-AAPL.html",
+    "summary": "Discover why Apple (AAPL) remains a powerhouse US stock despite the market's focus on AI pure-plays. This analysis delves into its strategic evolution, strong ecosystem, and shareholder value, making it a compelling long-term investment."
+  },
+  {
+    "date": "2026-05-08",
+    "title": "REITs Investing: The Complete Guide to Real Estate Dividends",
+    "summary": "REITs Investing: The Complete Guide to Real Estate Dividends...",
+    "link": "blog/reits-complete-guide.html"
+  },
+  {
+    "title": "Comcast (CMCSA) Dips: Is This Media Giant a Bargain for US Stock Investors? | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-08",
+    "link": "blog/2026-05-08-CMCSA.html",
+    "summary": "Comcast (CMCSA) saw a notable dip today, sparking questions for US stock investors. This analysis dives into the media and telecom giant's segments, challenges, and opportunities to evaluate if it's a bargain buy."
+  },
+  {
+    "title": "Broadcom (AVGO) Surges: Unpacking the Tech Titan's Investment Thesis | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-08",
+    "link": "blog/2026-05-08-AVGO.html",
+    "summary": "Broadcom (AVGO) is on the move, and savvy investors are asking why. Dive deep into this US stock giant's strategic acquisitions, dominant market position, and robust financial performance to see if it belongs in your portfolio."
+  },
+  {
+    "title": "Accenture (ACN) Rallies: Why This Digital Transformation Leader Is a US Stock Worth Watching | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-07",
+    "link": "blog/2026-05-07-ACN.html",
+    "summary": "Accenture (ACN) is demonstrating resilience with a significant rally today. Discover why this global consulting powerhouse remains a foundational US stock for investors eyeing long-term growth in digital transformation."
+  },
+  {
+    "title": "Qualcomm (QCOM) Surges 5%: Unpacking the Chipmaker's Momentum and Strategic Future | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-07",
+    "link": "blog/2026-05-07-QCOM.html",
+    "summary": "Qualcomm (QCOM) is witnessing significant upward momentum, and this US stock's impressive surge today sparks crucial questions about its long-term potential in a rapidly evolving tech landscape, driven by its strategic diversification beyond mobile. Discover the core strengths and future drivers making this US stock a standout performer."
+  },
+  {
+    "title": "Vista Outdoor (VIST) Takes a Dip: Opportunity or Warning for US Stock Investors? | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-06",
+    "link": "blog/2026-05-06-VIST.html",
+    "summary": "Vista Outdoor (VIST) saw a significant decline today while the broader market soared. Discover if this dip presents a prime buying opportunity or a signal for caution for US stock investors."
+  },
+  {
+    "title": "Disney (DIS) Soars: Is the Magic Returning to This US Stock Giant? | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-06",
+    "link": "blog/2026-05-06-DIS.html",
+    "summary": "After a significant single-day surge, investors are re-evaluating Disney (DIS) and its potential for a major rebound. Discover what's driving this iconic US stock's momentum and what lies ahead for the entertainment giant."
+  },
+  {
+    "date": "2026-05-05",
+    "title": "Dividend Aristocrats: 25 Years of Consecutive Growth Explained",
+    "summary": "Dividend Aristocrats: 25 Years of Consecutive Growth Explained...",
+    "link": "blog/dividend-aristocrats-guide.html"
+  },
+  {
+    "title": "AMD's AI Ascendancy: Why This Semiconductor Titan Just Gained Over 4% Today | US Stock Analysis · WiseAIWiseU",
+    "date": "2026-05-05",
+    "link": "blog/2026-05-05-AMD.html",
+    "summary": "Advanced Micro Devices (AMD) surged over 4% today, signaling strong investor confidence in its AI and data center strategies. Discover why US stock investors are keenly watching AMD's pivotal role in the evolving semiconductor landscape."
+  }
 ]

@@ -6,6 +6,7 @@
 auto_poster.py의 Gemini 설정을 재사용
 """
 import sys, os, time, json
+from datetime import datetime
 
 # auto_poster.py가 있는 execution 폴더를 경로에 추가
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -293,12 +294,37 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </html>"""
 
 
-def generate_content(title, series, description):
-    prompt = f"""당신은 미국 배당주 투자 전문가입니다. 다음 주제로 한국 투자자를 위한 고품질 교육 블로그 포스트를 작성해주세요.
+def load_current_data():
+    """dividend_insights.json에서 최신 시장 데이터를 로드하여 프롬프트에 주입"""
+    try:
+        path = os.path.join(ROOT, "dividend_insights.json")
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                stocks = data.get("stocks", [])
+                # 주요 종목 필터링 (가독성을 위해 상위 15개 정도만)
+                summary = []
+                for s in stocks[:15]:
+                    summary.append(f"- {s['ticker']} ({s['name']}): 현재가 ${s['current_price']}, 배당수익률 {s['dividend_yield']}%, 연간 배당금 ${s['annual_dividend']}, 배당성향 {s['payout_ratio']}%")
+                return "\n".join(summary)
+    except Exception as e:
+        print(f"  [WARN] 데이터 로드 실패: {e}")
+    return "현재 실시간 데이터를 불러올 수 없습니다. 일반적인 원칙을 중심으로 작성하되, 예시는 최신 2026년 기준임을 명시하세요."
 
-제목: {title}
+
+def generate_content(title, series, description):
+    current_market_data = load_current_data()
+    today_str = datetime.now().strftime("%Y-%m-%d")
+
+    prompt = f"""당신은 미국 배당주 투자 전문가입니다. 다음 주제로 한국 투자자를 위한 고품질 교육 블로그 포스트를 작성해주세요.
+**중요: 현재 날짜는 {today_str}입니다. 2023년이나 2024년 데이터를 '현재'라고 언급하지 마세요. 모든 예시와 분석은 2026년 현재 시장 상황을 반영해야 합니다.**
+
+주제: {title}
 시리즈: {series}
 핵심 내용: {description}
+
+[실시간 시장 참고 데이터 (2026년 5월)]
+{current_market_data}
 
 요구사항:
 - 최소 1500자 이상의 충실한 내용
@@ -306,7 +332,7 @@ def generate_content(title, series, description):
 - 다음 섹션을 반드시 포함하되 제목에 맞게 자연스럽게 구성:
   1. 핵심 요약 (왜 이 주제가 중요한지)
   2. 상세 개념 설명 (초보자도 이해 가능하게)
-  3. 실제 데이터와 사례 (구체적인 숫자 포함)
+  3. 실제 데이터와 사례 (위의 실시간 데이터를 참고하여 구체적인 숫자 포함)
   4. 실전 적용 방법 (단계별 가이드)
   5. 주의사항과 리스크
   6. 자주 묻는 질문 FAQ (3개)
@@ -326,6 +352,7 @@ def generate_content(title, series, description):
 
 def update_ko_posts_json(slug, title, description):
     posts_path = os.path.join(ROOT, "ko", "posts.json")
+    today_str = datetime.now().strftime("%Y-%m-%d")
     posts = []
     if os.path.exists(posts_path):
         with open(posts_path, "r", encoding="utf-8") as f:
@@ -335,25 +362,27 @@ def update_ko_posts_json(slug, title, description):
                 posts = []
 
     link = f"blog/{slug}.html"
-    new_post = {"title": title, "date": "2026-05-12", "link": link, "summary": description[:120]}
+    new_post = {"title": title, "date": today_str, "link": link, "summary": description[:120]}
 
     # 중복 제거 후 맨 앞에 추가
     posts = [new_post] + [p for p in posts if p.get("link") != link]
-    posts = posts[:100]
+    posts = posts[:150]
 
     with open(posts_path, "w", encoding="utf-8") as f:
         json.dump(posts, f, ensure_ascii=False, indent=2)
 
 
 def main():
-    print(f"[*] 총 {len(SERIES)}편 교육 시리즈 생성 시작...")
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    print(f"[*] 총 {len(SERIES)}편 교육 시리즈 생성 시작 (기준일: {today_str})...")
     created = 0
 
     for slug, title, series, description in SERIES:
         out_path = os.path.join(KO_BLOG_DIR, f"{slug}.html")
-        if os.path.exists(out_path):
-            print(f"  [SKIP] {slug} (already exists)")
-            continue
+        # 이미 존재하는 파일인지 확인 (강제 업데이트 시 주석 처리)
+        # if os.path.exists(out_path):
+        #     print(f"  [SKIP] {slug} (already exists)")
+        #     continue
 
         print(f"  [GEN] {slug}...")
         content = generate_content(title, series, description)
@@ -361,10 +390,11 @@ def main():
             print(f"  [FAIL] {slug}")
             continue
 
+        # 템플릿 결합 (날짜 업데이트)
         html = HTML_TEMPLATE.format(
             slug=slug, title=title, series=series,
             description=description[:160], content=content
-        )
+        ).replace("2026-05-12", today_str)
 
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(html)
@@ -379,3 +409,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

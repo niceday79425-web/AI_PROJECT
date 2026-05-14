@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yield on Cost: 장기 배당 투자의 숨겨진 강력한 지표 | WiseAIWiseU</title>
+  <meta name="description" content="Yield on Cost 개념과 계산법, 장기 보유 시 수익률 변화 시뮬레이션">
+  <meta name="keywords" content="배당주, 미국 주식, 배당 투자, 패시브 인컴, 배당주 초보자 가이드 6편">
+  <meta property="og:title" content="Yield on Cost: 장기 배당 투자의 숨겨진 강력한 지표 | WiseAIWiseU">
+  <meta property="og:description" content="Yield on Cost 개념과 계산법, 장기 보유 시 수익률 변화 시뮬레이션">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://wiseaiwiseu.com/og-image.png">
+  <link rel="canonical" href="https://wiseaiwiseu.com/ko/blog/beginner-06-yield-on-cost">
+  <link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/beginner-06-yield-on-cost">
+  <link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/ko/blog/beginner-06-yield-on-cost">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    /* ── Reading Progress Bar ── */
+    #progress-bar {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+      background: linear-gradient(90deg, #6366f1, #2dd4bf);
+      z-index: 9999; transition: width 0.1s linear;
+    }
+    /* ── Post Styles ── */
+    body { font-family: 'Inter', sans-serif; background: var(--bg-color); color: var(--text-primary); margin: 0; }
+    
+    .post-hero {
+      padding: 6rem 1.5rem 5rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05);
+      background: radial-gradient(circle at top, rgba(99,102,241,0.05) 0%, transparent 70%);
+    }
+    .post-hero .ticker-badge, .series-badge {
+      display: inline-block; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+      color: #60a5fa; font-size: 0.8rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 0.5rem 1.4rem; border-radius: 999px;
+      margin-bottom: 2rem; backdrop-filter: blur(10px);
+    }
+    .post-hero h1 {
+      font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 800; letter-spacing: -1.5px;
+      line-height: 1.1; max-width: 900px; margin: 0 auto 2rem; color: var(--text-primary);
+    }
+    .post-hero .meta {
+      font-size: 0.95rem; color: var(--text-secondary); display: flex;
+      gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;
+      opacity: 0.8;
+    }
+    
+    /* ── Article Layout ── */
+    .post-content {
+      max-width: 760px; margin: 0 auto; padding: 4rem 1.5rem;
+    }
+    .post-content h2 {
+      font-size: 1.85rem; font-weight: 700; color: var(--text-primary);
+      margin: 4rem 0 1.5rem; letter-spacing: -0.5px;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .post-content h2::before {
+      content: ''; display: inline-block; width: 4px; height: 1.5rem;
+      background: var(--primary-gradient); border-radius: 2px;
+    }
+    .post-content h3 { 
+      font-size: 1.4rem; font-weight: 600; color: var(--text-primary); 
+      margin: 3rem 0 1.25rem; letter-spacing: -0.3px;
+    }
+    .post-content p { 
+      line-height: 1.9; color: var(--text-secondary); 
+      margin-bottom: 1.75rem; font-size: 1.125rem; font-weight: 400; 
+    }
+    .post-content ul, .post-content ol {
+      padding-left: 1.5rem; margin-bottom: 1.75rem;
+    }
+    .post-content li { 
+      line-height: 1.9; color: var(--text-secondary); 
+      margin-bottom: 0.75rem; font-size: 1.125rem; 
+    }
+    .post-content strong { color: var(--text-primary); font-weight: 600; }
+    .post-content img {
+      width: 100%; border-radius: 16px; margin: 2.5rem 0;
+      border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    
+    /* ── Key Point ── */
+    .key-point { 
+      background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+      border-left: 4px solid #6366f1; 
+      border-radius: 12px; padding: 2rem; margin: 3rem 0; 
+      color: var(--text-primary); font-size: 1.1rem; 
+      backdrop-filter: blur(5px);
+    }
+    .key-point strong { color: #60a5fa; }
+    
+    /* ── Data Table ── */
+    .data-table { width:100%;border-collapse:collapse;margin:2rem 0;font-size:0.95rem; }
+    .data-table th { background:rgba(255,255,255,0.03);color:var(--text-primary);padding:1rem;text-align:left; border-bottom:1px solid rgba(255,255,255,0.1); font-weight: 600; }
+    .data-table td { padding:1rem;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--text-secondary); }
+    
+    /* ── Nav Links & Author Box ── */
+    .nav-links { display:flex;gap:1.5rem;flex-wrap:wrap;margin:3rem 0;padding:1.5rem;background:rgba(255,255,255,0.02);border-radius:12px; }
+    .nav-links a { color:var(--text-primary);text-decoration:none;font-weight:500;font-size:0.95rem; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 2px; transition: border-color 0.3s; }
+    .nav-links a:hover { border-color: var(--text-primary); }
+    
+    .author-box { display:flex;align-items:center;gap:1.2rem;background:transparent;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1);padding:1.5rem 0;margin:3rem 0; }
+    .author-avatar { width:56px;height:56px;background:rgba(255,255,255,0.05);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--text-primary);font-weight:600;font-size:1.2rem; }
+    .author-box strong { color:var(--text-primary); display:block; margin-bottom: 0.2rem; font-size: 1.1rem; }
+    .author-box span { color:var(--text-secondary); font-size: 0.95rem; }
+    
+    /* ── Disclaimer ── */
+    .disclaimer {
+      margin-top: 4rem; padding: 1.5rem;
+      background: transparent; border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 12px; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7;
+    }
+    .disclaimer .disc-title { font-weight: 600; color: var(--text-secondary); margin-bottom: 0.5rem; }
+    
+    /* ── Back Button ── */
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      color: var(--text-secondary); font-weight: 500; text-decoration: none;
+      font-size: 0.95rem; margin-bottom: 2rem; transition: color 0.3s;
+    }
+    .back-btn:hover { color: var(--text-primary); }
+    
+    /* ── Series Nav ── */
+    .series-nav { background:rgba(255,255,255,0.02);border-radius:12px;padding:1.5rem;margin-top:4rem; border:1px solid rgba(255,255,255,0.05); }
+    .series-nav h3 { color:var(--text-primary);font-size:1.1rem;margin-bottom:1rem; }
+    .series-nav ul { list-style:none;padding:0;margin:0; }
+    .series-nav li { padding:0.4rem 0;font-size:0.95rem; color: var(--text-secondary); }
+    .series-nav a { color:var(--text-primary);text-decoration:none; border-bottom: 1px solid rgba(255,255,255,0.2); }
+    .series-nav a:hover { border-color: var(--text-primary); }
+</head>
+<body>
+  <div id="progress-bar"></div>
+  <div class="container">
+    <header>
+      <a href="/ko/" class="logo">WiseAIWiseU</a>
+      <nav class="lang-selector">
+        <a href="/ko/blog" class="lang-link active">KO</a>
+        <a href="/blog" class="lang-link">EN</a>
+        <a href="/pt/blog" class="lang-link">PT</a>
+      </nav>
+    </header>
+    <nav class="main-nav" style="display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:0.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border-color);font-size:0.9rem;">
+      <a href="/ko/blog" style="color:var(--text-secondary);text-decoration:none;">마켓 인사이트</a>
+      <a href="/ko/list" style="color:var(--text-secondary);text-decoration:none;">배당주 스카우터</a>
+      <a href="/ko/calculator" style="color:var(--text-secondary);text-decoration:none;">스노볼 계산기</a>
+      <a href="/ko/calendar" style="color:var(--text-secondary);text-decoration:none;">배당 캘린더</a>
+      <a href="/ko/about" style="color:var(--text-secondary);text-decoration:none;">소개</a>
+    </nav>
+
+    <section class="post-hero">
+      <span class="series-badge">📚 배당주 초보자 가이드 6편</span>
+      <h1>Yield on Cost: 장기 배당 투자의 숨겨진 강력한 지표</h1>
+      <div class="meta" style="font-size:0.9rem;opacity:0.7;display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;margin-top:0.75rem;">
+        <span>📅 2026-05-14</span>
+        <span>⏱️ 읽는 시간: 약 8분</span>
+        <span>🌐 WiseAIWiseU</span>
+      </div>
+    </section>
+
+    <main class="post-content">
+      <a href="/ko/blog" class="back-btn">← 블로그로 돌아가기</a>
+
+      <div class="author-box">
+        <div class="author-avatar">W</div>
+        <div>
+          <strong style="display:block;color:#1e1b4b;font-size:0.95rem;">WiseAIWiseU 리서치팀</strong>
+          <span style="font-size:0.8rem;color:#6b7280;">미국 배당주 전문 분석 | 2026-05-14 | 교육 목적 콘텐츠</span>
+        </div>
+      </div>
+
+      <body>
+    <div class="blog-post">
+        <p><strong>배당주 초보자 가이드 6편</strong></p>
+        <h1>Yield on Cost: 장기 배당 투자의 숨겨진 강력한 지표</h1>
+        <p>안녕하세요, 한국 투자자 여러분! 미국 배당주 투자 전문가 와이즈아이와이즈유입니다. 긴 호흡으로 투자하는 배당주 투자자에게는 현재 주가 대비 배당수익률(Current Yield)만큼이나 중요한, 어쩌면 더 중요한 지표가 있습니다. 바로 오늘 함께 알아볼 <strong>'Yield on Cost (YOC, 취득원가 대비 배당수익률)'</strong>입니다.</p>
+        <p>많은 분들이 배당주를 고를 때 "현재 배당수익률이 몇 %인가?"를 가장 먼저 보십니다. 물론 중요한 지표이지만, 이는 '오늘'의 관점일 뿐입니다. 장기 투자의 진정한 가치는 시간이 흐르면서 나의 투자 원금 대비 배당금이 얼마나 불어났는지를 보여주는 YOC에서 빛을 발합니다. 2026년 5월 현재, 왜 YOC에 주목해야 하는지 자세히 살펴보겠습니다.</p>
+
+        <h2 id="section-1">핵심 요약: 왜 Yield on Cost에 주목해야 하는가?</h2>
+        <p>미국 배당주 투자는 단순히 높은 현재 배당수익률만을 쫓는 게임이 아닙니다. 진정한 목표는 시간이 지남에 따라 점진적으로 증가하는 '현금 흐름'을 구축하는 것입니다. 오늘 주식 시장의 높은 배당수익률은 매력적일 수 있지만, 장기적으로 배당금을 꾸준히 인상해 온 기업에 일찍 투자한 투자자들은 상상 이상의 수익률을 경험하고 있습니다. Yield on Cost는 바로 이러한 장기 투자 성공의 척도이자, 미래의 배당금 스노볼을 예측하는 강력한 도구입니다.</p>
+        <div class="key-point">
+            <strong>핵심 포인트:</strong> Yield on Cost는 당신이 투자한 원금 대비 실제 얼마나 많은 배당금을 받고 있는지를 보여주는 '개인화된' 배당수익률입니다. 장기 배당 성장주 투자에서 YOC는 시간이 지남에 따라 복리처럼 불어나는 배당금의 위력을 체감하게 해줍니다.
+        </div>
+
+        <h2 id="section-2">Yield on Cost (YOC) 개념과 계산법</h2>
+        <h3 id="subsection-2-1">YOC란 무엇인가?</h3>
+        <p>Yield on Cost는 <strong>당신이 주식을 처음 매수했을 때의 가격(취득원가) 대비 현재 받고 있는 연간 배당금의 비율</strong>을 의미합니다. 반면, 일반적으로 '배당수익률'이라고 부르는 것은 '현재 주가 대비 연간 배당금의 비율(Current Yield)'입니다.</p>
+        <p>핵심적인 차이는 다음과 같습니다:</p>
+        <ul>
+            <li><strong>Current Yield (현재 배당수익률):</strong> (연간 주당 배당금 / 현재 주가) × 100%</li>
+            <li><strong>Yield on Cost (취득원가 대비 배당수익률):</strong> (연간 주당 배당금 / 주당 취득원가) × 100%</li>
+        </ul>
+        <p>예를 들어, 당신이 어떤 주식을 주당 50달러에 샀는데, 현재 주가는 100달러이고 연간 배당금은 3달러라고 가정해 봅시다.</p>
+        <ul>
+            <li>Current Yield = ($3 / $100) × 100% = 3%</li>
+            <li>Yield on Cost = ($3 / $50) × 100% = 6%</li>
+        </ul>
+        <p>동일한 주식이라도 당신의 YOC는 6%로 현재 시장 배당수익률보다 두 배나 높은 것을 볼 수 있습니다. 이것이 바로 장기 투자자가 누리는 특권이며, 시간이 지날수록 배당금이 꾸준히 성장하는 기업에 투자했을 때 YOC는 더욱 가파르게 상승합니다.</p>
+
+        <h3 id="subsection-2-2">배당금 성장이 YOC에 미치는 영향</h3>
+        <p>YOC의 매력은 배당 성장주에서 극대화됩니다. 기업이 매년 배당금을 인상하면, 당신의 취득원가는 변하지 않으므로 YOC는 지속적으로 상승합니다. 이는 마치 이자율이 계속 오르는 적금과 같습니다. 장기적으로 볼 때, 초기에는 배당수익률이 낮아 보였던 우량 배당 성장주가 고배당주보다 훨씬 높은 YOC를 제공하는 경우가 많습니다.</p>
+
+        <h2 id="section-3">실제 데이터와 사례: YOC 시뮬레이션 (2026년 5월 기준)</h2>
+        <p>이제 2026년 5월 현재 시장 데이터를 바탕으로 실제 사례를 통해 Yield on Cost의 위력을 살펴보겠습니다. 장기적인 배당 성장을 보여준 대표적인 기업 Altria Group (MO)과 Realty Income Corporation (O)을 예로 들어보겠습니다. (아래 예시의 초기 매수 가격 및 초기 배당금은 실제 과거 데이터를 기반으로 한 가상의 시뮬레이션임을 알려드립니다.)</p>
+
+        <div class="data-table">
+            <h3>MO (Altria Group, Inc.) YOC 시뮬레이션</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>2016년 5월 (매수 시점 가정)</th>
+                        <th>2026년 5월 (현재)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>주당 취득원가</td>
+                        <td>$60.00 (가정)</td>
+                        <td>$60.00</td>
+                    </tr>
+                    <tr>
+                        <td>연간 주당 배당금</td>
+                        <td>$2.40 (가정)</td>
+                        <td>$4.20</td>
+                    </tr>
+                    <tr>
+                        <td>매수 시점 YOC</td>
+                        <td>($2.40 / $60.00) × 100% = <strong>4.00%</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>현재 YOC</strong></td>
+                        <td></td>
+                        <td>($4.20 / $60.00) × 100% = <strong>7.00%</strong></td>
+                    </tr>
+                    <tr>
+                        <td>현재 주가 (2026-05-14)</td>
+                        <td></td>
+                        <td>$71.54</td>
+                    </tr>
+                    <tr>
+                        <td>현재 배당수익률 (2026-05-14)</td>
+                        <td></td>
+                        <td>($4.20 / $71.54) × 100% = 5.87%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>시뮬레이션 결과:</strong> 2016년에 MO 주식을 주당 60달러에 매수했다고 가정하면, 10년이 지난 2026년 현재 YOC는 7.00%에 달합니다. 이는 2026년 현재 MO의 시장 배당수익률(5.87%)보다 훨씬 높은 수치입니다. 이 투자자는 원금 대비 7%의 현금 흐름을 매년 창출하고 있으며, 배당금은 계속 인상될 가능성이 높습니다.</p>
+        </div>
+        <br>
+
+        <div class="data-table">
+            <h3>O (Realty Income Corporation) YOC 시뮬레이션</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>2018년 5월 (매수 시점 가정)</th>
+                        <th>2026년 5월 (현재)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>주당 취득원가</td>
+                        <td>$55.00 (가정)</td>
+                        <td>$55.00</td>
+                    </tr>
+                    <tr>
+                        <td>연간 주당 배당금</td>
+                        <td>$2.60 (가정)</td>
+                        <td>$3.23</td>
+                    </tr>
+                    <tr>
+                        <td>매수 시점 YOC</td>
+                        <td>($2.60 / $55.00) × 100% = <strong>4.73%</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>현재 YOC</strong></td>
+                        <td></td>
+                        <td>($3.23 / $55.00) × 100% = <strong>5.87%</strong></td>
+                    </tr>
+                    <tr>
+                        <td>현재 주가 (2026-05-14)</td>
+                        <td></td>
+                        <td>$61.52</td>
+                    </tr>
+                    <tr>
+                        <td>현재 배당수익률 (2026-05-14)</td>
+                        <td></td>
+                        <td>($3.23 / $61.52) × 100% = 5.26%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>시뮬레이션 결과:</strong> 2018년에 O 주식을 주당 55달러에 매수했다고 가정하면, 8년이 지난 2026년 현재 YOC는 5.87%로 상승했습니다. O는 매월 배당금을 지급하며 꾸준히 배당금을 인상해온 '배당 귀족' 중 하나입니다. 시간이 지남에 따라 YOC가 현재 시장 배당수익률을 넘어선 것을 확인할 수 있습니다.</p>
+        </div>
+        <br>
+
+        <p>이러한 시뮬레이션은 YOC가 단순히 이론적인 개념이 아니라, 실제 장기 투자자들에게 엄청난 현금 흐름 증가를 가져다주는 현실적인 지표임을 보여줍니다.</p>
+        <div class="key-point">
+            <strong>핵심 포인트:</strong> YOC는 배당 성장주에 투자했을 때 시간이 지남에 따라 나의 투자 원금 대비 배당수익률이 점진적으로 상승하는 것을 보여주며, 이는 장기 투자 성공의 핵심 지표가 됩니다.
+        </div>
+
+        <h2 id="section-4">실전 적용 방법: YOC를 활용한 투자 전략</h2>
+        <p>YOC를 효과적으로 활용하기 위한 실전 가이드입니다.</p>
+        <ol>
+            <li><strong>배당 성장주에 집중하라:</strong> 현재 배당수익률이 조금 낮더라도, 꾸준히 배당금을 인상하는 기업에 초점을 맞추세요. 초기 YOC는 낮아 보일 수 있지만, 장기적으로 엄청난 현금 흐름을 만들어낼 것입니다. Altria (MO), Realty Income (O), Paychex (PAYX), Accenture (ACN) 등과 같이 배당금을 꾸준히 늘려온 기업들을 고려해볼 수 있습니다. <a href="/ko/list" target="_blank">WiseAIWiseU의 배당주 스카우터</a>를 활용하여 이러한 배당 성장주들을 찾아보세요.</li>
+            <li><strong>일찍 시작하고 오래 보유하라:</strong> YOC의 마법은 '시간'에서 나옵니다. 젊을 때부터 소액이라도 꾸준히 투자하고, 기업의 펀더멘털이 변하지 않는 한 흔들림 없이 주식을 보유하는 것이 중요합니다.</li>
+            <li><strong>배당금 재투자(DRIP)를 적극 활용하라:</strong> 배당금을 다시 해당 주식에 재투자하면, 더 많은 주식을 저렴한 가격에 매수하는 효과를 가져옵니다. 이는 전체 투자 원금을 늘려 궁극적으로 더 높은 총 YOC를 달성하는 데 기여합니다.</li>
+            <li><strong>자신의 YOC를 꾸준히 기록하고 모니터링하라:</strong> 매수 시점의 YOC와 현재 YOC를 비교하며 자신의 배당 포트폴리오 성과를 확인하세요. <a href="/ko/calculator" target="_blank">WiseAIWiseU의 스노볼 계산기</a>를 활용하면 미래 배당금 성장 시뮬레이션도 해볼 수 있습니다.</li>
+            <li><strong>주가 변동성에 흔들리지 마라:</strong> 배당 성장주에 투자할 때는 단기적인 주가 하락에 일희일비하지 않는 멘탈이 중요합니다. YOC는 주가 변동과 상관없이 나의 투자 원금 대비 배당금 흐름을 보여주므로, 심리적 안정감을 제공할 수 있습니다.</li>
+        </ol>
+
+        <h2 id="section-5">주의사항과 리스크</h2>
+        <p>YOC는 강력한 지표이지만, 몇 가지 주의할 점이 있습니다.</p>
+        <ul>
+            <li><strong>기업의 펀더멘털 분석 필수:</strong> 아무리 YOC가 높게 예상된다 하더라도, 기업의 재무 상태가 불안정하거나 배당 지속 가능성이 낮다면 위험합니다. 높은 현재 배당수익률을 가진 ARR, DX, AGNC, NLY 같은 Mortgage REITs는 경기 변동에 민감하며, 배당성향이 100%를 넘거나 크게 높은 경우 배당 삭감 위험이 상대적으로 높을 수 있습니다. YOC만 보고 맹목적으로 투자해서는 안 됩니다.</li>
+            <li><strong>과거가 미래를 보장하지 않는다:</strong> 과거 배당 성장 이력이 훌륭한 기업이라도 미래에도 반드시 그러리라는 보장은 없습니다. 산업 변화, 경쟁 심화, 경영진 교체 등 다양한 요인이 배당 정책에 영향을 미칠 수 있습니다.</li>
+            <li><strong>자본 수익률도 고려해야:</strong> YOC는 배당 수익률만을 나타낼 뿐, 주가 상승으로 인한 자본 이득은 반영하지 않습니다. 배당과 함께 적절한 자본 이득도 기대할 수 있는 기업을 선택하는 것이 이상적입니다.</li>
+            <li><strong>YOC의 복잡성:</strong> 여러 차례에 걸쳐 분할 매수하거나 배당 재투자를 활발히 하는 경우, 포트폴리오 전체의 YOC 계산은 다소 복잡해질 수 있습니다. 평균 취득원가를 정확히 파악하고 관리하는 것이 중요합니다.</li>
+        </ul>
+        <div class="key-point">
+            <strong>핵심 포인트:</strong> YOC는 장기 배당 투자의 훌륭한 나침반이지만, 기업의 펀더멘털과 배당 지속 가능성을 함께 고려하는 균형 잡힌 시각이 중요합니다.
+        </div>
+
+        <h2 id="section-6">자주 묻는 질문 (FAQ)</h2>
+        <h3 id="faq-1">Q1: YOC가 높으면 무조건 좋은 배당주인가요?</h3>
+        <p><strong>A1:</strong> 아닙니다. YOC는 당신의 개인적인 투자 성과를 나타내는 지표일 뿐, 해당 기업의 투자 매력을 객관적으로 보여주지는 않습니다. YOC가 높다고 해서 현재 시점에서 신규 투자자에게도 매력적인 것은 아니며, 심지어 기업의 주가가 크게 하락해서 취득원가가 낮아진 경우에도 YOC가 높게 나올 수 있습니다. 따라서 YOC와 함께 기업의 현재 배당수익률, 배당성향, 재무 건전성, 성장 전망 등 다양한 요소를 종합적으로 분석해야 합니다.</p>
+
+        <h3 id="faq-2">Q2: YOC를 높이려면 어떤 전략을 사용해야 하나요?</h3>
+        <p><strong>A2:</strong> YOC를 높이는 가장 효과적인 방법은 다음과 같습니다:</p>
+        <ol>
+            <li><strong>배당 성장주에 투자:</strong> 매년 꾸준히 배당금을 인상하는 기업을 선택합니다.</li>
+            <li><strong>일찍 투자하고 장기 보유:</strong> 주당 취득원가를 낮게 유지할수록, 시간이 지남에 따라 인상되는 배당금으로 YOC가 더 빠르게 상승합니다.</li>
+            <li><strong>배당금 재투자(DRIP):</strong> 받은 배당금을 다시 주식 매수에 사용하여 보유 주식 수를 늘리면, 총 투자 원금 대비 받는 배당금 총액이 증가하여 YOC를 높이는 효과가 있습니다.</li>
+            <li><strong>주가가 하락했을 때 추가 매수:</strong> 우량 기업의 주가가 일시적으로 하락하여 매수 기회가 생길 때 추가 매수를 하면, 전체 평균 취득원가를 낮춰 YOC 상승에 유리해집니다.</li>
+        </ol>
+
+        <h3 id="faq-3">Q3: 배당 재투자를 하면 YOC 계산은 어떻게 되나요?</h3>
+        <p><strong>A3:</strong> 배당 재투자를 하면 포트폴리오 전체의 YOC 계산이 조금 복잡해질 수 있습니다. 두 가지 관점으로 볼 수 있습니다. 첫째, <strong>개별 주식의 YOC</strong>는 여전히 '최초 매수 단가' 대비 현재 배당금으로 계산할 수 있습니다. 둘째, <strong>포트폴리오 전체의 YOC</strong>를 계산할 때는 재투자를 통해 추가 매수한 주식들을 포함한 '전체 평균 취득원가'를 기준으로 현재 받고 있는 '총 배당금'을 나누어 계산할 수 있습니다. 많은 투자자들은 개별 주식의 YOC를 추적하며 배당 성장 효과를 확인하고, 포트폴리오 전체의 배당금 흐름은 별도로 관리하기도 합니다.</p>
+
+        <p>Yield on Cost는 장기적인 관점에서 배당 투자의 진정한 가치를 깨닫게 해주는 매우 중요한 지표입니다. 단기적인 시장 변동에 흔들리지 않고, 꾸준히 배당금을 늘려가는 우량 기업에 투자하여 여러분의 YOC를 매년 높여나가시길 바랍니다. 다음 편에서는 더욱 유익한 내용으로 찾아뵙겠습니다!</p>
+    </div>
+</body>
+
+      <div class="nav-links">
+        <a href="/ko/list">→ 배당주 스카우터 보기</a>
+        <a href="/ko/calculator">→ 스노볼 계산기 사용하기</a>
+        <a href="/ko/blog">→ 더 많은 인사이트 보기</a>
+      </div>
+
+      <div class="disclaimer">
+        <strong style="color:#ef4444;display:block;margin-bottom:0.5rem;">⚠️ 투자 위험 고지</strong>
+        본 콘텐츠는 정보 제공 및 교육 목적으로만 작성되었으며, 투자 권유 또는 금융 조언을 구성하지 않습니다.
+        배당금과 수익률은 변동될 수 있으며 보장되지 않습니다. 과거 성과는 미래 수익을 보장하지 않습니다.
+        투자 결정 전 반드시 전문 금융 상담사와 상의하시기 바랍니다.
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-nav" style="margin-bottom:1.5rem;font-size:0.9rem;">
+          <a href="/privacy" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">개인정보처리방침</a> |
+          <a href="/ko/about" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">소개</a> |
+          <a href="/contact" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">문의하기</a>
+        </div>
+        <p>&copy; 2026 WiseAIWiseU - Smart Dividend Investing</p>
+        <p class="legal-disclaimer">본 콘텐츠는 정보 제공만을 목적으로 하며 금융 조언이 아닙니다.</p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    window.addEventListener('scroll', () => {
+      const el = document.getElementById('progress-bar');
+      const total = document.body.scrollHeight - window.innerHeight;
+      if(total > 0) el.style.width = (window.scrollY / total * 100) + '%';
+    });
+  </script>
+</body>
+</html>
