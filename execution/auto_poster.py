@@ -94,23 +94,34 @@ def get_top_volatile_tickers(tickers, count=3):
     data = yf.download(eligible, period="5d", interval="1d", group_by='ticker', progress=False)
 
     volatility_data = []
+    import math
     for ticker in eligible:
         try:
             ticker_data = data[ticker] if len(eligible) > 1 else data
             if len(ticker_data) < 2:
                 continue
+            
             last_close = float(ticker_data['Close'].iloc[-1])
             prev_close = float(ticker_data['Close'].iloc[-2])
-            if prev_close == 0:
+            
+            # Critical fix: Check for NaN or zero
+            if math.isnan(last_close) or math.isnan(prev_close) or prev_close == 0:
                 continue
+                
             change = (last_close - prev_close) / prev_close
+            abs_change = abs(change) * 100
+            
+            if math.isnan(abs_change):
+                continue
+
             volatility_data.append({
                 "ticker":     ticker,
                 "change":     change * 100,
-                "abs_change": abs(change) * 100,
+                "abs_change": abs_change,
                 "price":      last_close,
             })
-        except Exception:
+        except Exception as e:
+            print(f"  [warn] Error scoring {ticker}: {e}")
             continue
 
     top_volatile = sorted(volatility_data, key=lambda x: x['abs_change'], reverse=True)[:count]
@@ -598,6 +609,11 @@ def main():
     
     for stock in top_stocks:
         print(f"[*] Processing {stock['ticker']}...")
+        import math
+        if math.isnan(stock['price']) or math.isnan(stock['change']):
+            print(f"  [skip] Invalid data for {stock['ticker']}")
+            continue
+            
         chart_url = get_quickchart_url(stock['ticker'])
         contents = generate_multi_lang_content(stock, news)
         if contents:
