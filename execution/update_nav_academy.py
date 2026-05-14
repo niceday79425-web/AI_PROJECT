@@ -1,36 +1,32 @@
-"""내비게이션 메뉴를 최신 Glassmorphism 디자인으로 업데이트"""
+"""내비게이션 메뉴를 미니멀하고 고급스러운 디자인으로 업데이트"""
 import os, re, glob
 
 ROOT = r"d:\AI_PROJECT"
 
 NEW_NAV_EN_ITEMS = [
-    ('href="/blog.html"', '<i class="fas fa-newspaper"></i> Market Insights'),
-    ('href="/learn.html"', '<i class="fas fa-graduation-cap"></i> Dividend Academy'),
-    ('href="/list.html"', '<i class="fas fa-chart-line"></i> Dividend Scouter'),
-    ('href="/calculator.html"', '<i class="fas fa-calculator"></i> Snowball Calculator'),
-    ('href="/calendar.html"', '<i class="fas fa-calendar-alt"></i> Dividend Calendar'),
-    ('href="/about.html"', '<i class="fas fa-info-circle"></i> About'),
+    ('href="/blog.html"', 'Market Insights'),
+    ('href="/learn.html"', 'Dividend Academy'),
+    ('href="/list.html"', 'Dividend Scouter'),
+    ('href="/calculator.html"', 'Snowball Calculator'),
+    ('href="/calendar.html"', 'Dividend Calendar'),
+    ('href="/about.html"', 'About'),
 ]
 
 NEW_NAV_KO_ITEMS = [
-    ('href="/ko/blog.html"', '<i class="fas fa-newspaper"></i> 마켓 인사이트'),
-    ('href="/ko/learn.html"', '<i class="fas fa-graduation-cap"></i> 배당 아카데미'),
-    ('href="/ko/list.html"', '<i class="fas fa-chart-line"></i> 배당주 스카우터'),
-    ('href="/ko/calculator.html"', '<i class="fas fa-calculator"></i> 스노볼 계산기'),
-    ('href="/ko/calendar.html"', '<i class="fas fa-calendar-alt"></i> 배당 캘린더'),
-    ('href="/ko/about.html"', '<i class="fas fa-info-circle"></i> 소개'),
+    ('href="/ko/blog.html"', '마켓 인사이트'),
+    ('href="/ko/learn.html"', '배당 아카데미'),
+    ('href="/ko/list.html"', '배당주 스카우터'),
+    ('href="/ko/calculator.html"', '스노볼 계산기'),
+    ('href="/ko/calendar.html"', '배당 캘린더'),
+    ('href="/ko/about.html"', '소개'),
 ]
 
 def build_nav_en(active_href=""):
     items = []
-    # Convert active_href to full file path style for matching, or just match the base
-    # Because active_href could be '/blog' or '/ko/blog' or '/ko/blog.html'
     for href, label in NEW_NAV_EN_ITEMS:
-        # Check if the href matches the active page
         clean_href = href.replace('href="', '').replace('"', '').replace('.html', '')
         clean_active = active_href.replace('.html', '')
         
-        # Exact match or if active is a sub-page of the section
         if clean_href == clean_active or (clean_href != "/" and clean_active.startswith(clean_href)):
             items.append(f'<a {href.replace(".html", "")} class="active">{label}</a>')
         else:
@@ -60,17 +56,11 @@ def update_nav(path, new_nav):
     with open(path, "r", encoding="utf-8") as f:
         html = f.read()
         
-    # main-nav나 glass-nav가 있는지 확인
     if not re.search(r'<nav class="(main-nav|glass-nav)"', html):
         return False
         
     new_html = NAV_PATTERN.sub(new_nav, html, count=1)
     
-    # 만약 FontAwesome이 없다면 <head> 태그 닫히기 전에 추가
-    if '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/' not in new_html:
-        fa_link = '  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">\n</head>'
-        new_html = new_html.replace('</head>', fa_link)
-
     if new_html != html:
         with open(path, "w", encoding="utf-8") as f:
             f.write(new_html)
@@ -89,7 +79,7 @@ en_pages = [
 for path, active in en_pages:
     if os.path.exists(path):
         if update_nav(path, build_nav_en(active)):
-            print(f"  [nav-en] {os.path.basename(path)}")
+            pass
 
 # KO pages
 ko_pages = [
@@ -105,9 +95,9 @@ ko_pages = [
 for path, active in ko_pages:
     if os.path.exists(path):
         if update_nav(path, build_nav_ko(active)):
-            print(f"  [nav-ko] {os.path.basename(path)}")
+            pass
 
-# Also update nav in all blog posts (KO, EN, PT)
+# Update nav in all blog posts
 ko_posts = glob.glob(os.path.join(ROOT, "ko", "blog", "*.html"))
 for path in ko_posts:
     update_nav(path, build_nav_ko("/ko/blog"))
@@ -116,4 +106,9 @@ en_posts = glob.glob(os.path.join(ROOT, "blog", "*.html"))
 for path in en_posts:
     update_nav(path, build_nav_en("/blog"))
 
-print("\n[OK] 모든 페이지의 내비게이션 바 디자인 업데이트 완료")
+pt_posts = glob.glob(os.path.join(ROOT, "pt", "blog", "*.html"))
+for path in pt_posts:
+    # PT uses English nav right now as there's no pt nav config yet
+    update_nav(path, build_nav_en("/blog"))
+
+print("[OK] 미니멀리즘 내비게이션 바 모든 페이지 적용 완료")
