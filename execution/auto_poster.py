@@ -25,7 +25,7 @@ if api_key:
 else:
     print("[!] Warning: API key not found.")
 
-model = genai.GenerativeModel('gemini-2.5-flash') # Using stable flash model
+model = genai.GenerativeModel('gemini-2.0-flash-001')
 
 # Extended ticker list (50+ stocks)
 TICKERS = [
@@ -90,19 +90,24 @@ def get_top_volatile_tickers(tickers, count=3):
         print("  [warn] Still too few — using full ticker pool")
         eligible = list(tickers)
 
-    # --- Fetch & score volatility ---
-    data = yf.download(eligible, period="5d", interval="1d", group_by='ticker', progress=False)
-
     volatility_data = []
     import math
     for ticker in eligible:
         try:
-            ticker_data = data[ticker] if len(eligible) > 1 else data
+            # Download individually for better reliability
+            ticker_data = yf.download(ticker, period="5d", interval="1d", progress=False)
             if len(ticker_data) < 2:
                 continue
             
-            last_close = float(ticker_data['Close'].iloc[-1])
-            prev_close = float(ticker_data['Close'].iloc[-2])
+            # Ensure we get a scalar even if yfinance returns a DataFrame/Series slice
+            last_close_val = ticker_data['Close'].iloc[-1]
+            prev_close_val = ticker_data['Close'].iloc[-2]
+            
+            if hasattr(last_close_val, 'iloc'): last_close_val = last_close_val.iloc[0]
+            if hasattr(prev_close_val, 'iloc'): prev_close_val = prev_close_val.iloc[0]
+
+            last_close = float(last_close_val)
+            prev_close = float(prev_close_val)
             
             # Critical fix: Check for NaN or zero
             if math.isnan(last_close) or math.isnan(prev_close) or prev_close == 0:
@@ -238,13 +243,31 @@ def generate_multi_lang_content(stock_info, news_text):
     - Add internal links: mention Dividend Scouter at /list and Calculator at /calculator
     """
 
-    try:
-        response = model.generate_content(prompt)
-        text = response.text.replace('```json', '').replace('```', '').strip()
-        return json.loads(text)
-    except Exception as e:
-        print(f"[!] Gemini generation failed: {e}")
-        return None
+    for attempt in range(3):
+        try:
+            response = model.generate_content(prompt)
+            text = response.text
+            # Remove markdown code blocks if present
+            text = re.sub(r'```json\s*', '', text)
+            text = re.sub(r'```\s*', '', text)
+            text = text.strip()
+            
+            # Critical: Clean up potential invalid characters for JSON
+            # (Remove control characters except newline/tab)
+            text = "".join(ch for ch in text if ord(ch) >= 32 or ch in "\n\r\t")
+            
+            return json.loads(text)
+        except Exception as e:
+            print(f"[!] Gemini generation or parsing failed (Attempt {attempt+1}/3): {e}")
+            if "429" in str(e):
+                print("  [wait] Rate limit hit, sleeping 10s...")
+                time.sleep(10)
+                continue
+            # Print first 200 chars of text for debugging if it fails
+            if 'text' in locals():
+                print(f"  [debug] Raw text snippet: {text[:200]}...")
+            return None
+    return None
 
 def build_post_html(lang, title, summary, keywords, today, ticker, article_body, css_path, home_path):
     """Build premium HTML for a daily blog post."""
