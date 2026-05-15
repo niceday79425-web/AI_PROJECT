@@ -257,9 +257,11 @@
                 grid.innerHTML = '';
 
                 posts.slice(0, 3).forEach(post => {
-                    const card = document.createElement('div');
+                    const card = document.createElement('a');
+                    card.href = post.link;
                     card.className = 'blog-card';
-                    card.onclick = () => window.location.href = post.link;
+                    card.style.textDecoration = 'none';
+                    card.style.display = 'block';
                     card.innerHTML = `
                         <span class="blog-date">${post.date}</span>
                         <h3>${post.title}</h3>
