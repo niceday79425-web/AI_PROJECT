@@ -240,7 +240,7 @@ def generate_multi_lang_content(stock_info, news_text):
     - Make English content professional and data-driven with specific numbers
     - Ensure translations are natural, not just word-for-word
     - Focus on actionable insights that help investors make informed decisions
-    - Add internal links: mention Dividend Scouter at /list and Calculator at /calculator
+    - Add internal links: mention US Dividend Stock Search at /list and US Stock Compound Interest at /calculator
     """
 
     for attempt in range(3):
