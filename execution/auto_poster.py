@@ -25,7 +25,7 @@ if api_key:
 else:
     print("[!] Warning: API key not found.")
 
-model = genai.GenerativeModel('gemini-2.0-flash-001')
+model = genai.GenerativeModel('gemini-3-flash-preview')
 
 # Extended ticker list (50+ stocks)
 TICKERS = [
