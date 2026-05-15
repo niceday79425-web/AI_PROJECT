@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yield on Cost: 장기 배당 투자의 숨겨진 강력한 지표 | WiseAIWiseU</title>
-  <meta name="description" content="Yield on Cost 개념과 계산법, 장기 보유 시 수익률 변화 시뮬레이션">
-  <meta name="keywords" content="배당주, 미국 주식, 배당 투자, 패시브 인컴, 배당주 초보자 가이드 6편">
-  <meta property="og:title" content="Yield on Cost: 장기 배당 투자의 숨겨진 강력한 지표 | WiseAIWiseU">
-  <meta property="og:description" content="Yield on Cost 개념과 계산법, 장기 보유 시 수익률 변화 시뮬레이션">
+  <title>[초보 가이드 6편] 장기투자의 숨은 무기: YOC | WiseAIWiseU</title>
+  <meta name="description" content="Yield on Cost(YOC)의 정의, 계산법, 10년 시뮬레이션 및 실전 전략을 통해 시간이 돈을 벌게 하는 장기 투자의 핵심을 알아봅니다.">
+  <meta name="keywords" content="배당주, 미국 주식, 배당 투자, 패시브 인컴, YOC, Yield on Cost, 배당 성장, 장기 투자">
+  <meta property="og:title" content="[초보 가이드 6편] 장기투자의 숨은 무기: YOC | WiseAIWiseU">
+  <meta property="og:description" content="Yield on Cost(YOC)의 정의, 계산법, 10년 시뮬레이션 및 실전 전략을 통해 시간이 돈을 벌게 하는 장기 투자의 핵심을 알아봅니다.">
   <meta property="og:type" content="article">
   <meta property="og:image" content="https://wiseaiwiseu.com/og-image.png">
   <link rel="canonical" href="https://wiseaiwiseu.com/ko/blog/beginner-06-yield-on-cost">
@@ -15,6 +15,7 @@
   <link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/ko/blog/beginner-06-yield-on-cost">
   <link rel="stylesheet" href="../../css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
     /* ── Reading Progress Bar ── */
     #progress-bar {
       position: fixed; top: 0; left: 0; height: 3px; width: 0%;
@@ -120,15 +121,7 @@
       padding: 0.5rem 1rem; border-radius: 8px; background: rgba(255,255,255,0.03);
     }
     .back-btn:hover { color: var(--text-primary); background: rgba(255,255,255,0.08); transform: translateX(-5px); }
-    
-    /* ── Series Nav ── */
-    .series-nav { background:rgba(255,255,255,0.02);border-radius:16px;padding:2rem;margin-top:5rem; border:1px solid rgba(255,255,255,0.08); }
-    .series-nav h3 { color:var(--text-primary);font-size:1.25rem;margin-bottom:1.5rem; font-weight: 700; }
-    .series-nav ul { list-style:none;padding:0;margin:0; }
-    .series-nav li { padding:0.6rem 0;font-size:1rem; color: var(--text-secondary); border-bottom: 1px solid rgba(255,255,255,0.03); }
-    .series-nav li:last-child { border: none; }
-    .series-nav a { color:var(--text-primary);text-decoration:none; font-weight: 500; transition: color 0.3s; }
-    .series-nav a:hover { color: #6366f1; }
+  </style>
 </head>
 <body>
   <div id="progress-bar"></div>
@@ -141,6 +134,7 @@
         <a href="/pt/blog" class="lang-link">PT</a>
       </nav>
     </header>
+    
     <nav class="glass-nav">
       <a href="/ko/blog" class="active">마켓 인사이트</a>
       <a href="/ko/learn">배당 아카데미</a>
@@ -152,10 +146,10 @@
 
     <section class="post-hero">
       <span class="series-badge">📚 배당주 초보자 가이드 6편</span>
-      <h1>Yield on Cost: 장기 배당 투자의 숨겨진 강력한 지표</h1>
+      <h1>[초보 가이드 6편] 장기투자의 숨은 무기: YOC</h1>
       <div class="meta" style="font-size:0.9rem;opacity:0.7;display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;margin-top:0.75rem;">
-        <span>📅 2026-05-14</span>
-        <span>⏱️ 읽는 시간: 약 8분</span>
+        <span>📅 2026-05-15</span>
+        <span>⏱️ 읽는 시간: 약 12분</span>
         <span>🌐 WiseAIWiseU</span>
       </div>
     </section>
@@ -167,175 +161,92 @@
         <div class="author-avatar">W</div>
         <div>
           <strong style="display:block;color:var(--text-primary);font-size:0.95rem;">WiseAIWiseU 리서치팀</strong>
-          <span style="font-size:0.8rem;color:var(--text-secondary);">미국 배당주 전문 분석 | 2026-05-14 | 교육 목적 콘텐츠</span>
+          <span style="font-size:0.8rem;color:var(--text-secondary);">미국 배당주 전문 분석 | 2026-05-15 | 교육 목적 콘텐츠</span>
         </div>
       </div>
 
-      <div class="blog-post">
-    <h1 class="post-title">Yield on Cost: 장기 배당 투자의 숨겨진 강력한 지표 (배당주 초보자 가이드 6편)</h1>
-    <p class="post-date">게시일: 2026년 5월 14일</p>
+      <p>미국 배당주 투자 전문 블로그 <strong>WiseAIWiseU</strong>의 초보자 교육 시리즈 제6편입니다.</p>
+      <p>우리는 지난 시간까지 '어떤 주식(귀족주)'을 골라 '어떻게 운영(재투자)'할 것인지 배웠습니다. 하지만 배당 투자를 이어가다 보면 주가가 지지부진하거나 시장이 흔들릴 때 "과연 이게 의미가 있을까?"라는 의구심이 들 때가 반드시 옵니다.</p>
+      <p>그때 여러분의 흔들리는 멘탈을 꽉 잡아주고, 장기 투자의 확신을 수치로 증명해 줄 강력한 지표가 있습니다. 바로 장기 투자자의 숨은 무기이자 훈장인 YOC(Yield on Cost)입니다.</p>
 
-    <p>안녕하세요, 한국 투자자 여러분! 미국 배당주 투자 전문가 WiseAIWiseU입니다. 오늘은 장기 배당 투자의 진정한 위력을 깨닫게 해줄 핵심 지표, 바로 'Yield on Cost (YOC)'에 대해 깊이 있게 다뤄보겠습니다. 단순히 현재 배당수익률만 보고 투자를 결정한다면, 장기적으로 누릴 수 있는 엄청난 배당 수익률 증가의 기회를 놓칠 수 있습니다.</p>
+      <h2>1. YOC(Yield on Cost)란 무엇인가?</h2>
+      <p>대부분의 증권 앱이나 뉴스에서 말하는 배당수익률은 '현재 시가 배당수익률(Current Yield)'입니다. 이는 "지금 이 주식을 새로 사는 사람에게 주는 수익률"입니다.</p>
+      <p>반면, YOC(원금 대비 수익률)는 "내가 실제로 산 가격 대비 지금 얼마의 배당을 받는가"를 나타내는 개인화된 지표입니다. 기업이 배당금을 늘릴수록, 여러분의 YOC는 시중 금리나 일반적인 배당률과는 비교할 수 없을 정도로 높아지며, 이것이 바로 장기 투자자가 누리는 '시간의 프리미엄'입니다.</p>
 
-    <div class="key-point">
-        <strong>핵심 포인트:</strong> Yield on Cost (YOC)는 투자 원금 대비 현재 받는 배당금의 비율을 나타내며, 장기 배당 성장 투자의 진정한 수익률을 보여주는 강력한 지표입니다.
-    </div>
+      <div class="key-point">
+        <strong>🧮 YOC 계산 공식:</strong> <br>
+        YOC (%) = (현재 주당 연간 배당금 / 나의 주당 평균 매수 단가) × 100
+      </div>
 
-    <h2 id="section1">1. 핵심 요약: 왜 Yield on Cost에 주목해야 할까요?</h2>
-    <p>배당주 투자를 시작할 때 많은 분들이 가장 먼저 확인하는 지표는 바로 '현재 배당수익률(Current Dividend Yield)'입니다. "이 주식은 현재 5%의 배당을 주는구나!" 하고 생각하는 것이죠. 하지만 장기 투자자에게는 이 현재 배당수익률만으로는 부족합니다. 진정한 장기 배당 투자 성과를 측정하려면 <strong>Yield on Cost (YOC)</strong>라는 지표를 반드시 알아야 합니다.</p>
-    <p>YOC는 여러분이 주식을 처음 구매했을 때의 가격, 즉 '원금' 대비 현재 받고 있는 연간 배당금의 비율을 의미합니다. 주가가 오르고 기업이 배당금을 꾸준히 인상하면, 여러분의 투자 원금 대비 배당수익률은 시간이 지남에 따라 놀랍도록 증가하게 됩니다. 이는 단순한 현재 배당수익률로는 절대 볼 수 없는, 장기 투자의 숨겨진 마법 같은 수익률을 보여줍니다.</p>
-    <p>지금 이 순간, 2026년 5월 14일 현재에도 많은 투자자들이 이 지표를 간과하고 있습니다. YOC를 이해하고 활용하는 것은 여러분의 배당 포트폴리오를 장기적으로 더욱 견고하고 풍성하게 만드는 지름길이 될 것입니다.</p>
+      <h2>2. YOC의 위력: 10년의 시간이 만든 마법 (사례 분석)</h2>
+      <p>YOC가 왜 무기인지 체감하기 위해, 10년 전 한 우량 배당 성장주에 투자한 시뮬레이션을 해보겠습니다.</p>
 
-    <h2 id="section2">2. Yield on Cost (YOC) 개념과 계산법: 초보자도 쉽게 이해하기</h2>
-    <h3 id="subsection2-1">2.1. Yield on Cost (YOC)란?</h3>
-    <p>Yield on Cost는 '원금 대비 배당수익률'을 의미합니다. 다시 말해, <strong>내가 처음 주식을 샀을 때 투입했던 돈(원금)과 비교했을 때, 지금 이 주식으로부터 연간 얼마의 배당금을 받고 있는지를 퍼센트로 나타내는 지표</strong>입니다.</p>
-    <ul>
-        <li><strong>현재 배당수익률 (Current Dividend Yield):</strong> 현재 주가 대비 연간 배당금의 비율입니다. 주가가 오르거나 내리면 이 수치는 실시간으로 변동합니다.
-            <br><code>현재 연간 배당금 / 현재 주가 * 100%</code></li>
-        <li><strong>Yield on Cost (YOC):</strong> 여러분이 매수한 가격(매수 원금) 대비 현재 연간 배당금의 비율입니다. 매수한 이후 주가가 아무리 변하더라도, 여러분의 YOC는 오직 기업의 배당금 인상에 의해서만 변동합니다.
-            <br><code>현재 연간 배당금 / 매수 단가 * 100%</code></li>
-    </ul>
+      <div class="key-point">
+        <strong>💡 상황 가정:</strong>
+        <ul>
+          <li><strong>2016년:</strong> 김투자 씨는 배당주 A를 주당 <strong>$100</strong>에 100주 매수했습니다. (투자 원금 $10,000)</li>
+          <li><strong>당시 배당금:</strong> 주당 $3 (당시 시가 배당률 <strong>3%</strong>)</li>
+          <li><strong>10년의 흐름:</strong> 기업이 매년 배당금을 평균 10%씩 인상했습니다.</li>
+          <li><strong>2026년 현재:</strong> 주당 배당금이 약 <strong>$7.8</strong>이 되었고, 주가도 성장하여 <strong>$220</strong>가 되었습니다.</li>
+        </ul>
+      </div>
 
-    <h3 id="subsection2-2">2.2. 간단한 예시로 이해하기</h3>
-    <p>가상의 주식 A가 있다고 가정해 봅시다.</p>
-    <ol>
-        <li>2016년에 주식 A를 주당 100달러에 샀습니다. 당시 연간 배당금은 주당 2달러였습니다.
-            <ul>
-                <li>매수 시점의 배당수익률: (2달러 / 100달러) * 100% = 2%</li>
-            </ul>
-        </li>
-        <li>10년이 지난 <strong>2026년 현재</strong>, 주식 A의 주가는 200달러로 올랐고, 기업은 꾸준히 배당금을 인상하여 현재 연간 배당금은 주당 5달러가 되었습니다.
-            <ul>
-                <li><strong>2026년 현재 배당수익률:</strong> (5달러 / 200달러) * 100% = 2.5%</li>
-                <li><strong>2026년 나의 Yield on Cost (YOC):</strong> (5달러 / 100달러) * 100% = 5%</li>
-            </ul>
-        </li>
-    </ol>
-    <p>이 예시에서 보듯이, 현재 배당수익률은 2.5%에 불과하지만, 10년 전 100달러에 매수한 나의 YOC는 이미 5%에 도달했습니다. 주가가 올랐기 때문에 신규 투자자에게는 매력적으로 보이지 않을 수 있지만, 장기 보유자인 여러분은 훨씬 높은 배당 수익률을 만끽하고 있는 것입니다. 이것이 바로 YOC가 장기 배당 투자자에게 중요한 이유입니다.</p>
+      <p><strong>이때 김투자 씨와 오늘 처음 이 주식을 산 이신입 씨를 비교해 볼까요?</strong></p>
 
-    <div class="key-point">
-        <strong>핵심 포인트:</strong> YOC는 매수 시점의 내 원금을 기준으로 계산되므로, 기업이 배당금을 꾸준히 인상할수록 YOC는 시간이 갈수록 증가합니다. 이는 복리의 마법과 함께 장기 투자의 진정한 보상을 보여줍니다.
-    </div>
-
-    <h2 id="section3">3. 실제 데이터와 사례: 장기 보유 시 YOC 변화 시뮬레이션 (2026년 5월 기준)</h2>
-    <p>이제 <strong>2026년 5월 현재 시장 데이터</strong>를 바탕으로 실제 기업들의 YOC 변화를 시뮬레이션 해보겠습니다. 과거에 꾸준히 배당금을 성장시켜 온 기업들을 10년 전 (2016년)에 매수했다고 가정하고, 현재 나의 YOC가 얼마가 되는지 살펴보겠습니다. (과거 주가와 배당금 데이터는 시뮬레이션을 위한 가상의 수치입니다.)</p>
-
-    <table class="data-table">
+      <table class="data-table">
         <thead>
-            <tr>
-                <th>종목명</th>
-                <th>가상 매수 시점</th>
-                <th>가상 매수 단가 (2016년)</th>
-                <th>2026년 현재 연간 배당금</th>
-                <th><strong>나의 YOC (2026년)</strong></th>
-                <th>2026년 현재 주가</th>
-                <th>2026년 현재 배당수익률</th>
-            </tr>
+          <tr>
+            <th>항목</th>
+            <th>오늘 산 이신입 씨</th>
+            <th><strong>10년 전 산 김투자 씨 (YOC)</strong></th>
+          </tr>
         </thead>
         <tbody>
-            <tr>
-                <td><strong>Altria Group (MO)</strong></td>
-                <td>2016년</td>
-                <td>$60.00</td>
-                <td>$4.20</td>
-                <td><strong>7.00%</strong></td>
-                <td>$71.54</td>
-                <td>5.87%</td>
-            </tr>
-            <tr>
-                <td><strong>Accenture (ACN)</strong></td>
-                <td>2016년</td>
-                <td>$110.00</td>
-                <td>$6.37</td>
-                <td><strong>5.79%</strong></td>
-                <td>$159.64</td>
-                <td>3.99%</td>
-            </tr>
-            <tr>
-                <td><strong>Realty Income (O)</strong></td>
-                <td>2016년</td>
-                <td>$55.00</td>
-                <td>$3.23</td>
-                <td><strong>5.87%</strong></td>
-                <td>$61.52</td>
-                <td>5.26%</td>
-            </tr>
+          <tr>
+            <td><strong>매수 가격</strong></td>
+            <td>$220</td>
+            <td><strong>$100</strong></td>
+          </tr>
+          <tr>
+            <td><strong>현재 연간 배당금</strong></td>
+            <td>$7.8</td>
+            <td><strong>$7.8</strong></td>
+          </tr>
+          <tr>
+            <td><strong>표기된 수익률</strong></td>
+            <td><strong>3.5%</strong> (시가 배당률)</td>
+            <td><strong>7.8% (YOC)</strong></td>
+          </tr>
         </tbody>
-    </table>
+      </table>
 
-    <p>위 시뮬레이션 표를 자세히 살펴보겠습니다.</p>
-    <ul>
-        <li><strong>Altria Group (MO):</strong> 현재 (2026년 5월) 주가는 $71.54, 현재 배당수익률은 5.87%입니다. 하지만 10년 전 $60에 매수했다면, 나의 YOC는 무려 7.00%에 달합니다. 이는 내가 투자한 원금 대비 연 7%의 배당금을 받고 있다는 의미입니다.</li>
-        <li><strong>Accenture (ACN):</strong> 현재 주가 $159.64, 현재 배당수익률은 3.99%로 비교적 낮게 보입니다. 하지만 ACN은 꾸준히 배당금을 성장시켜온 대표적인 성장 배당주입니다. 10년 전 $110에 매수했다면, 현재 나의 YOC는 5.79%로, 현재 배당수익률보다 훨씬 높습니다. 이는 배당 성장주 투자가 장기적으로 얼마나 효과적인지를 보여주는 좋은 예시입니다.</li>
-        <li><strong>Realty Income (O):</strong> 월배당주로 유명한 O의 현재 주가 $61.52, 현재 배당수익률은 5.26%입니다. 10년 전 $55에 매수했다면, 현재 나의 YOC는 5.87%로, 이 역시 신규 투자자보다 더 높은 배당을 받고 있음을 알 수 있습니다.</li>
-    </ul>
-    <p>이처럼, 현재 배당수익률만으로는 볼 수 없는 '진정한 배당 수익률'이 YOC를 통해 드러납니다. 주가가 상승하는 동안 기업이 배당금을 꾸준히 인상해 왔다면, 나의 YOC는 시간이 지남에 따라 현재 배당수익률을 훌쩍 뛰어넘는 놀라운 수준에 도달할 수 있습니다.</p>
+      <p><strong>결과:</strong> 오늘 이 주식을 산 사람은 3.5%의 이자를 받지만, 10년 전부터 보유한 김투자 씨는 <strong>자신이 투자한 돈 대비 연 7.8%의 확정 이자</strong>를 받는 셈입니다. 웬만한 고위험 상품보다 높은 수익을 '안전한 우량주'에서 누리게 되는 것입니다.</p>
 
-    <h2 id="section4">4. 실전 적용 방법: YOC를 활용한 배당주 투자 전략</h2>
-    <p>그렇다면 YOC를 우리의 배당주 투자에 어떻게 효과적으로 적용할 수 있을까요?</p>
-    <ol>
-        <li><strong>단계 1: 현재 보유 종목의 YOC 계산하기</strong>
-            <p>여러분이 현재 보유하고 있는 모든 배당주에 대해 YOC를 계산해 보세요. 투자 원금(평균 매수 단가)과 현재 연간 배당금만 알면 쉽게 계산할 수 있습니다. 예를 들어, <a href="/ko/list" target="_blank" rel="noopener noreferrer">WiseAIWiseU의 배당주 스카우터</a>를 통해 종목별 현재 연간 배당금 정보를 확인하고, 증권사 앱에서 여러분의 평균 매수 단가를 확인하여 직접 계산해 볼 수 있습니다.</p>
-        </li>
-        <li><strong>단계 2: YOC를 기준으로 포트폴리오 성과 평가하기</strong>
-            <p>단순히 주가 상승률이나 현재 배당수익률에만 집중하기보다, 나의 YOC가 얼마나 성장했는지에 주목하세요. YOC가 꾸준히 증가하는 종목이야말로 장기 배당 성장 투자의 성공적인 사례입니다.</p>
-        </li>
-        <li><strong>단계 3: 배당 성장주에 주목하기</strong>
-            <p>높은 YOC를 달성하려면 단순히 현재 배당수익률이 높은 주식보다 <strong>꾸준히 배당금을 인상하는 기업</strong>에 투자하는 것이 중요합니다. 현재 (2026년 5월) 배당수익률이 높은 ARRR, DX, AGNC, NLY와 같은 mREITs는 매력적으로 보일 수 있지만, 이들은 배당 성장보다는 높은 현재 수익률에 집중하는 경향이 있으며, 배당금 변동성이 클 수 있습니다. 반면, MO, VZ, O, ACN, SPG, GPC 등은 꾸준한 배당 성장을 보여주는 경향이 있어 장기 YOC 상승에 유리합니다.</p>
-        </li>
-        <li><strong>단계 4: 배당 재투자 (DRIP)의 효과 극대화</strong>
-            <p>받은 배당금을 다시 해당 주식에 재투자하는 '배당 재투자(DRIP: Dividend Reinvestment Plan)'를 활용하면 YOC의 상승 속도를 더욱 가속화할 수 있습니다. 재투자된 배당금으로 주식을 추가 매수하면, 그 주식 또한 미래에 배당금을 지급하여 '배당금의 배당금'을 창출하고 전체적인 YOC를 끌어올리는 효과가 있습니다. WiseAIWiseU의 <a href="/ko/calculator" target="_blank" rel="noopener noreferrer">스노볼 계산기</a>를 활용하여 배당 재투자 시 자산이 어떻게 불어나는지 시뮬레이션 해보세요.</p>
-        </li>
-    </ol>
+      <h2>3. YOC가 왜 장기 투자자의 '무기'인가?</h2>
+      <h3>① 하락장을 견디는 최강의 방패</h3>
+      <p>시장이 공포에 빠져 주가가 $220에서 $180로 폭락한다고 가정해 봅시다. 새로 진입한 이신입 씨는 -18%의 손실에 괴로워하며 매도를 고민하겠지만, 김투자 씨의 YOC는 여전히 7.8%입니다. "주가는 변해도 내 원금 대비 배당금(월급)은 줄지 않는다"는 확신이 폭락장에서도 여유를 가질 수 있게 합니다.</p>
 
-    <h2 id="section5">5. 주의사항과 리스크</h2>
-    <p>Yield on Cost는 강력한 지표이지만, 몇 가지 주의사항과 리스크도 함께 고려해야 합니다.</p>
-    <ul>
-        <li><strong>YOC는 주가 변동을 반영하지 않습니다:</strong> YOC는 오직 투자 원금 대비 배당 수익률만을 나타냅니다. 주가가 하락하여 손실을 보고 있더라도 배당금이 유지된다면 YOC는 여전히 높게 나올 수 있습니다. YOC가 높다고 해서 무조건 좋은 투자라고 단정할 수는 없으며, 총수익률(Total Return = 주가 변동 + 배당금) 관점에서 함께 고려해야 합니다.</li>
-        <li><strong>과거 배당 성장이 미래를 보장하지 않습니다:</strong> 기업의 배당 성장 이력이 훌륭하더라도, 미래에도 반드시 배당금을 인상할 것이라는 보장은 없습니다. 기업의 재무 상태, 산업 동향, 경영진의 배당 정책 등을 꾸준히 모니터링해야 합니다.</li>
-        <li><strong>배당 삭감 또는 중단의 위험:</strong> 기업의 실적이 악화되면 배당금을 삭감하거나 중단할 수 있습니다. 이 경우 YOC는 급격히 하락하게 됩니다. 특히 배당성향이 높은 종목들(예: ARR, AGNC, O 등)은 이익 대비 배당금 지급 비중이 높으므로, 기업의 실적 악화 시 배당 삭감 위험이 더 클 수 있습니다.</li>
-        <li><strong>세금 문제:</strong> 배당금에는 배당소득세가 부과됩니다. YOC가 높을수록 받는 배당금 총액이 커지므로, 세금 계획도 함께 고려해야 합니다.</li>
-    </ul>
+      <h3>② 매도의 유혹을 이기는 '황금 거위' 효과</h3>
+      <p>수익률이 50%, 100% 찍히면 사람들은 이익을 실현하고 싶어 합니다. 하지만 YOC를 확인하면 생각이 달라집니다. "내 원금 대비 매년 10%가 넘는 현금이 따박따박 들어오는데, 이 황금 알을 낳는 거위를 왜 팔지?"라는 결론에 도달하게 됩니다. YOC는 여러분을 자연스럽게 초장기 투자자로 인도합니다.</p>
 
-    <div class="key-point">
-        <strong>핵심 포인트:</strong> YOC는 장기 배당 투자의 핵심이지만, 주가 변동, 기업의 건전성, 그리고 배당 지속 가능성을 항상 함께 고려하는 균형 잡힌 시각이 중요합니다.
-    </div>
+      <h3>③ 복리의 가시화</h3>
+      <p>YOC는 시간이 흐를수록 가파르게 상승합니다. 처음 5년은 더디지만, 10년, 20년이 지나 YOC가 20%, 30%를 넘어서는 순간, 여러분은 더 이상 노동 소득에 의지하지 않아도 되는 '경제적 자유'의 문턱에 서게 됩니다.</p>
 
-    <h2 id="section6">6. 자주 묻는 질문 (FAQ)</h2>
-    <h3 id="faq1">Q1: YOC와 현재 배당수익률 중 어떤 것이 더 중요한가요?</h3>
-    <p>A1: 두 지표 모두 중요하며, 투자자의 상황과 목표에 따라 다르게 활용됩니다.
-        <ul>
-            <li><strong>YOC:</strong> 장기 투자자가 '내 원금 대비 얼마나 효율적으로 배당금을 받고 있는가'를 평가하고, 배당 성장의 진정한 위력을 확인할 때 중요합니다. 이미 매수한 종목의 성과를 측정하는 데 유리합니다.</li>
-            <li><strong>현재 배당수익률:</strong> 신규 투자자가 '지금 이 가격으로 주식을 샀을 때 받을 수 있는 초기 배당금은 얼마인가'를 평가하고, 포트폴리오에 새로운 종목을 편입할 때 현재 시장가치 대비 수익률을 비교하는 데 유용합니다.</li>
-        </ul>
-        이상적인 배당주 투자는 꾸준히 YOC를 높여줄 수 있는 배당 성장주를 현재 배당수익률이 적절할 때 매수하는 것입니다.
-    </p>
+      <h2>4. YOC를 극대화하는 3가지 실전 전략</h2>
+      <ol>
+        <li><strong>'배당 성장률'이 높은 종목을 골라라:</strong> 현재 시가 배당률이 5%인 고배당주보다, 현재는 1.5%지만 매년 배당을 15%씩 늘려주는 기업이 10년 뒤 훨씬 높은 YOC를 가져다줍니다. '현재의 숫자'보다 '성장의 속도'에 투자하세요.</li>
+        <li><strong>DRIP(재투자)과 결합하라:</strong> 4편에서 배운 재투자를 통해 주식 수 자체를 늘리면, 총 투자 원금 대비 수령하는 배당금의 총액은 기하급수적으로 늘어납니다. YOC는 이 과정에서 여러분의 자산이 얼마나 효율적으로 일하고 있는지 보여주는 나침반이 됩니다.</li>
+        <li><strong>일찍 시작하고 절대 팔지 마라:</strong> YOC의 유일한 약점은 '시간'입니다. 오늘 사서 내일 확인할 수 있는 지표가 아닙니다. 하지만 10년 뒤 여러분의 계좌에서 YOC 10%를 확인하는 순간, 과거의 나에게 가장 고마워하게 될 것입니다.</li>
+      </ol>
 
-    <h3 id="faq2">Q2: YOC가 높은데 주가가 많이 하락했다면 어떻게 해야 하나요?</h3>
-    <p>A2: YOC가 아무리 높더라도 주가 하락으로 인해 총 투자금액에 손실이 발생했다면 주의 깊게 판단해야 합니다.
-        <ul>
-            <li><strong>기업의 펀더멘털 확인:</strong> 주가 하락의 원인이 무엇인지 파악해야 합니다. 일시적인 시장 조정이나 외부 요인이라면 보유를 유지하거나 오히려 추가 매수를 고려할 수 있습니다. 하지만 기업의 사업 모델이 근본적으로 훼손되었거나 배당금 삭감 위험이 크다면, 매도를 고려할 수도 있습니다.</li>
-            <li><strong>배당금 지속 가능성:</strong> 기업이 계속해서 배당금을 안정적으로 지급할 능력이 있는지 확인하세요. YOC가 높더라도 배당금이 중단되거나 삭감되면 무의미해집니다.</li>
-            <li><strong>개인의 투자 목표:</strong> 배당금 자체가 중요한 목표라면 YOC가 높은 상태에서 꾸준히 배당금을 받는 것에 만족할 수 있습니다. 하지만 주가 상승을 통한 자본 이득도 중요하다면, 손절을 고려해야 할 수도 있습니다.</li>
-        </ul>
-    </p>
-
-    <h3 id="faq3">Q3: 배당 재투자가 YOC에 어떤 영향을 주나요?</h3>
-    <p>A3: 배당 재투자는 장기적으로 YOC를 더욱 효과적으로 높여주는 강력한 전략입니다.
-        <ul>
-            <li><strong>추가 주식 매수:</strong> 배당금을 받으면 그 돈으로 다시 해당 주식의 주식을 추가 매수하게 됩니다.</li>
-            <li><strong>새로운 원금 형성:</strong> 재투자된 주식은 새로운 매수 단가(재투자 당시의 주가)를 가지며, 이 주식들 또한 미래에 배당금을 지급하기 시작합니다.</li>
-            <li><strong>전체 YOC 상승:</strong> 시간이 지남에 따라 내가 보유한 총 주식 수가 늘어나고, 각 주식에서 나오는 배당금도 늘어나므로, 전체 투자 원금 대비 받는 총 배당금이 크게 증가하여 YOC가 더욱 빠르게 상승하게 됩니다. 특히 주가가 하락했을 때 배당 재투자를 하면 더 많은 주식을 저렴하게 매수하게 되어 향후 YOC 상승에 더욱 유리합니다.</li>
-        </ul>
-    </p>
-
-    <p>Yield on Cost는 단순한 숫자가 아닙니다. 이는 여러분이 시간과 인내를 투자한 결과로 얻게 되는 진정한 배당 소득의 성장 스토리입니다. 지금부터 YOC를 여러분의 배당주 포트폴리오 관리의 핵심 지표로 삼아 더욱 풍요로운 배당 라이프를 만들어나가시길 바랍니다. 다음 편에서는 더욱 유익한 내용으로 찾아뵙겠습니다!</p>
-</div>
+      <h2>🚀 마치며: YOC는 당신의 인내에 대한 '훈장'입니다</h2>
+      <p>많은 사람이 시장의 소음에 흔들려 사고팔기를 반복하며 수수료와 세금을 낭비합니다. 하지만 현명한 배당 투자자는 조용히 YOC를 키워나갑니다.</p>
+      <p>오늘 여러분의 계좌에 찍힌 2~3%의 배당률에 실망하지 마세요. 그것은 미래의 YOC 20%를 향한 첫걸음입니다. <strong>장기 투자는 머리로 하는 것이 아니라, YOC라는 무기를 들고 시간이라는 전장을 버텨내는 것입니다.</strong></p>
 
       <div class="nav-links">
-        <a href="/ko/list">→ 배당주 스카우터 보기</a>
-        <a href="/ko/calculator">→ 스노볼 계산기 사용하기</a>
-        <a href="/ko/blog">→ 더 많은 인사이트 보기</a>
+        <a href="/ko/calculator">→ 나의 종목별 YOC 계산기 활용하기</a>
+        <a href="/ko/calculator">→ 10년 뒤 예상 YOC 시뮬레이션 보기</a>
+        <a href="/ko/blog">→ 7편 예고: 매달 배당받는 포트폴리오 설계법</a>
       </div>
 
       <div class="disclaimer">
