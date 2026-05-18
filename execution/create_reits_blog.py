@@ -1,0 +1,323 @@
+import os
+import json
+
+root = r"d:\AI_PROJECT"
+html_filepath = os.path.join(root, "ko", "blog", "sector-reits.html")
+json_filepath = os.path.join(root, "ko", "posts.json")
+
+new_content = """<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미국 주식 섹터별 배당 심층 분석: 6편 리츠(REITs) 섹터 | WiseAIWiseU</title>
+  <meta name="description" content="미국 배당주의 꽃인 리츠 섹터는 금리 안정화에 힘입어 안정적인 월세 수입과 부동산 가치 상승을 모두 챙길 수 있는 최고의 투자처입니다.">
+  <meta name="keywords" content="미국 주식, 배당주, 리츠, REITs, 월배당, 부동산, 리얼티 인컴, 에퀴닉스">
+  <meta property="og:title" content="미국 주식 섹터별 배당 심층 분석: 6편 리츠(REITs) 섹터 | WiseAIWiseU">
+  <meta property="og:description" content="미국 배당주의 꽃인 리츠 섹터는 금리 안정화에 힘입어 안정적인 월세 수입과 부동산 가치 상승을 모두 챙길 수 있는 최고의 투자처입니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://wiseaiwiseu.com/og-image.png">
+  <link rel="canonical" href="https://wiseaiwiseu.com/ko/blog/sector-reits">
+  <link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/sector-reits">
+  <link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/sector-reits">
+  <link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/sector-reits">
+  <link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/blog/sector-reits">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ── Reading Progress Bar ── */
+    #progress-bar {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+      background: linear-gradient(90deg, #6366f1, #2dd4bf);
+      z-index: 9999; transition: width 0.1s linear;
+    }
+    /* ── Post Styles ── */
+    body { font-family: 'Inter', sans-serif; background: var(--bg-color); color: var(--text-primary); margin: 0; }
+    
+    .post-hero {
+      padding: 6rem 1.5rem 5rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05);
+      background: radial-gradient(circle at top, rgba(99,102,241,0.05) 0%, transparent 70%);
+    }
+    .post-hero .ticker-badge, .series-badge {
+      display: inline-block; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+      color: #60a5fa; font-size: 0.8rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 0.5rem 1.4rem; border-radius: 999px;
+      margin-bottom: 2rem; backdrop-filter: blur(10px);
+    }
+    .post-hero h1 {
+      font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 800; letter-spacing: -1.5px;
+      line-height: 1.1; max-width: 900px; margin: 0 auto 1rem; color: var(--text-primary);
+    }
+    .post-hero .meta {
+      font-size: 0.95rem; color: var(--text-secondary); display: flex;
+      gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;
+      opacity: 0.8;
+    }
+    
+    /* ── Article Layout ── */
+    .post-content {
+      max-width: 760px; margin: 0 auto; padding: 4rem 1.5rem;
+    }
+    .post-content h2 {
+      font-size: 1.85rem; font-weight: 700; color: var(--text-primary);
+      margin: 4rem 0 1.5rem; letter-spacing: -0.5px;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .post-content h2::before {
+      content: ''; display: inline-block; width: 4px; height: 1.5rem;
+      background: var(--primary-gradient); border-radius: 2px;
+    }
+    .post-content h3 { 
+      font-size: 1.4rem; font-weight: 600; color: var(--text-primary); 
+      margin: 3rem 0 1.25rem; letter-spacing: -0.3px;
+    }
+    .post-content p { 
+      line-height: 1.9; color: var(--text-secondary); 
+      margin-bottom: 1.75rem; font-size: 1.125rem; font-weight: 400; 
+    }
+    .post-content ul, .post-content ol {
+      padding-left: 1.5rem; margin-bottom: 1.75rem;
+    }
+    .post-content li { 
+      line-height: 1.9; color: var(--text-secondary); 
+      margin-bottom: 0.75rem; font-size: 1.125rem; 
+    }
+    .post-content strong { color: var(--text-primary); font-weight: 600; }
+    .post-content img {
+      width: 100%; border-radius: 16px; margin: 2.5rem 0;
+      border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    
+    /* ── Key Point ── */
+    .key-point { 
+      background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+      border-left: 4px solid #6366f1; 
+      border-radius: 12px; padding: 2rem; margin: 3rem 0; 
+      color: var(--text-primary); font-size: 1.1rem; 
+      backdrop-filter: blur(5px);
+      line-height: 1.8;
+    }
+    .key-point strong { color: #60a5fa; display: block; margin-bottom: 0.5rem; }
+    
+    /* ── Nav Links & Author Box ── */
+    .nav-links { display:flex;gap:1.5rem;flex-wrap:wrap;margin:4rem 0;padding:2rem;background:rgba(255,255,255,0.02);border: 1px solid rgba(255,255,255,0.05); border-radius:16px; }
+    .nav-links a { color:var(--text-primary);text-decoration:none;font-weight:600;font-size:1rem; border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 4px; transition: all 0.3s; }
+    .nav-links a:hover { border-color: #6366f1; color: #6366f1; }
+    
+    .author-box { display:flex;align-items:center;gap:1.5rem;background:transparent;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);padding:2rem 0;margin:4rem 0; }
+    .author-avatar { width:64px;height:64px;background:var(--primary-gradient);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#fff;font-weight:700;font-size:1.4rem; box-shadow: 0 10px 20px rgba(99,102,241,0.2); }
+    .author-box strong { color:var(--text-primary); display:block; margin-bottom: 0.3rem; font-size: 1.2rem; }
+    .author-box span { color:var(--text-secondary); font-size: 1rem; }
+    
+    /* ── Disclaimer ── */
+    .disclaimer {
+      margin-top: 5rem; padding: 2rem;
+      background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 16px; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;
+    }
+    
+    /* ── Back Button ── */
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      color: var(--text-secondary); font-weight: 600; text-decoration: none;
+      font-size: 1rem; margin-bottom: 3rem; transition: all 0.3s;
+      padding: 0.5rem 1rem; border-radius: 8px; background: rgba(255,255,255,0.03);
+    }
+    .back-btn:hover { color: var(--text-primary); background: rgba(255,255,255,0.08); transform: translateX(-5px); }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div id="progress-bar"></div>
+  <div class="container">
+    <header>
+      <a href="/ko/" class="logo">WiseAIWiseU</a>
+      <nav class="lang-selector">
+        <a href="/ko/blog" class="lang-link active">KO</a>
+        <a href="/blog" class="lang-link">EN</a>
+        <a href="/pt/blog" class="lang-link">PT</a>
+      </nav>
+    </header>
+    <nav class="glass-nav">
+      <a href="/ko/blog" class="active">미국 주식 인사이트</a>
+      <a href="/ko/learn">미국 배당주 강의</a>
+      <a href="/ko/list">미국 배당주 검색</a>
+      <a href="/ko/calculator">미국 주식 복리계산</a>
+      <a href="/ko/calendar">미국 배당주 일정</a>
+      <a href="/ko/fortune">미국 주식 비교</a>
+      <a href="/ko/about">미국 주식 서비스 소개</a>
+    </nav>
+
+    <section class="post-hero">
+      <span class="series-badge">📚 섹터별 배당 심층 분석</span>
+      <h1>미국 주식 섹터별 배당 심층 분석: 6편 리츠(REITs) 섹터</h1>
+      <p style="font-size: 1.2rem; margin: 1.5rem auto 0; color: var(--text-secondary); max-width: 800px; line-height: 1.6;">
+        금리 인하 해빙기의 최대 수혜, 제2의 월세를 만드는 부동산 미국 배당주 공략법
+      </p>
+      <div class="meta" style="font-size:0.9rem;opacity:0.7;display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem;">
+        <span>📅 2026-05-20</span>
+        <span>⏱️ 읽는 시간: 약 10분</span>
+        <span>🌐 WiseAIWiseU 리서치</span>
+      </div>
+    </section>
+
+    <main class="post-content">
+      <a href="/ko/blog" class="back-btn">← 블로그로 돌아가기</a>
+
+      <div class="author-box">
+        <div class="author-avatar">W</div>
+        <div>
+          <strong style="display:block;color:var(--text-primary);font-size:0.95rem;">WiseAIWiseU 리서치팀</strong>
+          <span style="font-size:0.8rem;color:var(--text-secondary);">미국 배당주 전문 분석 | 2026-05-20 | 리서치 리포트</span>
+        </div>
+      </div>
+
+      <p>안녕하세요, 미국 주식 및 미국 배당주 투자 전문가 WiseAIWiseU입니다.</p>
+
+      <p>드디어 많은 인컴 투자자분이 기다리시던 미국 배당주의 꽃, <strong>'리츠(REITs, 부동산투자신탁)'</strong> 섹터 심층 분석입니다.</p>
+
+      <p>리츠는 투자자들에게 자금을 모아 부동산(오피스, 상가, 아파트, 물류창고, 데이터 센터 등)에 투자한 뒤, 여기서 발생하는 임대료와 매각 차익을 주주들에게 돌려주는 구조입니다. 특히 미국 세법상 '이익의 90% 이상을 주주에게 배당으로 지급해야 법인세를 면제'받기 때문에, 전 섹터를 통틀어 가장 직관적이고 강력한 고배당 성향을 나타냅니다.</p>
+
+      <p>지난 몇 년간 고금리 터널을 지나며 자산 가치 하락 압박을 받았던 미국 리츠 섹터는, <strong>2026년 현재 연준(Fed)의 금리 인하 기조가 안착되고 부동산 시장이 완연한 해빙기</strong>에 접어들면서 가파른 실적 회복(FFO 성장)과 주가 턴어라운드를 동시에 시현하고 있습니다.</p>
+
+      <div class="key-point">
+        <strong>핵심 요약:</strong> 
+        2026년의 미국 리츠 섹터는 금리 안정화에 따른 조달 비용 감소, AI 및 리쇼어링 허브 부각에 따른 특정 자산군의 수요 폭발이 맞물리며 '매달 받는 안정적인 월세 수입'과 '부동산 가치 상승'을 모두 챙길 수 있는 최고의 타이밍을 맞이했습니다.
+      </div>
+
+      <h2>1. 상세 개념 설명: 리츠 투자 시 반드시 알아야 할 특수 지표</h2>
+      <p>리츠는 일반 미국 주식과 재무 구조가 완전히 다릅니다. 일반 기업처럼 당기순이익(Net Income)이나 P/E 구조로 접근하면 우량 종목을 놓치기 쉽습니다.</p>
+
+      <h3>📊 순이익 대신 FFO / AFFO를 보라</h3>
+      <p>부동산 자산은 매년 장부상 '감가상각'이 크게 일어납니다. 실제 건물 가치는 오르거나 유지되는데 장부상 적자로 찍힐 수 있다는 뜻입니다.</p>
+      <ol>
+        <li><strong>FFO (Funds From Operations, 영업현금흐름):</strong> 당기순이익에 감가상각비를 더하고 자산 매각 손익을 제외한, 리츠의 실제 '현금 창출 능력'입니다.</li>
+        <li><strong>AFFO (Adjusted FFO):</strong> FFO에서 유지 보수 비용(자본 지출)까지 제외한 지표로, "이 리츠가 실제로 주주에게 줄 수 있는 진짜 배당 여력"을 뜻합니다. 2026년 리츠 리서치 시 AFFO payout ratio가 70~85%선인 기업이 가장 안전합니다.</li>
+      </ol>
+
+      <h3>🏢 하위 자산군(Sub-sector)별 양극화</h3>
+      <p>2026년 현재 미국 부동산 시장은 종류에 따라 향방이 극명하게 갈립니다.</p>
+      <ul>
+        <li><strong>전통 리츠 (오피스, 리테일 등):</strong> 재택근무 고착화로 오피스는 여전히 선별적 접근이 필요하나, 우량 상가(리테일)는 탄탄한 소비를 바탕으로 부활했습니다.</li>
+        <li><strong>신성장 리츠 (데이터 센터, 인프라 등):</strong> AI 서버 및 5G 통신망 수요 폭증으로 2026년 현재 공급 부족(Shortage) 현상이 일어나는 가장 핫한 성장형 리츠입니다.</li>
+      </ul>
+
+      <h2>2. 실제 데이터와 사례: 리츠 섹터 대표 미국 배당주</h2>
+      <p>2026년 현재 탄탄한 임대 자산과 차별화된 비즈니스 구조로 주목받는 대표적인 미국 주식 리츠 종목들입니다.</p>
+
+      <h3>💰 매달 찍히는 월세 소득, 정통 리테일 및 주거 대장주</h3>
+      <ul>
+        <li><strong>리얼티 인컴 (O):</strong> 'The Monthly Dividend Company'라는 별명에 걸맞게 미국 배당주 투자자들의 국민 종목입니다. 전 세계 15,500개 이상의 상업용 부동산을 보유하고 있으며, 2026년 5월 현재에도 <strong>주당 $0.2705(연 환산 $3.246)의 월배당</strong>을 공고히 유지하고 있습니다. 금리 인하 수혜와 98.9%에 달하는 높은 임대율을 바탕으로 <strong>5% 초중반의 매력적인 시가 배당률</strong>을 기록 중입니다.</li>
+        <li><strong>아발론베이 커뮤니티스 (AVB):</strong> 미국 전역의 고급 아파트를 소유 및 임대하는 주거용 리츠입니다. 인플레이션에 맞춰 임대료를 유연하게 올릴 수 있어 방어력이 뛰어나며, 안정적인 분기 배당을 지급합니다.</li>
+      </ul>
+
+      <h3>📈 AI 시대를 지탱하는 인프라, 성장형 하이테크 리츠</h3>
+      <ul>
+        <li><strong>에퀴닉스 (EQIX) & 디지털 리얼티 (DLR):</strong> 전 세계 빅테크 기업들의 AI 서버를 보관하는 글로벌 데이터 센터 리츠들입니다. 2026년 현재 AI 인프라 확장 트렌드의 최대 수혜주로, 일반 리츠보다 시가 배당률(2~3%대)은 낮지만 <strong>매년 10%에 육박하는 가파른 배당 성장률과 압도적인 주가 상승세</strong>를 보여줍니다.</li>
+        <li><strong>아메리칸 타워 (AMT):</strong> 5G 통신 안테나 탑(전신주)을 임대하는 인프라 리츠입니다. 모바일 데이터 트래픽이 늘어날수록 통신사로부터 받는 임대료가 올라가는 구조로, 장기 우상향 체력이 매우 강한 미국 주식입니다.</li>
+      </ul>
+
+      <h2>3. 실전 적용 방법: 2026년형 리츠 포트폴리오 전략</h2>
+      <p>부동산 자산의 금융 비용 부담이 급격히 줄어드는 2026년 중반기에는 다음과 같은 4단계 전략으로 리츠 섹터를 조율해야 합니다.</p>
+
+      <h3>단계 1: 매달 들어오는 현금 흐름의 뼈대 세우기</h3>
+      <ul>
+        <li>은퇴를 준비하거나 제2의 월세를 즉각적으로 구축하고 싶다면, 전체 미국 주식 포트폴리오의 15~20% 내외를 리얼티 인컴(O)과 같은 우량 월배당 리츠로 채워 매달 들어오는 인컴의 안정성을 확보합니다.</li>
+      </ul>
+
+      <h3>단계 2: WiseAIWiseU 미국 배당주 검색기 활용</h3>
+      <ul>
+        <li>당사의 <strong><a href="/ko/list" style="color:#3b82f6;">미국 배당주 검색</a></strong> 메뉴에 접속하여 리츠 섹터를 선택합니다. 'P/AFFO(리츠의 주가 배수)' 배율이 역사적 평균보다 낮은 종목, 즉 실적은 회복되는데 주가는 아직 덜 오른 '진흙 속의 진주' 같은 리츠를 필터링합니다.</li>
+      </ul>
+
+      <h3>단계 3: 만기 구조(Debt Maturity) 확인</h3>
+      <ul>
+        <li>리츠 기업이 가진 부채의 만기가 2026년 올해 대거 몰려있는지 확인해야 합니다. 만기가 길게 분산되어 있고(평균 6년 이상), 고정 금리 비중이 높은 리츠일수록 금리 변동 리스크에서 완벽하게 자유롭습니다.</li>
+      </ul>
+
+      <h3>단계 4: 미국 주식 복리계산기를 통한 배당 재투자(DRIP) 시뮬레이션</h3>
+      <ul>
+        <li>리츠에서 매달 또는 분기별로 나오는 4~6%대의 높은 배당금을 쓰지 않고, 주식 수가 늘어나는 방식으로 재투자했을 때의 스노볼 효과를 <strong><a href="/ko/calculator" style="color:#3b82f6;">미국 주식 복리계산</a></strong> 메뉴에서 설계해 보세요. 복리의 힘을 가장 극적으로 느낄 수 있는 섹터가 바로 리츠입니다.</li>
+      </ul>
+
+      <h2 style="color: #ef4444;"><i class="fas fa-exclamation-triangle" style="margin-right:0.5rem;"></i>리츠 투자 시 주의사항과 리스크</h2>
+      <ol>
+        <li><strong>세금 및 계좌 선택의 중요성:</strong> 미국 주식 리츠 배당금은 기본적으로 15%의 배당소득세가 원천징수됩니다. 특히 한국 투자자의 경우, 리츠의 높은 배당금이 금융소득종합과세(연 2,000만 원 초과)에 영향을 미칠 수 있으므로, <strong>ISA 계좌나 연금저축, IRB 등 절세 계좌</strong>를 적극적으로 활용하여 투자하는 동선이 훨씬 유리합니다.</li>
+        <li><strong>임대차 계약 형태(Net Lease vs Gross Lease):</strong> 리얼티 인컴처럼 재산세, 보험료, 건물 유지비를 임차인이 내는 '트리플 넷 리스(Triple-Net Lease)' 구조의 리츠는 물가 상승기에도 마진이 훼손되지 않으므로, 계약 구조가 주주에게 유리한지 점검해야 합니다.</li>
+      </ol>
+
+      <h2>💬 자주 묻는 질문 (FAQ)</h2>
+      <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;">
+        <strong style="color: #60a5fa; display: block; margin-bottom: 0.5rem; font-size: 1.1rem;">Q1: 리츠는 결국 부동산인데, 미국 부동산 시장이 무너지면 같이 망하나요?</strong>
+        <p style="margin-bottom: 0; line-height: 1.7;">A1: 흔히 뉴스에 나오는 미국 상업용 부동산 위기는 주로 '노후화된 중소형 오피스 빌딩'에 집중되어 있습니다. 우리가 투자하는 대형 상장 리츠들은 <strong>A급 상가, 글로벌 물류창고, 첨단 데이터 센터</strong> 등 우량 자산 위주로 구성되어 있고, 임차인들 역시 월마트나 페덱스 같은 초일류 기업들이기 때문에 임대료가 밀릴 걱정은 크게 안 하셔도 됩니다.</p>
+      </div>
+      
+      <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;">
+        <strong style="color: #60a5fa; display: block; margin-bottom: 0.5rem; font-size: 1.1rem;">Q2: 종목 고르기가 복잡한데 부동산 월세를 한 번에 다 받는 ETF가 있나요?</strong>
+        <p style="margin-bottom: 0; line-height: 1.7;">A2: 미국 리츠 시장 전체를 추종하는 글로벌 원톱 ETF인 VNQ (Vanguard Real Estate ETF)를 추천합니다. 미국의 상장된 대형 리츠 수백 개를 시가총액 가중 방식으로 담고 있어, 단 한 주만 사도 미국 전역의 아파트, 쇼핑몰, 데이터 센터의 건물주가 되는 효과와 함께 안정적인 분기 배당을 누릴 수 있습니다.</p>
+      </div>
+
+      <h2>🚀 마무리: 자본주의 시스템 위에서 건물주로 살아가는 법</h2>
+      <p>리츠 섹터는 무거운 콘크리트 건물을 주식이라는 가볍고 투명한 자산으로 바꾸어 놓은 금융공학의 정수입니다. 복잡한 부동산 계약이나 건물 관리의 스트레스 없이, 전 세계 최고 기업들로부터 매달 따박따박 월세를 수확하는 기쁨을 누려보세요. 2026년 금리 해빙기의 초입인 지금, 오늘 분석해 드린 리츠 전략을 통해 여러분의 미국 주식 계좌를 든든한 강남 빌딩처럼 단단하게 다져보시기 바랍니다.</p>
+      <p>WiseAIWiseU 리서치팀은 다음 [섹터별 배당 심층 분석: 7편 기술 및 반도체 섹터]에서 화려한 주가 성장의 이면에 숨겨진 알짜배기 배당 성장 기회를 들고 다시 찾아오겠습니다.</p>
+
+      <div class="nav-links">
+        <a href="/ko/list">👉 미국 배당주 검색기로 유망 리츠 종목 찾기</a>
+        <a href="/ko/calculator">📈 미국 주식 복리계산기 시뮬레이션</a>
+        <a href="/ko/blog">🌐 실시간 미국 주식 시황 브리핑</a>
+      </div>
+
+      <div class="disclaimer">
+        <strong style="color:#ef4444;display:block;margin-bottom:0.5rem;">⚠️ 투자 위험 고지</strong>
+        본 콘텐츠는 정보 제공 및 교육 목적으로만 작성되었으며, 투자 권유 또는 금융 조언을 구성하지 않습니다.
+        배당금과 수익률은 변동될 수 있으며 보장되지 않습니다. 과거 성과는 미래 수익을 보장하지 않습니다.
+        투자 결정 전 반드시 전문 금융 상담사와 상의하시기 바랍니다.
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-nav" style="margin-bottom:1.5rem;font-size:0.9rem;">
+          <a href="/ko/privacy" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">개인정보처리방침</a> |
+          <a href="/ko/about" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">미국 주식 서비스 소개</a> |
+          <a href="/ko/contact" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">문의하기</a>
+        </div>
+        <p>&copy; 2026 WiseAIWiseU - Smart Dividend Investing</p>
+        <p class="legal-disclaimer">본 콘텐츠는 정보 제공만을 목적으로 하며 금융 조언이 아닙니다.</p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    window.addEventListener('scroll', () => {
+      const el = document.getElementById('progress-bar');
+      const total = document.body.scrollHeight - window.innerHeight;
+      if(total > 0) el.style.width = (window.scrollY / total * 100) + '%';
+    });
+  </script>
+</body>
+</html>
+"""
+
+with open(html_filepath, 'w', encoding='utf-8') as f:
+    f.write(new_content)
+
+print(f"Created {html_filepath}")
+
+# Update posts.json
+with open(json_filepath, 'r', encoding='utf-8') as f:
+    posts = json.load(f)
+
+new_post = {
+    "title": "미국 주식 섹터별 배당 심층 분석: 6편 리츠(REITs) 섹터",
+    "date": "2026-05-20",
+    "link": "blog/sector-reits.html",
+    "summary": "금리 안정화에 힘입어 안정적인 월세 수입과 부동산 가치 상승을 모두 챙길 수 있는 미국 배당주의 꽃, 리츠 섹터를 공략하세요."
+}
+
+posts.insert(0, new_post)
+
+with open(json_filepath, 'w', encoding='utf-8') as f:
+    json.dump(posts, f, ensure_ascii=False, indent=4)
+
+print(f"Updated {json_filepath}")
