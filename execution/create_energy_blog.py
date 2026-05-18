@@ -1,0 +1,319 @@
+import os
+import json
+
+root = r"d:\AI_PROJECT"
+html_filepath = os.path.join(root, "ko", "blog", "sector-energy.html")
+json_filepath = os.path.join(root, "ko", "posts.json")
+
+new_content = """<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미국 주식 섹터별 배당 심층 분석: 5편 에너지 섹터 | WiseAIWiseU</title>
+  <meta name="description" content="에너지 섹터는 압도적인 현금 창출력을 바탕으로 주주 환원을 극대화하며 고배당 인컴을 원하는 투자자에게 최고의 선택지를 제공합니다.">
+  <meta name="keywords" content="미국 주식, 배당주, 에너지 섹터, 고유가, 엑슨모빌, 셰브론, 인플레이션 헤지, 고배당">
+  <meta property="og:title" content="미국 주식 섹터별 배당 심층 분석: 5편 에너지 섹터 | WiseAIWiseU">
+  <meta property="og:description" content="에너지 섹터는 압도적인 현금 창출력을 바탕으로 주주 환원을 극대화하며 고배당 인컴을 원하는 투자자에게 최고의 선택지를 제공합니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://wiseaiwiseu.com/og-image.png">
+  <link rel="canonical" href="https://wiseaiwiseu.com/ko/blog/sector-energy">
+  <link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/sector-energy">
+  <link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/sector-energy">
+  <link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/sector-energy">
+  <link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/blog/sector-energy">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ── Reading Progress Bar ── */
+    #progress-bar {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+      background: linear-gradient(90deg, #6366f1, #2dd4bf);
+      z-index: 9999; transition: width 0.1s linear;
+    }
+    /* ── Post Styles ── */
+    body { font-family: 'Inter', sans-serif; background: var(--bg-color); color: var(--text-primary); margin: 0; }
+    
+    .post-hero {
+      padding: 6rem 1.5rem 5rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05);
+      background: radial-gradient(circle at top, rgba(99,102,241,0.05) 0%, transparent 70%);
+    }
+    .post-hero .ticker-badge, .series-badge {
+      display: inline-block; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+      color: #60a5fa; font-size: 0.8rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 0.5rem 1.4rem; border-radius: 999px;
+      margin-bottom: 2rem; backdrop-filter: blur(10px);
+    }
+    .post-hero h1 {
+      font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 800; letter-spacing: -1.5px;
+      line-height: 1.1; max-width: 900px; margin: 0 auto 1rem; color: var(--text-primary);
+    }
+    .post-hero .meta {
+      font-size: 0.95rem; color: var(--text-secondary); display: flex;
+      gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;
+      opacity: 0.8;
+    }
+    
+    /* ── Article Layout ── */
+    .post-content {
+      max-width: 760px; margin: 0 auto; padding: 4rem 1.5rem;
+    }
+    .post-content h2 {
+      font-size: 1.85rem; font-weight: 700; color: var(--text-primary);
+      margin: 4rem 0 1.5rem; letter-spacing: -0.5px;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .post-content h2::before {
+      content: ''; display: inline-block; width: 4px; height: 1.5rem;
+      background: var(--primary-gradient); border-radius: 2px;
+    }
+    .post-content h3 { 
+      font-size: 1.4rem; font-weight: 600; color: var(--text-primary); 
+      margin: 3rem 0 1.25rem; letter-spacing: -0.3px;
+    }
+    .post-content p { 
+      line-height: 1.9; color: var(--text-secondary); 
+      margin-bottom: 1.75rem; font-size: 1.125rem; font-weight: 400; 
+    }
+    .post-content ul, .post-content ol {
+      padding-left: 1.5rem; margin-bottom: 1.75rem;
+    }
+    .post-content li { 
+      line-height: 1.9; color: var(--text-secondary); 
+      margin-bottom: 0.75rem; font-size: 1.125rem; 
+    }
+    .post-content strong { color: var(--text-primary); font-weight: 600; }
+    .post-content img {
+      width: 100%; border-radius: 16px; margin: 2.5rem 0;
+      border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    
+    /* ── Key Point ── */
+    .key-point { 
+      background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+      border-left: 4px solid #6366f1; 
+      border-radius: 12px; padding: 2rem; margin: 3rem 0; 
+      color: var(--text-primary); font-size: 1.1rem; 
+      backdrop-filter: blur(5px);
+      line-height: 1.8;
+    }
+    .key-point strong { color: #60a5fa; display: block; margin-bottom: 0.5rem; }
+    
+    /* ── Nav Links & Author Box ── */
+    .nav-links { display:flex;gap:1.5rem;flex-wrap:wrap;margin:4rem 0;padding:2rem;background:rgba(255,255,255,0.02);border: 1px solid rgba(255,255,255,0.05); border-radius:16px; }
+    .nav-links a { color:var(--text-primary);text-decoration:none;font-weight:600;font-size:1rem; border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 4px; transition: all 0.3s; }
+    .nav-links a:hover { border-color: #6366f1; color: #6366f1; }
+    
+    .author-box { display:flex;align-items:center;gap:1.5rem;background:transparent;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);padding:2rem 0;margin:4rem 0; }
+    .author-avatar { width:64px;height:64px;background:var(--primary-gradient);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#fff;font-weight:700;font-size:1.4rem; box-shadow: 0 10px 20px rgba(99,102,241,0.2); }
+    .author-box strong { color:var(--text-primary); display:block; margin-bottom: 0.3rem; font-size: 1.2rem; }
+    .author-box span { color:var(--text-secondary); font-size: 1rem; }
+    
+    /* ── Disclaimer ── */
+    .disclaimer {
+      margin-top: 5rem; padding: 2rem;
+      background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 16px; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.8;
+    }
+    
+    /* ── Back Button ── */
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      color: var(--text-secondary); font-weight: 600; text-decoration: none;
+      font-size: 1rem; margin-bottom: 3rem; transition: all 0.3s;
+      padding: 0.5rem 1rem; border-radius: 8px; background: rgba(255,255,255,0.03);
+    }
+    .back-btn:hover { color: var(--text-primary); background: rgba(255,255,255,0.08); transform: translateX(-5px); }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div id="progress-bar"></div>
+  <div class="container">
+    <header>
+      <a href="/ko/" class="logo">WiseAIWiseU</a>
+      <nav class="lang-selector">
+        <a href="/ko/blog" class="lang-link active">KO</a>
+        <a href="/blog" class="lang-link">EN</a>
+        <a href="/pt/blog" class="lang-link">PT</a>
+      </nav>
+    </header>
+    <nav class="glass-nav">
+      <a href="/ko/blog" class="active">미국 주식 인사이트</a>
+      <a href="/ko/learn">미국 배당주 강의</a>
+      <a href="/ko/list">미국 배당주 검색</a>
+      <a href="/ko/calculator">미국 주식 복리계산</a>
+      <a href="/ko/calendar">미국 배당주 일정</a>
+      <a href="/ko/fortune">미국 주식 비교</a>
+      <a href="/ko/about">미국 주식 서비스 소개</a>
+    </nav>
+
+    <section class="post-hero">
+      <span class="series-badge">📚 섹터별 배당 심층 분석</span>
+      <h1>미국 주식 섹터별 배당 심층 분석: 5편 에너지 섹터</h1>
+      <p style="font-size: 1.2rem; margin: 1.5rem auto 0; color: var(--text-secondary); max-width: 800px; line-height: 1.6;">
+        고유가와 주주 환원의 대폭발, 강력한 현금 흐름 기반의 고배당 레이스
+      </p>
+      <div class="meta" style="font-size:0.9rem;opacity:0.7;display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem;">
+        <span>📅 2026-05-18</span>
+        <span>⏱️ 읽는 시간: 약 9분</span>
+        <span>🌐 WiseAIWiseU 리서치</span>
+      </div>
+    </section>
+
+    <main class="post-content">
+      <a href="/ko/blog" class="back-btn">← 블로그로 돌아가기</a>
+
+      <div class="author-box">
+        <div class="author-avatar">W</div>
+        <div>
+          <strong style="display:block;color:var(--text-primary);font-size:0.95rem;">WiseAIWiseU 리서치팀</strong>
+          <span style="font-size:0.8rem;color:var(--text-secondary);">미국 배당주 전문 분석 | 2026-05-18 | 리서치 리포트</span>
+        </div>
+      </div>
+
+      <p>안녕하세요, 미국 주식 및 미국 배당주 투자 전문가 WiseAIWiseU입니다.</p>
+
+      <p>소비재, 헬스케어, 유틸리티, 금융에 이어 오늘 깊이 있게 분석할 주제는 원자재 시장의 중심이자 미국 배당주 역사상 가장 화끈한 현금 흐름을 자랑하는 <strong>'에너지(Energy)'</strong> 섹터입니다.</p>
+
+      <p>미국 주식 시장에서 에너지 섹터는 석유와 천연가스의 탐사 및 시추(업스트림), 운송 및 저장(미드스트림), 정제 및 판매(다운스트림)를 아우르는 정유 공룡들과 가스관 기업들로 구성되어 있습니다. 과거 친환경 에너지 전환 흐름 속에서 찬밥 신세를 지기도 했던 에너지 섹터는, <strong>지정학적 리스크의 상시화와 AI 데이터 센터발 전력 수요 폭증으로 인한 화석 연료 재평가</strong>가 맞물리면서 2026년 현재 압도적인 현금 창출력을 바탕으로 배당 포트폴리오의 '핵심 엔진' 역할을 하고 있습니다.</p>
+
+      <div class="key-point">
+        <strong>핵심 요약:</strong> 
+        2026년의 에너지 섹터는 무리한 신규 시추 투자 대신, 벌어들인 막대한 현금을 배당금 증액과 자사주 매입에 올인하는 '주주 환원 극대화' 기조를 유지하고 있어, 고배당 인컴을 원하는 미국 주식 투자자에게 최고의 선택지를 제공합니다.
+      </div>
+
+      <h2>1. 상세 개념 설명: 에너지 구조와 배당 성향의 변화</h2>
+      <p>에너지 섹터는 국제 유가($WTI$ 기준)에 따라 실적이 크게 좌우되지만, 비즈니스 모델에 따라 배당 안정성에 차이가 있습니다.</p>
+
+      <h3>🛢️ 통합 정유사 (Supermajors)</h3>
+      <ul>
+        <li><strong>특징:</strong> 엑슨모빌, 셰브론처럼 시추부터 정제, 판매까지 수직 계열화를 이룬 거대 공룡 기업들입니다.</li>
+        <li><strong>배당 특징:</strong> 유가 변동에 유연하게 대처할 수 있는 기초 체력을 가졌습니다. 과거 유가 폭락기에도 배당을 깎지 않고 버틴 '배당 귀족주'들이 포진해 있으며, <strong>기본 배당 외에 실적이 좋을 때 추가로 주는 특별 배당(Special Dividend)이나 가변 배당(Variable Dividend)</strong> 시스템이 잘 발달해 있습니다.</li>
+      </ul>
+
+      <h3>🚰 미드스트림 및 파이프라인 (Midstream)</h3>
+      <ul>
+        <li><strong>특징:</strong> 석유와 가스를 운송하는 파이프라인(가스관)을 운영하거나 저장 시설을 임대하는 기업들입니다.</li>
+        <li><strong>배당 특징:</strong> 유가 자체의 움직임보다는 파이프라인을 통과하는 '통행량(Volume)'에 따라 수익이 결정되는 통행료(Toll-booth) 비즈니스 모델입니다. 유가 변동 리스크에서 비교적 자유로우며, <strong>연 5%~7% 이상의 매우 높은 시가 배당률</strong>을 안정적으로 지급하는 장점이 있습니다.</li>
+      </ul>
+
+      <h2>2. 실제 데이터와 사례: 에너지 섹터 대표 미국 배당주</h2>
+      <p>2026년 현재 탄탄한 펀더멘털과 매력적인 주주 환원 정책을 펼치고 있는 대표적인 미국 주식 종목들입니다.</p>
+
+      <h3>🛡️ 에너지 섹터의 두 기둥, 글로벌 메이저 종목</h3>
+      <ul>
+        <li><strong>엑슨모빌 (XOM):</strong> 미국 최대의 석유 기업으로, 최근 저비용 시추 자산(가이아나, 퍼미안 분지)을 대거 확보하여 유가가 배럴당 $50~$60선까지 내려가도 엄청난 마진을 남길 수 있는 체질 개선에 성공했습니다. 40년 넘게 배당을 늘려온 신뢰를 바탕으로, <strong>3% 중후반의 안정적인 시가 배당률</strong>과 강력한 자사주 매입을 진행 중인 미국 배당주 필수 종목입니다.</li>
+        <li><strong>셰브론 (CVX):</strong> 엑슨모빌과 함께 미국 정유업계를 양분하는 기업입니다. 뛰어난 재무 건전성(낮은 부채 비율)을 자랑하며, 주주 환원에 매우 적극적입니다. 유가 상승기마다 배당금을 가파르게 인상하여 고배당과 배당 성장을 동시에 만족시킵니다.</li>
+      </ul>
+
+      <h3>💰 마르지 않는 샘물, 초고배당 인컴 종목</h3>
+      <ul>
+        <li><strong>엔브릿지 (ENB):</strong> 북미 최대의 에너지 파이프라인 기업으로, 미국 주식 시장 내에서 대표적인 초고배당주로 꼽힙니다. 장기 계약 기반의 안정적인 현금 흐름을 바탕으로 <strong>연 6%~7%에 달하는 고배당</strong>을 지급하며, 25년 이상 연속으로 배당을 늘려온 숨겨진 강자입니다.</li>
+        <li><strong>이큐티 (EQT) & 파이오니어 (PXD 등 인수 기업):</strong> 천연가스 및 셰일오일 전문 기업들입니다. 2026년 현재 AI 데이터 센터의 전력 공급을 위해 천연가스 발전 수요가 급증하면서, 이들 기업의 몸값과 배당 여력이 과거 그 어느 때보다 높아진 상태입니다.</li>
+      </ul>
+
+      <h2>3. 실전 적용 방법: 2026년형 에너지 배당 포트폴리오 전략</h2>
+      <p>인플레이션 우려가 상존하고 지정학적 긴장감이 유지되는 2026년 중반기에는 다음과 같은 4단계 전략으로 에너지 섹터 비중을 가져가야 합니다.</p>
+
+      <h3>단계 1: 인플레이션 헤지(Hedge) 카드로 활용</h3>
+      <ul>
+        <li>물가가 오르면 화석 연료 가격도 함께 오릅니다. 내 미국 주식 포트폴리오가 기술주나 성장주 위주로만 짜여 있다면, 인플레이션 발생 시 계좌가 크게 흔들릴 수 있습니다. 이때 <strong>에너지 섹터 비중을 10~15% 내외로 채워두면</strong> 물가 상승에 따른 손실을 배당과 주가 상승으로 완벽히 방어할 수 있습니다.</li>
+      </ul>
+
+      <h3>단계 2: WiseAIWiseU 미국 배당주 검색기 활용</h3>
+      <ul>
+        <li>당사의 <strong><a href="/ko/list" style="color:#3b82f6;">미국 배당주 검색</a></strong> 메뉴에 접속하여 에너지 섹터를 필터링합니다. 이때 '손익분기점(BEP) 유가 수준', '잉여현금흐름(FCF) 대비 배당 지급 비율'을 체크하여 유가가 일시적으로 조정을 받더라도 배당금을 안전하게 줄 수 있는 내실 있는 기업을 선별합니다.</li>
+      </ul>
+
+      <h3>단계 3: 기본 배당과 가변 배당의 분리 계산</h3>
+      <ul>
+        <li>에너지 기업 중 일부는 기본 배당 외에 유가 보너스에 따른 가변 배당을 섞어 줍니다. 투자 계획을 세울 때는 가변 배당을 제외한 '기본 배당'만을 기준으로 보수적인 인컴 계획을 수립해야 계좌의 변동성을 통제할 수 있습니다.</li>
+      </ul>
+
+      <h3>단계 4: 미국 주식 복리계산기를 통한 재투자 시뮬레이션</h3>
+      <ul>
+        <li>에너지 섹터에서 나오는 4~6%대의 높은 고배당 현금을 그대로 다른 성장주에 투자하거나 에너지를 재매수했을 때, 자산 스노볼이 굴러가는 속도를 <strong><a href="/ko/calculator" style="color:#3b82f6;">미국 주식 복리계산</a></strong> 메뉴에서 직접 확인해 보세요.</li>
+      </ul>
+
+      <h2 style="color: #ef4444;"><i class="fas fa-exclamation-triangle" style="margin-right:0.5rem;"></i>에너지 섹터 투자 시 주의사항과 리스크</h2>
+      <ol>
+        <li><strong>원자재 가격(유가/가스 가치)의 급변동성:</strong> 에너지 주는 본질적으로 유가에 연동됩니다. 글로벌 경기 침체로 인해 원유 수요가 급감하거나, 공급 과잉이 발생하여 유가가 폭락할 경우 아무리 우량한 기업이라도 주가 조정을 피할 수 없습니다. 따라서 몰빵 투자보다는 포트폴리오의 '방어 자산' 개념으로 접근해야 합니다.</li>
+        <li><strong>친환경 및 ESG 규제 환경:</strong> 2026년 현재 화석 연료의 중요성이 재부각되고 있으나, 장기적인 탄소 중립 트렌드는 유효합니다. 미래를 위해 친환경 탄소 포집 기술(CCS)이나 수소 에너지 등 미래 권역에 투자를 병행하고 있는 메이저 기업(XOM, CVX) 위주로 압축하는 것이 안전합니다.</li>
+      </ol>
+
+      <h2>💬 자주 묻는 질문 (FAQ)</h2>
+      <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;">
+        <strong style="color: #60a5fa; display: block; margin-bottom: 0.5rem; font-size: 1.1rem;">Q1: 유가가 떨어지면 배당도 바로 깎이나요?</strong>
+        <p style="margin-bottom: 0; line-height: 1.7;">A1: 소형 시추 기업들은 그럴 수 있습니다. 하지만 <strong>엑슨모빌이나 셰브론 같은 통합 메이저 기업들은 유가가 배럴당 $40선까지 폭락했던 팬데믹 시기에도 배당을 유지하거나 늘렸습니다.</strong> 이들은 하락 사이클을 버틸 수 있는 거대한 현금 유보금을 가지고 있으므로 대형주 위주로 투자한다면 배당 컷 걱정을 크게 하실 필요는 없습니다.</p>
+      </div>
+      
+      <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;">
+        <strong style="color: #60a5fa; display: block; margin-bottom: 0.5rem; font-size: 1.1rem;">Q2: 에너지 섹터 전체에 편하게 투자할 수 있는 대표적인 ETF는 무엇인가요?</strong>
+        <p style="margin-bottom: 0; line-height: 1.7;">A2: 미국 주식 시장의 대표적인 에너지 ETF인 <strong>XLE</strong>를 추천합니다. 엑슨모빌과 셰브론의 비중이 높아 미국의 핵심 정유 공룡들에게 한 번에 투자하는 효과를 낼 수 있습니다. 만약 유가 변동성보다 파이프라인 중심의 안정적인 초고배당을 원하신다면 미드스트림 기업들을 모아놓은 <strong>AMLP ETF</strong>도 훌륭한 대안이 됩니다.</p>
+      </div>
+
+      <h2>🚀 마무리: 포트폴리오의 화력을 높이는 검은 황금</h2>
+      <p>에너지 섹터는 거친 파도 속에서도 강력한 현금이라는 엔진을 돌리며 주주들에게 막대한 과실을 안겨주는 고배당의 화약고입니다. 2026년 거시 경제의 불확실성 속에서 오늘 분석해 드린 에너지 전략을 나침반 삼아, 여러분의 미국 주식 계좌에 흔들리지 않는 강력한 현금 흐름의 불꽃을 피워보시기 바랍니다.</p>
+      <p>WiseAIWiseU 리서치팀은 다음 [섹터별 배당 심층 분석: 6편 리츠(REITs) 섹터]에서 마침내 많은 분이 목놓아 기다리시던 부동산 월세 인컴 투자의 끝판왕 전략을 들고 찾아오겠습니다.</p>
+
+      <div class="nav-links">
+        <a href="/ko/list">👉 미국 배당주 검색기로 유망 에너지 종목 찾기</a>
+        <a href="/ko/calculator">📈 미국 주식 복리계산기 시뮬레이션</a>
+        <a href="/ko/blog">🌐 실시간 미국 주식 시황 브리핑</a>
+      </div>
+
+      <div class="disclaimer">
+        <strong style="color:#ef4444;display:block;margin-bottom:0.5rem;">⚠️ 투자 위험 고지</strong>
+        본 콘텐츠는 정보 제공 및 교육 목적으로만 작성되었으며, 투자 권유 또는 금융 조언을 구성하지 않습니다.
+        배당금과 수익률은 변동될 수 있으며 보장되지 않습니다. 과거 성과는 미래 수익을 보장하지 않습니다.
+        투자 결정 전 반드시 전문 금융 상담사와 상의하시기 바랍니다.
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-nav" style="margin-bottom:1.5rem;font-size:0.9rem;">
+          <a href="/ko/privacy" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">개인정보처리방침</a> |
+          <a href="/ko/about" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">미국 주식 서비스 소개</a> |
+          <a href="/ko/contact" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">문의하기</a>
+        </div>
+        <p>&copy; 2026 WiseAIWiseU - Smart Dividend Investing</p>
+        <p class="legal-disclaimer">본 콘텐츠는 정보 제공만을 목적으로 하며 금융 조언이 아닙니다.</p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    window.addEventListener('scroll', () => {
+      const el = document.getElementById('progress-bar');
+      const total = document.body.scrollHeight - window.innerHeight;
+      if(total > 0) el.style.width = (window.scrollY / total * 100) + '%';
+    });
+  </script>
+</body>
+</html>
+"""
+
+with open(html_filepath, 'w', encoding='utf-8') as f:
+    f.write(new_content)
+
+print(f"Created {html_filepath}")
+
+# Update posts.json
+with open(json_filepath, 'r', encoding='utf-8') as f:
+    posts = json.load(f)
+
+new_post = {
+    "title": "미국 주식 섹터별 배당 심층 분석: 5편 에너지 섹터",
+    "date": "2026-05-18",
+    "link": "blog/sector-energy.html",
+    "summary": "2026년의 에너지 섹터는 압도적인 현금 창출력을 바탕으로 배당금 증액과 자사주 매입에 올인하는, 인컴 투자자에게 최고의 선택지를 제공합니다."
+}
+
+posts.insert(0, new_post)
+
+with open(json_filepath, 'w', encoding='utf-8') as f:
+    json.dump(posts, f, ensure_ascii=False, indent=4)
+
+print(f"Updated {json_filepath}")

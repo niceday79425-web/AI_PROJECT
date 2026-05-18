@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+import os
+
+filepath = r"d:\AI_PROJECT\ko\blog\sector-consumer-staples.html"
+
+new_content = """<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -289,3 +293,9 @@
   </script>
 </body>
 </html>
+"""
+
+with open(filepath, 'w', encoding='utf-8') as f:
+    f.write(new_content)
+
+print(f"Updated {filepath} with new content.")
