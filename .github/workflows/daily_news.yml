@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install yfinance feedparser requests python-dotenv google-generativeai
+          pip install yfinance feedparser requests python-dotenv google-generativeai requests-cache requests-ratelimiter
 
       - name: Run auto poster and generate sitemap
         env:

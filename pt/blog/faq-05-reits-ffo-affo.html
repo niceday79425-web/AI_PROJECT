@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quais métricas únicas devo verificar para REITs? | WiseAIWiseU</title>
+  <meta name="description" content="Como analisar fundos imobiliários usando FFO e AFFO.">
+  <meta property="og:title" content="Quais métricas únicas devo verificar para REITs? | WiseAIWiseU">
+  <meta property="og:description" content="Como analisar fundos imobiliários usando FFO e AFFO.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://wiseaiwiseu.com/og-image.png">
+  <link rel="canonical" href="https://wiseaiwiseu.com/pt/blog/faq-05-reits-ffo-affo">
+  <link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/faq-05-reits-ffo-affo">
+  <link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/faq-05-reits-ffo-affo">
+  <link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/faq-05-reits-ffo-affo">
+  <link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/blog/faq-05-reits-ffo-affo">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    #progress-bar {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+      background: linear-gradient(90deg, #6366f1, #2dd4bf);
+      z-index: 9999; transition: width 0.1s linear;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--bg-color); color: var(--text-primary); margin: 0; }
+    .post-hero {
+      padding: 6rem 1.5rem 5rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05);
+      background: radial-gradient(circle at top, rgba(99,102,241,0.05) 0%, transparent 70%);
+    }
+    .post-hero .ticker-badge, .series-badge {
+      display: inline-block; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+      color: #60a5fa; font-size: 0.8rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 0.5rem 1.4rem; border-radius: 999px;
+      margin-bottom: 2rem; backdrop-filter: blur(10px);
+    }
+    .post-hero h1 {
+      font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 800; letter-spacing: -1.5px;
+      line-height: 1.1; max-width: 900px; margin: 0 auto 2rem; color: var(--text-primary);
+    }
+    .post-content {
+      max-width: 760px; margin: 0 auto; padding: 4rem 1.5rem;
+    }
+    .post-content h2 {
+      font-size: 1.85rem; font-weight: 700; color: var(--text-primary);
+      margin: 4rem 0 1.5rem; letter-spacing: -0.5px;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .post-content h2::before {
+      content: ''; display: inline-block; width: 4px; height: 1.5rem;
+      background: var(--primary-gradient); border-radius: 2px;
+    }
+    .post-content p { 
+      line-height: 1.9; color: var(--text-secondary); 
+      margin-bottom: 1.75rem; font-size: 1.125rem; font-weight: 400; 
+    }
+    .nav-links { display:flex;gap:1.5rem;flex-wrap:wrap;margin:4rem 0;padding:2rem;background:rgba(255,255,255,0.02);border: 1px solid rgba(255,255,255,0.05); border-radius:16px; }
+    .nav-links a { color:var(--text-primary);text-decoration:none;font-weight:600;font-size:1rem; border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 4px; transition: all 0.3s; }
+    .nav-links a:hover { border-color: #6366f1; color: #6366f1; }
+    .author-box { display:flex;align-items:center;gap:1.5rem;background:transparent;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);padding:2rem 0;margin:4rem 0; }
+    .author-avatar { width:64px;height:64px;background:var(--primary-gradient);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#fff;font-weight:700;font-size:1.4rem; box-shadow: 0 10px 20px rgba(99,102,241,0.2); }
+    .author-box strong { color:var(--text-primary); display:block; margin-bottom: 0.3rem; font-size: 1.2rem; }
+    .author-box span { color:var(--text-secondary); font-size: 1rem; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      color: var(--text-secondary); font-weight: 600; text-decoration: none;
+      font-size: 1rem; margin-bottom: 3rem; transition: all 0.3s;
+      padding: 0.5rem 1rem; border-radius: 8px; background: rgba(255,255,255,0.03);
+    }
+    .back-btn:hover { color: var(--text-primary); background: rgba(255,255,255,0.08); transform: translateX(-5px); }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div id="progress-bar"></div>
+  <div class="container">
+    <header>
+      <a href="/pt" class="logo">WiseAIWiseU</a>
+      <nav class="lang-selector">
+        <a href="/ko/blog/faq-05-reits-ffo-affo" class="lang-link ">KO</a>
+        <a href="/blog/faq-05-reits-ffo-affo" class="lang-link ">EN</a>
+        <a href="/pt/blog/faq-05-reits-ffo-affo" class="lang-link active">PT</a>
+      </nav>
+    </header>
+    
+    <nav class="glass-nav">
+          <a href="/pt/blog">Insights sobre Ações dos EUA</a>
+          <a href="/pt/learn" class="active">Aulas sobre Ações de Dividendos</a>
+          <a href="/pt/list">Pesquisa de Ações de Dividendos</a>
+          <a href="/pt/calculator">Juros Compostos de Ações</a>
+          <a href="/pt/calendar">Cronograma de Dividendos</a>
+          <a href="/pt/fortune">Comparação de Ações</a>
+          <a href="/pt/about">Apresentação do Serviço</a>
+    </nav>
+
+    <section class="post-hero">
+      <span class="series-badge">❓ FAQ FAQ 05</span>
+      <h1>Quais métricas únicas devo verificar para REITs?</h1>
+    </section>
+
+    <main class="post-content">
+      <a href="/pt/learn" class="back-btn">← Voltar para as Aulas</a>
+
+      <div class="author-box">
+        <div class="author-avatar">W</div>
+        <div>
+          <strong style="display:block;color:var(--text-primary);font-size:0.95rem;">WiseAIWiseU Research Team</strong>
+          <span style="font-size:0.8rem;color:var(--text-secondary);">US Dividend Stocks Specialist | 2026-05-23 | Educational Content</span>
+        </div>
+      </div>
+
+      
+      <p><strong>REITs (Real Estate Investment Trusts)</strong> são legalmente obrigados a distribuir 90%+ da renda tributável como dividendos. No entanto, eles requerem análise diferente — <strong>não use Lucro Líquido</strong>, pois grandes despesas de depreciação não monetárias o tornam artificialmente baixo.</p>
+      <p><strong>Use estas métricas:</strong></p>
+      <ul style="line-height:2;padding-left:1.5rem;color:var(--text-secondary)">
+        <li><strong>FFO (Fundos das Operações):</strong> Lucro Líquido + Depreciação − Ganhos com Venda de Propriedade.</li>
+        <li><strong>AFFO (FFO Ajustado):</strong> FFO menos despesas de capital recorrentes. O indicador mais preciso de sustentabilidade de dividendos.</li>
+        <li><strong>Razão P/FFO:</strong> O equivalente ao P/L para REITs. Valor justo é tipicamente 15–20× FFO.</li>
+      </ul>
+            
+      
+      <div class="nav-links">
+        <a href="/pt/calculator">→ Calcular Minha Futura Bola de Neve</a>\n        <a href="/pt/list">→ Ranking de Ações de Dividendos em Tempo Real</a>\n        <a href="/pt/learn">→ Voltar para a Página de Aulas</a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-nav" style="margin-bottom:1.5rem;font-size:0.9rem;">
+          <a href="/pt/privacy" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">Política de Privacidade</a> |
+          <a href="/pt/about" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">Sobre Nós</a> |
+          <a href="/pt/contact" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">Contato</a>
+        </div>
+        <p>&copy; 2026 WiseAIWiseU - Smart Dividend Investing</p>
+        
+        <div class="legal-disclaimer">
+          <h4>⚠️ Isenção de Responsabilidade Legal</h4>
+          <p>
+            Todas as informações contidas neste site são apenas para fins informativos e educacionais e não constituem conselhos ou recomendações de investimento. Os dividendos e os rendimentos de dividendos podem flutuar e não são garantidos. O desempenho passado não garante retornos futuros. Não nos responsabilizamos por decisões de investimento tomadas com base nas informações deste site.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    window.addEventListener('scroll', () => {
+      const el = document.getElementById('progress-bar');
+      const total = document.body.scrollHeight - window.innerHeight;
+      if(total > 0) el.style.width = (window.scrollY / total * 100) + '%';
+    });
+  </script>
+</body>
+</html>

@@ -3,3 +3,5 @@ feedparser
 google-generativeai
 requests
 python-dotenv
+requests-cache
+requests-ratelimiter
