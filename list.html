@@ -194,128 +194,84 @@
 
             <!-- Guide Section -->
             <section class="guide-section" style="margin-top: 4rem; padding: 0 0 2rem;">
-                <h2
-                    style="font-size: 2rem; margin-bottom: 0.75rem; background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+                <h2 style="font-size: 2rem; margin-bottom: 0.75rem; background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
                     Dividend Scouter 100% Guide: Your Blueprint for Finding Quality Dividend Stocks
                 </h2>
                 <p style="color: var(--text-secondary); margin-bottom: 3rem; font-size: 1rem; line-height: 1.7;">
-                    Choosing stocks based on dividend yield alone is risky. You need to check these 3 key metrics
-                    together to truly identify high-quality dividend stocks.
+                    Choosing stocks based on dividend yield alone is risky. Check these 3 key metrics together to identify truly high-quality dividend stocks. Click each card to learn more.
                 </p>
-
-                <div style="display: grid; gap: 2rem;">
-                    <!-- Guide Card 1 -->
-                    <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #10b981; transition: transform 0.3s ease;"
-                        onmouseover="this.style.transform='translateY(-4px)'"
-                        onmouseout="this.style.transform='translateY(0)'">
-                        <h3
-                            style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                            <span
-                                style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
-                            How to Analyze Payout Ratio Without Falling into Traps
-                        </h3>
-                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
-                            A high dividend yield doesn't automatically mean a great stock. The <strong
-                                style="color: var(--text-primary);">Payout Ratio</strong> is the key metric showing what
-                            percentage of a company's net income is distributed as dividends. For example, if a company
-                            earns $100 and pays $85 in dividends, the payout ratio is 85%.
-                        </p>
-                        <p style="color: var(--text-secondary); line-height: 1.8;">
-                            Generally, a <strong style="color: #ef4444;">payout ratio above 80%</strong> is a warning
-                            sign — even a small drop in earnings could force a dividend cut. Conversely, a <strong
-                                style="color: #10b981;">payout ratio between 40–60%</strong> suggests the company can
-                            sustain dividends while still investing in growth.
-                        </p>
-                        <div
-                            style="margin-top: 1.25rem; padding: 0.9rem 1.2rem; background: rgba(16,185,129,0.08); border-radius: 10px; font-size: 0.9rem; color: #10b981;">
-                            💡 <strong>Reference:</strong> Payout Ratio &lt; 60% (Quality) / 60–80% (Caution) / 80%+
-                            (Danger)
+                <div class="guide-grid">
+                    <div class="guide-card-new card-payout" onclick="openGuideModal(1)" role="button" tabindex="0">
+                        <div>
+                            <h3>📊 Payout Ratio Analysis</h3>
+                            <p>Learn how to analyze payout ratios to avoid dividend traps and find truly safe dividend payers.</p>
                         </div>
+                        <span class="read-more">Read More →</span>
                     </div>
-
-                    <!-- Guide Card 2 -->
-                    <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #3b82f6; transition: transform 0.3s ease;"
-                        onmouseover="this.style.transform='translateY(-4px)'"
-                        onmouseout="this.style.transform='translateY(0)'">
-                        <h3
-                            style="font-size: 1.3rem; color: #3b82f6; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                            <span
-                                style="background: rgba(59,130,246,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">02</span>
-                            The Relationship Between Free Cash Flow (FCF) and Dividends
-                        </h3>
-                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
-                            <strong style="color: var(--text-primary);">Free Cash Flow (FCF)</strong> is the real cash a
-                            company generates from operations after subtracting capital expenditures (CAPEX). While
-                            accounting "net income" can vary with treatment, FCF represents the actual cash available to
-                            pay dividends.
-                        </p>
-                        <p style="color: var(--text-secondary); line-height: 1.8;">
-                            If dividends exceed FCF, the company is taking on debt or selling assets to pay shareholders
-                            — unsustainable long-term. Conversely, a company whose <strong style="color: #3b82f6;">FCF
-                                comfortably exceeds total dividends</strong> is far more likely to maintain or even
-                            increase dividends during recessions.
-                        </p>
-                        <div
-                            style="margin-top: 1.25rem; padding: 0.9rem 1.2rem; background: rgba(59,130,246,0.08); border-radius: 10px; font-size: 0.9rem; color: #3b82f6;">
-                            💡 <strong>Formula:</strong> FCF Payout Ratio = Dividend per Share ÷ FCF per Share × 100
-                            (lower = more stable)
+                    <div class="guide-card-new card-fcf" onclick="openGuideModal(2)" role="button" tabindex="0">
+                        <div>
+                            <h3>💵 FCF &amp; Dividend Safety</h3>
+                            <p>Understand the gold standard of dividend safety — Free Cash Flow coverage and why it matters more than net income.</p>
                         </div>
+                        <span class="read-more">Read More →</span>
                     </div>
-
-                    <!-- Guide Card 3 -->
-                    <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #a855f7; transition: transform 0.3s ease;"
-                        onmouseover="this.style.transform='translateY(-4px)'"
-                        onmouseout="this.style.transform='translateY(0)'">
-                        <h3
-                            style="font-size: 1.3rem; color: #a855f7; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                            <span
-                                style="background: rgba(168,85,247,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">03</span>
-                            Combining Secular Trends with Dividend Growth
-                        </h3>
-                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
-                            When we think of dividend investing, we usually picture traditional consumer staples like
-                            Coca-Cola or P&G. But today, new dividend growth sectors are emerging and deserve attention.
-                        </p>
-                        <div
-                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
-                            <div style="padding: 1rem; background: rgba(168,85,247,0.08); border-radius: 12px;">
-                                <div style="font-weight: 700; color: #a855f7; margin-bottom: 0.4rem;">⚡ Energy
-                                    Infrastructure</div>
-                                <div style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
-                                    Surging power demand from AI data centers is accelerating dividend growth in
-                                    electric utilities and pipeline companies, backed by stable cash flows.</div>
-                            </div>
-                            <div style="padding: 1rem; background: rgba(168,85,247,0.08); border-radius: 12px;">
-                                <div style="font-weight: 700; color: #a855f7; margin-bottom: 0.4rem;">🚀 Aerospace &
-                                    Defense</div>
-                                <div style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">Rising
-                                    geopolitical tensions are expanding defense budgets worldwide, putting defense
-                                    companies with stable government contracts and consistent dividend growth in the
-                                    spotlight.</div>
-                            </div>
-                            <div style="padding: 1rem; background: rgba(168,85,247,0.08); border-radius: 12px;">
-                                <div style="font-weight: 700; color: #a855f7; margin-bottom: 0.4rem;">🏥 Healthcare
-                                    REITs</div>
-                                <div style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">As
-                                    aging populations structurally increase demand for medical facilities and senior
-                                    housing, healthcare REITs offer a compelling combination of dividend growth and
-                                    defensiveness.</div>
-                            </div>
+                    <div class="guide-card-new card-trend" onclick="openGuideModal(3)" role="button" tabindex="0">
+                        <div>
+                            <h3>🚀 Secular Trends &amp; Growth</h3>
+                            <p>Discover emerging dividend growth sectors beyond traditional consumer staples — energy, defense, and healthcare REITs.</p>
                         </div>
-                        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 0.9rem;">
-                            Beyond simply chasing high current yields, the key to long-term dividend investing is
-                            identifying companies with a high <strong style="color: var(--text-primary);">5-Year
-                                Dividend CAGR</strong> and a business model capable of sustaining that growth.
-                        </p>
-                        <div
-                            style="margin-top: 1.25rem; padding: 0.9rem 1.2rem; background: rgba(168,85,247,0.08); border-radius: 10px; font-size: 0.9rem; color: #a855f7;">
-                            💡 <strong>Golden Screening Criteria:</strong> Payout Ratio &lt;60% + Healthy FCF Coverage +
-                            5-Year Dividend CAGR &gt;5%
-                        </div>
+                        <span class="read-more">Read More →</span>
+                    </div>
+                </div>
+                <div id="guide-detail-1" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:#10b981;">How to Analyze Payout Ratio Without Falling into Traps</h3>
+                    <div class="guide-modal-body">
+                        <p>A high dividend yield doesn't automatically mean a great stock. The <strong>Payout Ratio</strong> shows what percentage of net income is distributed as dividends. If a company earns $100 and pays $85 in dividends, the payout ratio is 85%.</p>
+                        <p>A <strong>payout ratio above 80%</strong> is a warning sign. A <strong>payout ratio between 40–60%</strong> is healthier — the company can sustain dividends while still reinvesting in growth.</p>
+                        <ul>
+                            <li><strong>&lt; 60%</strong> — Quality zone: dividend is well-covered</li>
+                            <li><strong>60–80%</strong> — Caution zone: watch closely for earnings trends</li>
+                            <li><strong>&gt; 80%</strong> — Danger zone: high risk of dividend cut</li>
+                        </ul>
+                        <div class="badge-tip badge-tip-payout">💡 <strong>Key Rule:</strong> Always check payout ratio before chasing a high yield. A 7%+ yield with 90%+ payout is often a dividend trap.</div>
+                    </div>
+                </div>
+                <div id="guide-detail-2" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:#3b82f6;">The Relationship Between Free Cash Flow (FCF) and Dividends</h3>
+                    <div class="guide-modal-body">
+                        <p><strong>Free Cash Flow (FCF)</strong> is the real cash a company generates from operations after subtracting capital expenditures (CAPEX). FCF represents the actual cash available to pay dividends, unlike net income which can be manipulated by accounting methods.</p>
+                        <p>If dividends exceed FCF, the company is taking on debt or selling assets to pay shareholders — unsustainable long-term. A company whose <strong>FCF comfortably exceeds total dividends</strong> is far more likely to maintain or increase dividends during recessions.</p>
+                        <ul>
+                            <li><strong>FCF Coverage &gt; 1.5x</strong> — Safe: dividends are well-funded</li>
+                            <li><strong>FCF Coverage 1.0–1.5x</strong> — Adequate: limited buffer</li>
+                            <li><strong>FCF Coverage &lt; 1.0x</strong> — Danger: company can't fund dividends from cash flow</li>
+                        </ul>
+                        <div class="badge-tip badge-tip-fcf">💡 <strong>Formula:</strong> FCF Coverage = Free Cash Flow ÷ Total Dividends Paid. Target &gt; 1.5x for maximum safety.</div>
+                    </div>
+                </div>
+                <div id="guide-detail-3" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:#a855f7;">Combining Secular Trends with Dividend Growth</h3>
+                    <div class="guide-modal-body">
+                        <p>When we think of dividend investing, we usually picture traditional consumer staples like Coca-Cola or P&amp;G. But today, new dividend growth sectors are emerging and deserve attention.</p>
+                        <ul>
+                            <li><strong>⚡ Energy Infrastructure</strong> — Surging power demand from AI data centers is accelerating dividend growth in electric utilities and pipeline companies, backed by stable cash flows.</li>
+                            <li><strong>🚀 Aerospace &amp; Defense</strong> — Rising geopolitical tensions are expanding defense budgets worldwide, putting defense companies with stable government contracts in the spotlight.</li>
+                            <li><strong>🏥 Healthcare REITs</strong> — As aging populations structurally increase demand for medical facilities, healthcare REITs offer a compelling combination of dividend growth and defensiveness.</li>
+                        </ul>
+                        <p>The key to long-term dividend investing is identifying companies with a high <strong>5-Year Dividend CAGR</strong> and a business model capable of sustaining that growth.</p>
+                        <div class="badge-tip badge-tip-trend">💡 <strong>Golden Screening Criteria:</strong> Payout Ratio &lt;60% + Healthy FCF Coverage + 5-Year Dividend CAGR &gt;5%</div>
                     </div>
                 </div>
             </section>
+            <div id="guideModal" class="guide-modal" onclick="if(event.target===this)closeGuideModal()">
+                <div class="guide-modal-content">
+                    <button class="guide-modal-close" onclick="closeGuideModal()" aria-label="Close">✕</button>
+                    <div id="guideModalBody"></div>
+                </div>
+            </div>
                 </main>
+            </div>
+            </div>
             </div>
             </div>
 
@@ -331,13 +287,9 @@
                         style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Contact</a>
                 </div>
                 <div class="legal-disclaimer">
-                    <h4 style="margin-bottom: 0.5rem; font-size: 0.9rem;">⚠️ Legal Disclaimer</h4>
-                    <p style="font-size: 0.85rem; line-height: 1.6;">
-                        <strong>All content on this site is for informational and educational purposes only and does not
-                            constitute financial advice.</strong><br>
-                        Dividends and yields may fluctuate and are not guaranteed.<br>
-                        Past performance does not guarantee future returns.<br>
-                        We are not responsible for investment decisions based on information from this site.
+                    <h4>⚠️ Legal Disclaimer</h4>
+                    <p>
+                        All information on this site is for informational and educational purposes only and does not constitute investment advice or recommendations. Dividends and dividend yields may fluctuate and are not guaranteed. Past performance does not guarantee future returns. We are not responsible for investment decisions made based on information from this site.
                     </p>
                 </div>
             </div>
@@ -347,6 +299,27 @@
     <!-- Script to load Dividend Insights -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Guide Modal functions
+            window.openGuideModal = function(id) {
+                const detail = document.getElementById('guide-detail-' + id);
+                const modal = document.getElementById('guideModal');
+                const body = document.getElementById('guideModalBody');
+                if (detail && modal && body) {
+                    body.innerHTML = detail.innerHTML;
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            };
+            window.closeGuideModal = function() {
+                const modal = document.getElementById('guideModal');
+                if (modal) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            };
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeGuideModal();
+            });
             let dividendData = [];
 
             const stockGrid = document.getElementById('stockGrid');

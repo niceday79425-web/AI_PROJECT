@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O que são Ações de Dividendos? | WiseAIWiseU</title>
+  <meta name="description" content="O guia completo para iniciantes para entender ações de dividendos, como funcionam e como constroem riqueza.">
+  <meta name="keywords" content="ações de dividendos, investimento para iniciantes, renda passiva, efeito bola de neve">
+  <meta property="og:title" content="O que são Ações de Dividendos? | WiseAIWiseU">
+  <meta property="og:description" content="O guia completo para iniciantes para entender ações de dividendos, como funcionam e como constroem riqueza.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://wiseaiwiseu.com/og-image.png">
+  <link rel="canonical" href="https://wiseaiwiseu.com/pt/blog/beginner-01-what-is-dividend">
+  <link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/beginner-01-what-is-dividend">
+  <link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/beginner-01-what-is-dividend">
+  <link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/beginner-01-what-is-dividend">
+  <link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/blog/beginner-01-what-is-dividend">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    #progress-bar {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+      background: linear-gradient(90deg, #6366f1, #2dd4bf);
+      z-index: 9999; transition: width 0.1s linear;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--bg-color); color: var(--text-primary); margin: 0; }
+    .post-hero {
+      padding: 6rem 1.5rem 5rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05);
+      background: radial-gradient(circle at top, rgba(99,102,241,0.05) 0%, transparent 70%);
+    }
+    .post-hero .ticker-badge, .series-badge {
+      display: inline-block; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+      color: #60a5fa; font-size: 0.8rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 0.5rem 1.4rem; border-radius: 999px;
+      margin-bottom: 2rem; backdrop-filter: blur(10px);
+    }
+    .post-hero h1 {
+      font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 800; letter-spacing: -1.5px;
+      line-height: 1.1; max-width: 900px; margin: 0 auto 2rem; color: var(--text-primary);
+    }
+    .post-content {
+      max-width: 760px; margin: 0 auto; padding: 4rem 1.5rem;
+    }
+    .post-content h2 {
+      font-size: 1.85rem; font-weight: 700; color: var(--text-primary);
+      margin: 4rem 0 1.5rem; letter-spacing: -0.5px;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .post-content h2::before {
+      content: ''; display: inline-block; width: 4px; height: 1.5rem;
+      background: var(--primary-gradient); border-radius: 2px;
+    }
+    .post-content p { 
+      line-height: 1.9; color: var(--text-secondary); 
+      margin-bottom: 1.75rem; font-size: 1.125rem; font-weight: 400; 
+    }
+    .key-point { 
+      background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+      border-left: 4px solid #6366f1; 
+      border-radius: 12px; padding: 2rem; margin: 3rem 0; 
+      color: var(--text-primary); font-size: 1.1rem; 
+      backdrop-filter: blur(5px);
+      line-height: 1.8;
+    }
+    .key-point strong { color: #60a5fa; display: block; margin-bottom: 0.5rem; }
+    .nav-links { display:flex;gap:1.5rem;flex-wrap:wrap;margin:4rem 0;padding:2rem;background:rgba(255,255,255,0.02);border: 1px solid rgba(255,255,255,0.05); border-radius:16px; }
+    .nav-links a { color:var(--text-primary);text-decoration:none;font-weight:600;font-size:1rem; border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 4px; transition: all 0.3s; }
+    .nav-links a:hover { border-color: #6366f1; color: #6366f1; }
+    .author-box { display:flex;align-items:center;gap:1.5rem;background:transparent;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);padding:2rem 0;margin:4rem 0; }
+    .author-avatar { width:64px;height:64px;background:var(--primary-gradient);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#fff;font-weight:700;font-size:1.4rem; box-shadow: 0 10px 20px rgba(99,102,241,0.2); }
+    .author-box strong { color:var(--text-primary); display:block; margin-bottom: 0.3rem; font-size: 1.2rem; }
+    .author-box span { color:var(--text-secondary); font-size: 1rem; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      color: var(--text-secondary); font-weight: 600; text-decoration: none;
+      font-size: 1rem; margin-bottom: 3rem; transition: all 0.3s;
+      padding: 0.5rem 1rem; border-radius: 8px; background: rgba(255,255,255,0.03);
+    }
+    .back-btn:hover { color: var(--text-primary); background: rgba(255,255,255,0.08); transform: translateX(-5px); }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div id="progress-bar"></div>
+  <div class="container">
+    <header>
+      <a href="/pt/" class="logo">WiseAIWiseU</a>
+      <nav class="lang-selector">
+        
+        <a href="/ko/blog/beginner-01-what-is-dividend" class="lang-link ">KO</a>
+        <a href="/blog/beginner-01-what-is-dividend" class="lang-link ">EN</a>
+        <a href="/pt/blog/beginner-01-what-is-dividend" class="lang-link active">PT</a>
+    
+      </nav>
+    </header>
+    
+        <nav class="glass-nav">
+          <a href="/pt/blog" class="active">Perspectivas de Ações dos EUA</a>
+          <a href="/pt/learn">Aulas de Ações de Dividendos dos EUA</a>
+          <a href="/pt/list">Busca de Ações de Dividendos dos EUA</a>
+          <a href="/pt/calculator">Juros Compostos de Ações dos EUA</a>
+          <a href="/pt/calendar">Agenda de Dividendos de Ações dos EUA</a>
+          <a href="/pt/fortune">Comparação de Ações dos EUA</a>
+          <a href="/pt/about">Introdução ao Serviço de Ações dos EUA</a>
+        </nav>
+        
+
+    <section class="post-hero">
+      <span class="series-badge">📚 Guia de Iniciante 01</span>
+      <h1>O que são Ações de Dividendos?</h1>
+    </section>
+
+    <main class="post-content">
+      <a href="/pt/blog" class="back-btn">← Voltar para Perspectivas</a>
+
+      <div class="author-box">
+        <div class="author-avatar">W</div>
+        <div>
+          <strong style="display:block;color:var(--text-primary);font-size:0.95rem;">Equipe de Pesquisa WiseAIWiseU</strong>
+          <span style="font-size:0.8rem;color:var(--text-secondary);">Especialista em Ações dos EUA | 2026-05-22 | Conteúdo Educacional</span>
+        </div>
+      </div>
+
+      <p>Bem-vindo à primeira lição da nossa Academia de Dividendos. Aqui exploramos como as ações de dividendos funcionam e como formam a base da liberdade financeira.</p>
+
+      <div class="key-point">
+        <strong>💡 Key Point:</strong>
+        Um dividendo é uma parcela dos lucros de uma empresa distribuída aos acionistas. O reinvestimento desses pagamentos cria um efeito bola de neve composto.
+      </div>
+
+      
+      <h2>1. O que é um Dividendo?</h2>
+      <p>Quando uma corporação gera lucro excedente, ela pode reinvesti-lo no negócio ou distribuí-lo diretamente aos acionistas em dinheiro. Esses pagamentos periódicos são conhecidos como dividendos.</p>
+        
+      <h2>2. As Vantagens do Investimento em Dividendos</h2>
+      <p>Ao contrário das ações de puro crescimento, as pagadoras de dividendos oferecem fluxo de caixa tangível independentemente da direção do mercado. Elas funcionam como um amortecedor psicológico durante as quedas e oferecem crescimento composto ao utilizar um Plano de Reinvestimento de Dividendos (DRIP).</p>
+        
+
+      <h2>💬 FAQ</h2>
+      <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;">
+        <strong style="color: #60a5fa; display: block; margin-bottom: 0.5rem; font-size: 1.1rem;">Q: Os dividendos são garantidos?</strong>
+        <p style="margin-bottom: 0; line-height: 1.7;">A: Não, o conselho de administração pode reduzir ou suspender dividendos em momentos de crise financeira. Pesquise e selecione empresas estáveis.</p>
+      </div>
+            
+
+      
+      <div class="nav-links">
+        <a href="/pt/calculator">→ Calcular Minha Futura Bola de Neve</a>
+        <a href="/pt/list">→ Ver Ranking de Ações Populares</a>
+        <a href="/pt/learn">→ Próxima Aula: Entendendo o Rendimento</a>
+      </div>
+    
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-nav" style="margin-bottom:1.5rem;font-size:0.9rem;">
+          <a href="/privacy" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">Política de Privacidade</a> |
+          <a href="/pt/about" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">Sobre Nós</a> |
+          <a href="/contact" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">Contato</a>
+        </div>
+        <p>&copy; 2026 WiseAIWiseU - Smart Dividend Investing</p>
+        
+        <div class="legal-disclaimer">
+          <h4>⚠️ Aviso Legal</h4>
+          <p>
+            Todas as informações neste site são apenas para fins informativos e educacionais e não constituem conselhos ou recomendações de investimento. Os dividendos e os rendimentos de dividendos podem flutuar e não são garantidos. O desempenho passado não garante retornos futuros. Não nos responsabilizamos por decisões de investimento tomadas com base nas informações deste site.
+          </p>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+  <script>
+    window.addEventListener('scroll', () => {
+      const el = document.getElementById('progress-bar');
+      const total = document.body.scrollHeight - window.innerHeight;
+      if(total > 0) el.style.width = (window.scrollY / total * 100) + '%';
+    });
+  </script>
+</body>
+</html>

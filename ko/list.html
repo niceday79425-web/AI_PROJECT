@@ -168,25 +168,88 @@
 
             <!-- 가이드 섹션: 배당 스카우터 100% 활용 가이드 -->
             <section class="guide-section" style="margin-top: 4rem; padding: 0 0 2rem;">
-                <h2
-                    style="font-size: 2rem; margin-bottom: 0.75rem; background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+                <h2 style="font-size: 2rem; margin-bottom: 0.75rem; background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
                     미국 배당주 검색 100% 활용 가이드: 나만의 우량주 발굴법
                 </h2>
                 <p style="color: var(--text-secondary); margin-bottom: 3rem; font-size: 1rem; line-height: 1.7;">
-                    배당률 숫자만 보고 종목을 고르는 것은 위험합니다. 아래 3가지 핵심 지표를 함께 확인해야 진짜 우량 배당주를 발굴할 수 있습니다.
+                    배당률 숫자만 보고 종목을 고르는 것은 위험합니다. 3가지 핵심 지표를 함께 확인해야 진짜 우량 배당주를 발굴할 수 있습니다. 각 카드를 클릭하면 자세히 알아볼 수 있습니다.
                 </p>
+                <div class="guide-grid">
+                    <div class="guide-card-new card-payout" onclick="openGuideModal(1)" role="button" tabindex="0">
+                        <div>
+                            <h3>📊 배당성향(Payout Ratio) 분석</h3>
+                            <p>배당 함정을 피하고 진짜 안전한 배당주를 찾기 위한 배당성향 분석법을 배우세요.</p>
+                        </div>
+                        <span class="read-more">자세히 보기 →</span>
+                    </div>
+                    <div class="guide-card-new card-fcf" onclick="openGuideModal(2)" role="button" tabindex="0">
+                        <div>
+                            <h3>💵 잉여현금흐름(FCF)과 배당 안정성</h3>
+                            <p>배당 안정성의 황금 기준 — FCF 커버리지와 왜 순이익보다 중요한지 이해하세요.</p>
+                        </div>
+                        <span class="read-more">자세히 보기 →</span>
+                    </div>
+                    <div class="guide-card-new card-trend" onclick="openGuideModal(3)" role="button" tabindex="0">
+                        <div>
+                            <h3>🚀 시대 트렌드와 배당 성장</h3>
+                            <p>에너지·방위·헬스케어 리츠 등 전통 필수소비재를 넘어선 새로운 배당 성장 섹터를 발굴하세요.</p>
+                        </div>
+                        <span class="read-more">자세히 보기 →</span>
+                    </div>
+                </div>
+                <div id="guide-detail-1" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:#10b981;">함정에 빠지지 않는 배당성향(Payout Ratio) 확인법</h3>
+                    <div class="guide-modal-body">
+                        <p>배당률이 높다고 무조건 좋은 주식이 아닙니다. <strong>배당성향(Payout Ratio)</strong>은 기업이 순이익 중 얼마를 배당금으로 지급하는지 보여주는 핵심 지표입니다. 예를 들어 순이익이 $100이고 배당을 $85 지급한다면 배당성향은 85%입니다.</p>
+                        <p>일반적으로 <strong>배당성향이 80%를 넘으면</strong> 위험 신호입니다. 반면 <strong>40~60% 수준의 배당성향</strong>은 충분한 배당을 지급하면서도 기업이 성장에 재투자할 여력이 있다는 뜻입니다.</p>
+                        <ul>
+                            <li><strong>60% 미만</strong> — 안정 구간: 배당이 충분히 커버됨</li>
+                            <li><strong>60~80%</strong> — 주의 구간: 실적 추이를 면밀히 모니터링</li>
+                            <li><strong>80% 초과</strong> — 위험 구간: 배당 삭감 리스크 높음</li>
+                        </ul>
+                        <div class="badge-tip badge-tip-payout">💡 <strong>핵심 원칙:</strong> 고배당률에 현혹되기 전에 반드시 배당성향을 확인하세요.</div>
+                    </div>
+                </div>
+                <div id="guide-detail-2" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:#3b82f6;">잉여현금흐름(FCF)과 배당의 상관관계</h3>
+                    <div class="guide-modal-body">
+                        <p><strong>잉여현금흐름(Free Cash Flow, FCF)</strong>은 기업이 영업활동으로 벌어들인 현금에서 설비 투자(CAPEX)를 뺀 실제 현금입니다. FCF는 기업이 배당 지급에 실제로 사용할 수 있는 현금을 보여줍니다.</p>
+                        <p>배당금이 FCF보다 크다면, 기업은 빚을 내거나 자산을 팔아 배당을 지급하고 있다는 의미로 장기적으로 지속 불가능합니다. 반대로 <strong>FCF가 배당 총액을 넉넉히 초과</strong>하는 기업은 경기 침체에도 배당을 유지하거나 늘릴 가능성이 높습니다.</p>
+                        <ul>
+                            <li><strong>FCF 커버리지 &gt; 1.5x</strong> — 안전: 배당이 현금흐름으로 충분히 지원됨</li>
+                            <li><strong>FCF 커버리지 1.0~1.5x</strong> — 적정: 여유 버퍼가 제한적</li>
+                            <li><strong>FCF 커버리지 &lt; 1.0x</strong> — 위험: 현금흐름으로 배당 지급 불가</li>
+                        </ul>
+                        <div class="badge-tip badge-tip-fcf">💡 <strong>공식:</strong> FCF 배당성향 = 주당 배당금 ÷ 주당 FCF × 100 (낮을수록 안정적). FCF 커버리지 1.5x 이상이 이상적입니다.</div>
+                    </div>
+                </div>
+                <div id="guide-detail-3" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:#a855f7;">시대적 트렌드와 배당 성장의 결합</h3>
+                    <div class="guide-modal-body">
+                        <p>배당 투자라고 하면 코카콜라, P&amp;G 같은 전통적인 필수소비재 기업만 떠올리기 쉽습니다. 하지만 지금은 새로운 배당 성장 섹터를 주목해야 할 시대입니다.</p>
+                        <ul>
+                            <li><strong>⚡ 에너지 인프라</strong> — AI 데이터센터 확산으로 전력 수요가 폭증하면서, 전력망·천연가스 파이프라인 기업들이 안정적 현금흐름을 바탕으로 배당을 빠르게 늘리고 있습니다.</li>
+                            <li><strong>🚀 우주항공·방위산업</strong> — 지정학적 리스크 증가로 각국 국방 예산이 늘어나면서, 안정적인 정부 수주를 기반으로 꾸준히 배당을 늘려가는 방위산업 기업들이 주목받고 있습니다.</li>
+                            <li><strong>🏥 헬스케어 리츠</strong> — 고령화 사회 진입으로 수요가 구조적으로 증가하는 의료 시설·시니어 하우징 리츠는 배당 성장성과 방어성을 동시에 갖춘 새로운 대안입니다.</li>
+                        </ul>
+                        <p><strong>5년 배당성장률(5-Year Dividend CAGR)</strong>이 높고 앞으로도 성장할 수 있는 비즈니스 모델을 가진 기업을 발굴하는 것이 장기 배당 투자의 핵심입니다.</p>
+                        <div class="badge-tip badge-tip-trend">💡 <strong>황금 탐색 기준:</strong> 배당성향 &lt;60% + FCF 커버리지 양호 + 5년 배당성장률 &gt;5%</div>
+                    </div>
+                </div>
+            </section>
+            <div id="guideModal" class="guide-modal" onclick="if(event.target===this)closeGuideModal()">
+                <div class="guide-modal-content">
+                    <button class="guide-modal-close" onclick="closeGuideModal()" aria-label="닫기">✕</button>
+                    <div id="guideModalBody"></div>
+                </div>
+            </div>
+                </main>
+            </div>
+            </div>
+            </div>
+            </div>
 
-                <div style="display: grid; gap: 2rem;">
-                    <!-- 가이드 카드 1 -->
-                    <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #10b981; transition: transform 0.3s ease;"
-                        onmouseover="this.style.transform='translateY(-4px)'"
-                        onmouseout="this.style.transform='translateY(0)'">
-                        <h3
-                            style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                            <span
-                                style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
-                            함정에 빠지지 않는 배당성향(Payout Ratio) 확인법
-                        </h3>
+        <footer>
                         <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
                             배당률이 높다고 무조건 좋은 주식이 아닙니다. <strong style="color: var(--text-primary);">배당성향(Payout
                                 Ratio)</strong>은 기업이 순이익 중 얼마를 배당금으로 지급하는지 보여주는 핵심 지표입니다. 예를 들어 순이익이 $100이고 배당을 $85
@@ -288,12 +351,9 @@
                         style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">문의하기</a>
                 </div>
                 <div class="legal-disclaimer">
-                    <h4 style="margin-bottom: 0.5rem; font-size: 0.9rem;">⚠️ Legal Disclaimer / 법적 고지</h4>
-                    <p style="font-size: 0.85rem; line-height: 1.6;">
-                        <strong>본 사이트의 모든 정보는 정보 제공 및 교육 목적이며, 투자 자문 또는 투자 권유가 아닙니다.</strong><br>
-                        배당금 및 배당률은 변동될 수 있으며 보장되지 않습니다.<br>
-                        과거의 성과가 미래의 수익을 보장하지 않습니다.<br>
-                        본 사이트의 정보를 이용한 투자 결과에 대해 책임을 지지 않습니다.
+                    <h4>⚠️ 법적 고지</h4>
+                    <p>
+                        본 사이트의 모든 정보는 정보 제공 및 교육 목적이며, 투자 자문 또는 투자 권유가 아닙니다. 배당금 및 배당률은 변동될 수 있으며 보장되지 않습니다. 과거의 성과가 미래의 수익을 보장하지 않습니다. 본 사이트의 정보를 이용한 투자 결과에 대해 책임을 지지 않습니다.
                     </p>
                 </div>
             </div>
@@ -303,6 +363,23 @@
     <!-- Script to load Dividend Insights -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Guide Modal
+            window.openGuideModal = function(id) {
+                const detail = document.getElementById('guide-detail-' + id);
+                const modal = document.getElementById('guideModal');
+                const body = document.getElementById('guideModalBody');
+                if (detail && modal && body) {
+                    body.innerHTML = detail.innerHTML;
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            };
+            window.closeGuideModal = function() {
+                const modal = document.getElementById('guideModal');
+                if (modal) { modal.classList.remove('active'); document.body.style.overflow = ''; }
+            };
+            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeGuideModal(); });
+
             let dividendData = [];
 
             const stockGrid = document.getElementById('stockGrid');

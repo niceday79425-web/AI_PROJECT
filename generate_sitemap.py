@@ -1,5 +1,6 @@
 import os
 import json
+import re
 from datetime import datetime
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
@@ -90,7 +91,7 @@ def generate_sitemap():
             priority = ET.SubElement(url_node, "priority")
             priority.text = "1.0" if page == "index.html" else "0.8"
 
-    # 2. Add Blog Posts from posts.json
+    # 2. Add Blog Posts from posts.json and directory scan
     blog_posts = {} # mapping of basename -> {lang: full_link}
     
     # We first collect EVERY post from EVERY language to group them.
@@ -119,6 +120,20 @@ def generate_sitemap():
             except Exception as e:
                 print(f"Error reading {json_path}: {e}")
 
+        # Scan the blog directory for any additional HTML files (like the 23 lesson HTML files)
+        blog_dir = os.path.join(os.getcwd(), info["path"], "blog")
+        if os.path.exists(blog_dir):
+            for filename in os.listdir(blog_dir):
+                if filename.endswith(".html"):
+                    basename = filename
+                    base_match = re.sub(r'-(ko|pt|en)\.html$', '.html', basename)
+                    
+                    if base_match not in blog_posts:
+                        blog_posts[base_match] = {}
+                    
+                    if lang not in blog_posts[base_match]:
+                        blog_posts[base_match][lang] = f"{info['path']}blog/{filename}"
+
     # Add blog post URLs
     for base_match, lang_links in blog_posts.items():
         for lang, full_path in lang_links.items():
@@ -135,11 +150,13 @@ def generate_sitemap():
             
             # lastmod (try to get from filename or actual file)
             # filenames often start with YYYY-MM-DD
-            post_date = datetime.now().strftime('%Y-%m-%d')
-            # Extract date from basename if it looks like YYYY-MM-DD
+            post_date = None
             date_match = re.search(r'^(\d{4}-\d{2}-\d{2})', base_match)
             if date_match:
                 post_date = date_match.group(1)
+            else:
+                full_file_path = os.path.join(os.getcwd(), full_path)
+                post_date = get_last_mod(full_file_path)
             
             lastmod = ET.SubElement(url_node, "lastmod")
             lastmod.text = post_date
@@ -166,6 +183,5 @@ def generate_sitemap():
     print("sitemap.xml has been updated.")
 
 if __name__ == "__main__":
-    import re
     generate_sitemap()
 

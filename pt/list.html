@@ -167,131 +167,84 @@
 
             <!-- Guide Section -->
             <section class="guide-section" style="margin-top: 4rem; padding: 0 0 2rem;">
-                <h2
-                    style="font-size: 2rem; margin-bottom: 0.75rem; background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
-                    Guia Completo do Dividend Scouter: Seu Roteiro para Encontrar Ações de Dividendos de Qualidade
+                <h2 style="font-size: 2rem; margin-bottom: 0.75rem; background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+                    Guia 100% Dividend Scouter: Seu Plano para Encontrar Ações de Qualidade
                 </h2>
                 <p style="color: var(--text-secondary); margin-bottom: 3rem; font-size: 1rem; line-height: 1.7;">
-                    Escolher ações apenas pelo rendimento de dividendos é arriscado. Você precisa verificar estas 3
-                    métricas-chave juntas para identificar ações de dividendos de alta qualidade.
+                    Escolher ações apenas com base no rendimento de dividendos é arriscado. Verifique estas 3 métricas juntas para identificar ações de dividendos de alta qualidade. Clique em cada cartão para saber mais.
                 </p>
-
-                <div style="display: grid; gap: 2rem;">
-                    <!-- Guide Card 1 -->
-                    <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #10b981; transition: transform 0.3s ease;"
-                        onmouseover="this.style.transform='translateY(-4px)'"
-                        onmouseout="this.style.transform='translateY(0)'">
-                        <h3
-                            style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                            <span
-                                style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
-                            Como Analisar a Taxa de Distribuição Sem Cair em Armadilhas
-                        </h3>
-                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
-                            Um alto rendimento de dividendos não significa automaticamente uma ótima ação. A <strong
-                                style="color: var(--text-primary);">Taxa de Distribuição (Payout Ratio)</strong> é a
-                            métrica-chave que mostra qual porcentagem do lucro líquido de uma empresa é distribuída como
-                            dividendos. Por exemplo, se uma empresa ganha $100 e paga $85 em dividendos, a taxa de
-                            distribuição é 85%.
-                        </p>
-                        <p style="color: var(--text-secondary); line-height: 1.8;">
-                            Geralmente, uma <strong style="color: #ef4444;">taxa acima de 80%</strong> é um sinal de
-                            alerta — qualquer queda nos lucros pode forçar um corte de dividendos. Por outro lado, uma
-                            <strong style="color: #10b981;">taxa entre 40–60%</strong> sugere que a empresa pode
-                            sustentar os dividendos enquanto ainda investe no crescimento.
-                        </p>
-                        <div
-                            style="margin-top: 1.25rem; padding: 0.9rem 1.2rem; background: rgba(16,185,129,0.08); border-radius: 10px; font-size: 0.9rem; color: #10b981;">
-                            💡 <strong>Referência:</strong> Taxa &lt; 60% (Qualidade) / 60–80% (Cautela) / 80%+ (Perigo)
+                <div class="guide-grid">
+                    <div class="guide-card-new card-payout" onclick="openGuideModal(1)" role="button" tabindex="0">
+                        <div>
+                            <h3>📊 Análise da Taxa de Distribuição</h3>
+                            <p>Aprenda como analisar taxas de distribuição para evitar armadilhas de dividendos e encontrar pagadores seguros.</p>
                         </div>
+                        <span class="read-more">Leia Mais →</span>
                     </div>
-
-                    <!-- Guide Card 2 -->
-                    <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #3b82f6; transition: transform 0.3s ease;"
-                        onmouseover="this.style.transform='translateY(-4px)'"
-                        onmouseout="this.style.transform='translateY(0)'">
-                        <h3
-                            style="font-size: 1.3rem; color: #3b82f6; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                            <span
-                                style="background: rgba(59,130,246,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">02</span>
-                            A Relação Entre Fluxo de Caixa Livre (FCF) e Dividendos
-                        </h3>
-                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
-                            O <strong style="color: var(--text-primary);">Fluxo de Caixa Livre (FCF)</strong> é o
-                            dinheiro real que uma empresa gera das operações após subtrair as despesas de capital
-                            (CAPEX). Enquanto o "lucro líquido" contábil pode variar, o FCF representa o caixa real
-                            disponível para pagar dividendos.
-                        </p>
-                        <p style="color: var(--text-secondary); line-height: 1.8;">
-                            Se os dividendos excedem o FCF, a empresa está se endividando ou vendendo ativos para pagar
-                            acionistas — insustentável a longo prazo. Uma empresa cujo <strong
-                                style="color: #3b82f6;">FCF supera confortavelmente o total de dividendos</strong> tem
-                            muito mais chances de mantê-los ou até aumentá-los durante recessões.
-                        </p>
-                        <div
-                            style="margin-top: 1.25rem; padding: 0.9rem 1.2rem; background: rgba(59,130,246,0.08); border-radius: 10px; font-size: 0.9rem; color: #3b82f6;">
-                            💡 <strong>Fórmula:</strong> Taxa FCF = Dividendo por Ação ÷ FCF por Ação × 100 (menor =
-                            mais estável)
+                    <div class="guide-card-new card-fcf" onclick="openGuideModal(2)" role="button" tabindex="0">
+                        <div>
+                            <h3>💵 FCF e Segurança dos Dividendos</h3>
+                            <p>Entenda o padrão ouro da segurança de dividendos — cobertura de Fluxo de Caixa Livre e por que importa mais que o lucro líquido.</p>
                         </div>
+                        <span class="read-more">Leia Mais →</span>
                     </div>
-
-                    <!-- Guide Card 3 -->
-                    <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #a855f7; transition: transform 0.3s ease;"
-                        onmouseover="this.style.transform='translateY(-4px)'"
-                        onmouseout="this.style.transform='translateY(0)'">
-                        <h3
-                            style="font-size: 1.3rem; color: #a855f7; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                            <span
-                                style="background: rgba(168,85,247,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">03</span>
-                            Combinando Tendências Seculares com Crescimento de Dividendos
-                        </h3>
-                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
-                            Quando pensamos em investimento em dividendos, normalmente imaginamos bens de consumo
-                            tradicionais como Coca-Cola ou P&G. Mas hoje, novos setores de crescimento de dividendos
-                            estão emergindo e merecem atenção.
-                        </p>
-                        <div
-                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
-                            <div style="padding: 1rem; background: rgba(168,85,247,0.08); border-radius: 12px;">
-                                <div style="font-weight: 700; color: #a855f7; margin-bottom: 0.4rem;">⚡ Infraestrutura
-                                    Energética</div>
-                                <div style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">A
-                                    demanda crescente de energia dos data centers de IA está acelerando o crescimento de
-                                    dividendos em empresas de energia elétrica e gasodutos, baseadas em fluxos de caixa
-                                    estáveis.</div>
-                            </div>
-                            <div style="padding: 1rem; background: rgba(168,85,247,0.08); border-radius: 12px;">
-                                <div style="font-weight: 700; color: #a855f7; margin-bottom: 0.4rem;">🚀 Aeroespacial e
-                                    Defesa</div>
-                                <div style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">O
-                                    aumento das tensões geopolíticas está expandindo os orçamentos de defesa
-                                    globalmente, destacando empresas do setor com contratos governamentais estáveis e
-                                    crescimento consistente de dividendos.</div>
-                            </div>
-                            <div style="padding: 1rem; background: rgba(168,85,247,0.08); border-radius: 12px;">
-                                <div style="font-weight: 700; color: #a855f7; margin-bottom: 0.4rem;">🏥 REITs de Saúde
-                                </div>
-                                <div style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">À
-                                    medida que as populações envelhecidas aumentam estruturalmente a demanda por
-                                    instalações médicas e moradias para idosos, os REITs de saúde oferecem uma
-                                    combinação atraente de crescimento e defensividade.</div>
-                            </div>
+                    <div class="guide-card-new card-trend" onclick="openGuideModal(3)" role="button" tabindex="0">
+                        <div>
+                            <h3>🚀 Tendências Seculares e Crescimento</h3>
+                            <p>Descubra setores emergentes de crescimento de dividendos além dos bens de consumo tradicionais — energia, defesa e REITs de saúde.</p>
                         </div>
-                        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 0.9rem;">
-                            Além de simplesmente buscar altos rendimentos atuais, a chave para o investimento em
-                            dividendos de longo prazo é identificar empresas com alto <strong
-                                style="color: var(--text-primary);">CAGR de Dividendos de 5 Anos</strong> e um modelo de
-                            negócios capaz de sustentar esse crescimento.
-                        </p>
-                        <div
-                            style="margin-top: 1.25rem; padding: 0.9rem 1.2rem; background: rgba(168,85,247,0.08); border-radius: 10px; font-size: 0.9rem; color: #a855f7;">
-                            💡 <strong>Critérios de Triagem de Ouro:</strong> Taxa de Distribuição &lt;60% + Cobertura
-                            FCF Saudável + CAGR de Dividendos 5 Anos &gt;5%
-                        </div>
+                        <span class="read-more">Leia Mais →</span>
+                    </div>
+                </div>
+                <div id="guide-detail-1" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:#10b981;">Como Analisar a Taxa de Distribuição sem Cair em Armadilhas</h3>
+                    <div class="guide-modal-body">
+                        <p>Um alto rendimento de dividendos não significa automaticamente uma ótima ação. A <strong>Taxa de Distribuição (Payout Ratio)</strong> mostra qual porcentagem do lucro líquido é distribuída como dividendos. Por exemplo, se uma empresa ganha $100 e paga $85 em dividendos, a taxa é 85%.</p>
+                        <p>Uma <strong>taxa acima de 80%</strong> é um sinal de alerta. Uma <strong>taxa entre 40–60%</strong> sugere que a empresa pode sustentar os dividendos enquanto ainda investe no crescimento.</p>
+                        <ul>
+                            <li><strong>&lt; 60%</strong> — Zona de qualidade: dividendo bem coberto</li>
+                            <li><strong>60–80%</strong> — Zona de cautela: acompanhe tendências de lucro</li>
+                            <li><strong>&gt; 80%</strong> — Zona de perigo: alto risco de corte de dividendos</li>
+                        </ul>
+                        <div class="badge-tip badge-tip-payout">💡 <strong>Regra Principal:</strong> Sempre verifique a taxa de distribuição antes de buscar altos rendimentos. Um rendimento de 7%+ com taxa de 90%+ frequentemente é uma armadilha de dividendos.</div>
+                    </div>
+                </div>
+                <div id="guide-detail-2" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:#3b82f6;">A Relação Entre Fluxo de Caixa Livre (FCF) e Dividendos</h3>
+                    <div class="guide-modal-body">
+                        <p>O <strong>Fluxo de Caixa Livre (FCF)</strong> é o dinheiro real gerado pelas operações após subtrair despesas de capital (CAPEX). O FCF representa o caixa real disponível para pagar dividendos, diferentemente do lucro líquido que pode variar com contabilidade.</p>
+                        <p>Se os dividendos excedem o FCF, a empresa está se endividando para pagar acionistas — insustentável a longo prazo. Uma empresa cujo <strong>FCF supera confortavelmente o total de dividendos</strong> tem muito mais chances de mantê-los durante recessões.</p>
+                        <ul>
+                            <li><strong>Cobertura FCF &gt; 1,5x</strong> — Seguro: dividendos bem financiados</li>
+                            <li><strong>Cobertura FCF 1,0–1,5x</strong> — Adequado: margem de segurança limitada</li>
+                            <li><strong>Cobertura FCF &lt; 1,0x</strong> — Perigo: fluxo de caixa insuficiente para dividendos</li>
+                        </ul>
+                        <div class="badge-tip badge-tip-fcf">💡 <strong>Fórmula:</strong> Cobertura FCF = Fluxo de Caixa Livre ÷ Dividendos Totais Pagos. Meta &gt; 1,5x para máxima segurança.</div>
+                    </div>
+                </div>
+                <div id="guide-detail-3" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:#a855f7;">Combinando Tendências Seculares com Crescimento de Dividendos</h3>
+                    <div class="guide-modal-body">
+                        <p>Quando pensamos em investimento em dividendos, normalmente imaginamos bens de consumo tradicionais como Coca-Cola ou P&amp;G. Mas hoje, novos setores de crescimento de dividendos estão emergindo.</p>
+                        <ul>
+                            <li><strong>⚡ Infraestrutura Energética</strong> — A demanda crescente de energia dos data centers de IA está acelerando o crescimento de dividendos em empresas de energia elétrica e gasodutos, baseadas em fluxos de caixa estáveis.</li>
+                            <li><strong>🚀 Aeroespacial e Defesa</strong> — O aumento das tensões geopolíticas está expandindo os orçamentos de defesa globalmente, destacando empresas do setor com contratos governamentais estáveis e crescimento consistente de dividendos.</li>
+                            <li><strong>🏥 REITs de Saúde</strong> — À medida que as populações envelhecidas aumentam a demanda por instalações médicas, os REITs de saúde oferecem uma combinação atraente de crescimento e defensividade.</li>
+                        </ul>
+                        <p>A chave para o investimento em dividendos de longo prazo é identificar empresas com alto <strong>CAGR de Dividendos de 5 Anos</strong> e um modelo de negócios capaz de sustentar esse crescimento.</p>
+                        <div class="badge-tip badge-tip-trend">💡 <strong>Critérios de Triagem de Ouro:</strong> Taxa de Distribuição &lt;60% + Cobertura FCF Saudável + CAGR de Dividendos 5 Anos &gt;5%</div>
                     </div>
                 </div>
             </section>
+            <div id="guideModal" class="guide-modal" onclick="if(event.target===this)closeGuideModal()">
+                <div class="guide-modal-content">
+                    <button class="guide-modal-close" onclick="closeGuideModal()" aria-label="Fechar">✕</button>
+                    <div id="guideModalBody"></div>
+                </div>
+            </div>
                 </main>
+            </div>
+            </div>
             </div>
             </div>
 
@@ -308,13 +261,9 @@
                         style="color: var(--text-secondary); text-decoration: none; margin: 0 10px;">Contato</a>
                 </div>
                 <div class="legal-disclaimer">
-                    <h4 style="margin-bottom: 0.5rem; font-size: 0.9rem;">⚠️ Aviso Legal</h4>
-                    <p style="font-size: 0.85rem; line-height: 1.6;">
-                        <strong>Todo o conteúdo deste site é apenas para fins informativos e educacionais e não
-                            constitui aconselhamento financeiro.</strong><br>
-                        Dividendos e rendimentos podem flutuar e não são garantidos.<br>
-                        O desempenho passado não garante retornos futuros.<br>
-                        Não somos responsáveis por decisões de investimento tomadas com base nas informações deste site.
+                    <h4>⚠️ Aviso Legal</h4>
+                    <p>
+                        Todas as informações contidas neste site destinam-se exclusivamente a fins informativos e educacionais, não constituindo conselhos ou recomendações de investimento. Os dividendos e os rendimentos de dividendos podem oscilar e não são garantidos. Desempenho passado não garante retornos futuros. Não nos responsabilizamos por decisões de investimento tomadas com base nas informações deste site.
                     </p>
                 </div>
             </div>
@@ -324,6 +273,23 @@
     <!-- Script to load Dividend Insights -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Guide Modal
+            window.openGuideModal = function(id) {
+                const detail = document.getElementById('guide-detail-' + id);
+                const modal = document.getElementById('guideModal');
+                const body = document.getElementById('guideModalBody');
+                if (detail && modal && body) {
+                    body.innerHTML = detail.innerHTML;
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            };
+            window.closeGuideModal = function() {
+                const modal = document.getElementById('guideModal');
+                if (modal) { modal.classList.remove('active'); document.body.style.overflow = ''; }
+            };
+            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeGuideModal(); });
+
             let dividendData = [];
 
             const stockGrid = document.getElementById('stockGrid');
