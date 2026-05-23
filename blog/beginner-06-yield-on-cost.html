@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yield on Cost: The Hidden Metric | WiseAIWiseU</title>
-  <meta name="description" content="Understand Yield on Cost (YoC) and how long-term dividend growth turns a low initial yield into a huge income stream.">
-  <meta name="keywords" content="yield on cost, dividend growth investing, YoC, long-term portfolio">
-  <meta property="og:title" content="Yield on Cost: The Hidden Metric | WiseAIWiseU">
-  <meta property="og:description" content="Understand Yield on Cost (YoC) and how long-term dividend growth turns a low initial yield into a huge income stream.">
+  <title>[Beginner's Guide Part 6] The Hidden Weapon of Long-Term Investing: YOC | WiseAIWiseU</title>
+  <meta name="description" content="Learn the core of long-term investing that lets time earn money for you through the definition of Yield on Cost (YOC), calculations, a 10-year simulation, and practical strategies.">
+  <meta name="keywords" content="dividend stocks, US stocks, dividend investing, passive income, YOC, Yield on Cost, dividend growth, long-term investing">
+  <meta property="og:title" content="[Beginner's Guide Part 6] The Hidden Weapon of Long-Term Investing: YOC | WiseAIWiseU">
+  <meta property="og:description" content="Learn the core of long-term investing that lets time earn money for you through the definition of Yield on Cost (YOC), calculations, a 10-year simulation, and practical strategies.">
   <meta property="og:type" content="article">
   <meta property="og:image" content="https://wiseaiwiseu.com/og-image.png">
   <link rel="canonical" href="https://wiseaiwiseu.com/blog/beginner-06-yield-on-cost">
@@ -38,6 +38,11 @@
       font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 800; letter-spacing: -1.5px;
       line-height: 1.1; max-width: 900px; margin: 0 auto 2rem; color: var(--text-primary);
     }
+    .post-hero .meta {
+      font-size: 0.95rem; color: var(--text-secondary); display: flex;
+      gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;
+      opacity: 0.8;
+    }
     .post-content {
       max-width: 760px; margin: 0 auto; padding: 4rem 1.5rem;
     }
@@ -50,9 +55,26 @@
       content: ''; display: inline-block; width: 4px; height: 1.5rem;
       background: var(--primary-gradient); border-radius: 2px;
     }
+    .post-content h3 { 
+      font-size: 1.4rem; font-weight: 600; color: var(--text-primary); 
+      margin: 3rem 0 1.25rem; letter-spacing: -0.3px;
+    }
     .post-content p { 
       line-height: 1.9; color: var(--text-secondary); 
       margin-bottom: 1.75rem; font-size: 1.125rem; font-weight: 400; 
+    }
+    .post-content ul, .post-content ol {
+      padding-left: 1.5rem; margin-bottom: 1.75rem;
+    }
+    .post-content li { 
+      line-height: 1.9; color: var(--text-secondary); 
+      margin-bottom: 0.75rem; font-size: 1.125rem; 
+    }
+    .post-content strong { color: var(--text-primary); font-weight: 600; }
+    .post-content img {
+      width: 100%; border-radius: 16px; margin: 2.5rem 0;
+      border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
     }
     .key-point { 
       background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
@@ -63,6 +85,11 @@
       line-height: 1.8;
     }
     .key-point strong { color: #60a5fa; display: block; margin-bottom: 0.5rem; }
+    
+    .data-table { width:100%;border-collapse:collapse;margin:2.5rem 0;font-size:0.95rem; }
+    .data-table th { background:rgba(255,255,255,0.04);color:var(--text-primary);padding:1.2rem;text-align:left; border-bottom:1px solid rgba(255,255,255,0.1); font-weight: 700; }
+    .data-table td { padding:1.2rem;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--text-secondary); }
+    
     .nav-links { display:flex;gap:1.5rem;flex-wrap:wrap;margin:4rem 0;padding:2rem;background:rgba(255,255,255,0.02);border: 1px solid rgba(255,255,255,0.05); border-radius:16px; }
     .nav-links a { color:var(--text-primary);text-decoration:none;font-weight:600;font-size:1rem; border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 4px; transition: all 0.3s; }
     .nav-links a:hover { border-color: #6366f1; color: #6366f1; }
@@ -86,28 +113,30 @@
     <header>
       <a href="/" class="logo">WiseAIWiseU</a>
       <nav class="lang-selector">
-        
-        <a href="/ko/blog/beginner-06-yield-on-cost" class="lang-link ">KO</a>
+        <a href="/ko/blog/beginner-06-yield-on-cost" class="lang-link">KO</a>
         <a href="/blog/beginner-06-yield-on-cost" class="lang-link active">EN</a>
-        <a href="/pt/blog/beginner-06-yield-on-cost" class="lang-link ">PT</a>
-    
+        <a href="/pt/blog/beginner-06-yield-on-cost" class="lang-link">PT</a>
       </nav>
     </header>
     
-        <nav class="glass-nav">
-          <a href="/blog" class="active">US Stock Insights</a>
-          <a href="/learn">US Dividend Stock Lessons</a>
-          <a href="/list">US Dividend Stock Search</a>
-          <a href="/calculator">US Stock Compound Interest</a>
-          <a href="/calendar">US Dividend Stock Schedule</a>
-          <a href="/fortune">US Stock Comparison</a>
-          <a href="/about">US Stock Service Intro</a>
-        </nav>
-        
+    <nav class="glass-nav">
+      <a href="/blog" class="active">US Stock Insights</a>
+      <a href="/learn">US Dividend Stock Lessons</a>
+      <a href="/list">US Dividend Stock Search</a>
+      <a href="/calculator">US Stock Compound Interest</a>
+      <a href="/calendar">US Dividend Stock Schedule</a>
+      <a href="/fortune">US Stock Comparison</a>
+      <a href="/about">US Stock Service Intro</a>
+    </nav>
 
     <section class="post-hero">
-      <span class="series-badge">📚 Beginner Guide 06</span>
-      <h1>Yield on Cost: The Hidden Metric</h1>
+      <span class="series-badge">📚 Dividend Stock Beginner's Guide Part 6</span>
+      <h1>[Beginner's Guide Part 6] The Hidden Weapon of Long-Term Investing: YOC</h1>
+      <div class="meta" style="font-size:0.9rem;opacity:0.7;display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;margin-top:0.75rem;">
+        <span>📅 2026-05-15</span>
+        <span>⏱️ Reading Time: Approx. 12 min</span>
+        <span>🌐 WiseAIWiseU</span>
+      </div>
     </section>
 
     <main class="post-content">
@@ -117,39 +146,98 @@
         <div class="author-avatar">W</div>
         <div>
           <strong style="display:block;color:var(--text-primary);font-size:0.95rem;">WiseAIWiseU Research Team</strong>
-          <span style="font-size:0.8rem;color:var(--text-secondary);">US Dividend Stocks Specialist | 2026-05-22 | Educational Content</span>
+          <span style="font-size:0.8rem;color:var(--text-secondary);">US Dividend Stocks Specialist | 2026-05-15 | Educational Content</span>
         </div>
       </div>
 
-      <p>Long-term investors care less about current dividend yields and more about Yield on Cost (YoC). It reflects the yield based on your original purchase price.</p>
+      <p>This is Part 6 of the beginner's education series by <strong>WiseAIWiseU</strong>, a blog specializing in US dividend stock investing.</p>
+      <p>Up until last time, we learned "what stocks (Dividend Aristocrats) to choose" and "how to operate (reinvest) them." However, as you continue dividend investing, a time will inevitably come when you wonder, "Is this really worth it?" when stock prices stagnate or the market fluctuates.</p>
+      <p>At that moment, there is a powerful indicator that will hold your shaking mentality steady and prove the conviction of long-term investing with numbers. It is Yield on Cost (YOC)—the hidden weapon and medal of long-term investors.</p>
+
+      <h2>1. What is YOC (Yield on Cost)?</h2>
+      <p>The dividend yield mentioned in most brokerage apps or news is the "Current Yield." This is "the yield given to someone who buys this stock brand new today."</p>
+      <p>On the other hand, YOC (Yield on Cost) is a personalized indicator that represents "how much dividend I am receiving now relative to the price I actually bought it at." As companies increase their dividends, your YOC becomes incomparably higher than market interest rates or general dividend yields. This is the "time premium" enjoyed by long-term investors.</p>
 
       <div class="key-point">
-        <strong>💡 Key Point:</strong>
-        YoC = (Current Annual Dividend per Share / Original Purchase Price per Share) * 100. As dividends grow, your personal yield skyrockets over time.
+        <strong>🧮 YOC Calculation Formula:</strong> <br>
+        YOC (%) = (Current Annual Dividend per Share / My Average Purchase Price per Share) × 100
       </div>
 
-      
-      <h2>1. How YoC Illustrates the Compounding Effect</h2>
-      <p>Imagine you bought a stock at $50 when its annual dividend was $1.50 (a 3% yield). Ten years later, due to constant growth, the dividend has grown to $4.50. Although the market yield might still look like 3% because the stock price rose, your Yield on Cost is now 9% ($4.50 / $50).</p>
-        
-      <h2>2. YoC in Portfolio Evaluation</h2>
-      <p>YoC acts as a badge of honor for long-term holders. It proves that holding steady through market fluctuations yields double-digit annual cash returns on your initial capital, outperforming flat high-yield assets.</p>
-        
+      <h2>2. The Power of YOC: Magic Made by 10 Years of Time (Case Analysis)</h2>
+      <p>To feel why YOC is a weapon, let's simulate investing in a blue-chip dividend growth stock 10 years ago.</p>
 
-      <h2>💬 FAQ</h2>
-      <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;">
-        <strong style="color: #60a5fa; display: block; margin-bottom: 0.5rem; font-size: 1.1rem;">Q: Can YoC fall?</strong>
-        <p style="margin-bottom: 0; line-height: 1.7;">A: Only if the company cuts its dividend payout. If the company keeps growing dividends, your YoC will only go up.</p>
+      <div class="key-point">
+        <strong>💡 Scenario Assumption:</strong>
+        <ul>
+          <li><strong>2016:</strong> Investor Kim bought 100 shares of Dividend Stock A at <strong>$100</strong> per share. (Principal investment of $10,000)</li>
+          <li><strong>Dividend at that time:</strong> $3 per share (Current yield at the time: <strong>3%</strong>)</li>
+          <li><strong>10-year progression:</strong> The company increased its dividend by an average of 10% every year.</li>
+          <li><strong>Present in 2026:</strong> The dividend per share has become approx. <strong>$7.8</strong>, and the stock price has grown to <strong>$220</strong>.</li>
+        </ul>
       </div>
-            
 
-      
+      <p><strong>Let's compare Investor Kim with Beginner Lee, who bought this stock for the first time today.</strong></p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Beginner Lee (Bought Today)</th>
+            <th><strong>Investor Kim (Bought 10 Years Ago - YOC)</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Purchase Price</strong></td>
+            <td>$220</td>
+            <td><strong>$100</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Current Annual Dividend</strong></td>
+            <td>$7.8</td>
+            <td><strong>$7.8</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Stated Yield</strong></td>
+            <td><strong>3.5%</strong> (Current Yield)</td>
+            <td><strong>7.8% (YOC)</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Result:</strong> While someone buying this stock today receives a 3.5% yield, Investor Kim, who has held it for 10 years, receives a <strong>7.8% locked-in annual return relative to the money he invested</strong>. He is enjoying a yield higher than most high-risk products from a "safe blue-chip stock."</p>
+
+      <h2>3. Why is YOC the "Weapon" of Long-Term Investors?</h2>
+      <h3>① The Strongest Shield to Withstand Bear Markets</h3>
+      <p>Suppose the market panics and the stock price plummets from $220 to $180. Beginner Lee, who just entered, will suffer from a -18% loss and contemplate selling, but Investor Kim's YOC is still 7.8%. The conviction that "even if the stock price changes, the dividend (income) relative to my principal does not decrease" allows him to stay relaxed even during a market crash.</p>
+
+      <h3>② The "Golden Goose" Effect that Resists the Temptation to Sell</h3>
+      <p>When people see returns of 50% or 100%, they want to realize profits. However, checking YOC changes that mindset. You reach the conclusion, "Why would I sell this goose that lays golden eggs when it consistently brings in a cash flow of over 10% annually relative to my principal?" YOC naturally guides you to become an ultra-long-term investor.</p>
+
+      <h3>③ Visualization of Compound Interest</h3>
+      <p>YOC rises steeply as time passes. It is slow for the first 5 years, but the moment YOC exceeds 20% or 30% after 10 or 20 years, you stand at the threshold of "financial freedom" where you no longer need to rely on labor income.</p>
+
+      <h2>4. 3 Practical Strategies to Maximize YOC</h2>
+      <ol>
+        <li><strong>Choose stocks with high "dividend growth rates":</strong> Rather than a high-dividend stock with a current yield of 5%, a company with a current yield of 1.5% that increases its dividend by 15% every year will bring a much higher YOC in 10 years. Invest in the "speed of growth" rather than "today's numbers."</li>
+        <li><strong>Combine with DRIP (Reinvestment):</strong> By increasing the number of shares through the reinvestment we learned in Part 4, the total amount of dividends received relative to the total principal invested will grow exponentially. YOC acts as a compass showing how efficiently your assets are working in this process.</li>
+        <li><strong>Start early and never sell:</strong> The only weakness of YOC is "time." It is not an indicator you can check tomorrow after buying today. However, the moment you verify a YOC of 10% in your account 10 years from now, you will be most grateful to your past self.</li>
+      </ol>
+
+      <h2>🚀 Closing: YOC is a "Medal" for Your Patience</h2>
+      <p>Many people waste money on fees and taxes by buying and selling repeatedly, shaken by market noise. However, wise dividend investors quietly grow their YOC.</p>
+      <p>Don't be disappointed by the 2-3% dividend yield shown in your account today. That is the first step toward a future YOC of 20%. <strong>Long-term investing is not done with the head, but by holding the weapon of YOC and enduring the battlefield of time.</strong></p>
+
       <div class="nav-links">
-        <a href="/calculator">→ Calculate My Future Dividend Snowball</a>
-        <a href="/list">→ Live Popular Dividend Stocks Rank</a>
-        <a href="/learn">→ Next Lesson: Understanding Dividend Yield</a>
+        <a href="/calculator">→ Use YOC Calculator by Stock</a>
+        <a href="/calculator">→ View Expected YOC Simulation in 10 Years</a>
+        <a href="/blog">→ Part 7 Preview: How to Design a Monthly Dividend Portfolio</a>
       </div>
-    
+
+      <div class="disclaimer">
+        <strong style="color:#ef4444;display:block;margin-bottom:0.5rem;">⚠️ Legal Disclaimer</strong>
+        All information on this site is for informational and educational purposes only and does not constitute investment advice or recommendations. Dividends and dividend yields may fluctuate and are not guaranteed. Past performance does not guarantee future returns. We are not responsible for investment decisions made based on information from this site.
+      </div>
     </main>
 
     <footer>
@@ -160,14 +248,7 @@
           <a href="/contact" style="color:var(--text-secondary);text-decoration:none;margin:0 10px;">Contact</a>
         </div>
         <p>&copy; 2026 WiseAIWiseU - Smart Dividend Investing</p>
-        
-        <div class="legal-disclaimer">
-          <h4>⚠️ Legal Disclaimer</h4>
-          <p>
-            All information on this site is for informational and educational purposes only and does not constitute investment advice or recommendations. Dividends and dividend yields may fluctuate and are not guaranteed. Past performance does not guarantee future returns. We are not responsible for investment decisions made based on information from this site.
-          </p>
-        </div>
-        
+        <p class="legal-disclaimer">This content is for informational purposes only and does not constitute financial advice.</p>
       </div>
     </footer>
   </div>
