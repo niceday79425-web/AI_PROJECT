@@ -403,6 +403,21 @@ footer {
     }
 }
 
+@keyframes navScrollHint {
+    0% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-40px);
+    }
+    65% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .score-value {
     font-size: 3rem;
     font-weight: 800;
@@ -726,17 +741,27 @@ html[lang="pt"] .glass-nav a {
         padding-bottom: 0.75rem;
         padding-right: 50px; /* Extra padding to allow last item to be fully scrolled in */
         gap: 1.5rem !important;
-        scrollbar-width: none;  /* Firefox */
-        -ms-overflow-style: none;  /* IE/Edge */
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
         /* Premium right-edge fade effect to indicate more scrollable content */
-        mask-image: linear-gradient(to right, #000 80%, transparent 100%);
-        -webkit-mask-image: linear-gradient(to right, #000 80%, transparent 100%);
+        mask-image: linear-gradient(to right, #000 85%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, #000 85%, transparent 100%);
     }
     .glass-nav::-webkit-scrollbar {
-        display: none; /* Hide scrollbar for premium look */
+        display: block;
+        height: 3px;
+    }
+    .glass-nav::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 3px;
+    }
+    .glass-nav::-webkit-scrollbar-thumb {
+        background: linear-gradient(90deg, #6366f1, #a855f7);
+        border-radius: 3px;
     }
     .glass-nav a {
         font-size: 0.85rem !important;
+        animation: navScrollHint 1.6s cubic-bezier(0.25, 1, 0.3, 1) 1;
     }
 }
 
