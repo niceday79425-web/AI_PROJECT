@@ -724,9 +724,13 @@ html[lang="pt"] .glass-nav a {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         padding-bottom: 0.75rem;
+        padding-right: 50px; /* Extra padding to allow last item to be fully scrolled in */
         gap: 1.5rem !important;
         scrollbar-width: none;  /* Firefox */
         -ms-overflow-style: none;  /* IE/Edge */
+        /* Premium right-edge fade effect to indicate more scrollable content */
+        mask-image: linear-gradient(to right, #000 80%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, #000 80%, transparent 100%);
     }
     .glass-nav::-webkit-scrollbar {
         display: none; /* Hide scrollbar for premium look */
