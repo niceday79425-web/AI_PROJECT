@@ -25,7 +25,11 @@ if api_key:
 else:
     print("[!] Warning: API key not found.")
 
-model = genai.GenerativeModel('gemini-1.5-flash')
+# ===================================================================
+# [변경 포인트] 무료 AI Studio 최신 'Gemini 3 Flash' 모델 지정
+# ===================================================================
+MODEL_NAME = 'gemini-3-flash'
+model = genai.GenerativeModel(MODEL_NAME)
 
 # Extended ticker list (50+ stocks)
 TICKERS = [
@@ -135,7 +139,6 @@ def get_top_volatile_tickers(tickers, count=3):
 
 def get_quickchart_url(ticker):
     """Generate 3-month stock price chart using QuickChart API"""
-    # Fetch actual 3-month data from yfinance
     try:
         hist = yf.Ticker(ticker).history(period="3mo")
         prices = hist['Close'].tolist()
@@ -188,11 +191,6 @@ def generate_multi_lang_content(stock_info, news_text):
     price = stock_info['price']
     change = stock_info['change']
 
-    # SEO title format rules per language
-    # en: [Topic | US Stock Analysis · WiseAIWiseU]
-    # ko: [주제 | 미국 주식 분석 · WiseAIWiseU]
-    # pt: [Tópico | Análise de Ações dos EUA · WiseAIWiseU]
-
     prompt = f"""
     You are a professional US stock market analyst writing for a global audience.
     Write a highly engaging, SEO-optimized blog post about {ticker}.
@@ -218,7 +216,7 @@ def generate_multi_lang_content(stock_info, news_text):
     2. Korean (ko) - Full Korean translation
     3. Portuguese (pt) - Full Portuguese translation
 
-    Output MUST be valid JSON:
+    Output MUST be valid JSON matching this exact schema:
     {{
         "en": {{ "title": "...", "content": "HTML body", "summary": "...", "keywords": "US stocks, {ticker}, dividend investing, stock analysis" }},
         "ko": {{ "title": "...", "content": "HTML body", "summary": "...", "keywords": "미국 주식, {ticker}, 배당 투자, 주식 분석" }},
@@ -245,15 +243,19 @@ def generate_multi_lang_content(stock_info, news_text):
 
     for attempt in range(3):
         try:
-            response = model.generate_content(prompt)
+            # ===================================================================
+            # [변경 포인트] Gemini 3의 구조화된 JSON 출력을 완벽 보장하기 위한 설정 추가
+            # ===================================================================
+            response = model.generate_content(
+                prompt,
+                generation_config={"response_mime_type": "application/json"}
+            )
             text = response.text
-            # Remove markdown code blocks if present
+            
+            # Markdown 백틱 제거 및 제어 문자 클리닝 안전 장치
             text = re.sub(r'```json\s*', '', text)
             text = re.sub(r'```\s*', '', text)
             text = text.strip()
-            
-            # Critical: Clean up potential invalid characters for JSON
-            # (Remove control characters except newline/tab)
             text = "".join(ch for ch in text if ord(ch) >= 32 or ch in "\n\r\t")
             
             return json.loads(text)
@@ -263,10 +265,10 @@ def generate_multi_lang_content(stock_info, news_text):
                 print("  [wait] Rate limit hit, sleeping 10s...")
                 time.sleep(10)
                 continue
-            # Print first 200 chars of text for debugging if it fails
             if 'text' in locals():
                 print(f"  [debug] Raw text snippet: {text[:200]}...")
-            return None
+            time.sleep(2)  # 일반 오류 발생 시 가볍게 대기 후 루프 진행
+            
     return None
 
 def build_post_html(lang, title, summary, keywords, today, ticker, article_body, css_path, home_path):
@@ -274,9 +276,7 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
     change_color = "#10b981" if "+" in ticker else "#ef4444"
 
     ad_header = ''''''
-
     ad_mid = ''''''
-
     ad_footer = ''''''
 
     disclaimer_texts = {
@@ -311,7 +311,6 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
   <link rel="stylesheet" href="{css_path}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Google AdSense: pending approval -->
   <style>
     /* ── Reading Progress Bar ── */
     #progress-bar {{
@@ -430,7 +429,6 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
 
     {ad_header}
 
-    <!-- Hero -->
     <section class="post-hero">
       <span class="ticker-badge">📈 {ticker} · US Stock Analysis</span>
       <h1>{title.split(" | ")[0] if " | " in title else title}</h1>
@@ -440,11 +438,9 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
       </div>
     </section>
 
-    <!-- Article -->
     <main class="post-content">
       <a href="{blog_path}" class="back-btn">{back_label}</a>
 
-      <!-- Author Box -->
       <div style="display:flex;align-items:center;gap:1rem;background:#f8f9fb;border:1px solid #e5e7eb;border-radius:12px;padding:1rem 1.2rem;margin-bottom:2rem;">
         <div style="width:48px;height:48px;background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
           <span style="color:#fff;font-weight:700;font-size:1.1rem;">W</span>
@@ -551,14 +547,9 @@ def save_and_index_multi(contents, ticker, chart_url):
             json.dump(posts[:60], f, ensure_ascii=False, indent=4)
 
     print(f"[OK] {ticker} - posts saved (EN + KO + PT)")
-        
-
-
 
 def cleanup_old_posts(keep_days=30):
-    """Delete dated blog HTML files older than keep_days and sync posts.json.
-    Files without YYYY-MM-DD prefix (e.g. edu blog posts) are preserved.
-    """
+    """Delete dated blog HTML files older than keep_days and sync posts.json."""
     print(f"[*] Cleaning up posts older than {keep_days} days...")
     cutoff = datetime.datetime.now() - datetime.timedelta(days=keep_days)
 
@@ -578,17 +569,14 @@ def cleanup_old_posts(keep_days=30):
 
         deleted_links = set()
 
-        # Scan HTML files — only delete those with YYYY-MM-DD prefix
         for fname in os.listdir(blog_dir):
             if not fname.endswith(".html"):
                 continue
 
-            # Extract date prefix (first 10 chars: YYYY-MM-DD)
             date_str = fname[:10]
             try:
                 file_date = datetime.datetime.strptime(date_str, "%Y-%m-%d")
             except ValueError:
-                # No date prefix → edu blog post, skip
                 continue
 
             if file_date < cutoff:
@@ -597,20 +585,14 @@ def cleanup_old_posts(keep_days=30):
                 deleted_links.add(link_prefix + fname)
                 print(f"  [del] {filepath}")
 
-        # Sync posts.json — remove entries pointing to deleted files
         if not os.path.exists(posts_path):
             continue
 
         with open(posts_path, "r", encoding="utf-8") as f:
-            try:
-                posts = json.load(f)
-            except Exception:
-                posts = []
+            try: posts = json.load(f)
+            except Exception: posts = []
 
-        # Filter out deleted entries
         posts = [p for p in posts if p.get("link") not in deleted_links]
-
-        # Re-sort by date desc, keep latest 60
         posts.sort(key=lambda x: x.get("date", ""), reverse=True)
         posts = posts[:60]
 
@@ -620,9 +602,6 @@ def cleanup_old_posts(keep_days=30):
         print(f"  [sync] {posts_path}: {len(posts)} entries remaining")
 
     print("[OK] Cleanup complete.")
-
-
-
 
 def main():
     print("=== Volatility Hunter v2.0 ===")
