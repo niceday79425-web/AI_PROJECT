@@ -47,64 +47,13 @@
 <div class="content-with-sidebar">
             <div class="main-content">
                 <main class="main-grid">
-                    <section class="calculator-card">
-                        <div class="card">
-                            <h2>스노우볼 시뮬레이터</h2>
-                            <div class="input-group">
-                                <label for="ticker">티커 (Ticker)</label>
-                                <input type="text" id="ticker" placeholder="예: SCHD, O, AAPL" value="SCHD">
-                            </div>
-                            <div class="input-group">
-                                <label for="initialPrincipal">초기 투자금 ($)</label>
-                                <input type="number" id="initialPrincipal" value="10000">
-                            </div>
-                            <div class="input-group">
-                                <label for="monthlyDeposit">월 적립액 ($)</label>
-                                <input type="number" id="monthlyDeposit" value="500">
-                            </div>
-                            <div class="input-group">
-                                <label for="dividendYield">연 배당률 (%)</label>
-                                <input type="number" id="dividendYield" step="0.1" value="3.5">
-                            </div>
-                            <div class="input-group">
-                                <label for="stockGrowth">연 주가 상승률 (%)</label>
-                                <input type="number" id="stockGrowth" step="0.1" value="5.0">
-                            </div>
-                            <div class="input-group">
-                                <label for="duration">투자 기간 (년)</label>
-                                <input type="number" id="duration" value="10">
-                            </div>
-                            <button id="calculateBtn" class="btn-calculate">계산하기</button>
-                        </div>
-                    </section>
-
-                    <section class="results-container">
-                        <div class="summary-stats">
-                            <div class="stat-box">
-                                <span class="label">최종 자산</span>
-                                <div id="finalAsset" class="value">$0</div>
-                            </div>
-                            <div class="stat-box">
-                                <span class="label">총 배당금</span>
-                                <div id="totalDividends" class="value">$0</div>
-                            </div>
-                            <div class="stat-box">
-                                <span class="label">수익률</span>
-                                <div id="totalROI" class="value highlight">0%</div>
-                            </div>
-                        </div>
-                        <div class="chart-wrapper">
-                            <canvas id="growthChart"></canvas>
-                        </div>
-                    </section>
-
-                    <section class="education-section" style="margin-top: 4rem; grid-column: 1 / -1;">
+                    <section class="education-section" style="margin-bottom: 4rem; grid-column: 1 / -1;">
                         <h2
-                            style="font-size: 2rem; margin-bottom: 0.75rem; background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+                            style="font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 0.75rem; background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
                             복리의 마법을 시각화하다: 스노우볼 시뮬레이터 활용법
                         </h2>
                         <p
-                            style="color: var(--text-secondary); margin-bottom: 3rem; font-size: 1rem; line-height: 1.7;">
+                            style="color: var(--text-secondary); margin-bottom: 3rem; font-size: clamp(0.9rem, 2vw, 1rem); line-height: 1.7;">
                             시뮬레이터의 숫자가 왜 그렇게 커지는지 이해하면, 장기 투자에 대한 확신이 달라집니다. 세 가지 핵심 원리를 통해 복리의 본질을 파악하세요.
                         </p>
 
@@ -245,6 +194,59 @@
                             </p>
                         </div>
                     </section>
+
+<section class="calculator-card">
+                        <div class="card">
+                            <h2>스노우볼 시뮬레이터</h2>
+                            <div class="input-group">
+                                <label for="ticker">티커 (Ticker)</label>
+                                <input type="text" id="ticker" placeholder="예: SCHD, O, AAPL" value="SCHD">
+                            </div>
+                            <div class="input-group">
+                                <label for="initialPrincipal">초기 투자금 ($)</label>
+                                <input type="number" id="initialPrincipal" value="10000">
+                            </div>
+                            <div class="input-group">
+                                <label for="monthlyDeposit">월 적립액 ($)</label>
+                                <input type="number" id="monthlyDeposit" value="500">
+                            </div>
+                            <div class="input-group">
+                                <label for="dividendYield">연 배당률 (%)</label>
+                                <input type="number" id="dividendYield" step="0.1" value="3.5">
+                            </div>
+                            <div class="input-group">
+                                <label for="stockGrowth">연 주가 상승률 (%)</label>
+                                <input type="number" id="stockGrowth" step="0.1" value="5.0">
+                            </div>
+                            <div class="input-group">
+                                <label for="duration">투자 기간 (년)</label>
+                                <input type="number" id="duration" value="10">
+                            </div>
+                            <button id="calculateBtn" class="btn-calculate">계산하기</button>
+                        </div>
+                    </section>
+
+                    <section class="results-container">
+                        <div class="summary-stats">
+                            <div class="stat-box">
+                                <span class="label">최종 자산</span>
+                                <div id="finalAsset" class="value">$0</div>
+                            </div>
+                            <div class="stat-box">
+                                <span class="label">총 배당금</span>
+                                <div id="totalDividends" class="value">$0</div>
+                            </div>
+                            <div class="stat-box">
+                                <span class="label">수익률</span>
+                                <div id="totalROI" class="value highlight">0%</div>
+                            </div>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="growthChart"></canvas>
+                        </div>
+                    </section>
+
+                    
                 </main>
             </div>
             </div>

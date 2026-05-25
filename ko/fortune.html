@@ -46,44 +46,13 @@
 <div class="content-with-sidebar">
             <div class="main-content">
                 <main style="max-width: 800px; margin: 0 auto; text-align: center;">
-                    <section class="card fortune-card">
-                        <h2>주식 궁합 확인하기 💖</h2>
-                        <!-- 재미용 기능 면책 고지 -->
-                        <div
-                            style="background:rgba(168,85,247,0.1); border:1px solid rgba(168,85,247,0.3); border-radius:10px; padding:0.6rem 1rem; margin-bottom:1.25rem; font-size:0.82rem; color:#a855f7; display:flex; gap:0.5rem; align-items:center;">
-                            <span>🎉</span>
-                            <span><strong>재미용 기능입니다.</strong> 이 궁합 점수는 이름과 티커 문자열의 해시 알고리즘으로 계산되며, 실제 투자 분석이나 재무 데이터와는
-                                무관합니다.</span>
-                        </div>
-                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">이름과 티커를 입력하고 운명의 종목을 찾아보세요!</p>
-
-
-                        <div class="input-group">
-                            <label for="userName">사용자 이름</label>
-                            <input type="text" id="userName" placeholder="이름을 입력하세요">
-                        </div>
-                        <div class="input-group">
-                            <label for="tickerName">주식 티커</label>
-                            <input type="text" id="tickerName" placeholder="예: AAPL, SCHD, TSLA">
-                        </div>
-
-                        <button onclick="checkCompatibility()" class="btn-calculate">궁합 확인하기</button>
-
-                        <div id="result" class="result-display">
-                            <div id="matchText" style="font-size: 1.25rem; font-weight: 600;">계산 중...</div>
-                            <div id="score" class="score-value">0%</div>
-                            <p id="comment" style="color: var(--text-secondary);"></p>
-                        </div>
-                    </section>
-
-                    <!-- 투자 MBTI 가이드 -->
-                    <section style="margin-top: 4rem; text-align: left;">
+                    <section style="margin-bottom: 4rem; text-align: left;">
                         <h2
-                            style="font-size: 2rem; margin-bottom: 0.75rem; background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-align: center;">
+                            style="font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 0.75rem; background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-align: center;">
                             나의 투자 MBTI: 심리적 안정감이 수익률을 결정한다
                         </h2>
                         <p
-                            style="color: var(--text-secondary); margin-bottom: 3rem; font-size: 1rem; line-height: 1.7; text-align: center;">
+                            style="color: var(--text-secondary); margin-bottom: 3rem; font-size: clamp(0.9rem, 2vw, 1rem); line-height: 1.7; text-align: center;">
                             주식과의 '궁합'은 단순한 재미가 아닙니다. 투자 성향과 종목이 맞지 않으면 멘탈이 흔들리고, 멘탈이 흔들리면 수익률이 무너집니다.
                         </p>
 
@@ -220,6 +189,39 @@
 
                         </div>
                     </section>
+
+<section class="card fortune-card">
+                        <h2>주식 궁합 확인하기 💖</h2>
+                        <!-- 재미용 기능 면책 고지 -->
+                        <div
+                            style="background:rgba(168,85,247,0.1); border:1px solid rgba(168,85,247,0.3); border-radius:10px; padding:0.6rem 1rem; margin-bottom:1.25rem; font-size:0.82rem; color:#a855f7; display:flex; gap:0.5rem; align-items:center;">
+                            <span>🎉</span>
+                            <span><strong>재미용 기능입니다.</strong> 이 궁합 점수는 이름과 티커 문자열의 해시 알고리즘으로 계산되며, 실제 투자 분석이나 재무 데이터와는
+                                무관합니다.</span>
+                        </div>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">이름과 티커를 입력하고 운명의 종목을 찾아보세요!</p>
+
+
+                        <div class="input-group">
+                            <label for="userName">사용자 이름</label>
+                            <input type="text" id="userName" placeholder="이름을 입력하세요">
+                        </div>
+                        <div class="input-group">
+                            <label for="tickerName">주식 티커</label>
+                            <input type="text" id="tickerName" placeholder="예: AAPL, SCHD, TSLA">
+                        </div>
+
+                        <button onclick="checkCompatibility()" class="btn-calculate">궁합 확인하기</button>
+
+                        <div id="result" class="result-display">
+                            <div id="matchText" style="font-size: 1.25rem; font-weight: 600;">계산 중...</div>
+                            <div id="score" class="score-value">0%</div>
+                            <p id="comment" style="color: var(--text-secondary);"></p>
+                        </div>
+                    </section>
+
+                    <!-- 투자 MBTI 가이드 -->
+                    
                 </main>
             </div>
             </div>

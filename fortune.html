@@ -52,48 +52,14 @@
 <div class="content-with-sidebar">
             <div class="main-content">
                 <main style="max-width: 800px; margin: 0 auto; text-align: center;">
-                    <section class="card fortune-card">
-                        <h2>Check Your Compatibility 💖</h2>
-                        <!-- Entertainment Disclaimer -->
-                        <div
-                            style="background:rgba(168,85,247,0.1); border:1px solid rgba(168,85,247,0.3); border-radius:10px; padding:0.6rem 1rem; margin-bottom:1.25rem; font-size:0.82rem; color:#a855f7; display:flex; gap:0.5rem; align-items:center;">
-                            <span>🎉</span>
-                            <span><strong>For entertainment only.</strong> This compatibility score is calculated from a
-                                name/ticker hash algorithm and has no connection to actual investment analysis or
-                                financial data.</span>
-                        </div>
-                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Enter your name and a stock ticker
-                            to see
-                            if you're a perfect match!</p>
-
-
-                        <div class="input-group">
-                            <label for="userName">Your Name</label>
-                            <input type="text" id="userName" placeholder="Enter your name">
-                        </div>
-                        <div class="input-group">
-                            <label for="tickerName">Stock Ticker</label>
-                            <input type="text" id="tickerName" placeholder="e.g. AAPL, SCHD, TSLA">
-                        </div>
-
-                        <button onclick="checkCompatibility()" class="btn-calculate">Reveal Our Destiny</button>
-
-                        <div id="result" class="result-display">
-                            <div id="matchText" style="font-size: 1.25rem; font-weight: 600;">Calculating...</div>
-                            <div id="score" class="score-value">0%</div>
-                            <p id="comment" style="color: var(--text-secondary);"></p>
-                        </div>
-                    </section>
-
-                    <!-- Guide Section: Investment MBTI -->
                     <section
-                        style="margin-top: 4rem; max-width: 800px; margin-left: auto; margin-right: auto; text-align: left;">
+                        style="margin-bottom: 4rem; max-width: 800px; margin-left: auto; margin-right: auto; text-align: left;">
                         <h2
-                            style="font-size: 2rem; margin-bottom: 0.75rem; background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-align: center;">
+                            style="font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 0.75rem; background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-align: center;">
                             My Investment MBTI: Psychological Stability Determines Your Returns
                         </h2>
                         <p
-                            style="color: var(--text-secondary); margin-bottom: 3rem; font-size: 1rem; line-height: 1.7; text-align: center;">
+                            style="color: var(--text-secondary); margin-bottom: 3rem; font-size: clamp(0.9rem, 2vw, 1rem); line-height: 1.7; text-align: center;">
                             Stock "compatibility" isn't just for fun. When your investment style doesn't match your
                             stocks, your
                             mindset crumbles — and when your mindset crumbles, your returns follow.
@@ -261,6 +227,42 @@
 
                         </div>
                     </section>
+
+<section class="card fortune-card">
+                        <h2>Check Your Compatibility 💖</h2>
+                        <!-- Entertainment Disclaimer -->
+                        <div
+                            style="background:rgba(168,85,247,0.1); border:1px solid rgba(168,85,247,0.3); border-radius:10px; padding:0.6rem 1rem; margin-bottom:1.25rem; font-size:0.82rem; color:#a855f7; display:flex; gap:0.5rem; align-items:center;">
+                            <span>🎉</span>
+                            <span><strong>For entertainment only.</strong> This compatibility score is calculated from a
+                                name/ticker hash algorithm and has no connection to actual investment analysis or
+                                financial data.</span>
+                        </div>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Enter your name and a stock ticker
+                            to see
+                            if you're a perfect match!</p>
+
+
+                        <div class="input-group">
+                            <label for="userName">Your Name</label>
+                            <input type="text" id="userName" placeholder="Enter your name">
+                        </div>
+                        <div class="input-group">
+                            <label for="tickerName">Stock Ticker</label>
+                            <input type="text" id="tickerName" placeholder="e.g. AAPL, SCHD, TSLA">
+                        </div>
+
+                        <button onclick="checkCompatibility()" class="btn-calculate">Reveal Our Destiny</button>
+
+                        <div id="result" class="result-display">
+                            <div id="matchText" style="font-size: 1.25rem; font-weight: 600;">Calculating...</div>
+                            <div id="score" class="score-value">0%</div>
+                            <p id="comment" style="color: var(--text-secondary);"></p>
+                        </div>
+                    </section>
+
+                    <!-- Guide Section: Investment MBTI -->
+                    
                 </main>
             </div>
             </div>

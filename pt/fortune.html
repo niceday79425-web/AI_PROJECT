@@ -46,46 +46,13 @@
 <div class="content-with-sidebar">
             <div class="main-content">
                 <main style="max-width: 800px; margin: 0 auto; text-align: center;">
-                    <section class="card fortune-card">
-                        <h2>Verifique sua Compatibilidade com a Ação 💖</h2>
-                        <!-- Aviso: apenas entretenimento -->
-                        <div
-                            style="background:rgba(168,85,247,0.1); border:1px solid rgba(168,85,247,0.3); border-radius:10px; padding:0.6rem 1rem; margin-bottom:1.25rem; font-size:0.82rem; color:#a855f7; display:flex; gap:0.5rem; align-items:center;">
-                            <span>🎉</span>
-                            <span><strong>Apenas para diversão.</strong> Esta pontuação de compatibilidade é calculada
-                                por um algoritmo de hash de nome/ticker e não tem nenhuma relação com análise de
-                                investimentos ou dados financeiros reais.</span>
-                        </div>
-                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Digite seu nome e o ticker da ação
-                            para ver se vocês são o par perfeito!</p>
-
-
-                        <div class="input-group">
-                            <label for="userName">Seu Nome</label>
-                            <input type="text" id="userName" placeholder="Digite seu nome">
-                        </div>
-                        <div class="input-group">
-                            <label for="tickerName">Ticker da Ação</label>
-                            <input type="text" id="tickerName" placeholder="Ex: AAPL, SCHD, TSLA">
-                        </div>
-
-                        <button onclick="checkCompatibility()" class="btn-calculate">Revelar Nosso Destino</button>
-
-                        <div id="result" class="result-display">
-                            <div id="matchText" style="font-size: 1.25rem; font-weight: 600;">Calculando...</div>
-                            <div id="score" class="score-value">0%</div>
-                            <p id="comment" style="color: var(--text-secondary);"></p>
-                        </div>
-                    </section>
-
-                    <!-- Guia: MBTI do Investidor -->
-                    <section style="margin-top: 4rem; text-align: left;">
+                    <section style="margin-bottom: 4rem; text-align: left;">
                         <h2
-                            style="font-size: 2rem; margin-bottom: 0.75rem; background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-align: center;">
+                            style="font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 0.75rem; background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-align: center;">
                             Meu MBTI de Investidor: A Estabilidade Psicológica Determina os Retornos
                         </h2>
                         <p
-                            style="color: var(--text-secondary); margin-bottom: 3rem; font-size: 1rem; line-height: 1.7; text-align: center;">
+                            style="color: var(--text-secondary); margin-bottom: 3rem; font-size: clamp(0.9rem, 2vw, 1rem); line-height: 1.7; text-align: center;">
                             A "compatibilidade" com uma ação não é só diversão. Quando o perfil do investidor não
                             combina com o ativo, a instabilidade emocional entra em jogo — e isso destrói os retornos.
                         </p>
@@ -236,6 +203,41 @@
 
                         </div>
                     </section>
+
+<section class="card fortune-card">
+                        <h2>Verifique sua Compatibilidade com a Ação 💖</h2>
+                        <!-- Aviso: apenas entretenimento -->
+                        <div
+                            style="background:rgba(168,85,247,0.1); border:1px solid rgba(168,85,247,0.3); border-radius:10px; padding:0.6rem 1rem; margin-bottom:1.25rem; font-size:0.82rem; color:#a855f7; display:flex; gap:0.5rem; align-items:center;">
+                            <span>🎉</span>
+                            <span><strong>Apenas para diversão.</strong> Esta pontuação de compatibilidade é calculada
+                                por um algoritmo de hash de nome/ticker e não tem nenhuma relação com análise de
+                                investimentos ou dados financeiros reais.</span>
+                        </div>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Digite seu nome e o ticker da ação
+                            para ver se vocês são o par perfeito!</p>
+
+
+                        <div class="input-group">
+                            <label for="userName">Seu Nome</label>
+                            <input type="text" id="userName" placeholder="Digite seu nome">
+                        </div>
+                        <div class="input-group">
+                            <label for="tickerName">Ticker da Ação</label>
+                            <input type="text" id="tickerName" placeholder="Ex: AAPL, SCHD, TSLA">
+                        </div>
+
+                        <button onclick="checkCompatibility()" class="btn-calculate">Revelar Nosso Destino</button>
+
+                        <div id="result" class="result-display">
+                            <div id="matchText" style="font-size: 1.25rem; font-weight: 600;">Calculando...</div>
+                            <div id="score" class="score-value">0%</div>
+                            <p id="comment" style="color: var(--text-secondary);"></p>
+                        </div>
+                    </section>
+
+                    <!-- Guia: MBTI do Investidor -->
+                    
                 </main>
             </div>
             </div>
