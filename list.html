@@ -136,68 +136,12 @@
 <div class="content-with-sidebar">
             <div class="main-content">
                 <main>
-            <section class="card">
-                <h2>🏆 Premium Dividend Insights (Scouter)</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
-                    Analyze top 50+ dividend stocks with our proprietary grading system. Hover the <span
-                        class="tip-icon" style="display:inline-flex;">?</span> icons for metric explanations.
-                </p>
-                                <!-- Metric Legend / Tooltip Guide -->
-                <div style="display:flex; flex-wrap:wrap; gap:0.65rem; margin-bottom:1.5rem; font-size:0.8rem;">
-                    <span class="tip">Annual Dividend<span class="tip-icon">?</span><span class="tip-box"><strong>Forward Dividend</strong><br>Estimated annual amount per share based on the latest announced quarterly dividend.</span></span>
-                    <span style="color:var(--border-color)">|</span>
-                    <span class="tip">Dividend Yield<span class="tip-icon">?</span><span class="tip-box"><strong>Yield</strong><br>Target: 2&ndash;6%. Danger zone (&gt;8%) especially when payout ratio is abnormally high, which often indicates a Dividend Trap.</span></span>
-                    <span style="color:var(--border-color)">|</span>
-                    <span class="tip">Payout Ratio<span class="tip-icon">?</span><span class="tip-box"><strong>Payout Ratio</strong><br>Earnings paid as dividends. REITs focus on FFO instead of net income and legally must distribute &gt;90%, making higher ratios normal for them.</span></span>
-                    <span style="color:var(--border-color)">|</span>
-                    <span class="tip">FCF Cover<span class="tip-icon">?</span><span class="tip-box"><strong>FCF Coverage</strong><br>Free Cash Flow &divide; Dividends Paid. The gold standard of dividend safety, removing accounting illusions. (&gt;1.5x = Safe / &lt;1.0x = Danger)</span></span>
-                    <span style="color:var(--border-color)">|</span>
-                    <span class="tip">Growth Streak<span class="tip-icon">?</span><span class="tip-box"><strong>Consecutive Dividend Growth</strong><br>Years the company has consecutively increased its dividend without freezing or cutting it.</span></span>
-                    <span style="color:var(--border-color)">|</span>
-                    <span class="tip">Grade<span class="tip-icon">?</span><span class="tip-box"><strong>WiseAIWiseU Grade</strong><br>Proprietary score combining past record (Streak) and current financial health (FCF, Payout).</span></span>
-                </div>
-
-                <!-- Controls -->
-                <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                    <input type="text" id="searchBox" placeholder="Search by ticker or name..."
-                        style="flex: 1; min-width: 200px; padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
-                    <select id="gradeFilter"
-                        style="padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
-                        <option value="all">All Grades</option>
-                        <option value="S등급">S-Tier (Premium)</option>
-                        <option value="A등급">A-Tier (Excellent)</option>
-                        <option value="B등급">B-Tier (Good)</option>
-                        <option value="C등급">C-Tier (Fair)</option>
-                    </select>
-                    <select id="sortBy"
-                        style="padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
-                        <option value="yield">Sort by Yield</option>
-                        <option value="grade">Sort by Grade</option>
-                        <option value="fcf">Sort by FCF Coverage</option>
-                        <option value="streak">Sort by Growth Streak</option>
-                        <option value="ticker">Sort by Ticker</option>
-                    </select>
-                </div>
-
-                <div id="stockGrid" class="stock-grid">
-                    <div style="grid-column: 1/-1; padding: 4rem; text-align: center; color: var(--text-secondary);">
-                        <i class="fas fa-spinner fa-spin" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-                        <p>Loading data...</p>
-                    </div>
-                </div>
-
-                <p id="stockCount"
-                    style="margin-top: 2rem; color: var(--text-secondary); font-size: 0.9rem; text-align: right; border-top: 1px solid var(--border-color); padding-top: 1rem;">
-                    Showing 0 stocks
-                </p>
-            </section>
-
             <!-- Guide Section -->
-            <section class="guide-section" style="margin-top: 4rem; padding: 0 0 2rem;">
-                <h2 style="font-size: 2rem; margin-bottom: 0.75rem; background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+            <section class="guide-section" style="margin-bottom: 4rem; padding: 0 0 2rem;">
+                <h2 style="font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 0.75rem; background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
                     Dividend Scouter 100% Guide: Your Blueprint for Finding Quality Dividend Stocks
                 </h2>
-                <p style="color: var(--text-secondary); margin-bottom: 3rem; font-size: 1rem; line-height: 1.7;">
+                <p style="color: var(--text-secondary); margin-bottom: 3rem; font-size: clamp(0.9rem, 2vw, 1rem); line-height: 1.7;">
                     Choosing stocks based on dividend yield alone is risky. Check these 3 key metrics together to identify truly high-quality dividend stocks. Click each card to learn more.
                 </p>
                 <div class="guide-grid">
@@ -263,6 +207,63 @@
                     </div>
                 </div>
             </section>
+
+            <section class="card">
+                <h2>🏆 Premium Dividend Insights (Scouter)</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
+                    Analyze top 50+ dividend stocks with our proprietary grading system. Hover the <span
+                        class="tip-icon" style="display:inline-flex;">?</span> icons for metric explanations.
+                </p>
+                                <!-- Metric Legend / Tooltip Guide -->
+                <div style="display:flex; flex-wrap:wrap; gap:0.65rem; margin-bottom:1.5rem; font-size:0.8rem;">
+                    <span class="tip">Annual Dividend<span class="tip-icon">?</span><span class="tip-box"><strong>Forward Dividend</strong><br>Estimated annual amount per share based on the latest announced quarterly dividend.</span></span>
+                    <span style="color:var(--border-color)">|</span>
+                    <span class="tip">Dividend Yield<span class="tip-icon">?</span><span class="tip-box"><strong>Yield</strong><br>Target: 2&ndash;6%. Danger zone (&gt;8%) especially when payout ratio is abnormally high, which often indicates a Dividend Trap.</span></span>
+                    <span style="color:var(--border-color)">|</span>
+                    <span class="tip">Payout Ratio<span class="tip-icon">?</span><span class="tip-box"><strong>Payout Ratio</strong><br>Earnings paid as dividends. REITs focus on FFO instead of net income and legally must distribute &gt;90%, making higher ratios normal for them.</span></span>
+                    <span style="color:var(--border-color)">|</span>
+                    <span class="tip">FCF Cover<span class="tip-icon">?</span><span class="tip-box"><strong>FCF Coverage</strong><br>Free Cash Flow &divide; Dividends Paid. The gold standard of dividend safety, removing accounting illusions. (&gt;1.5x = Safe / &lt;1.0x = Danger)</span></span>
+                    <span style="color:var(--border-color)">|</span>
+                    <span class="tip">Growth Streak<span class="tip-icon">?</span><span class="tip-box"><strong>Consecutive Dividend Growth</strong><br>Years the company has consecutively increased its dividend without freezing or cutting it.</span></span>
+                    <span style="color:var(--border-color)">|</span>
+                    <span class="tip">Grade<span class="tip-icon">?</span><span class="tip-box"><strong>WiseAIWiseU Grade</strong><br>Proprietary score combining past record (Streak) and current financial health (FCF, Payout).</span></span>
+                </div>
+
+                <!-- Controls -->
+                <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                    <input type="text" id="searchBox" placeholder="Search by ticker or name..."
+                        style="flex: 1; min-width: 200px; padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
+                    <select id="gradeFilter"
+                        style="padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
+                        <option value="all">All Grades</option>
+                        <option value="S등급">S-Tier (Premium)</option>
+                        <option value="A등급">A-Tier (Excellent)</option>
+                        <option value="B등급">B-Tier (Good)</option>
+                        <option value="C등급">C-Tier (Fair)</option>
+                    </select>
+                    <select id="sortBy"
+                        style="padding: 0.75rem; border: 1px solid #333; background: #1a1a1a; color: white; border-radius: 8px;">
+                        <option value="yield">Sort by Yield</option>
+                        <option value="grade">Sort by Grade</option>
+                        <option value="fcf">Sort by FCF Coverage</option>
+                        <option value="streak">Sort by Growth Streak</option>
+                        <option value="ticker">Sort by Ticker</option>
+                    </select>
+                </div>
+
+                <div id="stockGrid" class="stock-grid">
+                    <div style="grid-column: 1/-1; padding: 4rem; text-align: center; color: var(--text-secondary);">
+                        <i class="fas fa-spinner fa-spin" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                        <p>Loading data...</p>
+                    </div>
+                </div>
+
+                <p id="stockCount"
+                    style="margin-top: 2rem; color: var(--text-secondary); font-size: 0.9rem; text-align: right; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+                    Showing 0 stocks
+                </p>
+            </section>
+
             <div id="guideModal" class="guide-modal" onclick="if(event.target===this)closeGuideModal()">
                 <div class="guide-modal-content">
                     <button class="guide-modal-close" onclick="closeGuideModal()" aria-label="Close">✕</button>
