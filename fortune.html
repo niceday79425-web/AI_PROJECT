@@ -65,19 +65,50 @@
                             mindset crumbles — and when your mindset crumbles, your returns follow.
                         </p>
 
-                        <div style="display: grid; gap: 2rem;">
-
-                            <!-- Guide Card 1: Why Compatibility Matters -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #ec4899; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
+                        <div class="guide-grid">
+                    <div class="guide-card-new" onclick="openGuideModal(1)" role="button" tabindex="0">
+                        <div>
+                            <h3
                                     style="font-size: 1.3rem; color: #ec4899; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
                                     <span
                                         style="background: rgba(236,72,153,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
                                     Why Does Stock "Compatibility" Matter?
                                 </h3>
-                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
+                            <p>According to behavioral economics research, the primary reason most retail investo...</p>
+                        </div>
+                        <span class="read-more">Read more →</span>
+                    </div>
+                    <div class="guide-card-new" onclick="openGuideModal(2)" role="button" tabindex="0">
+                        <div>
+                            <h3
+                                    style="font-size: 1.3rem; color: #f59e0b; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <span
+                                        style="background: rgba(245,158,11,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">02</span>
+                                    Value Investing vs Growth Investing vs Dividend Investing
+                                </h3>
+                            <p>📊 Value Investing Discover undervalued companies trading below intrinsic value and...</p>
+                        </div>
+                        <span class="read-more">Read more →</span>
+                    </div>
+                    <div class="guide-card-new" onclick="openGuideModal(3)" role="button" tabindex="0">
+                        <div>
+                            <h3
+                                    style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <span
+                                        style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">03</span>
+                                    The Sleep-Well-At-Night Method for Surviving Bear Markets
+                                </h3>
+                            <p>Legendary investor Peter Lynch once said: "Before you buy a stock, ask yourself: '...</p>
+                        </div>
+                        <span class="read-more">Read more →</span>
+                    </div>
+                </div>
+                <div id="guide-detail-1" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
+                                        style="background: rgba(236,72,153,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
+                                    Why Does Stock "Compatibility" Matter?</h3>
+                    <div class="guide-modal-body">
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
                                     According to behavioral economics research, the primary reason most retail investors
                                     lose
                                     money isn't lack of information — it's <strong
@@ -103,19 +134,15 @@
                                         → repeat
                                     </div>
                                 </div>
-                            </div>
-
-                            <!-- Guide Card 2: Investment Styles -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #f59e0b; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
-                                    style="font-size: 1.3rem; color: #f59e0b; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                                    <span
+                            
+                    </div>
+                </div>
+                <div id="guide-detail-2" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
                                         style="background: rgba(245,158,11,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">02</span>
-                                    Value Investing vs Growth Investing vs Dividend Investing
-                                </h3>
-                                <div
+                                    Value Investing vs Growth Investing vs Dividend Investing</h3>
+                    <div class="guide-modal-body">
+                        <div
                                     style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.25rem;">
                                     <div
                                         style="padding: 1.25rem; background: rgba(59,130,246,0.06); border-radius: 12px; border: 1px solid rgba(59,130,246,0.2);">
@@ -165,19 +192,15 @@
                                     with the
                                     longest.
                                 </p>
-                            </div>
-
-                            <!-- Guide Card 3: Sleep-Well Investing -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #10b981; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
-                                    style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                                    <span
+                            
+                    </div>
+                </div>
+                <div id="guide-detail-3" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
                                         style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">03</span>
-                                    The Sleep-Well-At-Night Method for Surviving Bear Markets
-                                </h3>
-                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
+                                    The Sleep-Well-At-Night Method for Surviving Bear Markets</h3>
+                    <div class="guide-modal-body">
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
                                     Legendary investor Peter Lynch once said: <em
                                         style="color: var(--text-primary);">"Before
                                         you buy a stock, ask yourself: 'Could I still hold this if the price dropped
@@ -223,9 +246,10 @@
                                     would I do?"
                                     — Your honest answer defines your investment style.
                                 </div>
-                            </div>
+                            
+                    </div>
+                </div>
 
-                        </div>
                     </section>
 
 <section class="card fortune-card">
@@ -263,6 +287,14 @@
 
                     <!-- Guide Section: Investment MBTI -->
                     
+                
+            <div id="guideModal" class="guide-modal" onclick="if(event.target===this)closeGuideModal()">
+                <div class="guide-modal-content">
+                    <button class="guide-modal-close" onclick="closeGuideModal()" aria-label="닫기">✕</button>
+                    <div id="guideModalBody"></div>
+                </div>
+            </div>
+            
                 </main>
             </div>
             </div>
@@ -404,6 +436,28 @@
                     <p style="font-size:0.75rem; color:#475569; margin-top:0.9rem; font-style:italic;">Disclaimer: For entertainment only. Not financial advice. Research all investments thoroughly.</p>
                 </div>`;
         }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!window.openGuideModal) {
+                window.openGuideModal = function(id) {
+                    const detail = document.getElementById('guide-detail-' + id);
+                    const modal = document.getElementById('guideModal');
+                    const body = document.getElementById('guideModalBody');
+                    if (detail && modal && body) {
+                        body.innerHTML = detail.innerHTML;
+                        modal.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    }
+                };
+                window.closeGuideModal = function() {
+                    const modal = document.getElementById('guideModal');
+                    if (modal) { modal.classList.remove('active'); document.body.style.overflow = ''; }
+                };
+                document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeGuideModal(); });
+            }
+        });
     </script>
 </body>
 

@@ -63,19 +63,50 @@
                             principles.
                         </p>
 
-                        <div style="display: grid; gap: 2rem;">
-
-                            <!-- Guide Card 1: Simple vs Compound -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #f59e0b; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
+                        <div class="guide-grid">
+                    <div class="guide-card-new" onclick="openGuideModal(1)" role="button" tabindex="0">
+                        <div>
+                            <h3
                                     style="font-size: 1.3rem; color: #f59e0b; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
                                     <span
                                         style="background: rgba(245,158,11,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
                                     The Critical Difference Between Simple and Compound Interest
                                 </h3>
-                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
+                            <p>Simple Interest accrues only on the original principal.</p>
+                        </div>
+                        <span class="read-more">Read more →</span>
+                    </div>
+                    <div class="guide-card-new" onclick="openGuideModal(2)" role="button" tabindex="0">
+                        <div>
+                            <h3
+                                    style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <span
+                                        style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">02</span>
+                                    The Snowball Effect Created by Dividend Reinvestment (DRIP)
+                                </h3>
+                            <p>A DRIP (Dividend Reinvestment Plan) automatically uses the dividends you receive t...</p>
+                        </div>
+                        <span class="read-more">Read more →</span>
+                    </div>
+                    <div class="guide-card-new" onclick="openGuideModal(3)" role="button" tabindex="0">
+                        <div>
+                            <h3
+                                    style="font-size: 1.3rem; color: #a855f7; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <span
+                                        style="background: rgba(168,85,247,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">03</span>
+                                    Yield on Cost (YoC): Your Weapon Against Inflation
+                                </h3>
+                            <p>Yield on Cost (YoC) is the ratio of the dividends you currently receive relative t...</p>
+                        </div>
+                        <span class="read-more">Read more →</span>
+                    </div>
+                </div>
+                <div id="guide-detail-1" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
+                                        style="background: rgba(245,158,11,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
+                                    The Critical Difference Between Simple and Compound Interest</h3>
+                    <div class="guide-modal-body">
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
                                     <strong style="color: var(--text-primary);">Simple Interest</strong> accrues only on
                                     the original principal. Investing $10,000 at 5% per year yields $500 annually —
                                     $5,000 in interest over 10 years. <strong style="color: #f59e0b;">Compound
@@ -106,19 +137,15 @@
                                         <div style="font-size: 1.4rem; font-weight: 800; color: #f59e0b;">+332%</div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <!-- Guide Card 2: DRIP -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #10b981; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
-                                    style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                                    <span
+                            
+                    </div>
+                </div>
+                <div id="guide-detail-2" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
                                         style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">02</span>
-                                    The Snowball Effect Created by Dividend Reinvestment (DRIP)
-                                </h3>
-                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
+                                    The Snowball Effect Created by Dividend Reinvestment (DRIP)</h3>
+                    <div class="guide-modal-body">
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
                                     A <strong style="color: var(--text-primary);">DRIP (Dividend Reinvestment
                                         Plan)</strong> automatically uses the dividends you receive to purchase
                                     fractional shares of the same stock. This virtuous cycle is the very essence of the
@@ -158,19 +185,15 @@
                                     dividends instead of withdrawing them can grow your final wealth by tens of
                                     percentage points more.
                                 </p>
-                            </div>
-
-                            <!-- Guide Card 3: Yield on Cost -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #a855f7; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
-                                    style="font-size: 1.3rem; color: #a855f7; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                                    <span
+                            
+                    </div>
+                </div>
+                <div id="guide-detail-3" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
                                         style="background: rgba(168,85,247,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">03</span>
-                                    Yield on Cost (YoC): Your Weapon Against Inflation
-                                </h3>
-                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
+                                    Yield on Cost (YoC): Your Weapon Against Inflation</h3>
+                    <div class="guide-modal-body">
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
                                     <strong style="color: var(--text-primary);">Yield on Cost (YoC)</strong> is the
                                     ratio of the dividends you currently receive relative to the price you originally
                                     paid (your cost basis). Unlike the current market yield, YoC measures returns
@@ -202,18 +225,13 @@
                                     💡 <strong>Rule of 72:</strong> 72 ÷ Annual Dividend Growth Rate (%) = Years for
                                     Dividend to Double
                                 </div>
-                            </div>
+                            
+                    </div>
+                </div>
 
-                        </div>
 
                         <!-- Quote -->
-                        <div
-                            style="margin-top: 2.5rem; background: var(--glass-bg); padding: 1.75rem; border-left: 4px solid var(--success); border-radius: 12px;">
-                            <p style="font-style: italic; color: #fff; line-height: 1.8;">
-                                "My wealth has come from a combination of living in America, some lucky genes, and
-                                compound interest." — Warren Buffett
-                            </p>
-                        </div>
+                        
                     </section>
 
 <section class="calculator-card">
@@ -268,6 +286,14 @@
                     </section>
 
                     
+                
+            <div id="guideModal" class="guide-modal" onclick="if(event.target===this)closeGuideModal()">
+                <div class="guide-modal-content">
+                    <button class="guide-modal-close" onclick="closeGuideModal()" aria-label="닫기">✕</button>
+                    <div id="guideModalBody"></div>
+                </div>
+            </div>
+            
                 </main>
             </div>
             </div>
@@ -377,6 +403,14 @@
                             </p>
                         </div>
                     </section>
+                
+            <div id="guideModal" class="guide-modal" onclick="if(event.target===this)closeGuideModal()">
+                <div class="guide-modal-content">
+                    <button class="guide-modal-close" onclick="closeGuideModal()" aria-label="닫기">✕</button>
+                    <div id="guideModalBody"></div>
+                </div>
+            </div>
+            
                 </main>
             </div>
 
@@ -403,6 +437,28 @@
         </footer>
     </div>
     <script src="js/calculator.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!window.openGuideModal) {
+                window.openGuideModal = function(id) {
+                    const detail = document.getElementById('guide-detail-' + id);
+                    const modal = document.getElementById('guideModal');
+                    const body = document.getElementById('guideModalBody');
+                    if (detail && modal && body) {
+                        body.innerHTML = detail.innerHTML;
+                        modal.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    }
+                };
+                window.closeGuideModal = function() {
+                    const modal = document.getElementById('guideModal');
+                    if (modal) { modal.classList.remove('active'); document.body.style.overflow = ''; }
+                };
+                document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeGuideModal(); });
+            }
+        });
+    </script>
 </body>
 
 </html>

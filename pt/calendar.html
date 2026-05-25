@@ -58,19 +58,50 @@
                             preciso de cada data. Veja os 3 conceitos que mais geram confusão.
                         </p>
 
-                        <div style="display: grid; gap: 2rem;">
-
-                            <!-- Cartão 1: Data Ex-Dividendo -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #3b82f6; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
+                        <div class="guide-grid">
+                    <div class="guide-card-new" onclick="openGuideModal(1)" role="button" tabindex="0">
+                        <div>
+                            <h3
                                     style="font-size: 1.3rem; color: #3b82f6; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
                                     <span
                                         style="background: rgba(59,130,246,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
                                     O Significado Exato da Data Ex-Dividendo
                                 </h3>
-                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
+                            <p>Muitos investidores sabem que "é preciso comprar antes da Data Ex-Dividendo para r...</p>
+                        </div>
+                        <span class="read-more">Saber mais →</span>
+                    </div>
+                    <div class="guide-card-new" onclick="openGuideModal(2)" role="button" tabindex="0">
+                        <div>
+                            <h3
+                                    style="font-size: 1.3rem; color: #a855f7; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <span
+                                        style="background: rgba(168,85,247,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">02</span>
+                                    Diferença Entre Data de Declaração, Data de Registro e Data de Pagamento
+                                </h3>
+                            <p>📢 Data de Declaração O conselho de administração anuncia oficialmente o pagamento ...</p>
+                        </div>
+                        <span class="read-more">Saber mais →</span>
+                    </div>
+                    <div class="guide-card-new" onclick="openGuideModal(3)" role="button" tabindex="0">
+                        <div>
+                            <h3
+                                    style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <span
+                                        style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">03</span>
+                                    Montando um Portfólio de Dividendos Mensais com Ações Trimestrais
+                                </h3>
+                            <p>Mesmo sem ETFs de dividendos mensais, é possível combinar 3 grupos de ações trimes...</p>
+                        </div>
+                        <span class="read-more">Saber mais →</span>
+                    </div>
+                </div>
+                <div id="guide-detail-1" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
+                                        style="background: rgba(59,130,246,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
+                                    O Significado Exato da Data Ex-Dividendo</h3>
+                    <div class="guide-modal-body">
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
                                     Muitos investidores sabem que "é preciso comprar antes da Data Ex-Dividendo para
                                     receber o dividendo" — e isso está correto. A <strong
                                         style="color: var(--text-primary);">Data Ex-Dividendo (Ex-Dividend
@@ -112,19 +143,15 @@
                                     otimização fiscal, porém, o ideal é manter as ações por um período mais longo do que
                                     apenas capturar dividendos.
                                 </p>
-                            </div>
-
-                            <!-- Cartão 2: Datas do Dividendo -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #a855f7; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
-                                    style="font-size: 1.3rem; color: #a855f7; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                                    <span
+                            
+                    </div>
+                </div>
+                <div id="guide-detail-2" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
                                         style="background: rgba(168,85,247,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">02</span>
-                                    Diferença Entre Data de Declaração, Data de Registro e Data de Pagamento
-                                </h3>
-                                <div
+                                    Diferença Entre Data de Declaração, Data de Registro e Data de Pagamento</h3>
+                    <div class="guide-modal-body">
+                        <div
                                     style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.25rem;">
                                     <div
                                         style="padding: 1.25rem; background: rgba(168,85,247,0.06); border-radius: 12px; border: 1px solid rgba(168,85,247,0.2);">
@@ -165,19 +192,15 @@
                                     💡 <strong>Ordem resumida:</strong> Data de Declaração → Data Ex-Dividendo → Data de
                                     Registro → Data de Pagamento
                                 </div>
-                            </div>
-
-                            <!-- Cartão 3: Portfólio de Dividendos Mensais -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #10b981; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
-                                    style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                                    <span
+                            
+                    </div>
+                </div>
+                <div id="guide-detail-3" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
                                         style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">03</span>
-                                    Montando um Portfólio de Dividendos Mensais com Ações Trimestrais
-                                </h3>
-                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
+                                    Montando um Portfólio de Dividendos Mensais com Ações Trimestrais</h3>
+                    <div class="guide-modal-body">
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
                                     Mesmo sem ETFs de dividendos mensais, é possível <strong
                                         style="color: var(--text-primary);">combinar 3 grupos de ações trimestrais com
                                         meses de pagamento diferentes</strong> para receber dividendos todo mês. A
@@ -242,9 +265,10 @@
                                         style="color: #10b981; font-weight: 700;">Rastreador de Dividendos</a> para
                                     filtrar as melhores ações de cada grupo e verificar os meses de pagamento.
                                 </div>
-                            </div>
+                            
+                    </div>
+                </div>
 
-                        </div>
                     </section>
 
 <section class="card" style="padding: 1.5rem;">
@@ -454,6 +478,14 @@
 
 
                     
+                
+            <div id="guideModal" class="guide-modal" onclick="if(event.target===this)closeGuideModal()">
+                <div class="guide-modal-content">
+                    <button class="guide-modal-close" onclick="closeGuideModal()" aria-label="닫기">✕</button>
+                    <div id="guideModalBody"></div>
+                </div>
+            </div>
+            
                 </main>
             </div>
             </div>
@@ -478,6 +510,28 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!window.openGuideModal) {
+                window.openGuideModal = function(id) {
+                    const detail = document.getElementById('guide-detail-' + id);
+                    const modal = document.getElementById('guideModal');
+                    const body = document.getElementById('guideModalBody');
+                    if (detail && modal && body) {
+                        body.innerHTML = detail.innerHTML;
+                        modal.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    }
+                };
+                window.closeGuideModal = function() {
+                    const modal = document.getElementById('guideModal');
+                    if (modal) { modal.classList.remove('active'); document.body.style.overflow = ''; }
+                };
+                document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeGuideModal(); });
+            }
+        });
+    </script>
 </body>
 
 </html>

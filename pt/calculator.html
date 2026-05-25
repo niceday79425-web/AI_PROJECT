@@ -60,19 +60,50 @@
                             longo prazo muda completamente. Conheça os três princípios fundamentais dos juros compostos.
                         </p>
 
-                        <div style="display: grid; gap: 2rem;">
-
-                            <!-- Cartão 1: Juros Simples vs Compostos -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #f59e0b; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
+                        <div class="guide-grid">
+                    <div class="guide-card-new" onclick="openGuideModal(1)" role="button" tabindex="0">
+                        <div>
+                            <h3
                                     style="font-size: 1.3rem; color: #f59e0b; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
                                     <span
                                         style="background: rgba(245,158,11,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
                                     A Diferença Crucial Entre Juros Simples e Compostos
                                 </h3>
-                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
+                            <p>Os Juros Simples incidem apenas sobre o capital inicial.</p>
+                        </div>
+                        <span class="read-more">Saber mais →</span>
+                    </div>
+                    <div class="guide-card-new" onclick="openGuideModal(2)" role="button" tabindex="0">
+                        <div>
+                            <h3
+                                    style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <span
+                                        style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">02</span>
+                                    O Efeito Snowball Criado pelo Reinvestimento de Dividendos (DRIP)
+                                </h3>
+                            <p>O DRIP (Dividend Reinvestment Plan) é um programa que usa automaticamente os divid...</p>
+                        </div>
+                        <span class="read-more">Saber mais →</span>
+                    </div>
+                    <div class="guide-card-new" onclick="openGuideModal(3)" role="button" tabindex="0">
+                        <div>
+                            <h3
+                                    style="font-size: 1.3rem; color: #a855f7; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <span
+                                        style="background: rgba(168,85,247,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">03</span>
+                                    Yield on Cost (YoC): Batendo a Inflação com Crescimento de Dividendos
+                                </h3>
+                            <p>O Yield on Cost (YoC) é o rendimento de dividendos calculado sobre o seu preço de ...</p>
+                        </div>
+                        <span class="read-more">Saber mais →</span>
+                    </div>
+                </div>
+                <div id="guide-detail-1" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
+                                        style="background: rgba(245,158,11,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
+                                    A Diferença Crucial Entre Juros Simples e Compostos</h3>
+                    <div class="guide-modal-body">
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
                                     Os <strong style="color: var(--text-primary);">Juros Simples</strong> incidem apenas
                                     sobre o capital inicial. Investindo R$10.000 a 5% ao ano, você recebe R$500 por ano
                                     — após 10 anos, R$5.000 em juros. Já os <strong style="color: #f59e0b;">Juros
@@ -102,19 +133,15 @@
                                         <div style="font-size: 1.4rem; font-weight: 800; color: #f59e0b;">+332%</div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <!-- Cartão 2: DRIP -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #10b981; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
-                                    style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                                    <span
+                            
+                    </div>
+                </div>
+                <div id="guide-detail-2" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
                                         style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">02</span>
-                                    O Efeito Snowball Criado pelo Reinvestimento de Dividendos (DRIP)
-                                </h3>
-                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
+                                    O Efeito Snowball Criado pelo Reinvestimento de Dividendos (DRIP)</h3>
+                    <div class="guide-modal-body">
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
                                     O <strong style="color: var(--text-primary);">DRIP (Dividend Reinvestment
                                         Plan)</strong> é um programa que usa automaticamente os dividendos recebidos
                                     para comprar mais ações da mesma empresa — inclusive frações. Esse ciclo virtuoso é
@@ -153,19 +180,15 @@
                                     refletido no cálculo. Você ficará surpreso com o quanto o patrimônio final cresce
                                     apenas pelo reinvestimento.
                                 </p>
-                            </div>
-
-                            <!-- Cartão 3: Yield on Cost -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #a855f7; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
-                                    style="font-size: 1.3rem; color: #a855f7; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                                    <span
+                            
+                    </div>
+                </div>
+                <div id="guide-detail-3" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
                                         style="background: rgba(168,85,247,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">03</span>
-                                    Yield on Cost (YoC): Batendo a Inflação com Crescimento de Dividendos
-                                </h3>
-                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
+                                    Yield on Cost (YoC): Batendo a Inflação com Crescimento de Dividendos</h3>
+                    <div class="guide-modal-body">
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
                                     O <strong style="color: var(--text-primary);">Yield on Cost (YoC)</strong> é o
                                     rendimento de dividendos calculado sobre o seu preço de compra original — não sobre
                                     o preço atual de mercado. Para investidores de longo prazo, é uma das métricas mais
@@ -194,18 +217,13 @@
                                     💡 <strong>Regra dos 72:</strong> 72 ÷ Taxa de Crescimento Anual dos Dividendos (%)
                                     = Anos para dobrar o dividendo
                                 </div>
-                            </div>
+                            
+                    </div>
+                </div>
 
-                        </div>
 
                         <!-- Citação -->
-                        <div
-                            style="margin-top: 2.5rem; background: var(--glass-bg); padding: 1.75rem; border-left: 4px solid var(--success); border-radius: 12px;">
-                            <p style="font-style: italic; color: #fff; line-height: 1.8;">
-                                "Minha riqueza veio de uma combinação de viver na América, alguns genes de sorte e juros
-                                compostos." — Warren Buffett
-                            </p>
-                        </div>
+                        
                     </section>
 
 <section class="calculator-card">
@@ -339,6 +357,14 @@
                             </p>
                         </div>
                     </section>
+                
+            <div id="guideModal" class="guide-modal" onclick="if(event.target===this)closeGuideModal()">
+                <div class="guide-modal-content">
+                    <button class="guide-modal-close" onclick="closeGuideModal()" aria-label="닫기">✕</button>
+                    <div id="guideModalBody"></div>
+                </div>
+            </div>
+            
                 </main>
             </div>
             </div>
@@ -364,6 +390,28 @@
         </footer>
     </div>
     <script src="../js/calculator.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!window.openGuideModal) {
+                window.openGuideModal = function(id) {
+                    const detail = document.getElementById('guide-detail-' + id);
+                    const modal = document.getElementById('guideModal');
+                    const body = document.getElementById('guideModalBody');
+                    if (detail && modal && body) {
+                        body.innerHTML = detail.innerHTML;
+                        modal.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    }
+                };
+                window.closeGuideModal = function() {
+                    const modal = document.getElementById('guideModal');
+                    if (modal) { modal.classList.remove('active'); document.body.style.overflow = ''; }
+                };
+                document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeGuideModal(); });
+            }
+        });
+    </script>
 </body>
 
 </html>

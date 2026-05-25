@@ -56,19 +56,50 @@
                             주식과의 '궁합'은 단순한 재미가 아닙니다. 투자 성향과 종목이 맞지 않으면 멘탈이 흔들리고, 멘탈이 흔들리면 수익률이 무너집니다.
                         </p>
 
-                        <div style="display: grid; gap: 2rem;">
-
-                            <!-- 가이드 카드 1: 왜 궁합이 중요한가 -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #ec4899; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
+                        <div class="guide-grid">
+                    <div class="guide-card-new" onclick="openGuideModal(1)" role="button" tabindex="0">
+                        <div>
+                            <h3
                                     style="font-size: 1.3rem; color: #ec4899; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
                                     <span
                                         style="background: rgba(236,72,153,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
                                     왜 주식과의 '궁합'이 중요할까?
                                 </h3>
-                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
+                            <p>행동경제학의 연구에 따르면, 대부분의 개인투자자가 손실을 내는 이유는 정보 부족이 아니라 뇌동매매(Panic Selling) 때문입니다.</p>
+                        </div>
+                        <span class="read-more">자세히 보기 →</span>
+                    </div>
+                    <div class="guide-card-new" onclick="openGuideModal(2)" role="button" tabindex="0">
+                        <div>
+                            <h3
+                                    style="font-size: 1.3rem; color: #f59e0b; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <span
+                                        style="background: rgba(245,158,11,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">02</span>
+                                    가치 투자 vs 성장 투자 vs 배당 투자
+                                </h3>
+                            <p>📊 가치 투자 내재 가치보다 저평가된 기업을 발굴해 장기 보유.</p>
+                        </div>
+                        <span class="read-more">자세히 보기 →</span>
+                    </div>
+                    <div class="guide-card-new" onclick="openGuideModal(3)" role="button" tabindex="0">
+                        <div>
+                            <h3
+                                    style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <span
+                                        style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">03</span>
+                                    하락장을 버티게 해주는 수면제 투자법
+                                </h3>
+                            <p>전설적인 투자자 피터 린치는 말했습니다.</p>
+                        </div>
+                        <span class="read-more">자세히 보기 →</span>
+                    </div>
+                </div>
+                <div id="guide-detail-1" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
+                                        style="background: rgba(236,72,153,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
+                                    왜 주식과의 '궁합'이 중요할까?</h3>
+                    <div class="guide-modal-body">
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
                                     행동경제학의 연구에 따르면, 대부분의 개인투자자가 손실을 내는 이유는 정보 부족이 아니라 <strong
                                         style="color: var(--text-primary);">뇌동매매(Panic Selling)</strong> 때문입니다. 변동성이 큰
                                     고성장주를 매수했는데 주가가 30% 떨어지면, 냉정함을 유지하기가 매우 어렵습니다.
@@ -86,19 +117,15 @@
                                         불안 → 공황에 저점 손절 → 반등 후 다시 FOMO → 반복
                                     </div>
                                 </div>
-                            </div>
-
-                            <!-- 가이드 카드 2: 투자 스타일 비교 -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #f59e0b; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
-                                    style="font-size: 1.3rem; color: #f59e0b; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                                    <span
+                            
+                    </div>
+                </div>
+                <div id="guide-detail-2" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
                                         style="background: rgba(245,158,11,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">02</span>
-                                    가치 투자 vs 성장 투자 vs 배당 투자
-                                </h3>
-                                <div
+                                    가치 투자 vs 성장 투자 vs 배당 투자</h3>
+                    <div class="guide-modal-body">
+                        <div
                                     style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.25rem;">
                                     <div
                                         style="padding: 1.25rem; background: rgba(59,130,246,0.06); border-radius: 12px; border: 1px solid rgba(59,130,246,0.2);">
@@ -138,19 +165,15 @@
                                     어떤 스타일이 더 우월한가는 없습니다. 자신의 나이, 투자 기간, 위험 감내 능력, 목표 수익을 고려해 가장 오래 '버틸 수 있는' 방식을 선택하는
                                     것이 가장 현명합니다.
                                 </p>
-                            </div>
-
-                            <!-- 가이드 카드 3: 수면제 투자법 -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #10b981; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
-                                    style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                                    <span
+                            
+                    </div>
+                </div>
+                <div id="guide-detail-3" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
                                         style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">03</span>
-                                    하락장을 버티게 해주는 수면제 투자법
-                                </h3>
-                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
+                                    하락장을 버티게 해주는 수면제 투자법</h3>
+                    <div class="guide-modal-body">
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
                                     전설적인 투자자 피터 린치는 말했습니다. <em style="color: var(--text-primary);">"주식을 매수하기 전, '이 주식이
                                         50% 떨어져도 팔지 않을 자신이 있는가?'를 스스로에게 물어보라."</em> 이것이 바로 <strong
                                         style="color: #10b981;">수면제 투자법(Sleep-Well-At-Night Investing)</strong>의 본질입니다.
@@ -185,9 +208,10 @@
                                     💡 <strong>자가 진단 질문:</strong> "이 주식이 -40%가 됐을 때 나는 어떻게 행동할까?" — 솔직한 답이 당신의 투자 스타일을
                                     결정합니다.
                                 </div>
-                            </div>
+                            
+                    </div>
+                </div>
 
-                        </div>
                     </section>
 
 <section class="card fortune-card">
@@ -222,6 +246,14 @@
 
                     <!-- 투자 MBTI 가이드 -->
                     
+                
+            <div id="guideModal" class="guide-modal" onclick="if(event.target===this)closeGuideModal()">
+                <div class="guide-modal-content">
+                    <button class="guide-modal-close" onclick="closeGuideModal()" aria-label="닫기">✕</button>
+                    <div id="guideModalBody"></div>
+                </div>
+            </div>
+            
                 </main>
             </div>
             </div>
@@ -284,6 +316,28 @@
 
             commentDisplay.innerText = comment;
         }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!window.openGuideModal) {
+                window.openGuideModal = function(id) {
+                    const detail = document.getElementById('guide-detail-' + id);
+                    const modal = document.getElementById('guideModal');
+                    const body = document.getElementById('guideModalBody');
+                    if (detail && modal && body) {
+                        body.innerHTML = detail.innerHTML;
+                        modal.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    }
+                };
+                window.closeGuideModal = function() {
+                    const modal = document.getElementById('guideModal');
+                    if (modal) { modal.classList.remove('active'); document.body.style.overflow = ''; }
+                };
+                document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeGuideModal(); });
+            }
+        });
     </script>
 </body>
 

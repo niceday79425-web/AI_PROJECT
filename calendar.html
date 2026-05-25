@@ -60,19 +60,50 @@
                             배당 캘린더를 제대로 활용하려면 날짜별 용어의 정확한 의미를 알아야 합니다. 헷갈리기 쉬운 핵심 개념 3가지를 정리합니다.
                         </p>
 
-                        <div style="display: grid; gap: 2rem;">
-
-                            <!-- Guide Card 1: Ex-Dividend Date -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #3b82f6; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
+                        <div class="guide-grid">
+                    <div class="guide-card-new" onclick="openGuideModal(1)" role="button" tabindex="0">
+                        <div>
+                            <h3
                                     style="font-size: 1.3rem; color: #3b82f6; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
                                     <span
                                         style="background: rgba(59,130,246,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
                                     배당락일(Ex-Dividend Date)의 정확한 의미
                                 </h3>
-                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
+                            <p>많은 투자자들이 "배당락일 전날까지 사면 배당을 받는다"고 알고 있지만, 이것은 정확히 맞는 말입니다.</p>
+                        </div>
+                        <span class="read-more">Read more →</span>
+                    </div>
+                    <div class="guide-card-new" onclick="openGuideModal(2)" role="button" tabindex="0">
+                        <div>
+                            <h3
+                                    style="font-size: 1.3rem; color: #a855f7; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <span
+                                        style="background: rgba(168,85,247,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">02</span>
+                                    배당 선언일, 주주 명부 폐쇄일, 지급일의 차이
+                                </h3>
+                            <p>📢 배당 선언일 이사회가 배당금 지급을 공식 발표하는 날.</p>
+                        </div>
+                        <span class="read-more">Read more →</span>
+                    </div>
+                    <div class="guide-card-new" onclick="openGuideModal(3)" role="button" tabindex="0">
+                        <div>
+                            <h3
+                                    style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                                    <span
+                                        style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">03</span>
+                                    분기 배당주로 '월배당 포트폴리오' 조립하기
+                                </h3>
+                            <p>월배당 ETF를 사지 않아도, 분기 배당 기업 3종류를 조합하면 매월 배당을 받는 포트폴리오 를 구성할 수 있습니다.</p>
+                        </div>
+                        <span class="read-more">Read more →</span>
+                    </div>
+                </div>
+                <div id="guide-detail-1" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
+                                        style="background: rgba(59,130,246,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">01</span>
+                                    배당락일(Ex-Dividend Date)의 정확한 의미</h3>
+                    <div class="guide-modal-body">
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
                                     많은 투자자들이 "배당락일 전날까지 사면 배당을 받는다"고 알고 있지만, 이것은 정확히 맞는 말입니다. <strong
                                         style="color: var(--text-primary);">배당락일(Ex-Dividend Date)</strong>은 이 날짜 전에 주식을
                                     매수해야 배당을 받을 수 있는 기준일입니다. 배당락일 당일 또는 이후에 매수하면 해당 회차 배당을 받을 수 없습니다.
@@ -109,19 +140,15 @@
                                     변경되었습니다. 즉, 매수 익일 결제됩니다. 따라서 배당락일 하루 전 영업일까지 매수하면 배당을 받을 수 있습니다. 단, 세금 최적화를 위해서는 단순
                                     배당 캡처 전략보다 장기 보유가 훨씬 유리합니다.
                                 </p>
-                            </div>
-
-                            <!-- Guide Card 2: Declaration, Record, Payment -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #a855f7; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
-                                    style="font-size: 1.3rem; color: #a855f7; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                                    <span
+                            
+                    </div>
+                </div>
+                <div id="guide-detail-2" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
                                         style="background: rgba(168,85,247,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">02</span>
-                                    배당 선언일, 주주 명부 폐쇄일, 지급일의 차이
-                                </h3>
-                                <div
+                                    배당 선언일, 주주 명부 폐쇄일, 지급일의 차이</h3>
+                    <div class="guide-modal-body">
+                        <div
                                     style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.25rem;">
                                     <div
                                         style="padding: 1.25rem; background: rgba(168,85,247,0.06); border-radius: 12px; border: 1px solid rgba(168,85,247,0.2);">
@@ -157,19 +184,15 @@
                                     💡 <strong>순서 요약:</strong> 선언일 → 배당락일 → 주주 명부 폐쇄일(Record Date) → 배당 지급일(Payment
                                     Date)
                                 </div>
-                            </div>
-
-                            <!-- Guide Card 3: Monthly Dividend Portfolio -->
-                            <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; border-left: 4px solid #10b981; transition: transform 0.3s ease;"
-                                onmouseover="this.style.transform='translateY(-4px)'"
-                                onmouseout="this.style.transform='translateY(0)'">
-                                <h3
-                                    style="font-size: 1.3rem; color: #10b981; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
-                                    <span
+                            
+                    </div>
+                </div>
+                <div id="guide-detail-3" style="display:none;">
+                    <h3 style="font-size:1.25rem; margin-bottom:1rem; color:var(--text-primary);"><span
                                         style="background: rgba(16,185,129,0.15); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700;">03</span>
-                                    분기 배당주로 '월배당 포트폴리오' 조립하기
-                                </h3>
-                                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
+                                    분기 배당주로 '월배당 포트폴리오' 조립하기</h3>
+                    <div class="guide-modal-body">
+                        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
                                     월배당 ETF를 사지 않아도, <strong style="color: var(--text-primary);">분기 배당 기업 3종류를 조합하면 매월
                                         배당을 받는 포트폴리오</strong>를 구성할 수 있습니다. 미국 대부분의 기업은 분기별(3개월마다) 배당을 지급하며, 지급 월이 서로
                                     다릅니다.
@@ -231,9 +254,10 @@
                                         style="color: #10b981; font-weight: 700;">배당 스카우터</a>에서 각 그룹의 우량주를 먼저 필터링하고, 배당
                                     지급 월을 확인해 조합하세요.
                                 </div>
-                            </div>
+                            
+                    </div>
+                </div>
 
-                        </div>
                     </section>
 
 <section class="card" style="padding: 1.5rem;">
@@ -511,6 +535,14 @@
                     </script>
 
                     
+                
+            <div id="guideModal" class="guide-modal" onclick="if(event.target===this)closeGuideModal()">
+                <div class="guide-modal-content">
+                    <button class="guide-modal-close" onclick="closeGuideModal()" aria-label="닫기">✕</button>
+                    <div id="guideModalBody"></div>
+                </div>
+            </div>
+            
                 </main>
             </div>
             </div>
@@ -538,6 +570,28 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!window.openGuideModal) {
+                window.openGuideModal = function(id) {
+                    const detail = document.getElementById('guide-detail-' + id);
+                    const modal = document.getElementById('guideModal');
+                    const body = document.getElementById('guideModalBody');
+                    if (detail && modal && body) {
+                        body.innerHTML = detail.innerHTML;
+                        modal.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    }
+                };
+                window.closeGuideModal = function() {
+                    const modal = document.getElementById('guideModal');
+                    if (modal) { modal.classList.remove('active'); document.body.style.overflow = ''; }
+                };
+                document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeGuideModal(); });
+            }
+        });
+    </script>
 </body>
 
 </html>
