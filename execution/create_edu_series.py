@@ -382,10 +382,10 @@ def main():
 
     for slug, title, series, description in SERIES:
         out_path = os.path.join(KO_BLOG_DIR, f"{slug}.html")
-        # 이미 존재하는 파일인지 확인 (강제 업데이트 시 주석 처리)
-        # if os.path.exists(out_path):
-        #     print(f"  [SKIP] {slug} (already exists)")
-        #     continue
+        # 이미 존재하는 파일인지 확인
+        if os.path.exists(out_path):
+            print(f"  [SKIP] {slug} (already exists)")
+            continue
 
         print(f"  [GEN] {slug}...")
         content = generate_content(title, series, description)
