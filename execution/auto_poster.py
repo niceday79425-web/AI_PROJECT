@@ -26,9 +26,9 @@ else:
     print("[!] Warning: API key not found.")
 
 # ===================================================================
-# [변경 포인트] 무료 AI Studio 최신 'Gemini 3 Flash' 모델 지정
+# [변경 포인트] 무료 AI Studio 최신 'Gemini 3 Flash' 모델 지정 (현재 미지원으로 1.5로 롤백)
 # ===================================================================
-MODEL_NAME = 'gemini-3-flash'
+MODEL_NAME = 'gemini-1.5-flash'
 model = genai.GenerativeModel(MODEL_NAME)
 
 # Extended ticker list (50+ stocks)
@@ -96,42 +96,44 @@ def get_top_volatile_tickers(tickers, count=3):
 
     volatility_data = []
     import math
-    for ticker in eligible:
-        try:
-            # Download individually for better reliability
-            ticker_data = yf.download(ticker, period="5d", interval="1d", progress=False)
-            if len(ticker_data) < 2:
-                continue
-            
-            # Ensure we get a scalar even if yfinance returns a DataFrame/Series slice
-            last_close_val = ticker_data['Close'].iloc[-1]
-            prev_close_val = ticker_data['Close'].iloc[-2]
-            
-            if hasattr(last_close_val, 'iloc'): last_close_val = last_close_val.iloc[0]
-            if hasattr(prev_close_val, 'iloc'): prev_close_val = prev_close_val.iloc[0]
-
-            last_close = float(last_close_val)
-            prev_close = float(prev_close_val)
-            
-            # Critical fix: Check for NaN or zero
-            if math.isnan(last_close) or math.isnan(prev_close) or prev_close == 0:
-                continue
+    
+    try:
+        # Download all eligible tickers in a single batch to avoid extreme delays / rate limits
+        all_data = yf.download(eligible, period="5d", interval="1d", progress=False)
+        
+        for ticker in eligible:
+            try:
+                if len(eligible) == 1:
+                    close_prices = all_data['Close']
+                else:
+                    close_prices = all_data['Close'][ticker]
                 
-            change = (last_close - prev_close) / prev_close
-            abs_change = abs(change) * 100
-            
-            if math.isnan(abs_change):
+                if len(close_prices) < 2:
+                    continue
+                    
+                last_close = float(close_prices.iloc[-1])
+                prev_close = float(close_prices.iloc[-2])
+                
+                if math.isnan(last_close) or math.isnan(prev_close) or prev_close == 0:
+                    continue
+                    
+                change = (last_close - prev_close) / prev_close
+                abs_change = abs(change) * 100
+                
+                if math.isnan(abs_change):
+                    continue
+    
+                volatility_data.append({
+                    "ticker":     ticker,
+                    "change":     change * 100,
+                    "abs_change": abs_change,
+                    "price":      last_close,
+                })
+            except Exception as e:
+                print(f"  [warn] Error scoring {ticker}: {e}")
                 continue
-
-            volatility_data.append({
-                "ticker":     ticker,
-                "change":     change * 100,
-                "abs_change": abs_change,
-                "price":      last_close,
-            })
-        except Exception as e:
-            print(f"  [warn] Error scoring {ticker}: {e}")
-            continue
+    except Exception as e:
+        print(f"  [error] Batch download failed: {e}")
 
     top_volatile = sorted(volatility_data, key=lambda x: x['abs_change'], reverse=True)[:count]
     print(f"  [picked] {', '.join(s['ticker'] for s in top_volatile)}")
