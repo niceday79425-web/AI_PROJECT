@@ -293,11 +293,18 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
 
     back_labels = {"en": "← Back to Blog", "ko": "← 블로그로 돌아가기", "pt": "← Voltar ao Blog"}
     back_label = back_labels.get(lang, "← Back to Blog")
-    blog_path = f"/{'' if lang == 'en' else lang + '/'}blog.html"
+    blog_path = f"/{'' if lang == 'en' else lang + '/'}blog"
 
     nav_ko_active   = 'active' if lang == 'ko' else ''
     nav_en_active   = 'active' if lang == 'en' else ''
     nav_pt_active   = 'active' if lang == 'pt' else ''
+
+    # Generate SEO canonical & alternate tags
+    post_slug = f"{today}-{ticker}"
+    canonical_url = f"https://wiseaiwiseu.com/{'' if lang == 'en' else lang + '/'}blog/{post_slug}"
+    alt_en = f"https://wiseaiwiseu.com/blog/{post_slug}"
+    alt_ko = f"https://wiseaiwiseu.com/ko/blog/{post_slug}"
+    alt_pt = f"https://wiseaiwiseu.com/pt/blog/{post_slug}"
 
     return f'''<!DOCTYPE html>
 <html lang="{lang}">
@@ -310,6 +317,11 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{summary[:160]}">
   <meta property="og:type" content="article">
+  <link rel="canonical" href="{canonical_url}" />
+  <link rel="alternate" hreflang="en" href="{alt_en}" />
+  <link rel="alternate" hreflang="ko" href="{alt_ko}" />
+  <link rel="alternate" hreflang="pt" href="{alt_pt}" />
+  <link rel="alternate" hreflang="x-default" href="{alt_en}" />
   <link rel="stylesheet" href="{css_path}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -423,9 +435,9 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
     <header>
       <a href="{home_path}" class="logo">WiseAIWiseU</a>
       <nav class="lang-selector">
-        <a href="/ko/blog.html" class="lang-link {nav_ko_active}">KO</a>
-        <a href="/blog.html"    class="lang-link {nav_en_active}">EN</a>
-        <a href="/pt/blog.html" class="lang-link {nav_pt_active}">PT</a>
+        <a href="/ko/blog" class="lang-link {nav_ko_active}">KO</a>
+        <a href="/blog"    class="lang-link {nav_en_active}">EN</a>
+        <a href="/pt/blog" class="lang-link {nav_pt_active}">PT</a>
       </nav>
     </header>
 
@@ -433,7 +445,7 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
 
     <section class="post-hero">
       <span class="ticker-badge">📈 {ticker} · US Stock Analysis</span>
-      <h1>{title.split(" | ")[0] if " | " in title else title}</h1>
+      <h1>{"미국 주식 인사이트" if lang == "ko" else ("Insights de Ações dos EUA" if lang == "pt" else "US Stock Insights")}: {title.split(" | ")[0] if " | " in title else title}</h1>
       <div class="meta">
         <span>📅 {today}</span>
         <span>🌐 WiseAIWiseU</span>

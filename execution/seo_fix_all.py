@@ -130,34 +130,8 @@ print("-" * 40)
 robots_content = """User-agent: *
 Allow: /
 
-# Block duplicate .html extension URLs (canonical URLs are extension-free)
-Disallow: /index.html
-Disallow: /blog.html
-Disallow: /list.html
-Disallow: /calculator.html
-Disallow: /calendar.html
-Disallow: /fortune.html
-Disallow: /about.html
-Disallow: /contact.html
-Disallow: /privacy.html
-Disallow: /ko/index.html
-Disallow: /ko/blog.html
-Disallow: /ko/list.html
-Disallow: /ko/calculator.html
-Disallow: /ko/calendar.html
-Disallow: /ko/fortune.html
-Disallow: /ko/about.html
-Disallow: /ko/contact.html
-Disallow: /ko/privacy.html
-Disallow: /pt/index.html
-Disallow: /pt/blog.html
-Disallow: /pt/list.html
-Disallow: /pt/calculator.html
-Disallow: /pt/calendar.html
-Disallow: /pt/fortune.html
-Disallow: /pt/about.html
-Disallow: /pt/contact.html
-Disallow: /pt/privacy.html
+# Block duplicate .html extension URLs globally (canonical URLs are extension-free)
+Disallow: /*.html$
 
 # Block dev/execution directories
 Disallow: /execution/

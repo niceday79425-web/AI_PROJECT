@@ -239,7 +239,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
     <section class="post-hero">
       <span class="series-badge">📚 {series}</span>
-      <h1>{title}</h1>
+      <h1>미국 배당주 강의: {title}</h1>
       <div class="meta" style="font-size:0.9rem;opacity:0.7;display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;margin-top:0.75rem;">
         <span>📅 2026-05-14</span>
         <span>⏱️ 읽는 시간: 약 8분</span>
