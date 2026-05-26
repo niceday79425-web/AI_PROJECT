@@ -28,7 +28,7 @@ else:
 # ===================================================================
 # [변경 포인트] 무료 AI Studio 최신 'Gemini 3 Flash' 모델 지정 (현재 미지원으로 1.5로 롤백)
 # ===================================================================
-MODEL_NAME = 'gemini-1.5-flash'
+MODEL_NAME = 'gemini-2.5-flash'
 model = genai.GenerativeModel(MODEL_NAME)
 
 # Extended ticker list (50+ stocks)
