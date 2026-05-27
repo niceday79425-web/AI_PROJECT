@@ -300,6 +300,50 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
     nav_en_active   = 'active' if lang == 'en' else ''
     nav_pt_active   = 'active' if lang == 'pt' else ''
 
+    # 1. Optimize Title for SEO (target: 50-60 chars)
+    brand = " | WiseAIWiseU"
+    clean_t = title.strip()
+    suffixes_to_clean = [
+        " | U.S. Stock Analysis · WiseAIWiseU",
+        " | U.S. Stock Analysis - WiseAIWiseU",
+        " | U.S. Stock Analysis | WiseAIWiseU",
+        " | U.S. Stock Analysis",
+        " · WiseAIWiseU",
+        " - WiseAIWiseU",
+        " | WiseAIWiseU",
+        " | WiseAI",
+        " | WiseU",
+        " | 미국 주식 분석 · WiseAIWiseU",
+        " | 미국 주식 분석 - WiseAIWiseU",
+        " | 미국 주식 분석",
+        " | Analise de Ações dos EUA · WiseAIWiseU",
+        " | Analise de Ações dos EUA",
+        " | Análise de Ações dos EUA · WiseAIWiseU"
+    ]
+    for suffix in suffixes_to_clean:
+        if clean_t.endswith(suffix):
+            clean_t = clean_t[:-len(suffix)].strip()
+            
+    max_clean_len = 60 - len(brand)
+    if len(clean_t) > max_clean_len:
+        clean_t = clean_t[:max_clean_len - 3] + "..."
+    optimized_title = clean_t + brand
+    
+    # 2. Optimize Description for SEO (target: 130-150 chars)
+    clean_desc = summary.strip()
+    if len(clean_desc) < 120:
+        if lang == "en":
+            padding = " Read the full in-depth U.S. stock market and dividend analysis on WiseAIWiseU."
+        elif lang == "pt":
+            padding = " Leia a análise detalhada completa do mercado de ações e dividendos no WiseAIWiseU."
+        else:
+            padding = " WiseAIWiseU에서 제공하는 미국 주식 및 배당주 시장의 실시간 분석과 전망을 확인해 보세요."
+        clean_desc = clean_desc + padding
+        
+    if len(clean_desc) > 150:
+        clean_desc = clean_desc[:147] + "..."
+    optimized_desc = clean_desc
+
     # Generate SEO canonical & alternate tags
     post_slug = f"{today}-{ticker}"
     canonical_url = f"https://wiseaiwiseu.com/{'' if lang == 'en' else lang + '/'}blog/{post_slug}"
@@ -312,11 +356,11 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{title}</title>
-  <meta name="description" content="{summary[:160]}">
+  <title>{optimized_title}</title>
+  <meta name="description" content="{optimized_desc}">
   <meta name="keywords" content="{keywords}">
-  <meta property="og:title" content="{title}">
-  <meta property="og:description" content="{summary[:160]}">
+  <meta property="og:title" content="{optimized_title}">
+  <meta property="og:description" content="{optimized_desc}">
   <meta property="og:type" content="article">
   <link rel="canonical" href="{canonical_url}" />
   <link rel="alternate" hreflang="en" href="{alt_en}" />
