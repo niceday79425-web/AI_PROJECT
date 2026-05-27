@@ -108,6 +108,7 @@ def get_top_volatile_tickers(tickers, count=3):
                 else:
                     close_prices = all_data['Close'][ticker]
                 
+                close_prices = close_prices.dropna()
                 if len(close_prices) < 2:
                     continue
                     
@@ -512,11 +513,13 @@ def save_and_index_multi(contents, ticker, chart_url):
         summary  = data.get('summary', '')
         keywords = data.get('keywords', f'US stocks, {ticker}, dividend investing')
 
-        content   = data.get('content', '')
-        chart_tag = (f'<img src="{chart_url}" alt="{ticker} 3-Month Price Chart" '
-                     f'style="width:100%;border-radius:14px;margin:1.8rem 0;'
-                     f'box-shadow:0 8px 32px rgba(99,102,241,0.15);">')
+        content = data["content"]
+        # Convert any H1 tags in the generated content to H2 to avoid duplicate H1 tags
+        content = re.compile(r'<h1([^>]*)>', re.IGNORECASE).sub(r'<h2\1>', content)
+        content = re.compile(r'</h1>', re.IGNORECASE).sub(r'</h2>', content)
 
+        # Generate chart HTML tag
+        chart_tag = f'<img src="{chart_url}" alt="{ticker} Chart" style="width:100%; border-radius:12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">'
         if "[CHART-HERE]" in content:
             article_body = content.replace("[CHART-HERE]", chart_tag)
         elif "</h2>" in content:
