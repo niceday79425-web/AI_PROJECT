@@ -136,6 +136,52 @@ def get_top_volatile_tickers(tickers, count=3):
     except Exception as e:
         print(f"  [error] Batch download failed: {e}")
 
+    # ── Fallback if Yahoo Finance API fails or blocks ──
+    if not volatility_data:
+        print("[!] Warning: Volatility Hunter returned 0 data points. Applying fallback from dividend_insights.json...")
+        try:
+            insights_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "dividend_insights.json")
+            if os.path.exists(insights_path):
+                with open(insights_path, "r", encoding="utf-8") as f:
+                    insights = json.load(f)
+                stocks_list = insights.get("stocks", [])
+                
+                # Filter out cooldown tickers
+                candidates = [s for s in stocks_list if s["ticker"] in eligible]
+                # If too few, ignore cooldown
+                if len(candidates) < count:
+                    candidates = [s for s in stocks_list if s["ticker"] in TICKERS]
+                    
+                # Pick top count candidates (e.g. by sorting randomly or by yield)
+                import random
+                random.seed(datetime.datetime.now().year + datetime.datetime.now().month + datetime.datetime.now().day)
+                random.shuffle(candidates)
+                
+                for s in candidates[:count]:
+                    volatility_data.append({
+                        "ticker": s["ticker"],
+                        "change": 0.0,
+                        "abs_change": 0.0,
+                        "price": float(s["current_price"])
+                    })
+                print(f"  [fallback picked] {', '.join(s['ticker'] for s in volatility_data)}")
+        except Exception as ex:
+            print(f"  [error] Fallback failed: {ex}")
+            
+        # Last resort fallback if json loading fails
+        if not volatility_data:
+            import random
+            random.seed(datetime.datetime.now().year + datetime.datetime.now().month + datetime.datetime.now().day)
+            fallback_eligible = list(eligible)
+            random.shuffle(fallback_eligible)
+            for t in fallback_eligible[:count]:
+                volatility_data.append({
+                    "ticker": t,
+                    "change": 0.0,
+                    "abs_change": 0.0,
+                    "price": 100.0
+                })
+
     top_volatile = sorted(volatility_data, key=lambda x: x['abs_change'], reverse=True)[:count]
     print(f"  [picked] {', '.join(s['ticker'] for s in top_volatile)}")
     return top_volatile
