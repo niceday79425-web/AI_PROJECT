@@ -1,5 +1,6 @@
 import google.generativeai as genai
 import os
+import sys
 import re
 import datetime
 import time
@@ -23,7 +24,8 @@ api_key = os.getenv("GEMINI_API_KEY")
 if api_key:
     genai.configure(api_key=api_key)
 else:
-    print("[!] Warning: API key not found.")
+    print("[CRITICAL] Error: GEMINI_API_KEY not found in environment variables.")
+    sys.exit(1)
 
 # ===================================================================
 # [변경 포인트] 무료 AI Studio 최신 'Gemini 3 Flash' 모델 지정 (현재 미지원으로 1.5로 롤백)
@@ -716,6 +718,11 @@ def main():
     top_stocks = get_top_volatile_tickers(TICKERS, 1)  # 1 per day for quality
     news = get_latest_news()
     
+    if not top_stocks:
+        print("[CRITICAL] Error: No top volatile stocks selected.")
+        sys.exit(1)
+        
+    generated_count = 0
     for stock in top_stocks:
         print(f"[*] Processing {stock['ticker']}...")
         import math
@@ -727,7 +734,12 @@ def main():
         contents = generate_multi_lang_content(stock, news)
         if contents:
             save_and_index_multi(contents, stock['ticker'], chart_url)
+            generated_count += 1
         time.sleep(2)
+        
+    if generated_count == 0:
+        print("[CRITICAL] Error: Failed to generate any blog post contents.")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
