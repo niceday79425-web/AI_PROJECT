@@ -587,8 +587,12 @@ def save_and_index_multi(contents, ticker, chart_url):
         title    = data.get('title', f'{ticker} Analysis')
         summary  = data.get('summary', '')
         keywords = data.get('keywords', f'US stocks, {ticker}, dividend investing')
-        content  = data["content"]
+        content  = data.get("content", "")
         
+        if not content:
+            print(f"  [warn] Missing 'content' for lang={lang}. Skipping this language.")
+            continue
+            
         content = re.compile(r'<h1([^>]*)>', re.IGNORECASE).sub(r'<h2\1>', content)
         content = re.compile(r'</h1>', re.IGNORECASE).sub(r'</h2>', content)
 
