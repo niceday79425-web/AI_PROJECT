@@ -293,8 +293,7 @@ def generate_multi_lang_content(stock_info, news_text):
             response = model.generate_content(
                 prompt,
                 generation_config={
-                    "response_mime_type": "application/json",
-                    "response_schema": MultiLangResponse
+                    "response_mime_type": "application/json"
                 }
             )
             return json.loads(response.text)
@@ -590,8 +589,15 @@ def save_and_index_multi(contents, ticker, chart_url):
         content  = data.get("content", "")
         
         if not content:
-            print(f"  [warn] Missing 'content' for lang={lang}. Skipping this language.")
-            continue
+            print(f"  [warn] Missing 'content' for lang={lang}. Keys present: {list(data.keys())}")
+            if 'LanguageContent' in data:
+                 print(f"  [warn] Found 'LanguageContent' wrapper! Extracting...")
+                 data = data['LanguageContent']
+                 content = data.get("content", "")
+                 if not content:
+                     continue
+            else:
+                 continue
             
         content = re.compile(r'<h1([^>]*)>', re.IGNORECASE).sub(r'<h2\1>', content)
         content = re.compile(r'</h1>', re.IGNORECASE).sub(r'</h2>', content)
