@@ -33,7 +33,7 @@ MODEL_NAME = 'gemini-2.5-flash'
 model = genai.GenerativeModel(MODEL_NAME)
 
 # 실행 스크립트 기준 절대 경로 확보 (경로 에러 원천 차단)
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
 TICKERS = [
     "AAPL", "MSFT", "GOOGL", "AMZN", "META", "TSLA", "NVDA", "BRK-B", "JPM", "V", 
@@ -156,7 +156,7 @@ def get_top_volatile_tickers(tickers, count=3):
         print("[!] Warning: Applying fallback from dividend_insights.json...")
         try:
             # 부모 디렉토리 이동 경로 정정
-            insights_path = os.path.normpath(os.path.join(BASE_DIR, "..", "dividend_insights.json"))
+            insights_path = os.path.normpath(os.path.join(BASE_DIR, "dividend_insights.json"))
             if os.path.exists(insights_path):
                 with open(insights_path, "r", encoding="utf-8") as f:
                     insights = json.load(f)
@@ -270,7 +270,7 @@ def generate_multi_lang_content(stock_info, news_text):
     }}
 
     Requirements:
-    - Minimum 1000 words per language (quality over quantity)
+    - Minimum 600 words per language (quality over quantity, keep it concise to prevent JSON truncation)
     - Use semantic HTML (h2, p, ul, li, strong, em)
     - Include [CHART-HERE] placeholder where the stock chart should appear
     - REQUIRED SECTIONS (use <h2> for each):
@@ -287,22 +287,45 @@ def generate_multi_lang_content(stock_info, news_text):
     - Add internal links: mention US Dividend Stock Search at /list and US Stock Compound Interest at /calculator
     """
 
-    for attempt in range(3):
+    models_to_try = [
+        MODEL_NAME, 
+        'gemini-3.5-flash', 
+        'gemini-flash-latest', 
+        'gemini-2.5-flash-lite', 
+        'gemini-3.1-flash-lite', 
+        'gemini-flash-lite-latest'
+    ]
+    for model_name in models_to_try:
+        print(f"[*] Attempting content generation with {model_name}...")
         try:
-            # 엔진 스펙 다운 유도하지 않고 완벽 제어
-            response = model.generate_content(
-                prompt,
-                generation_config={
-                    "response_mime_type": "application/json"
-                }
-            )
-            return json.loads(response.text)
-        except Exception as e:
-            print(f"[!] Gemini generation failed (Attempt {attempt+1}/3): {e}")
-            if "429" in str(e):
-                time.sleep(10)
-                continue
-            time.sleep(2)
+            current_model = genai.GenerativeModel(model_name)
+        except Exception as init_err:
+            print(f"[!] Failed to initialize model {model_name}: {init_err}")
+            continue
+
+        for attempt in range(3):
+            try:
+                response = current_model.generate_content(
+                    prompt,
+                    generation_config={
+                        "response_mime_type": "application/json",
+                        "max_output_tokens": 8192
+                    }
+                )
+                return json.loads(response.text)
+            except Exception as e:
+                err_str = str(e)
+                print(f"[!] Gemini generation failed with {model_name} (Attempt {attempt+1}/3): {err_str}")
+                if "429" in err_str:
+                    if "PerDay" in err_str or "limit: 0" in err_str:
+                        print("  [Daily Quota Exceeded] Daily quota exhausted or model disabled. Switching to fallback model immediately...")
+                        break
+                    # 무료 티어 분당 호출량 한도 리셋을 위해 35초 대기
+                    print("  [429 Quota] Rate limit hit. Sleeping 35 seconds to reset...")
+                    time.sleep(35)
+                else:
+                    time.sleep(2)
+        print(f"[!] All attempts with {model_name} failed. Trying fallback model...")
     return None
 
 def build_post_html(lang, title, summary, keywords, today, ticker, article_body, css_path, home_path):
