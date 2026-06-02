@@ -21,7 +21,7 @@ load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 
 if api_key:
-    genai.configure(api_key=api_key)
+    genai.configure(api_key=api_key.strip())
 else:
     print("[CRITICAL] Error: GEMINI_API_KEY not found in environment variables.")
     sys.exit(1)
@@ -310,7 +310,8 @@ def generate_multi_lang_content(stock_info, news_text):
                     generation_config={
                         "response_mime_type": "application/json",
                         "max_output_tokens": 8192
-                    }
+                    },
+                    request_options={"timeout": 60}
                 )
                 return json.loads(response.text)
             except Exception as e:
