@@ -525,9 +525,10 @@ def build_post_html(lang, title, summary, keywords, today, ticker, article_body,
       color: var(--text-secondary); font-weight: 600; text-decoration: none;
       font-size: 1rem; margin-bottom: 3rem; transition: all 0.3s;
       padding: 0.5rem 1rem; border-radius: 8px; background: rgba(255,255,255,0.03);
-    }}
     .back-btn:hover {{ color: var(--text-primary); background: rgba(255,255,255,0.08); transform: translateX(-5px); }}
   </style>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7682868472389642" crossorigin="anonymous"></script>
 </head>
 <body>
   <div id="progress-bar"></div>
