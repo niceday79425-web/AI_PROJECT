@@ -156,7 +156,7 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/blog"/>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -166,7 +166,7 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/blog"/>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -176,7 +176,7 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wiseaiwiseu.com/blog"/>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -269,6 +269,33 @@
     <lastmod>2026-07-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/blog/2026-07-10-AMD</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-07-10-AMD"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-07-10-AMD"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-07-10-AMD"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/ko/blog/2026-07-10-AMD</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-07-10-AMD"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-07-10-AMD"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-07-10-AMD"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/pt/blog/2026-07-10-AMD</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-07-10-AMD"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-07-10-AMD"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-07-10-AMD"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://wiseaiwiseu.com/blog/2026-07-09-VIST</loc>
@@ -1864,13 +1891,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://wiseaiwiseu.com/blog/reits-complete-guide</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/reits-complete-guide"/>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://wiseaiwiseu.com/blog/monthly-mar</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/monthly-mar"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/monthly-mar"/>
@@ -2495,6 +2515,13 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-04-10-VZ"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-04-10-VZ"/>
     <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/blog/reits-complete-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/reits-complete-guide"/>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
