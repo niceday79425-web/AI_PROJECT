@@ -271,6 +271,33 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wiseaiwiseu.com/blog/2026-08-15-AVGO</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-08-15-AVGO"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-08-15-AVGO"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-08-15-AVGO"/>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/ko/blog/2026-08-15-AVGO</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-08-15-AVGO"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-08-15-AVGO"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-08-15-AVGO"/>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/pt/blog/2026-08-15-AVGO</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-08-15-AVGO"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-08-15-AVGO"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-08-15-AVGO"/>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://wiseaiwiseu.com/blog/2026-08-14-AMD</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-08-14-AMD"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-08-14-AMD"/>
@@ -1860,33 +1887,6 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-06-18-GEV"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-06-18-GEV"/>
     <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wiseaiwiseu.com/blog/2026-06-17-AVGO</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-06-17-AVGO"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-06-17-AVGO"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-06-17-AVGO"/>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wiseaiwiseu.com/ko/blog/2026-06-17-AVGO</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-06-17-AVGO"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-06-17-AVGO"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-06-17-AVGO"/>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wiseaiwiseu.com/pt/blog/2026-06-17-AVGO</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-06-17-AVGO"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-06-17-AVGO"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-06-17-AVGO"/>
-    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -5763,6 +5763,33 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/monthly-feb"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/monthly-feb"/>
     <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/blog/2026-06-17-AVGO</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-06-17-AVGO"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-06-17-AVGO"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-06-17-AVGO"/>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/ko/blog/2026-06-17-AVGO</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-06-17-AVGO"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-06-17-AVGO"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-06-17-AVGO"/>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseaiwiseu.com/pt/blog/2026-06-17-AVGO</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wiseaiwiseu.com/blog/2026-06-17-AVGO"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://wiseaiwiseu.com/ko/blog/2026-06-17-AVGO"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://wiseaiwiseu.com/pt/blog/2026-06-17-AVGO"/>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
