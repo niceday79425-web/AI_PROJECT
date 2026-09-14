@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13 02:16:03",
+  "generated_at": "2026-09-14 02:33:40",
   "total_stocks": 66,
   "stocks": [
     {
@@ -14,7 +14,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 1,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:49"
+      "last_updated": "2026-09-14 02:32:49"
     },
     {
       "ticker": "DX",
@@ -28,7 +28,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 1,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:14:58"
+      "last_updated": "2026-09-14 02:32:33"
     },
     {
       "ticker": "AGNC",
@@ -42,7 +42,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 4,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:45"
+      "last_updated": "2026-09-14 02:32:46"
     },
     {
       "ticker": "NLY",
@@ -56,7 +56,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 2,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:10"
+      "last_updated": "2026-09-14 02:33:25"
     },
     {
       "ticker": "MO",
@@ -70,7 +70,7 @@
       "fcf_coverage": 1.27,
       "dividend_growth_years": 16,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:14:43"
+      "last_updated": "2026-09-14 02:32:48"
     },
     {
       "ticker": "VZ",
@@ -84,7 +84,7 @@
       "fcf_coverage": 1.5,
       "dividend_growth_years": 24,
       "grade": "A등급",
-      "last_updated": "2026-09-13 02:14:52"
+      "last_updated": "2026-09-14 02:32:57"
     },
     {
       "ticker": "O",
@@ -98,7 +98,7 @@
       "fcf_coverage": 0.52,
       "dividend_growth_years": 1,
       "grade": "C등급",
-      "last_updated": "2026-09-13 02:14:53"
+      "last_updated": "2026-09-14 02:33:37"
     },
     {
       "ticker": "BTI",
@@ -112,7 +112,7 @@
       "fcf_coverage": 0.67,
       "dividend_growth_years": 2,
       "grade": "C등급",
-      "last_updated": "2026-09-13 02:15:07"
+      "last_updated": "2026-09-14 02:33:06"
     },
     {
       "ticker": "EQR",
@@ -126,7 +126,7 @@
       "fcf_coverage": 1.36,
       "dividend_growth_years": 0,
       "grade": "C등급",
-      "last_updated": "2026-09-13 02:14:47"
+      "last_updated": "2026-09-14 02:33:08"
     },
     {
       "ticker": "SPG",
@@ -140,7 +140,7 @@
       "fcf_coverage": 0.91,
       "dividend_growth_years": 4,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:21"
+      "last_updated": "2026-09-14 02:33:28"
     },
     {
       "ticker": "T",
@@ -154,7 +154,7 @@
       "fcf_coverage": 1.33,
       "dividend_growth_years": 2,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:51"
+      "last_updated": "2026-09-14 02:33:38"
     },
     {
       "ticker": "PEP",
@@ -168,21 +168,21 @@
       "fcf_coverage": 1.0,
       "dividend_growth_years": 27,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:59"
+      "last_updated": "2026-09-14 02:32:27"
     },
     {
       "ticker": "PAYX",
       "name": "Paychex, Inc.",
       "sector": "Technology",
       "current_price": 115.8,
-      "dividend_yield": 4.13,
+      "dividend_yield": 4.11,
       "annual_dividend": 0.0,
       "payout_ratio": 90.59,
       "five_year_avg_yield": 2.83,
       "fcf_coverage": 0.0,
       "dividend_growth_years": 12,
       "grade": "C등급",
-      "last_updated": "2026-09-13 02:14:46"
+      "last_updated": "2026-09-14 02:33:20"
     },
     {
       "ticker": "SPYD",
@@ -196,7 +196,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 2,
       "grade": "C등급",
-      "last_updated": "2026-09-13 02:15:01"
+      "last_updated": "2026-09-14 02:32:35"
     },
     {
       "ticker": "PSA",
@@ -210,7 +210,7 @@
       "fcf_coverage": 1.04,
       "dividend_growth_years": 2,
       "grade": "C등급",
-      "last_updated": "2026-09-13 02:15:28"
+      "last_updated": "2026-09-14 02:33:27"
     },
     {
       "ticker": "AMT",
@@ -224,7 +224,7 @@
       "fcf_coverage": 0.9,
       "dividend_growth_years": 14,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:43"
+      "last_updated": "2026-09-14 02:33:36"
     },
     {
       "ticker": "AVB",
@@ -238,7 +238,7 @@
       "fcf_coverage": 1.4,
       "dividend_growth_years": 0,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:46"
+      "last_updated": "2026-09-14 02:32:39"
     },
     {
       "ticker": "ACN",
@@ -252,7 +252,7 @@
       "fcf_coverage": 3.03,
       "dividend_growth_years": 0,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:41"
+      "last_updated": "2026-09-14 02:32:42"
     },
     {
       "ticker": "HDV",
@@ -266,7 +266,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 0,
       "grade": "C등급",
-      "last_updated": "2026-09-13 02:15:35"
+      "last_updated": "2026-09-14 02:33:05"
     },
     {
       "ticker": "CVX",
@@ -280,7 +280,7 @@
       "fcf_coverage": 1.6,
       "dividend_growth_years": 45,
       "grade": "A등급",
-      "last_updated": "2026-09-13 02:16:00"
+      "last_updated": "2026-09-14 02:32:56"
     },
     {
       "ticker": "GPC",
@@ -294,7 +294,7 @@
       "fcf_coverage": 1.59,
       "dividend_growth_years": 39,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:33"
+      "last_updated": "2026-09-14 02:32:52"
     },
     {
       "ticker": "PLD",
@@ -308,7 +308,7 @@
       "fcf_coverage": 1.37,
       "dividend_growth_years": 16,
       "grade": "A등급",
-      "last_updated": "2026-09-13 02:15:37"
+      "last_updated": "2026-09-14 02:33:10"
     },
     {
       "ticker": "SCHD",
@@ -322,21 +322,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 14,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:16"
-    },
-    {
-      "ticker": "TGT",
-      "name": "Target Corporation",
-      "sector": "Consumer Defensive",
-      "current_price": 155.83,
-      "dividend_yield": 2.93,
-      "annual_dividend": 4.56,
-      "payout_ratio": 47.3,
-      "five_year_avg_yield": 2.98,
-      "fcf_coverage": 1.66,
-      "dividend_growth_years": 42,
-      "grade": "A등급",
-      "last_updated": "2026-09-13 02:15:39"
+      "last_updated": "2026-09-14 02:33:24"
     },
     {
       "ticker": "PG",
@@ -350,7 +336,21 @@
       "fcf_coverage": 1.34,
       "dividend_growth_years": 22,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:58"
+      "last_updated": "2026-09-14 02:32:47"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target Corporation",
+      "sector": "Consumer Defensive",
+      "current_price": 155.83,
+      "dividend_yield": 2.93,
+      "annual_dividend": 4.56,
+      "payout_ratio": 47.3,
+      "five_year_avg_yield": 2.98,
+      "fcf_coverage": 1.66,
+      "dividend_growth_years": 42,
+      "grade": "A등급",
+      "last_updated": "2026-09-14 02:33:12"
     },
     {
       "ticker": "MCD",
@@ -364,7 +364,7 @@
       "fcf_coverage": 1.2,
       "dividend_growth_years": 50,
       "grade": "A등급",
-      "last_updated": "2026-09-13 02:15:08"
+      "last_updated": "2026-09-14 02:32:45"
     },
     {
       "ticker": "IBM",
@@ -378,7 +378,7 @@
       "fcf_coverage": 1.9,
       "dividend_growth_years": 31,
       "grade": "A등급",
-      "last_updated": "2026-09-13 02:15:27"
+      "last_updated": "2026-09-14 02:32:28"
     },
     {
       "ticker": "ABBV",
@@ -392,7 +392,7 @@
       "fcf_coverage": 1.4,
       "dividend_growth_years": 12,
       "grade": "C등급",
-      "last_updated": "2026-09-13 02:14:49"
+      "last_updated": "2026-09-14 02:33:15"
     },
     {
       "ticker": "SYY",
@@ -406,7 +406,7 @@
       "fcf_coverage": 1.84,
       "dividend_growth_years": 10,
       "grade": "A등급",
-      "last_updated": "2026-09-13 02:15:25"
+      "last_updated": "2026-09-14 02:32:59"
     },
     {
       "ticker": "DLR",
@@ -420,7 +420,7 @@
       "fcf_coverage": 2.08,
       "dividend_growth_years": 21,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:55"
+      "last_updated": "2026-09-14 02:32:38"
     },
     {
       "ticker": "ADP",
@@ -434,7 +434,7 @@
       "fcf_coverage": 1.99,
       "dividend_growth_years": 23,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:15"
+      "last_updated": "2026-09-14 02:33:03"
     },
     {
       "ticker": "XOM",
@@ -448,7 +448,7 @@
       "fcf_coverage": 1.23,
       "dividend_growth_years": 42,
       "grade": "A등급",
-      "last_updated": "2026-09-13 02:15:06"
+      "last_updated": "2026-09-14 02:33:16"
     },
     {
       "ticker": "LOW",
@@ -462,7 +462,7 @@
       "fcf_coverage": 1.7,
       "dividend_growth_years": 26,
       "grade": "A등급",
-      "last_updated": "2026-09-13 02:15:22"
+      "last_updated": "2026-09-14 02:33:22"
     },
     {
       "ticker": "ABT",
@@ -473,10 +473,10 @@
       "annual_dividend": 2.48,
       "payout_ratio": 78.96,
       "five_year_avg_yield": 1.82,
-      "fcf_coverage": 1.67,
+      "fcf_coverage": 1.68,
       "dividend_growth_years": 12,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:52"
+      "last_updated": "2026-09-14 02:33:31"
     },
     {
       "ticker": "CL",
@@ -490,7 +490,7 @@
       "fcf_coverage": 2.08,
       "dividend_growth_years": 52,
       "grade": "A등급",
-      "last_updated": "2026-09-13 02:15:12"
+      "last_updated": "2026-09-14 02:32:43"
     },
     {
       "ticker": "SDY",
@@ -504,7 +504,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 4,
       "grade": "C등급",
-      "last_updated": "2026-09-13 02:15:53"
+      "last_updated": "2026-09-14 02:32:23"
     },
     {
       "ticker": "ADM",
@@ -518,21 +518,7 @@
       "fcf_coverage": 1.17,
       "dividend_growth_years": 27,
       "grade": "A등급",
-      "last_updated": "2026-09-13 02:15:36"
-    },
-    {
-      "ticker": "KO",
-      "name": "The Coca-Cola Company",
-      "sector": "Consumer Defensive",
-      "current_price": 88.29,
-      "dividend_yield": 2.36,
-      "annual_dividend": 2.08,
-      "payout_ratio": 62.46,
-      "five_year_avg_yield": 2.86,
-      "fcf_coverage": 0.58,
-      "dividend_growth_years": 23,
-      "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:17"
+      "last_updated": "2026-09-14 02:32:54"
     },
     {
       "ticker": "UNH",
@@ -546,7 +532,35 @@
       "fcf_coverage": 3.02,
       "dividend_growth_years": 26,
       "grade": "S등급",
-      "last_updated": "2026-09-13 02:15:29"
+      "last_updated": "2026-09-14 02:32:24"
+    },
+    {
+      "ticker": "KO",
+      "name": "The Coca-Cola Company",
+      "sector": "Consumer Defensive",
+      "current_price": 88.29,
+      "dividend_yield": 2.36,
+      "annual_dividend": 2.08,
+      "payout_ratio": 62.46,
+      "five_year_avg_yield": 2.86,
+      "fcf_coverage": 0.58,
+      "dividend_growth_years": 23,
+      "grade": "B등급",
+      "last_updated": "2026-09-14 02:33:35"
+    },
+    {
+      "ticker": "FVD",
+      "name": "First Trust Value Line Dividend Index Fund",
+      "sector": "N/A",
+      "current_price": 49.12,
+      "dividend_yield": 2.23,
+      "annual_dividend": 0.0,
+      "payout_ratio": 0.0,
+      "five_year_avg_yield": 0.0,
+      "fcf_coverage": 0.0,
+      "dividend_growth_years": 4,
+      "grade": "C등급",
+      "last_updated": "2026-09-14 02:32:40"
     },
     {
       "ticker": "VTR",
@@ -560,7 +574,7 @@
       "fcf_coverage": 1.45,
       "dividend_growth_years": 4,
       "grade": "C등급",
-      "last_updated": "2026-09-13 02:14:57"
+      "last_updated": "2026-09-14 02:33:30"
     },
     {
       "ticker": "VYM",
@@ -574,7 +588,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 15,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:14:59"
+      "last_updated": "2026-09-14 02:33:32"
     },
     {
       "ticker": "DVY",
@@ -588,7 +602,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 5,
       "grade": "C등급",
-      "last_updated": "2026-09-13 02:15:44"
+      "last_updated": "2026-09-14 02:33:17"
     },
     {
       "ticker": "TXN",
@@ -602,7 +616,7 @@
       "fcf_coverage": 0.69,
       "dividend_growth_years": 27,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:14:56"
+      "last_updated": "2026-09-14 02:32:31"
     },
     {
       "ticker": "BLK",
@@ -616,7 +630,7 @@
       "fcf_coverage": 2.24,
       "dividend_growth_years": 22,
       "grade": "A등급",
-      "last_updated": "2026-09-13 02:15:00"
+      "last_updated": "2026-09-14 02:32:36"
     },
     {
       "ticker": "NOBL",
@@ -630,21 +644,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 3,
       "grade": "C등급",
-      "last_updated": "2026-09-13 02:16:01"
-    },
-    {
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "sector": "Healthcare",
-      "current_price": 265.58,
-      "dividend_yield": 1.97,
-      "annual_dividend": 5.24,
-      "payout_ratio": 60.79,
-      "five_year_avg_yield": 2.75,
-      "fcf_coverage": 1.34,
-      "dividend_growth_years": 63,
-      "grade": "A등급",
-      "last_updated": "2026-09-13 02:14:45"
+      "last_updated": "2026-09-14 02:32:29"
     },
     {
       "ticker": "QCOM",
@@ -658,7 +658,21 @@
       "fcf_coverage": 2.67,
       "dividend_growth_years": 23,
       "grade": "A등급",
-      "last_updated": "2026-09-13 02:15:24"
+      "last_updated": "2026-09-14 02:33:04"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "sector": "Healthcare",
+      "current_price": 265.58,
+      "dividend_yield": 1.97,
+      "annual_dividend": 5.24,
+      "payout_ratio": 60.79,
+      "five_year_avg_yield": 2.75,
+      "fcf_coverage": 1.34,
+      "dividend_growth_years": 63,
+      "grade": "A등급",
+      "last_updated": "2026-09-14 02:33:21"
     },
     {
       "ticker": "EQIX",
@@ -672,7 +686,7 @@
       "fcf_coverage": 1.94,
       "dividend_growth_years": 9,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:31"
+      "last_updated": "2026-09-14 02:32:51"
     },
     {
       "ticker": "DGRO",
@@ -686,7 +700,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 9,
       "grade": "C등급",
-      "last_updated": "2026-09-13 02:14:51"
+      "last_updated": "2026-09-14 02:33:09"
     },
     {
       "ticker": "MMM",
@@ -700,7 +714,7 @@
       "fcf_coverage": 4.08,
       "dividend_growth_years": 0,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:40"
+      "last_updated": "2026-09-14 02:33:14"
     },
     {
       "ticker": "BAC",
@@ -714,7 +728,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 16,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:48"
+      "last_updated": "2026-09-14 02:33:01"
     },
     {
       "ticker": "GD",
@@ -728,7 +742,7 @@
       "fcf_coverage": 2.63,
       "dividend_growth_years": 12,
       "grade": "A등급",
-      "last_updated": "2026-09-13 02:15:18"
+      "last_updated": "2026-09-14 02:32:32"
     },
     {
       "ticker": "JPM",
@@ -742,21 +756,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 15,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:14:55"
-    },
-    {
-      "ticker": "FVD",
-      "name": "First Trust Value Line Dividend Index Fund",
-      "sector": "N/A",
-      "current_price": 49.12,
-      "dividend_yield": 1.65,
-      "annual_dividend": 0.81,
-      "payout_ratio": 0.0,
-      "five_year_avg_yield": 0.0,
-      "fcf_coverage": 0.0,
-      "dividend_growth_years": 4,
-      "grade": "C등급",
-      "last_updated": "2026-09-13 02:15:54"
+      "last_updated": "2026-09-14 02:32:41"
     },
     {
       "ticker": "HD",
@@ -770,7 +770,7 @@
       "fcf_coverage": 2.33,
       "dividend_growth_years": 23,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:56"
+      "last_updated": "2026-09-14 02:32:53"
     },
     {
       "ticker": "CSCO",
@@ -784,7 +784,7 @@
       "fcf_coverage": 1.71,
       "dividend_growth_years": 14,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:11"
+      "last_updated": "2026-09-14 02:33:13"
     },
     {
       "ticker": "VIG",
@@ -798,7 +798,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 16,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:34"
+      "last_updated": "2026-09-14 02:33:23"
     },
     {
       "ticker": "ORCL",
@@ -807,12 +807,12 @@
       "current_price": 150.28,
       "dividend_yield": 1.33,
       "annual_dividend": 2.0,
-      "payout_ratio": 34.31,
+      "payout_ratio": 31.35,
       "five_year_avg_yield": 1.28,
-      "fcf_coverage": -4.26,
+      "fcf_coverage": -7.96,
       "dividend_growth_years": 12,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:14:50"
+      "last_updated": "2026-09-14 02:33:02"
     },
     {
       "ticker": "WELL",
@@ -826,7 +826,7 @@
       "fcf_coverage": 1.25,
       "dividend_growth_years": 4,
       "grade": "C등급",
-      "last_updated": "2026-09-13 02:14:48"
+      "last_updated": "2026-09-14 02:33:29"
     },
     {
       "ticker": "WMT",
@@ -840,7 +840,7 @@
       "fcf_coverage": 0.93,
       "dividend_growth_years": 43,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:30"
+      "last_updated": "2026-09-14 02:32:58"
     },
     {
       "ticker": "CAT",
@@ -854,7 +854,7 @@
       "fcf_coverage": 1.78,
       "dividend_growth_years": 12,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:16:03"
+      "last_updated": "2026-09-14 02:32:26"
     },
     {
       "ticker": "MSFT",
@@ -868,21 +868,7 @@
       "fcf_coverage": 0.61,
       "dividend_growth_years": 20,
       "grade": "B등급",
-      "last_updated": "2026-09-13 02:15:42"
-    },
-    {
-      "ticker": "V",
-      "name": "Visa Inc.",
-      "sector": "Financial Services",
-      "current_price": 370.45,
-      "dividend_yield": 0.72,
-      "annual_dividend": 2.68,
-      "payout_ratio": 22.13,
-      "five_year_avg_yield": 0.71,
-      "fcf_coverage": 4.47,
-      "dividend_growth_years": 17,
-      "grade": "S등급",
-      "last_updated": "2026-09-13 02:15:19"
+      "last_updated": "2026-09-14 02:33:07"
     },
     {
       "ticker": "AVGO",
@@ -896,7 +882,21 @@
       "fcf_coverage": 2.47,
       "dividend_growth_years": 15,
       "grade": "A등급",
-      "last_updated": "2026-09-13 02:15:23"
+      "last_updated": "2026-09-14 02:33:19"
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc.",
+      "sector": "Financial Services",
+      "current_price": 370.45,
+      "dividend_yield": 0.72,
+      "annual_dividend": 2.68,
+      "payout_ratio": 22.13,
+      "five_year_avg_yield": 0.71,
+      "fcf_coverage": 4.47,
+      "dividend_growth_years": 17,
+      "grade": "S등급",
+      "last_updated": "2026-09-14 02:33:33"
     },
     {
       "ticker": "MA",
@@ -910,7 +910,7 @@
       "fcf_coverage": 5.79,
       "dividend_growth_years": 19,
       "grade": "S등급",
-      "last_updated": "2026-09-13 02:15:47"
+      "last_updated": "2026-09-14 02:33:39"
     },
     {
       "ticker": "AAPL",
@@ -924,7 +924,7 @@
       "fcf_coverage": 7.03,
       "dividend_growth_years": 22,
       "grade": "A등급",
-      "last_updated": "2026-09-13 02:15:13"
+      "last_updated": "2026-09-14 02:32:34"
     }
   ]
 }
