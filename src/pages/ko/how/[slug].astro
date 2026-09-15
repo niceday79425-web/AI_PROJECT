@@ -1,0 +1,187 @@
+﻿---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const allHow = await getCollection('how');
+  return allHow.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<BaseLayout 
+  title={`${entry.data.title} - 제작 과정 (How)`}
+  description={`${entry.data.title} - 사용 모델, 프롬프트, 시간, 비용 및 문제 해결 기록`}
+>
+  <div class="container-reading">
+    <header class="how-header hairline-b">
+      <div class="how-breadcrumb">
+        <a href="/ko/how/">← 전체 과정 목록</a>
+        <span class="sep">/</span>
+        <span class="work-id">{entry.data.workSlug}</span>
+      </div>
+      <h1 class="how-title">{entry.data.title}</h1>
+
+      <!-- 8단계 고정 메타데이터 요약 (소요시간, 비용, 도구) -->
+      <div class="how-specs tabular-nums">
+        <div class="spec-col">
+          <span class="spec-label">소요 시간</span>
+          <span class="spec-val">{entry.data.timeSpent}</span>
+        </div>
+        <div class="spec-col">
+          <span class="spec-label">총 비용</span>
+          <span class="spec-val status-signal">${entry.data.costs.total.toFixed(2)}</span>
+        </div>
+        <div class="spec-col">
+          <span class="spec-label">주요 모델</span>
+          <span class="spec-val">{entry.data.models.join(', ')}</span>
+        </div>
+      </div>
+    </header>
+
+    <article class="how-content">
+      <Content />
+    </article>
+
+    <footer class="how-footer hairline-t">
+      <div class="how-nav-links">
+        <a href="/ko/works/" class="action-btn">결과물 목록 (/works)</a>
+        <a href="/ko/results/" class="action-link">실측 검증 (/results)</a>
+      </div>
+    </footer>
+  </div>
+</BaseLayout>
+
+<style>
+  .how-header {
+    padding-bottom: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .how-breadcrumb {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .how-breadcrumb a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .how-breadcrumb a:hover {
+    color: var(--ink);
+  }
+  .sep {
+    color: var(--rule);
+  }
+  .work-id {
+    font-weight: 600;
+  }
+  .how-title {
+    font-size: 1.85rem;
+    line-height: 1.35;
+    margin-bottom: 2rem;
+  }
+
+  .how-specs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    background: #FFFFFF;
+    border: 1px solid var(--rule);
+    padding: 1.25rem 1.5rem;
+  }
+  .spec-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .spec-label {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .spec-val {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .how-content {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--ink);
+    margin-bottom: 4rem;
+  }
+  .how-content :global(h2) {
+    font-size: 1.4rem;
+    margin-top: 3.5rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.5rem;
+  }
+  .how-content :global(h3) {
+    font-size: 1.15rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .how-content :global(p) {
+    margin-bottom: 1.5em;
+  }
+  .how-content :global(pre) {
+    background: #14181F;
+    color: #FBFBF9;
+    padding: 1.25rem;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+  }
+  .how-content :global(ul), .how-content :global(ol) {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .how-content :global(li) {
+    margin-bottom: 0.5rem;
+  }
+
+  .how-footer {
+    padding-top: 2.5rem;
+  }
+  .how-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .action-btn {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    background: var(--ink);
+    color: var(--paper);
+    text-decoration: none;
+    border: 1px solid var(--ink);
+  }
+  .action-btn:hover {
+    background: var(--muted);
+    border-color: var(--muted);
+  }
+  .action-link {
+    font-size: 0.95rem;
+    color: var(--ink);
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .how-specs {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+</style>

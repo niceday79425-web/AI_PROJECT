@@ -1,0 +1,165 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css');
+
+:root {
+  --ink: #14181F;
+  --paper: #FBFBF9;
+  --rule: #DFE1DC;
+  --muted: #6A7078;
+  --signal: #1B6E5A;
+  --alert: #A6431F;
+  --focus: #2563EB;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  background-color: var(--paper);
+  text-align: left;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography & Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ink);
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5em;
+  color: var(--ink);
+}
+
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  color: var(--muted);
+}
+
+/* Tabular numbers for all financial & metrics data */
+.tabular-nums, table, .metric-value {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Meaningful status indicators (not decoration) */
+.status-signal {
+  color: var(--signal);
+}
+.status-alert {
+  color: var(--alert);
+}
+.status-muted {
+  color: var(--muted);
+}
+
+/* Focus ring for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Container widths per spec */
+.container-reading {
+  max-width: 680px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  padding: 0 1.25rem;
+}
+
+.container-results {
+  max-width: 1000px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  padding: 0 1.25rem;
+}
+
+.site-shell {
+  max-width: 900px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  padding: 0 1.25rem;
+}
+
+/* Hairline borders per spec */
+.hairline-b {
+  border-bottom: 1px solid var(--rule);
+}
+.hairline-t {
+  border-top: 1px solid var(--rule);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 0.75rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+
+th {
+  font-weight: 600;
+  color: var(--muted);
+  border-bottom: 2px solid var(--rule);
+}
+
+/* Respect motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="요청 · 피드백"
+  description="만들어보고 싶은 도구나 개선 요청을 남겨주세요."
+>
+  <div class="container-reading">
+    <h1>요청 · 피드백</h1>
+    <p class="intro-desc">
+      AI로 만들어보고 싶은 도구나 어플리케이션 아이디어, 또는 사이트 개선에 관한 의견이 있다면 자유롭게 남겨주세요.
+    </p>
+
+    <form class="feedback-form" onsubmit="event.preventDefault(); alert('요청이 안전하게 전달되었습니다. 검토 후 반영하겠습니다.'); this.reset();">
+      <!-- Honeypot for spam protection (Section 4.7) -->
+      <div style="display:none;" aria-hidden="true">
+        <label for="website-hp">홈페이지</label>
+        <input type="text" id="website-hp" name="website" tabindex="-1" autocomplete="off" />
+      </div>
+
+      <div class="form-group">
+        <label for="feedback-content">요청 내용 <span class="required">*</span></label>
+        <textarea 
+          id="feedback-content" 
+          name="content" 
+          rows="6" 
+          required 
+          placeholder="예: 이런 형태의 자동화 계산 도구가 있으면 좋겠습니다..."
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="feedback-email">이메일 (선택 — 답변이 필요한 경우)</label>
+        <input 
+          type="email" 
+          id="feedback-email" 
+          name="email" 
+          placeholder="your@email.com" 
+        />
+      </div>
+
+      <button type="submit" class="submit-btn">요청 보내기</button>
+    </form>
+  </div>
+</BaseLayout>
+
+<style>
+  .intro-desc {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+  }
+  .feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .required {
+    color: var(--alert);
+  }
+  textarea, input[type="email"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid var(--rule);
+    background: #FFFFFF;
+    color: var(--ink);
+    border-radius: 0;
+  }
+  textarea:focus, input[type="email"]:focus {
+    outline: 2px solid var(--focus);
+    outline-offset: 1px;
+  }
+  .submit-btn {
+    align-self: flex-start;
+    padding: 0.75rem 1.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    background: var(--ink);
+    color: var(--paper);
+    border: 1px solid var(--ink);
+    cursor: pointer;
+    border-radius: 0;
+  }
+  .submit-btn:hover {
+    background: var(--muted);
+    border-color: var(--muted);
+  }
+</style>

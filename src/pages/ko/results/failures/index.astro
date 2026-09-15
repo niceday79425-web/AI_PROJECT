@@ -1,0 +1,128 @@
+﻿---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+
+const allFailures = await getCollection('failures');
+const sortedFailures = allFailures.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout 
+  title="실패 · 폐기 기록 - 4층: 검증 (Results)"
+  description="폐기한 실험과 반려 사유, 실패를 통해 얻은 구체적인 교훈 모음"
+>
+  <div class="site-shell">
+    <header class="failures-hero hairline-b">
+      <a href="/ko/results/" class="back-link">← 실측 결산으로 돌아가기</a>
+      <h1>실패 · 폐기 기록</h1>
+      <p class="intro-lead">
+        이곳은 폐기한 실험과 그 사유를 모아둔 곳입니다.<br />
+        실패를 숨기지 않고 공개하는 것이 이 사이트의 유일한 차별점이자 자산입니다.
+      </p>
+    </header>
+
+    <section class="failures-list">
+      {sortedFailures.map(async (entry) => {
+        const { Content } = await entry.render();
+        const dateStr = entry.data.date.toISOString().slice(0, 10);
+        return (
+          <article class="failure-item hairline-b">
+            <header class="failure-header">
+              <div class="failure-meta tabular-nums">
+                <span class="failure-date">폐기일: {dateStr}</span>
+                {entry.data.relatedWork && (
+                  <span class="failure-target">관련 항목: {entry.data.relatedWork}</span>
+                )}
+              </div>
+              <h2 class="failure-title status-alert">{entry.data.title}</h2>
+              <p class="failure-reason-lead">
+                <strong>핵심 사유:</strong> {entry.data.reason}
+              </p>
+            </header>
+            <div class="failure-body">
+              <Content />
+            </div>
+          </article>
+        );
+      })}
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .failures-hero {
+    padding-bottom: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .back-link {
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+  .back-link:hover {
+    color: var(--ink);
+    text-decoration: underline;
+  }
+  .intro-lead {
+    font-size: 1.15rem;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .failures-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .failure-item {
+    padding: 3rem 0;
+  }
+  .failure-meta {
+    font-size: 0.85rem;
+    color: var(--muted);
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .failure-title {
+    font-size: 1.45rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .failure-reason-lead {
+    font-size: 1.05rem;
+    color: var(--ink);
+    background: #FFFFFF;
+    border-left: 4px solid var(--alert);
+    padding: 1rem 1.25rem;
+    margin-bottom: 2rem;
+    border-top: 1px solid var(--rule);
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .failure-body {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--ink);
+    max-width: 680px;
+  }
+  .failure-body :global(h2) {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .failure-body :global(h3) {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .failure-body :global(p) {
+    margin-bottom: 1.25em;
+  }
+  .failure-body :global(ul) {
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+</style>

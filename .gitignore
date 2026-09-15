@@ -1,4 +1,4 @@
-# Intermediate files
+﻿# Intermediate files
 .tmp/
 
 # Environment variables
@@ -14,3 +14,13 @@ __pycache__/
 *$py.class
 venv/
 .venv/
+
+# Node & Astro
+node_modules/
+dist/
+.astro/
+
+# Debug files
+debug_*.txt
+debug_*.json
+debug_*.py

@@ -1,0 +1,199 @@
+﻿---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import metrics from '../../../data/metrics.json';
+
+const allResults = await getCollection('results');
+const sortedResults = allResults.sort((a, b) => b.data.period.localeCompare(a.data.period));
+
+const allFailures = await getCollection('failures');
+---
+
+<BaseLayout 
+  title="4층: 검증 (Results) - 월별 결산 및 실측 통계"
+  description="AI 도구 운영을 통한 실제 수익, 비용, 순손익 및 인사이트 적중률 공개"
+>
+  <div class="site-shell">
+    <header class="results-hero hairline-b">
+      <h1>4층: 검증</h1>
+      <p class="intro-lead">
+        이곳에서는 숫자로 검증합니다.<br />
+        예시나 가상의 시뮬레이션이 아닌, 실제로 발생한 지출, 광고/후원 수익, 그리고 실패한 실험의 기록을 그대로 공개합니다.
+      </p>
+
+      <!-- Cumulative Summary from metrics.json (Section 4.1 & 4.6) -->
+      <div class="summary-metrics tabular-nums">
+        <div class="summary-box">
+          <span class="sum-label">누적 수익</span>
+          <span class="sum-val status-signal">${metrics.cumulative_revenue.toLocaleString()}</span>
+        </div>
+        <div class="summary-box">
+          <span class="sum-label">누적 비용</span>
+          <span class="sum-val">${metrics.cumulative_costs.toLocaleString()}</span>
+        </div>
+        <div class="summary-box">
+          <span class="sum-label">누적 순손익</span>
+          <span class="sum-val status-alert">${(metrics.cumulative_revenue - metrics.cumulative_costs).toLocaleString()}</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Monthly P&L Table (Section 4.6) -->
+    <section class="results-section">
+      <h2 class="section-heading">월별 결산표</h2>
+      <div class="table-wrap">
+        <table class="tabular-nums">
+          <thead>
+            <tr>
+              <th>기간</th>
+              <th>수익</th>
+              <th>비용</th>
+              <th>순손익</th>
+              <th>비고</th>
+            </tr>
+          </thead>
+          <tbody>
+            {sortedResults.length > 0 ? (
+              sortedResults.map((r) => (
+                <tr>
+                  <td><strong>{r.data.period}</strong></td>
+                  <td class="status-signal">${r.data.revenue.toLocaleString()}</td>
+                  <td>${r.data.expenses.toLocaleString()}</td>
+                  <td class={r.data.netProfit >= 0 ? "status-signal" : "status-alert"}>
+                    {r.data.netProfit >= 0 ? `+$${r.data.netProfit}` : `-$${Math.abs(r.data.netProfit)}`}
+                  </td>
+                  <td style="color: var(--muted); font-size: 0.85rem;">{r.data.title}</td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colspan="5" style="text-align: center; color: var(--muted); padding: 2rem;">
+                  아직 데이터 없음
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Track Record / Scoring Section (Section 4.6) -->
+    <section class="results-section hairline-t">
+      <h2 class="section-heading">인사이트 적중률 채점 현황</h2>
+      <p style="color: var(--muted); margin-bottom: 1.5rem;">
+        파이프라인이 생성한 일일 분석에 대해 30일 및 90일 경과 후 시장 실측치와 대조하여 적중률을 채점합니다. 틀린 것을 숨기지 않습니다.
+      </p>
+      <div class="scoring-status-box">
+        <p style="color: var(--muted); margin: 0;">
+          현재 파이프라인 검증 가동 중이며, 30일 경과 시점부터 순차적으로 채점 결과가 공개됩니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- Failures Link (Section 4.6) -->
+    <section class="results-section hairline-t">
+      <div class="failures-callout">
+        <div>
+          <h2 class="section-heading" style="margin-bottom: 0.5rem;">실패 · 폐기 기록 ({allFailures.length}건)</h2>
+          <p style="color: var(--muted); margin: 0;">
+            폐기한 실험과 그 사유, 시행착오에서 얻은 교훈을 모아둔 기록소입니다.
+          </p>
+        </div>
+        <a href="/ko/results/failures/" class="action-link status-alert">
+          실패 기록 열람하기
+        </a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .results-hero {
+    padding-bottom: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .intro-lead {
+    font-size: 1.15rem;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .summary-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    background: #FFFFFF;
+    border: 1px solid var(--rule);
+    padding: 1.5rem;
+  }
+  .summary-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .sum-label {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .sum-val {
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+
+  .results-section {
+    padding: 3rem 0;
+  }
+  .section-heading {
+    font-size: 1.35rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+  }
+  th {
+    background: #F4F4F2;
+    padding: 0.85rem 1rem;
+    font-weight: 600;
+    color: var(--muted);
+    border-bottom: 2px solid var(--rule);
+  }
+  td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .scoring-status-box {
+    background: #FFFFFF;
+    border: 1px solid var(--rule);
+    padding: 1.5rem;
+  }
+
+  .failures-callout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .action-link {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  @media (max-width: 600px) {
+    .summary-metrics {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

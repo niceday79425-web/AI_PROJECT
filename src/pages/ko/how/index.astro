@@ -1,0 +1,102 @@
+﻿---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const allHow = await getCollection('how');
+---
+
+<BaseLayout 
+  title="3층: 과정 (How) - 제작 기록 목록"
+  description="AI 도구로 직접 만든 결과물의 프롬프트, 시간, 비용, 문제 해결 기록"
+>
+  <div class="site-shell">
+    <header class="how-hero hairline-b">
+      <h1>3층: 과정</h1>
+      <p class="intro-lead">
+        이곳에서는 어떻게 만들었는지를 기록합니다.<br />
+        결과물 1개마다 사용한 프롬프트 원문, 든 비용, 걸린 시간, 그리고 가장 중요한 <strong>막힌 지점과 해결 과정</strong>을 8단계 템플릿으로 공개합니다.
+      </p>
+    </header>
+
+    <section class="how-list-section">
+      <div class="how-list">
+        {allHow.map((entry) => (
+          <article class="how-list-item hairline-b">
+            <div class="how-item-main">
+              <span class="how-item-slug">{entry.data.workSlug}</span>
+              <h2 class="how-item-title">
+                <a href={`/ko/how/${entry.slug}/`}>{entry.data.title}</a>
+              </h2>
+            </div>
+            <div class="how-item-meta tabular-nums">
+              <span class="meta-badge">시간: {entry.data.timeSpent}</span>
+              <span class="meta-badge status-signal">비용: ${entry.data.costs.total.toFixed(2)}</span>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .how-hero {
+    padding-bottom: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .intro-lead {
+    font-size: 1.15rem;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .how-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .how-list-item {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 2rem;
+  }
+  .how-item-main {
+    flex: 1;
+  }
+  .how-item-slug {
+    font-size: 0.8rem;
+    color: var(--muted);
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+  .how-item-title {
+    font-size: 1.35rem;
+    margin: 0;
+  }
+  .how-item-title a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .how-item-title a:hover {
+    color: var(--muted);
+  }
+
+  .how-item-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 650px) {
+    .how-list-item {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+</style>

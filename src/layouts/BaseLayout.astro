@@ -1,0 +1,73 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  enHref?: string; // Phase 4 대응 영문 URL이 있을 때만 전달
+  noIndex?: boolean;
+}
+
+const {
+  title,
+  description = "AI로 직접 도구를 만들어 검증한 결과와 숫자를 공개하는 실험실 기록",
+  canonical = Astro.url.href,
+  enHref,
+  noIndex = false,
+} = Astro.props;
+
+const siteUrl = "https://wiseaiwiseu.com";
+// Ensure trailing slash for canonical
+const cleanCanonical = canonical.endsWith('/') ? canonical : `${canonical}/`;
+---
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} | wiseaiwiseu</title>
+  <meta name="description" content={description} />
+  {noIndex && <meta name="robots" content="noindex, nofollow" />}
+
+  <!-- Canonical URL (Section 2.4) -->
+  <link rel="canonical" href={cleanCanonical} />
+
+  <!-- Hreflang: only if paired English version exists (Section 2.4) -->
+  {enHref ? (
+    <>
+      <link rel="alternate" hreflang="ko" href={cleanCanonical} />
+      <link rel="alternate" hreflang="en" href={enHref} />
+      <link rel="alternate" hreflang="x-default" href={`${siteUrl}/ko/`} />
+    </>
+  ) : (
+    <link rel="alternate" hreflang="x-default" href={`${siteUrl}/ko/`} />
+  )}
+
+  <!-- Google AdSense (client verification) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7682868472389642" crossorigin="anonymous"></script>
+</head>
+<body>
+  <Header />
+  <main id="main-content">
+    <slot />
+  </main>
+  <Footer />
+</body>
+</html>
+
+<style>
+  #main-content {
+    flex: 1;
+    width: 100%;
+    padding: 3rem 0;
+  }
+  @media (max-width: 600px) {
+    #main-content {
+      padding: 2rem 0;
+    }
+  }
+</style>

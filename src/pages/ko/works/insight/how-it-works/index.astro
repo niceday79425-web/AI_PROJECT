@@ -1,0 +1,110 @@
+﻿---
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="주식 인사이트 파이프라인 작동 원리 (How It Works)"
+  description="금융 API 수집부터 생성 AI 분석, 검증 모델 교차 확인, 사람 승인까지의 자동화 파이프라인"
+>
+  <div class="container-reading">
+    <header class="page-header hairline-b">
+      <a href="/ko/works/insight/" class="back-link">← 주식 인사이트로 돌아가기</a>
+      <h1>주식 인사이트는 어떻게 만들어지는가</h1>
+      <p class="intro-lead">
+        이곳의 모든 주식 인사이트는 사람의 감이나 종목 추천이 아닌, 투명하게 공개된 다단계 AI 파이프라인을 거쳐 발행됩니다.
+      </p>
+    </header>
+
+    <article class="pipeline-content">
+      <section class="pipeline-step">
+        <h2>1단계: 객관적 시장 데이터 수집</h2>
+        <p>
+          매일 장 마감 후 Yahoo Finance 등 공개 금융 API를 통해 대상 종목의 주가, 거래량, 이동평균선(50일/200일), RSI(상대강도지수), 배당률, 배당성향 데이터를 정량적으로 수집합니다. 사람의 주관적 편향이 개입되지 않습니다.
+        </p>
+      </section>
+
+      <section class="pipeline-step">
+        <h2>2단계: 1차 분석 생성 (생성 모델)</h2>
+        <p>
+          수집된 원시 수치 데이터를 기반으로 대규모 언어 모델이 시장 현황 요약, 기술적 지표 해석, 배당 관점의 체크리스트 초안을 마크다운으로 생성합니다.
+        </p>
+      </section>
+
+      <section class="pipeline-step">
+        <h2>3단계: 교차 검증 및 사실 확인 (검증 모델)</h2>
+        <p>
+          <strong>생성 모델과 완전히 다른 별도의 검증 모델</strong>이 1차 원고를 교차 검토합니다.
+        </p>
+        <ul>
+          <li>원시 데이터 수치와 본문 내용의 일치 여부 (환각 방지)</li>
+          <li>금지 표현("목표가", "매수 추천", "지금 사라" 등 투자 권유 문구) 포함 여부 자동 필터링</li>
+          <li>두 모델의 평가가 불일치하거나 스키마를 위반할 경우 파이프라인이 자동 중단됩니다.</li>
+        </ul>
+      </section>
+
+      <section class="pipeline-step">
+        <h2>4단계: 사람의 최종 승인 (Human Approval) 및 채점</h2>
+        <p>
+          최종 원고는 관리자의 검토(`human_approved: true`)를 거쳐야만 사이트에 게시됩니다. 게시된 모든 분석은 30일 및 90일 경과 후 실제 주가 추이와 대조되어 <a href="/ko/results/">4층 검증(/results)</a>에서 적중률로 투명하게 채점됩니다.
+        </p>
+      </section>
+
+      <section class="pipeline-step hairline-t" style="padding-top: 2rem;">
+        <h2>법적 면책 안내</h2>
+        <p style="color: var(--muted); font-size: 0.95rem;">
+          본 파이프라인은 데이터 엔지니어링과 AI 검증 실험의 일환이며, 어떠한 경우에도 투자 조언이나 종목 추천을 제공하지 않습니다. 
+          자세한 내용은 <a href="/ko/legal/disclaimer/">면책조항 전문</a>을 확인하세요.
+        </p>
+      </section>
+    </article>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding-bottom: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .back-link {
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+  .back-link:hover {
+    color: var(--ink);
+    text-decoration: underline;
+  }
+  .intro-lead {
+    font-size: 1.15rem;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .pipeline-content {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--ink);
+  }
+  .pipeline-step {
+    margin-bottom: 3rem;
+  }
+  .pipeline-step h2 {
+    font-size: 1.35rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .pipeline-step p {
+    margin-bottom: 1.25em;
+  }
+  .pipeline-step ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .pipeline-step li {
+    margin-bottom: 0.5rem;
+  }
+</style>

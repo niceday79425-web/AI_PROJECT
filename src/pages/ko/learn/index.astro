@@ -1,0 +1,224 @@
+﻿---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const allLectures = await getCollection('learn');
+
+// Define tracks per Section 3
+const tracks = [
+  {
+    id: "track-1-basics",
+    title: "트랙 1: AI를 도구로 쓰기",
+    desc: "기초 프롬프트 작성, 검색, 요약, 일상 업무 보조 도구로써의 AI 활용법.",
+    status: "준비 중"
+  },
+  {
+    id: "track-2-agents",
+    title: "트랙 2: 에이전트: 터미널로 나가기",
+    desc: "웹 브라우저를 벗어나 로컬 환경과 CLI, 파일 시스템을 다루는 에이전트 구축.",
+    status: "준비 중"
+  },
+  {
+    id: "track-3-building",
+    title: "트랙 3: 코드 몰라도 만들기 (대표 유입)",
+    desc: "비전공자가 AI와 대화하며 나만의 웹앱, 미니 도구를 기획하고 제작하는 과정.",
+    status: "준비 중"
+  },
+  {
+    id: "track-4-automation",
+    title: "트랙 4: 자동화: 계속 돌아가게",
+    desc: "서버 없이 주기적으로 실행되는 데이터 수집, 가공, 배포 파이프라인 자동화.",
+    status: "준비 중"
+  },
+  {
+    id: "track-5-dividend",
+    title: "트랙 5: 미국 배당주 (자산 이관)",
+    desc: "기초 개념부터 복리 재투자, 캘린더 설계, 세금까지 실전 배당 투자 10강.",
+    status: "완료"
+  }
+];
+
+const slugMap: Record<number, string> = {
+  1: "01-what-is-dividend",
+  2: "02-dividend-yield",
+  3: "03-payout-ratio",
+  4: "04-drip",
+  5: "05-dividend-aristocrats",
+  6: "06-yield-on-cost",
+  7: "07-dividend-calendar",
+  8: "08-sector-diversification",
+  9: "09-us-tax",
+  10: "10-start-portfolio"
+};
+
+const dividendLectures = allLectures
+  .filter((l) => l.data.track === "track-5-dividend")
+  .sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout 
+  title="1층: 이해 (Learn) - 전체 강의 목록"
+  description="AI를 도구로 쓰기부터 에이전트, 비전공자 만들기, 자동화, 배당 투자까지"
+>
+  <div class="site-shell">
+    <header class="learn-hero hairline-b">
+      <h1>1층: 이해</h1>
+      <p class="intro-lead">
+        이곳에서는 무엇을 어떻게 하는지 배웁니다.<br />
+        이론에서 멈추지 않고, 2층의 실제 결과물(/works) 및 3층의 제작 과정(/how)과 직접 연결됩니다.
+      </p>
+    </header>
+
+    <section class="tracks-container">
+      {tracks.map((track) => (
+        <article class="track-block hairline-b">
+          <div class="track-header">
+            <div class="track-title-wrap">
+              <h2 class="track-title">{track.title}</h2>
+              {track.status === "완료" ? (
+                <span class="status-badge status-signal">완료</span>
+              ) : (
+                <span class="status-badge status-muted">준비 중</span>
+              )}
+            </div>
+            <p class="track-desc">{track.desc}</p>
+          </div>
+
+          <!-- If track is completed, list lectures; if not, do not expose empty links (Section 4.2) -->
+          {track.id === "track-5-dividend" && (
+            <div class="lecture-list-wrap">
+              <h3 class="lecture-list-title">강의 목록 (총 {dividendLectures.length}강)</h3>
+              <ol class="lecture-list">
+                {dividendLectures.map((lec) => {
+                  const slug = slugMap[lec.data.order] || lec.slug;
+                  return (
+                    <li class="lecture-item">
+                      <a href={`/ko/learn/${track.id}/${slug}/`} class="lecture-link">
+                        <span class="lec-order tabular-nums">제 {lec.data.order}강</span>
+                        <span class="lec-title">{lec.data.title}</span>
+                      </a>
+                      <span class="lec-time tabular-nums">{lec.data.readingTime}</span>
+                    </li>
+                  );
+                })}
+              </ol>
+            </div>
+          )}
+        </article>
+      ))}
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .learn-hero {
+    padding-bottom: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .intro-lead {
+    font-size: 1.15rem;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  .tracks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .track-block {
+    padding-bottom: 3rem;
+  }
+  .track-header {
+    margin-bottom: 1.75rem;
+  }
+  .track-title-wrap {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .track-title {
+    font-size: 1.45rem;
+    margin: 0;
+  }
+  .status-badge {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .track-desc {
+    font-size: 1rem;
+    color: var(--muted);
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  .lecture-list-wrap {
+    background: #FFFFFF;
+    border: 1px solid var(--rule);
+    padding: 1.75rem;
+  }
+  .lecture-list-title {
+    font-size: 1rem;
+    color: var(--ink);
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+  }
+  .lecture-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+  }
+  .lecture-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .lecture-item:last-child {
+    border-bottom: none;
+  }
+  .lecture-link {
+    display: flex;
+    align-items: baseline;
+    gap: 0.85rem;
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 1rem;
+  }
+  .lecture-link:hover {
+    color: var(--muted);
+    text-decoration: underline;
+  }
+  .lec-order {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--muted);
+    min-width: 50px;
+  }
+  .lec-title {
+    font-weight: 600;
+  }
+  .lec-time {
+    font-size: 0.85rem;
+    color: var(--muted);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 600px) {
+    .lecture-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.35rem;
+    }
+    .lec-time {
+      padding-left: 3.5rem;
+    }
+  }
+</style>

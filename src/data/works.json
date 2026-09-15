@@ -1,0 +1,29 @@
+﻿[
+  {
+    "slug": "dividend-calculator",
+    "name": "Dividend Snowball Calculator",
+    "desc": "복리 재투자 배당금과 장기 자산 성장 시뮬레이터",
+    "status": "공개",
+    "appPath": "/app/dividend-calculator/",
+    "howPath": "/ko/how/dividend-calculator/",
+    "resultsPath": "/ko/results/"
+  },
+  {
+    "slug": "stock-insight-pipeline",
+    "name": "Daily Stock Insight Pipeline",
+    "desc": "금융 API 데이터와 생성 AI 교차 검증을 거친 미국 주식 일일 분석 파이프라인",
+    "status": "공개",
+    "appPath": "/ko/works/insight/",
+    "howPath": "/ko/works/insight/how-it-works/",
+    "resultsPath": "/ko/results/"
+  },
+  {
+    "slug": "fortune-stock-matcher",
+    "name": "Stock Compatibility Fortune",
+    "desc": "비과학적 접근과 E-E-A-T 신뢰도 저하로 인해 자진 폐기 및 분석 도구로 전환",
+    "status": "폐기",
+    "appPath": null,
+    "howPath": null,
+    "failurePath": "/ko/results/failures/"
+  }
+]

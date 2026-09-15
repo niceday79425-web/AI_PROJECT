@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dividend Snowball Calculator | wiseaiwiseu</title>
+  <meta name="description" content="Simulate long-term compound growth, dividend reinvestment (DRIP), and monthly passive income." />
+  <link rel="canonical" href="https://wiseaiwiseu.com/app/dividend-calculator/" />
+  <!-- Pretendard Font -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+  <style>
+    :root {
+      --ink: #14181F;
+      --paper: #FBFBF9;
+      --rule: #DFE1DC;
+      --muted: #6A7078;
+      --signal: #1B6E5A;
+      --alert: #A6431F;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Pretendard Variable', -apple-system, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      padding: 2rem 1.25rem;
+    }
+    .app-container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    header {
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .back-link {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    .back-link:hover { color: var(--ink); text-decoration: underline; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .subtitle { color: var(--muted); font-size: 1rem; }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 1.25rem;
+    }
+    label { font-size: 0.9rem; font-weight: 600; color: var(--ink); }
+    input {
+      padding: 0.65rem 0.85rem;
+      border: 1px solid var(--rule);
+      background: #FFFFFF;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+    input:focus { outline: 2px solid #2563EB; outline-offset: 1px; }
+
+    .results-card {
+      background: #FFFFFF;
+      border: 1px solid var(--rule);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .res-metric { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--rule); padding-bottom: 0.75rem; }
+    .res-label { font-size: 0.9rem; color: var(--muted); }
+    .res-val { font-size: 1.4rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2.5rem 0;
+      font-variant-numeric: tabular-nums;
+      font-size: 0.9rem;
+    }
+    th, td { padding: 0.75rem 0.5rem; text-align: right; border-bottom: 1px solid var(--rule); }
+    th:first-child, td:first-child { text-align: left; }
+    th { font-weight: 600; color: var(--muted); border-bottom: 2px solid var(--rule); }
+
+    /* Email subscribe at bottom (Section 4.8) */
+    .app-footer {
+      border-top: 1px solid var(--rule);
+      padding-top: 2rem;
+      margin-top: 3rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    .sub-box {
+      background: #FFFFFF;
+      border: 1px solid var(--rule);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .sub-box h3 { font-size: 1.1rem; color: var(--ink); margin-bottom: 0.35rem; }
+    .sub-form { display: flex; gap: 0.5rem; margin-top: 0.75rem; flex-wrap: wrap; }
+    .sub-input { flex: 1; min-width: 240px; padding: 0.5rem 0.75rem; border: 1px solid var(--rule); }
+    .sub-btn { padding: 0.5rem 1.25rem; background: var(--ink); color: var(--paper); border: none; font-weight: 600; cursor: pointer; }
+
+    @media (max-width: 650px) {
+      .calc-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <a href="/ko/works/" class="back-link">← Back to Works list</a>
+      <h1>Dividend Snowball Calculator</h1>
+      <p class="subtitle">Calculate long-term compound growth with dividend reinvestment (DRIP)</p>
+    </header>
+
+    <div class="calc-grid">
+      <div class="inputs-panel">
+        <div class="input-group">
+          <label for="initial">Initial Investment ($)</label>
+          <input type="number" id="initial" value="10000" step="1000" />
+        </div>
+        <div class="input-group">
+          <label for="monthly">Monthly Contribution ($)</label>
+          <input type="number" id="monthly" value="500" step="50" />
+        </div>
+        <div class="input-group">
+          <label for="yield">Dividend Yield (% annual)</label>
+          <input type="number" id="yield" value="4.0" step="0.1" />
+        </div>
+        <div class="input-group">
+          <label for="growth">Dividend Growth Rate (% annual)</label>
+          <input type="number" id="growth" value="7.0" step="0.5" />
+        </div>
+        <div class="input-group">
+          <label for="priceGrowth">Stock Price Appreciation (% annual)</label>
+          <input type="number" id="priceGrowth" value="3.0" step="0.5" />
+        </div>
+        <div class="input-group">
+          <label for="years">Investment Horizon (Years)</label>
+          <input type="number" id="years" value="20" min="1" max="50" />
+        </div>
+      </div>
+
+      <div class="summary-panel">
+        <div class="results-card">
+          <div class="res-metric">
+            <span class="res-label">Total Portfolio Value</span>
+            <span class="res-val status-signal" id="resTotal">$0</span>
+          </div>
+          <div class="res-metric">
+            <span class="res-label">Total Principal Invested</span>
+            <span class="res-val" id="resPrincipal">$0</span>
+          </div>
+          <div class="res-metric">
+            <span class="res-label">Annual Dividend Income</span>
+            <span class="res-val status-signal" id="resAnnualDiv">$0</span>
+          </div>
+          <div class="res-metric">
+            <span class="res-label">Monthly Passive Income</span>
+            <span class="res-val" id="resMonthlyDiv">$0</span>
+          </div>
+        </div>
+        <p style="font-size:0.85rem; color:var(--muted); margin-top:1rem;">
+          * Calculations assume quarterly dividend reinvestment after 15.4% withholding tax. Past yield growth does not guarantee future results.
+        </p>
+      </div>
+    </div>
+
+    <h2>Yearly Milestone Projection</h2>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Portfolio Value</th>
+            <th>Total Invested</th>
+            <th>Annual Dividend</th>
+            <th>Monthly Dividend</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <footer class="app-footer">
+      <div class="sub-box">
+        <h3>Get notified when new tools are released</h3>
+        <p>No spam. Only release notes, source code breakdown, and benchmark numbers.</p>
+        <form class="sub-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing.'); this.reset();">
+          <input type="email" placeholder="your@email.com" required class="sub-input" />
+          <button type="submit" class="sub-btn">Notify Me</button>
+        </form>
+      </div>
+      <p>&copy; 2026 wiseaiwiseu.com. For educational and informational purposes only.</p>
+    </footer>
+  </div>
+
+  <script>
+    function calculate() {
+      const initial = parseFloat(document.getElementById('initial').value) || 0;
+      const monthly = parseFloat(document.getElementById('monthly').value) || 0;
+      const divYield = (parseFloat(document.getElementById('yield').value) || 0) / 100;
+      const divGrowth = (parseFloat(document.getElementById('growth').value) || 0) / 100;
+      const priceGrowth = (parseFloat(document.getElementById('priceGrowth').value) || 0) / 100;
+      const years = parseInt(document.getElementById('years').value) || 20;
+
+      let portfolio = initial;
+      let totalInvested = initial;
+      let currentYield = divYield;
+
+      const rows = [];
+      const taxRate = 0.154; // 15.4% dividend tax
+
+      for (let y = 1; y <= years; y++) {
+        // 12 monthly contributions
+        for (let m = 1; m <= 12; m++) {
+          portfolio += monthly;
+          totalInvested += monthly;
+          // Capital growth monthly
+          portfolio *= Math.pow(1 + priceGrowth, 1/12);
+        }
+
+        // Annual dividend based on current yield
+        const grossDiv = portfolio * currentYield;
+        const netDiv = grossDiv * (1 - taxRate);
+        // Reinvest net dividend
+        portfolio += netDiv;
+        currentYield *= (1 + divGrowth);
+
+        if (y === 1 || y === 3 || y === 5 || y === 10 || y === 15 || y === 20 || y === years) {
+          rows.push({
+            year: y,
+            portfolio: Math.round(portfolio),
+            invested: Math.round(totalInvested),
+            annualDiv: Math.round(grossDiv),
+            monthlyDiv: Math.round(grossDiv / 12)
+          });
+        }
+      }
+
+      const finalRow = rows[rows.length - 1];
+      document.getElementById('resTotal').innerText = '$' + finalRow.portfolio.toLocaleString();
+      document.getElementById('resPrincipal').innerText = '$' + finalRow.invested.toLocaleString();
+      document.getElementById('resAnnualDiv').innerText = '$' + finalRow.annualDiv.toLocaleString();
+      document.getElementById('resMonthlyDiv').innerText = '$' + finalRow.monthlyDiv.toLocaleString();
+
+      const tbody = document.getElementById('tableBody');
+      tbody.innerHTML = '';
+      rows.forEach(r => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><strong>Year ${r.year}</strong></td>
+          <td>$${r.portfolio.toLocaleString()}</td>
+          <td>$${r.invested.toLocaleString()}</td>
+          <td class="status-signal">$${r.annualDiv.toLocaleString()}</td>
+          <td>$${r.monthlyDiv.toLocaleString()}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    document.querySelectorAll('input').forEach(inp => {
+      inp.addEventListener('input', calculate);
+    });
+    calculate();
+  </script>
+</body>
+</html>

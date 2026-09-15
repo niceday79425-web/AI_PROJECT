@@ -1,0 +1,159 @@
+﻿---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+
+// Exclude _sample.md in production list if needed or show available insights
+const allInsights = (await getCollection('insight'))
+  .filter((entry) => !entry.id.includes('_sample') || import.meta.env.DEV)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout 
+  title="미국 주식 인사이트 - 2층: 결과물 (Works)"
+  description="매일 시장 데이터와 복수 AI 모델 교차 검증을 거쳐 생성되는 주식 분석 기록"
+>
+  <div class="site-shell">
+    <header class="insight-hero hairline-b">
+      <!-- AI Generation Notice (Section 4.3) -->
+      <div class="ai-notice-box">
+        <span class="notice-icon">ℹ️</span>
+        <div class="notice-text">
+          <strong>AI 생성 고지:</strong> 이 분석은 AI가 생성하고 사람이 검토했습니다. 
+          <a href="/ko/works/insight/how-it-works/" class="notice-link">생성 및 검증 과정 보기 (how-it-works)</a>
+        </div>
+      </div>
+
+      <h1>미국 주식 인사이트</h1>
+      <p class="intro-lead">
+        금융 API 수치 데이터와 복수 생성 모델의 교차 검증을 거친 정량적 분석 기록입니다.<br />
+        종목 추천을 하지 않으며, 게시된 모든 분석은 30일/90일 뒤 적중률이 투명하게 채점됩니다.
+      </p>
+
+      <div class="archive-nav-bar hairline-t">
+        <a href="/ko/works/insight/archive/" class="archive-link">과거분 전체 아카이브 보기 →</a>
+      </div>
+    </header>
+
+    <section class="insights-feed">
+      <h2 class="feed-title">최신 분석 목록</h2>
+      <div class="insights-list">
+        {allInsights.map((post) => {
+          const dateStr = post.data.date.toISOString().slice(0, 10);
+          return (
+            <article class="insight-card hairline-b">
+              <div class="card-meta tabular-nums">
+                <span class="post-date">{dateStr}</span>
+                <span class="tickers-list">{post.data.tickers.join(', ')}</span>
+              </div>
+              <h3 class="card-title">
+                <a href={`/ko/works/insight/archive/${dateStr}/`}>
+                  {post.data.tickers.join(' · ')} 일일 지표 분석 및 배당 체크리스트
+                </a>
+              </h3>
+              <div class="scoring-pill tabular-nums">
+                채점 상태: 30일 ({post.data.scoring.d30}) / 90일 ({post.data.scoring.d90})
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- Bottom Disclaimer (Section 4.3) -->
+    <section class="page-disclaimer hairline-t">
+      <p>
+        <strong>⚠️ 면책조항:</strong> 본 분석은 정보 제공 및 기술 검증 목적이며, 투자 자문이나 특정 종목의 매수·매도 추천이 아닙니다. 
+        과거 데이터가 미래 수익을 보장하지 않으며, 모든 투자 책임은 본인에게 있습니다. 
+        <a href="/ko/legal/disclaimer/">면책조항 전문</a>
+      </p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .insight-hero {
+    padding-bottom: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .ai-notice-box {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: #FFFFFF;
+    border: 1px solid var(--rule);
+    padding: 0.85rem 1.25rem;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+  .notice-icon {
+    font-size: 1.1rem;
+  }
+  .notice-link {
+    color: var(--ink);
+    text-decoration: underline;
+    margin-left: 0.5rem;
+  }
+  .intro-lead {
+    font-size: 1.15rem;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .archive-nav-bar {
+    padding-top: 1.25rem;
+  }
+  .archive-link {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: underline;
+  }
+
+  .feed-title {
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+  }
+  .insights-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .insight-card {
+    padding: 2rem 0;
+  }
+  .card-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+  .tickers-list {
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .card-title {
+    font-size: 1.35rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+  }
+  .card-title a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .card-title a:hover {
+    color: var(--muted);
+  }
+  .scoring-pill {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .page-disclaimer {
+    padding: 2.5rem 0 1rem;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: var(--muted);
+  }
+</style>

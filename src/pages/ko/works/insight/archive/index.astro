@@ -1,0 +1,124 @@
+﻿---
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import fs from 'fs';
+import path from 'path';
+
+// Read past blog files for archive index
+const ROOT = process.cwd();
+const KO_BLOG_DIR = path.join(ROOT, 'ko', 'blog');
+
+interface ArchiveItem {
+  slug: string;
+  date: string;
+  ticker: string;
+  title: string;
+}
+
+const items: ArchiveItem[] = [];
+
+if (fs.existsSync(KO_BLOG_DIR)) {
+  const files = fs.readdirSync(KO_BLOG_DIR).filter(f => f.startsWith('2026-') && f.endsWith('.html'));
+  for (const file of files) {
+    const slug = file.replace('.html', '');
+    const parts = slug.split('-');
+    if (parts.length >= 4) {
+      const date = parts.slice(0, 3).join('-');
+      const ticker = parts.slice(3).join('-');
+      items.push({
+        slug,
+        date,
+        ticker,
+        title: `${date} ${ticker} 주가 분석 및 배당 점검`
+      });
+    }
+  }
+}
+
+// Sort descending by date
+items.sort((a, b) => b.date.localeCompare(a.date));
+---
+
+<BaseLayout 
+  title="과거 주식 인사이트 아카이브 - 2층: 결과물 (Works)"
+  description="과거 일일 미국 주식 분석 및 기술적 지표 아카이브 목록"
+>
+  <div class="site-shell">
+    <header class="archive-header hairline-b">
+      <a href="/ko/works/insight/" class="back-link">← 주식 인사이트 홈으로</a>
+      <h1>과거 인사이트 아카이브</h1>
+      <p class="intro-lead">
+        파이프라인을 통해 기록된 총 {items.length}건의 과거 일일 종목 분석 내역입니다.<br />
+        기존 URL 접속 시 본 아카이브 또는 해당 분석 기록으로 301 영구 보존됩니다.
+      </p>
+    </header>
+
+    <section class="archive-list-section">
+      <div class="archive-grid">
+        {items.map((item) => (
+          <article class="archive-row hairline-b">
+            <span class="archive-date tabular-nums">{item.date}</span>
+            <span class="archive-ticker">{item.ticker}</span>
+            <span class="archive-title">{item.title}</span>
+          </article>
+        ))}
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .archive-header {
+    padding-bottom: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .back-link {
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+  .back-link:hover {
+    color: var(--ink);
+    text-decoration: underline;
+  }
+  .intro-lead {
+    font-size: 1.15rem;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .archive-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .archive-row {
+    padding: 1rem 0;
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    font-size: 0.95rem;
+  }
+  .archive-date {
+    font-size: 0.85rem;
+    color: var(--muted);
+    min-width: 90px;
+  }
+  .archive-ticker {
+    font-weight: 700;
+    color: var(--ink);
+    min-width: 70px;
+  }
+  .archive-title {
+    color: var(--muted);
+  }
+
+  @media (max-width: 600px) {
+    .archive-row {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+  }
+</style>

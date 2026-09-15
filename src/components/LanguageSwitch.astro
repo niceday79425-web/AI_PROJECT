@@ -1,0 +1,42 @@
+---
+interface Props {
+  enHref?: string;
+}
+
+const { enHref } = Astro.props;
+---
+
+<div class="lang-switch">
+  <span class="active-lang">한국어</span>
+  <span class="sep">/</span>
+  {enHref ? (
+    <a href={enHref} class="inactive-lang">English</a>
+  ) : (
+    <span class="inactive-lang" title="영어판은 Phase 4에서 제공될 예정입니다">English</span>
+  )}
+</div>
+
+<style>
+  .lang-switch {
+    font-size: 0.85rem;
+    color: var(--muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .active-lang {
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .sep {
+    color: var(--rule);
+  }
+  .inactive-lang {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  a.inactive-lang:hover {
+    color: var(--ink);
+    text-decoration: underline;
+  }
+</style>

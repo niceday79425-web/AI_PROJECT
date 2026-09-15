@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="면책조항 (Legal Disclaimer)"
+  description="wiseaiwiseu.com 서비스의 금융 콘텐츠 면책조항 및 책임 제한 안내"
+>
+  <div class="container-reading">
+    <h1>면책조항</h1>
+    <p class="meta-date tabular-nums">시행일: 2026년 9월 10일</p>
+
+    <section class="legal-section">
+      <h2>1. 투자 자문 부인 (Non-Investment Advice)</h2>
+      <p>
+        wiseaiwiseu.com(이하 "본 사이트")에 게시된 모든 분석, 주식 인사이트, 데이터, 산출 수치, 학습 자료는 <strong>정보 제공 및 기술적 실험 기록 목적</strong>으로만 제공됩니다.
+      </p>
+      <p>
+        본 사이트의 어떠한 내용도 특정 금융투자상품의 매수, 매도, 청약 권유 또는 투자 추천으로 해석될 수 없으며, 투자자의 개별적인 재정 상태, 투자 목적, 위험 감수 능력을 고려하지 않은 일반적인 데이터 분석 결과에 불과합니다.
+      </p>
+    </section>
+
+    <section class="legal-section">
+      <h2>2. 자본시장법 준수 및 대가성 부인</h2>
+      <p>
+        본 사이트는 자본시장과 금융투자업에 관한 법률 제101조에 규정된 유사투자자문업을 영위하지 않습니다.
+      </p>
+      <ul>
+        <li>본 사이트는 특정인 또는 불특정 다수를 상대로 대가를 받고 개별적이거나 비개별적인 금융투자자문을 제공하지 않습니다.</li>
+        <li>본 사이트의 모든 주식 인사이트 및 분석 콘텐츠는 <strong>100% 무료로 공개</strong>되며, 유료 리포트, 유료 멤버십, 유료 자문 등의 과금 상품을 일절 운영하지 않습니다.</li>
+        <li>본 사이트에 게재되는 제3자 광고(Google AdSense 등) 수익은 플랫폼 운영 및 서버 호스팅 비용을 충당하기 위한 것이며, 투자 조언에 대한 직접적 대가나 수수료가 아닙니다.</li>
+      </ul>
+    </section>
+
+    <section class="legal-section">
+      <h2>3. 정보의 정확성 및 한계</h2>
+      <p>
+        본 사이트의 데이터는 공개된 금융 API 및 인공지능(AI) 파이프라인을 통해 가공·정리된 것으로, 데이터 원천의 지연, 누락, 통신 오류 등으로 인해 실제 시장 수치와 오차가 발생할 수 있습니다.
+      </p>
+      <p>
+        과거의 데이터와 백테스팅 실측값, 인사이트 채점 결과는 미래의 수익이나 실적을 보장하지 않습니다. 본 사이트는 제공되는 정보의 완전성, 무결성, 신뢰성에 대해 명시적·묵시적 보증을 제공하지 않습니다.
+      </p>
+    </section>
+
+    <section class="legal-section">
+      <h2>4. 투자자의 자기 책임 원칙</h2>
+      <p>
+        금융투자상품은 시장 상황, 환율 변동, 금리 변동 등에 따라 원금 손실이 발생할 수 있습니다.
+      </p>
+      <p>
+        모든 투자 결정은 본인의 독자적인 판단과 책임 하에 이루어져야 하며, 본 사이트에 수록된 정보를 신뢰하거나 이를 바탕으로 실행한 투자 결과로 인해 발생하는 모든 직·간접적 손실 및 책임은 전적으로 투자자 본인에게 귀속됩니다. 본 사이트와 운영자는 이에 대해 일체의 법적 책임을 지지 않습니다.
+      </p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .meta-date {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 2.5rem;
+  }
+  .legal-section {
+    margin-bottom: 2.5rem;
+  }
+  ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  li {
+    margin-bottom: 0.75rem;
+    line-height: 1.8;
+  }
+</style>

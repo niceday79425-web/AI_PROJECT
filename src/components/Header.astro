@@ -1,0 +1,95 @@
+---
+import LanguageSwitch from './LanguageSwitch.astro';
+
+const navItems = [
+  { href: '/ko/learn/', label: '이해' },
+  { href: '/ko/works/', label: '결과물' },
+  { href: '/ko/how/', label: '과정' },
+  { href: '/ko/results/', label: '검증' },
+  { href: '/ko/board/', label: '요청' }
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="site-header hairline-b">
+  <div class="site-shell header-inner">
+    <div class="brand-nav">
+      <a href="/ko/" class="site-logo">wiseaiwiseu</a>
+      <nav class="main-nav" aria-label="주 네비게이션">
+        {navItems.map((item) => {
+          const isActive = currentPath.startsWith(item.href);
+          return (
+            <a 
+              href={item.href} 
+              class={isActive ? "nav-link active" : "nav-link"}
+              aria-current={isActive ? "page" : undefined}
+            >
+              {item.label}
+            </a>
+          );
+        })}
+      </nav>
+    </div>
+    <LanguageSwitch />
+  </div>
+</header>
+
+<style>
+  .site-header {
+    background: var(--paper);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .brand-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .site-logo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+  }
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .nav-link {
+    font-size: 0.95rem;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .nav-link:hover {
+    color: var(--ink);
+  }
+  .nav-link.active {
+    color: var(--ink);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  @media (max-width: 600px) {
+    .brand-nav {
+      gap: 1rem;
+    }
+    .main-nav {
+      gap: 0.85rem;
+    }
+    .nav-link {
+      font-size: 0.9rem;
+    }
+  }
+</style>

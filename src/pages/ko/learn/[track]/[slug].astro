@@ -1,0 +1,385 @@
+﻿---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const allLectures = await getCollection('learn');
+  return allLectures.map((lecture) => {
+    // Generate slug from filename, e.g. track-5-dividend-01 -> 01-what-is-dividend
+    const parts = lecture.slug.split('-');
+    const num = parts[parts.length - 1]; // e.g. "01"
+    
+    // Map order to friendly slug
+    const slugMap: Record<number, string> = {
+      1: "01-what-is-dividend",
+      2: "02-dividend-yield",
+      3: "03-payout-ratio",
+      4: "04-drip",
+      5: "05-dividend-aristocrats",
+      6: "06-yield-on-cost",
+      7: "07-dividend-calendar",
+      8: "08-sector-diversification",
+      9: "09-us-tax",
+      10: "10-start-portfolio"
+    };
+
+    const friendlySlug = slugMap[lecture.data.order] || lecture.slug;
+
+    return {
+      params: {
+        track: lecture.data.track,
+        slug: friendlySlug,
+      },
+      props: { lecture },
+    };
+  });
+}
+
+const { lecture } = Astro.props;
+const { Content } = await lecture.render();
+
+// Fetch all lectures in the same track to render TOC
+const allLecturesInTrack = (await getCollection('learn'))
+  .filter((l) => l.data.track === lecture.data.track)
+  .sort((a, b) => a.data.order - b.data.order);
+
+const slugMap: Record<number, string> = {
+  1: "01-what-is-dividend",
+  2: "02-dividend-yield",
+  3: "03-payout-ratio",
+  4: "04-drip",
+  5: "05-dividend-aristocrats",
+  6: "06-yield-on-cost",
+  7: "07-dividend-calendar",
+  8: "08-sector-diversification",
+  9: "09-us-tax",
+  10: "10-start-portfolio"
+};
+
+const trackNames: Record<string, string> = {
+  "track-1-basics": "AI를 도구로 쓰기",
+  "track-2-agents": "에이전트: 터미널로 나가기",
+  "track-3-building": "코드 몰라도 만들기",
+  "track-4-automation": "자동화: 계속 돌아가게",
+  "track-5-dividend": "미국 배당주 (자산 이관)"
+};
+---
+
+<BaseLayout 
+  title={`${lecture.data.title} - ${trackNames[lecture.data.track] || lecture.data.track}`}
+  description={lecture.data.learnings.join(' ')}
+>
+  <div class="site-shell lecture-container">
+    <!-- Left Sidebar: Track TOC (Fixed on desktop, collapsible on mobile) -->
+    <aside class="lecture-toc" aria-label="트랙 목차">
+      <div class="toc-header hairline-b">
+        <a href="/ko/learn/" class="back-to-learn">← 전체 트랙</a>
+        <h3 class="track-title">{trackNames[lecture.data.track]}</h3>
+      </div>
+      <nav class="toc-nav">
+        {allLecturesInTrack.map((item) => {
+          const itemSlug = slugMap[item.data.order] || item.slug;
+          const isCurrent = item.data.order === lecture.data.order;
+          return (
+            <a 
+              href={`/ko/learn/${item.data.track}/${itemSlug}/`}
+              class={isCurrent ? "toc-item current" : "toc-item"}
+              aria-current={isCurrent ? "page" : undefined}
+            >
+              <span class="toc-num tabular-nums">{String(item.data.order).padStart(2, '0')}</span>
+              <span class="toc-text">{item.data.title.split(':')[0]}</span>
+            </a>
+          );
+        })}
+      </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <article class="lecture-main">
+      <header class="lecture-header hairline-b">
+        <div class="lecture-meta-top tabular-nums">
+          <span>제 {lecture.data.order}강</span>
+          <span class="sep">/</span>
+          <span>읽는 시간: {lecture.data.readingTime}</span>
+        </div>
+        <h1 class="lecture-title">{lecture.data.title}</h1>
+        
+        <!-- "이 강에서 배우는 것" (Strict 3 lines per Section 4.2) -->
+        <div class="learnings-box">
+          <strong class="learnings-label">이 강에서 배우는 것</strong>
+          <ul class="learnings-list">
+            {lecture.data.learnings.map((learning) => (
+              <li>{learning}</li>
+            ))}
+          </ul>
+        </div>
+      </header>
+
+      <!-- Lecture Body -->
+      <div class="lecture-body">
+        <Content />
+      </div>
+
+      <!-- Bottom Navigation: Related Works & How (Section 1.4 & 4.2) -->
+      <footer class="lecture-footer hairline-t">
+        <div class="related-journey">
+          <h3 class="related-heading">이 강과 연결된 여정</h3>
+          <div class="related-links">
+            {lecture.data.relatedWorks && (
+              <div class="related-item">
+                <span class="related-label">실제로 만들어진 것</span>
+                <a href={lecture.data.relatedWorks} class="related-link">배당 계산기 & 캘린더 도구 실행 (/works)</a>
+              </div>
+            )}
+            {lecture.data.relatedHow && (
+              <div class="related-item">
+                <span class="related-label">제작 과정과 프롬프트</span>
+                <a href={lecture.data.relatedHow} class="related-link">도구 개발 과정과 비용 기록 (/how)</a>
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div class="prev-next-nav hairline-t">
+          {lecture.data.order > 1 && (
+            <a 
+              href={`/ko/learn/${lecture.data.track}/${slugMap[lecture.data.order - 1]}/`} 
+              class="nav-prev"
+            >
+              이전 강으로
+            </a>
+          )}
+          {lecture.data.order < allLecturesInTrack.length && (
+            <a 
+              href={`/ko/learn/${lecture.data.track}/${slugMap[lecture.data.order + 1]}/`} 
+              class="nav-next"
+            >
+              다음 강으로
+            </a>
+          )}
+        </div>
+      </footer>
+    </article>
+  </div>
+</BaseLayout>
+
+<style>
+  .lecture-container {
+    display: flex;
+    gap: 3.5rem;
+    align-items: flex-start;
+  }
+  
+  /* Left Sidebar TOC */
+  .lecture-toc {
+    width: 260px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 5rem;
+    background: var(--paper);
+  }
+  .toc-header {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  .back-to-learn {
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .back-to-learn:hover {
+    color: var(--ink);
+  }
+  .track-title {
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin: 0;
+  }
+  .toc-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .toc-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.65rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    text-decoration: none;
+    padding: 0.4rem 0.5rem;
+    line-height: 1.4;
+  }
+  .toc-item:hover {
+    color: var(--ink);
+    background: rgba(0, 0, 0, 0.02);
+  }
+  .toc-item.current {
+    color: var(--ink);
+    font-weight: 700;
+    border-left: 2px solid var(--ink);
+    padding-left: 0.65rem;
+  }
+  .toc-num {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  /* Main Content Area */
+  .lecture-main {
+    flex: 1;
+    max-width: 680px; /* Reading column width per spec */
+  }
+  .lecture-header {
+    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .lecture-meta-top {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .sep {
+    color: var(--rule);
+  }
+  .lecture-title {
+    font-size: 1.85rem;
+    line-height: 1.35;
+    margin-bottom: 1.75rem;
+  }
+
+  /* Learnings Box (Section 4.2) */
+  .learnings-box {
+    background: #FFFFFF;
+    border: 1px solid var(--rule);
+    padding: 1.25rem 1.5rem;
+  }
+  .learnings-label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+  }
+  .learnings-list {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin: 0;
+  }
+  .learnings-list li {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 0.35rem;
+  }
+  .learnings-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Lecture Body */
+  .lecture-body {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--ink);
+    margin-bottom: 3.5rem;
+  }
+  .lecture-body :global(h2) {
+    font-size: 1.45rem;
+    margin-top: 3.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .lecture-body :global(h3) {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .lecture-body :global(p) {
+    margin-bottom: 1.5em;
+  }
+  .lecture-body :global(ul), .lecture-body :global(ol) {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .lecture-body :global(li) {
+    margin-bottom: 0.5rem;
+  }
+  .lecture-body :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.9rem;
+  }
+  .lecture-body :global(th), .lecture-body :global(td) {
+    padding: 0.75rem 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .lecture-body :global(th) {
+    color: var(--muted);
+    border-bottom: 2px solid var(--rule);
+  }
+
+  /* Footer Journey Links */
+  .lecture-footer {
+    padding-top: 2.5rem;
+    margin-top: 2rem;
+  }
+  .related-journey {
+    margin-bottom: 2.5rem;
+  }
+  .related-heading {
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    color: var(--ink);
+  }
+  .related-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .related-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .related-label {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .related-link {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: underline;
+  }
+
+  .prev-next-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+  }
+  .nav-prev, .nav-next {
+    font-size: 0.95rem;
+    color: var(--ink);
+    text-decoration: underline;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 860px) {
+    .lecture-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .lecture-toc {
+      width: 100%;
+      position: static;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1.5rem;
+    }
+  }
+</style>

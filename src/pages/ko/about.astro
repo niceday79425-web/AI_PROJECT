@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="소개 (About)"
+  description="wiseaiwiseu.com 공개 실험실의 설립 취지와 운영 원칙"
+>
+  <div class="container-reading">
+    <h1>소개</h1>
+
+    <section class="about-section">
+      <h2>이 사이트는 무엇인가</h2>
+      <p>
+        wiseaiwiseu.com은 <strong>AI를 활용해 직접 도구를 만들고, 그 과정과 실측 숫자(수익, 비용, 실패, 적중률)를 모두 투명하게 공개하는 실험실</strong>입니다.
+      </p>
+      <p>
+        AI 기술이 빠르게 발전하면서 수많은 결과물과 이론적인 활용법이 쏟아지고 있지만, 정작 "얼마의 시간과 비용이 들었고, 실제로 어떤 실패를 거쳐 얼마의 성과를 냈는가"를 대조해 볼 수 있는 곳은 드뭅니다.
+      </p>
+      <p>
+        본 사이트는 가공되지 않은 실측 데이터를 기록하여, AI를 소비하는 단계에서 직접 원하는 것을 만들어내는 창작자로 나아가는 과정을 남깁니다.
+      </p>
+    </section>
+
+    <section class="about-section">
+      <h2>이 사이트가 하지 않는 것</h2>
+      <ul>
+        <li>특정 금융투자상품의 매수·매도를 추천하거나 투자자문을 제공하지 않습니다.</li>
+        <li>검증되지 않은 과장된 수익률이나 이론상의 성공 방식을 주장하지 않습니다.</li>
+        <li>실패나 오류를 숨기지 않고, 폐기된 실험 또한 자산으로 기록합니다.</li>
+      </ul>
+    </section>
+
+    <section class="about-section">
+      <h2>연락처 및 피드백</h2>
+      <p>
+        프로젝트에 대한 제안이나 기술적 문의는 <a href="/ko/board/">요청 · 피드백 페이지</a>를 통해 접수하고 있습니다.
+      </p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-section {
+    margin-bottom: 3rem;
+  }
+  ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  li {
+    margin-bottom: 0.75rem;
+    line-height: 1.8;
+  }
+</style>
