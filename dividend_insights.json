@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04 03:32:25",
+  "generated_at": "2026-10-05 03:12:11",
   "total_stocks": 66,
   "stocks": [
     {
@@ -9,12 +9,12 @@
       "current_price": 13.59,
       "dividend_yield": 21.19,
       "annual_dividend": 2.88,
-      "payout_ratio": 65.31,
-      "five_year_avg_yield": 18.86,
+      "payout_ratio": 70.94,
+      "five_year_avg_yield": 17.96,
       "fcf_coverage": 0.0,
       "dividend_growth_years": 1,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:32:02"
+      "last_updated": "2026-10-05 03:11:32"
     },
     {
       "ticker": "DX",
@@ -23,12 +23,12 @@
       "current_price": 11.02,
       "dividend_yield": 18.51,
       "annual_dividend": 2.04,
-      "payout_ratio": 65.18,
-      "five_year_avg_yield": 12.86,
+      "payout_ratio": 70.59,
+      "five_year_avg_yield": 12.43,
       "fcf_coverage": 0.0,
       "dividend_growth_years": 1,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:32:23"
+      "last_updated": "2026-10-05 03:11:52"
     },
     {
       "ticker": "AGNC",
@@ -37,12 +37,12 @@
       "current_price": 8.79,
       "dividend_yield": 16.38,
       "annual_dividend": 1.44,
-      "payout_ratio": 71.64,
-      "five_year_avg_yield": 14.04,
+      "payout_ratio": 73.47,
+      "five_year_avg_yield": 13.58,
       "fcf_coverage": 0.0,
       "dividend_growth_years": 4,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:18"
+      "last_updated": "2026-10-05 03:11:46"
     },
     {
       "ticker": "NLY",
@@ -51,12 +51,12 @@
       "current_price": 18.5,
       "dividend_yield": 15.41,
       "annual_dividend": 2.85,
-      "payout_ratio": 68.84,
-      "five_year_avg_yield": 13.9,
+      "payout_ratio": 69.85,
+      "five_year_avg_yield": 13.56,
       "fcf_coverage": 0.0,
       "dividend_growth_years": 2,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:23"
+      "last_updated": "2026-10-05 03:11:04"
     },
     {
       "ticker": "MO",
@@ -66,11 +66,11 @@
       "dividend_yield": 6.3,
       "annual_dividend": 4.24,
       "payout_ratio": 89.26,
-      "five_year_avg_yield": 7.57,
+      "five_year_avg_yield": 7.43,
       "fcf_coverage": 1.28,
       "dividend_growth_years": 16,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:07"
+      "last_updated": "2026-10-05 03:11:45"
     },
     {
       "ticker": "VZ",
@@ -80,11 +80,11 @@
       "dividend_yield": 6.09,
       "annual_dividend": 2.79,
       "payout_ratio": 72.79,
-      "five_year_avg_yield": 6.22,
+      "five_year_avg_yield": 6.16,
       "fcf_coverage": 1.5,
       "dividend_growth_years": 24,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:31:42"
+      "last_updated": "2026-10-05 03:11:28"
     },
     {
       "ticker": "O",
@@ -93,12 +93,12 @@
       "current_price": 54.13,
       "dividend_yield": 5.98,
       "annual_dividend": 3.23,
-      "payout_ratio": 236.42,
-      "five_year_avg_yield": 5.12,
+      "payout_ratio": 234.71,
+      "five_year_avg_yield": 5.03,
       "fcf_coverage": 0.52,
       "dividend_growth_years": 1,
       "grade": "C등급",
-      "last_updated": "2026-10-04 03:32:09"
+      "last_updated": "2026-10-05 03:11:38"
     },
     {
       "ticker": "BTI",
@@ -107,12 +107,12 @@
       "current_price": 52.64,
       "dividend_yield": 4.65,
       "annual_dividend": 2.45,
-      "payout_ratio": 84.51,
-      "five_year_avg_yield": 7.33,
+      "payout_ratio": 83.97,
+      "five_year_avg_yield": 7.08,
       "fcf_coverage": 0.67,
       "dividend_growth_years": 2,
       "grade": "C등급",
-      "last_updated": "2026-10-04 03:32:12"
+      "last_updated": "2026-10-05 03:11:13"
     },
     {
       "ticker": "PAYX",
@@ -122,25 +122,11 @@
       "dividend_yield": 4.59,
       "annual_dividend": 4.54,
       "payout_ratio": 90.08,
-      "five_year_avg_yield": 2.83,
+      "five_year_avg_yield": 2.8,
       "fcf_coverage": 1.17,
       "dividend_growth_years": 12,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:54"
-    },
-    {
-      "ticker": "PEP",
-      "name": "PepsiCo, Inc.",
-      "sector": "Consumer Defensive",
-      "current_price": 125.89,
-      "dividend_yield": 4.57,
-      "annual_dividend": 5.75,
-      "payout_ratio": 75.33,
-      "five_year_avg_yield": 3.14,
-      "fcf_coverage": 1.0,
-      "dividend_growth_years": 27,
-      "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:36"
+      "last_updated": "2026-10-05 03:12:01"
     },
     {
       "ticker": "T",
@@ -150,11 +136,25 @@
       "dividend_yield": 4.57,
       "annual_dividend": 1.11,
       "payout_ratio": 36.63,
-      "five_year_avg_yield": 6.11,
+      "five_year_avg_yield": 5.68,
       "fcf_coverage": 1.33,
       "dividend_growth_years": 2,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:51"
+      "last_updated": "2026-10-05 03:11:39"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive",
+      "current_price": 125.89,
+      "dividend_yield": 4.57,
+      "annual_dividend": 5.75,
+      "payout_ratio": 75.33,
+      "five_year_avg_yield": 3.02,
+      "fcf_coverage": 1.0,
+      "dividend_growth_years": 27,
+      "grade": "B등급",
+      "last_updated": "2026-10-05 03:12:10"
     },
     {
       "ticker": "EQR",
@@ -168,7 +168,7 @@
       "fcf_coverage": 1.36,
       "dividend_growth_years": 0,
       "grade": "C등급",
-      "last_updated": "2026-10-04 03:31:17"
+      "last_updated": "2026-10-05 03:11:22"
     },
     {
       "ticker": "SPG",
@@ -178,11 +178,11 @@
       "dividend_yield": 4.38,
       "annual_dividend": 8.8,
       "payout_ratio": 62.1,
-      "five_year_avg_yield": 5.11,
+      "five_year_avg_yield": 4.98,
       "fcf_coverage": 0.91,
       "dividend_growth_years": 4,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:32:20"
+      "last_updated": "2026-10-05 03:11:44"
     },
     {
       "ticker": "AMT",
@@ -192,11 +192,11 @@
       "dividend_yield": 4.3,
       "annual_dividend": 6.98,
       "payout_ratio": 96.01,
-      "five_year_avg_yield": 3.08,
+      "five_year_avg_yield": 2.93,
       "fcf_coverage": 0.9,
       "dividend_growth_years": 14,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:30"
+      "last_updated": "2026-10-05 03:11:03"
     },
     {
       "ticker": "PSA",
@@ -205,12 +205,12 @@
       "current_price": 283.81,
       "dividend_yield": 4.23,
       "annual_dividend": 12.0,
-      "payout_ratio": 114.5,
-      "five_year_avg_yield": 3.54,
+      "payout_ratio": 114.61,
+      "five_year_avg_yield": 3.33,
       "fcf_coverage": 1.04,
       "dividend_growth_years": 2,
       "grade": "C등급",
-      "last_updated": "2026-10-04 03:31:15"
+      "last_updated": "2026-10-05 03:11:14"
     },
     {
       "ticker": "SPYD",
@@ -224,7 +224,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 2,
       "grade": "C등급",
-      "last_updated": "2026-10-04 03:31:22"
+      "last_updated": "2026-10-05 03:12:02"
     },
     {
       "ticker": "AVB",
@@ -238,7 +238,7 @@
       "fcf_coverage": 1.4,
       "dividend_growth_years": 0,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:40"
+      "last_updated": "2026-10-05 03:12:05"
     },
     {
       "ticker": "CVX",
@@ -248,11 +248,11 @@
       "dividend_yield": 3.38,
       "annual_dividend": 6.98,
       "payout_ratio": 67.18,
-      "five_year_avg_yield": 3.92,
+      "five_year_avg_yield": 3.88,
       "fcf_coverage": 1.6,
       "dividend_growth_years": 45,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:32:00"
+      "last_updated": "2026-10-05 03:12:09"
     },
     {
       "ticker": "HDV",
@@ -266,7 +266,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 0,
       "grade": "C등급",
-      "last_updated": "2026-10-04 03:31:19"
+      "last_updated": "2026-10-05 03:11:37"
     },
     {
       "ticker": "ACN",
@@ -276,11 +276,11 @@
       "dividend_yield": 3.32,
       "annual_dividend": 6.6,
       "payout_ratio": 50.88,
-      "five_year_avg_yield": 1.83,
+      "five_year_avg_yield": 1.6,
       "fcf_coverage": 2.77,
       "dividend_growth_years": 0,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:48"
+      "last_updated": "2026-10-05 03:11:12"
     },
     {
       "ticker": "GPC",
@@ -290,11 +290,11 @@
       "dividend_yield": 3.29,
       "annual_dividend": 4.18,
       "payout_ratio": 1674.0,
-      "five_year_avg_yield": 2.76,
+      "five_year_avg_yield": 2.71,
       "fcf_coverage": 1.59,
       "dividend_growth_years": 39,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:02"
+      "last_updated": "2026-10-05 03:11:02"
     },
     {
       "ticker": "PLD",
@@ -303,12 +303,12 @@
       "current_price": 128.91,
       "dividend_yield": 3.23,
       "annual_dividend": 4.16,
-      "payout_ratio": 92.65,
-      "five_year_avg_yield": 2.75,
+      "payout_ratio": 92.44,
+      "five_year_avg_yield": 2.68,
       "fcf_coverage": 1.37,
       "dividend_growth_years": 16,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:32:21"
+      "last_updated": "2026-10-05 03:11:08"
     },
     {
       "ticker": "MCD",
@@ -318,11 +318,11 @@
       "dividend_yield": 3.17,
       "annual_dividend": 7.35,
       "payout_ratio": 59.71,
-      "five_year_avg_yield": 2.26,
+      "five_year_avg_yield": 2.24,
       "fcf_coverage": 1.2,
       "dividend_growth_years": 50,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:31:24"
+      "last_updated": "2026-10-05 03:11:40"
     },
     {
       "ticker": "IBM",
@@ -331,12 +331,12 @@
       "current_price": 222.64,
       "dividend_yield": 3.02,
       "annual_dividend": 6.73,
-      "payout_ratio": 59.77,
-      "five_year_avg_yield": 3.79,
+      "payout_ratio": 59.82,
+      "five_year_avg_yield": 3.49,
       "fcf_coverage": 1.9,
       "dividend_growth_years": 31,
-      "grade": "A등급",
-      "last_updated": "2026-10-04 03:31:33"
+      "grade": "S등급",
+      "last_updated": "2026-10-05 03:12:03"
     },
     {
       "ticker": "SCHD",
@@ -350,7 +350,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 14,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:32:19"
+      "last_updated": "2026-10-05 03:11:47"
     },
     {
       "ticker": "PG",
@@ -360,11 +360,11 @@
       "dividend_yield": 2.94,
       "annual_dividend": 4.26,
       "payout_ratio": 64.33,
-      "five_year_avg_yield": 2.51,
+      "five_year_avg_yield": 2.49,
       "fcf_coverage": 1.34,
       "dividend_growth_years": 22,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:01"
+      "last_updated": "2026-10-05 03:11:48"
     },
     {
       "ticker": "TGT",
@@ -373,12 +373,12 @@
       "current_price": 156.0,
       "dividend_yield": 2.92,
       "annual_dividend": 4.56,
-      "payout_ratio": 47.3,
-      "five_year_avg_yield": 2.98,
+      "payout_ratio": 47.35,
+      "five_year_avg_yield": 2.73,
       "fcf_coverage": 1.66,
       "dividend_growth_years": 42,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:31:56"
+      "last_updated": "2026-10-05 03:11:17"
     },
     {
       "ticker": "SYY",
@@ -388,11 +388,11 @@
       "dividend_yield": 2.8,
       "annual_dividend": 2.17,
       "payout_ratio": 59.29,
-      "five_year_avg_yield": 2.59,
-      "fcf_coverage": 1.84,
+      "five_year_avg_yield": 2.58,
+      "fcf_coverage": 1.79,
       "dividend_growth_years": 11,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:31:05"
+      "last_updated": "2026-10-05 03:11:31"
     },
     {
       "ticker": "DLR",
@@ -401,12 +401,12 @@
       "current_price": 178.55,
       "dividend_yield": 2.73,
       "annual_dividend": 4.88,
-      "payout_ratio": 238.05,
-      "five_year_avg_yield": 3.38,
+      "payout_ratio": 236.89,
+      "five_year_avg_yield": 3.28,
       "fcf_coverage": 2.08,
       "dividend_growth_years": 21,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:35"
+      "last_updated": "2026-10-05 03:11:34"
     },
     {
       "ticker": "LOW",
@@ -416,11 +416,11 @@
       "dividend_yield": 2.68,
       "annual_dividend": 4.85,
       "payout_ratio": 41.0,
-      "five_year_avg_yield": 1.79,
+      "five_year_avg_yield": 1.8,
       "fcf_coverage": 1.7,
       "dividend_growth_years": 26,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:31:26"
+      "last_updated": "2026-10-05 03:11:53"
     },
     {
       "ticker": "ABBV",
@@ -430,11 +430,11 @@
       "dividend_yield": 2.6,
       "annual_dividend": 6.83,
       "payout_ratio": 190.4,
-      "five_year_avg_yield": 3.49,
+      "five_year_avg_yield": 3.45,
       "fcf_coverage": 1.4,
       "dividend_growth_years": 12,
       "grade": "C등급",
-      "last_updated": "2026-10-04 03:31:59"
+      "last_updated": "2026-10-05 03:11:25"
     },
     {
       "ticker": "ADP",
@@ -448,7 +448,7 @@
       "fcf_coverage": 1.99,
       "dividend_growth_years": 23,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:13"
+      "last_updated": "2026-10-05 03:11:26"
     },
     {
       "ticker": "ADM",
@@ -457,12 +457,12 @@
       "current_price": 80.45,
       "dividend_yield": 2.56,
       "annual_dividend": 2.06,
-      "payout_ratio": 56.28,
-      "five_year_avg_yield": 2.74,
+      "payout_ratio": 56.44,
+      "five_year_avg_yield": 2.54,
       "fcf_coverage": 1.17,
       "dividend_growth_years": 27,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:32:18"
+      "last_updated": "2026-10-05 03:11:49"
     },
     {
       "ticker": "ABT",
@@ -471,12 +471,12 @@
       "current_price": 97.5,
       "dividend_yield": 2.54,
       "annual_dividend": 2.48,
-      "payout_ratio": 78.96,
-      "five_year_avg_yield": 1.89,
+      "payout_ratio": 78.71,
+      "five_year_avg_yield": 1.84,
       "fcf_coverage": 1.67,
       "dividend_growth_years": 12,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:32:10"
+      "last_updated": "2026-10-05 03:11:10"
     },
     {
       "ticker": "XOM",
@@ -486,11 +486,11 @@
       "dividend_yield": 2.49,
       "annual_dividend": 4.08,
       "payout_ratio": 52.51,
-      "five_year_avg_yield": 3.7,
+      "five_year_avg_yield": 3.4,
       "fcf_coverage": 1.23,
       "dividend_growth_years": 42,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:31:57"
+      "last_updated": "2026-10-05 03:11:51"
     },
     {
       "ticker": "CL",
@@ -500,11 +500,11 @@
       "dividend_yield": 2.48,
       "annual_dividend": 2.09,
       "payout_ratio": 82.28,
-      "five_year_avg_yield": 2.33,
+      "five_year_avg_yield": 2.32,
       "fcf_coverage": 2.08,
       "dividend_growth_years": 52,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:31:12"
+      "last_updated": "2026-10-05 03:11:30"
     },
     {
       "ticker": "KO",
@@ -514,11 +514,11 @@
       "dividend_yield": 2.43,
       "annual_dividend": 2.08,
       "payout_ratio": 62.46,
-      "five_year_avg_yield": 2.85,
+      "five_year_avg_yield": 2.84,
       "fcf_coverage": 0.58,
       "dividend_growth_years": 23,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:45"
+      "last_updated": "2026-10-05 03:11:06"
     },
     {
       "ticker": "UNH",
@@ -527,12 +527,12 @@
       "current_price": 371.9,
       "dividend_yield": 2.41,
       "annual_dividend": 8.95,
-      "payout_ratio": 57.52,
-      "five_year_avg_yield": 1.65,
+      "payout_ratio": 57.56,
+      "five_year_avg_yield": 1.54,
       "fcf_coverage": 3.02,
       "dividend_growth_years": 26,
       "grade": "S등급",
-      "last_updated": "2026-10-04 03:32:15"
+      "last_updated": "2026-10-05 03:11:29"
     },
     {
       "ticker": "SDY",
@@ -546,7 +546,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 4,
       "grade": "C등급",
-      "last_updated": "2026-10-04 03:31:38"
+      "last_updated": "2026-10-05 03:11:35"
     },
     {
       "ticker": "VTR",
@@ -555,12 +555,12 @@
       "current_price": 84.01,
       "dividend_yield": 2.38,
       "annual_dividend": 2.0,
-      "payout_ratio": 363.64,
-      "five_year_avg_yield": 3.25,
+      "payout_ratio": 370.37,
+      "five_year_avg_yield": 3.12,
       "fcf_coverage": 1.45,
       "dividend_growth_years": 4,
       "grade": "C등급",
-      "last_updated": "2026-10-04 03:31:34"
+      "last_updated": "2026-10-05 03:12:06"
     },
     {
       "ticker": "DVY",
@@ -574,7 +574,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 5,
       "grade": "C등급",
-      "last_updated": "2026-10-04 03:31:08"
+      "last_updated": "2026-10-05 03:11:21"
     },
     {
       "ticker": "VYM",
@@ -588,7 +588,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 15,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:28"
+      "last_updated": "2026-10-05 03:12:00"
     },
     {
       "ticker": "BAC",
@@ -598,11 +598,11 @@
       "dividend_yield": 2.08,
       "annual_dividend": 1.12,
       "payout_ratio": 25.87,
-      "five_year_avg_yield": 2.36,
+      "five_year_avg_yield": 2.29,
       "fcf_coverage": 0.0,
       "dividend_growth_years": 16,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:32:24"
+      "last_updated": "2026-10-05 03:11:19"
     },
     {
       "ticker": "BLK",
@@ -611,12 +611,12 @@
       "current_price": 1059.63,
       "dividend_yield": 2.06,
       "annual_dividend": 21.88,
-      "payout_ratio": 52.43,
-      "five_year_avg_yield": 2.36,
+      "payout_ratio": 52.37,
+      "five_year_avg_yield": 2.29,
       "fcf_coverage": 2.24,
       "dividend_growth_years": 22,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:31:47"
+      "last_updated": "2026-10-05 03:11:11"
     },
     {
       "ticker": "JNJ",
@@ -625,12 +625,12 @@
       "current_price": 256.03,
       "dividend_yield": 2.05,
       "annual_dividend": 5.24,
-      "payout_ratio": 60.79,
-      "five_year_avg_yield": 2.74,
+      "payout_ratio": 60.72,
+      "five_year_avg_yield": 2.68,
       "fcf_coverage": 1.34,
       "dividend_growth_years": 63,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:31:21"
+      "last_updated": "2026-10-05 03:11:59"
     },
     {
       "ticker": "NOBL",
@@ -644,7 +644,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 3,
       "grade": "C등급",
-      "last_updated": "2026-10-04 03:31:52"
+      "last_updated": "2026-10-05 03:11:16"
     },
     {
       "ticker": "QCOM",
@@ -653,12 +653,12 @@
       "current_price": 184.87,
       "dividend_yield": 1.94,
       "annual_dividend": 3.59,
-      "payout_ratio": 41.03,
-      "five_year_avg_yield": 2.13,
+      "payout_ratio": 41.55,
+      "five_year_avg_yield": 2.09,
       "fcf_coverage": 2.67,
       "dividend_growth_years": 23,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:31:55"
+      "last_updated": "2026-10-05 03:11:22"
     },
     {
       "ticker": "EQIX",
@@ -668,11 +668,11 @@
       "dividend_yield": 1.92,
       "annual_dividend": 19.7,
       "payout_ratio": 126.77,
-      "five_year_avg_yield": 1.86,
+      "five_year_avg_yield": 1.87,
       "fcf_coverage": 1.95,
       "dividend_growth_years": 9,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:41"
+      "last_updated": "2026-10-05 03:11:05"
     },
     {
       "ticker": "TXN",
@@ -681,26 +681,12 @@
       "current_price": 293.8,
       "dividend_yield": 1.91,
       "annual_dividend": 5.62,
-      "payout_ratio": 85.41,
-      "five_year_avg_yield": 2.71,
+      "payout_ratio": 85.54,
+      "five_year_avg_yield": 2.66,
       "fcf_coverage": 0.69,
       "dividend_growth_years": 27,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:11"
-    },
-    {
-      "ticker": "GD",
-      "name": "General Dynamics Corporation",
-      "sector": "Industrials",
-      "current_price": 330.09,
-      "dividend_yield": 1.87,
-      "annual_dividend": 6.18,
-      "payout_ratio": 37.68,
-      "five_year_avg_yield": 2.01,
-      "fcf_coverage": 2.63,
-      "dividend_growth_years": 12,
-      "grade": "A등급",
-      "last_updated": "2026-10-04 03:31:31"
+      "last_updated": "2026-10-05 03:12:07"
     },
     {
       "ticker": "DGRO",
@@ -714,7 +700,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 9,
       "grade": "C등급",
-      "last_updated": "2026-10-04 03:32:01"
+      "last_updated": "2026-10-05 03:11:50"
     },
     {
       "ticker": "MMM",
@@ -724,11 +710,25 @@
       "dividend_yield": 1.87,
       "annual_dividend": 3.02,
       "payout_ratio": 53.64,
-      "five_year_avg_yield": 3.79,
+      "five_year_avg_yield": 3.06,
       "fcf_coverage": 4.08,
       "dividend_growth_years": 0,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:32:07"
+      "last_updated": "2026-10-05 03:11:55"
+    },
+    {
+      "ticker": "GD",
+      "name": "General Dynamics Corporation",
+      "sector": "Industrials",
+      "current_price": 330.09,
+      "dividend_yield": 1.87,
+      "annual_dividend": 6.18,
+      "payout_ratio": 37.71,
+      "five_year_avg_yield": 1.99,
+      "fcf_coverage": 2.63,
+      "dividend_growth_years": 12,
+      "grade": "A등급",
+      "last_updated": "2026-10-05 03:11:57"
     },
     {
       "ticker": "JPM",
@@ -738,11 +738,11 @@
       "dividend_yield": 1.81,
       "annual_dividend": 6.0,
       "payout_ratio": 25.71,
-      "five_year_avg_yield": 2.39,
+      "five_year_avg_yield": 2.25,
       "fcf_coverage": 0.0,
       "dividend_growth_years": 15,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:32:05"
+      "last_updated": "2026-10-05 03:11:15"
     },
     {
       "ticker": "FVD",
@@ -756,7 +756,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 4,
       "grade": "C등급",
-      "last_updated": "2026-10-04 03:32:08"
+      "last_updated": "2026-10-05 03:11:23"
     },
     {
       "ticker": "HD",
@@ -766,11 +766,11 @@
       "dividend_yield": 1.64,
       "annual_dividend": 4.63,
       "payout_ratio": 64.8,
-      "five_year_avg_yield": 2.43,
+      "five_year_avg_yield": 2.39,
       "fcf_coverage": 2.33,
       "dividend_growth_years": 23,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:27"
+      "last_updated": "2026-10-05 03:11:24"
     },
     {
       "ticker": "CSCO",
@@ -780,11 +780,11 @@
       "dividend_yield": 1.48,
       "annual_dividend": 1.66,
       "payout_ratio": 49.85,
-      "five_year_avg_yield": 2.79,
+      "five_year_avg_yield": 2.58,
       "fcf_coverage": 1.71,
       "dividend_growth_years": 15,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:31:16"
+      "last_updated": "2026-10-05 03:12:04"
     },
     {
       "ticker": "VIG",
@@ -798,7 +798,7 @@
       "fcf_coverage": 0.0,
       "dividend_growth_years": 16,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:39"
+      "last_updated": "2026-10-05 03:12:11"
     },
     {
       "ticker": "ORCL",
@@ -808,11 +808,11 @@
       "dividend_yield": 1.41,
       "annual_dividend": 2.0,
       "payout_ratio": 31.35,
-      "five_year_avg_yield": 1.29,
+      "five_year_avg_yield": 1.19,
       "fcf_coverage": -7.56,
       "dividend_growth_years": 12,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:43"
+      "last_updated": "2026-10-05 03:11:56"
     },
     {
       "ticker": "WELL",
@@ -822,11 +822,11 @@
       "dividend_yield": 1.35,
       "annual_dividend": 3.07,
       "payout_ratio": 132.74,
-      "five_year_avg_yield": 2.37,
+      "five_year_avg_yield": 2.15,
       "fcf_coverage": 1.25,
       "dividend_growth_years": 4,
       "grade": "C등급",
-      "last_updated": "2026-10-04 03:32:04"
+      "last_updated": "2026-10-05 03:11:33"
     },
     {
       "ticker": "WMT",
@@ -836,11 +836,11 @@
       "dividend_yield": 0.93,
       "annual_dividend": 0.96,
       "payout_ratio": 34.96,
-      "five_year_avg_yield": 1.22,
+      "five_year_avg_yield": 1.14,
       "fcf_coverage": 0.93,
       "dividend_growth_years": 43,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:04"
+      "last_updated": "2026-10-05 03:11:36"
     },
     {
       "ticker": "V",
@@ -854,21 +854,7 @@
       "fcf_coverage": 4.47,
       "dividend_growth_years": 17,
       "grade": "S등급",
-      "last_updated": "2026-10-04 03:31:46"
-    },
-    {
-      "ticker": "CAT",
-      "name": "Caterpillar Inc.",
-      "sector": "Industrials",
-      "current_price": 845.42,
-      "dividend_yield": 0.73,
-      "annual_dividend": 6.16,
-      "payout_ratio": 26.01,
-      "five_year_avg_yield": 1.72,
-      "fcf_coverage": 1.78,
-      "dividend_growth_years": 12,
-      "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:50"
+      "last_updated": "2026-10-05 03:11:58"
     },
     {
       "ticker": "AVGO",
@@ -877,12 +863,26 @@
       "current_price": 355.14,
       "dividend_yield": 0.73,
       "annual_dividend": 2.6,
-      "payout_ratio": 32.4,
-      "five_year_avg_yield": 1.72,
+      "payout_ratio": 32.44,
+      "five_year_avg_yield": 1.27,
       "fcf_coverage": 2.47,
       "dividend_growth_years": 15,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:32:16"
+      "last_updated": "2026-10-05 03:11:07"
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar Inc.",
+      "sector": "Industrials",
+      "current_price": 845.42,
+      "dividend_yield": 0.73,
+      "annual_dividend": 6.16,
+      "payout_ratio": 26.0,
+      "five_year_avg_yield": 1.43,
+      "fcf_coverage": 1.78,
+      "dividend_growth_years": 12,
+      "grade": "B등급",
+      "last_updated": "2026-10-05 03:11:42"
     },
     {
       "ticker": "MSFT",
@@ -892,11 +892,11 @@
       "dividend_yield": 0.7,
       "annual_dividend": 3.64,
       "payout_ratio": 19.83,
-      "five_year_avg_yield": 0.79,
+      "five_year_avg_yield": 0.78,
       "fcf_coverage": 0.61,
       "dividend_growth_years": 20,
       "grade": "B등급",
-      "last_updated": "2026-10-04 03:31:09"
+      "last_updated": "2026-10-05 03:11:20"
     },
     {
       "ticker": "MA",
@@ -910,7 +910,7 @@
       "fcf_coverage": 5.79,
       "dividend_growth_years": 19,
       "grade": "S등급",
-      "last_updated": "2026-10-04 03:32:14"
+      "last_updated": "2026-10-05 03:11:09"
     },
     {
       "ticker": "AAPL",
@@ -920,11 +920,11 @@
       "dividend_yield": 0.31,
       "annual_dividend": 1.05,
       "payout_ratio": 12.04,
-      "five_year_avg_yield": 0.5,
+      "five_year_avg_yield": 0.47,
       "fcf_coverage": 7.03,
       "dividend_growth_years": 22,
       "grade": "A등급",
-      "last_updated": "2026-10-04 03:32:13"
+      "last_updated": "2026-10-05 03:11:43"
     }
   ]
 }
